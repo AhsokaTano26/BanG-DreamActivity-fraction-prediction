@@ -1,15 +1,14 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
-from datetime import datetime, timedelta
-
+import matplotlib
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import PolynomialFeatures
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score
 from bestdori.eventtracker import EventTracker
-import time
 from bestdori.events import Event
+from datetime import datetime, timedelta
 
 def nonlinear_predict(data_dict, start_time, end_time, degree=2):
     # 时间转换
@@ -49,7 +48,7 @@ def nonlinear_predict(data_dict, start_time, end_time, degree=2):
 
     # 绘图
     plt.figure(figsize=(14, 7))
-
+    matplotlib.rc("font", family='Microsoft YaHei')
     # 绘制观测点
     plt.scatter(obs_dates, Y, c='#1f77b4', s=80, label='观测数据', zorder=5)
 
@@ -79,6 +78,7 @@ def nonlinear_predict(data_dict, start_time, end_time, degree=2):
              bbox=dict(facecolor='white', alpha=0.8))
 
     plt.tight_layout()
+    plt.show()
     return end_pred, r2
 
 
@@ -136,13 +136,8 @@ def main(Country: int, Activity: int, Rank: int):
     E = EventTracker(server=Country,event=Activity)
     # 调用方法获取信息
     info = E.get_data(tier=Rank)
-    # 打印信息
-    #print(info)
-    #print(type(info))
     r = {}
     result1 = info["cutoffs"]
-    #print(result1)
-    #print(type(result1))
     for i in result1:
         t = i["time"]
         ep = i["ep"]
@@ -152,6 +147,7 @@ def main(Country: int, Activity: int, Rank: int):
 
 # 示例使用
 if __name__ == "__main__":
+    matplotlib.rc("font", family='Microsoft YaHei')
     Country = int(input("请输入要查询的服务器(0=jp,1=en,2=tw,3=cn,4=kr):"))
     Activity = int(input("请输入要查询的活动id:"))
     Rank = int(input("请输入要查询的数据线:"))

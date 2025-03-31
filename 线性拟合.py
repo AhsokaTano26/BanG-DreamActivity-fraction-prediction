@@ -3,9 +3,10 @@ from scipy.stats import pearsonr
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 import datetime
-from bestdori.eventtracker import EventTracker
 import time
+from bestdori.eventtracker import EventTracker
 from bestdori.events import Event
+import matplotlib
 
 def event_time(event_id: int, server: int):
     event = Event(event_id)
@@ -31,13 +32,8 @@ def main(Country: int, Activity: int, Rank: int):
     E = EventTracker(server=Country,event=Activity)
     # 调用方法获取信息
     info = E.get_data(tier=Rank)
-    # 打印信息
-    #print(info)
-    #print(type(info))
     r = {}
-    result1 = info["cutoffs"]
-    #print(result1)
-    #print(type(result1))
+    result1 = info["cutoffs"]s
     for i in result1:
         t = i["time"]
         ep = i["ep"]
@@ -118,6 +114,7 @@ def predict_event_score(data_dict, start_time, end_time):
 
 # 示例用法
 if __name__ == "__main__":
+    matplotlib.rc("font", family='Microsoft YaHei')
     # 示例数据（时间戳单位：毫秒）
     Country = int(input("请输入要查询的服务器(0=jp,1=en,2=tw,3=cn,4=kr):"))
     Activity = int(input("请输入要查询的活动id:"))
