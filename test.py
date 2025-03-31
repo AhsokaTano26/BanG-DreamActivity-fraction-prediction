@@ -3,22 +3,25 @@ from scipy.optimize import curve_fit
 from datetime import datetime
 import matplotlib.pyplot as plt
 from typing import List, Tuple, Optional
+from bestdori.eventtracker import EventTracker
+
 
 
 class BestdoriTracker:
     """Bestdori API 数据获取封装"""
 
-    def __init__(self, server: str, event_id: int, me: Optional[Me] = None):
-        self.tracker = EventTracker(server=server, event=event_id, me=me)
+    def __init__(self, Country: int, Activity: int):
+        self.tracker = EventTracker(server=Country,event=Activity)
 
-    def get_current_scores(self, target_rank: int) -> Tuple[List[int], List[int]]:
+    def get_current_scores(self, Rank: int) -> Tuple[List[int], List[int]]:
         """获取当前排名分数数据"""
         try:
             # 获取指定排名的追踪数据
-            tracker_data = self.tracker.get_data(tier=target_rank)
+            tracker_data = self.tracker.get_data(tier=Rank)
+            result1 = tracker_data["cutoffs"]
             return (
-                [x["rank"] for x in tracker_data["history"]],
-                [x["score"] for x in tracker_data["history"]]
+                [x["rank"] for x in result1["history"]],
+                [x["score"] for x in result1["history"]]
             )
         except NotExistException:
             # 降级获取T10数据
@@ -37,9 +40,9 @@ class BestdoriTracker:
 class BangDreamPredictor:
     """改进版活动分数线预测器"""
 
-    def __init__(self, server: str, event_id: int, me: Optional[Me] = None):
-        self.tracker = BestdoriTracker(server, event_id, me)
-        self.event_end = self.tracker.get_event_end_time()
+    def __init__(self, server: int, event_id: int):
+        self.tracker = BestdoriTracker(server, event_id)
+        self.event_end = 1743692400000
 
     def power_law(self, x: float, a: float, b: float) -> float:
         """幂函数模型"""
@@ -117,15 +120,11 @@ class BangDreamPredictor:
 
 # 使用示例
 if __name__ == "__main__":
-    # 初始化认证信息（根据需要）
-    from bestdori import Me
-
-    me = Me(cookies={"session": "your_session_cookie"})
-
+    Country, Activity, Rank = int(input("请输入要查询的服务器(0=jp,1=en,2=tw,3=cn,4=kr):")), int(input("请输入要查询的活动id:")), int(input("请输入要查询的数据线:"))
     # 创建预测器（参数：服务器、活动ID、认证信息）
-    predictor = BangDreamPredictor('jp', 100, me=me)
+    predictor = BangDreamPredictor(Country, Activity)
 
     # 进行预测并可视化
-    target_rank = 200
+    target_rank = Rank
     print(f"预测分数线：{predictor.predict(target_rank):,}")
     predictor.plot_prediction(target_rank)
