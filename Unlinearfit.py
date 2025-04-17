@@ -147,10 +147,10 @@ def main(Country: int, Activity: int, Rank: int):
 
 # 示例使用
 if __name__ == "__main__":
-    matplotlib.rc("font", family='Microsoft YaHei')
     Country = int(input("请输入要查询的服务器(0=jp,1=en,2=tw,3=cn,4=kr):"))
     Activity = int(input("请输入要查询的活动id:"))
     Rank = int(input("请输入要查询的数据线:"))
+    matplotlib.rc("font", family='Microsoft YaHei')
     #活动时间
     tm = event_time(Activity,Country)
     start_time = int(tm[0])

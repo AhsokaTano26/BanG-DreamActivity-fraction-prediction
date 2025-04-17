@@ -33,7 +33,7 @@ def main(Country: int, Activity: int, Rank: int):
     # 调用方法获取信息
     info = E.get_data(tier=Rank)
     r = {}
-    result1 = info["cutoffs"]s
+    result1 = info["cutoffs"]
     for i in result1:
         t = i["time"]
         ep = i["ep"]
@@ -114,11 +114,12 @@ def predict_event_score(data_dict, start_time, end_time):
 
 # 示例用法
 if __name__ == "__main__":
-    matplotlib.rc("font", family='Microsoft YaHei')
+
     # 示例数据（时间戳单位：毫秒）
     Country = int(input("请输入要查询的服务器(0=jp,1=en,2=tw,3=cn,4=kr):"))
     Activity = int(input("请输入要查询的活动id:"))
     Rank = int(input("请输入要查询的数据线:"))
+    matplotlib.rc("font", family='Microsoft YaHei')
     data = main(Country,Activity,Rank)
 
     # 活动时间（示例）
