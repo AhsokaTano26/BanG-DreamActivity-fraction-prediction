@@ -87,7 +87,7 @@ def parse_and_extract_features_for_ep_prediction(df: pd.DataFrame) -> pd.DataFra
 
 # --- 完整程序主流程 (改为线性回归模型) ---
 
-def run_ep_prediction_pipeline(session,Rank):
+def run_ep_prediction_pipeline(session, Rank, Use_ID):
     """
     执行数据加载、特征工程、模型训练和评估的完整流程（目标：预测 EP）。
     """
@@ -96,7 +96,7 @@ def run_ep_prediction_pipeline(session,Rank):
     # ----------------------------------------------------
     try:
         query = session.query(Event)
-        query = query.filter(Event.Rank == Rank).filter(Event.EventID >= 260)
+        query = query.filter(Event.Rank == Rank).filter(Event.EventID >= Use_ID)
         data = [{c.name: getattr(e, c.name) for c in e.__table__.columns} for e in query]
         df_raw = pd.DataFrame(data)
 
@@ -171,7 +171,11 @@ def run_ep_prediction_pipeline(session,Rank):
 
     return linear_model, X.columns
 
-
+def get_input(prompt, default_value):
+    user_input = input(prompt)
+    if not user_input:
+        user_input = default_value
+    return user_input
 # ----------------------------------------------------
 # E. 运行整个程序
 # ----------------------------------------------------
@@ -179,19 +183,19 @@ def run_ep_prediction_pipeline(session,Rank):
 if __name__ == '__main__':
     Activity = int(input("请输入活动ID："))
     Rank = int(input("请输入预测分数线："))
+    Use_ID = int(get_input("请输入使用多少次活动以后的数据训练：",226))
     session = Session()
     Country_list = ["日本", "国际", "中国台湾", "中国大陆", "韩国"]
 
     # 训练模型并获取特征列表
-    model, feature_names = run_ep_prediction_pipeline(session,Rank)
+    model, feature_names = run_ep_prediction_pipeline(session,Rank,Use_ID)
 
     # --- 预测新活动总分数 ---
 
     if model is not None and len(feature_names) > 0:
         print("\n--- 🔮 新活动总分数预测 ---")
 
-        # 实际 API 调用（保持不变）
-        # 假设活动 ID 293，国家 ID 3
+        # 实际 API 调用
         info, startAt, endAt = get_event_info(Activity=Activity, Country=3)
         Point = event_tracker(Country=3, Activity=Activity, Rank=Rank)
 
