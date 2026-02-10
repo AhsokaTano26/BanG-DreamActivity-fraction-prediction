@@ -26,8 +26,8 @@ def get_info(Country: int, Activity: int, Rank: int):
         )
         print(f"活动{Activity} - {Country} - {Rank}已成功写入数据库")
 
-def main(event_id: int, Country_id: int ,Rank: int):
-    for eid in range(290,event_id):
+def main(event_id: int, Country_id: int ,Rank: int, before_id: int):
+    for eid in range(before_id,event_id + 1):
         print(f"正在处理活动{eid} - {Country_id} - {Rank}")
         try:
             get_info(Country = Country_id, Activity = eid, Rank = Rank)
@@ -35,5 +35,5 @@ def main(event_id: int, Country_id: int ,Rank: int):
             print(f"处理活动{eid} - {Country_id} - {Rank} 发生异常：{e}")
 
 if __name__ == '__main__':
-    main(event_id = 295, Country_id = 3, Rank = 1000)
+    main(event_id = 297, Country_id = 3, Rank = 2000, before_id = 1)
     # get_info(Country=3, Activity=1, Rank=2000)

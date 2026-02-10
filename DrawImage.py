@@ -46,5 +46,6 @@ def image(Country: int, Activity: int, Rank: int):
     plt.show()
 
 if __name__ == '__main__':
-    for i in range(1,293):
-        image(Country=3, Activity=i, Rank=2000)
+    # for i in range(1,293):
+    #     image(Country=3, Activity=i, Rank=2000)
+    image(Country=3, Activity=298, Rank=1000)

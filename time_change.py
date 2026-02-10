@@ -10,8 +10,3 @@ def time_change(a1): #时间转换
     timeStamp = int(time.mktime(timeArray))
 
     return timeStamp
-
-if __name__ == '__main__':
-    a = time_change("2025-03-26 10:00:00")
-    print(a)
-    print(type(a))

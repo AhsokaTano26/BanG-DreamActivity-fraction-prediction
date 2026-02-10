@@ -3,12 +3,12 @@ import numpy as np
 import ast
 from datetime import timedelta
 from sqlalchemy import create_engine, Column, Integer, String
-from sqlalchemy.orm import sessionmaker
-from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker, declarative_base
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression  # 引入线性回归模型
 from sklearn.metrics import mean_squared_error, r2_score
-# 假设这些 API 导入是正确的
+
+
 from API.GetEventTracker import event_tracker
 from API.GetEventInfo import get_event_info
 
