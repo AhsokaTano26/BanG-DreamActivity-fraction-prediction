@@ -1,0 +1,109 @@
+{
+  "dataset_id": "d0ccf9f70aee19ad1b2152925e7afe8692d67f4a6e539d558f87e2cd33329bbb",
+  "splits": {
+    "train": {
+      "events": 198,
+      "cases": 4377,
+      "types_events": {
+        "story": 23,
+        "challenge": 37,
+        "versus": 46,
+        "live_try": 37,
+        "mission_live": 35,
+        "festival": 6,
+        "medley": 14
+      },
+      "case_ranks": {
+        "1000": 2375,
+        "2000": 2002
+      },
+      "case_stages": {
+        "observed_bin_13": 150,
+        "observed_bin_17": 199,
+        "observed_bin_18": 280,
+        "observed_bin_19": 278,
+        "observed_bin_02": 105,
+        "observed_bin_03": 220,
+        "observed_bin_04": 247,
+        "observed_bin_05": 276,
+        "observed_bin_06": 234,
+        "observed_bin_07": 270,
+        "observed_bin_08": 288,
+        "observed_bin_09": 233,
+        "observed_bin_10": 254,
+        "observed_bin_11": 268,
+        "observed_bin_12": 267,
+        "observed_bin_14": 273,
+        "observed_bin_15": 266,
+        "observed_bin_16": 269
+      },
+      "band_groups_events": {
+        "mixed": 74,
+        "single": 124
+      }
+    },
+    "validation": {
+      "events": 42,
+      "cases": 414,
+      "types_events": {
+        "medley": 7,
+        "mission_live": 11,
+        "challenge": 6,
+        "festival": 3,
+        "live_try": 9,
+        "versus": 6
+      },
+      "case_ranks": {
+        "1000": 207,
+        "2000": 207
+      },
+      "case_stages": {
+        "25%": 84,
+        "50%": 82,
+        "75%": 82,
+        "24h remaining": 84,
+        "6h remaining": 82
+      },
+      "band_groups_events": {
+        "single": 30,
+        "mixed": 12
+      }
+    },
+    "test": {
+      "events": 43,
+      "cases": 412,
+      "types_events": {
+        "mission_live": 11,
+        "challenge": 8,
+        "live_try": 11,
+        "medley": 4,
+        "festival": 2,
+        "versus": 7
+      },
+      "case_ranks": {
+        "1000": 206,
+        "2000": 206
+      },
+      "case_stages": {
+        "25%": 84,
+        "50%": 84,
+        "75%": 82,
+        "24h remaining": 82,
+        "6h remaining": 80
+      },
+      "band_groups_events": {
+        "single": 32,
+        "mixed": 11
+      }
+    }
+  },
+  "invariants": [
+    "disjoint event groups",
+    "train curves only from train",
+    "all frozen events have usable cases",
+    "unique exact case-label ID sets",
+    "no target in inputs",
+    "all prefixes <= cutoff and <=60min old",
+    "peer prefixes <= observed time"
+  ]
+}

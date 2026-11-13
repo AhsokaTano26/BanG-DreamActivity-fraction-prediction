@@ -1,0 +1,18 @@
+{
+  "all_model_identities_sources_and_parent_dataset_verified": true,
+  "finals_independently_recomputed_from_primary_raw_responses": true,
+  "pending_event_never_scored_and_cached_evaluation_does_not_reopen_outcomes": true,
+  "grid": {
+    "prefixes": 74,
+    "all_three_methods_same_cases": true,
+    "saved_model_replay_exact": true,
+    "no_future_peer_observations": true
+  },
+  "legacy": {
+    "prefixes": 2,
+    "all_three_methods_same_cases": true,
+    "saved_model_replay_exact": true,
+    "no_future_peer_observations": true
+  },
+  "old_data_database_and_deliveries_unchanged": true
+}

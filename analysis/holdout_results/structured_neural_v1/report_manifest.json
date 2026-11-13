@@ -1,0 +1,9 @@
+{
+  "evaluation_id": "343caf39798d61fb35433b56b37691a8168bcf8320cf94c5ba6c969e66cf95f9",
+  "artifacts": {
+    "paired_comparison_and_verification.json": "2d46625720255d0fb5e7b1c0a406b550e5409eb7990ab37289beef989978cf88",
+    "all_method_comparison.csv": "645ee5894a8eaa07aabffe61d468ce4a4977165a238a1c5ec06eb9dcbe987621",
+    "README.md": "1b0b716f74f7f55d106b00708431a3e4e2fa1f7c88df48a21b254ec1be6843ce",
+    "report_source.py": "efb60dc55307b087186c165f860bff9d36e9ef13ce4a07e2038b633427024097"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "dataset_id": "d0ccf9f70aee19ad1b2152925e7afe8692d67f4a6e539d558f87e2cd33329bbb",
+  "dataset_directory": "/Users/tano/Documents/GitHub/personal/BanG-Dream-Activity-fraction-prediction/data/holdout_v1",
+  "recipes": {
+    "shared_mlp": {
+      "architecture": "shared_mlp",
+      "loss": "log_rate",
+      "thin": false
+    },
+    "rank_mlp": {
+      "architecture": "rank_mlp",
+      "loss": "log_rate",
+      "thin": false
+    },
+    "dual_gru": {
+      "architecture": "dual_gru",
+      "loss": "log_rate",
+      "thin": false
+    },
+    "dual_tcn": {
+      "architecture": "dual_tcn",
+      "loss": "log_rate",
+      "thin": false
+    },
+    "multiscale_tcn": {
+      "architecture": "multiscale_tcn",
+      "loss": "log_rate",
+      "thin": false
+    },
+    "cross_patch": {
+      "architecture": "cross_patch",
+      "loss": "log_rate",
+      "thin": false
+    },
+    "gated_tcn": {
+      "architecture": "gated_tcn",
+      "loss": "log_rate",
+      "thin": false
+    },
+    "dual_tcn_metric": {
+      "architecture": "dual_tcn",
+      "loss": "relative_final",
+      "thin": false
+    },
+    "dual_tcn_thin": {
+      "architecture": "dual_tcn",
+      "loss": "log_rate",
+      "thin": true
+    }
+  },
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "device": "mps",
+  "epochs": 100,
+  "batch_size": 256,
+  "width": 48,
+  "dropout": 0.2,
+  "optimizer": {
+    "name": "AdamW",
+    "lr": 0.001,
+    "weight_decay": 0.005,
+    "gradient_clip": 1
+  },
+  "early_stop": {
+    "minimum_epochs": 30,
+    "patience": 20,
+    "metric": "validation event-macro MAPE"
+  },
+  "loss": "Huber(log-rate,beta=.2); metric variant .8*sqrt(relative_final_error^2+1e-4)+.2*Huber",
+  "thinning": "50% training rows per epoch use max(4,n//4) evenly spaced observations, keep first/last",
+  "weights": "equal total weight per event across both ranks; global weights unchanged in batches",
+  "target": "remaining log-rate clipped [-6,4]; decode current*(1+exp(log-rate)*(1-p)/p)",
+  "input": "39 compact invariant features, train-only median/standardization/one-hot; full and last48h paired grids 64x8",
+  "selection": "validation only: each seed mean, top3 neural means, 25/50/75% top3 vs reference, reference; no single seed selection",
+  "reference": {
+    "directory": "/Users/tano/Documents/GitHub/personal/BanG-Dream-Activity-fraction-prediction/analysis/holdout_results/relationships_v3",
+    "dataset_id": "d0ccf9f70aee19ad1b2152925e7afe8692d67f4a6e539d558f87e2cd33329bbb",
+    "run_id": "e502e97b4a22756299ab0908b371bf7587be3c59cc013f5c471e375d197c454b",
+    "manifest_sha256": "7fc6e99ea4079574f3f291b99f40dc0223069a0c5f117c544c9ebcea15221a28",
+    "hashes": {
+      "selection.json": "a815058f680d7cf0cb1ffb76a1765611138311d547a35c23bd5e27a11b10df78",
+      "validation_predictions.csv": "229bade00836ab0f908641ebda18594663bb91b0a279ce036edaafd1fddac434",
+      "test_predictions.csv": "621cde2d1a71eabce6151e4ab8bc0483e6ed63eee090fa4f36d05e1b9d13cb2f"
+    },
+    "method": "blend_new_0.75"
+  },
+  "source_hashes": {
+    "analysis/structured_neural_benchmark.py": "4cbd188e1afc76fa6a61b4933d6cd44860a07f5f67251701eb6777a6c80e459a",
+    "analysis/structured_neural_models.py": "96f42bbc85c6bb961830e942fd56c83cb63738f620de291a053b67e5c211f68b",
+    "analysis/paired_prefix.py": "476788f2da997fe84b4338e8305fafca6acbf0812297177c8dba709195f6dafa",
+    "analysis/relationship_features.py": "717e8919cee5078cec61f80e3b5a12315b8dd34c6753e1964cf81731cd063642",
+    "analysis/relationship_benchmark.py": "dad49fbee83ad73f90ad9a426738b805a84722904d70d07812fa7539e24b9845",
+    "analysis/holdout_dataset.py": "22cf94748c4953b72a570093d8e26e76ae9437454e09da181fc9e5e10c6a2f6f",
+    "analysis/backtest.py": "df2733f8aff144582da7f732e3def213a224f5689b38ea8065f748d43f2e99be",
+    "analysis/event_features.py": "cf3eb59a5b8e99a4cebda38a54a642140d8fcc017c4d38a132499fce38074419",
+    "analysis/holdout_evaluate.py": "cf2226d0ca778a31a37d58c57a066f81ec015df01da5899f8ca621ca2859bda4"
+  },
+  "software": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "catboost": "1.2.10",
+    "lightgbm": "4.7.0",
+    "joblib": "1.6.0",
+    "torch": "2.15.0"
+  },
+  "python": "3.14.8",
+  "previous_test_exposure": true,
+  "metadata_limitation": "retrospective metadata without historical snapshots",
+  "run_id": "744df452c51e14d366213b274766ea1f2355d3da2b149c27f09b6002bc82c569"
+}

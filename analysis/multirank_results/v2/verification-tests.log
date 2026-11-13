@@ -1,0 +1,139 @@
+test_all_architectures_have_finite_predictions_and_gradients (test_advanced_models.AdvancedModelTests.test_all_architectures_have_finite_predictions_and_gradients) ... ok
+test_sequence_representation_is_invariant_to_future_scores (test_advanced_models.AdvancedModelTests.test_sequence_representation_is_invariant_to_future_scores) ... ok
+test_metadata_aware_replay_outputs_a_readonly_point_forecast (test_context_cli.ContextCommandTests.test_metadata_aware_replay_outputs_a_readonly_point_forecast) ... ok
+test_development_never_reads_test_data_and_calibration_is_chronological (test_deadline_research.DeadlineResearchTests.test_development_never_reads_test_data_and_calibration_is_chronological) ... /opt/homebrew/Cellar/python@3.14/3.14.8_3/Frameworks/Python.framework/Versions/3.14/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x110e87d30>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+{"fold": 0, "scores": {"remaining_rank": 0.003365519863099717, "deadline_features": 0.003381341228015428, "deadline_residual": 0.0006329210470230113, "oof_correction_0.25": 0.003365519863099717, "oof_correction_0.5": 0.003365519863099717, "oof_correction_1.0": 0.003365519863099717}}
+{"fold": 1, "scores": {"remaining_rank": 0.003328593557821076, "deadline_features": 0.0034361803735122936, "deadline_residual": 0.0004700691616464173, "oof_correction_0.25": 0.0031052515438518033, "oof_correction_0.5": 0.0030014755845307146, "oof_correction_1.0": 0.0031314144631784824}}
+{"fold": 2, "scores": {"remaining_rank": 0.003294780904759974, "deadline_features": 0.0033128292846021676, "deadline_residual": 0.00037107332117561033, "oof_correction_0.25": 0.002977477778860914, "oof_correction_0.5": 0.0027950172383874503, "oof_correction_1.0": 0.002805491190210279}}
+{"fold": 3, "scores": {"remaining_rank": 0.0032702688302996582, "deadline_features": 0.003288295515553751, "deadline_residual": 0.0003091294448389872, "oof_correction_0.25": 0.0028904571113911683, "oof_correction_0.5": 0.002647506866809393, "oof_correction_1.0": 0.002628517875312585}}
+VALIDATION {"run_id": "2c70dc33fd29588432215508cb5685801cd15dc21f4e2b143307b9bdffbf5b61", "dataset_id": "76a45bd2ac77f3484dfc8c6eaa026a6371990d16da71c7961a85218e9589ac50", "validation_scores": {"current_reference": 0.004500399784750364, "remaining_rank": 0.0017505123450156646, "deadline_features": 0.0017272070647530076, "deadline_residual": 0.00019312097473929887, "oof_correction_0.25": 0.0015902285912816616, "oof_correction_0.5": 0.0015381995226770862, "oof_correction_1.0": 0.0016004081780218726}, "selected_on_validation": "deadline_residual", "test_evaluated": false, "reference_is_frozen": true}
+ok
+test_exact_observation_has_no_interpolation_span (test_deadline_research.DeadlineResearchTests.test_exact_observation_has_no_interpolation_span) ... ok
+test_history_excludes_current_future_and_unfinished_events (test_deadline_research.DeadlineResearchTests.test_history_excludes_current_future_and_unfinished_events) ... ok
+test_history_units_and_missing_support (test_deadline_research.DeadlineResearchTests.test_history_units_and_missing_support) ... ok
+test_unknown_velocity_is_not_a_perfect_shape_match (test_deadline_research.DeadlineResearchTests.test_unknown_velocity_is_not_a_perfect_shape_match) ... ok
+test_cutoffs_sort_deduplicate_and_flag_decreases_without_rewriting (test_download_ranks.RankDownloadTests.test_cutoffs_sort_deduplicate_and_flag_decreases_without_rewriting) ... ok
+test_database_identity_includes_committed_wal_content (test_download_ranks.RankDownloadTests.test_database_identity_includes_committed_wal_content) ... ok
+test_duplicate_user_does_not_make_an_incomplete_top10_complete (test_download_ranks.RankDownloadTests.test_duplicate_user_does_not_make_an_incomplete_top10_complete) ... ok
+test_frozen_dataset_is_not_an_import_destination (test_download_ranks.RankDownloadTests.test_frozen_dataset_is_not_an_import_destination) ... ok
+test_frozen_run_paths_and_symlinks_are_rejected_before_network (test_download_ranks.RankDownloadTests.test_frozen_run_paths_and_symlinks_are_rejected_before_network) ... ok
+test_merge_preserves_old_only_points_and_accepts_source_corrections (test_download_ranks.RankDownloadTests.test_merge_preserves_old_only_points_and_accepts_source_corrections) ... ok
+test_metadata_uses_real_cn_start_and_all_nineteen_ranks (test_download_ranks.RankDownloadTests.test_metadata_uses_real_cn_start_and_all_nineteen_ranks) ... ok
+test_offline_download_resume_and_backup_import (test_download_ranks.RankDownloadTests.test_offline_download_resume_and_backup_import) ... {"run": "/private/var/folders/pz/7pn0v7cj6rl60xh6c4rtk9dh0000gn/T/tmpumxbs7lg/run", "events": 1, "ranks": [10, 20, 30], "jobs_to_fetch": 3}
+{"recorded": 2, "total": 3, "fetched_this_session": 2, "status_counts": {"ok": 1, "empty": 1}, "seconds": 0.0}
+{"recorded": 3, "total": 3, "fetched_this_session": 3, "status_counts": {"ok": 2, "empty": 1}, "seconds": 1.0}
+DOWNLOAD_COMPLETE {"events": 1, "ranks": [10, 20, 30], "requested_pairs": 3, "status_counts": {"ok": 2, "empty": 1}, "points": 2, "coverage": [{"rank": 10, "requested_events": 1, "downloaded_curves": 1, "empty_events": 0, "invalid_events": 0, "failed_requests": 0, "pending": 0, "points": 1, "curves_with_decreases": 0}, {"rank": 20, "requested_events": 1, "downloaded_curves": 1, "empty_events": 0, "invalid_events": 0, "failed_requests": 0, "pending": 0, "points": 1, "curves_with_decreases": 0}, {"rank": 30, "requested_events": 1, "downloaded_curves": 0, "empty_events": 1, "invalid_events": 0, "failed_requests": 0, "pending": 0, "points": 0, "curves_with_decreases": 0}]}
+ok
+test_top10_tracks_the_boundary_not_the_final_tenth_player (test_download_ranks.RankDownloadTests.test_top10_tracks_the_boundary_not_the_final_tenth_player) ... ok
+test_future_event_final_cannot_change_historical_heat (test_event_features.EventFeatureTests.test_future_event_final_cannot_change_historical_heat) ... ok
+test_peer_features_use_only_the_observed_other_rank_prefix (test_event_features.EventFeatureTests.test_peer_features_use_only_the_observed_other_rank_prefix) ... ok
+test_single_band_and_mixed_participants_are_distinct (test_event_features.EventFeatureTests.test_single_band_and_mixed_participants_are_distinct) ... ok
+test_target_event_other_rank_is_excluded_from_history (test_event_features.EventFeatureTests.test_target_event_other_rank_is_excluded_from_history) ... ok
+test_unreleased_cn_cards_do_not_enter_a_past_snapshot (test_event_features.EventFeatureTests.test_unreleased_cn_cards_do_not_enter_a_past_snapshot) ... ok
+test_before_start_and_after_end_are_rejected (test_forecasting.ForecastTests.test_before_start_and_after_end_are_rejected) ... ok
+test_calibration_uses_finite_sample_log_error_quantile (test_forecasting.ForecastTests.test_calibration_uses_finite_sample_log_error_quantile) ... ok
+test_early_prediction_has_no_calibrated_range (test_forecasting.ForecastTests.test_early_prediction_has_no_calibrated_range) ... ok
+test_future_and_target_calibration_rows_do_not_inflate_range (test_forecasting.ForecastTests.test_future_and_target_calibration_rows_do_not_inflate_range) ... ok
+test_history_uses_dates_and_excludes_both_target_tiers (test_forecasting.ForecastTests.test_history_uses_dates_and_excludes_both_target_tiers) ... ok
+test_insufficient_history_is_rejected (test_forecasting.ForecastTests.test_insufficient_history_is_rejected) ... ok
+test_missing_database_is_not_created (test_forecasting.ForecastTests.test_missing_database_is_not_created) ... ok
+test_missing_target_rank_templates_fail_cleanly (test_forecasting.ForecastTests.test_missing_target_rank_templates_fail_cleanly) ... ok
+test_range_respects_the_current_score (test_forecasting.ForecastTests.test_range_respects_the_current_score) ... ok
+test_repeated_rows_do_not_count_as_independent_events (test_forecasting.ForecastTests.test_repeated_rows_do_not_count_as_independent_events) ... ok
+test_stale_observations_are_rejected (test_forecasting.ForecastTests.test_stale_observations_are_rejected) ... ok
+test_suffix_scores_cannot_change_a_forecast (test_forecasting.ForecastTests.test_suffix_scores_cannot_change_a_forecast) ... ok
+test_templates_without_early_observations_fail_cleanly (test_forecasting.ForecastTests.test_templates_without_early_observations_fail_cleanly) ... /Users/tano/Documents/GitHub/personal/BanG-Dream-Activity-fraction-prediction/.venv/lib/python3.14/site-packages/pandas/core/dtypes/common.py:1825: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x110f222f0>
+  if not all(is_hashable(arg) for arg in args):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/tano/Documents/GitHub/personal/BanG-Dream-Activity-fraction-prediction/.venv/lib/python3.14/site-packages/pandas/core/dtypes/common.py:1825: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x110f21e40>
+  if not all(is_hashable(arg) for arg in args):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/Users/tano/Documents/GitHub/personal/BanG-Dream-Activity-fraction-prediction/.venv/lib/python3.14/site-packages/pandas/core/dtypes/common.py:1825: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x1123c62f0>
+  if not all(is_hashable(arg) for arg in args):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_chronology_and_activity_grouping_are_fixed (test_holdout_dataset.HoldoutDatasetTests.test_chronology_and_activity_grouping_are_fixed) ... /opt/homebrew/Cellar/python@3.14/3.14.8_3/Frameworks/Python.framework/Versions/3.14/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x1108af3d0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_existing_benchmark_is_never_overwritten (test_holdout_dataset.HoldoutDatasetTests.test_existing_benchmark_is_never_overwritten) ... /opt/homebrew/Cellar/python@3.14/3.14.8_3/Frameworks/Python.framework/Versions/3.14/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x1108af100>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_frozen_snapshot_does_not_follow_later_source_updates (test_holdout_dataset.HoldoutDatasetTests.test_frozen_snapshot_does_not_follow_later_source_updates) ... /opt/homebrew/Cellar/python@3.14/3.14.8_3/Frameworks/Python.framework/Versions/3.14/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x1108af2e0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_input_tampering_is_detected (test_holdout_dataset.HoldoutDatasetTests.test_input_tampering_is_detected) ... /opt/homebrew/Cellar/python@3.14/3.14.8_3/Frameworks/Python.framework/Versions/3.14/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x1108af1f0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_prefix_and_peer_inputs_do_not_contain_future_scores (test_holdout_dataset.HoldoutDatasetTests.test_prefix_and_peer_inputs_do_not_contain_future_scores) ... ok
+test_test_labels_require_explicit_final_evaluation_access (test_holdout_dataset.HoldoutDatasetTests.test_test_labels_require_explicit_final_evaluation_access) ... ok
+test_extra_or_nonfinite_predictions_are_rejected (test_holdout_evaluation.HoldoutEvaluationTests.test_extra_or_nonfinite_predictions_are_rejected) ... ok
+test_missing_or_duplicate_predictions_are_rejected (test_holdout_evaluation.HoldoutEvaluationTests.test_missing_or_duplicate_predictions_are_rejected) ... ok
+test_paired_errors_use_frozen_event_identity (test_holdout_evaluation.HoldoutEvaluationTests.test_paired_errors_use_frozen_event_identity) ... ok
+test_primary_metric_weights_events_equally (test_holdout_evaluation.HoldoutEvaluationTests.test_primary_metric_weights_events_equally) ... ok
+test_history_only_uses_training_pool (test_holdout_features.HoldoutFeatureTests.test_history_only_uses_training_pool) ... ok
+test_missing_explicit_peer_does_not_search_full_curves (test_holdout_features.HoldoutFeatureTests.test_missing_explicit_peer_does_not_search_full_curves) ... ok
+test_target_and_later_training_finals_are_excluded (test_holdout_features.HoldoutFeatureTests.test_target_and_later_training_finals_are_excluded) ... ok
+test_training_is_blind_and_saved_models_can_be_scored (test_holdout_pipeline.HoldoutPipelineTests.test_training_is_blind_and_saved_models_can_be_scored) ... ok
+test_extension_keeps_base_cases_and_grouping_without_future_suffixes (test_multirank.MultirankTests.test_extension_keeps_base_cases_and_grouping_without_future_suffixes) ... ok
+test_live_fetch_clips_future_points_and_records_missing_ranks (test_multirank.MultirankTests.test_live_fetch_clips_future_points_and_records_missing_ranks) ... ok
+test_only_eligible_extra_ranks_and_frozen_events_enter_dataset (test_multirank.MultirankTests.test_only_eligible_extra_ranks_and_frozen_events_enter_dataset) ... ok
+test_post_end_polling_does_not_hide_valid_final_observation (test_multirank.MultirankTests.test_post_end_polling_does_not_hide_valid_final_observation) ... ok
+test_prefix_features_ignore_future_suffix_and_training_events_have_equal_weight (test_multirank.MultirankTests.test_prefix_features_ignore_future_suffix_and_training_events_have_equal_weight) ... ok
+test_real_small_pipeline_is_sealed_and_scores_exact_cases (test_multirank.MultirankTests.test_real_small_pipeline_is_sealed_and_scores_exact_cases) ... {"frozen_dataset_id": "d0ccf9f70aee19ad1b2152925e7afe8692d67f4a6e539d558f87e2cd33329bbb", "download_requested_pairs": 3, "download_status_counts": {"ok": 2, "empty": 1}, "normalized_points_verified_against_raw": 2, "top10_complete_snapshots_independently_verified": 1, "database_rows": 2, "database_nonempty_curves": 2, "database_points": 3, "unchanged_existing_rows": 0, "sqlite_integrity": "ok", "logical_keys_unique": true, "all_imported_curves_match_source_plus_backup": true, "zero_score_points": 0, "curves_with_score_decreases": 0, "source_sha256": "3177f0365eef07f003d29e13fb95c268f4454b47b9e475300a45a2b668bd79bb", "database_logical_sha256": "8b40cf3c5d1dd411e4117f12638dd3c0970e1aa0dda749b3da7b828eb5fc345f"}
+{"method": "linear", "validation": {"event_macro_mape_pct": 0.004500399784757384, "case_mape_pct": 0.0045003997847573845, "median_ape_pct": 0.0016665833374937286, "p90_ape_pct": 0.014999250037498125, "mae_ep": 0.9001249609493243, "rmse_ep": 1.4234228242805171, "bias_pct": 0.004500399784757384, "events": 3, "cases": 45}}
+{"method": "catboost_rank", "validation": {"event_macro_mape_pct": 0.005332795335965764, "case_mape_pct": 0.005332795335965764, "median_ape_pct": 0.006033496456879653, "p90_ape_pct": 0.00671431950268171, "mae_ep": 1.0666123951465125, "rmse_ep": 1.1152306178841114, "bias_pct": -0.00264706753489308, "events": 3, "cases": 45}}
+{"method": "catboost_context", "validation": {"event_macro_mape_pct": 0.0052720708764231365, "case_mape_pct": 0.0052720708764231365, "median_ape_pct": 0.006026276293448207, "p90_ape_pct": 0.0065365262349496075, "mae_ep": 1.0544668959933916, "rmse_ep": 1.1031904823660263, "bias_pct": -0.0026756043454317577, "events": 3, "cases": 45}}
+{"event_macro_mape_pct": 0.004500399784757384, "case_mape_pct": 0.0045003997847573845, "median_ape_pct": 0.0016665833374937286, "p90_ape_pct": 0.014999250037498125, "mae_ep": 0.9001249609493243, "rmse_ep": 1.4234228242805171, "bias_pct": 0.004500399784757384, "events": 3, "cases": 45}
+ok
+test_replay_time_is_explicit_and_cannot_be_in_future (test_multirank.MultirankTests.test_replay_time_is_explicit_and_cannot_be_in_future) ... ok
+test_unlisted_archive_curves_cannot_enter_dataset (test_multirank.MultirankTests.test_unlisted_archive_curves_cannot_enter_dataset) ... ok
+test_baseline_cli_preserves_its_two_rank_training_scope (test_multirank_cli_compatibility.MultiRankCLICompatibilityTests.test_baseline_cli_preserves_its_two_rank_training_scope) ... ok
+test_context_cli_uses_exact_partner_and_preserves_training_scope (test_multirank_cli_compatibility.MultiRankCLICompatibilityTests.test_context_cli_uses_exact_partner_and_preserves_training_scope) ... <frozen importlib._bootstrap_external>:511: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x1123c4130>
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+<frozen importlib._bootstrap_external>:511: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x1123c44f0>
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+<frozen importlib._bootstrap_external>:511: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x1123c72e0>
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+<frozen importlib._bootstrap_external>:511: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x1123c7f10>
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_api_points_are_sorted_and_identical_duplicates_are_collapsed (test_predict_cli.PredictCommandTests.test_api_points_are_sorted_and_identical_duplicates_are_collapsed) ... ok
+test_calibration_database_mismatch_suppresses_range (test_predict_cli.PredictCommandTests.test_calibration_database_mismatch_suppresses_range) ... ok
+test_calibration_model_mismatch_suppresses_range (test_predict_cli.PredictCommandTests.test_calibration_model_mismatch_suppresses_range) ... ok
+test_changing_categorical_features_invalidates_calibration (test_predict_cli.PredictCommandTests.test_changing_categorical_features_invalidates_calibration) ... ok
+test_empty_http_payload_is_rejected (test_predict_cli.PredictCommandTests.test_empty_http_payload_is_rejected) ... ok
+test_http_result_false_is_not_used_as_a_forecast (test_predict_cli.PredictCommandTests.test_http_result_false_is_not_used_as_a_forecast) ... ok
+test_invalid_as_of_exits_without_a_traceback (test_predict_cli.PredictCommandTests.test_invalid_as_of_exits_without_a_traceback) ... ok
+test_naive_dates_use_china_time (test_predict_cli.PredictCommandTests.test_naive_dates_use_china_time) ... ok
+test_offline_json_replay_is_readonly_and_works_from_another_folder (test_predict_cli.PredictCommandTests.test_offline_json_replay_is_readonly_and_works_from_another_folder) ... ok
+test_unavailable_calibration_does_not_prevent_point_prediction (test_predict_cli.PredictCommandTests.test_unavailable_calibration_does_not_prevent_point_prediction) ... ok
+test_development_is_train_validation_only_and_sealed (test_quality_irregular.IrregularTests.test_development_is_train_validation_only_and_sealed) ... ok
+test_missing_peer_and_padding_are_explicit (test_quality_irregular.IrregularTests.test_missing_peer_and_padding_are_explicit) ... ok
+test_neural_solver_gradient_padding_and_replay (test_quality_irregular.IrregularTests.test_neural_solver_gradient_padding_and_replay) ... ok
+test_observed_nodes_ignore_future_preserve_endpoints_and_units (test_quality_irregular.IrregularTests.test_observed_nodes_ignore_future_preserve_endpoints_and_units) ... ok
+test_quality_unknown_shape_cannot_create_a_shape_deviation (test_quality_irregular.QualityHierarchyTests.test_quality_unknown_shape_cannot_create_a_shape_deviation) ... ok
+test_type_expert_shrinkage_counts_events_and_preserves_global_weights (test_quality_irregular.QualityHierarchyTests.test_type_expert_shrinkage_counts_events_and_preserves_global_weights) ... ok
+test_changed_dependency_versions_are_rejected (test_relationship_analysis.RelationshipTests.test_changed_dependency_versions_are_rejected) ... ok
+test_duplicate_snapshots_do_not_create_independent_evidence (test_relationship_analysis.RelationshipTests.test_duplicate_snapshots_do_not_create_independent_evidence) ... ok
+test_feature_values_ignore_target_and_peer_future (test_relationship_analysis.RelationshipTests.test_feature_values_ignore_target_and_peer_future) ... ok
+test_invariant_dynamics_survive_score_unit_change (test_relationship_analysis.RelationshipTests.test_invariant_dynamics_survive_score_unit_change) ... ok
+test_missing_peer_interactions_use_imputed_main_effect (test_relationship_analysis.RelationshipTests.test_missing_peer_interactions_use_imputed_main_effect) ... ok
+test_rank_experts_slice_global_activity_weights (test_relationship_analysis.RelationshipTests.test_rank_experts_slice_global_activity_weights) ... ok
+test_remaining_rate_prediction_converges_to_current_at_end (test_relationship_analysis.RelationshipTests.test_remaining_rate_prediction_converges_to_current_at_end) ... ok
+test_training_activity_weights_remain_equal (test_relationship_analysis.RelationshipTests.test_training_activity_weights_remain_equal) ... ok
+test_both_timescales_ignore_future_and_score_units (test_structured_neural.PairedPrefixTests.test_both_timescales_ignore_future_and_score_units) ... ok
+test_missing_peer_is_masked_and_slot_order_is_canonical (test_structured_neural.PairedPrefixTests.test_missing_peer_is_masked_and_slot_order_is_canonical) ... ok
+test_thinning_preserves_forecast_origin_and_target (test_structured_neural.PairedPrefixTests.test_thinning_preserves_forecast_origin_and_target) ... ok
+test_architectures_backpropagate_and_reload_with_missing_peers (test_structured_neural.StructuredNetworkTests.test_architectures_backpropagate_and_reload_with_missing_peers) ... ok
+test_checkpoint_selection_prediction_is_blind_and_sealed (test_structured_neural_pipeline.StructuredPipelineTests.test_checkpoint_selection_prediction_is_blind_and_sealed) ... ok
+
+----------------------------------------------------------------------
+Ran 88 tests in 63.633s
+
+OK

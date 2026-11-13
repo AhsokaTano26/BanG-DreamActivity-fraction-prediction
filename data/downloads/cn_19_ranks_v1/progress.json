@@ -1,0 +1,11 @@
+{
+  "recorded": 6232,
+  "total": 6232,
+  "fetched_this_session": 3946,
+  "status_counts": {
+    "ok": 3085,
+    "empty": 3145,
+    "invalid": 2
+  },
+  "seconds": 1983.2
+}

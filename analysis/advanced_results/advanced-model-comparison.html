@@ -1,0 +1,112 @@
+<section id="bangdream-advanced-models" data-viz-composition>
+  <div data-viz-container></div>
+  <script type="application/json" data-viz-chart>
+    {
+  "id": "historical-neural-comparison",
+  "title": "历史数据训练：各方法预测误差",
+  "description": "36期国服、342个共同预测场景；四段时间测试。神经网络显示三种子集成，误差越低越好。",
+  "summary": "TCN与LightGBM平均误差均约8.02%；当前36期样本未显示二者有明确差距。",
+  "height": 580,
+  "spec": {
+    "type": "horizontalBar",
+    "x": "平均绝对百分比误差（%）",
+    "y": "模型",
+    "xLabel": "平均绝对百分比误差（%）",
+    "sortOrder": "original",
+    "showValues": true,
+    "valueFormat": {
+      "style": "decimal",
+      "maximumFractionDigits": 2
+    }
+  },
+  "columns": [
+    "模型",
+    "平均绝对百分比误差（%）"
+  ],
+  "rows": [
+    [
+      "TCN·三种子集成",
+      8.02268048220082
+    ],
+    [
+      "LightGBM·序列残差",
+      8.023886171267437
+    ],
+    [
+      "XGBoost·序列残差",
+      8.040225624818548
+    ],
+    [
+      "TSMixer·三种子集成",
+      8.047036092258441
+    ],
+    [
+      "CatBoost·序列残差",
+      8.117530960307976
+    ],
+    [
+      "PatchTST·三种子集成",
+      8.126566161906618
+    ],
+    [
+      "ExtraTrees·序列残差",
+      8.150031053676429
+    ],
+    [
+      "TCN·旧数据预训练后微调",
+      8.178740296713569
+    ],
+    [
+      "GRU＋TCN＋DLinear组合",
+      8.235565510661948
+    ],
+    [
+      "TCN·旧数据降权联合训练",
+      8.315932428729571
+    ],
+    [
+      "LSTM·三种子集成",
+      8.346985293890027
+    ],
+    [
+      "DLinear混合适配·三种子集成",
+      8.346993743712801
+    ],
+    [
+      "iTransformer·三种子集成",
+      8.410659633745928
+    ],
+    [
+      "GRU·三种子集成",
+      8.468774676720757
+    ],
+    [
+      "Transformer·三种子集成",
+      8.516858642544792
+    ],
+    [
+      "MLP·三种子集成",
+      8.597755621130702
+    ],
+    [
+      "XGBoost·表格特征",
+      9.063017455263882
+    ],
+    [
+      "历史相似曲线",
+      10.127092371557355
+    ],
+    [
+      "平均速度外推",
+      15.588755471918859
+    ]
+  ]
+}
+  </script>
+</section>
+<script type="module">
+  import { mountChart } from "https://persistent.oaistatic.com/plugins/visualize/charts/1.1.6/element.js";
+  const root = document.getElementById("bangdream-advanced-models");
+  const config = JSON.parse(root.querySelector("[data-viz-chart]").textContent);
+  mountChart(root.querySelector("[data-viz-container]"), config);
+</script>

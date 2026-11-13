@@ -1,0 +1,84 @@
+{
+  "selected_recipe": "family_mean",
+  "candidates": [
+    "hold_current",
+    "linear",
+    "retrieval__retrieval_control",
+    "retrieval__retrieval_features",
+    "retrieval__retrieval_residual",
+    "hierarchy__hierarchy_static_context",
+    "hierarchy__hierarchy_additive_shrinkage",
+    "hierarchy__hierarchy_phase_shrinkage",
+    "growth__growth_direct",
+    "growth__growth_progress",
+    "growth__growth_dual_clock",
+    "family_mean",
+    "blend_control_50"
+  ],
+  "validation_scores": {
+    "hold_current": 43.0946402336975,
+    "linear": 16.024958410671157,
+    "retrieval__retrieval_control": 7.1666825462469985,
+    "retrieval__retrieval_features": 7.0544083344604,
+    "retrieval__retrieval_residual": 7.007363255685667,
+    "hierarchy__hierarchy_static_context": 8.359687631483357,
+    "hierarchy__hierarchy_additive_shrinkage": 7.324760915123267,
+    "hierarchy__hierarchy_phase_shrinkage": 7.322511556757813,
+    "growth__growth_direct": 7.941429189447725,
+    "growth__growth_progress": 7.1021120302184055,
+    "growth__growth_dual_clock": 6.584861140059008,
+    "family_mean": 6.04718846032001,
+    "blend_control_50": 6.519389984797574
+  },
+  "family_best": {
+    "retrieval": "retrieval__retrieval_residual",
+    "hierarchy": "hierarchy__hierarchy_phase_shrinkage",
+    "growth": "growth__growth_dual_clock"
+  },
+  "combination_specs": {
+    "family_mean": {
+      "kind": "mean",
+      "members": [
+        "retrieval__retrieval_residual",
+        "hierarchy__hierarchy_phase_shrinkage",
+        "growth__growth_dual_clock"
+      ]
+    },
+    "blend_control_50": {
+      "kind": "mean",
+      "members": [
+        "growth__growth_dual_clock",
+        "retrieval__retrieval_control"
+      ]
+    }
+  },
+  "reported_methods": [
+    "hold_current",
+    "linear",
+    "retrieval__retrieval_control",
+    "retrieval__retrieval_features",
+    "retrieval__retrieval_residual",
+    "hierarchy__hierarchy_static_context",
+    "hierarchy__hierarchy_additive_shrinkage",
+    "hierarchy__hierarchy_phase_shrinkage",
+    "growth__growth_direct",
+    "growth__growth_direct__seed_42",
+    "growth__growth_direct__seed_123",
+    "growth__growth_direct__seed_2026",
+    "growth__growth_progress",
+    "growth__growth_progress__seed_42",
+    "growth__growth_progress__seed_123",
+    "growth__growth_progress__seed_2026",
+    "growth__growth_dual_clock",
+    "growth__growth_dual_clock__seed_42",
+    "growth__growth_dual_clock__seed_123",
+    "growth__growth_dual_clock__seed_2026",
+    "family_mean",
+    "blend_control_50"
+  ],
+  "test_labels_used_for_selection": false,
+  "refit_after_selection": false,
+  "criterion": "validation event-macro MAPE; individual NN seeds excluded",
+  "run_id": "c165b05537aa728f65d41e6737cd9510b2472e86820b912c2722ff306186dd59",
+  "dataset_id": "d0ccf9f70aee19ad1b2152925e7afe8692d67f4a6e539d558f87e2cd33329bbb"
+}

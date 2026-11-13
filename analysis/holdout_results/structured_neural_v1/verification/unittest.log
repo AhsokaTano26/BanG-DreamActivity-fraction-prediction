@@ -1,0 +1,78 @@
+test_all_architectures_have_finite_predictions_and_gradients (test_advanced_models.AdvancedModelTests.test_all_architectures_have_finite_predictions_and_gradients) ... ok
+test_sequence_representation_is_invariant_to_future_scores (test_advanced_models.AdvancedModelTests.test_sequence_representation_is_invariant_to_future_scores) ... ok
+test_metadata_aware_replay_outputs_a_readonly_point_forecast (test_context_cli.ContextCommandTests.test_metadata_aware_replay_outputs_a_readonly_point_forecast) ... ok
+test_future_event_final_cannot_change_historical_heat (test_event_features.EventFeatureTests.test_future_event_final_cannot_change_historical_heat) ... ok
+test_peer_features_use_only_the_observed_other_rank_prefix (test_event_features.EventFeatureTests.test_peer_features_use_only_the_observed_other_rank_prefix) ... ok
+test_single_band_and_mixed_participants_are_distinct (test_event_features.EventFeatureTests.test_single_band_and_mixed_participants_are_distinct) ... ok
+test_target_event_other_rank_is_excluded_from_history (test_event_features.EventFeatureTests.test_target_event_other_rank_is_excluded_from_history) ... ok
+test_unreleased_cn_cards_do_not_enter_a_past_snapshot (test_event_features.EventFeatureTests.test_unreleased_cn_cards_do_not_enter_a_past_snapshot) ... ok
+test_before_start_and_after_end_are_rejected (test_forecasting.ForecastTests.test_before_start_and_after_end_are_rejected) ... ok
+test_calibration_uses_finite_sample_log_error_quantile (test_forecasting.ForecastTests.test_calibration_uses_finite_sample_log_error_quantile) ... ok
+test_early_prediction_has_no_calibrated_range (test_forecasting.ForecastTests.test_early_prediction_has_no_calibrated_range) ... ok
+test_future_and_target_calibration_rows_do_not_inflate_range (test_forecasting.ForecastTests.test_future_and_target_calibration_rows_do_not_inflate_range) ... ok
+test_history_uses_dates_and_excludes_both_target_tiers (test_forecasting.ForecastTests.test_history_uses_dates_and_excludes_both_target_tiers) ... ok
+test_insufficient_history_is_rejected (test_forecasting.ForecastTests.test_insufficient_history_is_rejected) ... ok
+test_missing_database_is_not_created (test_forecasting.ForecastTests.test_missing_database_is_not_created) ... ok
+test_missing_target_rank_templates_fail_cleanly (test_forecasting.ForecastTests.test_missing_target_rank_templates_fail_cleanly) ... ok
+test_range_respects_the_current_score (test_forecasting.ForecastTests.test_range_respects_the_current_score) ... ok
+test_repeated_rows_do_not_count_as_independent_events (test_forecasting.ForecastTests.test_repeated_rows_do_not_count_as_independent_events) ... ok
+test_stale_observations_are_rejected (test_forecasting.ForecastTests.test_stale_observations_are_rejected) ... ok
+test_suffix_scores_cannot_change_a_forecast (test_forecasting.ForecastTests.test_suffix_scores_cannot_change_a_forecast) ... ok
+test_templates_without_early_observations_fail_cleanly (test_forecasting.ForecastTests.test_templates_without_early_observations_fail_cleanly) ... ok
+test_chronology_and_activity_grouping_are_fixed (test_holdout_dataset.HoldoutDatasetTests.test_chronology_and_activity_grouping_are_fixed) ... /opt/homebrew/Cellar/python@3.14/3.14.8_3/Frameworks/Python.framework/Versions/3.14/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x1119d7e20>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_existing_benchmark_is_never_overwritten (test_holdout_dataset.HoldoutDatasetTests.test_existing_benchmark_is_never_overwritten) ... /opt/homebrew/Cellar/python@3.14/3.14.8_3/Frameworks/Python.framework/Versions/3.14/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x110b5d8a0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_frozen_snapshot_does_not_follow_later_source_updates (test_holdout_dataset.HoldoutDatasetTests.test_frozen_snapshot_does_not_follow_later_source_updates) ... /opt/homebrew/Cellar/python@3.14/3.14.8_3/Frameworks/Python.framework/Versions/3.14/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x110fc3880>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_input_tampering_is_detected (test_holdout_dataset.HoldoutDatasetTests.test_input_tampering_is_detected) ... /opt/homebrew/Cellar/python@3.14/3.14.8_3/Frameworks/Python.framework/Versions/3.14/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x110b5d7b0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_prefix_and_peer_inputs_do_not_contain_future_scores (test_holdout_dataset.HoldoutDatasetTests.test_prefix_and_peer_inputs_do_not_contain_future_scores) ... /opt/homebrew/Cellar/python@3.14/3.14.8_3/Frameworks/Python.framework/Versions/3.14/lib/python3.14/ast.py:46: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x110fc36a0>
+  return compile(source, filename, mode, flags,
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_test_labels_require_explicit_final_evaluation_access (test_holdout_dataset.HoldoutDatasetTests.test_test_labels_require_explicit_final_evaluation_access) ... ok
+test_extra_or_nonfinite_predictions_are_rejected (test_holdout_evaluation.HoldoutEvaluationTests.test_extra_or_nonfinite_predictions_are_rejected) ... ok
+test_missing_or_duplicate_predictions_are_rejected (test_holdout_evaluation.HoldoutEvaluationTests.test_missing_or_duplicate_predictions_are_rejected) ... ok
+test_paired_errors_use_frozen_event_identity (test_holdout_evaluation.HoldoutEvaluationTests.test_paired_errors_use_frozen_event_identity) ... ok
+test_primary_metric_weights_events_equally (test_holdout_evaluation.HoldoutEvaluationTests.test_primary_metric_weights_events_equally) ... ok
+test_history_only_uses_training_pool (test_holdout_features.HoldoutFeatureTests.test_history_only_uses_training_pool) ... ok
+test_missing_explicit_peer_does_not_search_full_curves (test_holdout_features.HoldoutFeatureTests.test_missing_explicit_peer_does_not_search_full_curves) ... ok
+test_target_and_later_training_finals_are_excluded (test_holdout_features.HoldoutFeatureTests.test_target_and_later_training_finals_are_excluded) ... ok
+test_training_is_blind_and_saved_models_can_be_scored (test_holdout_pipeline.HoldoutPipelineTests.test_training_is_blind_and_saved_models_can_be_scored) ... ok
+test_api_points_are_sorted_and_identical_duplicates_are_collapsed (test_predict_cli.PredictCommandTests.test_api_points_are_sorted_and_identical_duplicates_are_collapsed) ... ok
+test_calibration_database_mismatch_suppresses_range (test_predict_cli.PredictCommandTests.test_calibration_database_mismatch_suppresses_range) ... ok
+test_calibration_model_mismatch_suppresses_range (test_predict_cli.PredictCommandTests.test_calibration_model_mismatch_suppresses_range) ... ok
+test_changing_categorical_features_invalidates_calibration (test_predict_cli.PredictCommandTests.test_changing_categorical_features_invalidates_calibration) ... ok
+test_empty_http_payload_is_rejected (test_predict_cli.PredictCommandTests.test_empty_http_payload_is_rejected) ... ok
+test_http_result_false_is_not_used_as_a_forecast (test_predict_cli.PredictCommandTests.test_http_result_false_is_not_used_as_a_forecast) ... ok
+test_invalid_as_of_exits_without_a_traceback (test_predict_cli.PredictCommandTests.test_invalid_as_of_exits_without_a_traceback) ... ok
+test_naive_dates_use_china_time (test_predict_cli.PredictCommandTests.test_naive_dates_use_china_time) ... ok
+test_offline_json_replay_is_readonly_and_works_from_another_folder (test_predict_cli.PredictCommandTests.test_offline_json_replay_is_readonly_and_works_from_another_folder) ... ok
+test_unavailable_calibration_does_not_prevent_point_prediction (test_predict_cli.PredictCommandTests.test_unavailable_calibration_does_not_prevent_point_prediction) ... ok
+test_changed_dependency_versions_are_rejected (test_relationship_analysis.RelationshipTests.test_changed_dependency_versions_are_rejected) ... ok
+test_duplicate_snapshots_do_not_create_independent_evidence (test_relationship_analysis.RelationshipTests.test_duplicate_snapshots_do_not_create_independent_evidence) ... ok
+test_feature_values_ignore_target_and_peer_future (test_relationship_analysis.RelationshipTests.test_feature_values_ignore_target_and_peer_future) ... ok
+test_invariant_dynamics_survive_score_unit_change (test_relationship_analysis.RelationshipTests.test_invariant_dynamics_survive_score_unit_change) ... ok
+test_missing_peer_interactions_use_imputed_main_effect (test_relationship_analysis.RelationshipTests.test_missing_peer_interactions_use_imputed_main_effect) ... ok
+test_rank_experts_slice_global_activity_weights (test_relationship_analysis.RelationshipTests.test_rank_experts_slice_global_activity_weights) ... ok
+test_remaining_rate_prediction_converges_to_current_at_end (test_relationship_analysis.RelationshipTests.test_remaining_rate_prediction_converges_to_current_at_end) ... ok
+test_training_activity_weights_remain_equal (test_relationship_analysis.RelationshipTests.test_training_activity_weights_remain_equal) ... ok
+test_both_timescales_ignore_future_and_score_units (test_structured_neural.PairedPrefixTests.test_both_timescales_ignore_future_and_score_units) ... ok
+test_missing_peer_is_masked_and_slot_order_is_canonical (test_structured_neural.PairedPrefixTests.test_missing_peer_is_masked_and_slot_order_is_canonical) ... ok
+test_thinning_preserves_forecast_origin_and_target (test_structured_neural.PairedPrefixTests.test_thinning_preserves_forecast_origin_and_target) ... ok
+test_architectures_backpropagate_and_reload_with_missing_peers (test_structured_neural.StructuredNetworkTests.test_architectures_backpropagate_and_reload_with_missing_peers) ... ok
+test_checkpoint_selection_prediction_is_blind_and_sealed (test_structured_neural_pipeline.StructuredPipelineTests.test_checkpoint_selection_prediction_is_blind_and_sealed) ... ok
+
+----------------------------------------------------------------------
+Ran 58 tests in 24.502s
+
+OK

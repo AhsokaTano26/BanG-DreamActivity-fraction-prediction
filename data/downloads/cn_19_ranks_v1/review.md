@@ -1,0 +1,1 @@
+Independent review completed before import. Frozen-path, WAL/concurrent-write detection and receipt-recovery issues were fixed and tested. Old two-rank CLI compatibility reviewed. Post-import 80-test suite passed. Full raw-to-database audit passed; immutable holdout_v1 fingerprint unchanged. No power-loss durability claim.

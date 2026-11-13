@@ -1,0 +1,19 @@
+{
+  "target_coverage": 0.8,
+  "evaluated_snapshots": 342,
+  "covered": 256,
+  "observed_coverage": 0.7485380116959064,
+  "minimum_calibration_events": 26,
+  "by_rank": {
+    "1000": {
+      "n": 171,
+      "covered": 116,
+      "observed_coverage": 0.6783625730994152
+    },
+    "2000": {
+      "n": 171,
+      "covered": 140,
+      "observed_coverage": 0.8187134502923976
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{"phase": "cv", "fold": 1, "method": "retrieval__retrieval_control", "event_mape": 8.589209597993452, "seconds": 1.61}
+{"phase": "cv", "fold": 1, "method": "retrieval__retrieval_features", "event_mape": 7.9100174754814665, "seconds": 3.32}
+{"phase": "cv", "fold": 1, "method": "retrieval__retrieval_residual", "event_mape": 4.335676446556491, "seconds": 3.34}
+{"phase": "cv", "fold": 1, "method": "hierarchy__hierarchy_static_context", "event_mape": 3.726461070184778, "seconds": 1.41}
+{"phase": "cv", "fold": 1, "method": "hierarchy__hierarchy_additive_shrinkage", "event_mape": 6.820467459225874, "seconds": 5.43}
+{"phase": "cv", "fold": 1, "method": "hierarchy__hierarchy_phase_shrinkage", "event_mape": 6.783490422197354, "seconds": 5.4}
+{"phase": "cv", "fold": 1, "method": "growth__growth_direct", "event_mape": 6.320307009356675, "seconds": 2.73}
+{"phase": "cv", "fold": 1, "method": "growth__growth_progress", "event_mape": 8.651375011757235, "seconds": 1.01}
+{"phase": "cv", "fold": 1, "method": "growth__growth_dual_clock", "event_mape": 8.469480008479366, "seconds": 1.08}
+{"phase": "cv", "fold": 2, "method": "retrieval__retrieval_control", "event_mape": 4.716741148804565, "seconds": 1.5}
+{"phase": "cv", "fold": 2, "method": "retrieval__retrieval_features", "event_mape": 4.399136610766546, "seconds": 3.81}
+{"phase": "cv", "fold": 2, "method": "retrieval__retrieval_residual", "event_mape": 4.064509327805124, "seconds": 3.73}
+{"phase": "cv", "fold": 2, "method": "hierarchy__hierarchy_static_context", "event_mape": 3.723700186980125, "seconds": 1.45}
+{"phase": "cv", "fold": 2, "method": "hierarchy__hierarchy_additive_shrinkage", "event_mape": 3.236576103437083, "seconds": 5.57}
+{"phase": "cv", "fold": 2, "method": "hierarchy__hierarchy_phase_shrinkage", "event_mape": 3.210145507988085, "seconds": 5.54}
+{"phase": "cv", "fold": 2, "method": "growth__growth_direct", "event_mape": 7.436867438341113, "seconds": 1.36}
+{"phase": "cv", "fold": 2, "method": "growth__growth_progress", "event_mape": 4.695674665938523, "seconds": 1.32}
+{"phase": "cv", "fold": 2, "method": "growth__growth_dual_clock", "event_mape": 4.297297564340829, "seconds": 1.31}
+{"phase": "cv", "fold": 3, "method": "retrieval__retrieval_control", "event_mape": 5.531532534270255, "seconds": 1.5}
+{"phase": "cv", "fold": 3, "method": "retrieval__retrieval_features", "event_mape": 6.235633869695098, "seconds": 4.88}
+{"phase": "cv", "fold": 3, "method": "retrieval__retrieval_residual", "event_mape": 6.797963186928106, "seconds": 4.95}
+{"phase": "cv", "fold": 3, "method": "hierarchy__hierarchy_static_context", "event_mape": 5.180203903419195, "seconds": 1.63}
+{"phase": "cv", "fold": 3, "method": "hierarchy__hierarchy_additive_shrinkage", "event_mape": 7.1199285020681105, "seconds": 5.7}
+{"phase": "cv", "fold": 3, "method": "hierarchy__hierarchy_phase_shrinkage", "event_mape": 7.0795356485623016, "seconds": 5.67}
+{"phase": "cv", "fold": 3, "method": "growth__growth_direct", "event_mape": 11.448410006710304, "seconds": 1.48}
+{"phase": "cv", "fold": 3, "method": "growth__growth_progress", "event_mape": 7.534279565012447, "seconds": 1.55}
+{"phase": "cv", "fold": 3, "method": "growth__growth_dual_clock", "event_mape": 6.562608272120395, "seconds": 1.74}
+{"method": "retrieval__retrieval_control", "train_fit_mape": 3.3854890352334652, "validation_mape": 8.764589244201417, "seconds": 2.15}
+{"method": "retrieval__retrieval_features", "train_fit_mape": 3.0397897793964606, "validation_mape": 8.636144448392166, "seconds": 10.25}
+{"method": "retrieval__retrieval_residual", "train_fit_mape": 3.193501272588268, "validation_mape": 7.374409072620442, "seconds": 10.58}
+{"method": "hierarchy__hierarchy_static_context", "train_fit_mape": 1.972444088989085, "validation_mape": 8.230422016090554, "seconds": 1.55}
+{"method": "hierarchy__hierarchy_additive_shrinkage", "train_fit_mape": 3.434926525606586, "validation_mape": 9.018406917092593, "seconds": 5.76}
+{"method": "hierarchy__hierarchy_phase_shrinkage", "train_fit_mape": 3.2851886666724246, "validation_mape": 8.927343915078405, "seconds": 6.21}
+{"method": "growth__growth_direct", "train_fit_mape": 4.584345521650455, "validation_mape": 10.863171967781645, "seconds": 2.23}
+{"method": "growth__growth_progress", "train_fit_mape": 4.265909411952836, "validation_mape": 8.852049214693523, "seconds": 2.26}
+{"method": "growth__growth_dual_clock", "train_fit_mape": 3.9632743849069505, "validation_mape": 8.755482756554144, "seconds": 2.17}
+SELECTED family_mean

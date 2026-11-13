@@ -1,0 +1,41 @@
+{
+  "scope": "train-only rolling feasibility pilot; not fixed holdout score",
+  "query_split": "train",
+  "warmup": "first floor(N/2) training events by actual start",
+  "evaluation_blocks": "remaining training events, three chronological np.array_split blocks",
+  "history": "same rank, different event, history.end < query.start",
+  "history_prefix": "cut at query actual progress; >=4 points, positive current, <=60min lag",
+  "shape_fractions": [
+    0.25,
+    0.5,
+    0.75,
+    0.9
+  ],
+  "shape_distance": "mean absolute normalized-score difference over >=2 jointly observed fractions",
+  "variants": {
+    "linear": {
+      "formula": "current / actual_progress"
+    },
+    "shape_k5": {
+      "k": 5,
+      "scale_weight": 0.0,
+      "type_weight": 0.0
+    },
+    "shape_scale_type_k5": {
+      "k": 5,
+      "scale_weight": 0.15,
+      "type_weight": 0.2
+    },
+    "shape_scale_type_k10": {
+      "k": 10,
+      "scale_weight": 0.15,
+      "type_weight": 0.2
+    }
+  },
+  "scale_distance": "absolute log(query_current / historical_matched_current)",
+  "type_distance": "0 if equal else 1",
+  "aggregation": "query_current * median(history_final / historical_matched_current), equal history-event weight",
+  "fallback": "linear if fewer than k eligible neighbors; no query deletion",
+  "fit_or_tuning": "none; all three variants fixed before scoring",
+  "metrics": "case averages within event, then equal average over events; physical cases unique overall"
+}

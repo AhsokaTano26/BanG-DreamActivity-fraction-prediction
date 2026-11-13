@@ -1,0 +1,9 @@
+{
+  "method": "lightgbm_static",
+  "backend": "lightgbm",
+  "mode": "static",
+  "seconds": 1.2761394159751944,
+  "checkpoint_sha256": "05cf609cae12849b4b436db3817273e011636167a5d8dd6a667b52d5062a1ba6",
+  "run_id": "aef5892fd06e218af95c2a93610eae2ec22438cc31833cde189346be6885e2e8",
+  "prediction_sha256": "81931dd71ef22b8b07b8b0258193f68fe20cddc0709108766b7db356def5b316"
+}

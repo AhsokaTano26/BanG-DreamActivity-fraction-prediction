@@ -1,0 +1,26 @@
+{
+  "event_id": 328,
+  "server": "中国大陆",
+  "rank": 1000,
+  "event_type": "live_try",
+  "as_of": "2026-11-10T23:12:14.278000+08:00",
+  "observed_at": "2026-11-10T22:45:07+08:00",
+  "event_end": "2026-11-11T22:59:59+08:00",
+  "progress": 0.8425466135400675,
+  "current_ep": 2527640,
+  "remaining_hours": 23.79575611111111,
+  "predicted_final_ep": 3501106,
+  "analog_final_ep": 3815000,
+  "training_events": 102,
+  "training_curves": 204,
+  "historical_error_range": {
+    "lower_ep": 3078403.979371284,
+    "upper_ep": 3981850.9919767394,
+    "coverage_target": 0.8,
+    "calibration_events": 60,
+    "stage": "24h remaining"
+  },
+  "notes": [
+    "范围来自历史误差，目标覆盖 80%；未来活动的实际覆盖率可能变化。"
+  ]
+}

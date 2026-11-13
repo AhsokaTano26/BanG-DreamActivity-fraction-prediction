@@ -1,0 +1,215 @@
+{
+  "dataset_id": "1f76f39af8151bba185496411bbcee064b16a4c5aca5c515c1d957a5056fe854",
+  "dataset_directory": "/Users/tano/Documents/GitHub/personal/BanG-Dream-Activity-fraction-prediction/data/temporal_holdout_v2_t1000_t2000",
+  "recipes": [
+    {
+      "family": "research_fusion",
+      "algorithm": "catboost",
+      "loss": "RMSE",
+      "iterations": 800,
+      "depth": 5,
+      "learning_rate": 0.035,
+      "l2_leaf_reg": 12.0,
+      "random_seed": 42,
+      "threads": 2,
+      "rank_heads": false,
+      "gate": "constant",
+      "paired_weight": 0.5,
+      "progress_edges": [
+        0.25,
+        0.9
+      ],
+      "progress_weights": [
+        0.65,
+        0.45,
+        0.25
+      ],
+      "peer_age_scale_hours": 3.0,
+      "correction_limit_log": 0.47000362924573563,
+      "missing_replica_weight": 0.25,
+      "n_estimators": 500,
+      "min_samples_leaf": 5,
+      "max_features": 0.75,
+      "name": "fusion_cat_rmse_constant"
+    },
+    {
+      "family": "research_fusion",
+      "algorithm": "catboost",
+      "loss": "RMSE",
+      "iterations": 800,
+      "depth": 5,
+      "learning_rate": 0.035,
+      "l2_leaf_reg": 12.0,
+      "random_seed": 42,
+      "threads": 2,
+      "rank_heads": false,
+      "gate": "progress",
+      "paired_weight": 0.5,
+      "progress_edges": [
+        0.25,
+        0.9
+      ],
+      "progress_weights": [
+        0.65,
+        0.45,
+        0.25
+      ],
+      "peer_age_scale_hours": 3.0,
+      "correction_limit_log": 0.47000362924573563,
+      "missing_replica_weight": 0.25,
+      "n_estimators": 500,
+      "min_samples_leaf": 5,
+      "max_features": 0.75,
+      "name": "fusion_cat_rmse_progress"
+    },
+    {
+      "family": "research_fusion",
+      "algorithm": "catboost",
+      "loss": "MAE",
+      "iterations": 800,
+      "depth": 5,
+      "learning_rate": 0.035,
+      "l2_leaf_reg": 12.0,
+      "random_seed": 42,
+      "threads": 2,
+      "rank_heads": false,
+      "gate": "progress",
+      "paired_weight": 0.5,
+      "progress_edges": [
+        0.25,
+        0.9
+      ],
+      "progress_weights": [
+        0.65,
+        0.45,
+        0.25
+      ],
+      "peer_age_scale_hours": 3.0,
+      "correction_limit_log": 0.47000362924573563,
+      "missing_replica_weight": 0.25,
+      "n_estimators": 500,
+      "min_samples_leaf": 5,
+      "max_features": 0.75,
+      "name": "fusion_cat_mae_progress"
+    },
+    {
+      "family": "research_fusion",
+      "algorithm": "catboost",
+      "loss": "Huber:delta=0.15",
+      "iterations": 800,
+      "depth": 5,
+      "learning_rate": 0.035,
+      "l2_leaf_reg": 12.0,
+      "random_seed": 42,
+      "threads": 2,
+      "rank_heads": false,
+      "gate": "progress",
+      "paired_weight": 0.5,
+      "progress_edges": [
+        0.25,
+        0.9
+      ],
+      "progress_weights": [
+        0.65,
+        0.45,
+        0.25
+      ],
+      "peer_age_scale_hours": 3.0,
+      "correction_limit_log": 0.47000362924573563,
+      "missing_replica_weight": 0.25,
+      "n_estimators": 500,
+      "min_samples_leaf": 5,
+      "max_features": 0.75,
+      "name": "fusion_cat_huber_progress"
+    },
+    {
+      "family": "research_fusion",
+      "algorithm": "catboost",
+      "loss": "RMSE",
+      "iterations": 800,
+      "depth": 5,
+      "learning_rate": 0.035,
+      "l2_leaf_reg": 12.0,
+      "random_seed": 42,
+      "threads": 2,
+      "rank_heads": true,
+      "gate": "progress",
+      "paired_weight": 0.5,
+      "progress_edges": [
+        0.25,
+        0.9
+      ],
+      "progress_weights": [
+        0.65,
+        0.45,
+        0.25
+      ],
+      "peer_age_scale_hours": 3.0,
+      "correction_limit_log": 0.47000362924573563,
+      "missing_replica_weight": 0.25,
+      "n_estimators": 500,
+      "min_samples_leaf": 5,
+      "max_features": 0.75,
+      "name": "fusion_cat_rank_progress"
+    },
+    {
+      "family": "research_fusion",
+      "algorithm": "extra_trees",
+      "loss": "RMSE",
+      "iterations": 800,
+      "depth": 5,
+      "learning_rate": 0.035,
+      "l2_leaf_reg": 12.0,
+      "random_seed": 42,
+      "threads": 2,
+      "rank_heads": false,
+      "gate": "progress",
+      "paired_weight": 0.5,
+      "progress_edges": [
+        0.25,
+        0.9
+      ],
+      "progress_weights": [
+        0.65,
+        0.45,
+        0.25
+      ],
+      "peer_age_scale_hours": 3.0,
+      "correction_limit_log": 0.47000362924573563,
+      "missing_replica_weight": 0.25,
+      "n_estimators": 500,
+      "min_samples_leaf": 5,
+      "max_features": 0.75,
+      "name": "fusion_extra_progress"
+    }
+  ],
+  "test_labels_read": false,
+  "test_prefixes_read": false,
+  "training": "global per-event weights; original/masked pair replicas split .75/.25",
+  "selection": "minimum validation event-macro MAPE among all six; no validation fitting/refit",
+  "python": "3.14.8",
+  "software": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "scikit-learn": "1.9.1",
+    "catboost": "1.2.10",
+    "joblib": "1.6.0"
+  },
+  "source_hashes": {
+    "analysis/research_fusion.py": "5b117d2ca00463cf9a1fcf53a93c2647261f6f8c959116fe1e2b570d064de04d",
+    "analysis/temporal_paired_features.py": "c6343c37e24944e6d2f353a33d66ac42642ac18e29010181afac3109eb929396",
+    "analysis/multirank_model.py": "ff3eda807ddd2990d7150609a719a3a691fe23938de655c2ef9e365193a211e2",
+    "analysis/temporal_dataset.py": "288ab6ce031b916514a931c79f5626ab8807532484fa55002d1724e03b120235",
+    "analysis/multirank_dataset.py": "c47b652b27971009f9ea1ecd9837832b9ed376d49d5b53adb2baea219ba9d8a8",
+    "analysis/backtest.py": "df2733f8aff144582da7f732e3def213a224f5689b38ea8065f748d43f2e99be",
+    "analysis/holdout_dataset.py": "22cf94748c4953b72a570093d8e26e76ae9437454e09da181fc9e5e10c6a2f6f",
+    "analysis/event_features.py": "cf3eb59a5b8e99a4cebda38a54a642140d8fcc017c4d38a132499fce38074419",
+    "analysis/temporal_evaluate.py": "57a1154d6e471968daa0d2911da103f258ee4c31f8b0d36fd6b27a5f678e860f",
+    "analysis/holdout_evaluate.py": "cf2226d0ca778a31a37d58c57a066f81ec015df01da5899f8ca621ca2859bda4"
+  },
+  "limitations": [
+    "Test cohort appeared in earlier exploratory work and is not completely unseen.",
+    "Metadata is a current retrospective snapshot without historical-time archives."
+  ],
+  "run_id": "0067f48d737e3b9d5790b2ec6daee037055f05a52c03e86c754aa6256ea776aa"
+}

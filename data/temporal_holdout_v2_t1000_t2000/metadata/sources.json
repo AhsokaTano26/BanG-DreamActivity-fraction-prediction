@@ -1,0 +1,9 @@
+{
+  "fetched_at": "2026-11-10T15:51:54.823057+00:00",
+  "urls": {
+    "events": "https://bestdori.com/api/events/all.5.json",
+    "characters": "https://bestdori.com/api/characters/all.5.json",
+    "bands": "https://bestdori.com/api/bands/all.1.json",
+    "cards": "https://bestdori.com/api/cards/all.5.json"
+  }
+}

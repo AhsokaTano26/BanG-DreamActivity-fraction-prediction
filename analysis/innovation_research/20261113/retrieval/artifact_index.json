@@ -1,0 +1,26 @@
+{
+  "dataset_id": "1f76f39af8151bba185496411bbcee064b16a4c5aca5c515c1d957a5056fe854",
+  "scope": "train-only rolling retrieval pilot; not fixed validation/test score",
+  "files": {
+    "audit.py": "eb008e8777f85deacecf936e7d93aacf63e3f9953a00bf787ebbb467d34fd01a",
+    "audit_result.json": "bff2785b37e7a4254ced1816f986f23179e3a43a74049fff035305007fd3ba91",
+    "by_band.csv": "d42466ff941528fa25a423cbc356bacbaacce1fe008ac3c1ef5e52b23d584a30",
+    "by_block.csv": "ca8fb65cbe973e35a8d48440cdc184919da285c8691672eb0c4573d5c44504ee",
+    "by_event.csv": "c500c16d41b749df534803733191208aba8a0314c7dff9cc3954c33126cb0b5d",
+    "by_event_type.csv": "71e3d723c692718218213e613ea1d16f12a6ce22c97245c842b6f62693d630b8",
+    "by_rank.csv": "f80066a758b25a10da949f90b50d50ce941ddd3306806973feabde72d6131a2d",
+    "by_rank_stage.csv": "ba932f5f14da937e053f0c52cb64a663611e08a220cac5bbec94ada8722fddd2",
+    "by_stage.csv": "603603416f7a4595e5b27799b8620e31d6bf2ee66ae7046f56a3939cfdb6f028",
+    "candidate_coverage.csv": "ec03efa9f770693bec2aa0d90ce869c1dd8446db972f1c75aec2c5f9c5efd564",
+    "chronological_event_groups.csv": "9ab3770f20275683c044db4005c86954574596f241e125803e55269abbcd00f3",
+    "coverage_by_rank_stage.csv": "bae539ceee5a1e383827e5a0ba50490e4b20b45a0c6e8d1676774a6eabc232a1",
+    "findings.md": "1c881f386a8b5ef7a82214b09a852b51333c3c3d1c796ac0001351fe050c51e9",
+    "fixed_config.json": "364edf58bbc839627efaff9551d44d0a1ba4078835bb555ffcedf02e75e7cb8a",
+    "pilot.py": "7928c80ec036d347d34f966176caf2e32580291c73bc02458ffa833a408f3ca8",
+    "prediction_manifest.json": "5e2d0b77b72efcba3f690d54426e9ec57ecdf5f01687814eaa27fe14f3164fec",
+    "predictions.csv": "b99ae8c34490dbfcf98a4b332913760a498c92cc228435c7cde9a482417f2f87",
+    "report.md": "b91242a1fa0697ab4eccecf35270d3243223a2f953f84deb0c2268b1c2bda3f3",
+    "scoring_manifest.json": "4ba1d2d941747043b869ac22276421ea13a3e28eb323a9a7506ce3da77089dd5",
+    "summary.csv": "ad8158595f3916e5ac55b5ddd2005e6af5780213e219dd2ec00c72524acdb795"
+  }
+}

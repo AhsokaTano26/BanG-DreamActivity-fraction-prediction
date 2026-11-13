@@ -1,0 +1,27 @@
+{
+  "event": 328,
+  "forecast_mode": "historical_replay",
+  "as_of": "2026-11-11T22:00:00+08:00",
+  "requested_ranks": 19,
+  "available_final_labels": 1,
+  "missing_final_labels": 18,
+  "full_event_mape_pct": null,
+  "reason_full_metric_unavailable": "18 ranks lack observations within the predeclared end window; latest points are not final labels",
+  "verified_final_rank_errors": {
+    "10": 0.0
+  },
+  "baseline_final_comparison": {
+    "10": {
+      "model_ape_pct": 0.0,
+      "hold_current_ape_pct": 0.0
+    }
+  },
+  "independent_activities": 1,
+  "forecasts_unchanged": true,
+  "caveats": [
+    "22:00 replay made after activity end using truncated prefixes, not a prospectively published prediction.",
+    "Final labels absent for 18 ranks. Do not interpret latest-observation gaps as final forecast errors.",
+    "The earlier 8.41% metric belongs to a 43-event supplementary holdout, not this activity.",
+    "Earlier test cohort exposed in exploration; metadata is retrospective."
+  ]
+}

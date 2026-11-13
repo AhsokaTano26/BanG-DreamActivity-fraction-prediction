@@ -1,0 +1,23 @@
+Completed catboost_paired
+Completed catboost_phase
+TCN seed=42 epoch=1 validation=14.7604 best=14.7604 best_epoch=1
+TCN seed=42 epoch=10 validation=8.1967 best=8.1967 best_epoch=10
+TCN seed=42 epoch=20 validation=7.3343 best=7.1051 best_epoch=17
+TCN seed=42 epoch=30 validation=7.0180 best=6.8957 best_epoch=29
+TCN seed=42 epoch=40 validation=6.8299 best=6.5696 best_epoch=34
+TCN seed=42 epoch=50 validation=6.8344 best=6.1883 best_epoch=48
+TCN seed=42 epoch=60 validation=6.3856 best=6.1883 best_epoch=48
+TCN seed=123 epoch=1 validation=15.2616 best=15.2616 best_epoch=1
+TCN seed=123 epoch=10 validation=7.9852 best=7.9852 best_epoch=10
+TCN seed=123 epoch=20 validation=7.2592 best=6.9149 best_epoch=17
+TCN seed=123 epoch=30 validation=7.8153 best=6.9149 best_epoch=17
+TCN seed=2026 epoch=1 validation=15.6482 best=15.6482 best_epoch=1
+TCN seed=2026 epoch=10 validation=8.3225 best=8.3225 best_epoch=10
+TCN seed=2026 epoch=20 validation=7.4664 best=7.4165 best_epoch=12
+TCN seed=2026 epoch=30 validation=7.1815 best=7.0490 best_epoch=27
+TCN seed=2026 epoch=40 validation=7.0730 best=7.0308 best_epoch=31
+TCN seed=2026 epoch=50 validation=7.1343 best=6.7499 best_epoch=44
+TCN seed=2026 epoch=60 validation=6.6844 best=6.6844 best_epoch=60
+TCN seed=2026 epoch=70 validation=7.1131 best=6.6844 best_epoch=60
+TCN seed=2026 epoch=80 validation=6.9323 best=6.6844 best_epoch=60
+SELECTED catboost_paired 5.501625147246522

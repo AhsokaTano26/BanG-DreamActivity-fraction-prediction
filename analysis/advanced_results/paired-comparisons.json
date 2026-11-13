@@ -1,0 +1,16 @@
+{
+  "lightgbm_sequence_residual": {
+    "tcn_minus_other_pp": -0.0012056890666150167,
+    "event_bootstrap_95pct": [
+      -0.5814622830875694,
+      0.5276873834357501
+    ]
+  },
+  "xgb_tab_growth": {
+    "tcn_minus_other_pp": -1.0403369730630598,
+    "event_bootstrap_95pct": [
+      -1.7644144453838144,
+      -0.3003990806099506
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "requested_at": "2026-11-11T11:21:41.566238+00:00",
+  "sources": {
+    "events": "https://bestdori.com/api/events/all.5.json",
+    "event_328": "https://bestdori.com/api/events/328.json",
+    "rank_1000": "https://bestdori.com/api/tracker/data?server=3&event=328&tier=1000",
+    "rank_2000": "https://bestdori.com/api/tracker/data?server=3&event=328&tier=2000"
+  }
+}

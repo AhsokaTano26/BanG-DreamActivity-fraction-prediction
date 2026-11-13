@@ -1,0 +1,9 @@
+{
+  "blind_manifest_sha256": "5da57412a6638dad3a5be2961bbc3fd6bd3d0b6010b091cdf83c37fa7d840be0",
+  "evaluation_manifest_sha256": "c561c8d908fd7a43e2601340cf39bf91332d88d7d805775f6a70e925c270f0da",
+  "artifacts": {
+    "README.md": "91f7c760480d319991a31d7df005fab1a3a6bf00f820a49d9acb10af13653c56",
+    "paired_coverage.csv": "5e087b1096d0b27a12da40728a2bf93e0079cd3423d048b645bc2ddc9b090421",
+    "report_source.py": "ea6b4a1bea0037cc4a243c2d7352f066c3aef1f576253c1aa2bdc60aa512ba8e"
+  }
+}

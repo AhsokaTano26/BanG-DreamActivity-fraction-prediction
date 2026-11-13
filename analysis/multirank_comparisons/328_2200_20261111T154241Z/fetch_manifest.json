@@ -1,0 +1,25 @@
+{
+  "artifacts": {
+    "fetch_actuals.py": "bf29b8de6487b0500f367f7b5878f36cee40ddcf1f377daf42afc3d05c41ad97",
+    "actual_observations.json": "ae97b05e07ae80dabd8f6a1bc7261e4fbbce07ec52be60358a8664ee9bab658e",
+    "raw/1000.json.gz": "4d8fd879c020fbc922fb44f1e733ce9746d32e30a6e5e6386a26b937aff11233",
+    "raw/200.json.gz": "f2c5d1ad8dce7ccc22d99929ee3826b86f28e446a18acae9d024ebaecae04e0e",
+    "raw/400.json.gz": "3111b1db7e3c89be52ff9343269a424dd08ca3cafc1aa2d73ae7ac35e5183bec",
+    "raw/4000.json.gz": "5cf50470eac123e89f036a3643adac728eb68ba2b2ead346608c18e5517eac15",
+    "raw/20000.json.gz": "14e641283bf1835af490619731f0c7f67a6c9864a2481dbc2e99ec494f1cb3e2",
+    "raw/10000.json.gz": "86928846690d6bff9d83f0036d93bd42bf8652a1df513707aaba20daaf931c50",
+    "raw/3000.json.gz": "108917535edd498920c633eeecc6be9f79100e38dccab9ecfe468dbdd08587ef",
+    "raw/300.json.gz": "b5eb47ef154f9a5aff4bf594f0bb17a68ab25303479072700f42af0db24eeefb",
+    "raw/10.json.gz": "8d5ab7f17488a7802433ae62fa34dc6d4a1b2cfc6c6be66d8719afe3ef9cc661",
+    "raw/500.json.gz": "d2e162e551760d38375d29378574e1fd203a4c361931cea9363a3c54dfbbbcdc",
+    "raw/30000.json.gz": "8b1f1efa777e331dd84dbc30597fda2e205158a0de0a3b81eccec910d0dd54f8",
+    "raw/5000.json.gz": "1babde27042c9bb27271fcc45e8f5839024da6290ddecdfb63485fd564bc6d9c",
+    "raw/50.json.gz": "e8b5d31a0fcb33fdbacacad53b49a3f79cf6d6a23728d85ec0b921fce61ddfa4",
+    "raw/40.json.gz": "89f2b91af93b4f6638c631662cf5fb9c10d627683e3f3193c89201288a671236",
+    "raw/20.json.gz": "827099b6b677c694042def79a743ea97b948f225cf0cc32c7e50837694e7aa58",
+    "raw/30.json.gz": "425e456d2671e99dc4620b0373554d6bd8b23d97d5b6eb0fa9a32c0d0631e0dd",
+    "raw/100.json.gz": "22ea715ad11a10036353e755af1ddb77fa63eace3513df8daef8b1f218583769",
+    "raw/1500.json.gz": "e9cd988518e948bb5e18ec8aedecdd0e44447da231f6dfa7137cf733a9d4f3ce",
+    "raw/2000.json.gz": "e1aad7b9360e2d6d8b35bed6649bdd60b584b0891b763fb6f92cc427d08f7739"
+  }
+}

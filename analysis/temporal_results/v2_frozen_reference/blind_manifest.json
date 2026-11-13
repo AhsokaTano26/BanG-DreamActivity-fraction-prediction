@@ -1,0 +1,30 @@
+{
+  "run_id": "54629050dfaff9576185d1e0c243132a5c3138b2466190d1bbbca3f418f7307e",
+  "dataset_id": "5f1d11f35e0da7b0fa02a0a056659ff75390efab62bf06545debb2c82e9f4a27",
+  "dataset_directory": "/Users/tano/Documents/GitHub/personal/BanG-Dream-Activity-fraction-prediction/data/temporal_holdout_v2",
+  "methods": [
+    "hold_current",
+    "linear",
+    "frozen_catboost_rank",
+    "frozen_catboost_context"
+  ],
+  "reference_method": "frozen_catboost_rank",
+  "artifacts": {
+    "reference_models/catboost_context.joblib": "e050b1285d3f97229a14ffcc2aa9a3c0461abcf0c5b11611b8377802e4ca8b8d",
+    "reference_models/catboost_rank.joblib": "c11656e007dba8957538ffdda928c52b8bba4e47cd2973e73682c85db32bf0f9",
+    "reference_models/metadata.joblib": "54f8de77aee23bfb8cc59eb650c979052cabafa9fb4d83248a9bf63db94f8572",
+    "reference_models/rank_coverage.csv": "abebea60602fe8301e8620b80909887fab7c9f8ca28ab7ff8cfd99701b5b48e8",
+    "reference_run_manifest.json": "fe167c1b582a071a26767d1bda76ffee211f20d3895fc729e69727415f5c30ce",
+    "run_manifest.json": "23521b106d3dd86151e0e0ba735f38b0e634c81d6ebcc293ee7ae9340e13da64",
+    "sources/backtest.py": "df2733f8aff144582da7f732e3def213a224f5689b38ea8065f748d43f2e99be",
+    "sources/event_features.py": "cf3eb59a5b8e99a4cebda38a54a642140d8fcc017c4d38a132499fce38074419",
+    "sources/holdout_dataset.py": "22cf94748c4953b72a570093d8e26e76ae9437454e09da181fc9e5e10c6a2f6f",
+    "sources/multirank_dataset.py": "c47b652b27971009f9ea1ecd9837832b9ed376d49d5b53adb2baea219ba9d8a8",
+    "sources/multirank_model.py": "ff3eda807ddd2990d7150609a719a3a691fe23938de655c2ef9e365193a211e2",
+    "sources/temporal_benchmark.py": "9c9980e7c26630aa483abc1952e0baa771584c8fb28f5bf28847ce9dbdd4d44b",
+    "sources/temporal_dataset.py": "288ab6ce031b916514a931c79f5626ab8807532484fa55002d1724e03b120235",
+    "test_predictions.csv": "71209875d5981c60f5800489f3c62ba201d0950be0a05b8fb0ddcbe0d94ec293",
+    "train_predictions.csv": "42620d7fe7bb0e39d8acd01c514b4ab361ec56f0680c6ad3f86fac97489dedee",
+    "validation_predictions.csv": "d58ceac0967470a891e720e791d18c26304b30b79c8f74e385304c42662b8528"
+  }
+}

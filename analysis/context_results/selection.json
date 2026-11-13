@@ -1,0 +1,16 @@
+{
+  "development_mape": {
+    "lgbm_baseline": 5.597167124806266,
+    "lgbm_band": 5.481739538362927,
+    "lgbm_static": 5.561655161434633,
+    "lgbm_history": 5.656325888177669,
+    "lgbm_peer": 5.472079630307893,
+    "catboost_history": 5.535714027657604,
+    "catboost_peer": 5.439269291203243,
+    "catboost_peer_regularized": 5.580883098354073,
+    "lgbm_type_experts": 5.622468873981955,
+    "tcn_context": 6.106708402766698
+  },
+  "selected_recipe": "catboost_peer",
+  "tcn_epochs": 27
+}

@@ -1,0 +1,335 @@
+{
+  "event": 328,
+  "prediction_sha256": "574dedc0c119723a597399b0dbb92af8a484789e7e260c36e34106b90f026124",
+  "prediction_manifest_sha256": "b6cde855b4a14c9e209868bd495c4e3d6ef1d95b0c802fc8196ac7df748ed755",
+  "definition": "latest observation within [end-60s,end+300s]; preserve later updates separately",
+  "rows": [
+    {
+      "rank": 10,
+      "fetched_at": "2026-11-11T15:43:31.312822+00:00",
+      "url": "https://bestdori.com/api/eventtop/data?server=3&event=328&mid=0&interval=0",
+      "attempts": 1,
+      "http_date": "Wed, 11 Nov 2026 15:43:30 GMT",
+      "http_age": null,
+      "point_count": 7355,
+      "end_ms": 1794409199000,
+      "near_end_point_count": 5,
+      "near_end_final": {
+        "time": 1794409463747,
+        "ep": 41090399
+      },
+      "latest_observation": {
+        "time": 1794411755262,
+        "ep": 41090399
+      },
+      "raw_sha256": "8d5ab7f17488a7802433ae62fa34dc6d4a1b2cfc6c6be66d8719afe3ef9cc661",
+      "changes_after_final_window": 0
+    },
+    {
+      "rank": 20,
+      "fetched_at": "2026-11-11T15:43:32.931583+00:00",
+      "url": "https://bestdori.com/api/tracker/data?server=3&event=328&tier=20",
+      "attempts": 1,
+      "http_date": "Wed, 11 Nov 2026 15:43:32 GMT",
+      "http_age": null,
+      "point_count": 259,
+      "end_ms": 1794409199000,
+      "near_end_point_count": 0,
+      "near_end_final": null,
+      "latest_observation": {
+        "time": 1794408302000,
+        "ep": 28000107
+      },
+      "raw_sha256": "827099b6b677c694042def79a743ea97b948f225cf0cc32c7e50837694e7aa58"
+    },
+    {
+      "rank": 30,
+      "fetched_at": "2026-11-11T15:43:34.502173+00:00",
+      "url": "https://bestdori.com/api/tracker/data?server=3&event=328&tier=30",
+      "attempts": 1,
+      "http_date": "Wed, 11 Nov 2026 15:43:34 GMT",
+      "http_age": null,
+      "point_count": 259,
+      "end_ms": 1794409199000,
+      "near_end_point_count": 0,
+      "near_end_final": null,
+      "latest_observation": {
+        "time": 1794408302000,
+        "ep": 23226547
+      },
+      "raw_sha256": "425e456d2671e99dc4620b0373554d6bd8b23d97d5b6eb0fa9a32c0d0631e0dd"
+    },
+    {
+      "rank": 40,
+      "fetched_at": "2026-11-11T15:43:35.755129+00:00",
+      "url": "https://bestdori.com/api/tracker/data?server=3&event=328&tier=40",
+      "attempts": 1,
+      "http_date": "Wed, 11 Nov 2026 15:43:35 GMT",
+      "http_age": null,
+      "point_count": 259,
+      "end_ms": 1794409199000,
+      "near_end_point_count": 0,
+      "near_end_final": null,
+      "latest_observation": {
+        "time": 1794408302000,
+        "ep": 17141027
+      },
+      "raw_sha256": "89f2b91af93b4f6638c631662cf5fb9c10d627683e3f3193c89201288a671236"
+    },
+    {
+      "rank": 50,
+      "fetched_at": "2026-11-11T15:43:37.009877+00:00",
+      "url": "https://bestdori.com/api/tracker/data?server=3&event=328&tier=50",
+      "attempts": 1,
+      "http_date": "Wed, 11 Nov 2026 15:43:36 GMT",
+      "http_age": null,
+      "point_count": 259,
+      "end_ms": 1794409199000,
+      "near_end_point_count": 0,
+      "near_end_final": null,
+      "latest_observation": {
+        "time": 1794408302000,
+        "ep": 15410903
+      },
+      "raw_sha256": "e8b5d31a0fcb33fdbacacad53b49a3f79cf6d6a23728d85ec0b921fce61ddfa4"
+    },
+    {
+      "rank": 100,
+      "fetched_at": "2026-11-11T15:43:38.285767+00:00",
+      "url": "https://bestdori.com/api/tracker/data?server=3&event=328&tier=100",
+      "attempts": 1,
+      "http_date": "Wed, 11 Nov 2026 15:43:38 GMT",
+      "http_age": null,
+      "point_count": 259,
+      "end_ms": 1794409199000,
+      "near_end_point_count": 0,
+      "near_end_final": null,
+      "latest_observation": {
+        "time": 1794408302000,
+        "ep": 12389546
+      },
+      "raw_sha256": "22ea715ad11a10036353e755af1ddb77fa63eace3513df8daef8b1f218583769"
+    },
+    {
+      "rank": 200,
+      "fetched_at": "2026-11-11T15:43:39.618103+00:00",
+      "url": "https://bestdori.com/api/tracker/data?server=3&event=328&tier=200",
+      "attempts": 1,
+      "http_date": "Wed, 11 Nov 2026 15:43:39 GMT",
+      "http_age": null,
+      "point_count": 259,
+      "end_ms": 1794409199000,
+      "near_end_point_count": 0,
+      "near_end_final": null,
+      "latest_observation": {
+        "time": 1794408302000,
+        "ep": 7190298
+      },
+      "raw_sha256": "f2c5d1ad8dce7ccc22d99929ee3826b86f28e446a18acae9d024ebaecae04e0e"
+    },
+    {
+      "rank": 300,
+      "fetched_at": "2026-11-11T15:43:41.196284+00:00",
+      "url": "https://bestdori.com/api/tracker/data?server=3&event=328&tier=300",
+      "attempts": 1,
+      "http_date": "Wed, 11 Nov 2026 15:43:40 GMT",
+      "http_age": null,
+      "point_count": 259,
+      "end_ms": 1794409199000,
+      "near_end_point_count": 0,
+      "near_end_final": null,
+      "latest_observation": {
+        "time": 1794408302000,
+        "ep": 6649984
+      },
+      "raw_sha256": "b5eb47ef154f9a5aff4bf594f0bb17a68ab25303479072700f42af0db24eeefb"
+    },
+    {
+      "rank": 400,
+      "fetched_at": "2026-11-11T15:43:42.514789+00:00",
+      "url": "https://bestdori.com/api/tracker/data?server=3&event=328&tier=400",
+      "attempts": 1,
+      "http_date": "Wed, 11 Nov 2026 15:43:42 GMT",
+      "http_age": null,
+      "point_count": 259,
+      "end_ms": 1794409199000,
+      "near_end_point_count": 0,
+      "near_end_final": null,
+      "latest_observation": {
+        "time": 1794408302000,
+        "ep": 6547763
+      },
+      "raw_sha256": "3111b1db7e3c89be52ff9343269a424dd08ca3cafc1aa2d73ae7ac35e5183bec"
+    },
+    {
+      "rank": 500,
+      "fetched_at": "2026-11-11T15:43:44.094422+00:00",
+      "url": "https://bestdori.com/api/tracker/data?server=3&event=328&tier=500",
+      "attempts": 1,
+      "http_date": "Wed, 11 Nov 2026 15:43:43 GMT",
+      "http_age": null,
+      "point_count": 259,
+      "end_ms": 1794409199000,
+      "near_end_point_count": 0,
+      "near_end_final": null,
+      "latest_observation": {
+        "time": 1794408302000,
+        "ep": 6416378
+      },
+      "raw_sha256": "d2e162e551760d38375d29378574e1fd203a4c361931cea9363a3c54dfbbbcdc"
+    },
+    {
+      "rank": 1000,
+      "fetched_at": "2026-11-11T15:43:45.399486+00:00",
+      "url": "https://bestdori.com/api/tracker/data?server=3&event=328&tier=1000",
+      "attempts": 1,
+      "http_date": "Wed, 11 Nov 2026 15:43:45 GMT",
+      "http_age": null,
+      "point_count": 259,
+      "end_ms": 1794409199000,
+      "near_end_point_count": 0,
+      "near_end_final": null,
+      "latest_observation": {
+        "time": 1794408302000,
+        "ep": 3297455
+      },
+      "raw_sha256": "4d8fd879c020fbc922fb44f1e733ce9746d32e30a6e5e6386a26b937aff11233"
+    },
+    {
+      "rank": 1500,
+      "fetched_at": "2026-11-11T15:43:46.700484+00:00",
+      "url": "https://bestdori.com/api/tracker/data?server=3&event=328&tier=1500",
+      "attempts": 1,
+      "http_date": "Wed, 11 Nov 2026 15:43:46 GMT",
+      "http_age": null,
+      "point_count": 259,
+      "end_ms": 1794409199000,
+      "near_end_point_count": 0,
+      "near_end_final": null,
+      "latest_observation": {
+        "time": 1794408302000,
+        "ep": 3121574
+      },
+      "raw_sha256": "e9cd988518e948bb5e18ec8aedecdd0e44447da231f6dfa7137cf733a9d4f3ce"
+    },
+    {
+      "rank": 2000,
+      "fetched_at": "2026-11-11T15:43:47.933242+00:00",
+      "url": "https://bestdori.com/api/tracker/data?server=3&event=328&tier=2000",
+      "attempts": 1,
+      "http_date": "Wed, 11 Nov 2026 15:43:47 GMT",
+      "http_age": null,
+      "point_count": 259,
+      "end_ms": 1794409199000,
+      "near_end_point_count": 0,
+      "near_end_final": null,
+      "latest_observation": {
+        "time": 1794408302000,
+        "ep": 2121595
+      },
+      "raw_sha256": "e1aad7b9360e2d6d8b35bed6649bdd60b584b0891b763fb6f92cc427d08f7739"
+    },
+    {
+      "rank": 3000,
+      "fetched_at": "2026-11-11T15:43:49.259800+00:00",
+      "url": "https://bestdori.com/api/tracker/data?server=3&event=328&tier=3000",
+      "attempts": 1,
+      "http_date": "Wed, 11 Nov 2026 15:43:49 GMT",
+      "http_age": null,
+      "point_count": 259,
+      "end_ms": 1794409199000,
+      "near_end_point_count": 0,
+      "near_end_final": null,
+      "latest_observation": {
+        "time": 1794408302000,
+        "ep": 1491160
+      },
+      "raw_sha256": "108917535edd498920c633eeecc6be9f79100e38dccab9ecfe468dbdd08587ef"
+    },
+    {
+      "rank": 4000,
+      "fetched_at": "2026-11-11T15:43:50.784356+00:00",
+      "url": "https://bestdori.com/api/tracker/data?server=3&event=328&tier=4000",
+      "attempts": 1,
+      "http_date": "Wed, 11 Nov 2026 15:43:50 GMT",
+      "http_age": null,
+      "point_count": 259,
+      "end_ms": 1794409199000,
+      "near_end_point_count": 0,
+      "near_end_final": null,
+      "latest_observation": {
+        "time": 1794408302000,
+        "ep": 1252718
+      },
+      "raw_sha256": "5cf50470eac123e89f036a3643adac728eb68ba2b2ead346608c18e5517eac15"
+    },
+    {
+      "rank": 5000,
+      "fetched_at": "2026-11-11T15:43:52.055866+00:00",
+      "url": "https://bestdori.com/api/tracker/data?server=3&event=328&tier=5000",
+      "attempts": 1,
+      "http_date": "Wed, 11 Nov 2026 15:43:51 GMT",
+      "http_age": null,
+      "point_count": 258,
+      "end_ms": 1794409199000,
+      "near_end_point_count": 0,
+      "near_end_final": null,
+      "latest_observation": {
+        "time": 1794408302000,
+        "ep": 1056430
+      },
+      "raw_sha256": "1babde27042c9bb27271fcc45e8f5839024da6290ddecdfb63485fd564bc6d9c"
+    },
+    {
+      "rank": 10000,
+      "fetched_at": "2026-11-11T15:43:53.296005+00:00",
+      "url": "https://bestdori.com/api/tracker/data?server=3&event=328&tier=10000",
+      "attempts": 1,
+      "http_date": "Wed, 11 Nov 2026 15:43:53 GMT",
+      "http_age": null,
+      "point_count": 254,
+      "end_ms": 1794409199000,
+      "near_end_point_count": 0,
+      "near_end_final": null,
+      "latest_observation": {
+        "time": 1794408302000,
+        "ep": 564340
+      },
+      "raw_sha256": "86928846690d6bff9d83f0036d93bd42bf8652a1df513707aaba20daaf931c50"
+    },
+    {
+      "rank": 20000,
+      "fetched_at": "2026-11-11T15:43:54.571523+00:00",
+      "url": "https://bestdori.com/api/tracker/data?server=3&event=328&tier=20000",
+      "attempts": 1,
+      "http_date": "Wed, 11 Nov 2026 15:43:54 GMT",
+      "http_age": null,
+      "point_count": 247,
+      "end_ms": 1794409199000,
+      "near_end_point_count": 0,
+      "near_end_final": null,
+      "latest_observation": {
+        "time": 1794408302000,
+        "ep": 256987
+      },
+      "raw_sha256": "14e641283bf1835af490619731f0c7f67a6c9864a2481dbc2e99ec494f1cb3e2"
+    },
+    {
+      "rank": 30000,
+      "fetched_at": "2026-11-11T15:43:55.905787+00:00",
+      "url": "https://bestdori.com/api/tracker/data?server=3&event=328&tier=30000",
+      "attempts": 1,
+      "http_date": "Wed, 11 Nov 2026 15:43:55 GMT",
+      "http_age": null,
+      "point_count": 240,
+      "end_ms": 1794409199000,
+      "near_end_point_count": 0,
+      "near_end_final": null,
+      "latest_observation": {
+        "time": 1794408302000,
+        "ep": 142655
+      },
+      "raw_sha256": "8b1f1efa777e331dd84dbc30597fda2e205158a0de0a3b81eccec910d0dd54f8"
+    }
+  ]
+}

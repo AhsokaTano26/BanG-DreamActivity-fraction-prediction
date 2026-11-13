@@ -1,0 +1,23 @@
+{
+  "selected": "blend_new_0.75",
+  "events": 43,
+  "old_mape": 8.920190959466202,
+  "new_mape": 8.140301909606007,
+  "new_minus_old_mape_points": -0.7798890498601935,
+  "relative_error_reduction_pct": 8.742963613716903,
+  "paired_event_bootstrap95": [
+    -1.1122524335626085,
+    -0.46233977718405156
+  ],
+  "events_improved": 32,
+  "source_evaluation_id": "4b7dd95b6662831ff2eb60d8f9679fba85249355ecb14370b260ce4652ed694e",
+  "bootstrap_seed": 42,
+  "bootstrap_replicates": 5000,
+  "independent_check": {
+    "methods": 28,
+    "cases_each": 412,
+    "rows": 11536,
+    "max_mape_roundoff": 3.552713678800501e-15,
+    "all_seals_verified": true
+  }
+}

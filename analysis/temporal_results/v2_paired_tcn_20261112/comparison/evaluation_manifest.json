@@ -1,0 +1,35 @@
+{
+  "evaluation_id": "68500bc497b02a556ebb68a84e410e8d870b118f7c4aa732cad31f10617fe7d3",
+  "identity": {
+    "blind_manifest_sha256": "5da57412a6638dad3a5be2961bbc3fd6bd3d0b6010b091cdf83c37fa7d840be0",
+    "dataset_id": "1f76f39af8151bba185496411bbcee064b16a4c5aca5c515c1d957a5056fe854",
+    "script_sha256": "32e625e657b0c1483759870e3e8cdd9d8676208b9c5943fe7bef850cc283d8e2",
+    "sources": {
+      "analysis/holdout_evaluate.py": "cf2226d0ca778a31a37d58c57a066f81ec015df01da5899f8ca621ca2859bda4",
+      "analysis/holdout_dataset.py": "22cf94748c4953b72a570093d8e26e76ae9437454e09da181fc9e5e10c6a2f6f",
+      "analysis/backtest.py": "df2733f8aff144582da7f732e3def213a224f5689b38ea8065f748d43f2e99be",
+      "analysis/temporal_dataset.py": "288ab6ce031b916514a931c79f5626ab8807532484fa55002d1724e03b120235",
+      "analysis/temporal_evaluate.py": "57a1154d6e471968daa0d2911da103f258ee4c31f8b0d36fd6b27a5f678e860f",
+      "analysis/multirank_dataset.py": "c47b652b27971009f9ea1ecd9837832b9ed376d49d5b53adb2baea219ba9d8a8"
+    },
+    "python": "3.14.8",
+    "software": {
+      "numpy": "2.5.4",
+      "pandas": "3.1.1"
+    },
+    "seed": 42,
+    "draws": 5000,
+    "reference": "reference_catboost",
+    "methods": [
+      "catboost_paired",
+      "catboost_phase",
+      "dual_tcn_mean"
+    ],
+    "interpretation": "descriptive marginal 95% percentile intervals; no multiple-comparison adjustment or selection"
+  },
+  "artifacts": {
+    "score.py": "32e625e657b0c1483759870e3e8cdd9d8676208b9c5943fe7bef850cc283d8e2",
+    "comparison.json": "0938da1454650e154c7f9b291542b94eeccf80e6452ce039c5021e45c561ee13",
+    "event_deltas.csv": "dcdfb8948cf83ee15c592f39d216de54566a30a5812148b993bf217bd20e4baf"
+  }
+}

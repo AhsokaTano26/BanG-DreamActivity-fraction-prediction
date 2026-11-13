@@ -1,0 +1,481 @@
+{
+  "dataset_id": "1f76f39af8151bba185496411bbcee064b16a4c5aca5c515c1d957a5056fe854",
+  "training_events": 198,
+  "training_curves": 330,
+  "training_input_cases": 2229,
+  "training_events_with_inputs": 196,
+  "events_with_both_rank_curves": 132,
+  "final_ratio": {
+    "n": 132,
+    "mean": 1.2576868375530614,
+    "median": 1.2070472049903531,
+    "q10": 1.1186410947139103,
+    "q25": 1.1471488545975799,
+    "q75": 1.2851241942881708,
+    "q90": 1.392838619428283,
+    "minimum": 1.06293637276958,
+    "maximum": 3.6369705014749263
+  },
+  "peer_case_reasons": {
+    "no_same_origin_rank_curve_exists": 783,
+    "available": 950,
+    "invalid_after_truncation": 152,
+    "no_same_origin_missing_rank_curve": 344
+  },
+  "peer_case_availability_pct": 42.620008972633464,
+  "peer_event_equal_availability_pct": 24.09801899581164,
+  "synchronized_stage_statistics": {
+    "progress_50pct": {
+      "prefix_final_log_ratio": {
+        "n_events": 12,
+        "pearson": 0.9846906109795734,
+        "spearman": 0.9510489510489512,
+        "pearson_event_bootstrap_95ci": [
+          0.8270408815921926,
+          0.9973768811282417
+        ]
+      },
+      "remaining_log_growth_crossrank": {
+        "n_events": 12,
+        "pearson": 0.2808647143423863,
+        "spearman": 0.1328671328671329,
+        "pearson_event_bootstrap_95ci": [
+          -0.517888758329122,
+          0.9342483565002627
+        ]
+      },
+      "ratio_relative_change_pct": {
+        "n": 12,
+        "mean": 13.58259774421652,
+        "median": 3.98825767477361,
+        "q10": -0.35440811210595935,
+        "q25": 0.7910345187789991,
+        "q75": 11.59680756582574,
+        "q90": 52.722887572776685,
+        "minimum": -0.9555534533423171,
+        "maximum": 61.0917455887543
+      },
+      "median_absolute_ratio_change_pct": 3.98825767477361,
+      "rank_observation_gap_minutes": {
+        "n": 12,
+        "mean": 0.0,
+        "median": 0.0,
+        "q10": 0.0,
+        "q25": 0.0,
+        "q75": 0.0,
+        "q90": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      "year_counts": {
+        "2024": 12
+      },
+      "type_counts": {
+        "challenge": 2,
+        "festival": 1,
+        "live_try": 2,
+        "medley": 3,
+        "mission_live": 2,
+        "versus": 2
+      },
+      "within_year_centered_log_ratio": {
+        "n_events": 12,
+        "pearson": 0.9846906109795734,
+        "spearman": 0.9510489510489512
+      },
+      "within_event_type_centered_log_ratio": {
+        "n_events": 3
+      }
+    },
+    "progress_90pct": {
+      "prefix_final_log_ratio": {
+        "n_events": 16,
+        "pearson": 0.9898624235536169,
+        "spearman": 0.9470588235294116,
+        "pearson_event_bootstrap_95ci": [
+          0.8821967114098341,
+          0.997331556521102
+        ]
+      },
+      "remaining_log_growth_crossrank": {
+        "n_events": 16,
+        "pearson": 0.8087943186749142,
+        "spearman": 0.65,
+        "pearson_event_bootstrap_95ci": [
+          0.42682252161417694,
+          0.9611296252725496
+        ]
+      },
+      "ratio_relative_change_pct": {
+        "n": 16,
+        "mean": 3.559946057962671,
+        "median": 2.0472966446496765,
+        "q10": -1.7472338799615406,
+        "q25": 0.9129180041562768,
+        "q75": 6.217654843818144,
+        "q90": 10.03279014077797,
+        "minimum": -6.466806885273757,
+        "maximum": 18.432864531500993
+      },
+      "median_absolute_ratio_change_pct": 2.6579930982055133,
+      "rank_observation_gap_minutes": {
+        "n": 16,
+        "mean": 6.5,
+        "median": 0.0,
+        "q10": 0.0,
+        "q25": 0.0,
+        "q75": 0.0,
+        "q90": 30.0,
+        "minimum": 0.0,
+        "maximum": 44.0
+      },
+      "year_counts": {
+        "2020": 3,
+        "2021": 1,
+        "2024": 12
+      },
+      "type_counts": {
+        "challenge": 4,
+        "festival": 1,
+        "live_try": 4,
+        "medley": 3,
+        "mission_live": 2,
+        "versus": 2
+      },
+      "within_year_centered_log_ratio": {
+        "n_events": 15,
+        "pearson": 0.9897440335535176,
+        "spearman": 0.95
+      },
+      "within_event_type_centered_log_ratio": {
+        "n_events": 11,
+        "pearson": 0.9977692807272738,
+        "spearman": 0.9818181818181818
+      }
+    },
+    "remaining_6h": {
+      "prefix_final_log_ratio": {
+        "n_events": 18,
+        "pearson": 0.9918935963903937,
+        "spearman": 0.9793601651186791,
+        "pearson_event_bootstrap_95ci": [
+          0.9640921491470327,
+          0.9972312125406826
+        ]
+      },
+      "remaining_log_growth_crossrank": {
+        "n_events": 18,
+        "pearson": 0.8087520164608356,
+        "spearman": 0.7337461300309597,
+        "pearson_event_bootstrap_95ci": [
+          0.6044954523331536,
+          0.9297573165831243
+        ]
+      },
+      "ratio_relative_change_pct": {
+        "n": 18,
+        "mean": 0.8298714224918222,
+        "median": 1.2214864241756662,
+        "q10": -3.9855570842026715,
+        "q25": -1.8715550291619143,
+        "q75": 2.3102182538746128,
+        "q90": 6.184210861002734,
+        "minimum": -6.921538746207623,
+        "maximum": 8.935268756365256
+      },
+      "median_absolute_ratio_change_pct": 2.2227148454300627,
+      "rank_observation_gap_minutes": {
+        "n": 18,
+        "mean": 9.777777777777779,
+        "median": 0.0,
+        "q10": 0.0,
+        "q25": 0.0,
+        "q75": 12.5,
+        "q90": 40.00000000000001,
+        "minimum": 0.0,
+        "maximum": 50.0
+      },
+      "year_counts": {
+        "2019": 2,
+        "2020": 3,
+        "2022": 1,
+        "2024": 12
+      },
+      "type_counts": {
+        "challenge": 6,
+        "festival": 1,
+        "live_try": 2,
+        "medley": 3,
+        "mission_live": 2,
+        "story": 1,
+        "versus": 3
+      },
+      "within_year_centered_log_ratio": {
+        "n_events": 15,
+        "pearson": 0.9933363667176347,
+        "spearman": 0.9607142857142855
+      },
+      "within_event_type_centered_log_ratio": {
+        "n_events": 12,
+        "pearson": 0.9832782351613282,
+        "spearman": 0.9860139860139862
+      }
+    }
+  },
+  "deadline_growth": {
+    "6h_T1000": {
+      "eligible_events": 165,
+      "covered_events": 43,
+      "frozen_prefix_events": 74,
+      "final_window_share_pct": {
+        "n": 43,
+        "mean": 15.83582322704923,
+        "median": 15.404151513084916,
+        "q10": 9.86289082477231,
+        "q25": 11.535457538754942,
+        "q75": 19.401466851055847,
+        "q90": 21.244812105786423,
+        "minimum": 7.625514150462495,
+        "maximum": 27.83267089670981
+      },
+      "share_vs_uniform_rate": {
+        "n": 43,
+        "mean": 3.8155022642844987,
+        "median": 4.055498859176419,
+        "q10": 2.1366857095110894,
+        "q25": 2.6237370547431356,
+        "q75": 4.55592089255806,
+        "q90": 5.379935200538596,
+        "minimum": 1.6519829127626942,
+        "maximum": 6.323330629295695
+      },
+      "acceleration_ratio": {
+        "n": 21,
+        "mean": 2.800760234513026,
+        "median": 2.8282507602112097,
+        "q10": 2.0187997983103303,
+        "q25": 2.2944381154480786,
+        "q75": 3.279220837549665,
+        "q90": 3.5515101565798544,
+        "minimum": 1.0562542995170991,
+        "maximum": 4.185080281290096
+      },
+      "fraction_accelerating": 1.0,
+      "frozen_observed_remaining_share_pct": {
+        "n": 74,
+        "mean": 14.678232960523019,
+        "median": 13.816616556883275,
+        "q10": 8.68072417860005,
+        "q25": 10.206802410467052,
+        "q75": 19.35425346315485,
+        "q90": 22.209495310056404,
+        "minimum": 5.345366009503731,
+        "maximum": 27.89570910385458
+      },
+      "frozen_age_minutes": {
+        "n": 74,
+        "mean": 28.45382882882883,
+        "median": 24.0,
+        "q10": 11.595,
+        "q25": 14.983333333333333,
+        "q75": 43.75,
+        "q90": 50.7,
+        "minimum": 2.0,
+        "maximum": 59.983333333333334
+      }
+    },
+    "6h_T2000": {
+      "eligible_events": 165,
+      "covered_events": 24,
+      "frozen_prefix_events": 55,
+      "final_window_share_pct": {
+        "n": 24,
+        "mean": 15.922648542140882,
+        "median": 13.947179041844947,
+        "q10": 11.633788188155245,
+        "q25": 12.194871616412225,
+        "q75": 19.563967440207335,
+        "q90": 22.339407046124474,
+        "minimum": 11.289003118504763,
+        "maximum": 26.737198956559038
+      },
+      "share_vs_uniform_rate": {
+        "n": 24,
+        "mean": 4.048002478244411,
+        "median": 3.656298833516558,
+        "q10": 3.152741841580469,
+        "q25": 3.420245147312834,
+        "q75": 4.477492649102614,
+        "q90": 5.680510317295563,
+        "minimum": 2.605338973327919,
+        "maximum": 6.515126584856056
+      },
+      "acceleration_ratio": {
+        "n": 14,
+        "mean": 3.116134189892303,
+        "median": 3.0927033124141747,
+        "q10": 2.702081703260564,
+        "q25": 2.7811390578397623,
+        "q75": 3.313916996047257,
+        "q90": 3.580813754396941,
+        "minimum": 2.543514294482292,
+        "maximum": 4.082146686852374
+      },
+      "fraction_accelerating": 1.0,
+      "frozen_observed_remaining_share_pct": {
+        "n": 55,
+        "mean": 15.638231132909203,
+        "median": 13.794758757756107,
+        "q10": 11.600487925746812,
+        "q25": 12.25384201540199,
+        "q75": 16.878960984552698,
+        "q90": 22.534585502562823,
+        "minimum": 10.15925533542199,
+        "maximum": 28.54841397132258
+      },
+      "frozen_age_minutes": {
+        "n": 55,
+        "mean": 26.519393939393943,
+        "median": 17.0,
+        "q10": 6.0,
+        "q25": 14.95,
+        "q75": 42.99166666666667,
+        "q90": 53.2,
+        "minimum": 1.0,
+        "maximum": 59.983333333333334
+      }
+    },
+    "24h_T1000": {
+      "eligible_events": 165,
+      "covered_events": 31,
+      "frozen_prefix_events": 76,
+      "final_window_share_pct": {
+        "n": 31,
+        "mean": 26.24427879016438,
+        "median": 24.524140099419952,
+        "q10": 20.792138512349396,
+        "q25": 21.687538740343953,
+        "q75": 31.470214236758103,
+        "q90": 33.64597270065612,
+        "minimum": 19.490808779444908,
+        "maximum": 40.63634320479727
+      },
+      "share_vs_uniform_rate": {
+        "n": 31,
+        "mean": 1.602221605690327,
+        "median": 1.448115805010149,
+        "q10": 1.126096446234812,
+        "q25": 1.1831591235190921,
+        "q75": 1.9218298430695961,
+        "q90": 2.3598811467121834,
+        "minimum": 1.0556167893811863,
+        "maximum": 2.530808911687146
+      },
+      "acceleration_ratio": {
+        "n": 14,
+        "mean": 2.188433853001142,
+        "median": 2.1627733127896676,
+        "q10": 1.7696336006865796,
+        "q25": 2.0222413346343244,
+        "q75": 2.3602005522607614,
+        "q90": 2.7368298800438846,
+        "minimum": 1.410482456466107,
+        "maximum": 2.8460121393325513
+      },
+      "fraction_accelerating": 1.0,
+      "frozen_observed_remaining_share_pct": {
+        "n": 76,
+        "mean": 25.581540392001585,
+        "median": 23.52435851927302,
+        "q10": 18.736576382311085,
+        "q25": 21.57679350190371,
+        "q75": 31.545730725299286,
+        "q90": 35.264292323053134,
+        "minimum": 11.682898663498909,
+        "maximum": 41.67704095333744
+      },
+      "frozen_age_minutes": {
+        "n": 76,
+        "mean": 26.799122807017547,
+        "median": 22.991666666666667,
+        "q10": 5.5,
+        "q25": 14.983333333333333,
+        "q75": 38.0,
+        "q90": 52.5,
+        "minimum": 1.0,
+        "maximum": 60.0
+      }
+    },
+    "24h_T2000": {
+      "eligible_events": 165,
+      "covered_events": 19,
+      "frozen_prefix_events": 58,
+      "final_window_share_pct": {
+        "n": 19,
+        "mean": 25.632575989619742,
+        "median": 24.22113618993627,
+        "q10": 20.33879475531741,
+        "q25": 21.459856107319638,
+        "q75": 27.83534618678017,
+        "q90": 33.040715543232594,
+        "minimum": 19.268306517877416,
+        "maximum": 42.89247162038428
+      },
+      "share_vs_uniform_rate": {
+        "n": 19,
+        "mean": 1.6855980186642332,
+        "median": 1.5246554341382894,
+        "q10": 1.375284838398793,
+        "q25": 1.4916441759311048,
+        "q75": 1.7100939768301364,
+        "q90": 2.347383673585377,
+        "minimum": 1.2916193477428286,
+        "maximum": 2.47361566227641
+      },
+      "acceleration_ratio": {
+        "n": 11,
+        "mean": 2.1228205269874425,
+        "median": 1.9636135384626883,
+        "q10": 1.7868721092650048,
+        "q25": 1.8024521748848041,
+        "q75": 2.3698808533207965,
+        "q90": 2.6671146278182762,
+        "minimum": 1.6981633634629147,
+        "maximum": 2.9193100686554416
+      },
+      "fraction_accelerating": 1.0,
+      "frozen_observed_remaining_share_pct": {
+        "n": 58,
+        "mean": 26.685802739464712,
+        "median": 24.996807360522876,
+        "q10": 20.063762857241006,
+        "q25": 21.68156960408364,
+        "q75": 28.312198990626957,
+        "q90": 38.53210769674115,
+        "minimum": 18.244122444504175,
+        "maximum": 43.17706587495411
+      },
+      "frozen_age_minutes": {
+        "n": 58,
+        "mean": 28.511781609195403,
+        "median": 25.5,
+        "q10": 7.995,
+        "q25": 14.983333333333333,
+        "q75": 43.25,
+        "q90": 54.98833333333334,
+        "minimum": 3.0,
+        "maximum": 59.0
+      }
+    }
+  },
+  "limitations": [
+    "Training-only descriptive evidence; neither generalization scores nor proof of causal relationships.",
+    "Training availability strongly varies with calendar year, rank, stage, and event type; available panels are selected subsets.",
+    "Crossrank scores use causal carry-forward at the earlier observation; residual timestamp gaps are recorded.",
+    "Exact deadline shares interpolate only full training curves within 60-minute brackets on each side, for target diagnostics only.",
+    "Snapshot counts are not independent sample sizes; correlations use one row per event per stage and bootstrap activities.",
+    "Validation/test labels and complete curves, SQLite, and existing test results are not parsed.",
+    "The fixed test cohort appeared in early exploratory experiments and cannot be described as wholly unseen.",
+    "Metadata is a present retrospective snapshot without historical point-in-time archives."
+  ]
+}

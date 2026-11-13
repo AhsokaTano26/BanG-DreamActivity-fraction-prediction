@@ -1,0 +1,7 @@
+{
+  "run_id": "8eca721206629d818ecbcb85a5113ed071fb978da132ffcf994df4f8342f44ec",
+  "post_hoc_only": true,
+  "caveat": "Train and validation differ in activity cohorts and prefix stages. Feature contributions explain the fitted model mean, not causal effects or MAPE changes.",
+  "weighted_mean_prediction_change": 0.417155668639726,
+  "source_sha256": "c169abcf03f8bec806fbc968382e813cd2aa172875666481db8e709f76c1e0ce"
+}

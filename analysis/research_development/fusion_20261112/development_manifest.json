@@ -1,0 +1,25 @@
+{
+  "run_id": "0067f48d737e3b9d5790b2ec6daee037055f05a52c03e86c754aa6256ea776aa",
+  "artifacts": {
+    "models/fusion_cat_huber_progress.joblib": "bd3b9840f4f5e739262536d163e8844af6bc5d96789724c1f6a943ca67abf89e",
+    "models/fusion_cat_mae_progress.joblib": "bad40597c585b7b86516930ccfa16d4cc0d8a9059debe21c81ad7712efa9e5b5",
+    "models/fusion_cat_rank_progress.joblib": "9c64eea62351d7881d3450f05d669646da522a2960a5d436a8b8ae24be110066",
+    "models/fusion_cat_rmse_constant.joblib": "cd33d2d8535e20f30d018e6bd7aeea5c4f0f54f478fe14c5ad995ae26c01ecf1",
+    "models/fusion_cat_rmse_progress.joblib": "7c08be0e034a558614935b666141562db7862fd65faa6843c71873f4e56ca920",
+    "models/fusion_extra_progress.joblib": "737f11d13eebd22cb5f1f78cd6c39a9b0af84cafd5b5afa17902b3303b2b6371",
+    "predeclared_manifest.json": "2d758f32e77720c1727b4417f803a61b6a954f3c1c41923ece8895fca866acca",
+    "selection.json": "f53a3efda18aaa2d695f84f001c83f39ebbce1f7f0d6a5e46cf9f1ddc422e3f0",
+    "sources/backtest.py": "df2733f8aff144582da7f732e3def213a224f5689b38ea8065f748d43f2e99be",
+    "sources/event_features.py": "cf3eb59a5b8e99a4cebda38a54a642140d8fcc017c4d38a132499fce38074419",
+    "sources/holdout_dataset.py": "22cf94748c4953b72a570093d8e26e76ae9437454e09da181fc9e5e10c6a2f6f",
+    "sources/holdout_evaluate.py": "cf2226d0ca778a31a37d58c57a066f81ec015df01da5899f8ca621ca2859bda4",
+    "sources/multirank_dataset.py": "c47b652b27971009f9ea1ecd9837832b9ed376d49d5b53adb2baea219ba9d8a8",
+    "sources/multirank_model.py": "ff3eda807ddd2990d7150609a719a3a691fe23938de655c2ef9e365193a211e2",
+    "sources/research_fusion.py": "5b117d2ca00463cf9a1fcf53a93c2647261f6f8c959116fe1e2b570d064de04d",
+    "sources/temporal_dataset.py": "288ab6ce031b916514a931c79f5626ab8807532484fa55002d1724e03b120235",
+    "sources/temporal_evaluate.py": "57a1154d6e471968daa0d2911da103f258ee4c31f8b0d36fd6b27a5f678e860f",
+    "sources/temporal_paired_features.py": "c6343c37e24944e6d2f353a33d66ac42642ac18e29010181afac3109eb929396",
+    "train_predictions.csv": "d2a2f7fbf0f4ff64d872bc4031c57f703687b41f4f4c1b087ac61c75c1d977e3",
+    "validation_predictions.csv": "0290f71b337726ae2c355e722a9ec7e6b8a11c58016d33bf3c2b626d0877b8aa"
+  }
+}

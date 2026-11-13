@@ -1,0 +1,23 @@
+                                 method  event_macro_mape_pct  case_mape_pct  events  cases
+                            family_mean              8.472837       8.409490      43    412
+          retrieval__retrieval_residual              8.893238       8.860527      43    412
+                       blend_control_50              9.074328       8.995808      43    412
+              growth__growth_dual_clock              9.119747       9.052811      43    412
+   growth__growth_dual_clock__seed_2026              9.215224       9.142208      43    412
+    growth__growth_dual_clock__seed_123              9.280257       9.239899      43    412
+   hierarchy__hierarchy_phase_shrinkage              9.407033       9.365288      43    412
+hierarchy__hierarchy_additive_shrinkage              9.432064       9.390037      43    412
+     growth__growth_progress__seed_2026              9.438907       9.390997      43    412
+                growth__growth_progress              9.509698       9.460010      43    412
+           retrieval__retrieval_control              9.697999       9.624397      43    412
+     growth__growth_dual_clock__seed_42              9.704824       9.636152      43    412
+      growth__growth_progress__seed_123              9.709655       9.691129      43    412
+       growth__growth_progress__seed_42             10.154121      10.075521      43    412
+          retrieval__retrieval_features             10.220048      10.155487      43    412
+         growth__growth_direct__seed_42             10.389954      10.342661      43    412
+                  growth__growth_direct             10.425411      10.369524      43    412
+        growth__growth_direct__seed_123             10.601388      10.561302      43    412
+    hierarchy__hierarchy_static_context             10.762315      10.722754      43    412
+       growth__growth_direct__seed_2026             11.250665      11.187960      43    412
+                                 linear             17.377879      17.341151      43    412
+                           hold_current             44.181599      44.084842      43    412

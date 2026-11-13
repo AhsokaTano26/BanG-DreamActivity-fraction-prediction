@@ -1,0 +1,41 @@
+{
+  "dataset_id": "7f1cba133053f700e3952ab00dd6d1367e31169ea2739f5288644e806d940bb8",
+  "dataset_directory": "/Users/tano/Documents/GitHub/personal/BanG-Dream-Activity-fraction-prediction/data/forward_validation/extra_327_328_v1",
+  "mode": "outside_cohort_retrospective_replay",
+  "methods": [
+    "reference_single",
+    "reference_paired",
+    "selected_combo"
+  ],
+  "artifacts": {
+    "grid_pair_audit.csv": "5bfc82523d0b863207ac3dfc861eabfaa205d96cb96a8238560b11173dc88d88",
+    "grid_predictions.csv": "6ecb98eb726ae95e585b8c036034b950ce96d0b1d51a91e3ac1380cc60813387",
+    "legacy_pair_audit.csv": "9e623aa5c9e544bc5c30a6f1a12a1d95577086aa312fafca152525f8483c8865",
+    "legacy_predictions.csv": "88a4781fbc151559d2dc01fca47facf0848db75f6a5db780723321469dc3a7d8",
+    "models/fusion__fusion_cat_rank_progress.joblib": "80c7dd37be621e79d237c356de213037f99cd6e19d770d352d4fd97ec85ac407",
+    "models/reference_paired.joblib": "4b2a0e3b97a71a4e46ca05e36d148856c7ca7b1296be458aca047b1436f06128",
+    "models/reference_single.joblib": "3bcc4aa0a4d51b0423e03d3a087efbdab3e47cc3f9bd63ab7fc3810ca68fc0f2",
+    "models/remaining__remaining_baseline_log_rmse.joblib": "f34baf96dc8418c90e7cebacbae6032d799702d59186ed9b50daa75527d41e29",
+    "models/shift__shift_calendar_rank.joblib": "24ea857f47d4ef45123af4739a59749c3cfd74a2587696a5ee60450d629474c0",
+    "run_manifest.json": "fd84e43c83fb829ce82e02300c7211c7bc1e7a1ab65cc6571b61b55e06335b12",
+    "sources/API/GetEventInfo.py": "5e4599d5bcdfe0e3391db130260db4c7fedbb507ba7d698c9936804fd1c3b39e",
+    "sources/API/GetEventTracker.py": "cd67434c00a18356adf98f685e9d9f3b1c4e898974a60de7966235528c1cb7ba",
+    "sources/analysis/backtest.py": "df2733f8aff144582da7f732e3def213a224f5689b38ea8065f748d43f2e99be",
+    "sources/analysis/event_features.py": "cf3eb59a5b8e99a4cebda38a54a642140d8fcc017c4d38a132499fce38074419",
+    "sources/analysis/forward_validation.py": "37443d8706957d0066d4dbd549bfc931a02d530aeb0f25d35ec60df07c03153f",
+    "sources/analysis/holdout_dataset.py": "22cf94748c4953b72a570093d8e26e76ae9437454e09da181fc9e5e10c6a2f6f",
+    "sources/analysis/holdout_evaluate.py": "cf2226d0ca778a31a37d58c57a066f81ec015df01da5899f8ca621ca2859bda4",
+    "sources/analysis/multirank_dataset.py": "c47b652b27971009f9ea1ecd9837832b9ed376d49d5b53adb2baea219ba9d8a8",
+    "sources/analysis/multirank_model.py": "ff3eda807ddd2990d7150609a719a3a691fe23938de655c2ef9e365193a211e2",
+    "sources/analysis/research_fusion.py": "96df2f74b4a94f498bc5ae4bf6f19fca043436da76801e3db616c2f8a9bd004a",
+    "sources/analysis/research_remaining.py": "3a4764c49fae428b3010a20ff925bf6b06de9c41cd650f29e0aa7f64d73e9e3e",
+    "sources/analysis/research_search.py": "813e5554cbb078c2f4e485c76c2ce2ea3cad377b2823c9df4893932626ba96c5",
+    "sources/analysis/research_shift.py": "8d17dcf2ba07e112c01d4eefcc6c92cbe420d7889c7a1c49614d849459a80c18",
+    "sources/analysis/temporal_dataset.py": "288ab6ce031b916514a931c79f5626ab8807532484fa55002d1724e03b120235",
+    "sources/analysis/temporal_evaluate.py": "57a1154d6e471968daa0d2911da103f258ee4c31f8b0d36fd6b27a5f678e860f",
+    "sources/analysis/temporal_paired_features.py": "c6343c37e24944e6d2f353a33d66ac42642ac18e29010181afac3109eb929396",
+    "sources/analysis/temporal_rank_subset.py": "300587b01572970c1ed5069898bca534841b6768512b09b36ae4497133edf271",
+    "sources/download_ranks.py": "06304868c9189299b1392ce99ee4f4819324be13cdc2449539edb97e87554424",
+    "sources/xgboost.py": "d814551d1246b1a5eaa2c5d9a070b3ea01c58671d31741394cf46cbe8c3e2c75"
+  }
+}

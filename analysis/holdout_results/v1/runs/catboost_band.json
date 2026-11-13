@@ -1,0 +1,9 @@
+{
+  "method": "catboost_band",
+  "backend": "catboost",
+  "mode": "band",
+  "seconds": 3.49241050001001,
+  "checkpoint_sha256": "802022da36e40d673b5e99e256ca100e7e295234d63c206de149b8f89891408b",
+  "run_id": "aef5892fd06e218af95c2a93610eae2ec22438cc31833cde189346be6885e2e8",
+  "prediction_sha256": "e875201015ffc073f7376722866f0a5fb019d9db90f32bb34ace47aa295ad4fd"
+}

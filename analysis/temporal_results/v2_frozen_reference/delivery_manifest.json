@@ -1,0 +1,13 @@
+{
+  "artifacts": {
+    "README.md": "3ad581f8831076364110aa4e14f82a6fc0bc4d32cdd92006baf1cc5268ccf658",
+    "review.md": "e8a122e1c52253220de1974a67fbaac90b6576200fdd73fb17588169dbc3a470",
+    "verification-tests.log": "6ca0eff618fe8ae061ead8b144781decda48c35d8bd330ea4f3ef9e181f033fe",
+    "v1_overlap_verification.json": "39b1ca9a5bf750f2391b04878d29760a6014517fbf794afe15bfb5b6a46632c4"
+  },
+  "report_manifest_sha256": "8bdefd55c0bfa29f41c82108d1e4f063b2ccf0e6e82620b433afafdb89ffcde5",
+  "evaluation_manifest_sha256": "22b295f83da072eadb08fc26d49688ced84cc0c14389a23ccf2ca5b7b287a442",
+  "dataset_id": "5f1d11f35e0da7b0fa02a0a056659ff75390efab62bf06545debb2c82e9f4a27",
+  "plan_sha256": "54acd8725c1daa281faa67b4978bcf012e6cf0b8436fea3a507397b768f609b7",
+  "protocol_sha256": "5b75fe22774b1ab61c55f9a967e74163aea2154a562437e5965ad53b7fe3cfe2"
+}

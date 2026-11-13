@@ -1,0 +1,11 @@
+{
+  "evaluation_manifest_sha256": "ea6e5d7f81f54e96e0b026f7e47444d7647b19d91b5e46c91211844ab1ac08ff",
+  "artifacts": {
+    "README.md": "5aa4b1783a55a6d326b6c4e850a08886f813219f60ecab5da0977c47f6517626",
+    "build_report.py": "86750aa7d234cff3c9c5193190c8eb6be893bbfaa65069c728abcaa6e5a1411d",
+    "matched_snapshot_scores.csv": "bc893ba7e5407b776b46856e77e95a247e32e8bcc28e0fb7205eb7eb8ba0080e",
+    "prospective_registration.json": "20cb84bad5e09730e09762998066019c3fe332dc7ba6f15f1571e174ebd189a0",
+    "next_event_metadata.json": "1ca7728a0926fa4daa5656892c693bc8b465a43dd9f8b7b7bed2344e703749c8",
+    "availability_check.py": "d3458fdf761a86a7de9bd2e9dccf106dfdd940189008281cf635d3c3b3fdd504"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "dataset_id": "d0ccf9f70aee19ad1b2152925e7afe8692d67f4a6e539d558f87e2cd33329bbb",
+  "dataset_directory": "/Users/tano/Documents/GitHub/personal/BanG-Dream-Activity-fraction-prediction/data/holdout_v1",
+  "recipes": [
+    "remaining_rank",
+    "deadline_features",
+    "deadline_residual"
+  ],
+  "fold_left": [
+    98,
+    123,
+    148,
+    173
+  ],
+  "fold_size": 25,
+  "tree_parameters": {
+    "iterations": 500,
+    "depth": 4,
+    "learning_rate": 0.03,
+    "l2_leaf_reg": 15,
+    "loss_function": "RMSE",
+    "random_seed": 42,
+    "thread_count": 4,
+    "verbose": false,
+    "allow_writing_files": false
+  },
+  "history": {
+    "recency_days": 720.0,
+    "different_type_weight": 0.15,
+    "log_duration_scale": 0.5,
+    "shape_bandwidth": 0.5
+  },
+  "residual_calibration": {
+    "alpha": 100,
+    "clip": 0.25,
+    "shrinkages": [
+      0.25,
+      0.5,
+      1.0
+    ],
+    "training": "earlier OOF folds only; first fold unchanged"
+  },
+  "reference": {
+    "directory": "/Users/tano/Documents/GitHub/personal/BanG-Dream-Activity-fraction-prediction/analysis/holdout_results/structured_neural_v1",
+    "manifest_sha256": "6a7abf50374c3838f774dc80fd04a03397315d5f12237a85b3c8e37eec08c224",
+    "run_id": "744df452c51e14d366213b274766ea1f2355d3da2b149c27f09b6002bc82c569",
+    "selected": "blend_neural_0.25"
+  },
+  "scope": "training folds and frozen validation only; no test prediction or scoring",
+  "global_weights": "equal activity total across ranks",
+  "python": "3.14.8",
+  "source_hashes": {
+    "analysis/deadline_benchmark.py": "39f9bb0a18e4af9929e6a603e93fc04028feb80e81695ee4f6ba862a0e5719d6",
+    "analysis/deadline_features.py": "38ddd8be4ac178b364b29415dc079a0afc389d565bfc6b4c88bf58bf3033c60a",
+    "analysis/deadline_diagnostics.py": "b34c48b7c99cfb3b580c9ecb0ceba7df9c8e86720b1d2fb2642b690f22d29fcd",
+    "analysis/relationship_benchmark.py": "dad49fbee83ad73f90ad9a426738b805a84722904d70d07812fa7539e24b9845",
+    "analysis/relationship_features.py": "717e8919cee5078cec61f80e3b5a12315b8dd34c6753e1964cf81731cd063642",
+    "analysis/relationship_statistics.py": "c8eca34121693a730313b39118164f397c8281d4233bab6c4156f930221ebe35",
+    "analysis/holdout_dataset.py": "22cf94748c4953b72a570093d8e26e76ae9437454e09da181fc9e5e10c6a2f6f",
+    "analysis/backtest.py": "df2733f8aff144582da7f732e3def213a224f5689b38ea8065f748d43f2e99be",
+    "analysis/event_features.py": "cf3eb59a5b8e99a4cebda38a54a642140d8fcc017c4d38a132499fce38074419"
+  },
+  "software": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "scipy": "1.18.1",
+    "catboost": "1.2.10",
+    "scikit-learn": "1.9.1",
+    "joblib": "1.6.0"
+  },
+  "run_id": "f65d25f6f15719e5733e10368b8f9643b44e84a37eae3f4c40d77c8161fd0b92"
+}

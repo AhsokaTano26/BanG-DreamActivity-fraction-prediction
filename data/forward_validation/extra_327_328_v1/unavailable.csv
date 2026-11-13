@@ -1,0 +1,11 @@
+event,rank,stage_id,cutoff,reason
+327,1000,elapsed_1h,1792994400000,insufficient/stale/nonpositive prefix or outside event
+327,1000,elapsed_3h,1793001600000,insufficient/stale/nonpositive prefix or outside event
+327,2000,elapsed_1h,1792994400000,insufficient/stale/nonpositive prefix or outside event
+327,2000,elapsed_3h,1793001600000,insufficient/stale/nonpositive prefix or outside event
+328,1000,elapsed_1h,1793858400000,insufficient/stale/nonpositive prefix or outside event
+328,1000,elapsed_3h,1793865600000,insufficient/stale/nonpositive prefix or outside event
+328,1000,remaining_48h,1794236399000,insufficient/stale/nonpositive prefix or outside event
+328,2000,elapsed_1h,1793858400000,insufficient/stale/nonpositive prefix or outside event
+328,2000,elapsed_3h,1793865600000,insufficient/stale/nonpositive prefix or outside event
+328,2000,remaining_48h,1794236399000,insufficient/stale/nonpositive prefix or outside event

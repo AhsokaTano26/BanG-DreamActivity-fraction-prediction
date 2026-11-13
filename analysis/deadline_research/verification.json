@@ -1,0 +1,15 @@
+{
+  "dataset_id": "d0ccf9f70aee19ad1b2152925e7afe8692d67f4a6e539d558f87e2cd33329bbb",
+  "run_id": "d7c6be0e789fb7822c70cb8b4721fcfa18c593f7532de8e258db1440c72df28b",
+  "all_seals_valid": true,
+  "source_hashes_valid": true,
+  "baseline_validation_replay_exact": true,
+  "independent_metric_max_difference": 8.881784197001252e-16,
+  "train_oof_events": 100,
+  "train_oof_cases": 2190,
+  "validation_events": 42,
+  "validation_cases": 414,
+  "test_inputs_or_labels_requested": false,
+  "source_sha256": "88b75ac42c6072acc379c6ba0681160cb1e432d9587fd2d5bce8adf4dfa80d68",
+  "database_sha256": "1d15dc07c06e4cc3a1ab6c442bb02cbcfa204b1057e48507db68d6d14e28d5aa"
+}

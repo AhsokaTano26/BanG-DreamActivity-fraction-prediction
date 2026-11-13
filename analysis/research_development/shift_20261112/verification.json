@@ -1,0 +1,80 @@
+{
+  "checks": [
+    {
+      "method": "shift_calendar_pool",
+      "saved_prediction_replayed": true,
+      "event_totals_equal": true,
+      "case_count": 1548,
+      "finite_positive": true,
+      "weight_total_range": [
+        11.372448979591836,
+        11.372448979591837
+      ],
+      "oof_folds": 0
+    },
+    {
+      "method": "shift_calendar_rank",
+      "saved_prediction_replayed": true,
+      "event_totals_equal": true,
+      "case_count": 1548,
+      "finite_positive": true,
+      "weight_total_range": [
+        11.372448979591836,
+        11.372448979591837
+      ],
+      "oof_folds": 0
+    },
+    {
+      "method": "shift_calendar_phase",
+      "saved_prediction_replayed": true,
+      "event_totals_equal": true,
+      "case_count": 1548,
+      "finite_positive": true,
+      "weight_total_range": [
+        11.372448979591837,
+        11.372448979591837
+      ],
+      "oof_folds": 0
+    },
+    {
+      "method": "shift_era_ridge",
+      "saved_prediction_replayed": true,
+      "event_totals_equal": true,
+      "case_count": 1548,
+      "finite_positive": true,
+      "weight_total_range": [
+        11.372448979591836,
+        11.372448979591837
+      ],
+      "oof_folds": 0
+    },
+    {
+      "method": "shift_pool_calibrated",
+      "saved_prediction_replayed": true,
+      "event_totals_equal": true,
+      "case_count": 1548,
+      "finite_positive": true,
+      "weight_total_range": [
+        11.372448979591836,
+        11.372448979591837
+      ],
+      "oof_folds": 3
+    },
+    {
+      "method": "shift_rank_calibrated",
+      "saved_prediction_replayed": true,
+      "event_totals_equal": true,
+      "case_count": 1548,
+      "finite_positive": true,
+      "weight_total_range": [
+        11.372448979591836,
+        11.372448979591837
+      ],
+      "oof_folds": 3
+    }
+  ],
+  "focused_tests": "5 passed",
+  "full_suite": "124 passed in 81.033s",
+  "ridge_warning": "sklearn weighted StandardScaler emitted invalid sqrt for near-constant floating variance; predictions remained finite; this recipe was not selected",
+  "test_labels_read": false
+}

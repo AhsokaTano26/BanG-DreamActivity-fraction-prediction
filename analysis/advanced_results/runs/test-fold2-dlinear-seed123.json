@@ -1,0 +1,12 @@
+{
+  "architecture": "dlinear",
+  "seed": 123,
+  "device": "mps",
+  "parameters": 33121,
+  "epochs_run": 27,
+  "selected_epochs": 27,
+  "seconds": 0.6296418750425801,
+  "trace": [],
+  "signature": "fd64730f9715bf10f35ab88ba92e34b575c0d950371fab68ea0859052fc431b4",
+  "key": "test-fold2-dlinear-seed123"
+}

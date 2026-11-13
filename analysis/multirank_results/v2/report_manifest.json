@@ -1,0 +1,14 @@
+{
+  "artifacts": {
+    "README.md": "67a1342f85e1950d4b322f32c2017e4aaab45eb7bbb4a1ca1d11abc581d918be",
+    "review.md": "9b9443b803f019207f29b0b25b23b3bb896f0b796e2cacfc9ae2ee1d2582262e",
+    "verification-tests.log": "5e4e1a82e1911d7293266c45174e5ef1f5f58c2e758c40d317aeab8829445230",
+    "current_cli_source.py": "27888003ebe628749495d60584a200991b9687050c4193411cc6ee3f1658d99b",
+    "multirank_tests_source.py": "0d15c99ba7baaa91a07d8b1c9bf47d07034ae4961894570b5eb1d6db619f4663"
+  },
+  "plan_sha256": "2d224266e3715bd1c3e49720228c9a4a63f29110bb867e4fc7ac5dbfd43b789b",
+  "blind_manifest_sha256": "0c219321ea792b7a90b289c50f38b06e9a3633b1ef8f7deb2fecb616961ac757",
+  "evaluation_manifest_sha256": "a8e482d4e6cdd16fcfe7166e0e6de412c622bfc6378668a1714051114cc890c7",
+  "prediction_manifest_sha256": "b6cde855b4a14c9e209868bd495c4e3d6ef1d95b0c802fc8196ac7df748ed755",
+  "post_guard_verification_sha256": "e97b75f17db08a7a6d08781f783503e4f486c3e6fcf3bafbe31369416bb298c4"
+}

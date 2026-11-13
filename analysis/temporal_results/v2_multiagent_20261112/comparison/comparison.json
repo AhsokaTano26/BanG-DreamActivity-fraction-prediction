@@ -1,0 +1,116 @@
+{
+  "evaluation_id": "fad963221c4da427fca9c587d28c80a07172023e1487c04bec8cb8a730cdc307",
+  "identity": {
+    "blind_manifest_sha256": "ad3a0308043099179e09b759b5784e7fb411951e78903bfc7dd37ec5d104e4fe",
+    "dataset_id": "1f76f39af8151bba185496411bbcee064b16a4c5aca5c515c1d957a5056fe854",
+    "methods": [
+      "family_mean",
+      "remaining__remaining_baseline_log_rmse",
+      "fusion__fusion_cat_rank_progress",
+      "shift__shift_calendar_rank"
+    ],
+    "references": [
+      "reference_single",
+      "reference_paired"
+    ],
+    "seed": 42,
+    "draws": 5000,
+    "sources": {
+      "analysis/research_compare.py": "9164ff3c42f4a3f9bcdc441e9a9615466582a8f805b6bde501728561230d0985",
+      "analysis/holdout_evaluate.py": "cf2226d0ca778a31a37d58c57a066f81ec015df01da5899f8ca621ca2859bda4",
+      "analysis/holdout_dataset.py": "22cf94748c4953b72a570093d8e26e76ae9437454e09da181fc9e5e10c6a2f6f",
+      "analysis/temporal_dataset.py": "288ab6ce031b916514a931c79f5626ab8807532484fa55002d1724e03b120235",
+      "analysis/temporal_evaluate.py": "57a1154d6e471968daa0d2911da103f258ee4c31f8b0d36fd6b27a5f678e860f",
+      "analysis/multirank_dataset.py": "c47b652b27971009f9ea1ecd9837832b9ed376d49d5b53adb2baea219ba9d8a8",
+      "analysis/backtest.py": "df2733f8aff144582da7f732e3def213a224f5689b38ea8065f748d43f2e99be"
+    },
+    "python": "3.14.8",
+    "software": {
+      "numpy": "2.5.4",
+      "pandas": "3.1.1"
+    },
+    "interpretation": "descriptive marginal percentile intervals; no multiple-comparison adjustment or selection"
+  },
+  "comparison": [
+    {
+      "method": "family_mean",
+      "reference": "reference_single",
+      "events": 43,
+      "new_minus_reference_mape_points": -0.6345278341958515,
+      "ci95_low": -1.9270819941549242,
+      "ci95_high": 0.8011609872842481,
+      "events_improved": 33,
+      "events_worsened": 10
+    },
+    {
+      "method": "family_mean",
+      "reference": "reference_paired",
+      "events": 43,
+      "new_minus_reference_mape_points": -0.32278941928107113,
+      "ci95_low": -0.6504067231169421,
+      "ci95_high": 0.00987750187416642,
+      "events_improved": 27,
+      "events_worsened": 16
+    },
+    {
+      "method": "remaining__remaining_baseline_log_rmse",
+      "reference": "reference_single",
+      "events": 43,
+      "new_minus_reference_mape_points": -0.3142290657970937,
+      "ci95_low": -1.6919724102462943,
+      "ci95_high": 1.2067899024944255,
+      "events_improved": 32,
+      "events_worsened": 11
+    },
+    {
+      "method": "remaining__remaining_baseline_log_rmse",
+      "reference": "reference_paired",
+      "events": 43,
+      "new_minus_reference_mape_points": -0.0024906508823133644,
+      "ci95_low": -0.029691441531525368,
+      "ci95_high": 0.02683372401411668,
+      "events_improved": 26,
+      "events_worsened": 17
+    },
+    {
+      "method": "fusion__fusion_cat_rank_progress",
+      "reference": "reference_single",
+      "events": 43,
+      "new_minus_reference_mape_points": -0.6352496730193221,
+      "ci95_low": -1.5363227506187884,
+      "ci95_high": 0.3628234536371887,
+      "events_improved": 34,
+      "events_worsened": 9
+    },
+    {
+      "method": "fusion__fusion_cat_rank_progress",
+      "reference": "reference_paired",
+      "events": 43,
+      "new_minus_reference_mape_points": -0.32351125810454173,
+      "ci95_low": -0.9985848342566527,
+      "ci95_high": 0.3164354596521306,
+      "events_improved": 26,
+      "events_worsened": 17
+    },
+    {
+      "method": "shift__shift_calendar_rank",
+      "reference": "reference_single",
+      "events": 43,
+      "new_minus_reference_mape_points": -0.008411344162009747,
+      "ci95_low": -1.6820693297155584,
+      "ci95_high": 1.7897487044384872,
+      "events_improved": 29,
+      "events_worsened": 14
+    },
+    {
+      "method": "shift__shift_calendar_rank",
+      "reference": "reference_paired",
+      "events": 43,
+      "new_minus_reference_mape_points": 0.30332707075277043,
+      "ci95_low": -0.3652220714686303,
+      "ci95_high": 0.9757525634836649,
+      "events_improved": 20,
+      "events_worsened": 23
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "dataset_id": "d0ccf9f70aee19ad1b2152925e7afe8692d67f4a6e539d558f87e2cd33329bbb",
+  "run_id": "d7c6be0e789fb7822c70cb8b4721fcfa18c593f7532de8e258db1440c72df28b",
+  "development_seal_valid": true,
+  "source_hashes_valid": true,
+  "oof_events": 100,
+  "oof_cases": 2190,
+  "validation_events": 42,
+  "validation_cases": 414,
+  "comparisons": {
+    "deadline_features": {
+      "oof_delta_vs_base": -0.16676705331012337,
+      "paired_event_95ci": [
+        -0.5221018944553818,
+        0.17650489572589131
+      ]
+    },
+    "deadline_residual": {
+      "oof_delta_vs_base": -0.06468862603128683,
+      "paired_event_95ci": [
+        -0.5467345656120003,
+        0.39758473264944294
+      ]
+    },
+    "oof_correction_0.25": {
+      "oof_delta_vs_base": -0.04567672139921454,
+      "paired_event_95ci": [
+        -0.15804452812631872,
+        0.06462799799221351
+      ]
+    },
+    "oof_correction_0.5": {
+      "oof_delta_vs_base": 0.00550743879854199,
+      "paired_event_95ci": [
+        -0.2121819251687386,
+        0.21966233499022478
+      ]
+    },
+    "oof_correction_1.0": {
+      "oof_delta_vs_base": 0.3705139092835262,
+      "paired_event_95ci": [
+        -0.04201354480128991,
+        0.7627261741334325
+      ]
+    },
+    "remaining_rank": {
+      "oof_delta_vs_base": 0.0,
+      "paired_event_95ci": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "fold_periods": [
+    {
+      "fold": 0,
+      "events": 25,
+      "first_start": "2021-09-14T13:00:00+08:00",
+      "last_start": "2022-03-22T13:00:00+08:00",
+      "median_duration_h": 129.98333333333332
+    },
+    {
+      "fold": 1,
+      "events": 25,
+      "first_start": "2022-03-29T13:00:00+08:00",
+      "last_start": "2022-09-24T13:00:00+08:00",
+      "median_duration_h": 129.98333333333332
+    },
+    {
+      "fold": 2,
+      "events": 25,
+      "first_start": "2022-10-03T13:00:00+08:00",
+      "last_start": "2023-08-20T13:00:00+08:00",
+      "median_duration_h": 177.99972222222223
+    },
+    {
+      "fold": 3,
+      "events": 25,
+      "first_start": "2023-09-16T13:00:00+08:00",
+      "last_start": "2024-05-15T13:00:00+08:00",
+      "median_duration_h": 177.99972222222223
+    }
+  ],
+  "test_data_read": false
+}

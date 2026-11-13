@@ -1,0 +1,7 @@
+{
+  "architecture": "xgb_sequence_residual",
+  "seed": 42,
+  "seconds": 1.0621658330201171,
+  "signature": "fd64730f9715bf10f35ab88ba92e34b575c0d950371fab68ea0859052fc431b4",
+  "key": "test-fold1-xgb_sequence_residual-seed42"
+}

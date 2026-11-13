@@ -1,0 +1,209 @@
+{
+  "current_reference": {
+    "delta_mape_pp": 0.0,
+    "ci95_pp": [
+      0.0,
+      0.0
+    ],
+    "events_improved": 0,
+    "events": 42
+  },
+  "remaining_rank": {
+    "delta_mape_pp": 0.5041390354580843,
+    "ci95_pp": [
+      0.20643407891644278,
+      0.7858949567850584
+    ],
+    "events_improved": 12,
+    "events": 42
+  },
+  "additive_spline": {
+    "delta_mape_pp": 6.462703961982155,
+    "ci95_pp": [
+      5.699431731855946,
+      7.235454013022027
+    ],
+    "events_improved": 0,
+    "events": 42
+  },
+  "hierarchical_spline": {
+    "delta_mape_pp": 6.552344785793702,
+    "ci95_pp": [
+      5.806051979364395,
+      7.308820312307055
+    ],
+    "events_improved": 0,
+    "events": 42
+  },
+  "quality_spline": {
+    "delta_mape_pp": 6.40790972240756,
+    "ci95_pp": [
+      5.652490731729323,
+      7.170195987406531
+    ],
+    "events_improved": 0,
+    "events": 42
+  },
+  "quality_shared_tree": {
+    "delta_mape_pp": 1.9377715980809525,
+    "ci95_pp": [
+      1.5658486899703483,
+      2.312720586482141
+    ],
+    "events_improved": 2,
+    "events": 42
+  },
+  "quality_type_tree": {
+    "delta_mape_pp": 2.4055053005014275,
+    "ci95_pp": [
+      1.9098011841529237,
+      2.913332884279229
+    ],
+    "events_improved": 3,
+    "events": 42
+  },
+  "time_gru_seed42": {
+    "delta_mape_pp": 2.663656351208186,
+    "ci95_pp": [
+      2.15848139626466,
+      3.1882345343886223
+    ],
+    "events_improved": 4,
+    "events": 42
+  },
+  "time_gru_seed123": {
+    "delta_mape_pp": 2.701395553583315,
+    "ci95_pp": [
+      2.1975065662055577,
+      3.2131266917519072
+    ],
+    "events_improved": 3,
+    "events": 42
+  },
+  "time_gru_seed2026": {
+    "delta_mape_pp": 2.7656217467891886,
+    "ci95_pp": [
+      2.2530540347078016,
+      3.2766840770519083
+    ],
+    "events_improved": 5,
+    "events": 42
+  },
+  "time_gru_ensemble3": {
+    "delta_mape_pp": 2.5841463782342933,
+    "ci95_pp": [
+      2.08102841733915,
+      3.085207789544477
+    ],
+    "events_improved": 5,
+    "events": 42
+  },
+  "neural_cde_seed42": {
+    "delta_mape_pp": 2.8011384724340997,
+    "ci95_pp": [
+      2.3599175959371457,
+      3.273013704611832
+    ],
+    "events_improved": 1,
+    "events": 42
+  },
+  "neural_cde_seed123": {
+    "delta_mape_pp": 3.103240195041095,
+    "ci95_pp": [
+      2.611672002206314,
+      3.619963586613025
+    ],
+    "events_improved": 1,
+    "events": 42
+  },
+  "neural_cde_seed2026": {
+    "delta_mape_pp": 2.9577628138270686,
+    "ci95_pp": [
+      2.4700493938032566,
+      3.450196361444803
+    ],
+    "events_improved": 2,
+    "events": 42
+  },
+  "neural_cde_ensemble3": {
+    "delta_mape_pp": 2.8333224346330206,
+    "ci95_pp": [
+      2.3821898129886896,
+      3.307537965493573
+    ],
+    "events_improved": 1,
+    "events": 42
+  },
+  "blend25_remaining_rank": {
+    "delta_mape_pp": 0.008185223509697415,
+    "ci95_pp": [
+      -0.07848765668058567,
+      0.0901377335012619
+    ],
+    "events_improved": 17,
+    "events": 42
+  },
+  "blend25_additive_spline": {
+    "delta_mape_pp": 0.7042445616422361,
+    "ci95_pp": [
+      0.4233038050135484,
+      0.9892347603966437
+    ],
+    "events_improved": 10,
+    "events": 42
+  },
+  "blend25_hierarchical_spline": {
+    "delta_mape_pp": 0.7381590623009744,
+    "ci95_pp": [
+      0.4610608113113054,
+      1.0261627938673705
+    ],
+    "events_improved": 9,
+    "events": 42
+  },
+  "blend25_quality_spline": {
+    "delta_mape_pp": 0.7416266580140832,
+    "ci95_pp": [
+      0.47132730235050085,
+      1.0205104429815213
+    ],
+    "events_improved": 8,
+    "events": 42
+  },
+  "blend25_quality_shared_tree": {
+    "delta_mape_pp": 0.2814373929536533,
+    "ci95_pp": [
+      0.16901502614569278,
+      0.3936940857329478
+    ],
+    "events_improved": 11,
+    "events": 42
+  },
+  "blend25_quality_type_tree": {
+    "delta_mape_pp": 0.23858731873872938,
+    "ci95_pp": [
+      0.08911352442204522,
+      0.39849414965999014
+    ],
+    "events_improved": 12,
+    "events": 42
+  },
+  "blend25_time_gru_ensemble3": {
+    "delta_mape_pp": 0.1885859713412143,
+    "ci95_pp": [
+      0.04572238542664665,
+      0.33503723381625106
+    ],
+    "events_improved": 16,
+    "events": 42
+  },
+  "blend25_neural_cde_ensemble3": {
+    "delta_mape_pp": 0.3291674646051896,
+    "ci95_pp": [
+      0.20720879254150923,
+      0.4646687552735289
+    ],
+    "events_improved": 8,
+    "events": 42
+  }
+}

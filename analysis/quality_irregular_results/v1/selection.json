@@ -1,0 +1,31 @@
+{
+  "run_id": "8eca721206629d818ecbcb85a5113ed071fb978da132ffcf994df4f8342f44ec",
+  "dataset_id": "d0ccf9f70aee19ad1b2152925e7afe8692d67f4a6e539d558f87e2cd33329bbb",
+  "selected_on_validation": "current_reference",
+  "validation_scores": {
+    "current_reference": 3.8018431097910663,
+    "remaining_rank": 4.305982145249151,
+    "additive_spline": 10.264547071773219,
+    "hierarchical_spline": 10.354187895584769,
+    "quality_spline": 10.209752832198628,
+    "quality_shared_tree": 5.739614707872019,
+    "quality_type_tree": 6.207348410292494,
+    "time_gru_seed42": 7.68617174798435,
+    "time_gru_seed123": 7.018584899802872,
+    "time_gru_seed2026": 6.689042695620486,
+    "time_gru_ensemble3": 6.9836494050994835,
+    "neural_cde_seed42": 7.017203765346771,
+    "neural_cde_seed123": 7.254584708130448,
+    "neural_cde_seed2026": 7.130723121401559,
+    "neural_cde_ensemble3": 7.035401930612473,
+    "blend25_remaining_rank": 3.8100283333007647,
+    "blend25_additive_spline": 4.506087671433303,
+    "blend25_hierarchical_spline": 4.540002172092041,
+    "blend25_quality_spline": 4.54346976780515,
+    "blend25_quality_shared_tree": 4.08328050274472,
+    "blend25_quality_type_tree": 4.040430428529797,
+    "blend25_time_gru_ensemble3": 4.052809760236338,
+    "blend25_neural_cde_ensemble3": 4.115729200294837
+  },
+  "test_evaluated": false
+}

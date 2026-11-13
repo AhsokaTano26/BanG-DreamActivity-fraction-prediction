@@ -1,0 +1,32 @@
+{
+  "evaluation_id": "474af935ce5c1185ed8083da531057c5e8f91b824c17c3e42ddafa1162244d13",
+  "identity": {
+    "blind_manifest_sha256": "0c219321ea792b7a90b289c50f38b06e9a3633b1ef8f7deb2fecb616961ac757",
+    "dataset_id": "e94e249b47b6d542faa997ff82c4cccd29187bb3409aba74069b050e313d5e7a",
+    "sources": {
+      "analysis/multirank_evaluate.py": "1165a6cda0758aadab6c091c1aa428cd38f467fb43838a3c90ef6d12eb4c6cce",
+      "analysis/holdout_evaluate.py": "cf2226d0ca778a31a37d58c57a066f81ec015df01da5899f8ca621ca2859bda4",
+      "analysis/multirank_dataset.py": "c47b652b27971009f9ea1ecd9837832b9ed376d49d5b53adb2baea219ba9d8a8",
+      "analysis/multirank_model.py": "ff3eda807ddd2990d7150609a719a3a691fe23938de655c2ef9e365193a211e2",
+      "analysis/holdout_dataset.py": "22cf94748c4953b72a570093d8e26e76ae9437454e09da181fc9e5e10c6a2f6f",
+      "analysis/backtest.py": "df2733f8aff144582da7f732e3def213a224f5689b38ea8065f748d43f2e99be",
+      "analysis/event_features.py": "cf3eb59a5b8e99a4cebda38a54a642140d8fcc017c4d38a132499fce38074419"
+    },
+    "python": "3.14.8",
+    "software": {
+      "numpy": "2.5.4",
+      "pandas": "3.1.1"
+    }
+  },
+  "artifacts": {
+    "evaluation.json": "77e550c39e466484ae1033f2b3cf08701a382facb4edfc285bae54f0a8458faf",
+    "test_summary.csv": "aec77a40701573000b7ab2e6366d8a612e3fad709535a21d28477582677a501f",
+    "evaluator_sources/multirank_model.py": "ff3eda807ddd2990d7150609a719a3a691fe23938de655c2ef9e365193a211e2",
+    "evaluator_sources/event_features.py": "cf3eb59a5b8e99a4cebda38a54a642140d8fcc017c4d38a132499fce38074419",
+    "evaluator_sources/holdout_dataset.py": "22cf94748c4953b72a570093d8e26e76ae9437454e09da181fc9e5e10c6a2f6f",
+    "evaluator_sources/multirank_dataset.py": "c47b652b27971009f9ea1ecd9837832b9ed376d49d5b53adb2baea219ba9d8a8",
+    "evaluator_sources/multirank_evaluate.py": "1165a6cda0758aadab6c091c1aa428cd38f467fb43838a3c90ef6d12eb4c6cce",
+    "evaluator_sources/holdout_evaluate.py": "cf2226d0ca778a31a37d58c57a066f81ec015df01da5899f8ca621ca2859bda4",
+    "evaluator_sources/backtest.py": "df2733f8aff144582da7f732e3def213a224f5689b38ea8065f748d43f2e99be"
+  }
+}

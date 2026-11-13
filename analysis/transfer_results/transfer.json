@@ -1,0 +1,207 @@
+{
+  "created_at": "2026-11-10T15:38:28.804547+00:00",
+  "database_sha256": "1d15dc07c06e4cc3a1ab6c442bb02cbcfa204b1057e48507db68d6d14e28d5aa",
+  "old_curves": 311,
+  "old_events": 195,
+  "configuration": {
+    "pretrain_epochs": 30,
+    "finetune_epochs": 27,
+    "old_weight": 0.25,
+    "pretrain_lr": 0.001,
+    "finetune_lr": 0.0003,
+    "device": "mps",
+    "seeds": [
+      42,
+      123,
+      2026
+    ]
+  },
+  "fold_audit": [
+    {
+      "fold": 0,
+      "old_curves": 311,
+      "old_events": 195,
+      "recent_curves": 132,
+      "old_snapshots": 3968,
+      "recent_snapshots": 2200,
+      "latest_training_end": 1761749999000,
+      "earliest_test_start": 1761886800000
+    },
+    {
+      "fold": 1,
+      "old_curves": 311,
+      "old_events": 195,
+      "recent_curves": 150,
+      "old_snapshots": 3968,
+      "recent_snapshots": 2496,
+      "latest_training_end": 1769698799000,
+      "earliest_test_start": 1769835600000
+    },
+    {
+      "fold": 2,
+      "old_curves": 311,
+      "old_events": 195,
+      "recent_curves": 168,
+      "old_snapshots": 3968,
+      "recent_snapshots": 2774,
+      "latest_training_end": 1777906799000,
+      "earliest_test_start": 1778043600000
+    },
+    {
+      "fold": 3,
+      "old_curves": 311,
+      "old_events": 195,
+      "recent_curves": 186,
+      "old_snapshots": 3968,
+      "recent_snapshots": 3074,
+      "latest_training_end": 1785941999000,
+      "earliest_test_start": 1786078800000
+    }
+  ],
+  "training_runs": [
+    {
+      "fold": 0,
+      "mode": "pretrain_finetune_tcn",
+      "seed": 42,
+      "seconds": 9.102204791968688
+    },
+    {
+      "fold": 0,
+      "mode": "pretrain_finetune_tcn",
+      "seed": 123,
+      "seconds": 7.553691208013333
+    },
+    {
+      "fold": 0,
+      "mode": "pretrain_finetune_tcn",
+      "seed": 2026,
+      "seconds": 7.576674499956425
+    },
+    {
+      "fold": 0,
+      "mode": "weighted_history_tcn",
+      "seed": 42,
+      "seconds": 7.122806125029456
+    },
+    {
+      "fold": 0,
+      "mode": "weighted_history_tcn",
+      "seed": 123,
+      "seconds": 7.044863749993965
+    },
+    {
+      "fold": 0,
+      "mode": "weighted_history_tcn",
+      "seed": 2026,
+      "seconds": 7.064849124988541
+    },
+    {
+      "fold": 1,
+      "mode": "pretrain_finetune_tcn",
+      "seed": 42,
+      "seconds": 7.892553167010192
+    },
+    {
+      "fold": 1,
+      "mode": "pretrain_finetune_tcn",
+      "seed": 123,
+      "seconds": 7.884269874950405
+    },
+    {
+      "fold": 1,
+      "mode": "pretrain_finetune_tcn",
+      "seed": 2026,
+      "seconds": 7.8255545000429265
+    },
+    {
+      "fold": 1,
+      "mode": "weighted_history_tcn",
+      "seed": 42,
+      "seconds": 7.341124334023334
+    },
+    {
+      "fold": 1,
+      "mode": "weighted_history_tcn",
+      "seed": 123,
+      "seconds": 7.367557124991436
+    },
+    {
+      "fold": 1,
+      "mode": "weighted_history_tcn",
+      "seed": 2026,
+      "seconds": 7.373428667022381
+    },
+    {
+      "fold": 2,
+      "mode": "pretrain_finetune_tcn",
+      "seed": 42,
+      "seconds": 8.287339915987104
+    },
+    {
+      "fold": 2,
+      "mode": "pretrain_finetune_tcn",
+      "seed": 123,
+      "seconds": 8.463091665995307
+    },
+    {
+      "fold": 2,
+      "mode": "pretrain_finetune_tcn",
+      "seed": 2026,
+      "seconds": 8.090930417005438
+    },
+    {
+      "fold": 2,
+      "mode": "weighted_history_tcn",
+      "seed": 42,
+      "seconds": 7.668076375033706
+    },
+    {
+      "fold": 2,
+      "mode": "weighted_history_tcn",
+      "seed": 123,
+      "seconds": 7.616715917014517
+    },
+    {
+      "fold": 2,
+      "mode": "weighted_history_tcn",
+      "seed": 2026,
+      "seconds": 7.7120810829801485
+    },
+    {
+      "fold": 3,
+      "mode": "pretrain_finetune_tcn",
+      "seed": 42,
+      "seconds": 8.679835207993165
+    },
+    {
+      "fold": 3,
+      "mode": "pretrain_finetune_tcn",
+      "seed": 123,
+      "seconds": 8.665655167016666
+    },
+    {
+      "fold": 3,
+      "mode": "pretrain_finetune_tcn",
+      "seed": 2026,
+      "seconds": 8.679713167017326
+    },
+    {
+      "fold": 3,
+      "mode": "weighted_history_tcn",
+      "seed": 42,
+      "seconds": 7.974230042018462
+    },
+    {
+      "fold": 3,
+      "mode": "weighted_history_tcn",
+      "seed": 123,
+      "seconds": 7.993371541029774
+    },
+    {
+      "fold": 3,
+      "mode": "weighted_history_tcn",
+      "seed": 2026,
+      "seconds": 7.954293042013887
+    }
+  ]
+}

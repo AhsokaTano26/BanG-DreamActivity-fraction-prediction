@@ -1,0 +1,143 @@
+<section id="bangdream-method-comparison" data-viz-composition>
+  <div data-viz-container></div>
+  <script type="application/json" data-viz-chart>
+    {
+  "charts": [
+    {
+      "id": "cutoff-methods-1000",
+      "title": "1000线：最终分数预测误差",
+      "description": "第292～327期国服滚动回测；每个时点33～35期，误差越低越好。",
+      "height": 300,
+      "spec": {
+        "type": "line",
+        "x": "预测时点",
+        "y": [
+          "平均速度外推",
+          "历史相似曲线",
+          "XGBoost剩余涨幅"
+        ],
+        "yLabel": "平均绝对百分比误差（%）",
+        "yDomain": [
+          0,
+          26
+        ],
+        "startAtZero": true,
+        "showLegend": true,
+        "valueFormat": {
+          "style": "decimal",
+          "maximumFractionDigits": 2
+        }
+      },
+      "columns": [
+        "预测时点",
+        "平均速度外推",
+        "历史相似曲线",
+        "XGBoost剩余涨幅"
+      ],
+      "rows": [
+        [
+          "进行25%",
+          22.680845011927385,
+          22.01087693857473,
+          18.146734357914216
+        ],
+        [
+          "进行50%",
+          24.000866229705274,
+          18.671365265832353,
+          13.71752023820068
+        ],
+        [
+          "进行75%",
+          23.185990884601736,
+          14.936625686655796,
+          11.91267363894407
+        ],
+        [
+          "剩24小时",
+          19.09297812097401,
+          11.322364511195287,
+          9.270155550036758
+        ],
+        [
+          "剩6小时",
+          13.671317094676136,
+          6.030352647257008,
+          7.576191147958322
+        ]
+      ]
+    },
+    {
+      "id": "cutoff-methods-2000",
+      "title": "2000线：最终分数预测误差",
+      "description": "第292～327期国服滚动回测；每个时点33～35期，误差越低越好。",
+      "height": 300,
+      "spec": {
+        "type": "line",
+        "x": "预测时点",
+        "y": [
+          "平均速度外推",
+          "历史相似曲线",
+          "XGBoost剩余涨幅"
+        ],
+        "yLabel": "平均绝对百分比误差（%）",
+        "yDomain": [
+          0,
+          26
+        ],
+        "startAtZero": true,
+        "showLegend": true,
+        "valueFormat": {
+          "style": "decimal",
+          "maximumFractionDigits": 2
+        }
+      },
+      "columns": [
+        "预测时点",
+        "平均速度外推",
+        "历史相似曲线",
+        "XGBoost剩余涨幅"
+      ],
+      "rows": [
+        [
+          "进行25%",
+          12.877161675889397,
+          7.097160319620284,
+          6.6642751114092755
+        ],
+        [
+          "进行50%",
+          9.798516929393786,
+          5.221340713733941,
+          5.019228323982479
+        ],
+        [
+          "进行75%",
+          10.95068515530818,
+          3.4150085703305395,
+          3.789131400102267
+        ],
+        [
+          "剩24小时",
+          10.298824078289844,
+          2.9634212412137746,
+          3.6680713253165194
+        ],
+        [
+          "剩6小时",
+          8.87042431812046,
+          2.3171909147816057,
+          2.3379147605274913
+        ]
+      ]
+    }
+  ]
+}
+  </script>
+</section>
+<script type="module">
+  import { mountChart } from "https://persistent.oaistatic.com/plugins/visualize/charts/1.1.6/element.js";
+  const root = document.getElementById("bangdream-method-comparison");
+  const config = JSON.parse(root.querySelector("[data-viz-chart]").textContent);
+  mountChart(root.querySelector("[data-viz-container]"), config);
+</script>

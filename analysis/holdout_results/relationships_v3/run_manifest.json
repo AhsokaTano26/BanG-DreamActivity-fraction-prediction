@@ -1,0 +1,178 @@
+{
+  "dataset_id": "d0ccf9f70aee19ad1b2152925e7afe8692d67f4a6e539d558f87e2cd33329bbb",
+  "recipes": {
+    "catboost_full": {
+      "backend": "catboost",
+      "variant": "full",
+      "target": "residual",
+      "loss": "RMSE"
+    },
+    "catboost_no_band": {
+      "backend": "catboost",
+      "variant": "no_band",
+      "target": "residual",
+      "loss": "RMSE"
+    },
+    "catboost_no_peer": {
+      "backend": "catboost",
+      "variant": "no_peer",
+      "target": "residual",
+      "loss": "RMSE"
+    },
+    "catboost_no_type": {
+      "backend": "catboost",
+      "variant": "no_type",
+      "target": "residual",
+      "loss": "RMSE"
+    },
+    "catboost_no_quality": {
+      "backend": "catboost",
+      "variant": "no_quality",
+      "target": "residual",
+      "loss": "RMSE"
+    },
+    "catboost_invariant": {
+      "backend": "catboost",
+      "variant": "invariant",
+      "target": "residual",
+      "loss": "RMSE"
+    },
+    "catboost_invariant_rank": {
+      "backend": "catboost",
+      "variant": "invariant_rank",
+      "target": "residual",
+      "loss": "RMSE"
+    },
+    "lightgbm_full": {
+      "backend": "lightgbm",
+      "variant": "full",
+      "target": "residual",
+      "loss": "RMSE"
+    },
+    "lightgbm_no_band": {
+      "backend": "lightgbm",
+      "variant": "no_band",
+      "target": "residual",
+      "loss": "RMSE"
+    },
+    "lightgbm_no_peer": {
+      "backend": "lightgbm",
+      "variant": "no_peer",
+      "target": "residual",
+      "loss": "RMSE"
+    },
+    "lightgbm_no_type": {
+      "backend": "lightgbm",
+      "variant": "no_type",
+      "target": "residual",
+      "loss": "RMSE"
+    },
+    "lightgbm_no_quality": {
+      "backend": "lightgbm",
+      "variant": "no_quality",
+      "target": "residual",
+      "loss": "RMSE"
+    },
+    "lightgbm_invariant": {
+      "backend": "lightgbm",
+      "variant": "invariant",
+      "target": "residual",
+      "loss": "RMSE"
+    },
+    "lightgbm_invariant_rank": {
+      "backend": "lightgbm",
+      "variant": "invariant_rank",
+      "target": "residual",
+      "loss": "RMSE"
+    },
+    "catboost_mae_full": {
+      "backend": "catboost",
+      "variant": "full",
+      "target": "residual",
+      "loss": "MAE"
+    },
+    "catboost_mae_invariant": {
+      "backend": "catboost",
+      "variant": "invariant",
+      "target": "residual",
+      "loss": "MAE"
+    },
+    "catboost_remaining_invariant": {
+      "backend": "catboost",
+      "variant": "invariant",
+      "target": "remaining",
+      "loss": "RMSE"
+    },
+    "catboost_remaining_invariant_rank": {
+      "backend": "catboost",
+      "variant": "invariant_rank",
+      "target": "remaining",
+      "loss": "RMSE"
+    },
+    "lightgbm_remaining_invariant": {
+      "backend": "lightgbm",
+      "variant": "invariant",
+      "target": "remaining",
+      "loss": "RMSE"
+    },
+    "lightgbm_remaining_invariant_rank": {
+      "backend": "lightgbm",
+      "variant": "invariant_rank",
+      "target": "remaining",
+      "loss": "RMSE"
+    },
+    "gam_ridge_1": {
+      "backend": "gam",
+      "variant": "invariant",
+      "target": "residual",
+      "alpha": 1
+    },
+    "gam_ridge_10": {
+      "backend": "gam",
+      "variant": "invariant",
+      "target": "residual",
+      "alpha": 10
+    },
+    "gam_ridge_100": {
+      "backend": "gam",
+      "variant": "invariant",
+      "target": "residual",
+      "alpha": 100
+    }
+  },
+  "source_hashes": {
+    "analysis/relationship_features.py": "717e8919cee5078cec61f80e3b5a12315b8dd34c6753e1964cf81731cd063642",
+    "analysis/relationship_statistics.py": "c8eca34121693a730313b39118164f397c8281d4233bab6c4156f930221ebe35",
+    "analysis/relationship_benchmark.py": "dad49fbee83ad73f90ad9a426738b805a84722904d70d07812fa7539e24b9845",
+    "analysis/holdout_dataset.py": "22cf94748c4953b72a570093d8e26e76ae9437454e09da181fc9e5e10c6a2f6f",
+    "analysis/backtest.py": "df2733f8aff144582da7f732e3def213a224f5689b38ea8065f748d43f2e99be",
+    "analysis/event_features.py": "cf3eb59a5b8e99a4cebda38a54a642140d8fcc017c4d38a132499fce38074419",
+    "analysis/holdout_evaluate.py": "cf2226d0ca778a31a37d58c57a066f81ec015df01da5899f8ca621ca2859bda4"
+  },
+  "dataset_directory": "/Users/tano/Documents/GitHub/personal/BanG-Dream-Activity-fraction-prediction/data/holdout_v1",
+  "weights": "equal total weight per activity",
+  "selection": "minimum validation event MAPE among registered recipes/top3 equal blend/old reference/25,50,75 percent new blend",
+  "tree_parameters": "CatBoost 500 depth4 lr.03 L2=15; LightGBM 500 depth3/leaves7 lr.025 min40 L2=15; seed42",
+  "target_remaining": "log((final/current-1)*progress/(1-progress)); ratio floor1e-4, clip[-6,4]",
+  "software": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "catboost": "1.2.10",
+    "lightgbm": "4.7.0",
+    "joblib": "1.6.0"
+  },
+  "cv": "training-only chronological: first98 then holdout25/25/25/25; last boundary capped at198; no test data",
+  "previous_test_exposure": true,
+  "old_reference": {
+    "dataset_id": "d0ccf9f70aee19ad1b2152925e7afe8692d67f4a6e539d558f87e2cd33329bbb",
+    "run_id": "aef5892fd06e218af95c2a93610eae2ec22438cc31833cde189346be6885e2e8",
+    "manifest_sha256": "d0dec923b5efce212d2c288419fddf7c1b5a2bf3d25ecc037c1bb829f7b7fc18",
+    "prediction_hashes": {
+      "validation": "24eb87a9bff9a0e001c0d061d1bc0f846cd66b8c8577a05220e4b5451d7f1f76",
+      "test": "024cc23eafadd615affef25d541b357402ababde99ce8d26c1573f5851cdeff6"
+    }
+  },
+  "run_id": "e502e97b4a22756299ab0908b371bf7587be3c59cc013f5c471e375d197c454b"
+}

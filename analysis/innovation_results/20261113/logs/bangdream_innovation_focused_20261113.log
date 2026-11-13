@@ -1,0 +1,45 @@
+test_chronological_folds_exclude_unfinished_and_preserve_events (test_innovation_common.InnovationCommonTests.test_chronological_folds_exclude_unfinished_and_preserve_events) ... ok
+test_context_is_separate_from_own_curve_ablation (test_innovation_common.InnovationCommonTests.test_context_is_separate_from_own_curve_ablation) ... ok
+test_metric_is_activity_equal_and_prediction_shape_checked (test_innovation_common.InnovationCommonTests.test_metric_is_activity_equal_and_prediction_shape_checked) ... ok
+test_subset_replaces_history_and_preserves_case_order (test_innovation_common.InnovationCommonTests.test_subset_replaces_history_and_preserves_case_order) ... ok
+test_bootstrap_groups_use_frozen_cases_not_prediction_event (test_innovation_compare.InnovationCompareTests.test_bootstrap_groups_use_frozen_cases_not_prediction_event) ... ok
+test_event_weights_do_not_treat_prefixes_as_independent_events (test_innovation_growth.GrowthAnalyticTests.test_event_weights_do_not_treat_prefixes_as_independent_events) ... ok
+test_integrals_are_in_hours_and_separate_absolute_end_windows (test_innovation_growth.GrowthAnalyticTests.test_integrals_are_in_hours_and_separate_absolute_end_windows) ... ok
+test_positive_coefficients_give_nondecreasing_future_path (test_innovation_growth.GrowthAnalyticTests.test_positive_coefficients_give_nondecreasing_future_path) ... ok
+test_train_only_preprocessor_preserves_missing_columns_and_unknowns (test_innovation_growth.GrowthAnalyticTests.test_train_only_preprocessor_preserves_missing_columns_and_unknowns) ... ok
+test_module_import_does_not_load_torch (test_innovation_growth.GrowthSubprocessTests.test_module_import_does_not_load_torch) ... ok
+test_three_seed_fit_final_mean_zero_horizon_and_saved_replay (test_innovation_growth.GrowthSubprocessTests.test_three_seed_fit_final_mean_zero_horizon_and_saved_replay) ... ok
+test_additive_group_effects_are_constant_but_phase_effects_change (test_innovation_hierarchy.HierarchyTests.test_additive_group_effects_are_constant_but_phase_effects_change) ... ok
+test_all_recipes_predict_all_cases_and_survive_joblib_replay (test_innovation_hierarchy.HierarchyTests.test_all_recipes_predict_all_cases_and_survive_joblib_replay) ... ok
+test_backbone_slice_weights_and_correction_event_totals_are_preserved (test_innovation_hierarchy.HierarchyTests.test_backbone_slice_weights_and_correction_event_totals_are_preserved) ... ok
+test_chronological_oof_excludes_heldout_unfinished_and_equal_end_events (test_innovation_hierarchy.HierarchyTests.test_chronological_oof_excludes_heldout_unfinished_and_equal_end_events) ... ok
+test_correction_solves_the_weighted_oof_residual_objective (test_innovation_hierarchy.HierarchyTests.test_correction_solves_the_weighted_oof_residual_objective) ... ok
+test_inner_preprocessing_does_not_see_heldout_values_or_vocabulary (test_innovation_hierarchy.HierarchyTests.test_inner_preprocessing_does_not_see_heldout_values_or_vocabulary) ... ok
+test_no_oof_history_keeps_complete_backbone_predictions (test_innovation_hierarchy.HierarchyTests.test_no_oof_history_keeps_complete_backbone_predictions) ... ok
+test_oof_predictions_ignore_their_own_answers_and_unfinished_answers (test_innovation_hierarchy.HierarchyTests.test_oof_predictions_ignore_their_own_answers_and_unfinished_answers) ... ok
+test_single_event_constant_features_have_a_complete_fallback (test_innovation_hierarchy.HierarchyTests.test_single_event_constant_features_have_a_complete_fallback) ... ok
+test_split_uses_start_time_instead_of_numeric_event_id (test_innovation_hierarchy.HierarchyTests.test_split_uses_start_time_instead_of_numeric_event_id) ... ok
+test_unknown_type_and_band_fall_back_to_shared_effects (test_innovation_hierarchy.HierarchyTests.test_unknown_type_and_band_fall_back_to_shared_effects) ... ok
+test_all_recipes_persist_schema_ignore_new_history_and_align_outputs (test_innovation_retrieval.RetrievalTests.test_all_recipes_persist_schema_ignore_new_history_and_align_outputs) ... ok
+test_control_does_not_use_retrieval_and_prediction_requires_no_labels (test_innovation_retrieval.RetrievalTests.test_control_does_not_use_retrieval_and_prediction_requires_no_labels) ... ok
+test_decode_clamps_negative_learned_growth_to_current (test_innovation_retrieval.RetrievalTests.test_decode_clamps_negative_learned_growth_to_current) ... ok
+test_duplicate_event_rank_library_fails_instead_of_double_weighting (test_innovation_retrieval.RetrievalTests.test_duplicate_event_rank_library_fails_instead_of_double_weighting) ... ok
+test_each_event_receives_equal_total_training_weight (test_innovation_retrieval.RetrievalTests.test_each_event_receives_equal_total_training_weight) ... ok
+test_early_fallback_keeps_true_linear_prior_before_final_decode_bound (test_innovation_retrieval.RetrievalTests.test_early_fallback_keeps_true_linear_prior_before_final_decode_bound) ... ok
+test_exactly_five_nearest_with_deterministic_distance (test_innovation_retrieval.RetrievalTests.test_exactly_five_nearest_with_deterministic_distance) ... ok
+test_insufficient_query_shape_retains_case_with_explicit_fallback (test_innovation_retrieval.RetrievalTests.test_insufficient_query_shape_retains_case_with_explicit_fallback) ... ok
+test_query_future_suffix_cannot_change_features (test_innovation_retrieval.RetrievalTests.test_query_future_suffix_cannot_change_features) ... ok
+test_recipe_cannot_claim_unimplemented_neighbor_or_tree_settings (test_innovation_retrieval.RetrievalTests.test_recipe_cannot_claim_unimplemented_neighbor_or_tree_settings) ... ok
+test_same_rank_completed_different_event_only (test_innovation_retrieval.RetrievalTests.test_same_rank_completed_different_event_only) ... ok
+test_sparse_or_absent_history_keeps_linear_prior_and_coverage (test_innovation_retrieval.RetrievalTests.test_sparse_or_absent_history_keeps_linear_prior_and_coverage) ... ok
+test_stale_historical_prefix_is_excluded_and_lag_is_recorded (test_innovation_retrieval.RetrievalTests.test_stale_historical_prefix_is_excluded_and_lag_is_recorded) ... ok
+test_run_is_blind_and_matches_temporal_scorer (test_innovation_runner.InnovationRunnerTests.test_run_is_blind_and_matches_temporal_scorer) ... {"method": "retrieval__retrieval_control", "train_fit_mape": 0.9219116399905226, "validation_mape": 0.9219050353881254, "seconds": 0.05}
+SELECTED linear
+{"evaluation_id": "30fbcbf776e7708f7f280f3e235fdbe7c465c128434cfc3a230121ec1b0a34a9", "test": {"blend_control_50": {"event_macro_mape_pct": 0.9219182445929205, "case_mape_pct": 0.9219182445929205, "median_ape_pct": 0.031286261988950785, "p90_ape_pct": 0.049292397244144165, "mae_ep": 184.39286810103005, "rmse_ep": 797.6315095833365, "bias_pct": -0.9047931020274751, "events": 3, "cases": 120, "median_observation_age_minutes": 0.0}, "family_mean": {"event_macro_mape_pct": 0.9219182445929205, "case_mape_pct": 0.9219182445929205, "median_ape_pct": 0.031286261988950785, "p90_ape_pct": 0.049292397244144165, "mae_ep": 184.39286810103005, "rmse_ep": 797.6315095833365, "bias_pct": -0.9047931020274751, "events": 3, "cases": 120, "median_observation_age_minutes": 0.0}, "hold_current": {"event_macro_mape_pct": 41.02294885255738, "case_mape_pct": 41.02294885255737, "median_ape_pct": 24.49877506124694, "p90_ape_pct": 94.29528523573823, "mae_ep": 8205.0, "rmse_ep": 11252.222002786828, "bias_pct": -41.02294885255737, "events": 3, "cases": 120, "median_observation_age_minutes": 0.0}, "linear": {"event_macro_mape_pct": 0.035002933604184175, "case_mape_pct": 0.035002933604184175, "median_ape_pct": 0.0016227258812443724, "p90_ape_pct": 0.08666233354999656, "mae_ep": 7.000936750172878, "rmse_ep": 16.972353892024966, "bias_pct": 0.035002933604184175, "events": 3, "cases": 120, "median_observation_age_minutes": 0.0}, "retrieval__retrieval_control": {"event_macro_mape_pct": 0.9219182445929205, "case_mape_pct": 0.9219182445929205, "median_ape_pct": 0.031286261988950785, "p90_ape_pct": 0.049292397244144165, "mae_ep": 184.39286810103005, "rmse_ep": 797.6315095833365, "bias_pct": -0.9047931020274751, "events": 3, "cases": 120, "median_observation_age_minutes": 0.0}}}
+ok
+test_selection_excludes_seed_winners_and_combines_final_scores (test_innovation_runner.InnovationRunnerTests.test_selection_excludes_seed_winners_and_combines_final_scores) ... ok
+
+----------------------------------------------------------------------
+Ran 37 tests in 5.155s
+
+OK

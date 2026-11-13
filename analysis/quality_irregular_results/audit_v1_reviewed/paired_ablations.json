@@ -1,0 +1,60 @@
+{
+  "oof": {
+    "hierarchical_spline": {
+      "delta_mape_pp": -0.3003562930683586,
+      "ci95_pp": [
+        -0.4324307122939425,
+        -0.16675723404009676
+      ],
+      "events_improved": 71,
+      "events": 100
+    },
+    "quality_spline": {
+      "delta_mape_pp": -0.3100059539350824,
+      "ci95_pp": [
+        -0.5085229038554625,
+        -0.1251080404508195
+      ],
+      "events_improved": 65,
+      "events": 100
+    },
+    "quality_type_tree": {
+      "delta_mape_pp": 0.24421177889542484,
+      "ci95_pp": [
+        0.01007594682437239,
+        0.5013862997072069
+      ],
+      "events_improved": 50,
+      "events": 100
+    }
+  },
+  "validation": {
+    "hierarchical_spline": {
+      "delta_mape_pp": 0.08964082381154811,
+      "ci95_pp": [
+        -0.03742675247517641,
+        0.21186575018208317
+      ],
+      "events_improved": 15,
+      "events": 42
+    },
+    "quality_spline": {
+      "delta_mape_pp": -0.14443506338614168,
+      "ci95_pp": [
+        -0.34501179118560105,
+        0.0015504238216842165
+      ],
+      "events_improved": 18,
+      "events": 42
+    },
+    "quality_type_tree": {
+      "delta_mape_pp": 0.46773370242047496,
+      "ci95_pp": [
+        0.03796264326255024,
+        0.9284820111034612
+      ],
+      "events_improved": 17,
+      "events": 42
+    }
+  }
+}

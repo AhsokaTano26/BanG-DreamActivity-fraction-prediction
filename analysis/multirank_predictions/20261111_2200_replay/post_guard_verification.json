@@ -1,0 +1,6 @@
+{
+  "same_19_predictions": true,
+  "forecast_source_sha256": "27888003ebe628749495d60584a200991b9687050c4193411cc6ee3f1658d99b",
+  "training_time_guard_passed": true,
+  "cutoff_ms": 1794405600000
+}

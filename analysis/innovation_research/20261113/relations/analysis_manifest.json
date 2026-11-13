@@ -1,0 +1,47 @@
+{
+  "dataset_id": "1f76f39af8151bba185496411bbcee064b16a4c5aca5c515c1d957a5056fe854",
+  "parsed_splits": [
+    "train"
+  ],
+  "parsed_dataset_artifacts": [
+    "train_curves.jsonl.gz",
+    "train_inputs.jsonl.gz",
+    "train_memberships.csv"
+  ],
+  "bootstrap_seed": 42,
+  "bootstrap_replicates": 2000,
+  "python": "3.14.8",
+  "software": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "scipy": "1.18.1"
+  },
+  "code_sha256": "4a0a927e9c632dcc97707af409696210e297d8bd9e98e33c757cc492f6ac35d7",
+  "imported_source_sha256": {
+    "analysis/temporal_dataset.py": "288ab6ce031b916514a931c79f5626ab8807532484fa55002d1724e03b120235",
+    "analysis/multirank_dataset.py": "c47b652b27971009f9ea1ecd9837832b9ed376d49d5b53adb2baea219ba9d8a8",
+    "analysis/holdout_dataset.py": "22cf94748c4953b72a570093d8e26e76ae9437454e09da181fc9e5e10c6a2f6f",
+    "analysis/backtest.py": "df2733f8aff144582da7f732e3def213a224f5689b38ea8065f748d43f2e99be"
+  },
+  "artifacts": {
+    "README.md": "c994c878210c10f5f0567cfefc825e8f5a724e62395fbbe967095369417169c5",
+    "analyze_relations.py": "4a0a927e9c632dcc97707af409696210e297d8bd9e98e33c757cc492f6ac35d7",
+    "deadline_coverage_by_year.csv": "b80aa90353330f4f5335142d25461d77b7e62e845d42f1ca397f063d61db7b97",
+    "deadline_growth_by_rank.csv": "a96f8058aba64b5a172b979221665fbf0fa25a3185adbd2c11ccd85f54cff2a2",
+    "deadline_growth_by_type.csv": "b569b21a525111b5a371f65b140d9bb34c3efb923f335f3477e15604a2cb7532",
+    "deadline_growth_by_year.csv": "9b508f2fe6380a161c528ab6f6d4cab3e0fc6871854730a8d105efb38e75ad37",
+    "deadline_growth_target_diagnostics.csv": "68096f60959a9479044c9868900e926c63d7422d7719506678731aefdb4f861f",
+    "final_rank_ratios.csv": "cfae70079a4a2738696fa781ac5eb2346d2363ce51bd06711e0dbfa6e5fb1425",
+    "final_ratio_by_type.csv": "ccc8f2882d68d6b37f3026c1eb179388cd9f5ff13f97854bccb58f57c6db23d8",
+    "final_ratio_by_year.csv": "66346097bf502ea247175bc556ac60c208789126e6db5f54246222495085a0b6",
+    "peer_availability_by_stage.csv": "0692c6cc33c6cce594118c978ceff9e4245a26a6849c90ed02549b4347127d5f",
+    "peer_availability_by_type.csv": "6793a48c45387ae455694d148d77377fde05bbe51e80420280ea00a5fddd67d3",
+    "peer_availability_by_year.csv": "eb9db67ff79fdce1a49ccfd8d4e3fa5badd8a73326f2bd6a7af1259ffb91aac4",
+    "peer_availability_cases.csv": "3df315d85a23aebedbe873548d8b33850c98d0ccf4895ce25b3e8d18a5263dcc",
+    "summary.json": "5f02e50aca970eca10219f61173354f2f643c79cfef6ac0a0a2a07b97a0f5fbf",
+    "synchronized_pair_coverage.csv": "082ee94fd029fa5e87ba3665015ee88021fa4f0cf57a6a35d193007d7c30877e",
+    "synchronized_stage_pairs.csv": "1087467df0c51c99877c8ada6ff1bb8b316ff7d2fca278f48b95720c4de9c98c",
+    "train_curve_coverage.csv": "8b2358edb8b95115318daf2eba3641d942da4b7521de982f2023b01a13b8b988",
+    "train_curve_sampling_by_year.csv": "4d93c493fa1258a01615852d38e9139ca4110d1726e2ca6629cf835936f7d38e"
+  }
+}

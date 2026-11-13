@@ -1,0 +1,66 @@
+{
+  "scored_events": [
+    328
+  ],
+  "pending_events": [
+    327
+  ],
+  "grid": {
+    "reference_paired": {
+      "event_macro_mape_pct": 7.160208714552908,
+      "case_mape_pct": 7.1602087145529065,
+      "median_ape_pct": 7.452395885779657,
+      "p90_ape_pct": 15.457838514229767,
+      "mae_ep": 215602.2001002138,
+      "rmse_ep": 279289.02962360624,
+      "bias_pct": 2.7286697274173886,
+      "events": 1,
+      "cases": 36,
+      "median_observation_age_minutes": 14.875
+    },
+    "reference_single": {
+      "event_macro_mape_pct": 5.085132302191383,
+      "case_mape_pct": 5.085132302191383,
+      "median_ape_pct": 2.540290558033959,
+      "p90_ape_pct": 13.561499814096237,
+      "mae_ep": 147273.02020943863,
+      "rmse_ep": 234185.36184017692,
+      "bias_pct": -2.01453380853597,
+      "events": 1,
+      "cases": 36,
+      "median_observation_age_minutes": 14.875
+    },
+    "selected_combo": {
+      "event_macro_mape_pct": 10.132332626872335,
+      "case_mape_pct": 10.132332626872337,
+      "median_ape_pct": 9.751110874509024,
+      "p90_ape_pct": 19.642663583384746,
+      "mae_ep": 304970.8237869961,
+      "rmse_ep": 395222.7414899876,
+      "bias_pct": 4.277306038166332,
+      "events": 1,
+      "cases": 36,
+      "median_observation_age_minutes": 14.875
+    }
+  },
+  "legacy_forward": [
+    {
+      "event": 328,
+      "rank": 1000,
+      "forecast_as_of": "2026-11-11T19:21:41.566000+08:00",
+      "predicted": 3625353,
+      "actual": 3349819.0,
+      "ape_pct": 8.225339936277166,
+      "model": "blend_neural_0.25"
+    },
+    {
+      "event": 328,
+      "rank": 2000,
+      "forecast_as_of": "2026-11-11T19:21:41.566000+08:00",
+      "predicted": 2172675,
+      "actual": 2173258.0,
+      "ape_pct": 0.026826083235398368,
+      "model": "blend_neural_0.25"
+    }
+  ]
+}

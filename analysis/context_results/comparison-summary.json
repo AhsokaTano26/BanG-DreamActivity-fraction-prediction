@@ -1,0 +1,186 @@
+{
+  "status": "passed",
+  "test_events": 36,
+  "test_scenarios": 342,
+  "configuration_runs": 114,
+  "database_sha256": "1d15dc07c06e4cc3a1ab6c442bb02cbcfa204b1057e48507db68d6d14e28d5aa",
+  "selected_on_development": "catboost_peer",
+  "baseline_mape": 8.023886171267437,
+  "selected_mape": 6.5814982744299195,
+  "relative_mape_reduction": 0.179761759582599,
+  "source_metadata_policy": "current fetched metadata; CN card releases filtered by observation time; not a historical metadata archive",
+  "band_definition": "composition of event bonus characters, retaining mixed bands",
+  "checks": [
+    "same 342 cases",
+    "no duplicated predictions",
+    "chronological training",
+    "frozen fold historical statistics",
+    "original baseline exactly reproduced",
+    "finite predictions",
+    "source database unchanged"
+  ],
+  "summary": [
+    {
+      "method": "lgbm_baseline",
+      "label": "原LightGBM基线",
+      "n": 342,
+      "mape": 8.023886171267437,
+      "rank1000_mape": 12.626487221198884,
+      "rank2000_mape": 3.4212851213359876,
+      "p90_ape": 20.714709624984337
+    },
+    {
+      "method": "lgbm_band",
+      "label": "LightGBM＋乐队标签",
+      "n": 342,
+      "mape": 8.193779721265347,
+      "rank1000_mape": 13.011238718707014,
+      "rank2000_mape": 3.376320723823679,
+      "p90_ape": 20.77885223389475
+    },
+    {
+      "method": "lgbm_static",
+      "label": "LightGBM＋乐队/角色/卡牌资料",
+      "n": 342,
+      "mape": 8.55180877003105,
+      "rank1000_mape": 13.849563515367818,
+      "rank2000_mape": 3.2540540246942826,
+      "p90_ape": 21.120138803942638
+    },
+    {
+      "method": "lgbm_history",
+      "label": "LightGBM＋分组历史统计",
+      "n": 342,
+      "mape": 6.65624812383139,
+      "rank1000_mape": 10.252024872117786,
+      "rank2000_mape": 3.0604713755449935,
+      "p90_ape": 16.047298010812572
+    },
+    {
+      "method": "lgbm_peer",
+      "label": "LightGBM＋历史统计/跨档走势",
+      "n": 342,
+      "mape": 6.6012493252248206,
+      "rank1000_mape": 9.854322538037708,
+      "rank2000_mape": 3.34817611241193,
+      "p90_ape": 14.736823692732855
+    },
+    {
+      "method": "catboost_peer",
+      "label": "CatBoost＋完整上下文（验证集选定）",
+      "n": 342,
+      "mape": 6.5814982744299195,
+      "rank1000_mape": 10.00099527559713,
+      "rank2000_mape": 3.162001273262708,
+      "p90_ape": 15.031329879980744
+    },
+    {
+      "method": "catboost_history",
+      "label": "CatBoost＋上下文历史",
+      "n": 342,
+      "mape": 6.630242117888676,
+      "rank1000_mape": 10.067862504537434,
+      "rank2000_mape": 3.192621731239916,
+      "p90_ape": 16.176872103163284
+    },
+    {
+      "method": "catboost_peer_regularized",
+      "label": "CatBoost＋更强正则",
+      "n": 342,
+      "mape": 6.768592678998874,
+      "rank1000_mape": 10.17551429503701,
+      "rank2000_mape": 3.3616710629607387,
+      "p90_ape": 15.610906538620181
+    },
+    {
+      "method": "lgbm_type_experts",
+      "label": "按活动类型分专家",
+      "n": 342,
+      "mape": 7.49698446077581,
+      "rank1000_mape": 11.54216851551846,
+      "rank2000_mape": 3.451800406033158,
+      "p90_ape": 19.54554341600351
+    },
+    {
+      "method": "tcn_context_ensemble3",
+      "label": "完整上下文TCN集成",
+      "n": 342,
+      "mape": 9.63238544005193,
+      "rank1000_mape": 13.145167301594574,
+      "rank2000_mape": 6.119603578509288,
+      "p90_ape": 25.848890756715825
+    },
+    {
+      "method": "cb_baseline",
+      "label": "CatBoost基线",
+      "n": 342,
+      "mape": 8.147071336250432,
+      "rank1000_mape": 12.628974609801396,
+      "rank2000_mape": 3.665168062699465,
+      "p90_ape": 20.066055966819476
+    },
+    {
+      "method": "cb_global_history",
+      "label": "CatBoost＋整体历史",
+      "n": 342,
+      "mape": 6.646912975070981,
+      "rank1000_mape": 9.568261905372262,
+      "rank2000_mape": 3.7255640447696967,
+      "p90_ape": 14.269564263048103
+    },
+    {
+      "method": "cb_type_history",
+      "label": "CatBoost＋整体/类型历史",
+      "n": 342,
+      "mape": 6.604760803117294,
+      "rank1000_mape": 9.92441262629886,
+      "rank2000_mape": 3.285108979935729,
+      "p90_ape": 15.767251715448541
+    },
+    {
+      "method": "cb_band_history",
+      "label": "CatBoost＋类型/乐队历史",
+      "n": 342,
+      "mape": 6.866178642484224,
+      "rank1000_mape": 10.132766149435492,
+      "rank2000_mape": 3.5995911355329557,
+      "p90_ape": 15.36254621276502
+    },
+    {
+      "method": "cb_character_history",
+      "label": "CatBoost＋类型/乐队/角色历史",
+      "n": 342,
+      "mape": 6.816082580923255,
+      "rank1000_mape": 10.316462238475083,
+      "rank2000_mape": 3.3157029233714277,
+      "p90_ape": 15.973390366454723
+    },
+    {
+      "method": "cb_compact_peer",
+      "label": "精简分组历史＋跨档走势",
+      "n": 342,
+      "mape": 6.881684733559295,
+      "rank1000_mape": 10.356090253744622,
+      "rank2000_mape": 3.407279213373969,
+      "p90_ape": 15.116858453829737
+    },
+    {
+      "method": "tcn_compact_ensemble3",
+      "label": "精简上下文TCN集成",
+      "n": 342,
+      "mape": 7.897788379135748,
+      "rank1000_mape": 11.528000053598042,
+      "rank2000_mape": 4.267576704673455,
+      "p90_ape": 17.7134620928785
+    },
+    {
+      "method": "tcn_conditional_prior_ensemble3",
+      "label": "历史分组先验TCN集成",
+      "n": 342,
+      "mape": 8.03572810636021,
+      "rank1000_mape": 12.103431633079747,
+      "rank2000_mape": 3.968024579640673,
+      "p90_ape": 19.51022565878151
+    }
+  ]
+}

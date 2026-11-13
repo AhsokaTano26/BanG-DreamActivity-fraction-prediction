@@ -1,0 +1,21 @@
+{"method": "remaining__remaining_baseline_log_rmse", "family": "remaining", "validation_event_mape": 5.506189288830008, "training_fit_event_mape": 1.9908756222112816}
+{"method": "remaining__remaining_rate_log_rmse", "family": "remaining", "validation_event_mape": 8.573621652358117, "training_fit_event_mape": 3.089646776602084}
+{"method": "remaining__remaining_rate_log_mae", "family": "remaining", "validation_event_mape": 6.178995954261422, "training_fit_event_mape": 1.7198113462346836}
+{"method": "remaining__remaining_ratio_mape", "family": "remaining", "validation_event_mape": 14.699257676086868, "training_fit_event_mape": 4.678889301071046}
+{"method": "remaining__remaining_ratio_mape_by_rank", "family": "remaining", "validation_event_mape": 15.840072957342912, "training_fit_event_mape": 4.723798117055908}
+{"method": "remaining__remaining_rate_log_rmse_by_rank", "family": "remaining", "validation_event_mape": 6.855103248226707, "training_fit_event_mape": 3.018975631687306}
+{"method": "fusion__fusion_cat_rmse_constant", "family": "fusion", "validation_event_mape": 5.58075662374772, "training_fit_event_mape": 1.9011840445949335}
+{"method": "fusion__fusion_cat_rmse_progress", "family": "fusion", "validation_event_mape": 5.5905790188311375, "training_fit_event_mape": 1.8993806377813993}
+{"method": "fusion__fusion_cat_mae_progress", "family": "fusion", "validation_event_mape": 7.0878388100650245, "training_fit_event_mape": 1.8542877414216734}
+{"method": "fusion__fusion_cat_huber_progress", "family": "fusion", "validation_event_mape": 5.710756141320938, "training_fit_event_mape": 1.9024923715119797}
+{"method": "fusion__fusion_cat_rank_progress", "family": "fusion", "validation_event_mape": 5.213489566479723, "training_fit_event_mape": 1.8589630039458673}
+{"method": "fusion__fusion_extra_progress", "family": "fusion", "validation_event_mape": 7.014391884115722, "training_fit_event_mape": 1.1883030806589883}
+{"method": "shift__shift_calendar_pool", "family": "shift", "validation_event_mape": 6.020864098860853, "training_fit_event_mape": 1.9512079844644055}
+{"method": "shift__shift_calendar_rank", "family": "shift", "validation_event_mape": 5.344110649644614, "training_fit_event_mape": 2.0798676301007237}
+{"method": "shift__shift_calendar_phase", "family": "shift", "validation_event_mape": 7.810294384001295, "training_fit_event_mape": 1.4361037929816294}
+/Users/tano/Documents/GitHub/personal/BanG-Dream-Activity-fraction-prediction/.venv/lib/python3.14/site-packages/sklearn/preprocessing/_data.py:1077: RuntimeWarning: invalid value encountered in sqrt
+  xp.sqrt(self.var_), copy=False, constant_mask=constant_mask
+{"method": "shift__shift_era_ridge", "family": "shift", "validation_event_mape": 10.3631909187074, "training_fit_event_mape": 4.413913801944063}
+{"method": "shift__shift_pool_calibrated", "family": "shift", "validation_event_mape": 6.329145239718885, "training_fit_event_mape": 2.0634745573077335}
+{"method": "shift__shift_rank_calibrated", "family": "shift", "validation_event_mape": 5.492728043602376, "training_fit_event_mape": 2.192005474280393}
+SELECTED family_mean 4.7639944872431705

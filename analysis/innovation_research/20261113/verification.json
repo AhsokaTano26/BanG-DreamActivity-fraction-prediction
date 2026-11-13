@@ -1,0 +1,35 @@
+{
+  "scope": "Research designs and train-only feasibility diagnostics; no new official validation/test claim",
+  "dataset_id": "1f76f39af8151bba185496411bbcee064b16a4c5aca5c515c1d957a5056fe854",
+  "retrieval_cases_per_method": 1189,
+  "retrieval_events": 99,
+  "pilot_artifacts_verified": 20,
+  "independently_recomputed_event_macro_mape": {
+    "linear": 10.598920394973637,
+    "shape_k5": 7.16617695460394,
+    "shape_scale_type_k10": 6.774559362475673,
+    "shape_scale_type_k5": 5.739206954954203
+  },
+  "peer_case_availability_pct": 42.620008972633464,
+  "peer_event_macro_availability_pct": 24.09801899581164,
+  "preserved_assets": {
+    "data/holdout_v1/manifest.json": "a64ae16cb3e66bb28a9babead1487137f20d158b4e9107a51f47edd5ac1100fa",
+    "data/multirank_v2/manifest.json": "29def06060327519417434a8720c2e956dfde49f76facc9ebf710caa76845044",
+    "analysis/multirank_results/v2/blind_test_manifest.json": "0c219321ea792b7a90b289c50f38b06e9a3633b1ef8f7deb2fecb616961ac757",
+    "analysis/multirank_results/v2/evaluation_manifest.json": "a8e482d4e6cdd16fcfe7166e0e6de412c622bfc6378668a1714051114cc890c7",
+    "data/db.sqlite3": "0905ba3baf6f72bc76b558235df8cf1c9ef0249c4c65c93fa2888361c4a622e6"
+  },
+  "repository_tests": {
+    "passed": 133,
+    "log_sha256": "d793fe39ac61596a3372e0461bdd9e388ae4b9bb00d84d8d5873e99207bc54e4"
+  },
+  "parsed_answer_splits": [
+    "train"
+  ],
+  "review": "Same frozen case identities; event-macro recomputed from frozen case membership; chronological chosen-neighbor audit separately saved",
+  "limitations": [
+    "Previously exposed test cohort",
+    "Retrospective metadata without point-in-time archives",
+    "Retrieval pilot compared to linear only; not to same-condition CatBoost"
+  ]
+}

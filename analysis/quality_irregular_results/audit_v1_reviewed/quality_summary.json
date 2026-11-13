@@ -1,0 +1,22 @@
+{
+  "train": {
+    "cases": 4377,
+    "events": 198,
+    "reliability_median": 0.0957163358750798,
+    "reliability_quartiles": [
+      0.07431848378920099,
+      0.11897771135391372
+    ],
+    "zero_reliability_cases": 27
+  },
+  "validation": {
+    "cases": 414,
+    "events": 42,
+    "reliability_median": 0.12119422512112171,
+    "reliability_quartiles": [
+      0.10802923238622478,
+      0.13787851751958288
+    ],
+    "zero_reliability_cases": 2
+  }
+}

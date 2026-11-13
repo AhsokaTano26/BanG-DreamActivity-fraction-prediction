@@ -1,0 +1,8 @@
+{
+  "evaluation_manifest_sha256": "22b295f83da072eadb08fc26d49688ced84cc0c14389a23ccf2ca5b7b287a442",
+  "artifacts": {
+    "coverage.csv": "355d6b03b921a7ae02eb814213270c0c064ffffe0d0d72bbf321777f891c495c",
+    "README.md": "81c0e9f6f5c3f9ac5ca4c2473ea0c06492cfa0f8fb16b9d31a83f553f189a93e",
+    "report_source.py": "f143388d3126ad03ca81843f2855840ea65a305bd0123dc01797c3c44c46e468"
+  }
+}

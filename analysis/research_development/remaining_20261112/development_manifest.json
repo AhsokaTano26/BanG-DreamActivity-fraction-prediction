@@ -1,0 +1,27 @@
+{
+  "dataset_id": "1f76f39af8151bba185496411bbcee064b16a4c5aca5c515c1d957a5056fe854",
+  "completed": true,
+  "artifacts": {
+    "models/remaining_baseline_log_rmse.joblib": "041af1e77aefd8d1173ce0860ffee667c1dfd5be1b1742a39cbfd140271ee67e",
+    "models/remaining_rate_log_mae.joblib": "b51226050ab0f2f5d3946a969f15cba23ab938db799acb22dbe8469fa800cd77",
+    "models/remaining_rate_log_rmse.joblib": "26566cd9fa89e06674a0f28d19bf50a9ca778c5ea82c077ab979080828bbdfb2",
+    "models/remaining_rate_log_rmse_by_rank.joblib": "44e7d28a7fe7966dcd88ea97fe4cc30d4b7f2c949b1e7ba2cda4f932114d7dd1",
+    "models/remaining_ratio_mape.joblib": "c6f66145e16be038282adfb52094befe7f6dd52edcd8436b592b19ff2971260b",
+    "models/remaining_ratio_mape_by_rank.joblib": "f207a329677fce1f78bc6f8cb0959f1a8b16b792579a6d2540bac9aad4f3b356",
+    "run_manifest.json": "0997a0243774dad2709ea4a4be7493e31069353f43ce3f9ce994dad016885788",
+    "selection.json": "2b96fcccc51fcdd2ae7e4a52dc9a60d9e942e5159f0ba0b290bf0508e1365f55",
+    "sources/backtest.py": "df2733f8aff144582da7f732e3def213a224f5689b38ea8065f748d43f2e99be",
+    "sources/holdout_dataset.py": "22cf94748c4953b72a570093d8e26e76ae9437454e09da181fc9e5e10c6a2f6f",
+    "sources/multirank_dataset.py": "c47b652b27971009f9ea1ecd9837832b9ed376d49d5b53adb2baea219ba9d8a8",
+    "sources/multirank_model.py": "ff3eda807ddd2990d7150609a719a3a691fe23938de655c2ef9e365193a211e2",
+    "sources/research_remaining.py": "3a4764c49fae428b3010a20ff925bf6b06de9c41cd650f29e0aa7f64d73e9e3e",
+    "sources/temporal_dataset.py": "288ab6ce031b916514a931c79f5626ab8807532484fa55002d1724e03b120235",
+    "sources/temporal_paired_features.py": "c6343c37e24944e6d2f353a33d66ac42642ac18e29010181afac3109eb929396",
+    "sources/temporal_rank_subset.py": "300587b01572970c1ed5069898bca534841b6768512b09b36ae4497133edf271",
+    "train_pairing_audit.csv": "5b570770045f41a7a79ac4883d8004a75e7f5eb63e50bd652962e3442fa0c601",
+    "training_weights.csv": "da39f8d6f9c0f2f7d41424442b96e90c7523c626e3c26364a0933925a9a3a341",
+    "validation_metrics.csv": "f54135b203cd783de24362dd125301ea71389231774656b5ceeacaeb09b6dd37",
+    "validation_pairing_audit.csv": "3b89624c3a8b7a75d0f910b7074517e5c5bb6682af9fcb86f38d328442ad3b31",
+    "validation_predictions.csv": "55db51126aaf0dc60d93a62c38318c997a65afdcfb5ca0622724ad57c469426f"
+  }
+}

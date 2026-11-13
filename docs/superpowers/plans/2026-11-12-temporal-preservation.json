@@ -1,0 +1,7 @@
+{
+  "data/holdout_v1/manifest.json": "a64ae16cb3e66bb28a9babead1487137f20d158b4e9107a51f47edd5ac1100fa",
+  "data/multirank_v2/manifest.json": "29def06060327519417434a8720c2e956dfde49f76facc9ebf710caa76845044",
+  "analysis/multirank_results/v2/blind_test_manifest.json": "0c219321ea792b7a90b289c50f38b06e9a3633b1ef8f7deb2fecb616961ac757",
+  "analysis/multirank_results/v2/evaluation_manifest.json": "a8e482d4e6cdd16fcfe7166e0e6de412c622bfc6378668a1714051114cc890c7",
+  "data/db.sqlite3": "0905ba3baf6f72bc76b558235df8cf1c9ef0249c4c65c93fa2888361c4a622e6"
+}

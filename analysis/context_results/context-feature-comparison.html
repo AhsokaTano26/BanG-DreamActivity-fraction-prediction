@@ -1,0 +1,63 @@
+<section id="bangdream-context-comparison" data-viz-composition>
+  <div data-viz-container></div>
+  <script type="application/json" data-viz-chart>
+    {
+  "id": "context-feature-ablation",
+  "title": "活动背景特征是否改善预测",
+  "description": "相同36期国服、342个场景、四段时间回测；前五项使用相同LightGBM配置，误差越低越好。",
+  "summary": "主要改善来自历史增长统计；乐队标签本身没有显示稳定增益。",
+  "height": 340,
+  "spec": {
+    "type": "horizontalBar",
+    "x": "平均绝对百分比误差（%）",
+    "y": "方案",
+    "xLabel": "平均绝对百分比误差（%）",
+    "xDomain": [
+      0,
+      10
+    ],
+    "showValues": true,
+    "valueFormat": {
+      "style": "decimal",
+      "maximumFractionDigits": 2
+    }
+  },
+  "columns": [
+    "方案",
+    "平均绝对百分比误差（%）"
+  ],
+  "rows": [
+    [
+      "LightGBM基线",
+      8.023886171267437
+    ],
+    [
+      "仅加入乐队标签",
+      8.193779721265347
+    ],
+    [
+      "再加入角色/卡牌等静态资料",
+      8.55180877003105
+    ],
+    [
+      "再加入历史分组统计",
+      6.65624812383139
+    ],
+    [
+      "再加入另一排名档当前走势",
+      6.6012493252248206
+    ],
+    [
+      "完整上下文CatBoost（验证集选定）",
+      6.5814982744299195
+    ]
+  ]
+}
+  </script>
+</section>
+<script type="module">
+  import { mountChart } from "https://persistent.oaistatic.com/plugins/visualize/charts/1.1.6/element.js";
+  const root = document.getElementById("bangdream-context-comparison");
+  const config = JSON.parse(root.querySelector("[data-viz-chart]").textContent);
+  mountChart(root.querySelector("[data-viz-container]"), config);
+</script>

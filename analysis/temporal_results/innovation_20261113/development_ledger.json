@@ -1,0 +1,56 @@
+[
+  {
+    "method": "retrieval__retrieval_control",
+    "train_fit_mape": 3.3854890352334652,
+    "validation_mape": 8.764589244201417,
+    "seconds": 2.15
+  },
+  {
+    "method": "retrieval__retrieval_features",
+    "train_fit_mape": 3.0397897793964606,
+    "validation_mape": 8.636144448392166,
+    "seconds": 10.25
+  },
+  {
+    "method": "retrieval__retrieval_residual",
+    "train_fit_mape": 3.193501272588268,
+    "validation_mape": 7.374409072620442,
+    "seconds": 10.58
+  },
+  {
+    "method": "hierarchy__hierarchy_static_context",
+    "train_fit_mape": 1.972444088989085,
+    "validation_mape": 8.230422016090554,
+    "seconds": 1.55
+  },
+  {
+    "method": "hierarchy__hierarchy_additive_shrinkage",
+    "train_fit_mape": 3.434926525606586,
+    "validation_mape": 9.018406917092593,
+    "seconds": 5.76
+  },
+  {
+    "method": "hierarchy__hierarchy_phase_shrinkage",
+    "train_fit_mape": 3.2851886666724246,
+    "validation_mape": 8.927343915078405,
+    "seconds": 6.21
+  },
+  {
+    "method": "growth__growth_direct",
+    "train_fit_mape": 4.584345521650455,
+    "validation_mape": 10.863171967781645,
+    "seconds": 2.23
+  },
+  {
+    "method": "growth__growth_progress",
+    "train_fit_mape": 4.265909411952836,
+    "validation_mape": 8.852049214693523,
+    "seconds": 2.26
+  },
+  {
+    "method": "growth__growth_dual_clock",
+    "train_fit_mape": 3.9632743849069505,
+    "validation_mape": 8.755482756554144,
+    "seconds": 2.17
+  }
+]

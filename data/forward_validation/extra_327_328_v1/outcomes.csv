@@ -1,0 +1,5 @@
+event,rank,status,actual,observed_at,end_ms
+327,1000,missing_near_end,,,1793717999000
+327,2000,missing_near_end,,,1793717999000
+328,1000,available_near_end,3349819.0,1794409200000.0,1794409199000
+328,2000,available_near_end,2173258.0,1794409200000.0,1794409199000

@@ -1,0 +1,41 @@
+Checkpoint replay verified: catboost_paired
+Checkpoint replay verified: catboost_phase
+Checkpoint replay verified: dual_tcn_seed42
+Checkpoint replay verified: dual_tcn_seed123
+Checkpoint replay verified: dual_tcn_seed2026
+Checkpoint replay verified: dual_tcn_mean
+{
+  "dataset_id": "1f76f39af8151bba185496411bbcee064b16a4c5aca5c515c1d957a5056fe854",
+  "train": {
+    "cases": 2229,
+    "available_peers": 950,
+    "future_peer_observations": 0,
+    "all_nine_methods_same_cases": true,
+    "reference_predictions_unchanged": true,
+    "final_score_ensemble_verified": true
+  },
+  "validation": {
+    "cases": 1548,
+    "available_peers": 1548,
+    "future_peer_observations": 0,
+    "all_nine_methods_same_cases": true,
+    "reference_predictions_unchanged": true,
+    "final_score_ensemble_verified": true
+  },
+  "test": {
+    "cases": 1514,
+    "available_peers": 1512,
+    "future_peer_observations": 0,
+    "all_nine_methods_same_cases": true,
+    "reference_predictions_unchanged": true,
+    "final_score_ensemble_verified": true
+  },
+  "weights": {
+    "event_totals_equal": true,
+    "available_phase_totals_equal_within_event": true
+  },
+  "both_cached_scorers_return_without_reading_answers": true,
+  "all_fitted_models_and_ensemble_replayed_on_complete_test_prefixes": true,
+  "old_datasets_database_and_delivery_unchanged": true,
+  "new_prediction_evaluation_report_comparison_seals_verified": true
+}

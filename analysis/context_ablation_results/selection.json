@@ -1,0 +1,17 @@
+{
+  "scores": {
+    "cb_baseline": 5.649490701564721,
+    "cb_global_history": 5.505526991364926,
+    "cb_type_history": 5.690371677022651,
+    "cb_band_history": 5.628134353685159,
+    "cb_character_history": 5.607612057152918,
+    "cb_compact_peer": 5.493003606432281,
+    "tcn_compact": 6.449852108929422,
+    "tcn_conditional_prior": 5.690472679339794
+  },
+  "selected_recipe": "cb_compact_peer",
+  "epochs": {
+    "tcn_compact": 17,
+    "tcn_conditional_prior": 21
+  }
+}

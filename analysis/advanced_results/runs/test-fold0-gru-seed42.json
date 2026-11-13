@@ -1,0 +1,12 @@
+{
+  "architecture": "gru",
+  "seed": 42,
+  "device": "mps",
+  "parameters": 30865,
+  "epochs_run": 52,
+  "selected_epochs": 52,
+  "seconds": 16.95364962500753,
+  "trace": [],
+  "signature": "fd64730f9715bf10f35ab88ba92e34b575c0d950371fab68ea0859052fc431b4",
+  "key": "test-fold0-gru-seed42"
+}

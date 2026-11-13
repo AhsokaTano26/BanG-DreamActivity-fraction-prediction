@@ -1,0 +1,12 @@
+{
+  "architecture": "lstm",
+  "seed": 123,
+  "device": "mps",
+  "parameters": 38353,
+  "epochs_run": 27,
+  "selected_epochs": 27,
+  "seconds": 2.422572083014529,
+  "trace": [],
+  "signature": "fd64730f9715bf10f35ab88ba92e34b575c0d950371fab68ea0859052fc431b4",
+  "key": "test-fold3-lstm-seed123"
+}

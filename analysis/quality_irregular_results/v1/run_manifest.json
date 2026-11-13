@@ -1,0 +1,107 @@
+{
+  "dataset_id": "d0ccf9f70aee19ad1b2152925e7afe8692d67f4a6e539d558f87e2cd33329bbb",
+  "dataset_directory": "/Users/tano/Documents/GitHub/personal/BanG-Dream-Activity-fraction-prediction/data/holdout_v1",
+  "statistical_recipes": [
+    "remaining_rank",
+    "additive_spline",
+    "hierarchical_spline",
+    "quality_spline",
+    "quality_shared_tree",
+    "quality_type_tree"
+  ],
+  "neural_recipes": [
+    "time_gru",
+    "neural_cde"
+  ],
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "neural_settings": {
+    "width": 32,
+    "nodes": 32,
+    "epochs": 80,
+    "minimum_epochs": 30,
+    "patience": 20,
+    "batch_size": 256,
+    "lr": 0.001,
+    "weight_decay": 0.005,
+    "dropout": 0.2,
+    "gradient_clip": 1
+  },
+  "tree_parameters": {
+    "iterations": 500,
+    "depth": 4,
+    "learning_rate": 0.03,
+    "l2_leaf_reg": 15,
+    "loss_function": "RMSE",
+    "random_seed": 42,
+    "thread_count": 4,
+    "verbose": false,
+    "allow_writing_files": false
+  },
+  "history_settings": {
+    "recency_days": 720.0,
+    "different_type_weight": 0.15,
+    "log_duration_scale": 0.5,
+    "shape_bandwidth": 0.5
+  },
+  "fold_left": [
+    98,
+    123,
+    148,
+    173
+  ],
+  "fold_size": 25,
+  "hierarchy": {
+    "ridge_alpha": 20,
+    "type_penalty_factor": 4,
+    "type_rank_penalty_factor": 16,
+    "expert_shrinkage_events": 20
+  },
+  "quality": "n_eff/(n_eff+10)/(1+span_h/2); unknown shape deviation zero; no activity reweighting",
+  "neural_solver": "piecewise-linear controls; Heun one step per retained interval; 2/4 steps sensitivity only",
+  "loss": ".8*sqrt(relative_final_error^2+1e-4)+.2*Huber(log_remaining_rate,beta=.2)",
+  "selection": "fixed validation only; all statistical / neural seed means and 25% candidate + 75% frozen reference; never single seed",
+  "weights": "global equal activity total across ranks, no subgroup renormalization",
+  "reference": {
+    "directory": "/Users/tano/Documents/GitHub/personal/BanG-Dream-Activity-fraction-prediction/analysis/holdout_results/structured_neural_v1",
+    "manifest_sha256": "6a7abf50374c3838f774dc80fd04a03397315d5f12237a85b3c8e37eec08c224",
+    "run_id": "744df452c51e14d366213b274766ea1f2355d3da2b149c27f09b6002bc82c569",
+    "selected": "blend_neural_0.25"
+  },
+  "scope": "development only; no test inputs, labels, predictions or scores",
+  "previous_test_exposure": true,
+  "metadata_limitation": "retrospective snapshot without archived point-in-time provenance",
+  "python": "3.14.8",
+  "software": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "catboost": "1.2.10",
+    "lightgbm": "4.7.0",
+    "joblib": "1.6.0",
+    "torch": "2.15.0"
+  },
+  "source_hashes": {
+    "analysis/quality_irregular_benchmark.py": "93144fc136efedd437f73f66ad39eed2e9bc4788d600a19eb6e47889653b718d",
+    "analysis/quality_hierarchy.py": "5ee829a473d098fe655e0f34e83c84f13e1ee809e577a67979ea99ebdafff366",
+    "analysis/irregular_prefix.py": "a0b473fa5a160bdfef4e972dbac7dbe06a1203069c5802ab32fd5670080f8d8b",
+    "analysis/irregular_neural.py": "d9b1ff007e8dac3f60c16abe9ac03855881761c754fb939246ccdae3880f9c02",
+    "analysis/deadline_features.py": "3c92760fdb8b51c6550c09ad43e272920142caaad8e6632a0f7f1dd50c10b172",
+    "analysis/deadline_benchmark.py": "39f9bb0a18e4af9929e6a603e93fc04028feb80e81695ee4f6ba862a0e5719d6",
+    "analysis/deadline_diagnostics.py": "b34c48b7c99cfb3b580c9ecb0ceba7df9c8e86720b1d2fb2642b690f22d29fcd",
+    "analysis/relationship_features.py": "717e8919cee5078cec61f80e3b5a12315b8dd34c6753e1964cf81731cd063642",
+    "analysis/relationship_statistics.py": "c8eca34121693a730313b39118164f397c8281d4233bab6c4156f930221ebe35",
+    "analysis/relationship_benchmark.py": "dad49fbee83ad73f90ad9a426738b805a84722904d70d07812fa7539e24b9845",
+    "analysis/holdout_dataset.py": "22cf94748c4953b72a570093d8e26e76ae9437454e09da181fc9e5e10c6a2f6f",
+    "analysis/holdout_evaluate.py": "cf2226d0ca778a31a37d58c57a066f81ec015df01da5899f8ca621ca2859bda4",
+    "analysis/backtest.py": "df2733f8aff144582da7f732e3def213a224f5689b38ea8065f748d43f2e99be",
+    "analysis/event_features.py": "cf3eb59a5b8e99a4cebda38a54a642140d8fcc017c4d38a132499fce38074419",
+    "forecasting.py": "c7dd2129732744b2949faf38894cdf71829b8437f355d4781e7100251c827525"
+  },
+  "plan_sha256": "1533d476c793a4960f0cca5a84169f330e1a5e5d8c98e21886b219ddd5ef36e8",
+  "run_id": "8eca721206629d818ecbcb85a5113ed071fb978da132ffcf994df4f8342f44ec"
+}

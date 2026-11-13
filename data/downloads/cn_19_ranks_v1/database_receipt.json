@@ -1,0 +1,20 @@
+{
+  "database": "/Users/tano/Documents/GitHub/personal/BanG-Dream-Activity-fraction-prediction/data/db.sqlite3",
+  "database_before_sha256": "1d15dc07c06e4cc3a1ab6c442bb02cbcfa204b1057e48507db68d6d14e28d5aa",
+  "database_before_logical_sha256": "1d4f010b03f30113a2372e8e78aa488c9f70b72209d1e390245e6f839f9bd3cf",
+  "database_after_logical_sha256": "5910afa533675ea738775c1c2bb1dc8cb5cb3a058c8ba8ddee05517b7fb7bb0b",
+  "backup": "/Users/tano/Documents/GitHub/personal/BanG-Dream-Activity-fraction-prediction/data/backups/db_before_cn_19_ranks_v1.sqlite3",
+  "backup_sha256": "bb23785e116ad227251b1b56b5e70481cda68a1ac6831b594465117542c7c752",
+  "download_manifest_sha256": "41ac78233f468109882f22fd8fac33f3cf1925603b6ad491b30d20c310978d0a",
+  "before_rows": 656,
+  "after_rows": 3085,
+  "inserted_curves": 2429,
+  "merged_curves": 656,
+  "added_points": 3551841,
+  "corrected_points": 0,
+  "changes_sha256": "619f25311da8138b50ff30fafb70f552c1a2f4b778fa220e2eb1655dd3da085d",
+  "apply_code_sha256": "06304868c9189299b1392ce99ee4f4819324be13cdc2449539edb97e87554424",
+  "applied_at": "2026-11-11T13:38:50.051870+00:00",
+  "database_after_sha256": "0905ba3baf6f72bc76b558235df8cf1c9ef0249c4c65c93fa2888361c4a622e6",
+  "recovered_after_commit": false
+}

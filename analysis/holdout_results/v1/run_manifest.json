@@ -1,0 +1,143 @@
+{
+  "dataset_id": "d0ccf9f70aee19ad1b2152925e7afe8692d67f4a6e539d558f87e2cd33329bbb",
+  "dataset_directory": "/Users/tano/Documents/GitHub/personal/BanG-Dream-Activity-fraction-prediction/data/holdout_v1",
+  "device": "mps",
+  "max_epochs": 80,
+  "batch_size": 256,
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "baselines": [
+    "linear",
+    "recent_24h",
+    "template",
+    "same_type_template",
+    "shape_analog"
+  ],
+  "tree_recipes": {
+    "ridge_growth": [
+      "baseline",
+      "ridge"
+    ],
+    "xgb_tab_growth": [
+      "baseline",
+      "xgb_tab"
+    ],
+    "xgb_sequence": [
+      "baseline",
+      "xgb"
+    ],
+    "extra_trees_sequence": [
+      "baseline",
+      "extra_trees"
+    ],
+    "lightgbm_sequence": [
+      "baseline",
+      "lightgbm"
+    ],
+    "catboost_sequence": [
+      "baseline",
+      "catboost"
+    ],
+    "lightgbm_band": [
+      "band",
+      "lightgbm"
+    ],
+    "lightgbm_static": [
+      "static",
+      "lightgbm"
+    ],
+    "lightgbm_history": [
+      "history",
+      "lightgbm"
+    ],
+    "lightgbm_peer": [
+      "peer",
+      "lightgbm"
+    ],
+    "catboost_band": [
+      "band",
+      "catboost"
+    ],
+    "catboost_static": [
+      "static",
+      "catboost"
+    ],
+    "catboost_history": [
+      "history",
+      "catboost"
+    ],
+    "catboost_peer": [
+      "peer",
+      "catboost"
+    ]
+  },
+  "neural_recipes": {
+    "mlp": [
+      "baseline",
+      "mlp"
+    ],
+    "gru": [
+      "baseline",
+      "gru"
+    ],
+    "lstm": [
+      "baseline",
+      "lstm"
+    ],
+    "tcn": [
+      "baseline",
+      "tcn"
+    ],
+    "transformer": [
+      "baseline",
+      "transformer"
+    ],
+    "patchtst": [
+      "baseline",
+      "patchtst"
+    ],
+    "tsmixer": [
+      "baseline",
+      "tsmixer"
+    ],
+    "itransformer": [
+      "baseline",
+      "itransformer"
+    ],
+    "dlinear": [
+      "baseline",
+      "dlinear"
+    ],
+    "tcn_peer": [
+      "peer",
+      "tcn"
+    ]
+  },
+  "training_weights": "equal total weight per event",
+  "neural_optimizer": "AdamW lr=.001 weight_decay=.001; Huber beta=.2; clip norm=1",
+  "checkpoint": "minimum validation event macro MAPE; min25 epochs/patience18",
+  "selection": "minimum validation event macro MAPE; top3 arithmetic final-score ensemble also reported",
+  "software": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.7.0",
+    "catboost": "1.2.10",
+    "torch": "2.15.0"
+  },
+  "python": "3.14.8",
+  "source_hashes": {
+    "analysis/holdout_dataset.py": "22cf94748c4953b72a570093d8e26e76ae9437454e09da181fc9e5e10c6a2f6f",
+    "analysis/holdout_features.py": "46d13f7081e80682bdfac25a3faa5d405c3101efa1af65a7c5158f78a8da5a86",
+    "analysis/holdout_benchmark.py": "ef3a25287bd9398337600f180191e7100d0ac73ab35ba69f7b46bf31f3d69cda",
+    "analysis/holdout_evaluate.py": "87685943ebc2d7708180d1c5110dc0e0738a6789fe7859e21329fbd15e7895ca",
+    "analysis/advanced_models.py": "83bdced09018cee2745757568f27fe32c931caeb0cddb8e2285a5bd772d6426c",
+    "analysis/backtest.py": "df2733f8aff144582da7f732e3def213a224f5689b38ea8065f748d43f2e99be",
+    "analysis/event_features.py": "cf3eb59a5b8e99a4cebda38a54a642140d8fcc017c4d38a132499fce38074419"
+  },
+  "run_id": "aef5892fd06e218af95c2a93610eae2ec22438cc31833cde189346be6885e2e8"
+}

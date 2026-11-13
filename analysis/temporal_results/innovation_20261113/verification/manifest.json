@@ -1,0 +1,8 @@
+{
+  "files": {
+    "train_retrieval_coverage.csv": "4e6ed02857467ea29692dbf553305ec98af908dd3bdbd68bfd947d9113c5a99d",
+    "test_retrieval_coverage.csv": "7b87cad97ce4f9d9e75a209f4eb6f5125dac266a2550350bd973b17704e9c0c6",
+    "verification.json": "d5ba925e0e623d6d9bc6d717a3ac5fef96ceeee4285b2bbd1b2e00de0972ecc7",
+    "validation_retrieval_coverage.csv": "6c420e368adb0c361e6d91a4a613eb2501aba0a902d9df6e9633d7eabbdcfa56"
+  }
+}

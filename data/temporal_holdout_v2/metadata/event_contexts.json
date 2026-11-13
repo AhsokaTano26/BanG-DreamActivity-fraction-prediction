@@ -1,0 +1,6251 @@
+[
+  {
+    "event_id": 1,
+    "characters": [
+      5,
+      11,
+      20
+    ],
+    "band_shares": {
+      "1": 0.3333333333333333,
+      "3": 0.3333333333333333,
+      "4": 0.3333333333333333
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 2,
+    "characters": [
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "band_shares": {
+      "5": 1.0
+    },
+    "band_names": {
+      "5": "Roselia"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 3,
+    "characters": [
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "band_shares": {
+      "3": 1.0
+    },
+    "band_names": {
+      "3": "Hello, Happy World！"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 4,
+    "characters": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "band_shares": {
+      "1": 1.0
+    },
+    "band_names": {
+      "1": "Poppin'Party"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 5,
+    "characters": [
+      1,
+      6,
+      10,
+      11,
+      17
+    ],
+    "band_shares": {
+      "1": 0.2,
+      "2": 0.4,
+      "3": 0.2,
+      "4": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 6,
+    "characters": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "band_shares": {
+      "2": 1.0
+    },
+    "band_names": {
+      "2": "Afterglow"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 7,
+    "characters": [
+      2,
+      5,
+      14,
+      18,
+      20
+    ],
+    "band_shares": {
+      "1": 0.4,
+      "3": 0.2,
+      "4": 0.4
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 8,
+    "characters": [
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "band_shares": {
+      "4": 1.0
+    },
+    "band_names": {
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 9,
+    "characters": [
+      3,
+      4,
+      9,
+      12,
+      24
+    ],
+    "band_shares": {
+      "1": 0.4,
+      "2": 0.2,
+      "3": 0.2,
+      "5": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "3": "Hello, Happy World！",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 10,
+    "characters": [
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "band_shares": {
+      "5": 1.0
+    },
+    "band_names": {
+      "5": "Roselia"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 11,
+    "characters": [
+      14,
+      16,
+      17,
+      22,
+      23
+    ],
+    "band_shares": {
+      "3": 0.2,
+      "4": 0.4,
+      "5": 0.4
+    },
+    "band_names": {
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 12,
+    "characters": [
+      4,
+      9,
+      10,
+      13,
+      24
+    ],
+    "band_shares": {
+      "1": 0.2,
+      "2": 0.4,
+      "3": 0.2,
+      "5": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "3": "Hello, Happy World！",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 13,
+    "characters": [
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "band_shares": {
+      "4": 1.0
+    },
+    "band_names": {
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 14,
+    "characters": [
+      8,
+      16,
+      23,
+      24,
+      25
+    ],
+    "band_shares": {
+      "2": 0.2,
+      "4": 0.2,
+      "5": 0.6
+    },
+    "band_names": {
+      "2": "Afterglow",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 15,
+    "characters": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "band_shares": {
+      "1": 1.0
+    },
+    "band_names": {
+      "1": "Poppin'Party"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 16,
+    "characters": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "band_shares": {
+      "2": 1.0
+    },
+    "band_names": {
+      "2": "Afterglow"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 17,
+    "characters": [
+      10,
+      12,
+      18,
+      19,
+      23
+    ],
+    "band_shares": {
+      "2": 0.2,
+      "3": 0.2,
+      "4": 0.4,
+      "5": 0.2
+    },
+    "band_names": {
+      "2": "Afterglow",
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 18,
+    "characters": [
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "band_shares": {
+      "3": 1.0
+    },
+    "band_names": {
+      "3": "Hello, Happy World！"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 19,
+    "characters": [
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "band_shares": {
+      "4": 1.0
+    },
+    "band_names": {
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 20,
+    "characters": [
+      3,
+      8,
+      11,
+      15,
+      21
+    ],
+    "band_shares": {
+      "1": 0.2,
+      "2": 0.2,
+      "3": 0.4,
+      "5": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "3": "Hello, Happy World！",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 21,
+    "characters": [
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "band_shares": {
+      "5": 1.0
+    },
+    "band_names": {
+      "5": "Roselia"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 22,
+    "characters": [
+      2,
+      5,
+      13,
+      15,
+      16
+    ],
+    "band_shares": {
+      "1": 0.4,
+      "3": 0.4,
+      "4": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 23,
+    "characters": [
+      10,
+      17,
+      20,
+      22,
+      25
+    ],
+    "band_shares": {
+      "2": 0.2,
+      "4": 0.4,
+      "5": 0.4
+    },
+    "band_names": {
+      "2": "Afterglow",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 24,
+    "characters": [
+      1,
+      5,
+      8,
+      14,
+      20
+    ],
+    "band_shares": {
+      "1": 0.4,
+      "2": 0.2,
+      "3": 0.2,
+      "4": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 25,
+    "characters": [
+      6,
+      7,
+      11,
+      21,
+      23
+    ],
+    "band_shares": {
+      "2": 0.4,
+      "3": 0.2,
+      "5": 0.4
+    },
+    "band_names": {
+      "2": "Afterglow",
+      "3": "Hello, Happy World！",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 26,
+    "characters": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "band_shares": {
+      "1": 1.0
+    },
+    "band_names": {
+      "1": "Poppin'Party"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 27,
+    "characters": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "band_shares": {
+      "2": 1.0
+    },
+    "band_names": {
+      "2": "Afterglow"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 28,
+    "characters": [
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "band_shares": {
+      "3": 1.0
+    },
+    "band_names": {
+      "3": "Hello, Happy World！"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 29,
+    "characters": [
+      9,
+      11,
+      19,
+      20,
+      25
+    ],
+    "band_shares": {
+      "2": 0.2,
+      "3": 0.2,
+      "4": 0.4,
+      "5": 0.2
+    },
+    "band_names": {
+      "2": "Afterglow",
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 30,
+    "characters": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "band_shares": {
+      "1": 1.0
+    },
+    "band_names": {
+      "1": "Poppin'Party"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 31,
+    "characters": [
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "band_shares": {
+      "5": 1.0
+    },
+    "band_names": {
+      "5": "Roselia"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 32,
+    "characters": [
+      5,
+      7,
+      10,
+      21,
+      23
+    ],
+    "band_shares": {
+      "1": 0.2,
+      "2": 0.4,
+      "5": 0.4
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 33,
+    "characters": [
+      13,
+      15,
+      17,
+      19,
+      24
+    ],
+    "band_shares": {
+      "3": 0.4,
+      "4": 0.4,
+      "5": 0.2
+    },
+    "band_names": {
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 34,
+    "characters": [
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "band_shares": {
+      "4": 1.0
+    },
+    "band_names": {
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 35,
+    "characters": [
+      8,
+      9,
+      12,
+      13,
+      15
+    ],
+    "band_shares": {
+      "2": 0.4,
+      "3": 0.6
+    },
+    "band_names": {
+      "2": "Afterglow",
+      "3": "Hello, Happy World！"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 36,
+    "characters": [
+      1,
+      6,
+      11,
+      16,
+      21
+    ],
+    "band_shares": {
+      "1": 0.2,
+      "2": 0.2,
+      "3": 0.2,
+      "4": 0.2,
+      "5": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 37,
+    "characters": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "band_shares": {
+      "2": 1.0
+    },
+    "band_names": {
+      "2": "Afterglow"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 38,
+    "characters": [
+      14,
+      15,
+      20,
+      22,
+      25
+    ],
+    "band_shares": {
+      "3": 0.4,
+      "4": 0.2,
+      "5": 0.4
+    },
+    "band_names": {
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 39,
+    "characters": [
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "band_shares": {
+      "4": 1.0
+    },
+    "band_names": {
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 40,
+    "characters": [
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "band_shares": {
+      "3": 1.0
+    },
+    "band_names": {
+      "3": "Hello, Happy World！"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 41,
+    "characters": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "band_shares": {
+      "1": 1.0
+    },
+    "band_names": {
+      "1": "Poppin'Party"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 42,
+    "characters": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "band_shares": {
+      "2": 1.0
+    },
+    "band_names": {
+      "2": "Afterglow"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 43,
+    "characters": [
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "band_shares": {
+      "5": 1.0
+    },
+    "band_names": {
+      "5": "Roselia"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 44,
+    "characters": [
+      1,
+      9,
+      11,
+      15,
+      22
+    ],
+    "band_shares": {
+      "1": 0.2,
+      "2": 0.2,
+      "3": 0.4,
+      "5": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "3": "Hello, Happy World！",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 45,
+    "characters": [
+      6,
+      12,
+      17,
+      19,
+      23
+    ],
+    "band_shares": {
+      "2": 0.2,
+      "3": 0.2,
+      "4": 0.4,
+      "5": 0.2
+    },
+    "band_names": {
+      "2": "Afterglow",
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 46,
+    "characters": [
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "band_shares": {
+      "4": 1.0
+    },
+    "band_names": {
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 47,
+    "characters": [
+      1,
+      4,
+      5,
+      11,
+      13
+    ],
+    "band_shares": {
+      "1": 0.6,
+      "3": 0.4
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "3": "Hello, Happy World！"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 48,
+    "characters": [
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "band_shares": {
+      "3": 1.0
+    },
+    "band_names": {
+      "3": "Hello, Happy World！"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 49,
+    "characters": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "band_shares": {
+      "2": 1.0
+    },
+    "band_names": {
+      "2": "Afterglow"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 50,
+    "characters": [
+      2,
+      5,
+      11,
+      13,
+      20
+    ],
+    "band_shares": {
+      "1": 0.4,
+      "3": 0.4,
+      "4": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 51,
+    "characters": [
+      6,
+      8,
+      9,
+      22,
+      24
+    ],
+    "band_shares": {
+      "2": 0.6,
+      "5": 0.4
+    },
+    "band_names": {
+      "2": "Afterglow",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 52,
+    "characters": [
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "band_shares": {
+      "5": 1.0
+    },
+    "band_names": {
+      "5": "Roselia"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 53,
+    "characters": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "band_shares": {
+      "1": 1.0
+    },
+    "band_names": {
+      "1": "Poppin'Party"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 54,
+    "characters": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "band_shares": {
+      "2": 1.0
+    },
+    "band_names": {
+      "2": "Afterglow"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 55,
+    "characters": [
+      12,
+      14,
+      15,
+      16,
+      18
+    ],
+    "band_shares": {
+      "3": 0.6,
+      "4": 0.4
+    },
+    "band_names": {
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 56,
+    "characters": [
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "band_shares": {
+      "4": 1.0
+    },
+    "band_names": {
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 57,
+    "characters": [
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "band_shares": {
+      "3": 1.0
+    },
+    "band_names": {
+      "3": "Hello, Happy World！"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 58,
+    "characters": [
+      3,
+      5,
+      6,
+      8,
+      23
+    ],
+    "band_shares": {
+      "1": 0.4,
+      "2": 0.4,
+      "5": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 59,
+    "characters": [
+      12,
+      16,
+      19,
+      21,
+      25
+    ],
+    "band_shares": {
+      "3": 0.2,
+      "4": 0.4,
+      "5": 0.4
+    },
+    "band_names": {
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 60,
+    "characters": [
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "band_shares": {
+      "5": 1.0
+    },
+    "band_names": {
+      "5": "Roselia"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 61,
+    "characters": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "band_shares": {
+      "1": 1.0
+    },
+    "band_names": {
+      "1": "Poppin'Party"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 62,
+    "characters": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "band_shares": {
+      "2": 1.0
+    },
+    "band_names": {
+      "2": "Afterglow"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 63,
+    "characters": [
+      3,
+      8,
+      13,
+      18,
+      20
+    ],
+    "band_shares": {
+      "1": 0.2,
+      "2": 0.2,
+      "3": 0.2,
+      "4": 0.4
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 64,
+    "characters": [
+      10,
+      11,
+      17,
+      22,
+      23
+    ],
+    "band_shares": {
+      "2": 0.2,
+      "3": 0.2,
+      "4": 0.2,
+      "5": 0.4
+    },
+    "band_names": {
+      "2": "Afterglow",
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 65,
+    "characters": [
+      1,
+      2,
+      15,
+      16,
+      24
+    ],
+    "band_shares": {
+      "1": 0.4,
+      "3": 0.2,
+      "4": 0.2,
+      "5": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 66,
+    "characters": [
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "band_shares": {
+      "4": 1.0
+    },
+    "band_names": {
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 67,
+    "characters": [
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "band_shares": {
+      "3": 1.0
+    },
+    "band_names": {
+      "3": "Hello, Happy World！"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 68,
+    "characters": [
+      4,
+      8,
+      14,
+      16,
+      25
+    ],
+    "band_shares": {
+      "1": 0.2,
+      "2": 0.2,
+      "3": 0.2,
+      "4": 0.2,
+      "5": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 69,
+    "characters": [
+      4,
+      9,
+      10,
+      13,
+      24
+    ],
+    "band_shares": {
+      "1": 0.2,
+      "2": 0.4,
+      "3": 0.2,
+      "5": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "3": "Hello, Happy World！",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 70,
+    "characters": [
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "band_shares": {
+      "5": 1.0
+    },
+    "band_names": {
+      "5": "Roselia"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 71,
+    "characters": [
+      2,
+      10,
+      11,
+      18,
+      24
+    ],
+    "band_shares": {
+      "1": 0.2,
+      "2": 0.2,
+      "3": 0.2,
+      "4": 0.2,
+      "5": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 72,
+    "characters": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "band_shares": {
+      "1": 1.0
+    },
+    "band_names": {
+      "1": "Poppin'Party"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 73,
+    "characters": [
+      2,
+      7,
+      12,
+      17,
+      22
+    ],
+    "band_shares": {
+      "1": 0.2,
+      "2": 0.2,
+      "3": 0.2,
+      "4": 0.2,
+      "5": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 74,
+    "characters": [
+      6,
+      14,
+      16,
+      19,
+      23
+    ],
+    "band_shares": {
+      "2": 0.2,
+      "3": 0.2,
+      "4": 0.4,
+      "5": 0.2
+    },
+    "band_names": {
+      "2": "Afterglow",
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 75,
+    "characters": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "band_shares": {
+      "2": 1.0
+    },
+    "band_names": {
+      "2": "Afterglow"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 76,
+    "characters": [
+      5,
+      14,
+      15,
+      22,
+      25
+    ],
+    "band_shares": {
+      "1": 0.2,
+      "3": 0.4,
+      "5": 0.4
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "3": "Hello, Happy World！",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 77,
+    "characters": [
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "band_shares": {
+      "4": 1.0
+    },
+    "band_names": {
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 78,
+    "characters": [
+      6,
+      7,
+      9,
+      24,
+      25
+    ],
+    "band_shares": {
+      "2": 0.6,
+      "5": 0.4
+    },
+    "band_names": {
+      "2": "Afterglow",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 79,
+    "characters": [
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "band_shares": {
+      "3": 1.0
+    },
+    "band_names": {
+      "3": "Hello, Happy World！"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 80,
+    "characters": [
+      1,
+      5,
+      6,
+      10,
+      20
+    ],
+    "band_shares": {
+      "1": 0.4,
+      "2": 0.4,
+      "4": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 81,
+    "characters": [
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "band_shares": {
+      "5": 1.0
+    },
+    "band_names": {
+      "5": "Roselia"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 82,
+    "characters": [
+      1,
+      3,
+      11,
+      15,
+      16
+    ],
+    "band_shares": {
+      "1": 0.4,
+      "3": 0.4,
+      "4": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 83,
+    "characters": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "band_shares": {
+      "1": 1.0
+    },
+    "band_names": {
+      "1": "Poppin'Party"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 84,
+    "characters": [
+      1,
+      3,
+      10,
+      19,
+      21
+    ],
+    "band_shares": {
+      "1": 0.4,
+      "2": 0.2,
+      "4": 0.2,
+      "5": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 85,
+    "characters": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "band_shares": {
+      "2": 1.0
+    },
+    "band_names": {
+      "2": "Afterglow"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 86,
+    "characters": [
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "band_shares": {
+      "4": 1.0
+    },
+    "band_names": {
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 87,
+    "characters": [
+      3,
+      4,
+      9,
+      12,
+      20
+    ],
+    "band_shares": {
+      "1": 0.4,
+      "2": 0.2,
+      "3": 0.2,
+      "4": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 88,
+    "characters": [
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "band_shares": {
+      "3": 1.0
+    },
+    "band_names": {
+      "3": "Hello, Happy World！"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 89,
+    "characters": [
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "band_shares": {
+      "5": 1.0
+    },
+    "band_names": {
+      "5": "Roselia"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 90,
+    "characters": [
+      8,
+      10,
+      12,
+      17,
+      19
+    ],
+    "band_shares": {
+      "2": 0.4,
+      "3": 0.2,
+      "4": 0.4
+    },
+    "band_names": {
+      "2": "Afterglow",
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 91,
+    "characters": [
+      13,
+      14,
+      16,
+      18,
+      22
+    ],
+    "band_shares": {
+      "3": 0.4,
+      "4": 0.4,
+      "5": 0.2
+    },
+    "band_names": {
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 92,
+    "characters": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "band_shares": {
+      "1": 1.0
+    },
+    "band_names": {
+      "1": "Poppin'Party"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 93,
+    "characters": [
+      2,
+      12,
+      15,
+      20,
+      23
+    ],
+    "band_shares": {
+      "1": 0.2,
+      "3": 0.4,
+      "4": 0.2,
+      "5": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 94,
+    "characters": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "band_shares": {
+      "2": 1.0
+    },
+    "band_names": {
+      "2": "Afterglow"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 95,
+    "characters": [
+      3,
+      6,
+      13,
+      21,
+      22
+    ],
+    "band_shares": {
+      "1": 0.2,
+      "2": 0.2,
+      "3": 0.2,
+      "5": 0.4
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "3": "Hello, Happy World！",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 96,
+    "characters": [
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "band_shares": {
+      "4": 1.0
+    },
+    "band_names": {
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 97,
+    "characters": [
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "band_shares": {
+      "5": 1.0
+    },
+    "band_names": {
+      "5": "Roselia"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 98,
+    "characters": [
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "band_shares": {
+      "3": 1.0
+    },
+    "band_names": {
+      "3": "Hello, Happy World！"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 99,
+    "characters": [
+      2,
+      6,
+      8,
+      13,
+      20
+    ],
+    "band_shares": {
+      "1": 0.2,
+      "2": 0.4,
+      "3": 0.2,
+      "4": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 100,
+    "characters": [
+      8,
+      12,
+      17,
+      18,
+      19
+    ],
+    "band_shares": {
+      "2": 0.2,
+      "3": 0.2,
+      "4": 0.6
+    },
+    "band_names": {
+      "2": "Afterglow",
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 101,
+    "characters": [
+      5,
+      6,
+      14,
+      22,
+      24
+    ],
+    "band_shares": {
+      "1": 0.2,
+      "2": 0.2,
+      "3": 0.2,
+      "5": 0.4
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "3": "Hello, Happy World！",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 102,
+    "characters": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "band_shares": {
+      "1": 1.0
+    },
+    "band_names": {
+      "1": "Poppin'Party"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 103,
+    "characters": [
+      7,
+      11,
+      15,
+      17,
+      23
+    ],
+    "band_shares": {
+      "2": 0.2,
+      "3": 0.4,
+      "4": 0.2,
+      "5": 0.2
+    },
+    "band_names": {
+      "2": "Afterglow",
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 104,
+    "characters": [
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "band_shares": {
+      "4": 1.0
+    },
+    "band_names": {
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 105,
+    "characters": [
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "band_shares": {
+      "5": 1.0
+    },
+    "band_names": {
+      "5": "Roselia"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 106,
+    "characters": [
+      5,
+      14,
+      15,
+      18,
+      25
+    ],
+    "band_shares": {
+      "1": 0.2,
+      "3": 0.4,
+      "4": 0.2,
+      "5": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 107,
+    "characters": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "band_shares": {
+      "2": 1.0
+    },
+    "band_names": {
+      "2": "Afterglow"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 108,
+    "characters": [
+      4,
+      7,
+      16,
+      18,
+      21
+    ],
+    "band_shares": {
+      "1": 0.2,
+      "2": 0.2,
+      "4": 0.4,
+      "5": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 109,
+    "characters": [
+      3,
+      8,
+      13,
+      18,
+      23
+    ],
+    "band_shares": {
+      "1": 0.2,
+      "2": 0.2,
+      "3": 0.2,
+      "4": 0.2,
+      "5": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 110,
+    "characters": [
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "band_shares": {
+      "3": 1.0
+    },
+    "band_names": {
+      "3": "Hello, Happy World！"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 111,
+    "characters": [
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "band_shares": {
+      "21": 1.0
+    },
+    "band_names": {
+      "21": "Morfonica"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 112,
+    "characters": [
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "band_shares": {
+      "4": 1.0
+    },
+    "band_names": {
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 113,
+    "characters": [
+      1,
+      6,
+      11,
+      16,
+      21
+    ],
+    "band_shares": {
+      "1": 0.2,
+      "2": 0.2,
+      "3": 0.2,
+      "4": 0.2,
+      "5": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 114,
+    "characters": [
+      5,
+      13,
+      17,
+      23,
+      28
+    ],
+    "band_shares": {
+      "1": 0.2,
+      "3": 0.2,
+      "4": 0.2,
+      "5": 0.2,
+      "21": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia",
+      "21": "Morfonica"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 115,
+    "characters": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "band_shares": {
+      "2": 1.0
+    },
+    "band_names": {
+      "2": "Afterglow"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 116,
+    "characters": [
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "band_shares": {
+      "5": 1.0
+    },
+    "band_names": {
+      "5": "Roselia"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 117,
+    "characters": [
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "band_shares": {
+      "18": 1.0
+    },
+    "band_names": {
+      "18": "RAISE A SUILEN"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 118,
+    "characters": [
+      4,
+      8,
+      14,
+      18,
+      20
+    ],
+    "band_shares": {
+      "1": 0.2,
+      "2": 0.2,
+      "3": 0.2,
+      "4": 0.4
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 119,
+    "characters": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "band_shares": {
+      "1": 1.0
+    },
+    "band_names": {
+      "1": "Poppin'Party"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 120,
+    "characters": [
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "band_shares": {
+      "21": 1.0
+    },
+    "band_names": {
+      "21": "Morfonica"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 121,
+    "characters": [
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "band_shares": {
+      "3": 1.0
+    },
+    "band_names": {
+      "3": "Hello, Happy World！"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 122,
+    "characters": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "band_shares": {
+      "2": 1.0
+    },
+    "band_names": {
+      "2": "Afterglow"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 123,
+    "characters": [
+      2,
+      12,
+      15,
+      22,
+      27
+    ],
+    "band_shares": {
+      "1": 0.2,
+      "3": 0.4,
+      "5": 0.2,
+      "21": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "3": "Hello, Happy World！",
+      "5": "Roselia",
+      "21": "Morfonica"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 124,
+    "characters": [
+      1,
+      2,
+      17,
+      19,
+      23
+    ],
+    "band_shares": {
+      "1": 0.4,
+      "4": 0.4,
+      "5": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 125,
+    "characters": [
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "band_shares": {
+      "18": 1.0
+    },
+    "band_names": {
+      "18": "RAISE A SUILEN"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 126,
+    "characters": [
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "band_shares": {
+      "4": 1.0
+    },
+    "band_names": {
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 127,
+    "characters": [
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "band_shares": {
+      "5": 1.0
+    },
+    "band_names": {
+      "5": "Roselia"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 128,
+    "characters": [
+      1,
+      7,
+      24,
+      32,
+      33
+    ],
+    "band_shares": {
+      "1": 0.2,
+      "2": 0.2,
+      "5": 0.2,
+      "18": 0.4
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "5": "Roselia",
+      "18": "RAISE A SUILEN"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 129,
+    "characters": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "band_shares": {
+      "2": 1.0
+    },
+    "band_names": {
+      "2": "Afterglow"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 130,
+    "characters": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "band_shares": {
+      "1": 1.0
+    },
+    "band_names": {
+      "1": "Poppin'Party"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 131,
+    "characters": [
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "band_shares": {
+      "3": 1.0
+    },
+    "band_names": {
+      "3": "Hello, Happy World！"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 132,
+    "characters": [
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "band_shares": {
+      "21": 1.0
+    },
+    "band_names": {
+      "21": "Morfonica"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 133,
+    "characters": [
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "band_shares": {
+      "18": 1.0
+    },
+    "band_names": {
+      "18": "RAISE A SUILEN"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 134,
+    "characters": [
+      9,
+      17,
+      22,
+      23,
+      25
+    ],
+    "band_shares": {
+      "2": 0.2,
+      "4": 0.2,
+      "5": 0.6
+    },
+    "band_names": {
+      "2": "Afterglow",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 135,
+    "characters": [
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "band_shares": {
+      "4": 1.0
+    },
+    "band_names": {
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 136,
+    "characters": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "band_shares": {
+      "2": 1.0
+    },
+    "band_names": {
+      "2": "Afterglow"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 137,
+    "characters": [
+      5,
+      12,
+      21,
+      26,
+      31
+    ],
+    "band_shares": {
+      "1": 0.2,
+      "3": 0.2,
+      "5": 0.2,
+      "21": 0.2,
+      "18": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "3": "Hello, Happy World！",
+      "5": "Roselia",
+      "21": "Morfonica",
+      "18": "RAISE A SUILEN"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 138,
+    "characters": [
+      3,
+      6,
+      18,
+      20,
+      27
+    ],
+    "band_shares": {
+      "1": 0.2,
+      "2": 0.2,
+      "4": 0.4,
+      "21": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "4": "Pastel＊Palettes",
+      "21": "Morfonica"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 139,
+    "characters": [
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "band_shares": {
+      "5": 1.0
+    },
+    "band_names": {
+      "5": "Roselia"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 140,
+    "characters": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "band_shares": {
+      "1": 1.0
+    },
+    "band_names": {
+      "1": "Poppin'Party"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 141,
+    "characters": [
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "band_shares": {
+      "3": 1.0
+    },
+    "band_names": {
+      "3": "Hello, Happy World！"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 142,
+    "characters": [
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "band_shares": {
+      "18": 1.0
+    },
+    "band_names": {
+      "18": "RAISE A SUILEN"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 143,
+    "characters": [
+      17,
+      19,
+      20,
+      34,
+      35
+    ],
+    "band_shares": {
+      "4": 0.6,
+      "18": 0.4
+    },
+    "band_names": {
+      "4": "Pastel＊Palettes",
+      "18": "RAISE A SUILEN"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 144,
+    "characters": [
+      2,
+      8,
+      10,
+      13,
+      15
+    ],
+    "band_shares": {
+      "1": 0.2,
+      "2": 0.4,
+      "3": 0.4
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "3": "Hello, Happy World！"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 145,
+    "characters": [
+      4,
+      9,
+      14,
+      19,
+      24,
+      29,
+      33
+    ],
+    "band_shares": {
+      "1": 0.14285714285714285,
+      "2": 0.14285714285714285,
+      "3": 0.14285714285714285,
+      "4": 0.14285714285714285,
+      "5": 0.14285714285714285,
+      "21": 0.14285714285714285,
+      "18": 0.14285714285714285
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia",
+      "21": "Morfonica",
+      "18": "RAISE A SUILEN"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 146,
+    "characters": [
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "band_shares": {
+      "4": 1.0
+    },
+    "band_names": {
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 147,
+    "characters": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "band_shares": {
+      "1": 1.0
+    },
+    "band_names": {
+      "1": "Poppin'Party"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 148,
+    "characters": [
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "band_shares": {
+      "21": 1.0
+    },
+    "band_names": {
+      "21": "Morfonica"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 149,
+    "characters": [
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "band_shares": {
+      "5": 1.0
+    },
+    "band_names": {
+      "5": "Roselia"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 150,
+    "characters": [
+      24,
+      26,
+      30,
+      32,
+      35
+    ],
+    "band_shares": {
+      "5": 0.2,
+      "21": 0.4,
+      "18": 0.4
+    },
+    "band_names": {
+      "5": "Roselia",
+      "21": "Morfonica",
+      "18": "RAISE A SUILEN"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 151,
+    "characters": [
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "band_shares": {
+      "18": 1.0
+    },
+    "band_names": {
+      "18": "RAISE A SUILEN"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 152,
+    "characters": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "band_shares": {
+      "2": 1.0
+    },
+    "band_names": {
+      "2": "Afterglow"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 153,
+    "characters": [
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "band_shares": {
+      "3": 1.0
+    },
+    "band_names": {
+      "3": "Hello, Happy World！"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 154,
+    "characters": [
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "band_shares": {
+      "4": 1.0
+    },
+    "band_names": {
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 155,
+    "characters": [
+      3,
+      4,
+      7,
+      11,
+      22
+    ],
+    "band_shares": {
+      "1": 0.4,
+      "2": 0.2,
+      "3": 0.2,
+      "5": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "3": "Hello, Happy World！",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 156,
+    "characters": [
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "band_shares": {
+      "5": 1.0
+    },
+    "band_names": {
+      "5": "Roselia"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 157,
+    "characters": [
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "band_shares": {
+      "21": 1.0
+    },
+    "band_names": {
+      "21": "Morfonica"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 158,
+    "characters": [
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "band_shares": {
+      "18": 1.0
+    },
+    "band_names": {
+      "18": "RAISE A SUILEN"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 159,
+    "characters": [
+      7,
+      10,
+      18,
+      20,
+      29
+    ],
+    "band_shares": {
+      "2": 0.4,
+      "4": 0.4,
+      "21": 0.2
+    },
+    "band_names": {
+      "2": "Afterglow",
+      "4": "Pastel＊Palettes",
+      "21": "Morfonica"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 160,
+    "characters": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "band_shares": {
+      "1": 1.0
+    },
+    "band_names": {
+      "1": "Poppin'Party"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 161,
+    "characters": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "band_shares": {
+      "2": 1.0
+    },
+    "band_names": {
+      "2": "Afterglow"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 162,
+    "characters": [
+      12,
+      17,
+      19,
+      24,
+      32
+    ],
+    "band_shares": {
+      "3": 0.2,
+      "4": 0.4,
+      "5": 0.2,
+      "18": 0.2
+    },
+    "band_names": {
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia",
+      "18": "RAISE A SUILEN"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 163,
+    "characters": [
+      7,
+      16,
+      19,
+      23,
+      35
+    ],
+    "band_shares": {
+      "2": 0.2,
+      "4": 0.4,
+      "5": 0.2,
+      "18": 0.2
+    },
+    "band_names": {
+      "2": "Afterglow",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia",
+      "18": "RAISE A SUILEN"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 164,
+    "characters": [
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "band_shares": {
+      "3": 1.0
+    },
+    "band_names": {
+      "3": "Hello, Happy World！"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 165,
+    "characters": [
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "band_shares": {
+      "21": 1.0
+    },
+    "band_names": {
+      "21": "Morfonica"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 166,
+    "characters": [
+      2,
+      5,
+      23,
+      31,
+      35
+    ],
+    "band_shares": {
+      "1": 0.4,
+      "5": 0.2,
+      "18": 0.4
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "5": "Roselia",
+      "18": "RAISE A SUILEN"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 167,
+    "characters": [
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "band_shares": {
+      "4": 1.0
+    },
+    "band_names": {
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 168,
+    "characters": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "band_shares": {
+      "1": 1.0
+    },
+    "band_names": {
+      "1": "Poppin'Party"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 169,
+    "characters": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "band_shares": {
+      "2": 1.0
+    },
+    "band_names": {
+      "2": "Afterglow"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 170,
+    "characters": [
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "band_shares": {
+      "5": 1.0
+    },
+    "band_names": {
+      "5": "Roselia"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 171,
+    "characters": [
+      4,
+      5,
+      9,
+      24,
+      25
+    ],
+    "band_shares": {
+      "1": 0.4,
+      "2": 0.2,
+      "5": 0.4
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 172,
+    "characters": [
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "band_shares": {
+      "18": 1.0
+    },
+    "band_names": {
+      "18": "RAISE A SUILEN"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 173,
+    "characters": [
+      1,
+      6,
+      8,
+      18,
+      26
+    ],
+    "band_shares": {
+      "1": 0.2,
+      "2": 0.4,
+      "4": 0.2,
+      "21": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "4": "Pastel＊Palettes",
+      "21": "Morfonica"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 174,
+    "characters": [
+      13,
+      17,
+      20,
+      22,
+      29
+    ],
+    "band_shares": {
+      "3": 0.2,
+      "4": 0.4,
+      "5": 0.2,
+      "21": 0.2
+    },
+    "band_names": {
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia",
+      "21": "Morfonica"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 175,
+    "characters": [
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "band_shares": {
+      "3": 1.0
+    },
+    "band_names": {
+      "3": "Hello, Happy World！"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 176,
+    "characters": [
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "band_shares": {
+      "21": 1.0
+    },
+    "band_names": {
+      "21": "Morfonica"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 177,
+    "characters": [
+      1,
+      7,
+      10,
+      15,
+      22
+    ],
+    "band_shares": {
+      "1": 0.2,
+      "2": 0.4,
+      "3": 0.2,
+      "5": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "3": "Hello, Happy World！",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 178,
+    "characters": [
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "band_shares": {
+      "4": 1.0
+    },
+    "band_names": {
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 179,
+    "characters": [
+      9,
+      12,
+      30,
+      31,
+      33
+    ],
+    "band_shares": {
+      "2": 0.2,
+      "3": 0.2,
+      "21": 0.2,
+      "18": 0.4
+    },
+    "band_names": {
+      "2": "Afterglow",
+      "3": "Hello, Happy World！",
+      "21": "Morfonica",
+      "18": "RAISE A SUILEN"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 180,
+    "characters": [
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      34
+    ],
+    "band_shares": {
+      "1": 0.14285714285714285,
+      "2": 0.14285714285714285,
+      "3": 0.14285714285714285,
+      "4": 0.14285714285714285,
+      "5": 0.14285714285714285,
+      "21": 0.14285714285714285,
+      "18": 0.14285714285714285
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia",
+      "21": "Morfonica",
+      "18": "RAISE A SUILEN"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 181,
+    "characters": [
+      27,
+      28,
+      32,
+      35
+    ],
+    "band_shares": {
+      "21": 0.5,
+      "18": 0.5
+    },
+    "band_names": {
+      "21": "Morfonica",
+      "18": "RAISE A SUILEN"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 182,
+    "characters": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "band_shares": {
+      "2": 1.0
+    },
+    "band_names": {
+      "2": "Afterglow"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 183,
+    "characters": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "band_shares": {
+      "1": 1.0
+    },
+    "band_names": {
+      "1": "Poppin'Party"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 184,
+    "characters": [
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "band_shares": {
+      "5": 1.0
+    },
+    "band_names": {
+      "5": "Roselia"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 185,
+    "characters": [
+      14,
+      16,
+      18,
+      22,
+      25
+    ],
+    "band_shares": {
+      "3": 0.2,
+      "4": 0.4,
+      "5": 0.4
+    },
+    "band_names": {
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 186,
+    "characters": [
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "band_shares": {
+      "3": 1.0
+    },
+    "band_names": {
+      "3": "Hello, Happy World！"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 187,
+    "characters": [
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "band_shares": {
+      "18": 1.0
+    },
+    "band_names": {
+      "18": "RAISE A SUILEN"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 188,
+    "characters": [
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "band_shares": {
+      "4": 1.0
+    },
+    "band_names": {
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 189,
+    "characters": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "band_shares": {
+      "2": 1.0
+    },
+    "band_names": {
+      "2": "Afterglow"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 190,
+    "characters": [
+      25,
+      28,
+      30
+    ],
+    "band_shares": {
+      "5": 0.3333333333333333,
+      "21": 0.6666666666666666
+    },
+    "band_names": {
+      "5": "Roselia",
+      "21": "Morfonica"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 191,
+    "characters": [
+      6,
+      8,
+      21,
+      23,
+      24
+    ],
+    "band_shares": {
+      "2": 0.4,
+      "5": 0.6
+    },
+    "band_names": {
+      "2": "Afterglow",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 192,
+    "characters": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "band_shares": {
+      "1": 1.0
+    },
+    "band_names": {
+      "1": "Poppin'Party"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 193,
+    "characters": [
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "band_shares": {
+      "5": 1.0
+    },
+    "band_names": {
+      "5": "Roselia"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 194,
+    "characters": [
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "band_shares": {
+      "21": 1.0
+    },
+    "band_names": {
+      "21": "Morfonica"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 195,
+    "characters": [
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "band_shares": {
+      "4": 1.0
+    },
+    "band_names": {
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 196,
+    "characters": [
+      12,
+      14,
+      20
+    ],
+    "band_shares": {
+      "3": 0.6666666666666666,
+      "4": 0.3333333333333333
+    },
+    "band_names": {
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 197,
+    "characters": [
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "band_shares": {
+      "18": 1.0
+    },
+    "band_names": {
+      "18": "RAISE A SUILEN"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 198,
+    "characters": [
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "band_shares": {
+      "3": 1.0
+    },
+    "band_names": {
+      "3": "Hello, Happy World！"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 199,
+    "characters": [
+      18,
+      19,
+      31,
+      33,
+      34
+    ],
+    "band_shares": {
+      "4": 0.4,
+      "18": 0.6
+    },
+    "band_names": {
+      "4": "Pastel＊Palettes",
+      "18": "RAISE A SUILEN"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 200,
+    "characters": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "band_shares": {
+      "2": 1.0
+    },
+    "band_names": {
+      "2": "Afterglow"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 201,
+    "characters": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "band_shares": {
+      "1": 1.0
+    },
+    "band_names": {
+      "1": "Poppin'Party"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 202,
+    "characters": [
+      12,
+      17,
+      19,
+      21,
+      23
+    ],
+    "band_shares": {
+      "3": 0.2,
+      "4": 0.4,
+      "5": 0.4
+    },
+    "band_names": {
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 203,
+    "characters": [
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "band_shares": {
+      "21": 1.0
+    },
+    "band_names": {
+      "21": "Morfonica"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 204,
+    "characters": [
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "band_shares": {
+      "5": 1.0
+    },
+    "band_names": {
+      "5": "Roselia"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 205,
+    "characters": [
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "band_shares": {
+      "18": 1.0
+    },
+    "band_names": {
+      "18": "RAISE A SUILEN"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 206,
+    "characters": [
+      3,
+      8,
+      12,
+      18,
+      19
+    ],
+    "band_shares": {
+      "1": 0.2,
+      "2": 0.2,
+      "3": 0.2,
+      "4": 0.4
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 207,
+    "characters": [
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "band_shares": {
+      "4": 1.0
+    },
+    "band_names": {
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 208,
+    "characters": [
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "band_shares": {
+      "3": 1.0
+    },
+    "band_names": {
+      "3": "Hello, Happy World！"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 209,
+    "characters": [
+      2,
+      13,
+      20,
+      24,
+      32
+    ],
+    "band_shares": {
+      "1": 0.2,
+      "3": 0.2,
+      "4": 0.2,
+      "5": 0.2,
+      "18": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia",
+      "18": "RAISE A SUILEN"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 210,
+    "characters": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "band_shares": {
+      "1": 1.0
+    },
+    "band_names": {
+      "1": "Poppin'Party"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 211,
+    "characters": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "band_shares": {
+      "2": 1.0
+    },
+    "band_names": {
+      "2": "Afterglow"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 212,
+    "characters": [
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "band_shares": {
+      "21": 1.0
+    },
+    "band_names": {
+      "21": "Morfonica"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 213,
+    "characters": [
+      1,
+      5,
+      11,
+      15,
+      25
+    ],
+    "band_shares": {
+      "1": 0.4,
+      "3": 0.4,
+      "5": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "3": "Hello, Happy World！",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 214,
+    "characters": [
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "band_shares": {
+      "5": 1.0
+    },
+    "band_names": {
+      "5": "Roselia"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 215,
+    "characters": [
+      14,
+      16,
+      18,
+      22,
+      23
+    ],
+    "band_shares": {
+      "3": 0.2,
+      "4": 0.4,
+      "5": 0.4
+    },
+    "band_names": {
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 216,
+    "characters": [
+      12,
+      17,
+      19,
+      21,
+      25
+    ],
+    "band_shares": {
+      "3": 0.2,
+      "4": 0.4,
+      "5": 0.4
+    },
+    "band_names": {
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 217,
+    "characters": [
+      1,
+      6,
+      11,
+      16,
+      21,
+      26,
+      31
+    ],
+    "band_shares": {
+      "1": 0.14285714285714285,
+      "2": 0.14285714285714285,
+      "3": 0.14285714285714285,
+      "4": 0.14285714285714285,
+      "5": 0.14285714285714285,
+      "21": 0.14285714285714285,
+      "18": 0.14285714285714285
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia",
+      "21": "Morfonica",
+      "18": "RAISE A SUILEN"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 218,
+    "characters": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "band_shares": {
+      "2": 1.0
+    },
+    "band_names": {
+      "2": "Afterglow"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 219,
+    "characters": [
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "band_shares": {
+      "4": 1.0
+    },
+    "band_names": {
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 220,
+    "characters": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "band_shares": {
+      "1": 1.0
+    },
+    "band_names": {
+      "1": "Poppin'Party"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 221,
+    "characters": [
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "band_shares": {
+      "5": 1.0
+    },
+    "band_names": {
+      "5": "Roselia"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 222,
+    "characters": [
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "band_shares": {
+      "18": 1.0
+    },
+    "band_names": {
+      "18": "RAISE A SUILEN"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 223,
+    "characters": [
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "band_shares": {
+      "21": 1.0
+    },
+    "band_names": {
+      "21": "Morfonica"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 224,
+    "characters": [
+      5,
+      17,
+      25,
+      28,
+      34
+    ],
+    "band_shares": {
+      "1": 0.2,
+      "4": 0.2,
+      "5": 0.2,
+      "21": 0.2,
+      "18": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia",
+      "21": "Morfonica",
+      "18": "RAISE A SUILEN"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 225,
+    "characters": [
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "band_shares": {
+      "3": 1.0
+    },
+    "band_names": {
+      "3": "Hello, Happy World！"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 226,
+    "characters": [
+      12,
+      14,
+      18,
+      19,
+      22
+    ],
+    "band_shares": {
+      "3": 0.4,
+      "4": 0.4,
+      "5": 0.2
+    },
+    "band_names": {
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 227,
+    "characters": [
+      3,
+      6,
+      22,
+      27,
+      30
+    ],
+    "band_shares": {
+      "1": 0.2,
+      "2": 0.2,
+      "5": 0.2,
+      "21": 0.4
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "5": "Roselia",
+      "21": "Morfonica"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 228,
+    "characters": [
+      1,
+      4,
+      5,
+      11,
+      20
+    ],
+    "band_shares": {
+      "1": 0.6,
+      "3": 0.2,
+      "4": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 229,
+    "characters": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "band_shares": {
+      "2": 1.0
+    },
+    "band_names": {
+      "2": "Afterglow"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 230,
+    "characters": [
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "band_shares": {
+      "5": 1.0
+    },
+    "band_names": {
+      "5": "Roselia"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 231,
+    "characters": [
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "band_shares": {
+      "4": 1.0
+    },
+    "band_names": {
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 232,
+    "characters": [
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "band_shares": {
+      "3": 1.0
+    },
+    "band_names": {
+      "3": "Hello, Happy World！"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 233,
+    "characters": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "band_shares": {
+      "1": 1.0
+    },
+    "band_names": {
+      "1": "Poppin'Party"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 234,
+    "characters": [
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "band_shares": {
+      "21": 1.0
+    },
+    "band_names": {
+      "21": "Morfonica"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 235,
+    "characters": [
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "band_shares": {
+      "45": 1.0
+    },
+    "band_names": {
+      "45": "MyGO!!!!!"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 236,
+    "characters": [
+      4,
+      8,
+      9,
+      24,
+      33
+    ],
+    "band_shares": {
+      "1": 0.2,
+      "2": 0.4,
+      "5": 0.2,
+      "18": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "5": "Roselia",
+      "18": "RAISE A SUILEN"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 237,
+    "characters": [
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "band_shares": {
+      "18": 1.0
+    },
+    "band_names": {
+      "18": "RAISE A SUILEN"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 238,
+    "characters": [
+      5,
+      7,
+      10,
+      15,
+      32
+    ],
+    "band_shares": {
+      "1": 0.2,
+      "2": 0.4,
+      "3": 0.2,
+      "18": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "3": "Hello, Happy World！",
+      "18": "RAISE A SUILEN"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 239,
+    "characters": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "band_shares": {
+      "2": 1.0
+    },
+    "band_names": {
+      "2": "Afterglow"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 240,
+    "characters": [
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "band_shares": {
+      "45": 1.0
+    },
+    "band_names": {
+      "45": "MyGO!!!!!"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 241,
+    "characters": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "band_shares": {
+      "1": 1.0
+    },
+    "band_names": {
+      "1": "Poppin'Party"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 242,
+    "characters": [
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "band_shares": {
+      "21": 1.0
+    },
+    "band_names": {
+      "21": "Morfonica"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 243,
+    "characters": [
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "band_shares": {
+      "5": 1.0
+    },
+    "band_names": {
+      "5": "Roselia"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 244,
+    "characters": [
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "band_shares": {
+      "3": 1.0
+    },
+    "band_names": {
+      "3": "Hello, Happy World！"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 245,
+    "characters": [
+      3,
+      7,
+      23,
+      27,
+      35
+    ],
+    "band_shares": {
+      "1": 0.2,
+      "2": 0.2,
+      "5": 0.2,
+      "21": 0.2,
+      "18": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "5": "Roselia",
+      "21": "Morfonica",
+      "18": "RAISE A SUILEN"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 246,
+    "characters": [
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "band_shares": {
+      "4": 1.0
+    },
+    "band_names": {
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 247,
+    "characters": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "band_shares": {
+      "2": 1.0
+    },
+    "band_names": {
+      "2": "Afterglow"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 248,
+    "characters": [
+      5,
+      14,
+      16,
+      25,
+      32
+    ],
+    "band_shares": {
+      "1": 0.2,
+      "3": 0.2,
+      "4": 0.2,
+      "5": 0.2,
+      "18": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia",
+      "18": "RAISE A SUILEN"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 249,
+    "characters": [
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "band_shares": {
+      "18": 1.0
+    },
+    "band_names": {
+      "18": "RAISE A SUILEN"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 250,
+    "characters": [
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "band_shares": {
+      "45": 1.0
+    },
+    "band_names": {
+      "45": "MyGO!!!!!"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 251,
+    "characters": [
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "band_shares": {
+      "21": 1.0
+    },
+    "band_names": {
+      "21": "Morfonica"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 252,
+    "characters": [
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "band_shares": {
+      "5": 1.0
+    },
+    "band_names": {
+      "5": "Roselia"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 253,
+    "characters": [
+      2,
+      7,
+      12,
+      17,
+      22,
+      27,
+      32,
+      37
+    ],
+    "band_shares": {
+      "1": 0.125,
+      "2": 0.125,
+      "3": 0.125,
+      "4": 0.125,
+      "5": 0.125,
+      "21": 0.125,
+      "18": 0.125,
+      "45": 0.125
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia",
+      "21": "Morfonica",
+      "18": "RAISE A SUILEN",
+      "45": "MyGO!!!!!"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 254,
+    "characters": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "band_shares": {
+      "1": 1.0
+    },
+    "band_names": {
+      "1": "Poppin'Party"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 255,
+    "characters": [
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "band_shares": {
+      "3": 1.0
+    },
+    "band_names": {
+      "3": "Hello, Happy World！"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 256,
+    "characters": [
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "band_shares": {
+      "18": 1.0
+    },
+    "band_names": {
+      "18": "RAISE A SUILEN"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 257,
+    "characters": [
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "band_shares": {
+      "4": 1.0
+    },
+    "band_names": {
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 258,
+    "characters": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "band_shares": {
+      "2": 1.0
+    },
+    "band_names": {
+      "2": "Afterglow"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 259,
+    "characters": [
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "band_shares": {
+      "21": 1.0
+    },
+    "band_names": {
+      "21": "Morfonica"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 260,
+    "characters": [
+      12,
+      13,
+      26,
+      28,
+      31
+    ],
+    "band_shares": {
+      "3": 0.4,
+      "21": 0.4,
+      "18": 0.2
+    },
+    "band_names": {
+      "3": "Hello, Happy World！",
+      "21": "Morfonica",
+      "18": "RAISE A SUILEN"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 261,
+    "characters": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "band_shares": {
+      "1": 1.0
+    },
+    "band_names": {
+      "1": "Poppin'Party"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 262,
+    "characters": [
+      5,
+      9,
+      13,
+      21,
+      33
+    ],
+    "band_shares": {
+      "1": 0.2,
+      "2": 0.2,
+      "3": 0.2,
+      "5": 0.2,
+      "18": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "3": "Hello, Happy World！",
+      "5": "Roselia",
+      "18": "RAISE A SUILEN"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 263,
+    "characters": [
+      2,
+      10,
+      14,
+      20,
+      29
+    ],
+    "band_shares": {
+      "1": 0.2,
+      "2": 0.2,
+      "3": 0.2,
+      "4": 0.2,
+      "21": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes",
+      "21": "Morfonica"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 264,
+    "characters": [
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "band_shares": {
+      "5": 1.0
+    },
+    "band_names": {
+      "5": "Roselia"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 265,
+    "characters": [
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "band_shares": {
+      "3": 1.0
+    },
+    "band_names": {
+      "3": "Hello, Happy World！"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 266,
+    "characters": [
+      7,
+      11,
+      22,
+      26,
+      27
+    ],
+    "band_shares": {
+      "2": 0.2,
+      "3": 0.2,
+      "5": 0.2,
+      "21": 0.4
+    },
+    "band_names": {
+      "2": "Afterglow",
+      "3": "Hello, Happy World！",
+      "5": "Roselia",
+      "21": "Morfonica"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 267,
+    "characters": [
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "band_shares": {
+      "4": 1.0
+    },
+    "band_names": {
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 268,
+    "characters": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "band_shares": {
+      "2": 1.0
+    },
+    "band_names": {
+      "2": "Afterglow"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 269,
+    "characters": [
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "band_shares": {
+      "18": 1.0
+    },
+    "band_names": {
+      "18": "RAISE A SUILEN"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 270,
+    "characters": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "band_shares": {
+      "1": 1.0
+    },
+    "band_names": {
+      "1": "Poppin'Party"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 271,
+    "characters": [
+      1,
+      2,
+      7,
+      10,
+      26
+    ],
+    "band_shares": {
+      "1": 0.4,
+      "2": 0.4,
+      "21": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "21": "Morfonica"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 272,
+    "characters": [
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "band_shares": {
+      "21": 1.0
+    },
+    "band_names": {
+      "21": "Morfonica"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 273,
+    "characters": [
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "band_shares": {
+      "5": 1.0
+    },
+    "band_names": {
+      "5": "Roselia"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 274,
+    "characters": [
+      3,
+      8,
+      16,
+      19,
+      33
+    ],
+    "band_shares": {
+      "1": 0.2,
+      "2": 0.2,
+      "4": 0.4,
+      "18": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "4": "Pastel＊Palettes",
+      "18": "RAISE A SUILEN"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 275,
+    "characters": [
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "band_shares": {
+      "3": 1.0
+    },
+    "band_names": {
+      "3": "Hello, Happy World！"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 276,
+    "characters": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "band_shares": {
+      "1": 1.0
+    },
+    "band_names": {
+      "1": "Poppin'Party"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 277,
+    "characters": [
+      6,
+      10,
+      29,
+      37,
+      40
+    ],
+    "band_shares": {
+      "2": 0.4,
+      "21": 0.2,
+      "45": 0.4
+    },
+    "band_names": {
+      "2": "Afterglow",
+      "21": "Morfonica",
+      "45": "MyGO!!!!!"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 278,
+    "characters": [
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "band_shares": {
+      "4": 1.0
+    },
+    "band_names": {
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 279,
+    "characters": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "band_shares": {
+      "2": 1.0
+    },
+    "band_names": {
+      "2": "Afterglow"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 280,
+    "characters": [
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "band_shares": {
+      "18": 1.0
+    },
+    "band_names": {
+      "18": "RAISE A SUILEN"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 281,
+    "characters": [
+      1,
+      4,
+      9,
+      13,
+      25
+    ],
+    "band_shares": {
+      "1": 0.4,
+      "2": 0.2,
+      "3": 0.2,
+      "5": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "3": "Hello, Happy World！",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 282,
+    "characters": [
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "band_shares": {
+      "21": 1.0
+    },
+    "band_names": {
+      "21": "Morfonica"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 283,
+    "characters": [
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "band_shares": {
+      "3": 1.0
+    },
+    "band_names": {
+      "3": "Hello, Happy World！"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 284,
+    "characters": [
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "band_shares": {
+      "5": 1.0
+    },
+    "band_names": {
+      "5": "Roselia"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 285,
+    "characters": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "band_shares": {
+      "2": 1.0
+    },
+    "band_names": {
+      "2": "Afterglow"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 286,
+    "characters": [
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "band_shares": {
+      "45": 1.0
+    },
+    "band_names": {
+      "45": "MyGO!!!!!"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 287,
+    "characters": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "band_shares": {
+      "1": 1.0
+    },
+    "band_names": {
+      "1": "Poppin'Party"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 288,
+    "characters": [
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "band_shares": {
+      "18": 1.0
+    },
+    "band_names": {
+      "18": "RAISE A SUILEN"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 289,
+    "characters": [
+      3,
+      8,
+      13,
+      18,
+      23,
+      28,
+      35,
+      36,
+      39
+    ],
+    "band_shares": {
+      "1": 0.1111111111111111,
+      "2": 0.1111111111111111,
+      "3": 0.1111111111111111,
+      "4": 0.1111111111111111,
+      "5": 0.1111111111111111,
+      "21": 0.1111111111111111,
+      "18": 0.1111111111111111,
+      "45": 0.2222222222222222
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia",
+      "21": "Morfonica",
+      "18": "RAISE A SUILEN",
+      "45": "MyGO!!!!!"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 290,
+    "characters": [
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "band_shares": {
+      "4": 1.0
+    },
+    "band_names": {
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 291,
+    "characters": [
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "band_shares": {
+      "5": 1.0
+    },
+    "band_names": {
+      "5": "Roselia"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 292,
+    "characters": [
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "band_shares": {
+      "3": 1.0
+    },
+    "band_names": {
+      "3": "Hello, Happy World！"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 293,
+    "characters": [
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "band_shares": {
+      "21": 1.0
+    },
+    "band_names": {
+      "21": "Morfonica"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 294,
+    "characters": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "band_shares": {
+      "2": 1.0
+    },
+    "band_names": {
+      "2": "Afterglow"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 295,
+    "characters": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "band_shares": {
+      "1": 1.0
+    },
+    "band_names": {
+      "1": "Poppin'Party"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 296,
+    "characters": [
+      4,
+      8,
+      16,
+      27,
+      32
+    ],
+    "band_shares": {
+      "1": 0.2,
+      "2": 0.2,
+      "4": 0.2,
+      "21": 0.2,
+      "18": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "4": "Pastel＊Palettes",
+      "21": "Morfonica",
+      "18": "RAISE A SUILEN"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 297,
+    "characters": [
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "band_shares": {
+      "45": 1.0
+    },
+    "band_names": {
+      "45": "MyGO!!!!!"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 298,
+    "characters": [
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "band_shares": {
+      "18": 1.0
+    },
+    "band_names": {
+      "18": "RAISE A SUILEN"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 299,
+    "characters": [
+      1,
+      5,
+      6,
+      8,
+      13
+    ],
+    "band_shares": {
+      "1": 0.4,
+      "2": 0.4,
+      "3": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "3": "Hello, Happy World！"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 300,
+    "characters": [
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "band_shares": {
+      "4": 1.0
+    },
+    "band_names": {
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 301,
+    "characters": [
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "band_shares": {
+      "5": 1.0
+    },
+    "band_names": {
+      "5": "Roselia"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 302,
+    "characters": [
+      15,
+      16,
+      24,
+      26,
+      32
+    ],
+    "band_shares": {
+      "3": 0.2,
+      "4": 0.2,
+      "5": 0.2,
+      "21": 0.2,
+      "18": 0.2
+    },
+    "band_names": {
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia",
+      "21": "Morfonica",
+      "18": "RAISE A SUILEN"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 303,
+    "characters": [
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "band_shares": {
+      "3": 1.0
+    },
+    "band_names": {
+      "3": "Hello, Happy World！"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 304,
+    "characters": [
+      12,
+      16,
+      17,
+      25,
+      31
+    ],
+    "band_shares": {
+      "3": 0.2,
+      "4": 0.4,
+      "5": 0.2,
+      "18": 0.2
+    },
+    "band_names": {
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia",
+      "18": "RAISE A SUILEN"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 305,
+    "characters": [
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "band_shares": {
+      "21": 1.0
+    },
+    "band_names": {
+      "21": "Morfonica"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 306,
+    "characters": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "band_shares": {
+      "2": 1.0
+    },
+    "band_names": {
+      "2": "Afterglow"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 307,
+    "characters": [
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "band_shares": {
+      "45": 1.0
+    },
+    "band_names": {
+      "45": "MyGO!!!!!"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 308,
+    "characters": [
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "band_shares": {
+      "18": 1.0
+    },
+    "band_names": {
+      "18": "RAISE A SUILEN"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 309,
+    "characters": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "band_shares": {
+      "1": 1.0
+    },
+    "band_names": {
+      "1": "Poppin'Party"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 310,
+    "characters": [
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "band_shares": {
+      "4": 1.0
+    },
+    "band_names": {
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 311,
+    "characters": [
+      16,
+      17,
+      21,
+      22,
+      23
+    ],
+    "band_shares": {
+      "4": 0.4,
+      "5": 0.6
+    },
+    "band_names": {
+      "4": "Pastel＊Palettes",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 312,
+    "characters": [
+      1,
+      5,
+      7,
+      11,
+      24
+    ],
+    "band_shares": {
+      "1": 0.4,
+      "2": 0.2,
+      "3": 0.2,
+      "5": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "3": "Hello, Happy World！",
+      "5": "Roselia"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 313,
+    "characters": [
+      14,
+      16,
+      26,
+      32,
+      37
+    ],
+    "band_shares": {
+      "3": 0.2,
+      "4": 0.2,
+      "21": 0.2,
+      "18": 0.2,
+      "45": 0.2
+    },
+    "band_names": {
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes",
+      "21": "Morfonica",
+      "18": "RAISE A SUILEN",
+      "45": "MyGO!!!!!"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 314,
+    "characters": [
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "band_shares": {
+      "5": 1.0
+    },
+    "band_names": {
+      "5": "Roselia"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 315,
+    "characters": [
+      3,
+      11,
+      15,
+      23,
+      27
+    ],
+    "band_shares": {
+      "1": 0.2,
+      "3": 0.4,
+      "5": 0.2,
+      "21": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "3": "Hello, Happy World！",
+      "5": "Roselia",
+      "21": "Morfonica"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 316,
+    "characters": [
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "band_shares": {
+      "3": 1.0
+    },
+    "band_names": {
+      "3": "Hello, Happy World！"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 317,
+    "characters": [
+      2,
+      14,
+      20,
+      24,
+      28
+    ],
+    "band_shares": {
+      "1": 0.2,
+      "3": 0.2,
+      "4": 0.2,
+      "5": 0.2,
+      "21": 0.2
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia",
+      "21": "Morfonica"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 318,
+    "characters": [
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "band_shares": {
+      "21": 1.0
+    },
+    "band_names": {
+      "21": "Morfonica"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 319,
+    "characters": [
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "band_shares": {
+      "18": 1.0
+    },
+    "band_names": {
+      "18": "RAISE A SUILEN"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 320,
+    "characters": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "band_shares": {
+      "2": 1.0
+    },
+    "band_names": {
+      "2": "Afterglow"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 321,
+    "characters": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "band_shares": {
+      "1": 1.0
+    },
+    "band_names": {
+      "1": "Poppin'Party"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 322,
+    "characters": [
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "band_shares": {
+      "5": 1.0
+    },
+    "band_names": {
+      "5": "Roselia"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 323,
+    "characters": [
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "band_shares": {
+      "4": 1.0
+    },
+    "band_names": {
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 324,
+    "characters": [
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "band_shares": {
+      "3": 1.0
+    },
+    "band_names": {
+      "3": "Hello, Happy World！"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 325,
+    "characters": [
+      4,
+      9,
+      14,
+      16,
+      19,
+      24,
+      29,
+      33,
+      35,
+      40
+    ],
+    "band_shares": {
+      "1": 0.1,
+      "2": 0.1,
+      "3": 0.1,
+      "4": 0.2,
+      "5": 0.1,
+      "21": 0.1,
+      "18": 0.2,
+      "45": 0.1
+    },
+    "band_names": {
+      "1": "Poppin'Party",
+      "2": "Afterglow",
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes",
+      "5": "Roselia",
+      "21": "Morfonica",
+      "18": "RAISE A SUILEN",
+      "45": "MyGO!!!!!"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 326,
+    "characters": [
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "band_shares": {
+      "21": 1.0
+    },
+    "band_names": {
+      "21": "Morfonica"
+    },
+    "band_group": "single"
+  },
+  {
+    "event_id": 327,
+    "characters": [
+      8,
+      12,
+      14,
+      18,
+      19
+    ],
+    "band_shares": {
+      "2": 0.2,
+      "3": 0.4,
+      "4": 0.4
+    },
+    "band_names": {
+      "2": "Afterglow",
+      "3": "Hello, Happy World！",
+      "4": "Pastel＊Palettes"
+    },
+    "band_group": "mixed"
+  },
+  {
+    "event_id": 328,
+    "characters": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "band_shares": {
+      "2": 1.0
+    },
+    "band_names": {
+      "2": "Afterglow"
+    },
+    "band_group": "single"
+  }
+]

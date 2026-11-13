@@ -1,0 +1,11 @@
+{
+  "inputs": {
+    "analysis/holdout_results/innovation_20261113/comparison/evaluation_manifest.json": "c588f7d3d82363d276c8c45593fcf1f51c9aae9691f5f9074c2ca22635090be9",
+    "analysis/temporal_results/innovation_20261113/comparison/evaluation_manifest.json": "08a860de0e2478e0c3518f7458594618eaa0b73ecdeb98f1b8db6fe4e4294078"
+  },
+  "source_sha256": "59cb50213a4a08a018a9e023a91d8b3764d0dedd656b7a8fda65c272746b3622",
+  "artifacts": {
+    "README.md": "072474661b511ee5eda00ea373a00cecc65092a6e09abf438a2107c25f05e2d5",
+    "all_candidates.csv": "3994c8ca471ca9cf46a3397a462d8142edfd7bdbcb0afe34eadb58c85b42bb26"
+  }
+}

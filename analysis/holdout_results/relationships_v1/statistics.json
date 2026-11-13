@@ -1,0 +1,134 @@
+{
+  "scope": "training only; observational conditional associations, not causal effects",
+  "paired_events": 132,
+  "log_final_correlation": 0.9793434554646294,
+  "correlation_event_bootstrap_95ci": [
+    0.9710387654407114,
+    0.9871909227142757
+  ],
+  "correlation_after_era_type_duration_band": 0.9734257185168963,
+  "final_regression": {
+    "rows": 330,
+    "events": 198,
+    "matrix_rank": 18,
+    "columns": 18,
+    "weighted_r2": 0.8026428028836985
+  },
+  "final_factor_tests": [
+    {
+      "factor": "era",
+      "df": 1,
+      "cluster_wald_f": 34.014213609787745,
+      "p": 2.2121680053615255e-08,
+      "q_bh": 2.7652100067019067e-08
+    },
+    {
+      "factor": "duration",
+      "df": 1,
+      "cluster_wald_f": 5.318140565124557,
+      "p": 0.02214506628668524,
+      "q_bh": 0.02214506628668524
+    },
+    {
+      "factor": "rank",
+      "df": 1,
+      "cluster_wald_f": 125.97625933123388,
+      "p": 6.410132222402821e-23,
+      "q_bh": 1.6025330556007054e-22
+    },
+    {
+      "factor": "type",
+      "df": 6,
+      "cluster_wald_f": 91.76317744970281,
+      "p": 2.432783699529979e-54,
+      "q_bh": 1.2163918497649895e-53
+    },
+    {
+      "factor": "band",
+      "df": 8,
+      "cluster_wald_f": 8.76837795253466,
+      "p": 3.1141386454180027e-10,
+      "q_bh": 5.190231075696672e-10
+    }
+  ],
+  "growth_regression": {
+    "rows": 4377,
+    "events": 198,
+    "matrix_rank": 41,
+    "columns": 41,
+    "weighted_r2": 0.804166609963088
+  },
+  "growth_factor_tests": [
+    {
+      "factor": "phase",
+      "df": 12,
+      "cluster_wald_f": 13.578084361197037,
+      "p": 2.9879370366661157e-20,
+      "q_bh": 8.963811109998346e-20
+    },
+    {
+      "factor": "current_scale",
+      "df": 1,
+      "cluster_wald_f": 1.0545856087385594,
+      "p": 0.3057126041067815,
+      "q_bh": 0.3057126041067815
+    },
+    {
+      "factor": "duration",
+      "df": 1,
+      "cluster_wald_f": 18.803855765466846,
+      "p": 2.310466494683126e-05,
+      "q_bh": 4.158839690429627e-05
+    },
+    {
+      "factor": "era",
+      "df": 1,
+      "cluster_wald_f": 1.836675172081195,
+      "p": 0.1768929970916468,
+      "q_bh": 0.21087626435977097
+    },
+    {
+      "factor": "own_velocity",
+      "df": 2,
+      "cluster_wald_f": 94.21152934040337,
+      "p": 1.9501160506233055e-29,
+      "q_bh": 8.775522227804875e-29
+    },
+    {
+      "factor": "quality",
+      "df": 2,
+      "cluster_wald_f": 6.929716821578643,
+      "p": 0.0012348359401163616,
+      "q_bh": 0.0018522539101745424
+    },
+    {
+      "factor": "peer",
+      "df": 6,
+      "cluster_wald_f": 9.101693604987597,
+      "p": 8.643740187447788e-09,
+      "q_bh": 1.9448415421757523e-08
+    },
+    {
+      "factor": "type",
+      "df": 6,
+      "cluster_wald_f": 114.5199148555373,
+      "p": 1.8034237216663976e-61,
+      "q_bh": 1.6230813494997578e-60
+    },
+    {
+      "factor": "band",
+      "df": 8,
+      "cluster_wald_f": 1.4262358097942383,
+      "p": 0.18744556831979642,
+      "q_bh": 0.21087626435977097
+    }
+  ],
+  "inference": "WLS equal event weight; event-cluster sandwich CR1; t/F with G-1 df; BH within each table; exploratory",
+  "limits": [
+    "retrospective metadata",
+    "era and sample density covary",
+    "band and type may covary",
+    "many tested hypotheses",
+    "serial event dependence not modeled"
+  ]
+}

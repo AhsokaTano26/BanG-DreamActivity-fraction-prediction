@@ -1,0 +1,35 @@
+{
+  "dataset_directory": "/Users/tano/Documents/GitHub/personal/BanG-Dream-Activity-fraction-prediction/data/multirank_v2",
+  "dataset_id": "e94e249b47b6d542faa997ff82c4cccd29187bb3409aba74069b050e313d5e7a",
+  "base_dataset_id": "d0ccf9f70aee19ad1b2152925e7afe8692d67f4a6e539d558f87e2cd33329bbb",
+  "methods": [
+    "linear",
+    "catboost_rank",
+    "catboost_context"
+  ],
+  "iterations": 600,
+  "tree_depth": 5,
+  "learning_rate": 0.035,
+  "l2_leaf_reg": 12,
+  "seed": 42,
+  "weights": "equal total weight per activity",
+  "selection": "minimum validation event-macro MAPE; no refit",
+  "scope": "supplementary 19-rank benchmark, not replacement/improvement claim for holdout_v1",
+  "python": "3.14.8",
+  "software": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "scikit-learn": "1.9.1",
+    "catboost": "1.2.10",
+    "joblib": "1.6.0"
+  },
+  "source_hashes": {
+    "analysis/multirank_model.py": "ff3eda807ddd2990d7150609a719a3a691fe23938de655c2ef9e365193a211e2",
+    "analysis/multirank_dataset.py": "c47b652b27971009f9ea1ecd9837832b9ed376d49d5b53adb2baea219ba9d8a8",
+    "analysis/backtest.py": "df2733f8aff144582da7f732e3def213a224f5689b38ea8065f748d43f2e99be",
+    "analysis/event_features.py": "cf3eb59a5b8e99a4cebda38a54a642140d8fcc017c4d38a132499fce38074419",
+    "analysis/holdout_dataset.py": "22cf94748c4953b72a570093d8e26e76ae9437454e09da181fc9e5e10c6a2f6f",
+    "analysis/holdout_evaluate.py": "cf2226d0ca778a31a37d58c57a066f81ec015df01da5899f8ca621ca2859bda4"
+  },
+  "run_id": "6fd4e30fdcaa69c4e67e8727370ab4bf5a47aa51155bf663b1e6906ee81d2fd7"
+}

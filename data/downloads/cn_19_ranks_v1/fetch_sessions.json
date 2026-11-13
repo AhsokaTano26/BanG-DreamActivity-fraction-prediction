@@ -1,0 +1,29 @@
+{
+  "fetch_code_sha256": "40868b7f6affebdac723e9e23658e53c74259265826415b41d9c0c0aec48701d",
+  "initial": {
+    "workers": 8,
+    "rate": 8,
+    "started_at": "2026-11-11T12:47:22.066909+00:00"
+  },
+  "resumed": {
+    "workers": 16,
+    "rate": 8,
+    "noted_at": "2026-11-11T12:56:10.614700+00:00",
+    "reason": "Increase concurrency to absorb network latency while preserving 8 requests/second cap; retry earlier 503 failures",
+    "source": "download_source.py",
+    "same_code": true
+  },
+  "import_code_review": "Protected output paths and WAL-aware import added to live download_ranks.py; initial fetch archive kept unchanged. Import will use reviewed code.",
+  "rate_backoff": {
+    "workers": 16,
+    "rate": 4,
+    "noted_at": "2026-11-11T12:57:44.426411+00:00",
+    "reason": "Elevated 503 responses; reduce global request rate and retry gaps; original source unchanged"
+  },
+  "further_backoff": {
+    "workers": 8,
+    "rate": 2,
+    "noted_at": "2026-11-11T13:05:25.544642+00:00",
+    "reason": "Persistent nginx 503 at 4 requests/second; lower to 2 requests/second, no endpoint or source change"
+  }
+}

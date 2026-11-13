@@ -1,0 +1,125 @@
+{
+  "selected_recipe": "catboost_paired",
+  "candidates": [
+    "hold_current",
+    "linear",
+    "reference_catboost",
+    "catboost_paired",
+    "catboost_phase",
+    "dual_tcn_mean"
+  ],
+  "criterion": "validation event-macro MAPE",
+  "validation": {
+    "catboost_paired": {
+      "event_macro_mape_pct": 5.501625147246522,
+      "case_mape_pct": 5.544648124495816,
+      "median_ape_pct": 2.88002046828442,
+      "p90_ape_pct": 15.257427067356547,
+      "mae_ep": 306430.7437177631,
+      "rmse_ep": 738067.7965699737,
+      "bias_pct": 0.7396459125416704,
+      "events": 42,
+      "cases": 1548,
+      "median_observation_age_minutes": 14.95
+    },
+    "catboost_phase": {
+      "event_macro_mape_pct": 7.2191121413178525,
+      "case_mape_pct": 7.263766324902446,
+      "median_ape_pct": 3.536378821352473,
+      "p90_ape_pct": 19.01536444114489,
+      "mae_ep": 411658.0675902622,
+      "rmse_ep": 946616.7938189495,
+      "bias_pct": -4.5311316475482695,
+      "events": 42,
+      "cases": 1548,
+      "median_observation_age_minutes": 14.95
+    },
+    "dual_tcn_mean": {
+      "event_macro_mape_pct": 6.176755115733973,
+      "case_mape_pct": 6.213444148052506,
+      "median_ape_pct": 3.406936483988728,
+      "p90_ape_pct": 14.448209524805987,
+      "mae_ep": 325826.539059458,
+      "rmse_ep": 751422.4881257798,
+      "bias_pct": -0.3594775278004452,
+      "events": 42,
+      "cases": 1548,
+      "median_observation_age_minutes": 14.95
+    },
+    "dual_tcn_seed123": {
+      "event_macro_mape_pct": 6.91486127614336,
+      "case_mape_pct": 6.96280576983091,
+      "median_ape_pct": 3.5621348300095312,
+      "p90_ape_pct": 16.02184976213272,
+      "mae_ep": 363165.91438101634,
+      "rmse_ep": 831108.4512329117,
+      "bias_pct": -0.6252084204053059,
+      "events": 42,
+      "cases": 1548,
+      "median_observation_age_minutes": 14.95
+    },
+    "dual_tcn_seed2026": {
+      "event_macro_mape_pct": 6.684427209640675,
+      "case_mape_pct": 6.708031511119694,
+      "median_ape_pct": 3.6686252827696557,
+      "p90_ape_pct": 16.521279265907175,
+      "mae_ep": 339437.62985887885,
+      "rmse_ep": 779336.083435618,
+      "bias_pct": -0.6979001267119898,
+      "events": 42,
+      "cases": 1548,
+      "median_observation_age_minutes": 14.95
+    },
+    "dual_tcn_seed42": {
+      "event_macro_mape_pct": 6.188252757885519,
+      "case_mape_pct": 6.223184957963958,
+      "median_ape_pct": 3.6186514592191497,
+      "p90_ape_pct": 14.019189517192428,
+      "mae_ep": 324065.8184343496,
+      "rmse_ep": 760509.3062009821,
+      "bias_pct": 0.24467596371595912,
+      "events": 42,
+      "cases": 1548,
+      "median_observation_age_minutes": 14.95
+    },
+    "hold_current": {
+      "event_macro_mape_pct": 43.642054659107984,
+      "case_mape_pct": 43.8491938949532,
+      "median_ape_pct": 31.89545210575455,
+      "p90_ape_pct": 90.76127306874773,
+      "mae_ep": 1915730.4095607235,
+      "rmse_ep": 3409378.4513993245,
+      "bias_pct": -43.84919389495321,
+      "events": 42,
+      "cases": 1548,
+      "median_observation_age_minutes": 14.95
+    },
+    "linear": {
+      "event_macro_mape_pct": 18.388596920091338,
+      "case_mape_pct": 18.502239096476078,
+      "median_ape_pct": 11.745226253228381,
+      "p90_ape_pct": 35.09938849818632,
+      "mae_ep": 853274.5199272913,
+      "rmse_ep": 1582037.0989924015,
+      "bias_pct": -3.8717480572160152,
+      "events": 42,
+      "cases": 1548,
+      "median_observation_age_minutes": 14.95
+    },
+    "reference_catboost": {
+      "event_macro_mape_pct": 7.348518437623177,
+      "case_mape_pct": 7.394272927163117,
+      "median_ape_pct": 3.4295669736383516,
+      "p90_ape_pct": 19.90205550669784,
+      "mae_ep": 429405.70829389093,
+      "rmse_ep": 1014030.0915404963,
+      "bias_pct": -4.358575625835774,
+      "events": 42,
+      "cases": 1548,
+      "median_observation_age_minutes": 14.95
+    }
+  },
+  "single_seeds_reported_only": true,
+  "refit": false,
+  "test_labels_read": false
+}

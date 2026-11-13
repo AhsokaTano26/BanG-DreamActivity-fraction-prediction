@@ -1,0 +1,45 @@
+{
+  "evaluation_id": "fad963221c4da427fca9c587d28c80a07172023e1487c04bec8cb8a730cdc307",
+  "identity": {
+    "blind_manifest_sha256": "ad3a0308043099179e09b759b5784e7fb411951e78903bfc7dd37ec5d104e4fe",
+    "dataset_id": "1f76f39af8151bba185496411bbcee064b16a4c5aca5c515c1d957a5056fe854",
+    "methods": [
+      "family_mean",
+      "remaining__remaining_baseline_log_rmse",
+      "fusion__fusion_cat_rank_progress",
+      "shift__shift_calendar_rank"
+    ],
+    "references": [
+      "reference_single",
+      "reference_paired"
+    ],
+    "seed": 42,
+    "draws": 5000,
+    "sources": {
+      "analysis/research_compare.py": "9164ff3c42f4a3f9bcdc441e9a9615466582a8f805b6bde501728561230d0985",
+      "analysis/holdout_evaluate.py": "cf2226d0ca778a31a37d58c57a066f81ec015df01da5899f8ca621ca2859bda4",
+      "analysis/holdout_dataset.py": "22cf94748c4953b72a570093d8e26e76ae9437454e09da181fc9e5e10c6a2f6f",
+      "analysis/temporal_dataset.py": "288ab6ce031b916514a931c79f5626ab8807532484fa55002d1724e03b120235",
+      "analysis/temporal_evaluate.py": "57a1154d6e471968daa0d2911da103f258ee4c31f8b0d36fd6b27a5f678e860f",
+      "analysis/multirank_dataset.py": "c47b652b27971009f9ea1ecd9837832b9ed376d49d5b53adb2baea219ba9d8a8",
+      "analysis/backtest.py": "df2733f8aff144582da7f732e3def213a224f5689b38ea8065f748d43f2e99be"
+    },
+    "python": "3.14.8",
+    "software": {
+      "numpy": "2.5.4",
+      "pandas": "3.1.1"
+    },
+    "interpretation": "descriptive marginal percentile intervals; no multiple-comparison adjustment or selection"
+  },
+  "artifacts": {
+    "comparison.json": "007995a383ac08b9b4f434e7466ef2ff2c1064567c4491b81d654a9844bd4a05",
+    "event_deltas.csv": "b6e2e263e38f1070558189e9ed9984d6b62d8e9cc8411dcb1d4458a3e3098a1b",
+    "sources/analysis/backtest.py": "df2733f8aff144582da7f732e3def213a224f5689b38ea8065f748d43f2e99be",
+    "sources/analysis/holdout_dataset.py": "22cf94748c4953b72a570093d8e26e76ae9437454e09da181fc9e5e10c6a2f6f",
+    "sources/analysis/holdout_evaluate.py": "cf2226d0ca778a31a37d58c57a066f81ec015df01da5899f8ca621ca2859bda4",
+    "sources/analysis/multirank_dataset.py": "c47b652b27971009f9ea1ecd9837832b9ed376d49d5b53adb2baea219ba9d8a8",
+    "sources/analysis/research_compare.py": "9164ff3c42f4a3f9bcdc441e9a9615466582a8f805b6bde501728561230d0985",
+    "sources/analysis/temporal_dataset.py": "288ab6ce031b916514a931c79f5626ab8807532484fa55002d1724e03b120235",
+    "sources/analysis/temporal_evaluate.py": "57a1154d6e471968daa0d2911da103f258ee4c31f8b0d36fd6b27a5f678e860f"
+  }
+}

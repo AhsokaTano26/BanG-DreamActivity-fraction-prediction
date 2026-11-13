@@ -1,0 +1,3718 @@
+case_id,actual
+validation:239:1000:25%,1221308.0
+validation:239:1000:50%,1221308.0
+validation:239:1000:75%,1221308.0
+validation:239:1000:24h remaining,1221308.0
+validation:239:1000:6h remaining,1221308.0
+validation:239:2000:25%,840530.0
+validation:239:2000:50%,840530.0
+validation:239:2000:75%,840530.0
+validation:239:2000:24h remaining,840530.0
+validation:239:2000:6h remaining,840530.0
+validation:241:1000:25%,5274226.0
+validation:241:1000:50%,5274226.0
+validation:241:1000:75%,5274226.0
+validation:241:1000:24h remaining,5274226.0
+validation:241:1000:6h remaining,5274226.0
+validation:241:2000:25%,2522775.0
+validation:241:2000:50%,2522775.0
+validation:241:2000:75%,2522775.0
+validation:241:2000:24h remaining,2522775.0
+validation:241:2000:6h remaining,2522775.0
+validation:242:1000:25%,3952463.0
+validation:242:1000:50%,3952463.0
+validation:242:1000:75%,3952463.0
+validation:242:1000:24h remaining,3952463.0
+validation:242:2000:25%,2305221.0
+validation:242:2000:50%,2305221.0
+validation:242:2000:75%,2305221.0
+validation:242:2000:24h remaining,2305221.0
+validation:243:1000:25%,3732929.0
+validation:243:1000:50%,3732929.0
+validation:243:1000:75%,3732929.0
+validation:243:1000:24h remaining,3732929.0
+validation:243:1000:6h remaining,3732929.0
+validation:243:2000:25%,1421308.0
+validation:243:2000:50%,1421308.0
+validation:243:2000:75%,1421308.0
+validation:243:2000:24h remaining,1421308.0
+validation:243:2000:6h remaining,1421308.0
+validation:244:1000:25%,1121976.0
+validation:244:1000:50%,1121976.0
+validation:244:1000:75%,1121976.0
+validation:244:1000:24h remaining,1121976.0
+validation:244:1000:6h remaining,1121976.0
+validation:244:2000:25%,731430.0
+validation:244:2000:50%,731430.0
+validation:244:2000:75%,731430.0
+validation:244:2000:24h remaining,731430.0
+validation:244:2000:6h remaining,731430.0
+validation:245:1000:25%,3189786.0
+validation:245:1000:50%,3189786.0
+validation:245:1000:75%,3189786.0
+validation:245:1000:24h remaining,3189786.0
+validation:245:1000:6h remaining,3189786.0
+validation:245:2000:25%,2015533.0
+validation:245:2000:50%,2015533.0
+validation:245:2000:75%,2015533.0
+validation:245:2000:24h remaining,2015533.0
+validation:245:2000:6h remaining,2015533.0
+validation:246:1000:25%,3957885.0
+validation:246:1000:50%,3957885.0
+validation:246:1000:75%,3957885.0
+validation:246:1000:24h remaining,3957885.0
+validation:246:1000:6h remaining,3957885.0
+validation:246:2000:25%,1816131.0
+validation:246:2000:50%,1816131.0
+validation:246:2000:75%,1816131.0
+validation:246:2000:24h remaining,1816131.0
+validation:246:2000:6h remaining,1816131.0
+validation:227:1000:25%,11590378.0
+validation:227:1000:50%,11590378.0
+validation:227:1000:75%,11590378.0
+validation:227:1000:24h remaining,11590378.0
+validation:227:1000:6h remaining,11590378.0
+validation:227:2000:25%,3681423.0
+validation:227:2000:50%,3681423.0
+validation:227:2000:75%,3681423.0
+validation:227:2000:24h remaining,3681423.0
+validation:227:2000:6h remaining,3681423.0
+validation:247:1000:25%,1650150.0
+validation:247:1000:50%,1650150.0
+validation:247:1000:75%,1650150.0
+validation:247:1000:24h remaining,1650150.0
+validation:247:1000:6h remaining,1650150.0
+validation:247:2000:25%,970543.0
+validation:247:2000:50%,970543.0
+validation:247:2000:75%,970543.0
+validation:247:2000:24h remaining,970543.0
+validation:247:2000:6h remaining,970543.0
+validation:248:1000:25%,3123143.0
+validation:248:1000:50%,3123143.0
+validation:248:1000:75%,3123143.0
+validation:248:1000:24h remaining,3123143.0
+validation:248:1000:6h remaining,3123143.0
+validation:248:2000:25%,1987205.0
+validation:248:2000:50%,1987205.0
+validation:248:2000:75%,1987205.0
+validation:248:2000:24h remaining,1987205.0
+validation:248:2000:6h remaining,1987205.0
+validation:249:1000:25%,970481.0
+validation:249:1000:50%,970481.0
+validation:249:1000:24h remaining,970481.0
+validation:249:1000:6h remaining,970481.0
+validation:249:2000:25%,672142.0
+validation:249:2000:50%,672142.0
+validation:249:2000:24h remaining,672142.0
+validation:249:2000:6h remaining,672142.0
+validation:250:1000:25%,16296880.0
+validation:250:1000:50%,16296880.0
+validation:250:1000:75%,16296880.0
+validation:250:1000:24h remaining,16296880.0
+validation:250:1000:6h remaining,16296880.0
+validation:250:2000:25%,3458194.0
+validation:250:2000:50%,3458194.0
+validation:250:2000:75%,3458194.0
+validation:250:2000:24h remaining,3458194.0
+validation:250:2000:6h remaining,3458194.0
+validation:251:1000:25%,1699640.0
+validation:251:1000:50%,1699640.0
+validation:251:1000:75%,1699640.0
+validation:251:1000:24h remaining,1699640.0
+validation:251:1000:6h remaining,1699640.0
+validation:251:2000:25%,943540.0
+validation:251:2000:50%,943540.0
+validation:251:2000:75%,943540.0
+validation:251:2000:24h remaining,943540.0
+validation:251:2000:6h remaining,943540.0
+validation:252:1000:25%,9246585.0
+validation:252:1000:50%,9246585.0
+validation:252:1000:75%,9246585.0
+validation:252:1000:24h remaining,9246585.0
+validation:252:1000:6h remaining,9246585.0
+validation:252:2000:25%,2534339.0
+validation:252:2000:50%,2534339.0
+validation:252:2000:75%,2534339.0
+validation:252:2000:24h remaining,2534339.0
+validation:252:2000:6h remaining,2534339.0
+validation:253:1000:25%,11731769.0
+validation:253:1000:50%,11731769.0
+validation:253:1000:75%,11731769.0
+validation:253:1000:24h remaining,11731769.0
+validation:253:1000:6h remaining,11731769.0
+validation:253:2000:25%,4272159.0
+validation:253:2000:50%,4272159.0
+validation:253:2000:75%,4272159.0
+validation:253:2000:24h remaining,4272159.0
+validation:253:2000:6h remaining,4272159.0
+validation:254:1000:25%,1848091.0
+validation:254:1000:50%,1848091.0
+validation:254:1000:75%,1848091.0
+validation:254:1000:24h remaining,1848091.0
+validation:254:1000:6h remaining,1848091.0
+validation:254:2000:25%,932163.0
+validation:254:2000:50%,932163.0
+validation:254:2000:75%,932163.0
+validation:254:2000:24h remaining,932163.0
+validation:254:2000:6h remaining,932163.0
+validation:255:1000:25%,4517910.0
+validation:255:1000:50%,4517910.0
+validation:255:1000:75%,4517910.0
+validation:255:1000:24h remaining,4517910.0
+validation:255:1000:6h remaining,4517910.0
+validation:255:2000:25%,2098886.0
+validation:255:2000:50%,2098886.0
+validation:255:2000:75%,2098886.0
+validation:255:2000:24h remaining,2098886.0
+validation:255:2000:6h remaining,2098886.0
+validation:256:1000:25%,3078392.0
+validation:256:1000:50%,3078392.0
+validation:256:1000:75%,3078392.0
+validation:256:1000:24h remaining,3078392.0
+validation:256:1000:6h remaining,3078392.0
+validation:256:2000:25%,1388469.0
+validation:256:2000:50%,1388469.0
+validation:256:2000:75%,1388469.0
+validation:256:2000:24h remaining,1388469.0
+validation:256:2000:6h remaining,1388469.0
+validation:257:1000:25%,4226030.0
+validation:257:1000:50%,4226030.0
+validation:257:1000:75%,4226030.0
+validation:257:1000:24h remaining,4226030.0
+validation:257:1000:6h remaining,4226030.0
+validation:257:2000:25%,2813823.0
+validation:257:2000:50%,2813823.0
+validation:257:2000:75%,2813823.0
+validation:257:2000:24h remaining,2813823.0
+validation:257:2000:6h remaining,2813823.0
+validation:258:1000:25%,3542008.0
+validation:258:1000:50%,3542008.0
+validation:258:1000:75%,3542008.0
+validation:258:1000:24h remaining,3542008.0
+validation:258:1000:6h remaining,3542008.0
+validation:258:2000:25%,2008280.0
+validation:258:2000:50%,2008280.0
+validation:258:2000:75%,2008280.0
+validation:258:2000:24h remaining,2008280.0
+validation:258:2000:6h remaining,2008280.0
+validation:259:1000:25%,4685272.0
+validation:259:1000:50%,4685272.0
+validation:259:1000:75%,4685272.0
+validation:259:1000:24h remaining,4685272.0
+validation:259:1000:6h remaining,4685272.0
+validation:259:2000:25%,2412029.0
+validation:259:2000:50%,2412029.0
+validation:259:2000:75%,2412029.0
+validation:259:2000:24h remaining,2412029.0
+validation:259:2000:6h remaining,2412029.0
+validation:260:1000:25%,1196340.0
+validation:260:1000:50%,1196340.0
+validation:260:1000:75%,1196340.0
+validation:260:1000:24h remaining,1196340.0
+validation:260:1000:6h remaining,1196340.0
+validation:260:2000:25%,865852.0
+validation:260:2000:50%,865852.0
+validation:260:2000:75%,865852.0
+validation:260:2000:24h remaining,865852.0
+validation:260:2000:6h remaining,865852.0
+validation:261:1000:25%,4627677.0
+validation:261:1000:75%,4627677.0
+validation:261:1000:24h remaining,4627677.0
+validation:261:1000:6h remaining,4627677.0
+validation:261:2000:25%,1511203.0
+validation:261:2000:75%,1511203.0
+validation:261:2000:24h remaining,1511203.0
+validation:261:2000:6h remaining,1511203.0
+validation:262:1000:25%,2275774.0
+validation:262:1000:50%,2275774.0
+validation:262:1000:75%,2275774.0
+validation:262:1000:24h remaining,2275774.0
+validation:262:1000:6h remaining,2275774.0
+validation:262:2000:25%,1613845.0
+validation:262:2000:50%,1613845.0
+validation:262:2000:75%,1613845.0
+validation:262:2000:24h remaining,1613845.0
+validation:262:2000:6h remaining,1613845.0
+validation:264:1000:25%,4289554.0
+validation:264:1000:50%,4289554.0
+validation:264:1000:75%,4289554.0
+validation:264:1000:24h remaining,4289554.0
+validation:264:1000:6h remaining,4289554.0
+validation:264:2000:25%,1306873.0
+validation:264:2000:50%,1306873.0
+validation:264:2000:75%,1306873.0
+validation:264:2000:24h remaining,1306873.0
+validation:264:2000:6h remaining,1306873.0
+validation:263:1000:25%,2237221.0
+validation:263:1000:50%,2237221.0
+validation:263:1000:75%,2237221.0
+validation:263:1000:24h remaining,2237221.0
+validation:263:1000:6h remaining,2237221.0
+validation:263:2000:25%,1355557.0
+validation:263:2000:50%,1355557.0
+validation:263:2000:75%,1355557.0
+validation:263:2000:24h remaining,1355557.0
+validation:263:2000:6h remaining,1355557.0
+validation:265:1000:25%,7462395.0
+validation:265:1000:50%,7462395.0
+validation:265:1000:75%,7462395.0
+validation:265:1000:24h remaining,7462395.0
+validation:265:1000:6h remaining,7462395.0
+validation:265:2000:25%,2754435.0
+validation:265:2000:50%,2754435.0
+validation:265:2000:75%,2754435.0
+validation:265:2000:24h remaining,2754435.0
+validation:265:2000:6h remaining,2754435.0
+validation:266:1000:25%,4085018.0
+validation:266:1000:50%,4085018.0
+validation:266:1000:75%,4085018.0
+validation:266:1000:24h remaining,4085018.0
+validation:266:1000:6h remaining,4085018.0
+validation:266:2000:25%,2702550.0
+validation:266:2000:50%,2702550.0
+validation:266:2000:75%,2702550.0
+validation:266:2000:24h remaining,2702550.0
+validation:266:2000:6h remaining,2702550.0
+validation:267:1000:25%,8933251.0
+validation:267:1000:50%,8933251.0
+validation:267:1000:75%,8933251.0
+validation:267:1000:24h remaining,8933251.0
+validation:267:1000:6h remaining,8933251.0
+validation:267:2000:25%,3581636.0
+validation:267:2000:50%,3581636.0
+validation:267:2000:75%,3581636.0
+validation:267:2000:24h remaining,3581636.0
+validation:267:2000:6h remaining,3581636.0
+validation:268:1000:25%,4038249.0
+validation:268:1000:50%,4038249.0
+validation:268:1000:75%,4038249.0
+validation:268:1000:24h remaining,4038249.0
+validation:268:1000:6h remaining,4038249.0
+validation:268:2000:25%,2141103.0
+validation:268:2000:50%,2141103.0
+validation:268:2000:75%,2141103.0
+validation:268:2000:24h remaining,2141103.0
+validation:268:2000:6h remaining,2141103.0
+validation:269:1000:25%,3633636.0
+validation:269:1000:50%,3633636.0
+validation:269:1000:75%,3633636.0
+validation:269:1000:24h remaining,3633636.0
+validation:269:1000:6h remaining,3633636.0
+validation:269:2000:25%,1432095.0
+validation:269:2000:50%,1432095.0
+validation:269:2000:75%,1432095.0
+validation:269:2000:24h remaining,1432095.0
+validation:269:2000:6h remaining,1432095.0
+validation:270:1000:25%,14052616.0
+validation:270:1000:50%,14052616.0
+validation:270:1000:75%,14052616.0
+validation:270:1000:24h remaining,14052616.0
+validation:270:1000:6h remaining,14052616.0
+validation:270:2000:25%,5651396.0
+validation:270:2000:50%,5651396.0
+validation:270:2000:75%,5651396.0
+validation:270:2000:24h remaining,5651396.0
+validation:270:2000:6h remaining,5651396.0
+validation:271:1000:25%,5615211.0
+validation:271:1000:50%,5615211.0
+validation:271:1000:75%,5615211.0
+validation:271:1000:24h remaining,5615211.0
+validation:271:1000:6h remaining,5615211.0
+validation:271:2000:25%,2502305.0
+validation:271:2000:50%,2502305.0
+validation:271:2000:75%,2502305.0
+validation:271:2000:24h remaining,2502305.0
+validation:271:2000:6h remaining,2502305.0
+validation:272:1000:25%,2186171.0
+validation:272:1000:50%,2186171.0
+validation:272:1000:75%,2186171.0
+validation:272:1000:24h remaining,2186171.0
+validation:272:1000:6h remaining,2186171.0
+validation:272:2000:25%,1061040.0
+validation:272:2000:50%,1061040.0
+validation:272:2000:75%,1061040.0
+validation:272:2000:24h remaining,1061040.0
+validation:272:2000:6h remaining,1061040.0
+validation:273:1000:25%,15080225.0
+validation:273:1000:50%,15080225.0
+validation:273:1000:75%,15080225.0
+validation:273:1000:24h remaining,15080225.0
+validation:273:1000:6h remaining,15080225.0
+validation:273:2000:25%,4251208.0
+validation:273:2000:50%,4251208.0
+validation:273:2000:75%,4251208.0
+validation:273:2000:24h remaining,4251208.0
+validation:273:2000:6h remaining,4251208.0
+validation:274:1000:25%,3318806.0
+validation:274:1000:50%,3318806.0
+validation:274:1000:75%,3318806.0
+validation:274:1000:24h remaining,3318806.0
+validation:274:1000:6h remaining,3318806.0
+validation:274:2000:25%,1809110.0
+validation:274:2000:50%,1809110.0
+validation:274:2000:75%,1809110.0
+validation:274:2000:24h remaining,1809110.0
+validation:274:2000:6h remaining,1809110.0
+validation:275:1000:25%,2703900.0
+validation:275:1000:50%,2703900.0
+validation:275:1000:75%,2703900.0
+validation:275:1000:24h remaining,2703900.0
+validation:275:1000:6h remaining,2703900.0
+validation:275:2000:25%,1233650.0
+validation:275:2000:50%,1233650.0
+validation:275:2000:75%,1233650.0
+validation:275:2000:24h remaining,1233650.0
+validation:275:2000:6h remaining,1233650.0
+validation:278:1000:25%,5173942.0
+validation:278:1000:50%,5173942.0
+validation:278:1000:75%,5173942.0
+validation:278:1000:24h remaining,5173942.0
+validation:278:1000:6h remaining,5173942.0
+validation:278:2000:25%,2041099.0
+validation:278:2000:50%,2041099.0
+validation:278:2000:75%,2041099.0
+validation:278:2000:24h remaining,2041099.0
+validation:278:2000:6h remaining,2041099.0
+validation:276:1000:25%,24082750.0
+validation:276:1000:50%,24082750.0
+validation:276:1000:75%,24082750.0
+validation:276:1000:24h remaining,24082750.0
+validation:276:1000:6h remaining,24082750.0
+validation:276:2000:25%,4697819.0
+validation:276:2000:50%,4697819.0
+validation:276:2000:75%,4697819.0
+validation:276:2000:24h remaining,4697819.0
+validation:276:2000:6h remaining,4697819.0
+validation:277:1000:25%,9998285.0
+validation:277:1000:50%,9998285.0
+validation:277:1000:75%,9998285.0
+validation:277:1000:24h remaining,9998285.0
+validation:277:1000:6h remaining,9998285.0
+validation:277:2000:25%,2703545.0
+validation:277:2000:50%,2703545.0
+validation:277:2000:75%,2703545.0
+validation:277:2000:24h remaining,2703545.0
+validation:277:2000:6h remaining,2703545.0
+validation:279:1000:25%,13634380.0
+validation:279:1000:50%,13634380.0
+validation:279:1000:75%,13634380.0
+validation:279:1000:24h remaining,13634380.0
+validation:279:1000:6h remaining,13634380.0
+validation:279:2000:25%,4207247.0
+validation:279:2000:50%,4207247.0
+validation:279:2000:75%,4207247.0
+validation:279:2000:24h remaining,4207247.0
+validation:279:2000:6h remaining,4207247.0
+validation:281:1000:25%,10053280.0
+validation:281:1000:50%,10053280.0
+validation:281:1000:75%,10053280.0
+validation:281:1000:24h remaining,10053280.0
+validation:281:1000:6h remaining,10053280.0
+validation:281:2000:25%,5087192.0
+validation:281:2000:50%,5087192.0
+validation:281:2000:75%,5087192.0
+validation:281:2000:24h remaining,5087192.0
+validation:281:2000:6h remaining,5087192.0
+validation:227:10:25%,150000000.0
+validation:227:10:50%,150000000.0
+validation:227:10:75%,150000000.0
+validation:227:10:24h remaining,150000000.0
+validation:227:10:6h remaining,150000000.0
+validation:227:20:25%,121156955.0
+validation:227:20:50%,121156955.0
+validation:227:20:75%,121156955.0
+validation:227:20:24h remaining,121156955.0
+validation:227:20:6h remaining,121156955.0
+validation:227:30:25%,100021053.0
+validation:227:30:50%,100021053.0
+validation:227:30:75%,100021053.0
+validation:227:30:24h remaining,100021053.0
+validation:227:30:6h remaining,100021053.0
+validation:227:40:25%,72376634.0
+validation:227:40:50%,72376634.0
+validation:227:40:75%,72376634.0
+validation:227:40:24h remaining,72376634.0
+validation:227:40:6h remaining,72376634.0
+validation:227:50:25%,66126282.0
+validation:227:50:50%,66126282.0
+validation:227:50:75%,66126282.0
+validation:227:50:24h remaining,66126282.0
+validation:227:50:6h remaining,66126282.0
+validation:227:100:25%,57025181.0
+validation:227:100:50%,57025181.0
+validation:227:100:75%,57025181.0
+validation:227:100:24h remaining,57025181.0
+validation:227:100:6h remaining,57025181.0
+validation:227:200:25%,26194719.0
+validation:227:200:50%,26194719.0
+validation:227:200:75%,26194719.0
+validation:227:200:24h remaining,26194719.0
+validation:227:200:6h remaining,26194719.0
+validation:227:300:25%,19031654.0
+validation:227:300:50%,19031654.0
+validation:227:300:75%,19031654.0
+validation:227:300:24h remaining,19031654.0
+validation:227:300:6h remaining,19031654.0
+validation:227:400:25%,15000703.0
+validation:227:400:50%,15000703.0
+validation:227:400:75%,15000703.0
+validation:227:400:24h remaining,15000703.0
+validation:227:400:6h remaining,15000703.0
+validation:227:500:25%,13900575.0
+validation:227:500:50%,13900575.0
+validation:227:500:75%,13900575.0
+validation:227:500:24h remaining,13900575.0
+validation:227:500:6h remaining,13900575.0
+validation:227:3000:25%,2355038.0
+validation:227:3000:50%,2355038.0
+validation:227:3000:75%,2355038.0
+validation:227:3000:24h remaining,2355038.0
+validation:227:3000:6h remaining,2355038.0
+validation:227:4000:25%,1938500.0
+validation:227:4000:50%,1938500.0
+validation:227:4000:75%,1938500.0
+validation:227:4000:24h remaining,1938500.0
+validation:227:4000:6h remaining,1938500.0
+validation:227:5000:25%,1714167.0
+validation:227:5000:50%,1714167.0
+validation:227:5000:75%,1714167.0
+validation:227:5000:24h remaining,1714167.0
+validation:227:5000:6h remaining,1714167.0
+validation:227:10000:25%,1068419.0
+validation:227:10000:50%,1068419.0
+validation:227:10000:75%,1068419.0
+validation:227:10000:24h remaining,1068419.0
+validation:227:10000:6h remaining,1068419.0
+validation:227:20000:25%,644145.0
+validation:227:20000:50%,644145.0
+validation:227:20000:75%,644145.0
+validation:227:20000:24h remaining,644145.0
+validation:227:20000:6h remaining,644145.0
+validation:227:30000:25%,513826.0
+validation:227:30000:50%,513826.0
+validation:227:30000:75%,513826.0
+validation:227:30000:24h remaining,513826.0
+validation:227:30000:6h remaining,513826.0
+validation:239:10:25%,18000410.0
+validation:239:10:50%,18000410.0
+validation:239:10:75%,18000410.0
+validation:239:10:24h remaining,18000410.0
+validation:239:10:6h remaining,18000410.0
+validation:239:20:25%,10099472.0
+validation:239:20:50%,10099472.0
+validation:239:20:75%,10099472.0
+validation:239:20:24h remaining,10099472.0
+validation:239:20:6h remaining,10099472.0
+validation:239:30:25%,8631927.0
+validation:239:30:50%,8631927.0
+validation:239:30:75%,8631927.0
+validation:239:30:24h remaining,8631927.0
+validation:239:30:6h remaining,8631927.0
+validation:239:40:25%,7006835.0
+validation:239:40:50%,7006835.0
+validation:239:40:75%,7006835.0
+validation:239:40:24h remaining,7006835.0
+validation:239:40:6h remaining,7006835.0
+validation:239:50:25%,6443783.0
+validation:239:50:50%,6443783.0
+validation:239:50:75%,6443783.0
+validation:239:50:24h remaining,6443783.0
+validation:239:50:6h remaining,6443783.0
+validation:239:100:25%,5447842.0
+validation:239:100:50%,5447842.0
+validation:239:100:75%,5447842.0
+validation:239:100:24h remaining,5447842.0
+validation:239:100:6h remaining,5447842.0
+validation:239:200:25%,2149168.0
+validation:239:200:50%,2149168.0
+validation:239:200:75%,2149168.0
+validation:239:200:24h remaining,2149168.0
+validation:239:200:6h remaining,2149168.0
+validation:239:300:25%,1662214.0
+validation:239:300:50%,1662214.0
+validation:239:300:75%,1662214.0
+validation:239:300:24h remaining,1662214.0
+validation:239:300:6h remaining,1662214.0
+validation:239:400:25%,1448610.0
+validation:239:400:50%,1448610.0
+validation:239:400:75%,1448610.0
+validation:239:400:24h remaining,1448610.0
+validation:239:400:6h remaining,1448610.0
+validation:239:500:25%,1389129.0
+validation:239:500:50%,1389129.0
+validation:239:500:75%,1389129.0
+validation:239:500:24h remaining,1389129.0
+validation:239:500:6h remaining,1389129.0
+validation:239:3000:25%,621045.0
+validation:239:3000:50%,621045.0
+validation:239:3000:75%,621045.0
+validation:239:3000:24h remaining,621045.0
+validation:239:3000:6h remaining,621045.0
+validation:239:4000:25%,528477.0
+validation:239:4000:50%,528477.0
+validation:239:4000:75%,528477.0
+validation:239:4000:24h remaining,528477.0
+validation:239:4000:6h remaining,528477.0
+validation:239:5000:25%,483915.0
+validation:239:5000:50%,483915.0
+validation:239:5000:75%,483915.0
+validation:239:5000:24h remaining,483915.0
+validation:239:5000:6h remaining,483915.0
+validation:239:10000:25%,311640.0
+validation:239:10000:50%,311640.0
+validation:239:10000:75%,311640.0
+validation:239:10000:24h remaining,311640.0
+validation:239:10000:6h remaining,311640.0
+validation:239:20000:25%,150714.0
+validation:239:20000:50%,150714.0
+validation:239:20000:75%,150714.0
+validation:239:20000:24h remaining,150714.0
+validation:239:20000:6h remaining,150714.0
+validation:239:30000:25%,85725.0
+validation:239:30000:50%,85725.0
+validation:239:30000:75%,85725.0
+validation:239:30000:24h remaining,85725.0
+validation:239:30000:6h remaining,85725.0
+validation:241:10:25%,51111111.0
+validation:241:10:50%,51111111.0
+validation:241:10:75%,51111111.0
+validation:241:10:24h remaining,51111111.0
+validation:241:10:6h remaining,51111111.0
+validation:241:20:25%,37777777.0
+validation:241:20:50%,37777777.0
+validation:241:20:75%,37777777.0
+validation:241:20:24h remaining,37777777.0
+validation:241:20:6h remaining,37777777.0
+validation:241:30:25%,32000000.0
+validation:241:30:50%,32000000.0
+validation:241:30:75%,32000000.0
+validation:241:30:24h remaining,32000000.0
+validation:241:30:6h remaining,32000000.0
+validation:241:40:25%,28222923.0
+validation:241:40:50%,28222923.0
+validation:241:40:75%,28222923.0
+validation:241:40:24h remaining,28222923.0
+validation:241:40:6h remaining,28222923.0
+validation:241:50:25%,27883232.0
+validation:241:50:50%,27883232.0
+validation:241:50:75%,27883232.0
+validation:241:50:24h remaining,27883232.0
+validation:241:50:6h remaining,27883232.0
+validation:241:100:25%,21088612.0
+validation:241:100:50%,21088612.0
+validation:241:100:75%,21088612.0
+validation:241:100:24h remaining,21088612.0
+validation:241:100:6h remaining,21088612.0
+validation:241:200:25%,8018294.0
+validation:241:200:50%,8018294.0
+validation:241:200:75%,8018294.0
+validation:241:200:24h remaining,8018294.0
+validation:241:200:6h remaining,8018294.0
+validation:241:300:25%,6314569.0
+validation:241:300:50%,6314569.0
+validation:241:300:75%,6314569.0
+validation:241:300:24h remaining,6314569.0
+validation:241:300:6h remaining,6314569.0
+validation:241:400:25%,5777313.0
+validation:241:400:50%,5777313.0
+validation:241:400:75%,5777313.0
+validation:241:400:24h remaining,5777313.0
+validation:241:400:6h remaining,5777313.0
+validation:241:500:25%,5636754.0
+validation:241:500:50%,5636754.0
+validation:241:500:75%,5636754.0
+validation:241:500:24h remaining,5636754.0
+validation:241:500:6h remaining,5636754.0
+validation:241:3000:25%,1693545.0
+validation:241:3000:50%,1693545.0
+validation:241:3000:75%,1693545.0
+validation:241:3000:24h remaining,1693545.0
+validation:241:3000:6h remaining,1693545.0
+validation:241:4000:25%,1392573.0
+validation:241:4000:50%,1392573.0
+validation:241:4000:75%,1392573.0
+validation:241:4000:24h remaining,1392573.0
+validation:241:4000:6h remaining,1392573.0
+validation:241:5000:25%,1231080.0
+validation:241:5000:50%,1231080.0
+validation:241:5000:75%,1231080.0
+validation:241:5000:24h remaining,1231080.0
+validation:241:5000:6h remaining,1231080.0
+validation:241:10000:25%,776289.0
+validation:241:10000:50%,776289.0
+validation:241:10000:75%,776289.0
+validation:241:10000:24h remaining,776289.0
+validation:241:10000:6h remaining,776289.0
+validation:241:20000:25%,385194.0
+validation:241:20000:50%,385194.0
+validation:241:20000:75%,385194.0
+validation:241:20000:24h remaining,385194.0
+validation:241:20000:6h remaining,385194.0
+validation:241:30000:25%,233040.0
+validation:241:30000:50%,233040.0
+validation:241:30000:75%,233040.0
+validation:241:30000:24h remaining,233040.0
+validation:241:30000:6h remaining,233040.0
+validation:242:10:25%,80000040.0
+validation:242:10:50%,80000040.0
+validation:242:10:75%,80000040.0
+validation:242:10:24h remaining,80000040.0
+validation:242:10:6h remaining,80000040.0
+validation:242:20:25%,58732448.0
+validation:242:20:50%,58732448.0
+validation:242:20:75%,58732448.0
+validation:242:20:24h remaining,58732448.0
+validation:242:30:25%,33389163.0
+validation:242:30:50%,33389163.0
+validation:242:30:75%,33389163.0
+validation:242:30:24h remaining,33389163.0
+validation:242:40:25%,26493292.0
+validation:242:40:50%,26493292.0
+validation:242:40:75%,26493292.0
+validation:242:40:24h remaining,26493292.0
+validation:242:50:25%,26000120.0
+validation:242:50:50%,26000120.0
+validation:242:50:75%,26000120.0
+validation:242:50:24h remaining,26000120.0
+validation:242:100:25%,18266949.0
+validation:242:100:50%,18266949.0
+validation:242:100:75%,18266949.0
+validation:242:100:24h remaining,18266949.0
+validation:242:200:25%,8121266.0
+validation:242:200:50%,8121266.0
+validation:242:200:75%,8121266.0
+validation:242:200:24h remaining,8121266.0
+validation:242:300:25%,6139156.0
+validation:242:300:50%,6139156.0
+validation:242:300:75%,6139156.0
+validation:242:300:24h remaining,6139156.0
+validation:242:400:25%,5206378.0
+validation:242:400:50%,5206378.0
+validation:242:400:75%,5206378.0
+validation:242:400:24h remaining,5206378.0
+validation:242:500:25%,4892102.0
+validation:242:500:50%,4892102.0
+validation:242:500:75%,4892102.0
+validation:242:500:24h remaining,4892102.0
+validation:242:3000:25%,1579619.0
+validation:242:3000:50%,1579619.0
+validation:242:3000:75%,1579619.0
+validation:242:3000:24h remaining,1579619.0
+validation:242:4000:25%,1242967.0
+validation:242:4000:50%,1242967.0
+validation:242:4000:75%,1242967.0
+validation:242:4000:24h remaining,1242967.0
+validation:242:5000:25%,1063323.0
+validation:242:5000:50%,1063323.0
+validation:242:5000:75%,1063323.0
+validation:242:5000:24h remaining,1063323.0
+validation:242:10000:25%,594626.0
+validation:242:10000:50%,594626.0
+validation:242:10000:75%,594626.0
+validation:242:10000:24h remaining,594626.0
+validation:242:20000:25%,285967.0
+validation:242:20000:50%,285967.0
+validation:242:20000:75%,285967.0
+validation:242:20000:24h remaining,285967.0
+validation:242:30000:25%,155685.0
+validation:242:30000:50%,155685.0
+validation:242:30000:75%,155685.0
+validation:242:30000:24h remaining,155685.0
+validation:243:10:25%,32000703.0
+validation:243:10:50%,32000703.0
+validation:243:10:75%,32000703.0
+validation:243:10:24h remaining,32000703.0
+validation:243:10:6h remaining,32000703.0
+validation:243:20:25%,25998692.0
+validation:243:20:50%,25998692.0
+validation:243:20:75%,25998692.0
+validation:243:20:24h remaining,25998692.0
+validation:243:20:6h remaining,25998692.0
+validation:243:30:25%,21997912.0
+validation:243:30:50%,21997912.0
+validation:243:30:75%,21997912.0
+validation:243:30:24h remaining,21997912.0
+validation:243:30:6h remaining,21997912.0
+validation:243:40:25%,20000613.0
+validation:243:40:50%,20000613.0
+validation:243:40:75%,20000613.0
+validation:243:40:24h remaining,20000613.0
+validation:243:40:6h remaining,20000613.0
+validation:243:50:25%,19694324.0
+validation:243:50:50%,19694324.0
+validation:243:50:75%,19694324.0
+validation:243:50:24h remaining,19694324.0
+validation:243:50:6h remaining,19694324.0
+validation:243:100:25%,15317218.0
+validation:243:100:50%,15317218.0
+validation:243:100:75%,15317218.0
+validation:243:100:24h remaining,15317218.0
+validation:243:100:6h remaining,15317218.0
+validation:243:200:25%,6990093.0
+validation:243:200:50%,6990093.0
+validation:243:200:75%,6990093.0
+validation:243:200:24h remaining,6990093.0
+validation:243:200:6h remaining,6990093.0
+validation:243:300:25%,5064259.0
+validation:243:300:50%,5064259.0
+validation:243:300:75%,5064259.0
+validation:243:300:24h remaining,5064259.0
+validation:243:300:6h remaining,5064259.0
+validation:243:400:25%,4283744.0
+validation:243:400:50%,4283744.0
+validation:243:400:75%,4283744.0
+validation:243:400:24h remaining,4283744.0
+validation:243:400:6h remaining,4283744.0
+validation:243:500:25%,4077408.0
+validation:243:500:50%,4077408.0
+validation:243:500:75%,4077408.0
+validation:243:500:24h remaining,4077408.0
+validation:243:500:6h remaining,4077408.0
+validation:243:3000:25%,962970.0
+validation:243:3000:50%,962970.0
+validation:243:3000:75%,962970.0
+validation:243:3000:24h remaining,962970.0
+validation:243:3000:6h remaining,962970.0
+validation:243:4000:25%,780365.0
+validation:243:4000:50%,780365.0
+validation:243:4000:75%,780365.0
+validation:243:4000:24h remaining,780365.0
+validation:243:4000:6h remaining,780365.0
+validation:243:5000:25%,680317.0
+validation:243:5000:50%,680317.0
+validation:243:5000:75%,680317.0
+validation:243:5000:24h remaining,680317.0
+validation:243:5000:6h remaining,680317.0
+validation:243:10000:25%,406132.0
+validation:243:10000:50%,406132.0
+validation:243:10000:75%,406132.0
+validation:243:10000:24h remaining,406132.0
+validation:243:10000:6h remaining,406132.0
+validation:243:20000:25%,185065.0
+validation:243:20000:50%,185065.0
+validation:243:20000:75%,185065.0
+validation:243:20000:24h remaining,185065.0
+validation:243:20000:6h remaining,185065.0
+validation:243:30000:25%,111045.0
+validation:243:30000:50%,111045.0
+validation:243:30000:75%,111045.0
+validation:243:30000:24h remaining,111045.0
+validation:243:30000:6h remaining,111045.0
+validation:244:10:25%,8975566.0
+validation:244:10:50%,8975566.0
+validation:244:10:75%,8975566.0
+validation:244:10:24h remaining,8975566.0
+validation:244:10:6h remaining,8975566.0
+validation:244:20:25%,6666665.0
+validation:244:20:50%,6666665.0
+validation:244:20:75%,6666665.0
+validation:244:20:24h remaining,6666665.0
+validation:244:20:6h remaining,6666665.0
+validation:244:30:25%,5667840.0
+validation:244:30:50%,5667840.0
+validation:244:30:75%,5667840.0
+validation:244:30:24h remaining,5667840.0
+validation:244:30:6h remaining,5667840.0
+validation:244:40:25%,4618935.0
+validation:244:40:50%,4618935.0
+validation:244:40:75%,4618935.0
+validation:244:40:24h remaining,4618935.0
+validation:244:40:6h remaining,4618935.0
+validation:244:50:25%,4473955.0
+validation:244:50:50%,4473955.0
+validation:244:50:75%,4473955.0
+validation:244:50:24h remaining,4473955.0
+validation:244:50:6h remaining,4473955.0
+validation:244:100:25%,2913521.0
+validation:244:100:50%,2913521.0
+validation:244:100:75%,2913521.0
+validation:244:100:24h remaining,2913521.0
+validation:244:100:6h remaining,2913521.0
+validation:244:200:25%,1547932.0
+validation:244:200:50%,1547932.0
+validation:244:200:75%,1547932.0
+validation:244:200:24h remaining,1547932.0
+validation:244:200:6h remaining,1547932.0
+validation:244:300:25%,1345920.0
+validation:244:300:50%,1345920.0
+validation:244:300:75%,1345920.0
+validation:244:300:24h remaining,1345920.0
+validation:244:300:6h remaining,1345920.0
+validation:244:400:25%,1250733.0
+validation:244:400:50%,1250733.0
+validation:244:400:75%,1250733.0
+validation:244:400:24h remaining,1250733.0
+validation:244:400:6h remaining,1250733.0
+validation:244:500:25%,1219036.0
+validation:244:500:50%,1219036.0
+validation:244:500:75%,1219036.0
+validation:244:500:24h remaining,1219036.0
+validation:244:500:6h remaining,1219036.0
+validation:244:3000:25%,510750.0
+validation:244:3000:50%,510750.0
+validation:244:3000:75%,510750.0
+validation:244:3000:24h remaining,510750.0
+validation:244:3000:6h remaining,510750.0
+validation:244:4000:25%,452370.0
+validation:244:4000:50%,452370.0
+validation:244:4000:75%,452370.0
+validation:244:4000:24h remaining,452370.0
+validation:244:4000:6h remaining,452370.0
+validation:244:5000:25%,386290.0
+validation:244:5000:50%,386290.0
+validation:244:5000:75%,386290.0
+validation:244:5000:24h remaining,386290.0
+validation:244:5000:6h remaining,386290.0
+validation:244:10000:25%,217930.0
+validation:244:10000:50%,217930.0
+validation:244:10000:75%,217930.0
+validation:244:10000:24h remaining,217930.0
+validation:244:10000:6h remaining,217930.0
+validation:244:20000:25%,97515.0
+validation:244:20000:50%,97515.0
+validation:244:20000:75%,97515.0
+validation:244:20000:24h remaining,97515.0
+validation:244:20000:6h remaining,97515.0
+validation:244:30000:25%,50715.0
+validation:244:30000:50%,50715.0
+validation:244:30000:75%,50715.0
+validation:244:30000:24h remaining,50715.0
+validation:244:30000:6h remaining,50715.0
+validation:245:10:25%,57726408.0
+validation:245:10:50%,57726408.0
+validation:245:10:75%,57726408.0
+validation:245:10:24h remaining,57726408.0
+validation:245:10:6h remaining,57726408.0
+validation:245:20:25%,16624642.0
+validation:245:20:50%,16624642.0
+validation:245:20:75%,16624642.0
+validation:245:20:24h remaining,16624642.0
+validation:245:20:6h remaining,16624642.0
+validation:245:30:25%,12243686.0
+validation:245:30:50%,12243686.0
+validation:245:30:75%,12243686.0
+validation:245:30:24h remaining,12243686.0
+validation:245:30:6h remaining,12243686.0
+validation:245:40:25%,8989919.0
+validation:245:40:50%,8989919.0
+validation:245:40:75%,8989919.0
+validation:245:40:24h remaining,8989919.0
+validation:245:40:6h remaining,8989919.0
+validation:245:50:25%,8007463.0
+validation:245:50:50%,8007463.0
+validation:245:50:75%,8007463.0
+validation:245:50:24h remaining,8007463.0
+validation:245:50:6h remaining,8007463.0
+validation:245:100:25%,6519514.0
+validation:245:100:50%,6519514.0
+validation:245:100:75%,6519514.0
+validation:245:100:24h remaining,6519514.0
+validation:245:100:6h remaining,6519514.0
+validation:245:200:25%,4582435.0
+validation:245:200:50%,4582435.0
+validation:245:200:75%,4582435.0
+validation:245:200:24h remaining,4582435.0
+validation:245:200:6h remaining,4582435.0
+validation:245:300:25%,4058782.0
+validation:245:300:50%,4058782.0
+validation:245:300:75%,4058782.0
+validation:245:300:24h remaining,4058782.0
+validation:245:300:6h remaining,4058782.0
+validation:245:400:25%,3703407.0
+validation:245:400:50%,3703407.0
+validation:245:400:75%,3703407.0
+validation:245:400:24h remaining,3703407.0
+validation:245:400:6h remaining,3703407.0
+validation:245:500:25%,3576819.0
+validation:245:500:50%,3576819.0
+validation:245:500:75%,3576819.0
+validation:245:500:24h remaining,3576819.0
+validation:245:500:6h remaining,3576819.0
+validation:245:3000:25%,1382472.0
+validation:245:3000:50%,1382472.0
+validation:245:3000:75%,1382472.0
+validation:245:3000:24h remaining,1382472.0
+validation:245:3000:6h remaining,1382472.0
+validation:245:4000:25%,1089457.0
+validation:245:4000:50%,1089457.0
+validation:245:4000:75%,1089457.0
+validation:245:4000:24h remaining,1089457.0
+validation:245:4000:6h remaining,1089457.0
+validation:245:5000:25%,920128.0
+validation:245:5000:50%,920128.0
+validation:245:5000:75%,920128.0
+validation:245:5000:24h remaining,920128.0
+validation:245:5000:6h remaining,920128.0
+validation:245:10000:25%,519279.0
+validation:245:10000:50%,519279.0
+validation:245:10000:75%,519279.0
+validation:245:10000:24h remaining,519279.0
+validation:245:10000:6h remaining,519279.0
+validation:245:20000:25%,245549.0
+validation:245:20000:50%,245549.0
+validation:245:20000:75%,245549.0
+validation:245:20000:24h remaining,245549.0
+validation:245:20000:6h remaining,245549.0
+validation:245:30000:25%,134325.0
+validation:245:30000:50%,134325.0
+validation:245:30000:75%,134325.0
+validation:245:30000:24h remaining,134325.0
+validation:245:30000:6h remaining,134325.0
+validation:246:10:25%,44067898.0
+validation:246:10:50%,44067898.0
+validation:246:10:75%,44067898.0
+validation:246:10:24h remaining,44067898.0
+validation:246:10:6h remaining,44067898.0
+validation:246:20:25%,34221627.0
+validation:246:20:50%,34221627.0
+validation:246:20:75%,34221627.0
+validation:246:20:24h remaining,34221627.0
+validation:246:20:6h remaining,34221627.0
+validation:246:30:25%,20230901.0
+validation:246:30:50%,20230901.0
+validation:246:30:75%,20230901.0
+validation:246:30:24h remaining,20230901.0
+validation:246:30:6h remaining,20230901.0
+validation:246:40:25%,16577088.0
+validation:246:40:50%,16577088.0
+validation:246:40:75%,16577088.0
+validation:246:40:24h remaining,16577088.0
+validation:246:40:6h remaining,16577088.0
+validation:246:50:25%,15202311.0
+validation:246:50:50%,15202311.0
+validation:246:50:75%,15202311.0
+validation:246:50:24h remaining,15202311.0
+validation:246:50:6h remaining,15202311.0
+validation:246:100:25%,11375895.0
+validation:246:100:50%,11375895.0
+validation:246:100:75%,11375895.0
+validation:246:100:24h remaining,11375895.0
+validation:246:100:6h remaining,11375895.0
+validation:246:200:25%,5826045.0
+validation:246:200:50%,5826045.0
+validation:246:200:75%,5826045.0
+validation:246:200:24h remaining,5826045.0
+validation:246:200:6h remaining,5826045.0
+validation:246:300:25%,4842961.0
+validation:246:300:50%,4842961.0
+validation:246:300:75%,4842961.0
+validation:246:300:24h remaining,4842961.0
+validation:246:300:6h remaining,4842961.0
+validation:246:400:25%,4333489.0
+validation:246:400:50%,4333489.0
+validation:246:400:75%,4333489.0
+validation:246:400:24h remaining,4333489.0
+validation:246:400:6h remaining,4333489.0
+validation:246:500:25%,4196002.0
+validation:246:500:50%,4196002.0
+validation:246:500:75%,4196002.0
+validation:246:500:24h remaining,4196002.0
+validation:246:500:6h remaining,4196002.0
+validation:246:3000:25%,1270899.0
+validation:246:3000:50%,1270899.0
+validation:246:3000:75%,1270899.0
+validation:246:3000:24h remaining,1270899.0
+validation:246:3000:6h remaining,1270899.0
+validation:246:4000:25%,1042360.0
+validation:246:4000:50%,1042360.0
+validation:246:4000:75%,1042360.0
+validation:246:4000:24h remaining,1042360.0
+validation:246:4000:6h remaining,1042360.0
+validation:246:5000:25%,921278.0
+validation:246:5000:50%,921278.0
+validation:246:5000:75%,921278.0
+validation:246:5000:24h remaining,921278.0
+validation:246:5000:6h remaining,921278.0
+validation:246:10000:25%,598085.0
+validation:246:10000:50%,598085.0
+validation:246:10000:75%,598085.0
+validation:246:10000:24h remaining,598085.0
+validation:246:10000:6h remaining,598085.0
+validation:246:20000:25%,319881.0
+validation:246:20000:50%,319881.0
+validation:246:20000:75%,319881.0
+validation:246:20000:24h remaining,319881.0
+validation:246:20000:6h remaining,319881.0
+validation:246:30000:25%,202195.0
+validation:246:30000:50%,202195.0
+validation:246:30000:75%,202195.0
+validation:246:30000:24h remaining,202195.0
+validation:246:30000:6h remaining,202195.0
+validation:247:10:25%,20777777.0
+validation:247:10:50%,20777777.0
+validation:247:10:75%,20777777.0
+validation:247:10:24h remaining,20777777.0
+validation:247:10:6h remaining,20777777.0
+validation:247:20:25%,16505519.0
+validation:247:20:50%,16505519.0
+validation:247:20:75%,16505519.0
+validation:247:20:24h remaining,16505519.0
+validation:247:20:6h remaining,16505519.0
+validation:247:30:25%,13000000.0
+validation:247:30:50%,13000000.0
+validation:247:30:75%,13000000.0
+validation:247:30:24h remaining,13000000.0
+validation:247:30:6h remaining,13000000.0
+validation:247:40:25%,8849921.0
+validation:247:40:50%,8849921.0
+validation:247:40:75%,8849921.0
+validation:247:40:24h remaining,8849921.0
+validation:247:40:6h remaining,8849921.0
+validation:247:50:25%,8350632.0
+validation:247:50:50%,8350632.0
+validation:247:50:75%,8350632.0
+validation:247:50:24h remaining,8350632.0
+validation:247:50:6h remaining,8350632.0
+validation:247:100:25%,5865570.0
+validation:247:100:50%,5865570.0
+validation:247:100:75%,5865570.0
+validation:247:100:24h remaining,5865570.0
+validation:247:100:6h remaining,5865570.0
+validation:247:200:25%,3098667.0
+validation:247:200:50%,3098667.0
+validation:247:200:75%,3098667.0
+validation:247:200:24h remaining,3098667.0
+validation:247:200:6h remaining,3098667.0
+validation:247:300:25%,2291466.0
+validation:247:300:50%,2291466.0
+validation:247:300:75%,2291466.0
+validation:247:300:24h remaining,2291466.0
+validation:247:300:6h remaining,2291466.0
+validation:247:400:25%,1972994.0
+validation:247:400:50%,1972994.0
+validation:247:400:75%,1972994.0
+validation:247:400:24h remaining,1972994.0
+validation:247:400:6h remaining,1972994.0
+validation:247:500:25%,1887855.0
+validation:247:500:50%,1887855.0
+validation:247:500:75%,1887855.0
+validation:247:500:24h remaining,1887855.0
+validation:247:500:6h remaining,1887855.0
+validation:247:3000:25%,677637.0
+validation:247:3000:50%,677637.0
+validation:247:3000:75%,677637.0
+validation:247:3000:24h remaining,677637.0
+validation:247:3000:6h remaining,677637.0
+validation:247:4000:25%,558319.0
+validation:247:4000:50%,558319.0
+validation:247:4000:75%,558319.0
+validation:247:4000:24h remaining,558319.0
+validation:247:4000:6h remaining,558319.0
+validation:247:5000:25%,493660.0
+validation:247:5000:50%,493660.0
+validation:247:5000:75%,493660.0
+validation:247:5000:24h remaining,493660.0
+validation:247:5000:6h remaining,493660.0
+validation:247:10000:25%,311030.0
+validation:247:10000:50%,311030.0
+validation:247:10000:75%,311030.0
+validation:247:10000:24h remaining,311030.0
+validation:247:10000:6h remaining,311030.0
+validation:247:20000:25%,158805.0
+validation:247:20000:50%,158805.0
+validation:247:20000:75%,158805.0
+validation:247:20000:24h remaining,158805.0
+validation:247:20000:6h remaining,158805.0
+validation:247:30000:25%,96790.0
+validation:247:30000:50%,96790.0
+validation:247:30000:75%,96790.0
+validation:247:30000:24h remaining,96790.0
+validation:247:30000:6h remaining,96790.0
+validation:248:10:25%,51100000.0
+validation:248:10:50%,51100000.0
+validation:248:10:75%,51100000.0
+validation:248:10:24h remaining,51100000.0
+validation:248:10:6h remaining,51100000.0
+validation:248:20:25%,20000002.0
+validation:248:20:50%,20000002.0
+validation:248:20:75%,20000002.0
+validation:248:20:24h remaining,20000002.0
+validation:248:20:6h remaining,20000002.0
+validation:248:30:25%,14738852.0
+validation:248:30:50%,14738852.0
+validation:248:30:75%,14738852.0
+validation:248:30:24h remaining,14738852.0
+validation:248:30:6h remaining,14738852.0
+validation:248:40:25%,12845877.0
+validation:248:40:50%,12845877.0
+validation:248:40:75%,12845877.0
+validation:248:40:24h remaining,12845877.0
+validation:248:40:6h remaining,12845877.0
+validation:248:50:25%,12001000.0
+validation:248:50:50%,12001000.0
+validation:248:50:75%,12001000.0
+validation:248:50:24h remaining,12001000.0
+validation:248:50:6h remaining,12001000.0
+validation:248:100:25%,8440855.0
+validation:248:100:50%,8440855.0
+validation:248:100:75%,8440855.0
+validation:248:100:24h remaining,8440855.0
+validation:248:100:6h remaining,8440855.0
+validation:248:200:25%,4662154.0
+validation:248:200:50%,4662154.0
+validation:248:200:75%,4662154.0
+validation:248:200:24h remaining,4662154.0
+validation:248:200:6h remaining,4662154.0
+validation:248:300:25%,3890861.0
+validation:248:300:50%,3890861.0
+validation:248:300:75%,3890861.0
+validation:248:300:24h remaining,3890861.0
+validation:248:300:6h remaining,3890861.0
+validation:248:400:25%,3520511.0
+validation:248:400:50%,3520511.0
+validation:248:400:75%,3520511.0
+validation:248:400:24h remaining,3520511.0
+validation:248:400:6h remaining,3520511.0
+validation:248:500:25%,3401875.0
+validation:248:500:50%,3401875.0
+validation:248:500:75%,3401875.0
+validation:248:500:24h remaining,3401875.0
+validation:248:500:6h remaining,3401875.0
+validation:248:3000:25%,1406760.0
+validation:248:3000:50%,1406760.0
+validation:248:3000:75%,1406760.0
+validation:248:3000:24h remaining,1406760.0
+validation:248:3000:6h remaining,1406760.0
+validation:248:4000:25%,1160351.0
+validation:248:4000:50%,1160351.0
+validation:248:4000:75%,1160351.0
+validation:248:4000:24h remaining,1160351.0
+validation:248:4000:6h remaining,1160351.0
+validation:248:5000:25%,1023705.0
+validation:248:5000:50%,1023705.0
+validation:248:5000:75%,1023705.0
+validation:248:5000:24h remaining,1023705.0
+validation:248:5000:6h remaining,1023705.0
+validation:248:10000:25%,657887.0
+validation:248:10000:50%,657887.0
+validation:248:10000:75%,657887.0
+validation:248:10000:24h remaining,657887.0
+validation:248:10000:6h remaining,657887.0
+validation:248:20000:25%,334964.0
+validation:248:20000:50%,334964.0
+validation:248:20000:75%,334964.0
+validation:248:20000:24h remaining,334964.0
+validation:248:20000:6h remaining,334964.0
+validation:248:30000:25%,204070.0
+validation:248:30000:50%,204070.0
+validation:248:30000:75%,204070.0
+validation:248:30000:24h remaining,204070.0
+validation:248:30000:6h remaining,204070.0
+validation:249:10:25%,14666666.0
+validation:249:10:50%,14666666.0
+validation:249:10:75%,14666666.0
+validation:249:10:24h remaining,14666666.0
+validation:249:10:6h remaining,14666666.0
+validation:249:20:25%,9789384.0
+validation:249:20:50%,9789384.0
+validation:249:20:24h remaining,9789384.0
+validation:249:20:6h remaining,9789384.0
+validation:249:30:25%,6033258.0
+validation:249:30:50%,6033258.0
+validation:249:30:24h remaining,6033258.0
+validation:249:30:6h remaining,6033258.0
+validation:249:40:25%,4444972.0
+validation:249:40:50%,4444972.0
+validation:249:40:24h remaining,4444972.0
+validation:249:40:6h remaining,4444972.0
+validation:249:50:25%,4028518.0
+validation:249:50:50%,4028518.0
+validation:249:50:24h remaining,4028518.0
+validation:249:50:6h remaining,4028518.0
+validation:249:100:25%,2905900.0
+validation:249:100:50%,2905900.0
+validation:249:100:24h remaining,2905900.0
+validation:249:100:6h remaining,2905900.0
+validation:249:200:25%,1527138.0
+validation:249:200:50%,1527138.0
+validation:249:200:24h remaining,1527138.0
+validation:249:200:6h remaining,1527138.0
+validation:249:300:25%,1243510.0
+validation:249:300:50%,1243510.0
+validation:249:300:24h remaining,1243510.0
+validation:249:300:6h remaining,1243510.0
+validation:249:400:25%,1114933.0
+validation:249:400:50%,1114933.0
+validation:249:400:24h remaining,1114933.0
+validation:249:400:6h remaining,1114933.0
+validation:249:500:25%,1072378.0
+validation:249:500:50%,1072378.0
+validation:249:500:24h remaining,1072378.0
+validation:249:500:6h remaining,1072378.0
+validation:249:3000:25%,485112.0
+validation:249:3000:50%,485112.0
+validation:249:3000:24h remaining,485112.0
+validation:249:3000:6h remaining,485112.0
+validation:249:4000:25%,424989.0
+validation:249:4000:50%,424989.0
+validation:249:4000:24h remaining,424989.0
+validation:249:4000:6h remaining,424989.0
+validation:249:5000:25%,360345.0
+validation:249:5000:50%,360345.0
+validation:249:5000:24h remaining,360345.0
+validation:249:5000:6h remaining,360345.0
+validation:249:10000:25%,204030.0
+validation:249:10000:50%,204030.0
+validation:249:10000:24h remaining,204030.0
+validation:249:10000:6h remaining,204030.0
+validation:249:20000:25%,90540.0
+validation:249:20000:50%,90540.0
+validation:249:20000:24h remaining,90540.0
+validation:249:20000:6h remaining,90540.0
+validation:249:30000:25%,44685.0
+validation:249:30000:50%,44685.0
+validation:249:30000:24h remaining,44685.0
+validation:249:30000:6h remaining,44685.0
+validation:250:10:25%,88100714.0
+validation:250:10:50%,88100714.0
+validation:250:10:75%,88100714.0
+validation:250:10:24h remaining,88100714.0
+validation:250:10:6h remaining,88100714.0
+validation:250:20:25%,74777777.0
+validation:250:20:50%,74777777.0
+validation:250:20:75%,74777777.0
+validation:250:20:24h remaining,74777777.0
+validation:250:30:25%,55332996.0
+validation:250:30:50%,55332996.0
+validation:250:30:75%,55332996.0
+validation:250:30:24h remaining,55332996.0
+validation:250:40:25%,46198765.0
+validation:250:40:50%,46198765.0
+validation:250:40:75%,46198765.0
+validation:250:40:24h remaining,46198765.0
+validation:250:50:25%,45850346.0
+validation:250:50:50%,45850346.0
+validation:250:50:75%,45850346.0
+validation:250:50:24h remaining,45850346.0
+validation:250:50:6h remaining,45850346.0
+validation:250:100:25%,35149780.0
+validation:250:100:50%,35149780.0
+validation:250:100:75%,35149780.0
+validation:250:100:24h remaining,35149780.0
+validation:250:100:6h remaining,35149780.0
+validation:250:200:25%,20649060.0
+validation:250:200:50%,20649060.0
+validation:250:200:75%,20649060.0
+validation:250:200:24h remaining,20649060.0
+validation:250:300:25%,18462683.0
+validation:250:300:50%,18462683.0
+validation:250:300:75%,18462683.0
+validation:250:300:24h remaining,18462683.0
+validation:250:300:6h remaining,18462683.0
+validation:250:400:25%,17365960.0
+validation:250:400:50%,17365960.0
+validation:250:400:75%,17365960.0
+validation:250:400:24h remaining,17365960.0
+validation:250:500:25%,17106473.0
+validation:250:500:50%,17106473.0
+validation:250:500:75%,17106473.0
+validation:250:500:24h remaining,17106473.0
+validation:250:500:6h remaining,17106473.0
+validation:250:3000:25%,2211672.0
+validation:250:3000:50%,2211672.0
+validation:250:3000:75%,2211672.0
+validation:250:3000:24h remaining,2211672.0
+validation:250:4000:25%,1704065.0
+validation:250:4000:50%,1704065.0
+validation:250:4000:75%,1704065.0
+validation:250:4000:24h remaining,1704065.0
+validation:250:5000:25%,1492254.0
+validation:250:5000:50%,1492254.0
+validation:250:5000:75%,1492254.0
+validation:250:5000:24h remaining,1492254.0
+validation:250:10000:25%,875396.0
+validation:250:10000:50%,875396.0
+validation:250:10000:75%,875396.0
+validation:250:10000:24h remaining,875396.0
+validation:250:20000:25%,443505.0
+validation:250:20000:50%,443505.0
+validation:250:20000:75%,443505.0
+validation:250:20000:24h remaining,443505.0
+validation:250:30000:25%,270881.0
+validation:250:30000:50%,270881.0
+validation:250:30000:75%,270881.0
+validation:250:30000:24h remaining,270881.0
+validation:251:10:25%,19720328.0
+validation:251:10:50%,19720328.0
+validation:251:10:75%,19720328.0
+validation:251:10:24h remaining,19720328.0
+validation:251:10:6h remaining,19720328.0
+validation:251:20:25%,11390219.0
+validation:251:20:50%,11390219.0
+validation:251:20:75%,11390219.0
+validation:251:20:24h remaining,11390219.0
+validation:251:20:6h remaining,11390219.0
+validation:251:30:25%,9477126.0
+validation:251:30:50%,9477126.0
+validation:251:30:75%,9477126.0
+validation:251:30:24h remaining,9477126.0
+validation:251:30:6h remaining,9477126.0
+validation:251:40:25%,7266111.0
+validation:251:40:50%,7266111.0
+validation:251:40:75%,7266111.0
+validation:251:40:24h remaining,7266111.0
+validation:251:40:6h remaining,7266111.0
+validation:251:50:25%,6737376.0
+validation:251:50:50%,6737376.0
+validation:251:50:75%,6737376.0
+validation:251:50:24h remaining,6737376.0
+validation:251:50:6h remaining,6737376.0
+validation:251:100:25%,5197146.0
+validation:251:100:50%,5197146.0
+validation:251:100:75%,5197146.0
+validation:251:100:24h remaining,5197146.0
+validation:251:100:6h remaining,5197146.0
+validation:251:200:25%,2697323.0
+validation:251:200:50%,2697323.0
+validation:251:200:75%,2697323.0
+validation:251:200:24h remaining,2697323.0
+validation:251:200:6h remaining,2697323.0
+validation:251:300:25%,2170574.0
+validation:251:300:50%,2170574.0
+validation:251:300:75%,2170574.0
+validation:251:300:24h remaining,2170574.0
+validation:251:300:6h remaining,2170574.0
+validation:251:400:25%,1880307.0
+validation:251:400:50%,1880307.0
+validation:251:400:75%,1880307.0
+validation:251:400:24h remaining,1880307.0
+validation:251:400:6h remaining,1880307.0
+validation:251:500:25%,1826855.0
+validation:251:500:50%,1826855.0
+validation:251:500:75%,1826855.0
+validation:251:500:24h remaining,1826855.0
+validation:251:500:6h remaining,1826855.0
+validation:251:3000:25%,656783.0
+validation:251:3000:50%,656783.0
+validation:251:3000:75%,656783.0
+validation:251:3000:24h remaining,656783.0
+validation:251:3000:6h remaining,656783.0
+validation:251:4000:25%,539367.0
+validation:251:4000:50%,539367.0
+validation:251:4000:75%,539367.0
+validation:251:4000:24h remaining,539367.0
+validation:251:4000:6h remaining,539367.0
+validation:251:5000:25%,473815.0
+validation:251:5000:50%,473815.0
+validation:251:5000:75%,473815.0
+validation:251:5000:24h remaining,473815.0
+validation:251:5000:6h remaining,473815.0
+validation:251:10000:25%,290226.0
+validation:251:10000:50%,290226.0
+validation:251:10000:75%,290226.0
+validation:251:10000:24h remaining,290226.0
+validation:251:10000:6h remaining,290226.0
+validation:251:20000:25%,147141.0
+validation:251:20000:50%,147141.0
+validation:251:20000:75%,147141.0
+validation:251:20000:24h remaining,147141.0
+validation:251:20000:6h remaining,147141.0
+validation:251:30000:25%,90957.0
+validation:251:30000:50%,90957.0
+validation:251:30000:75%,90957.0
+validation:251:30000:24h remaining,90957.0
+validation:251:30000:6h remaining,90957.0
+validation:252:10:25%,82501026.0
+validation:252:10:50%,82501026.0
+validation:252:10:75%,82501026.0
+validation:252:10:24h remaining,82501026.0
+validation:252:10:6h remaining,82501026.0
+validation:252:20:25%,54000000.0
+validation:252:20:50%,54000000.0
+validation:252:20:75%,54000000.0
+validation:252:20:24h remaining,54000000.0
+validation:252:20:6h remaining,54000000.0
+validation:252:30:25%,35512489.0
+validation:252:30:50%,35512489.0
+validation:252:30:75%,35512489.0
+validation:252:30:24h remaining,35512489.0
+validation:252:30:6h remaining,35512489.0
+validation:252:40:25%,32336541.0
+validation:252:40:50%,32336541.0
+validation:252:40:75%,32336541.0
+validation:252:40:24h remaining,32336541.0
+validation:252:40:6h remaining,32336541.0
+validation:252:50:25%,31127526.0
+validation:252:50:50%,31127526.0
+validation:252:50:75%,31127526.0
+validation:252:50:24h remaining,31127526.0
+validation:252:50:6h remaining,31127526.0
+validation:252:100:25%,21862776.0
+validation:252:100:50%,21862776.0
+validation:252:100:75%,21862776.0
+validation:252:100:24h remaining,21862776.0
+validation:252:100:6h remaining,21862776.0
+validation:252:200:25%,12276370.0
+validation:252:200:50%,12276370.0
+validation:252:200:75%,12276370.0
+validation:252:200:24h remaining,12276370.0
+validation:252:200:6h remaining,12276370.0
+validation:252:300:25%,10533505.0
+validation:252:300:50%,10533505.0
+validation:252:300:75%,10533505.0
+validation:252:300:24h remaining,10533505.0
+validation:252:300:6h remaining,10533505.0
+validation:252:400:25%,9893106.0
+validation:252:400:50%,9893106.0
+validation:252:400:75%,9893106.0
+validation:252:400:24h remaining,9893106.0
+validation:252:400:6h remaining,9893106.0
+validation:252:500:25%,9685435.0
+validation:252:500:50%,9685435.0
+validation:252:500:75%,9685435.0
+validation:252:500:24h remaining,9685435.0
+validation:252:500:6h remaining,9685435.0
+validation:252:3000:25%,1618643.0
+validation:252:3000:50%,1618643.0
+validation:252:3000:75%,1618643.0
+validation:252:3000:24h remaining,1618643.0
+validation:252:3000:6h remaining,1618643.0
+validation:252:4000:25%,1311133.0
+validation:252:4000:50%,1311133.0
+validation:252:4000:75%,1311133.0
+validation:252:4000:24h remaining,1311133.0
+validation:252:4000:6h remaining,1311133.0
+validation:252:5000:25%,1147669.0
+validation:252:5000:50%,1147669.0
+validation:252:5000:75%,1147669.0
+validation:252:5000:24h remaining,1147669.0
+validation:252:5000:6h remaining,1147669.0
+validation:252:10000:25%,729466.0
+validation:252:10000:50%,729466.0
+validation:252:10000:75%,729466.0
+validation:252:10000:24h remaining,729466.0
+validation:252:10000:6h remaining,729466.0
+validation:252:20000:25%,335410.0
+validation:252:20000:50%,335410.0
+validation:252:20000:75%,335410.0
+validation:252:20000:24h remaining,335410.0
+validation:252:20000:6h remaining,335410.0
+validation:252:30000:25%,196285.0
+validation:252:30000:50%,196285.0
+validation:252:30000:75%,196285.0
+validation:252:30000:24h remaining,196285.0
+validation:252:30000:6h remaining,196285.0
+validation:253:10:25%,89080214.0
+validation:253:10:50%,89080214.0
+validation:253:10:75%,89080214.0
+validation:253:10:24h remaining,89080214.0
+validation:253:10:6h remaining,89080214.0
+validation:253:20:25%,68710908.0
+validation:253:20:50%,68710908.0
+validation:253:20:75%,68710908.0
+validation:253:20:24h remaining,68710908.0
+validation:253:20:6h remaining,68710908.0
+validation:253:30:25%,54100908.0
+validation:253:30:50%,54100908.0
+validation:253:30:75%,54100908.0
+validation:253:30:24h remaining,54100908.0
+validation:253:30:6h remaining,54100908.0
+validation:253:40:25%,39412758.0
+validation:253:40:50%,39412758.0
+validation:253:40:75%,39412758.0
+validation:253:40:24h remaining,39412758.0
+validation:253:40:6h remaining,39412758.0
+validation:253:50:25%,37160845.0
+validation:253:50:50%,37160845.0
+validation:253:50:75%,37160845.0
+validation:253:50:24h remaining,37160845.0
+validation:253:50:6h remaining,37160845.0
+validation:253:100:25%,26187209.0
+validation:253:100:50%,26187209.0
+validation:253:100:75%,26187209.0
+validation:253:100:24h remaining,26187209.0
+validation:253:100:6h remaining,26187209.0
+validation:253:200:25%,14694655.0
+validation:253:200:50%,14694655.0
+validation:253:200:75%,14694655.0
+validation:253:200:24h remaining,14694655.0
+validation:253:200:6h remaining,14694655.0
+validation:253:300:25%,13081003.0
+validation:253:300:50%,13081003.0
+validation:253:300:75%,13081003.0
+validation:253:300:24h remaining,13081003.0
+validation:253:300:6h remaining,13081003.0
+validation:253:400:25%,12439399.0
+validation:253:400:50%,12439399.0
+validation:253:400:75%,12439399.0
+validation:253:400:24h remaining,12439399.0
+validation:253:400:6h remaining,12439399.0
+validation:253:500:25%,12250933.0
+validation:253:500:50%,12250933.0
+validation:253:500:75%,12250933.0
+validation:253:500:24h remaining,12250933.0
+validation:253:500:6h remaining,12250933.0
+validation:253:3000:25%,3144228.0
+validation:253:3000:50%,3144228.0
+validation:253:3000:75%,3144228.0
+validation:253:3000:24h remaining,3144228.0
+validation:253:3000:6h remaining,3144228.0
+validation:253:4000:25%,2654035.0
+validation:253:4000:50%,2654035.0
+validation:253:4000:75%,2654035.0
+validation:253:4000:24h remaining,2654035.0
+validation:253:4000:6h remaining,2654035.0
+validation:253:5000:25%,2380057.0
+validation:253:5000:50%,2380057.0
+validation:253:5000:75%,2380057.0
+validation:253:5000:24h remaining,2380057.0
+validation:253:5000:6h remaining,2380057.0
+validation:253:10000:25%,1567253.0
+validation:253:10000:50%,1567253.0
+validation:253:10000:75%,1567253.0
+validation:253:10000:24h remaining,1567253.0
+validation:253:10000:6h remaining,1567253.0
+validation:253:20000:25%,925033.0
+validation:253:20000:50%,925033.0
+validation:253:20000:75%,925033.0
+validation:253:20000:24h remaining,925033.0
+validation:253:20000:6h remaining,925033.0
+validation:253:30000:25%,629725.0
+validation:253:30000:50%,629725.0
+validation:253:30000:75%,629725.0
+validation:253:30000:24h remaining,629725.0
+validation:253:30000:6h remaining,629725.0
+validation:254:10:25%,27141027.0
+validation:254:10:50%,27141027.0
+validation:254:10:75%,27141027.0
+validation:254:10:24h remaining,27141027.0
+validation:254:10:6h remaining,27141027.0
+validation:254:20:25%,13147140.0
+validation:254:20:50%,13147140.0
+validation:254:20:75%,13147140.0
+validation:254:20:24h remaining,13147140.0
+validation:254:20:6h remaining,13147140.0
+validation:254:30:25%,11363757.0
+validation:254:30:50%,11363757.0
+validation:254:30:75%,11363757.0
+validation:254:30:24h remaining,11363757.0
+validation:254:30:6h remaining,11363757.0
+validation:254:40:25%,8234594.0
+validation:254:40:50%,8234594.0
+validation:254:40:75%,8234594.0
+validation:254:40:24h remaining,8234594.0
+validation:254:40:6h remaining,8234594.0
+validation:254:50:25%,8040015.0
+validation:254:50:50%,8040015.0
+validation:254:50:75%,8040015.0
+validation:254:50:24h remaining,8040015.0
+validation:254:50:6h remaining,8040015.0
+validation:254:100:25%,5969595.0
+validation:254:100:50%,5969595.0
+validation:254:100:75%,5969595.0
+validation:254:100:24h remaining,5969595.0
+validation:254:100:6h remaining,5969595.0
+validation:254:200:25%,2880812.0
+validation:254:200:50%,2880812.0
+validation:254:200:75%,2880812.0
+validation:254:200:24h remaining,2880812.0
+validation:254:200:6h remaining,2880812.0
+validation:254:300:25%,2388671.0
+validation:254:300:50%,2388671.0
+validation:254:300:75%,2388671.0
+validation:254:300:24h remaining,2388671.0
+validation:254:300:6h remaining,2388671.0
+validation:254:400:25%,2078777.0
+validation:254:400:50%,2078777.0
+validation:254:400:75%,2078777.0
+validation:254:400:24h remaining,2078777.0
+validation:254:400:6h remaining,2078777.0
+validation:254:500:25%,2016664.0
+validation:254:500:50%,2016664.0
+validation:254:500:75%,2016664.0
+validation:254:500:24h remaining,2016664.0
+validation:254:500:6h remaining,2016664.0
+validation:254:3000:25%,639769.0
+validation:254:3000:50%,639769.0
+validation:254:3000:75%,639769.0
+validation:254:3000:24h remaining,639769.0
+validation:254:3000:6h remaining,639769.0
+validation:254:4000:25%,527623.0
+validation:254:4000:50%,527623.0
+validation:254:4000:75%,527623.0
+validation:254:4000:24h remaining,527623.0
+validation:254:4000:6h remaining,527623.0
+validation:254:5000:25%,469940.0
+validation:254:5000:50%,469940.0
+validation:254:5000:75%,469940.0
+validation:254:5000:24h remaining,469940.0
+validation:254:5000:6h remaining,469940.0
+validation:254:10000:25%,278900.0
+validation:254:10000:50%,278900.0
+validation:254:10000:75%,278900.0
+validation:254:10000:24h remaining,278900.0
+validation:254:10000:6h remaining,278900.0
+validation:254:20000:25%,138832.0
+validation:254:20000:50%,138832.0
+validation:254:20000:75%,138832.0
+validation:254:20000:24h remaining,138832.0
+validation:254:20000:6h remaining,138832.0
+validation:254:30000:25%,84453.0
+validation:254:30000:50%,84453.0
+validation:254:30000:75%,84453.0
+validation:254:30000:24h remaining,84453.0
+validation:254:30000:6h remaining,84453.0
+validation:255:10:25%,64000000.0
+validation:255:10:50%,64000000.0
+validation:255:10:75%,64000000.0
+validation:255:10:24h remaining,64000000.0
+validation:255:10:6h remaining,64000000.0
+validation:255:20:25%,41010808.0
+validation:255:20:50%,41010808.0
+validation:255:20:75%,41010808.0
+validation:255:20:24h remaining,41010808.0
+validation:255:20:6h remaining,41010808.0
+validation:255:30:25%,23935045.0
+validation:255:30:50%,23935045.0
+validation:255:30:75%,23935045.0
+validation:255:30:24h remaining,23935045.0
+validation:255:30:6h remaining,23935045.0
+validation:255:40:25%,18611429.0
+validation:255:40:50%,18611429.0
+validation:255:40:75%,18611429.0
+validation:255:40:24h remaining,18611429.0
+validation:255:40:6h remaining,18611429.0
+validation:255:50:25%,18559459.0
+validation:255:50:50%,18559459.0
+validation:255:50:75%,18559459.0
+validation:255:50:24h remaining,18559459.0
+validation:255:50:6h remaining,18559459.0
+validation:255:100:25%,12650629.0
+validation:255:100:50%,12650629.0
+validation:255:100:75%,12650629.0
+validation:255:100:24h remaining,12650629.0
+validation:255:100:6h remaining,12650629.0
+validation:255:200:25%,6434182.0
+validation:255:200:50%,6434182.0
+validation:255:200:75%,6434182.0
+validation:255:200:24h remaining,6434182.0
+validation:255:200:6h remaining,6434182.0
+validation:255:300:25%,5319895.0
+validation:255:300:50%,5319895.0
+validation:255:300:75%,5319895.0
+validation:255:300:24h remaining,5319895.0
+validation:255:300:6h remaining,5319895.0
+validation:255:400:25%,4869294.0
+validation:255:400:50%,4869294.0
+validation:255:400:75%,4869294.0
+validation:255:400:24h remaining,4869294.0
+validation:255:400:6h remaining,4869294.0
+validation:255:500:25%,4759875.0
+validation:255:500:50%,4759875.0
+validation:255:500:75%,4759875.0
+validation:255:500:24h remaining,4759875.0
+validation:255:500:6h remaining,4759875.0
+validation:255:3000:25%,1434677.0
+validation:255:3000:50%,1434677.0
+validation:255:3000:75%,1434677.0
+validation:255:3000:24h remaining,1434677.0
+validation:255:3000:6h remaining,1434677.0
+validation:255:4000:25%,1167757.0
+validation:255:4000:50%,1167757.0
+validation:255:4000:75%,1167757.0
+validation:255:4000:24h remaining,1167757.0
+validation:255:4000:6h remaining,1167757.0
+validation:255:5000:25%,1022971.0
+validation:255:5000:50%,1022971.0
+validation:255:5000:75%,1022971.0
+validation:255:5000:24h remaining,1022971.0
+validation:255:5000:6h remaining,1022971.0
+validation:255:10000:25%,637485.0
+validation:255:10000:50%,637485.0
+validation:255:10000:75%,637485.0
+validation:255:10000:24h remaining,637485.0
+validation:255:10000:6h remaining,637485.0
+validation:255:20000:25%,320540.0
+validation:255:20000:50%,320540.0
+validation:255:20000:75%,320540.0
+validation:255:20000:24h remaining,320540.0
+validation:255:20000:6h remaining,320540.0
+validation:255:30000:25%,202640.0
+validation:255:30000:50%,202640.0
+validation:255:30000:75%,202640.0
+validation:255:30000:24h remaining,202640.0
+validation:255:30000:6h remaining,202640.0
+validation:256:10:25%,54500000.0
+validation:256:10:50%,54500000.0
+validation:256:10:75%,54500000.0
+validation:256:10:24h remaining,54500000.0
+validation:256:10:6h remaining,54500000.0
+validation:256:20:25%,31003100.0
+validation:256:20:50%,31003100.0
+validation:256:20:75%,31003100.0
+validation:256:20:24h remaining,31003100.0
+validation:256:20:6h remaining,31003100.0
+validation:256:30:25%,25252005.0
+validation:256:30:50%,25252005.0
+validation:256:30:75%,25252005.0
+validation:256:30:24h remaining,25252005.0
+validation:256:30:6h remaining,25252005.0
+validation:256:40:25%,19291826.0
+validation:256:40:50%,19291826.0
+validation:256:40:75%,19291826.0
+validation:256:40:24h remaining,19291826.0
+validation:256:40:6h remaining,19291826.0
+validation:256:50:25%,16744148.0
+validation:256:50:50%,16744148.0
+validation:256:50:75%,16744148.0
+validation:256:50:24h remaining,16744148.0
+validation:256:50:6h remaining,16744148.0
+validation:256:100:25%,14327625.0
+validation:256:100:50%,14327625.0
+validation:256:100:75%,14327625.0
+validation:256:100:24h remaining,14327625.0
+validation:256:100:6h remaining,14327625.0
+validation:256:200:25%,5705279.0
+validation:256:200:50%,5705279.0
+validation:256:200:75%,5705279.0
+validation:256:200:24h remaining,5705279.0
+validation:256:200:6h remaining,5705279.0
+validation:256:300:25%,4187082.0
+validation:256:300:50%,4187082.0
+validation:256:300:75%,4187082.0
+validation:256:300:24h remaining,4187082.0
+validation:256:300:6h remaining,4187082.0
+validation:256:400:25%,3567183.0
+validation:256:400:50%,3567183.0
+validation:256:400:75%,3567183.0
+validation:256:400:24h remaining,3567183.0
+validation:256:400:6h remaining,3567183.0
+validation:256:500:25%,3411538.0
+validation:256:500:50%,3411538.0
+validation:256:500:75%,3411538.0
+validation:256:500:24h remaining,3411538.0
+validation:256:500:6h remaining,3411538.0
+validation:256:3000:25%,971612.0
+validation:256:3000:50%,971612.0
+validation:256:3000:75%,971612.0
+validation:256:3000:24h remaining,971612.0
+validation:256:3000:6h remaining,971612.0
+validation:256:4000:25%,789417.0
+validation:256:4000:50%,789417.0
+validation:256:4000:75%,789417.0
+validation:256:4000:24h remaining,789417.0
+validation:256:4000:6h remaining,789417.0
+validation:256:5000:25%,690686.0
+validation:256:5000:50%,690686.0
+validation:256:5000:75%,690686.0
+validation:256:5000:24h remaining,690686.0
+validation:256:5000:6h remaining,690686.0
+validation:256:10000:25%,407862.0
+validation:256:10000:50%,407862.0
+validation:256:10000:75%,407862.0
+validation:256:10000:24h remaining,407862.0
+validation:256:10000:6h remaining,407862.0
+validation:256:20000:25%,199285.0
+validation:256:20000:50%,199285.0
+validation:256:20000:75%,199285.0
+validation:256:20000:24h remaining,199285.0
+validation:256:20000:6h remaining,199285.0
+validation:256:30000:25%,123749.0
+validation:256:30000:50%,123749.0
+validation:256:30000:75%,123749.0
+validation:256:30000:24h remaining,123749.0
+validation:256:30000:6h remaining,123749.0
+validation:257:10:25%,68888888.0
+validation:257:10:50%,68888888.0
+validation:257:10:75%,68888888.0
+validation:257:10:24h remaining,68888888.0
+validation:257:10:6h remaining,68888888.0
+validation:257:20:25%,40001103.0
+validation:257:20:50%,40001103.0
+validation:257:20:75%,40001103.0
+validation:257:20:24h remaining,40001103.0
+validation:257:20:6h remaining,40001103.0
+validation:257:30:25%,24060517.0
+validation:257:30:50%,24060517.0
+validation:257:30:75%,24060517.0
+validation:257:30:24h remaining,24060517.0
+validation:257:30:6h remaining,24060517.0
+validation:257:40:25%,19912222.0
+validation:257:40:50%,19912222.0
+validation:257:40:75%,19912222.0
+validation:257:40:24h remaining,19912222.0
+validation:257:40:6h remaining,19912222.0
+validation:257:50:25%,19253776.0
+validation:257:50:50%,19253776.0
+validation:257:50:75%,19253776.0
+validation:257:50:24h remaining,19253776.0
+validation:257:50:6h remaining,19253776.0
+validation:257:100:25%,11244583.0
+validation:257:100:50%,11244583.0
+validation:257:100:75%,11244583.0
+validation:257:100:24h remaining,11244583.0
+validation:257:100:6h remaining,11244583.0
+validation:257:200:25%,7256753.0
+validation:257:200:50%,7256753.0
+validation:257:200:75%,7256753.0
+validation:257:200:24h remaining,7256753.0
+validation:257:200:6h remaining,7256753.0
+validation:257:300:25%,6037785.0
+validation:257:300:50%,6037785.0
+validation:257:300:75%,6037785.0
+validation:257:300:24h remaining,6037785.0
+validation:257:300:6h remaining,6037785.0
+validation:257:400:25%,5335392.0
+validation:257:400:50%,5335392.0
+validation:257:400:75%,5335392.0
+validation:257:400:24h remaining,5335392.0
+validation:257:400:6h remaining,5335392.0
+validation:257:500:25%,5093086.0
+validation:257:500:50%,5093086.0
+validation:257:500:75%,5093086.0
+validation:257:500:24h remaining,5093086.0
+validation:257:500:6h remaining,5093086.0
+validation:257:3000:25%,2007095.0
+validation:257:3000:50%,2007095.0
+validation:257:3000:75%,2007095.0
+validation:257:3000:24h remaining,2007095.0
+validation:257:3000:6h remaining,2007095.0
+validation:257:4000:25%,1592127.0
+validation:257:4000:50%,1592127.0
+validation:257:4000:75%,1592127.0
+validation:257:4000:24h remaining,1592127.0
+validation:257:4000:6h remaining,1592127.0
+validation:257:5000:25%,1375338.0
+validation:257:5000:50%,1375338.0
+validation:257:5000:75%,1375338.0
+validation:257:5000:24h remaining,1375338.0
+validation:257:5000:6h remaining,1375338.0
+validation:257:10000:25%,768796.0
+validation:257:10000:50%,768796.0
+validation:257:10000:75%,768796.0
+validation:257:10000:24h remaining,768796.0
+validation:257:10000:6h remaining,768796.0
+validation:257:20000:25%,390648.0
+validation:257:20000:50%,390648.0
+validation:257:20000:75%,390648.0
+validation:257:20000:24h remaining,390648.0
+validation:257:20000:6h remaining,390648.0
+validation:257:30000:25%,227688.0
+validation:257:30000:50%,227688.0
+validation:257:30000:75%,227688.0
+validation:257:30000:24h remaining,227688.0
+validation:257:30000:6h remaining,227688.0
+validation:258:10:25%,49030410.0
+validation:258:10:50%,49030410.0
+validation:258:10:75%,49030410.0
+validation:258:10:24h remaining,49030410.0
+validation:258:10:6h remaining,49030410.0
+validation:258:20:25%,24680903.0
+validation:258:20:50%,24680903.0
+validation:258:20:75%,24680903.0
+validation:258:20:24h remaining,24680903.0
+validation:258:20:6h remaining,24680903.0
+validation:258:30:25%,18800000.0
+validation:258:30:50%,18800000.0
+validation:258:30:75%,18800000.0
+validation:258:30:24h remaining,18800000.0
+validation:258:30:6h remaining,18800000.0
+validation:258:40:25%,14548578.0
+validation:258:40:50%,14548578.0
+validation:258:40:75%,14548578.0
+validation:258:40:24h remaining,14548578.0
+validation:258:40:6h remaining,14548578.0
+validation:258:50:25%,13617638.0
+validation:258:50:50%,13617638.0
+validation:258:50:75%,13617638.0
+validation:258:50:24h remaining,13617638.0
+validation:258:50:6h remaining,13617638.0
+validation:258:100:25%,12465274.0
+validation:258:100:50%,12465274.0
+validation:258:100:75%,12465274.0
+validation:258:100:24h remaining,12465274.0
+validation:258:100:6h remaining,12465274.0
+validation:258:200:25%,5769470.0
+validation:258:200:50%,5769470.0
+validation:258:200:75%,5769470.0
+validation:258:200:24h remaining,5769470.0
+validation:258:200:6h remaining,5769470.0
+validation:258:300:25%,4567814.0
+validation:258:300:50%,4567814.0
+validation:258:300:75%,4567814.0
+validation:258:300:24h remaining,4567814.0
+validation:258:300:6h remaining,4567814.0
+validation:258:400:25%,4075092.0
+validation:258:400:50%,4075092.0
+validation:258:400:75%,4075092.0
+validation:258:400:24h remaining,4075092.0
+validation:258:400:6h remaining,4075092.0
+validation:258:500:25%,3911209.0
+validation:258:500:50%,3911209.0
+validation:258:500:75%,3911209.0
+validation:258:500:24h remaining,3911209.0
+validation:258:500:6h remaining,3911209.0
+validation:258:3000:25%,1444474.0
+validation:258:3000:50%,1444474.0
+validation:258:3000:75%,1444474.0
+validation:258:3000:24h remaining,1444474.0
+validation:258:3000:6h remaining,1444474.0
+validation:258:4000:25%,1203740.0
+validation:258:4000:50%,1203740.0
+validation:258:4000:75%,1203740.0
+validation:258:4000:24h remaining,1203740.0
+validation:258:4000:6h remaining,1203740.0
+validation:258:5000:25%,1066591.0
+validation:258:5000:50%,1066591.0
+validation:258:5000:75%,1066591.0
+validation:258:5000:24h remaining,1066591.0
+validation:258:5000:6h remaining,1066591.0
+validation:258:10000:25%,718842.0
+validation:258:10000:50%,718842.0
+validation:258:10000:75%,718842.0
+validation:258:10000:24h remaining,718842.0
+validation:258:10000:6h remaining,718842.0
+validation:258:20000:25%,399534.0
+validation:258:20000:50%,399534.0
+validation:258:20000:75%,399534.0
+validation:258:20000:24h remaining,399534.0
+validation:258:20000:6h remaining,399534.0
+validation:258:30000:25%,263700.0
+validation:258:30000:50%,263700.0
+validation:258:30000:75%,263700.0
+validation:258:30000:24h remaining,263700.0
+validation:258:30000:6h remaining,263700.0
+validation:259:10:25%,60001119.0
+validation:259:10:50%,60001119.0
+validation:259:10:75%,60001119.0
+validation:259:10:24h remaining,60001119.0
+validation:259:10:6h remaining,60001119.0
+validation:259:20:25%,39000219.0
+validation:259:20:50%,39000219.0
+validation:259:20:75%,39000219.0
+validation:259:20:24h remaining,39000219.0
+validation:259:20:6h remaining,39000219.0
+validation:259:30:25%,33830136.0
+validation:259:30:50%,33830136.0
+validation:259:30:75%,33830136.0
+validation:259:30:24h remaining,33830136.0
+validation:259:30:6h remaining,33830136.0
+validation:259:40:25%,25253099.0
+validation:259:40:50%,25253099.0
+validation:259:40:75%,25253099.0
+validation:259:40:24h remaining,25253099.0
+validation:259:40:6h remaining,25253099.0
+validation:259:50:25%,21000219.0
+validation:259:50:50%,21000219.0
+validation:259:50:75%,21000219.0
+validation:259:50:24h remaining,21000219.0
+validation:259:50:6h remaining,21000219.0
+validation:259:100:25%,15741310.0
+validation:259:100:50%,15741310.0
+validation:259:100:75%,15741310.0
+validation:259:100:24h remaining,15741310.0
+validation:259:100:6h remaining,15741310.0
+validation:259:200:25%,7763823.0
+validation:259:200:50%,7763823.0
+validation:259:200:75%,7763823.0
+validation:259:200:24h remaining,7763823.0
+validation:259:200:6h remaining,7763823.0
+validation:259:300:25%,6114143.0
+validation:259:300:50%,6114143.0
+validation:259:300:75%,6114143.0
+validation:259:300:24h remaining,6114143.0
+validation:259:300:6h remaining,6114143.0
+validation:259:400:25%,5424669.0
+validation:259:400:50%,5424669.0
+validation:259:400:75%,5424669.0
+validation:259:400:24h remaining,5424669.0
+validation:259:400:6h remaining,5424669.0
+validation:259:500:25%,5123259.0
+validation:259:500:50%,5123259.0
+validation:259:500:75%,5123259.0
+validation:259:500:24h remaining,5123259.0
+validation:259:500:6h remaining,5123259.0
+validation:259:3000:25%,1620090.0
+validation:259:3000:50%,1620090.0
+validation:259:3000:75%,1620090.0
+validation:259:3000:24h remaining,1620090.0
+validation:259:3000:6h remaining,1620090.0
+validation:259:4000:25%,1314332.0
+validation:259:4000:50%,1314332.0
+validation:259:4000:75%,1314332.0
+validation:259:4000:24h remaining,1314332.0
+validation:259:4000:6h remaining,1314332.0
+validation:259:5000:25%,1159900.0
+validation:259:5000:50%,1159900.0
+validation:259:5000:75%,1159900.0
+validation:259:5000:24h remaining,1159900.0
+validation:259:5000:6h remaining,1159900.0
+validation:259:10000:25%,732160.0
+validation:259:10000:50%,732160.0
+validation:259:10000:75%,732160.0
+validation:259:10000:24h remaining,732160.0
+validation:259:10000:6h remaining,732160.0
+validation:259:20000:25%,360975.0
+validation:259:20000:50%,360975.0
+validation:259:20000:75%,360975.0
+validation:259:20000:24h remaining,360975.0
+validation:259:20000:6h remaining,360975.0
+validation:259:30000:25%,221775.0
+validation:259:30000:50%,221775.0
+validation:259:30000:75%,221775.0
+validation:259:30000:24h remaining,221775.0
+validation:259:30000:6h remaining,221775.0
+validation:260:10:25%,16060616.0
+validation:260:10:50%,16060616.0
+validation:260:10:75%,16060616.0
+validation:260:10:24h remaining,16060616.0
+validation:260:10:6h remaining,16060616.0
+validation:260:20:25%,7373737.0
+validation:260:20:50%,7373737.0
+validation:260:20:75%,7373737.0
+validation:260:20:24h remaining,7373737.0
+validation:260:20:6h remaining,7373737.0
+validation:260:30:25%,4227687.0
+validation:260:30:50%,4227687.0
+validation:260:30:75%,4227687.0
+validation:260:30:24h remaining,4227687.0
+validation:260:30:6h remaining,4227687.0
+validation:260:40:25%,3486767.0
+validation:260:40:50%,3486767.0
+validation:260:40:75%,3486767.0
+validation:260:40:24h remaining,3486767.0
+validation:260:40:6h remaining,3486767.0
+validation:260:50:25%,3243703.0
+validation:260:50:50%,3243703.0
+validation:260:50:75%,3243703.0
+validation:260:50:24h remaining,3243703.0
+validation:260:50:6h remaining,3243703.0
+validation:260:100:25%,2297963.0
+validation:260:100:50%,2297963.0
+validation:260:100:75%,2297963.0
+validation:260:100:24h remaining,2297963.0
+validation:260:100:6h remaining,2297963.0
+validation:260:200:25%,1550465.0
+validation:260:200:50%,1550465.0
+validation:260:200:75%,1550465.0
+validation:260:200:24h remaining,1550465.0
+validation:260:200:6h remaining,1550465.0
+validation:260:300:25%,1398640.0
+validation:260:300:50%,1398640.0
+validation:260:300:75%,1398640.0
+validation:260:300:24h remaining,1398640.0
+validation:260:300:6h remaining,1398640.0
+validation:260:400:25%,1328247.0
+validation:260:400:50%,1328247.0
+validation:260:400:75%,1328247.0
+validation:260:400:24h remaining,1328247.0
+validation:260:400:6h remaining,1328247.0
+validation:260:500:25%,1295121.0
+validation:260:500:50%,1295121.0
+validation:260:500:75%,1295121.0
+validation:260:500:24h remaining,1295121.0
+validation:260:500:6h remaining,1295121.0
+validation:260:3000:25%,634588.0
+validation:260:3000:50%,634588.0
+validation:260:3000:75%,634588.0
+validation:260:3000:24h remaining,634588.0
+validation:260:3000:6h remaining,634588.0
+validation:260:4000:25%,528460.0
+validation:260:4000:50%,528460.0
+validation:260:4000:75%,528460.0
+validation:260:4000:24h remaining,528460.0
+validation:260:4000:6h remaining,528460.0
+validation:260:5000:25%,471544.0
+validation:260:5000:50%,471544.0
+validation:260:5000:75%,471544.0
+validation:260:5000:24h remaining,471544.0
+validation:260:5000:6h remaining,471544.0
+validation:260:10000:25%,290918.0
+validation:260:10000:50%,290918.0
+validation:260:10000:75%,290918.0
+validation:260:10000:24h remaining,290918.0
+validation:260:10000:6h remaining,290918.0
+validation:260:20000:25%,143145.0
+validation:260:20000:50%,143145.0
+validation:260:20000:75%,143145.0
+validation:260:20000:24h remaining,143145.0
+validation:260:20000:6h remaining,143145.0
+validation:260:30000:25%,82545.0
+validation:260:30000:50%,82545.0
+validation:260:30000:75%,82545.0
+validation:260:30000:24h remaining,82545.0
+validation:260:30000:6h remaining,82545.0
+validation:261:10:25%,38888888.0
+validation:261:10:75%,38888888.0
+validation:261:10:24h remaining,38888888.0
+validation:261:10:6h remaining,38888888.0
+validation:261:20:25%,25000052.0
+validation:261:20:75%,25000052.0
+validation:261:20:24h remaining,25000052.0
+validation:261:20:6h remaining,25000052.0
+validation:261:30:25%,20400519.0
+validation:261:30:75%,20400519.0
+validation:261:30:24h remaining,20400519.0
+validation:261:30:6h remaining,20400519.0
+validation:261:40:25%,17807915.0
+validation:261:40:75%,17807915.0
+validation:261:40:24h remaining,17807915.0
+validation:261:40:6h remaining,17807915.0
+validation:261:50:25%,17521891.0
+validation:261:50:75%,17521891.0
+validation:261:50:24h remaining,17521891.0
+validation:261:50:6h remaining,17521891.0
+validation:261:100:25%,13879076.0
+validation:261:100:75%,13879076.0
+validation:261:100:24h remaining,13879076.0
+validation:261:100:6h remaining,13879076.0
+validation:261:200:25%,5633540.0
+validation:261:200:75%,5633540.0
+validation:261:200:24h remaining,5633540.0
+validation:261:200:6h remaining,5633540.0
+validation:261:300:25%,5025407.0
+validation:261:300:75%,5025407.0
+validation:261:300:24h remaining,5025407.0
+validation:261:300:6h remaining,5025407.0
+validation:261:400:25%,4856473.0
+validation:261:400:75%,4856473.0
+validation:261:400:24h remaining,4856473.0
+validation:261:400:6h remaining,4856473.0
+validation:261:500:25%,4805605.0
+validation:261:500:75%,4805605.0
+validation:261:500:24h remaining,4805605.0
+validation:261:500:6h remaining,4805605.0
+validation:261:3000:25%,1026695.0
+validation:261:3000:75%,1026695.0
+validation:261:3000:24h remaining,1026695.0
+validation:261:3000:6h remaining,1026695.0
+validation:261:4000:25%,846978.0
+validation:261:4000:75%,846978.0
+validation:261:4000:24h remaining,846978.0
+validation:261:4000:6h remaining,846978.0
+validation:261:5000:25%,732625.0
+validation:261:5000:75%,732625.0
+validation:261:5000:24h remaining,732625.0
+validation:261:5000:6h remaining,732625.0
+validation:261:10000:25%,442697.0
+validation:261:10000:75%,442697.0
+validation:261:10000:24h remaining,442697.0
+validation:261:10000:6h remaining,442697.0
+validation:261:20000:25%,214215.0
+validation:261:20000:75%,214215.0
+validation:261:20000:24h remaining,214215.0
+validation:261:20000:6h remaining,214215.0
+validation:261:30000:25%,132237.0
+validation:261:30000:75%,132237.0
+validation:261:30000:24h remaining,132237.0
+validation:261:30000:6h remaining,132237.0
+validation:262:10:25%,27486486.0
+validation:262:10:50%,27486486.0
+validation:262:10:75%,27486486.0
+validation:262:10:24h remaining,27486486.0
+validation:262:10:6h remaining,27486486.0
+validation:262:20:25%,17748027.0
+validation:262:20:50%,17748027.0
+validation:262:20:75%,17748027.0
+validation:262:20:24h remaining,17748027.0
+validation:262:20:6h remaining,17748027.0
+validation:262:30:25%,8503272.0
+validation:262:30:50%,8503272.0
+validation:262:30:75%,8503272.0
+validation:262:30:24h remaining,8503272.0
+validation:262:30:6h remaining,8503272.0
+validation:262:40:25%,7337112.0
+validation:262:40:50%,7337112.0
+validation:262:40:75%,7337112.0
+validation:262:40:24h remaining,7337112.0
+validation:262:40:6h remaining,7337112.0
+validation:262:50:25%,7036002.0
+validation:262:50:50%,7036002.0
+validation:262:50:75%,7036002.0
+validation:262:50:24h remaining,7036002.0
+validation:262:50:6h remaining,7036002.0
+validation:262:100:25%,4444692.0
+validation:262:100:50%,4444692.0
+validation:262:100:75%,4444692.0
+validation:262:100:24h remaining,4444692.0
+validation:262:100:6h remaining,4444692.0
+validation:262:200:25%,2919312.0
+validation:262:200:50%,2919312.0
+validation:262:200:75%,2919312.0
+validation:262:200:24h remaining,2919312.0
+validation:262:200:6h remaining,2919312.0
+validation:262:300:25%,2610424.0
+validation:262:300:50%,2610424.0
+validation:262:300:75%,2610424.0
+validation:262:300:24h remaining,2610424.0
+validation:262:300:6h remaining,2610424.0
+validation:262:400:25%,2446114.0
+validation:262:400:50%,2446114.0
+validation:262:400:75%,2446114.0
+validation:262:400:24h remaining,2446114.0
+validation:262:400:6h remaining,2446114.0
+validation:262:500:25%,2389510.0
+validation:262:500:50%,2389510.0
+validation:262:500:75%,2389510.0
+validation:262:500:24h remaining,2389510.0
+validation:262:500:6h remaining,2389510.0
+validation:262:3000:25%,1214954.0
+validation:262:3000:50%,1214954.0
+validation:262:3000:75%,1214954.0
+validation:262:3000:24h remaining,1214954.0
+validation:262:3000:6h remaining,1214954.0
+validation:262:4000:25%,1037061.0
+validation:262:4000:50%,1037061.0
+validation:262:4000:75%,1037061.0
+validation:262:4000:24h remaining,1037061.0
+validation:262:4000:6h remaining,1037061.0
+validation:262:5000:25%,939124.0
+validation:262:5000:50%,939124.0
+validation:262:5000:75%,939124.0
+validation:262:5000:24h remaining,939124.0
+validation:262:5000:6h remaining,939124.0
+validation:262:10000:25%,647530.0
+validation:262:10000:50%,647530.0
+validation:262:10000:75%,647530.0
+validation:262:10000:24h remaining,647530.0
+validation:262:10000:6h remaining,647530.0
+validation:262:20000:25%,383965.0
+validation:262:20000:50%,383965.0
+validation:262:20000:75%,383965.0
+validation:262:20000:24h remaining,383965.0
+validation:262:20000:6h remaining,383965.0
+validation:262:30000:25%,264961.0
+validation:262:30000:50%,264961.0
+validation:262:30000:75%,264961.0
+validation:262:30000:24h remaining,264961.0
+validation:262:30000:6h remaining,264961.0
+validation:263:10:25%,48888888.0
+validation:263:10:50%,48888888.0
+validation:263:10:75%,48888888.0
+validation:263:10:24h remaining,48888888.0
+validation:263:10:6h remaining,48888888.0
+validation:263:20:25%,17658142.0
+validation:263:20:50%,17658142.0
+validation:263:20:75%,17658142.0
+validation:263:20:24h remaining,17658142.0
+validation:263:20:6h remaining,17658142.0
+validation:263:30:25%,11410162.0
+validation:263:30:50%,11410162.0
+validation:263:30:75%,11410162.0
+validation:263:30:24h remaining,11410162.0
+validation:263:30:6h remaining,11410162.0
+validation:263:40:25%,9180130.0
+validation:263:40:50%,9180130.0
+validation:263:40:75%,9180130.0
+validation:263:40:24h remaining,9180130.0
+validation:263:40:6h remaining,9180130.0
+validation:263:50:25%,8380017.0
+validation:263:50:50%,8380017.0
+validation:263:50:75%,8380017.0
+validation:263:50:24h remaining,8380017.0
+validation:263:50:6h remaining,8380017.0
+validation:263:100:25%,6725553.0
+validation:263:100:50%,6725553.0
+validation:263:100:75%,6725553.0
+validation:263:100:24h remaining,6725553.0
+validation:263:100:6h remaining,6725553.0
+validation:263:200:25%,3317291.0
+validation:263:200:50%,3317291.0
+validation:263:200:75%,3317291.0
+validation:263:200:24h remaining,3317291.0
+validation:263:200:6h remaining,3317291.0
+validation:263:300:25%,2756045.0
+validation:263:300:50%,2756045.0
+validation:263:300:75%,2756045.0
+validation:263:300:24h remaining,2756045.0
+validation:263:300:6h remaining,2756045.0
+validation:263:400:25%,2493473.0
+validation:263:400:50%,2493473.0
+validation:263:400:75%,2493473.0
+validation:263:400:24h remaining,2493473.0
+validation:263:400:6h remaining,2493473.0
+validation:263:500:25%,2398714.0
+validation:263:500:50%,2398714.0
+validation:263:500:75%,2398714.0
+validation:263:500:24h remaining,2398714.0
+validation:263:500:6h remaining,2398714.0
+validation:263:3000:25%,1001075.0
+validation:263:3000:50%,1001075.0
+validation:263:3000:75%,1001075.0
+validation:263:3000:24h remaining,1001075.0
+validation:263:3000:6h remaining,1001075.0
+validation:263:4000:25%,853837.0
+validation:263:4000:50%,853837.0
+validation:263:4000:75%,853837.0
+validation:263:4000:24h remaining,853837.0
+validation:263:4000:6h remaining,853837.0
+validation:263:5000:25%,771218.0
+validation:263:5000:50%,771218.0
+validation:263:5000:75%,771218.0
+validation:263:5000:24h remaining,771218.0
+validation:263:5000:6h remaining,771218.0
+validation:263:10000:25%,520840.0
+validation:263:10000:50%,520840.0
+validation:263:10000:75%,520840.0
+validation:263:10000:24h remaining,520840.0
+validation:263:10000:6h remaining,520840.0
+validation:263:20000:25%,312512.0
+validation:263:20000:50%,312512.0
+validation:263:20000:75%,312512.0
+validation:263:20000:24h remaining,312512.0
+validation:263:20000:6h remaining,312512.0
+validation:263:30000:25%,219452.0
+validation:263:30000:50%,219452.0
+validation:263:30000:75%,219452.0
+validation:263:30000:24h remaining,219452.0
+validation:263:30000:6h remaining,219452.0
+validation:264:10:25%,48907297.0
+validation:264:10:50%,48907297.0
+validation:264:10:75%,48907297.0
+validation:264:10:24h remaining,48907297.0
+validation:264:10:6h remaining,48907297.0
+validation:264:20:25%,26390706.0
+validation:264:20:50%,26390706.0
+validation:264:20:75%,26390706.0
+validation:264:20:24h remaining,26390706.0
+validation:264:20:6h remaining,26390706.0
+validation:264:30:25%,24213762.0
+validation:264:30:50%,24213762.0
+validation:264:30:75%,24213762.0
+validation:264:30:24h remaining,24213762.0
+validation:264:30:6h remaining,24213762.0
+validation:264:40:25%,21026825.0
+validation:264:40:50%,21026825.0
+validation:264:40:75%,21026825.0
+validation:264:40:24h remaining,21026825.0
+validation:264:40:6h remaining,21026825.0
+validation:264:50:25%,20240011.0
+validation:264:50:50%,20240011.0
+validation:264:50:75%,20240011.0
+validation:264:50:24h remaining,20240011.0
+validation:264:50:6h remaining,20240011.0
+validation:264:100:25%,18697750.0
+validation:264:100:50%,18697750.0
+validation:264:100:75%,18697750.0
+validation:264:100:24h remaining,18697750.0
+validation:264:100:6h remaining,18697750.0
+validation:264:200:25%,7057988.0
+validation:264:200:50%,7057988.0
+validation:264:200:75%,7057988.0
+validation:264:200:24h remaining,7057988.0
+validation:264:200:6h remaining,7057988.0
+validation:264:300:25%,5635477.0
+validation:264:300:50%,5635477.0
+validation:264:300:75%,5635477.0
+validation:264:300:24h remaining,5635477.0
+validation:264:300:6h remaining,5635477.0
+validation:264:400:25%,4907250.0
+validation:264:400:50%,4907250.0
+validation:264:400:75%,4907250.0
+validation:264:400:24h remaining,4907250.0
+validation:264:400:6h remaining,4907250.0
+validation:264:500:25%,4715325.0
+validation:264:500:50%,4715325.0
+validation:264:500:75%,4715325.0
+validation:264:500:24h remaining,4715325.0
+validation:264:500:6h remaining,4715325.0
+validation:264:3000:25%,831910.0
+validation:264:3000:50%,831910.0
+validation:264:3000:75%,831910.0
+validation:264:3000:24h remaining,831910.0
+validation:264:3000:6h remaining,831910.0
+validation:264:4000:25%,674401.0
+validation:264:4000:50%,674401.0
+validation:264:4000:75%,674401.0
+validation:264:4000:24h remaining,674401.0
+validation:264:4000:6h remaining,674401.0
+validation:264:5000:25%,592137.0
+validation:264:5000:50%,592137.0
+validation:264:5000:75%,592137.0
+validation:264:5000:24h remaining,592137.0
+validation:264:5000:6h remaining,592137.0
+validation:264:10000:25%,372915.0
+validation:264:10000:50%,372915.0
+validation:264:10000:75%,372915.0
+validation:264:10000:24h remaining,372915.0
+validation:264:10000:6h remaining,372915.0
+validation:264:20000:25%,177076.0
+validation:264:20000:50%,177076.0
+validation:264:20000:75%,177076.0
+validation:264:20000:24h remaining,177076.0
+validation:264:20000:6h remaining,177076.0
+validation:264:30000:25%,103050.0
+validation:264:30000:50%,103050.0
+validation:264:30000:75%,103050.0
+validation:264:30000:24h remaining,103050.0
+validation:264:30000:6h remaining,103050.0
+validation:265:10:25%,88012697.0
+validation:265:10:50%,88012697.0
+validation:265:10:75%,88012697.0
+validation:265:10:24h remaining,88012697.0
+validation:265:10:6h remaining,88012697.0
+validation:265:20:25%,44901656.0
+validation:265:20:50%,44901656.0
+validation:265:20:75%,44901656.0
+validation:265:20:24h remaining,44901656.0
+validation:265:20:6h remaining,44901656.0
+validation:265:30:25%,31352223.0
+validation:265:30:50%,31352223.0
+validation:265:30:75%,31352223.0
+validation:265:30:24h remaining,31352223.0
+validation:265:30:6h remaining,31352223.0
+validation:265:40:25%,26372950.0
+validation:265:40:50%,26372950.0
+validation:265:40:75%,26372950.0
+validation:265:40:24h remaining,26372950.0
+validation:265:40:6h remaining,26372950.0
+validation:265:50:25%,25948877.0
+validation:265:50:50%,25948877.0
+validation:265:50:75%,25948877.0
+validation:265:50:24h remaining,25948877.0
+validation:265:50:6h remaining,25948877.0
+validation:265:100:25%,15668751.0
+validation:265:100:50%,15668751.0
+validation:265:100:75%,15668751.0
+validation:265:100:24h remaining,15668751.0
+validation:265:100:6h remaining,15668751.0
+validation:265:200:25%,9312069.0
+validation:265:200:50%,9312069.0
+validation:265:200:75%,9312069.0
+validation:265:200:24h remaining,9312069.0
+validation:265:200:6h remaining,9312069.0
+validation:265:300:25%,8259687.0
+validation:265:300:50%,8259687.0
+validation:265:300:75%,8259687.0
+validation:265:300:24h remaining,8259687.0
+validation:265:300:6h remaining,8259687.0
+validation:265:400:25%,7875064.0
+validation:265:400:50%,7875064.0
+validation:265:400:75%,7875064.0
+validation:265:400:24h remaining,7875064.0
+validation:265:400:6h remaining,7875064.0
+validation:265:500:25%,7768542.0
+validation:265:500:50%,7768542.0
+validation:265:500:75%,7768542.0
+validation:265:500:24h remaining,7768542.0
+validation:265:500:6h remaining,7768542.0
+validation:265:3000:25%,1906810.0
+validation:265:3000:50%,1906810.0
+validation:265:3000:75%,1906810.0
+validation:265:3000:24h remaining,1906810.0
+validation:265:3000:6h remaining,1906810.0
+validation:265:4000:25%,1592423.0
+validation:265:4000:50%,1592423.0
+validation:265:4000:75%,1592423.0
+validation:265:4000:24h remaining,1592423.0
+validation:265:4000:6h remaining,1592423.0
+validation:265:5000:25%,1428859.0
+validation:265:5000:50%,1428859.0
+validation:265:5000:75%,1428859.0
+validation:265:5000:24h remaining,1428859.0
+validation:265:5000:6h remaining,1428859.0
+validation:265:10000:25%,959080.0
+validation:265:10000:50%,959080.0
+validation:265:10000:75%,959080.0
+validation:265:10000:24h remaining,959080.0
+validation:265:10000:6h remaining,959080.0
+validation:265:20000:25%,579877.0
+validation:265:20000:50%,579877.0
+validation:265:20000:75%,579877.0
+validation:265:20000:24h remaining,579877.0
+validation:265:20000:6h remaining,579877.0
+validation:265:30000:25%,410445.0
+validation:265:30000:50%,410445.0
+validation:265:30000:75%,410445.0
+validation:265:30000:24h remaining,410445.0
+validation:265:30000:6h remaining,410445.0
+validation:266:10:25%,61391263.0
+validation:266:10:50%,61391263.0
+validation:266:10:75%,61391263.0
+validation:266:10:24h remaining,61391263.0
+validation:266:10:6h remaining,61391263.0
+validation:266:20:25%,33532755.0
+validation:266:20:50%,33532755.0
+validation:266:20:75%,33532755.0
+validation:266:20:24h remaining,33532755.0
+validation:266:20:6h remaining,33532755.0
+validation:266:30:25%,17320191.0
+validation:266:30:50%,17320191.0
+validation:266:30:75%,17320191.0
+validation:266:30:24h remaining,17320191.0
+validation:266:30:6h remaining,17320191.0
+validation:266:40:25%,13351234.0
+validation:266:40:50%,13351234.0
+validation:266:40:75%,13351234.0
+validation:266:40:24h remaining,13351234.0
+validation:266:40:6h remaining,13351234.0
+validation:266:50:25%,12510977.0
+validation:266:50:50%,12510977.0
+validation:266:50:75%,12510977.0
+validation:266:50:24h remaining,12510977.0
+validation:266:50:6h remaining,12510977.0
+validation:266:100:25%,8888888.0
+validation:266:100:50%,8888888.0
+validation:266:100:75%,8888888.0
+validation:266:100:24h remaining,8888888.0
+validation:266:100:6h remaining,8888888.0
+validation:266:200:25%,6084482.0
+validation:266:200:50%,6084482.0
+validation:266:200:75%,6084482.0
+validation:266:200:24h remaining,6084482.0
+validation:266:200:6h remaining,6084482.0
+validation:266:300:25%,5369668.0
+validation:266:300:50%,5369668.0
+validation:266:300:75%,5369668.0
+validation:266:300:24h remaining,5369668.0
+validation:266:300:6h remaining,5369668.0
+validation:266:400:25%,4903234.0
+validation:266:400:50%,4903234.0
+validation:266:400:75%,4903234.0
+validation:266:400:24h remaining,4903234.0
+validation:266:400:6h remaining,4903234.0
+validation:266:500:25%,4697712.0
+validation:266:500:50%,4697712.0
+validation:266:500:75%,4697712.0
+validation:266:500:24h remaining,4697712.0
+validation:266:500:6h remaining,4697712.0
+validation:266:3000:25%,2011870.0
+validation:266:3000:50%,2011870.0
+validation:266:3000:75%,2011870.0
+validation:266:3000:24h remaining,2011870.0
+validation:266:3000:6h remaining,2011870.0
+validation:266:4000:25%,1656201.0
+validation:266:4000:50%,1656201.0
+validation:266:4000:75%,1656201.0
+validation:266:4000:24h remaining,1656201.0
+validation:266:4000:6h remaining,1656201.0
+validation:266:5000:25%,1461282.0
+validation:266:5000:50%,1461282.0
+validation:266:5000:75%,1461282.0
+validation:266:5000:24h remaining,1461282.0
+validation:266:5000:6h remaining,1461282.0
+validation:266:10000:25%,903715.0
+validation:266:10000:50%,903715.0
+validation:266:10000:75%,903715.0
+validation:266:10000:24h remaining,903715.0
+validation:266:10000:6h remaining,903715.0
+validation:266:20000:25%,504236.0
+validation:266:20000:50%,504236.0
+validation:266:20000:75%,504236.0
+validation:266:20000:24h remaining,504236.0
+validation:266:20000:6h remaining,504236.0
+validation:266:30000:25%,336544.0
+validation:266:30000:50%,336544.0
+validation:266:30000:75%,336544.0
+validation:266:30000:24h remaining,336544.0
+validation:266:30000:6h remaining,336544.0
+validation:267:10:25%,105201227.0
+validation:267:10:50%,105201227.0
+validation:267:10:75%,105201227.0
+validation:267:10:24h remaining,105201227.0
+validation:267:10:6h remaining,105201227.0
+validation:267:20:25%,58801227.0
+validation:267:20:50%,58801227.0
+validation:267:20:75%,58801227.0
+validation:267:20:24h remaining,58801227.0
+validation:267:20:6h remaining,58801227.0
+validation:267:30:25%,42881227.0
+validation:267:30:50%,42881227.0
+validation:267:30:75%,42881227.0
+validation:267:30:24h remaining,42881227.0
+validation:267:30:6h remaining,42881227.0
+validation:267:40:25%,33792918.0
+validation:267:40:50%,33792918.0
+validation:267:40:75%,33792918.0
+validation:267:40:24h remaining,33792918.0
+validation:267:40:6h remaining,33792918.0
+validation:267:50:25%,30251227.0
+validation:267:50:50%,30251227.0
+validation:267:50:75%,30251227.0
+validation:267:50:24h remaining,30251227.0
+validation:267:50:6h remaining,30251227.0
+validation:267:100:25%,23321947.0
+validation:267:100:50%,23321947.0
+validation:267:100:75%,23321947.0
+validation:267:100:24h remaining,23321947.0
+validation:267:100:6h remaining,23321947.0
+validation:267:200:25%,13013043.0
+validation:267:200:50%,13013043.0
+validation:267:200:75%,13013043.0
+validation:267:200:24h remaining,13013043.0
+validation:267:200:6h remaining,13013043.0
+validation:267:300:25%,10934162.0
+validation:267:300:50%,10934162.0
+validation:267:300:75%,10934162.0
+validation:267:300:24h remaining,10934162.0
+validation:267:300:6h remaining,10934162.0
+validation:267:400:25%,10006428.0
+validation:267:400:50%,10006428.0
+validation:267:400:75%,10006428.0
+validation:267:400:24h remaining,10006428.0
+validation:267:400:6h remaining,10006428.0
+validation:267:500:25%,9679885.0
+validation:267:500:50%,9679885.0
+validation:267:500:75%,9679885.0
+validation:267:500:24h remaining,9679885.0
+validation:267:500:6h remaining,9679885.0
+validation:267:3000:25%,2573063.0
+validation:267:3000:50%,2573063.0
+validation:267:3000:75%,2573063.0
+validation:267:3000:24h remaining,2573063.0
+validation:267:3000:6h remaining,2573063.0
+validation:267:4000:25%,2189107.0
+validation:267:4000:50%,2189107.0
+validation:267:4000:75%,2189107.0
+validation:267:4000:24h remaining,2189107.0
+validation:267:4000:6h remaining,2189107.0
+validation:267:5000:25%,1965180.0
+validation:267:5000:50%,1965180.0
+validation:267:5000:75%,1965180.0
+validation:267:5000:24h remaining,1965180.0
+validation:267:5000:6h remaining,1965180.0
+validation:267:10000:25%,1292174.0
+validation:267:10000:50%,1292174.0
+validation:267:10000:75%,1292174.0
+validation:267:10000:24h remaining,1292174.0
+validation:267:10000:6h remaining,1292174.0
+validation:267:20000:25%,767225.0
+validation:267:20000:50%,767225.0
+validation:267:20000:75%,767225.0
+validation:267:20000:24h remaining,767225.0
+validation:267:20000:6h remaining,767225.0
+validation:267:30000:25%,520465.0
+validation:267:30000:50%,520465.0
+validation:267:30000:75%,520465.0
+validation:267:30000:24h remaining,520465.0
+validation:267:30000:6h remaining,520465.0
+validation:268:10:25%,65000410.0
+validation:268:10:50%,65000410.0
+validation:268:10:75%,65000410.0
+validation:268:10:24h remaining,65000410.0
+validation:268:10:6h remaining,65000410.0
+validation:268:20:25%,37710000.0
+validation:268:20:50%,37710000.0
+validation:268:20:75%,37710000.0
+validation:268:20:24h remaining,37710000.0
+validation:268:20:6h remaining,37710000.0
+validation:268:30:25%,31111111.0
+validation:268:30:50%,31111111.0
+validation:268:30:75%,31111111.0
+validation:268:30:24h remaining,31111111.0
+validation:268:30:6h remaining,31111111.0
+validation:268:40:25%,21473759.0
+validation:268:40:50%,21473759.0
+validation:268:40:75%,21473759.0
+validation:268:40:24h remaining,21473759.0
+validation:268:40:6h remaining,21473759.0
+validation:268:50:25%,20959023.0
+validation:268:50:50%,20959023.0
+validation:268:50:75%,20959023.0
+validation:268:50:24h remaining,20959023.0
+validation:268:50:6h remaining,20959023.0
+validation:268:100:25%,14370878.0
+validation:268:100:50%,14370878.0
+validation:268:100:75%,14370878.0
+validation:268:100:24h remaining,14370878.0
+validation:268:100:6h remaining,14370878.0
+validation:268:200:25%,6650646.0
+validation:268:200:50%,6650646.0
+validation:268:200:75%,6650646.0
+validation:268:200:24h remaining,6650646.0
+validation:268:200:6h remaining,6650646.0
+validation:268:300:25%,5136273.0
+validation:268:300:50%,5136273.0
+validation:268:300:75%,5136273.0
+validation:268:300:24h remaining,5136273.0
+validation:268:300:6h remaining,5136273.0
+validation:268:400:25%,4700145.0
+validation:268:400:50%,4700145.0
+validation:268:400:75%,4700145.0
+validation:268:400:24h remaining,4700145.0
+validation:268:400:6h remaining,4700145.0
+validation:268:500:25%,4444436.0
+validation:268:500:50%,4444436.0
+validation:268:500:75%,4444436.0
+validation:268:500:24h remaining,4444436.0
+validation:268:500:6h remaining,4444436.0
+validation:268:3000:25%,1624696.0
+validation:268:3000:50%,1624696.0
+validation:268:3000:75%,1624696.0
+validation:268:3000:24h remaining,1624696.0
+validation:268:3000:6h remaining,1624696.0
+validation:268:4000:25%,1408759.0
+validation:268:4000:50%,1408759.0
+validation:268:4000:75%,1408759.0
+validation:268:4000:24h remaining,1408759.0
+validation:268:4000:6h remaining,1408759.0
+validation:268:5000:25%,1275465.0
+validation:268:5000:50%,1275465.0
+validation:268:5000:75%,1275465.0
+validation:268:5000:24h remaining,1275465.0
+validation:268:5000:6h remaining,1275465.0
+validation:268:10000:25%,893065.0
+validation:268:10000:50%,893065.0
+validation:268:10000:75%,893065.0
+validation:268:10000:24h remaining,893065.0
+validation:268:10000:6h remaining,893065.0
+validation:268:20000:25%,572699.0
+validation:268:20000:50%,572699.0
+validation:268:20000:75%,572699.0
+validation:268:20000:24h remaining,572699.0
+validation:268:20000:6h remaining,572699.0
+validation:268:30000:25%,417815.0
+validation:268:30000:50%,417815.0
+validation:268:30000:75%,417815.0
+validation:268:30000:24h remaining,417815.0
+validation:268:30000:6h remaining,417815.0
+validation:269:10:25%,59001207.0
+validation:269:10:50%,59001207.0
+validation:269:10:75%,59001207.0
+validation:269:10:24h remaining,59001207.0
+validation:269:10:6h remaining,59001207.0
+validation:269:20:25%,43777717.0
+validation:269:20:50%,43777717.0
+validation:269:20:75%,43777717.0
+validation:269:20:24h remaining,43777717.0
+validation:269:20:6h remaining,43777717.0
+validation:269:30:25%,35133469.0
+validation:269:30:50%,35133469.0
+validation:269:30:75%,35133469.0
+validation:269:30:24h remaining,35133469.0
+validation:269:30:6h remaining,35133469.0
+validation:269:40:25%,27520325.0
+validation:269:40:50%,27520325.0
+validation:269:40:75%,27520325.0
+validation:269:40:24h remaining,27520325.0
+validation:269:40:6h remaining,27520325.0
+validation:269:50:25%,19555555.0
+validation:269:50:50%,19555555.0
+validation:269:50:75%,19555555.0
+validation:269:50:24h remaining,19555555.0
+validation:269:50:6h remaining,19555555.0
+validation:269:100:25%,16605848.0
+validation:269:100:50%,16605848.0
+validation:269:100:75%,16605848.0
+validation:269:100:24h remaining,16605848.0
+validation:269:100:6h remaining,16605848.0
+validation:269:200:25%,7524557.0
+validation:269:200:50%,7524557.0
+validation:269:200:75%,7524557.0
+validation:269:200:24h remaining,7524557.0
+validation:269:200:6h remaining,7524557.0
+validation:269:300:25%,5442991.0
+validation:269:300:50%,5442991.0
+validation:269:300:75%,5442991.0
+validation:269:300:24h remaining,5442991.0
+validation:269:300:6h remaining,5442991.0
+validation:269:400:25%,4498209.0
+validation:269:400:50%,4498209.0
+validation:269:400:75%,4498209.0
+validation:269:400:24h remaining,4498209.0
+validation:269:400:6h remaining,4498209.0
+validation:269:500:25%,4158598.0
+validation:269:500:50%,4158598.0
+validation:269:500:75%,4158598.0
+validation:269:500:24h remaining,4158598.0
+validation:269:500:6h remaining,4158598.0
+validation:269:3000:25%,1002170.0
+validation:269:3000:50%,1002170.0
+validation:269:3000:75%,1002170.0
+validation:269:3000:24h remaining,1002170.0
+validation:269:3000:6h remaining,1002170.0
+validation:269:4000:25%,853883.0
+validation:269:4000:50%,853883.0
+validation:269:4000:75%,853883.0
+validation:269:4000:24h remaining,853883.0
+validation:269:4000:6h remaining,853883.0
+validation:269:5000:25%,768820.0
+validation:269:5000:50%,768820.0
+validation:269:5000:75%,768820.0
+validation:269:5000:24h remaining,768820.0
+validation:269:5000:6h remaining,768820.0
+validation:269:10000:25%,515240.0
+validation:269:10000:50%,515240.0
+validation:269:10000:75%,515240.0
+validation:269:10000:24h remaining,515240.0
+validation:269:10000:6h remaining,515240.0
+validation:269:20000:25%,307869.0
+validation:269:20000:50%,307869.0
+validation:269:20000:75%,307869.0
+validation:269:20000:24h remaining,307869.0
+validation:269:20000:6h remaining,307869.0
+validation:269:30000:25%,214142.0
+validation:269:30000:50%,214142.0
+validation:269:30000:75%,214142.0
+validation:269:30000:24h remaining,214142.0
+validation:269:30000:6h remaining,214142.0
+validation:270:10:25%,115159313.0
+validation:270:10:50%,115159313.0
+validation:270:10:75%,115159313.0
+validation:270:10:24h remaining,115159313.0
+validation:270:10:6h remaining,115159313.0
+validation:270:20:25%,78199768.0
+validation:270:20:50%,78199768.0
+validation:270:20:75%,78199768.0
+validation:270:20:24h remaining,78199768.0
+validation:270:20:6h remaining,78199768.0
+validation:270:30:25%,64922776.0
+validation:270:30:50%,64922776.0
+validation:270:30:75%,64922776.0
+validation:270:30:24h remaining,64922776.0
+validation:270:30:6h remaining,64922776.0
+validation:270:40:25%,56227874.0
+validation:270:40:50%,56227874.0
+validation:270:40:75%,56227874.0
+validation:270:40:24h remaining,56227874.0
+validation:270:40:6h remaining,56227874.0
+validation:270:50:25%,52972878.0
+validation:270:50:50%,52972878.0
+validation:270:50:75%,52972878.0
+validation:270:50:24h remaining,52972878.0
+validation:270:50:6h remaining,52972878.0
+validation:270:100:25%,34315763.0
+validation:270:100:50%,34315763.0
+validation:270:100:75%,34315763.0
+validation:270:100:24h remaining,34315763.0
+validation:270:100:6h remaining,34315763.0
+validation:270:200:25%,22089158.0
+validation:270:200:50%,22089158.0
+validation:270:200:75%,22089158.0
+validation:270:200:24h remaining,22089158.0
+validation:270:200:6h remaining,22089158.0
+validation:270:300:25%,18376095.0
+validation:270:300:50%,18376095.0
+validation:270:300:75%,18376095.0
+validation:270:300:24h remaining,18376095.0
+validation:270:300:6h remaining,18376095.0
+validation:270:400:25%,16610451.0
+validation:270:400:50%,16610451.0
+validation:270:400:75%,16610451.0
+validation:270:400:24h remaining,16610451.0
+validation:270:400:6h remaining,16610451.0
+validation:270:500:25%,15837595.0
+validation:270:500:50%,15837595.0
+validation:270:500:75%,15837595.0
+validation:270:500:24h remaining,15837595.0
+validation:270:500:6h remaining,15837595.0
+validation:270:3000:25%,3723939.0
+validation:270:3000:50%,3723939.0
+validation:270:3000:75%,3723939.0
+validation:270:3000:24h remaining,3723939.0
+validation:270:3000:6h remaining,3723939.0
+validation:270:4000:25%,2992061.0
+validation:270:4000:50%,2992061.0
+validation:270:4000:75%,2992061.0
+validation:270:4000:24h remaining,2992061.0
+validation:270:4000:6h remaining,2992061.0
+validation:270:5000:25%,2586354.0
+validation:270:5000:50%,2586354.0
+validation:270:5000:75%,2586354.0
+validation:270:5000:24h remaining,2586354.0
+validation:270:5000:6h remaining,2586354.0
+validation:270:10000:25%,1535652.0
+validation:270:10000:50%,1535652.0
+validation:270:10000:75%,1535652.0
+validation:270:10000:24h remaining,1535652.0
+validation:270:10000:6h remaining,1535652.0
+validation:270:20000:25%,815637.0
+validation:270:20000:50%,815637.0
+validation:270:20000:75%,815637.0
+validation:270:20000:24h remaining,815637.0
+validation:270:20000:6h remaining,815637.0
+validation:270:30000:25%,514169.0
+validation:270:30000:50%,514169.0
+validation:270:30000:75%,514169.0
+validation:270:30000:24h remaining,514169.0
+validation:270:30000:6h remaining,514169.0
+validation:271:10:25%,50000219.0
+validation:271:10:50%,50000219.0
+validation:271:10:75%,50000219.0
+validation:271:10:24h remaining,50000219.0
+validation:271:10:6h remaining,50000219.0
+validation:271:20:25%,30667725.0
+validation:271:20:50%,30667725.0
+validation:271:20:75%,30667725.0
+validation:271:20:24h remaining,30667725.0
+validation:271:20:6h remaining,30667725.0
+validation:271:30:25%,18307382.0
+validation:271:30:50%,18307382.0
+validation:271:30:75%,18307382.0
+validation:271:30:24h remaining,18307382.0
+validation:271:30:6h remaining,18307382.0
+validation:271:40:25%,15588201.0
+validation:271:40:50%,15588201.0
+validation:271:40:75%,15588201.0
+validation:271:40:24h remaining,15588201.0
+validation:271:40:6h remaining,15588201.0
+validation:271:50:25%,13683298.0
+validation:271:50:50%,13683298.0
+validation:271:50:75%,13683298.0
+validation:271:50:24h remaining,13683298.0
+validation:271:50:6h remaining,13683298.0
+validation:271:100:25%,10594802.0
+validation:271:100:50%,10594802.0
+validation:271:100:75%,10594802.0
+validation:271:100:24h remaining,10594802.0
+validation:271:100:6h remaining,10594802.0
+validation:271:200:25%,6539537.0
+validation:271:200:50%,6539537.0
+validation:271:200:75%,6539537.0
+validation:271:200:24h remaining,6539537.0
+validation:271:200:6h remaining,6539537.0
+validation:271:300:25%,6079066.0
+validation:271:300:50%,6079066.0
+validation:271:300:75%,6079066.0
+validation:271:300:24h remaining,6079066.0
+validation:271:300:6h remaining,6079066.0
+validation:271:400:25%,5888949.0
+validation:271:400:50%,5888949.0
+validation:271:400:75%,5888949.0
+validation:271:400:24h remaining,5888949.0
+validation:271:400:6h remaining,5888949.0
+validation:271:500:25%,5802765.0
+validation:271:500:50%,5802765.0
+validation:271:500:75%,5802765.0
+validation:271:500:24h remaining,5802765.0
+validation:271:500:6h remaining,5802765.0
+validation:271:3000:25%,1789628.0
+validation:271:3000:50%,1789628.0
+validation:271:3000:75%,1789628.0
+validation:271:3000:24h remaining,1789628.0
+validation:271:3000:6h remaining,1789628.0
+validation:271:4000:25%,1571462.0
+validation:271:4000:50%,1571462.0
+validation:271:4000:75%,1571462.0
+validation:271:4000:24h remaining,1571462.0
+validation:271:4000:6h remaining,1571462.0
+validation:271:5000:25%,1490330.0
+validation:271:5000:50%,1490330.0
+validation:271:5000:75%,1490330.0
+validation:271:5000:24h remaining,1490330.0
+validation:271:5000:6h remaining,1490330.0
+validation:271:10000:25%,959134.0
+validation:271:10000:50%,959134.0
+validation:271:10000:75%,959134.0
+validation:271:10000:24h remaining,959134.0
+validation:271:10000:6h remaining,959134.0
+validation:271:20000:25%,558930.0
+validation:271:20000:50%,558930.0
+validation:271:20000:75%,558930.0
+validation:271:20000:24h remaining,558930.0
+validation:271:20000:6h remaining,558930.0
+validation:271:30000:25%,388201.0
+validation:271:30000:50%,388201.0
+validation:271:30000:75%,388201.0
+validation:271:30000:24h remaining,388201.0
+validation:271:30000:6h remaining,388201.0
+validation:272:10:25%,33522916.0
+validation:272:10:50%,33522916.0
+validation:272:10:75%,33522916.0
+validation:272:10:24h remaining,33522916.0
+validation:272:10:6h remaining,33522916.0
+validation:272:20:25%,23999915.0
+validation:272:20:50%,23999915.0
+validation:272:20:75%,23999915.0
+validation:272:20:24h remaining,23999915.0
+validation:272:20:6h remaining,23999915.0
+validation:272:30:25%,19419887.0
+validation:272:30:50%,19419887.0
+validation:272:30:75%,19419887.0
+validation:272:30:24h remaining,19419887.0
+validation:272:30:6h remaining,19419887.0
+validation:272:40:25%,11986639.0
+validation:272:40:50%,11986639.0
+validation:272:40:75%,11986639.0
+validation:272:40:24h remaining,11986639.0
+validation:272:40:6h remaining,11986639.0
+validation:272:50:25%,10576045.0
+validation:272:50:50%,10576045.0
+validation:272:50:75%,10576045.0
+validation:272:50:24h remaining,10576045.0
+validation:272:50:6h remaining,10576045.0
+validation:272:100:25%,8153304.0
+validation:272:100:50%,8153304.0
+validation:272:100:75%,8153304.0
+validation:272:100:24h remaining,8153304.0
+validation:272:100:6h remaining,8153304.0
+validation:272:200:25%,3495074.0
+validation:272:200:50%,3495074.0
+validation:272:200:75%,3495074.0
+validation:272:200:24h remaining,3495074.0
+validation:272:200:6h remaining,3495074.0
+validation:272:300:25%,2743643.0
+validation:272:300:50%,2743643.0
+validation:272:300:75%,2743643.0
+validation:272:300:24h remaining,2743643.0
+validation:272:300:6h remaining,2743643.0
+validation:272:400:25%,2454459.0
+validation:272:400:50%,2454459.0
+validation:272:400:75%,2454459.0
+validation:272:400:24h remaining,2454459.0
+validation:272:400:6h remaining,2454459.0
+validation:272:500:25%,2386749.0
+validation:272:500:50%,2386749.0
+validation:272:500:75%,2386749.0
+validation:272:500:24h remaining,2386749.0
+validation:272:500:6h remaining,2386749.0
+validation:272:3000:25%,802620.0
+validation:272:3000:50%,802620.0
+validation:272:3000:75%,802620.0
+validation:272:3000:24h remaining,802620.0
+validation:272:3000:6h remaining,802620.0
+validation:272:4000:25%,678095.0
+validation:272:4000:50%,678095.0
+validation:272:4000:75%,678095.0
+validation:272:4000:24h remaining,678095.0
+validation:272:4000:6h remaining,678095.0
+validation:272:5000:25%,607155.0
+validation:272:5000:50%,607155.0
+validation:272:5000:75%,607155.0
+validation:272:5000:24h remaining,607155.0
+validation:272:5000:6h remaining,607155.0
+validation:272:10000:25%,384101.0
+validation:272:10000:50%,384101.0
+validation:272:10000:75%,384101.0
+validation:272:10000:24h remaining,384101.0
+validation:272:10000:6h remaining,384101.0
+validation:272:20000:25%,200130.0
+validation:272:20000:50%,200130.0
+validation:272:20000:75%,200130.0
+validation:272:20000:24h remaining,200130.0
+validation:272:20000:6h remaining,200130.0
+validation:272:30000:25%,123930.0
+validation:272:30000:50%,123930.0
+validation:272:30000:75%,123930.0
+validation:272:30000:24h remaining,123930.0
+validation:272:30000:6h remaining,123930.0
+validation:273:10:25%,140000912.0
+validation:273:10:50%,140000912.0
+validation:273:10:75%,140000912.0
+validation:273:10:24h remaining,140000912.0
+validation:273:10:6h remaining,140000912.0
+validation:273:20:25%,100000000.0
+validation:273:20:50%,100000000.0
+validation:273:20:75%,100000000.0
+validation:273:20:24h remaining,100000000.0
+validation:273:20:6h remaining,100000000.0
+validation:273:30:25%,66666666.0
+validation:273:30:50%,66666666.0
+validation:273:30:75%,66666666.0
+validation:273:30:24h remaining,66666666.0
+validation:273:30:6h remaining,66666666.0
+validation:273:40:25%,52001026.0
+validation:273:40:50%,52001026.0
+validation:273:40:75%,52001026.0
+validation:273:40:24h remaining,52001026.0
+validation:273:40:6h remaining,52001026.0
+validation:273:50:25%,46666777.0
+validation:273:50:50%,46666777.0
+validation:273:50:75%,46666777.0
+validation:273:50:24h remaining,46666777.0
+validation:273:50:6h remaining,46666777.0
+validation:273:100:25%,32000006.0
+validation:273:100:50%,32000006.0
+validation:273:100:75%,32000006.0
+validation:273:100:24h remaining,32000006.0
+validation:273:100:6h remaining,32000006.0
+validation:273:200:25%,20857356.0
+validation:273:200:50%,20857356.0
+validation:273:200:75%,20857356.0
+validation:273:200:24h remaining,20857356.0
+validation:273:200:6h remaining,20857356.0
+validation:273:300:25%,18051491.0
+validation:273:300:50%,18051491.0
+validation:273:300:75%,18051491.0
+validation:273:300:24h remaining,18051491.0
+validation:273:300:6h remaining,18051491.0
+validation:273:400:25%,16565692.0
+validation:273:400:50%,16565692.0
+validation:273:400:75%,16565692.0
+validation:273:400:24h remaining,16565692.0
+validation:273:400:6h remaining,16565692.0
+validation:273:500:25%,16070099.0
+validation:273:500:50%,16070099.0
+validation:273:500:75%,16070099.0
+validation:273:500:24h remaining,16070099.0
+validation:273:500:6h remaining,16070099.0
+validation:273:3000:25%,3004242.0
+validation:273:3000:50%,3004242.0
+validation:273:3000:75%,3004242.0
+validation:273:3000:24h remaining,3004242.0
+validation:273:3000:6h remaining,3004242.0
+validation:273:4000:25%,2530149.0
+validation:273:4000:50%,2530149.0
+validation:273:4000:75%,2530149.0
+validation:273:4000:24h remaining,2530149.0
+validation:273:4000:6h remaining,2530149.0
+validation:273:5000:25%,2246985.0
+validation:273:5000:50%,2246985.0
+validation:273:5000:75%,2246985.0
+validation:273:5000:24h remaining,2246985.0
+validation:273:5000:6h remaining,2246985.0
+validation:273:10000:25%,1487556.0
+validation:273:10000:50%,1487556.0
+validation:273:10000:75%,1487556.0
+validation:273:10000:24h remaining,1487556.0
+validation:273:10000:6h remaining,1487556.0
+validation:273:20000:25%,783879.0
+validation:273:20000:50%,783879.0
+validation:273:20000:75%,783879.0
+validation:273:20000:24h remaining,783879.0
+validation:273:20000:6h remaining,783879.0
+validation:273:30000:25%,519490.0
+validation:273:30000:50%,519490.0
+validation:273:30000:75%,519490.0
+validation:273:30000:24h remaining,519490.0
+validation:273:30000:6h remaining,519490.0
+validation:274:10:25%,35734541.0
+validation:274:10:50%,35734541.0
+validation:274:10:75%,35734541.0
+validation:274:10:24h remaining,35734541.0
+validation:274:10:6h remaining,35734541.0
+validation:274:20:25%,15999999.0
+validation:274:20:50%,15999999.0
+validation:274:20:75%,15999999.0
+validation:274:20:24h remaining,15999999.0
+validation:274:20:6h remaining,15999999.0
+validation:274:30:25%,13141257.0
+validation:274:30:50%,13141257.0
+validation:274:30:75%,13141257.0
+validation:274:30:24h remaining,13141257.0
+validation:274:30:6h remaining,13141257.0
+validation:274:40:25%,9610850.0
+validation:274:40:50%,9610850.0
+validation:274:40:75%,9610850.0
+validation:274:40:24h remaining,9610850.0
+validation:274:40:6h remaining,9610850.0
+validation:274:50:25%,7823878.0
+validation:274:50:50%,7823878.0
+validation:274:50:75%,7823878.0
+validation:274:50:24h remaining,7823878.0
+validation:274:50:6h remaining,7823878.0
+validation:274:100:25%,5380200.0
+validation:274:100:50%,5380200.0
+validation:274:100:75%,5380200.0
+validation:274:100:24h remaining,5380200.0
+validation:274:100:6h remaining,5380200.0
+validation:274:200:25%,3859687.0
+validation:274:200:50%,3859687.0
+validation:274:200:75%,3859687.0
+validation:274:200:24h remaining,3859687.0
+validation:274:200:6h remaining,3859687.0
+validation:274:300:25%,3583454.0
+validation:274:300:50%,3583454.0
+validation:274:300:75%,3583454.0
+validation:274:300:24h remaining,3583454.0
+validation:274:300:6h remaining,3583454.0
+validation:274:400:25%,3456805.0
+validation:274:400:50%,3456805.0
+validation:274:400:75%,3456805.0
+validation:274:400:24h remaining,3456805.0
+validation:274:400:6h remaining,3456805.0
+validation:274:500:25%,3412046.0
+validation:274:500:50%,3412046.0
+validation:274:500:75%,3412046.0
+validation:274:500:24h remaining,3412046.0
+validation:274:500:6h remaining,3412046.0
+validation:274:3000:25%,1490409.0
+validation:274:3000:50%,1490409.0
+validation:274:3000:75%,1490409.0
+validation:274:3000:24h remaining,1490409.0
+validation:274:3000:6h remaining,1490409.0
+validation:274:4000:25%,1257705.0
+validation:274:4000:50%,1257705.0
+validation:274:4000:75%,1257705.0
+validation:274:4000:24h remaining,1257705.0
+validation:274:4000:6h remaining,1257705.0
+validation:274:5000:25%,1124670.0
+validation:274:5000:50%,1124670.0
+validation:274:5000:75%,1124670.0
+validation:274:5000:24h remaining,1124670.0
+validation:274:5000:6h remaining,1124670.0
+validation:274:10000:25%,751099.0
+validation:274:10000:50%,751099.0
+validation:274:10000:75%,751099.0
+validation:274:10000:24h remaining,751099.0
+validation:274:10000:6h remaining,751099.0
+validation:274:20000:25%,438026.0
+validation:274:20000:50%,438026.0
+validation:274:20000:75%,438026.0
+validation:274:20000:24h remaining,438026.0
+validation:274:20000:6h remaining,438026.0
+validation:274:30000:25%,308800.0
+validation:274:30000:50%,308800.0
+validation:274:30000:75%,308800.0
+validation:274:30000:24h remaining,308800.0
+validation:274:30000:6h remaining,308800.0
+validation:275:10:25%,48766744.0
+validation:275:10:50%,48766744.0
+validation:275:10:75%,48766744.0
+validation:275:10:24h remaining,48766744.0
+validation:275:10:6h remaining,48766744.0
+validation:275:20:25%,25388352.0
+validation:275:20:50%,25388352.0
+validation:275:20:75%,25388352.0
+validation:275:20:24h remaining,25388352.0
+validation:275:20:6h remaining,25388352.0
+validation:275:30:25%,20825982.0
+validation:275:30:50%,20825982.0
+validation:275:30:75%,20825982.0
+validation:275:30:24h remaining,20825982.0
+validation:275:30:6h remaining,20825982.0
+validation:275:40:25%,18851282.0
+validation:275:40:50%,18851282.0
+validation:275:40:75%,18851282.0
+validation:275:40:24h remaining,18851282.0
+validation:275:40:6h remaining,18851282.0
+validation:275:50:25%,17999999.0
+validation:275:50:50%,17999999.0
+validation:275:50:75%,17999999.0
+validation:275:50:24h remaining,17999999.0
+validation:275:50:6h remaining,17999999.0
+validation:275:100:25%,13035500.0
+validation:275:100:50%,13035500.0
+validation:275:100:75%,13035500.0
+validation:275:100:24h remaining,13035500.0
+validation:275:100:6h remaining,13035500.0
+validation:275:200:25%,4927757.0
+validation:275:200:50%,4927757.0
+validation:275:200:75%,4927757.0
+validation:275:200:24h remaining,4927757.0
+validation:275:200:6h remaining,4927757.0
+validation:275:300:25%,3743515.0
+validation:275:300:50%,3743515.0
+validation:275:300:75%,3743515.0
+validation:275:300:24h remaining,3743515.0
+validation:275:300:6h remaining,3743515.0
+validation:275:400:25%,3211996.0
+validation:275:400:50%,3211996.0
+validation:275:400:75%,3211996.0
+validation:275:400:24h remaining,3211996.0
+validation:275:400:6h remaining,3211996.0
+validation:275:500:25%,2982708.0
+validation:275:500:50%,2982708.0
+validation:275:500:75%,2982708.0
+validation:275:500:24h remaining,2982708.0
+validation:275:500:6h remaining,2982708.0
+validation:275:3000:25%,917140.0
+validation:275:3000:50%,917140.0
+validation:275:3000:75%,917140.0
+validation:275:3000:24h remaining,917140.0
+validation:275:3000:6h remaining,917140.0
+validation:275:4000:25%,787120.0
+validation:275:4000:50%,787120.0
+validation:275:4000:75%,787120.0
+validation:275:4000:24h remaining,787120.0
+validation:275:4000:6h remaining,787120.0
+validation:275:5000:25%,713305.0
+validation:275:5000:50%,713305.0
+validation:275:5000:75%,713305.0
+validation:275:5000:24h remaining,713305.0
+validation:275:5000:6h remaining,713305.0
+validation:275:10000:25%,439699.0
+validation:275:10000:50%,439699.0
+validation:275:10000:75%,439699.0
+validation:275:10000:24h remaining,439699.0
+validation:275:10000:6h remaining,439699.0
+validation:275:20000:25%,241745.0
+validation:275:20000:50%,241745.0
+validation:275:20000:75%,241745.0
+validation:275:20000:24h remaining,241745.0
+validation:275:20000:6h remaining,241745.0
+validation:275:30000:25%,165540.0
+validation:275:30000:50%,165540.0
+validation:275:30000:75%,165540.0
+validation:275:30000:24h remaining,165540.0
+validation:275:30000:6h remaining,165540.0
+validation:276:10:25%,112345678.0
+validation:276:10:50%,112345678.0
+validation:276:10:75%,112345678.0
+validation:276:10:24h remaining,112345678.0
+validation:276:10:6h remaining,112345678.0
+validation:276:20:25%,72011027.0
+validation:276:20:50%,72011027.0
+validation:276:20:75%,72011027.0
+validation:276:20:24h remaining,72011027.0
+validation:276:20:6h remaining,72011027.0
+validation:276:30:25%,55286666.0
+validation:276:30:50%,55286666.0
+validation:276:30:75%,55286666.0
+validation:276:30:24h remaining,55286666.0
+validation:276:30:6h remaining,55286666.0
+validation:276:40:25%,50032907.0
+validation:276:40:50%,50032907.0
+validation:276:40:75%,50032907.0
+validation:276:40:24h remaining,50032907.0
+validation:276:40:6h remaining,50032907.0
+validation:276:50:25%,46037635.0
+validation:276:50:50%,46037635.0
+validation:276:50:75%,46037635.0
+validation:276:50:24h remaining,46037635.0
+validation:276:50:6h remaining,46037635.0
+validation:276:100:25%,31928571.0
+validation:276:100:50%,31928571.0
+validation:276:100:75%,31928571.0
+validation:276:100:24h remaining,31928571.0
+validation:276:100:6h remaining,31928571.0
+validation:276:200:25%,26272496.0
+validation:276:200:50%,26272496.0
+validation:276:200:75%,26272496.0
+validation:276:200:24h remaining,26272496.0
+validation:276:200:6h remaining,26272496.0
+validation:276:300:25%,25396495.0
+validation:276:300:50%,25396495.0
+validation:276:300:75%,25396495.0
+validation:276:300:24h remaining,25396495.0
+validation:276:300:6h remaining,25396495.0
+validation:276:400:25%,25000000.0
+validation:276:400:50%,25000000.0
+validation:276:400:75%,25000000.0
+validation:276:400:24h remaining,25000000.0
+validation:276:400:6h remaining,25000000.0
+validation:276:500:25%,24725702.0
+validation:276:500:50%,24725702.0
+validation:276:500:75%,24725702.0
+validation:276:500:24h remaining,24725702.0
+validation:276:500:6h remaining,24725702.0
+validation:276:3000:25%,3393981.0
+validation:276:3000:50%,3393981.0
+validation:276:3000:75%,3393981.0
+validation:276:3000:24h remaining,3393981.0
+validation:276:3000:6h remaining,3393981.0
+validation:276:4000:25%,2969645.0
+validation:276:4000:50%,2969645.0
+validation:276:4000:75%,2969645.0
+validation:276:4000:24h remaining,2969645.0
+validation:276:4000:6h remaining,2969645.0
+validation:276:5000:25%,2726083.0
+validation:276:5000:50%,2726083.0
+validation:276:5000:75%,2726083.0
+validation:276:5000:24h remaining,2726083.0
+validation:276:5000:6h remaining,2726083.0
+validation:276:10000:25%,1900082.0
+validation:276:10000:50%,1900082.0
+validation:276:10000:75%,1900082.0
+validation:276:10000:24h remaining,1900082.0
+validation:276:10000:6h remaining,1900082.0
+validation:276:20000:25%,1128670.0
+validation:276:20000:50%,1128670.0
+validation:276:20000:75%,1128670.0
+validation:276:20000:24h remaining,1128670.0
+validation:276:20000:6h remaining,1128670.0
+validation:276:30000:25%,777671.0
+validation:276:30000:50%,777671.0
+validation:276:30000:75%,777671.0
+validation:276:30000:24h remaining,777671.0
+validation:276:30000:6h remaining,777671.0
+validation:277:10:25%,52089318.0
+validation:277:10:50%,52089318.0
+validation:277:10:75%,52089318.0
+validation:277:10:24h remaining,52089318.0
+validation:277:10:6h remaining,52089318.0
+validation:277:20:25%,37727409.0
+validation:277:20:50%,37727409.0
+validation:277:20:75%,37727409.0
+validation:277:20:24h remaining,37727409.0
+validation:277:20:6h remaining,37727409.0
+validation:277:30:25%,34622038.0
+validation:277:30:50%,34622038.0
+validation:277:30:75%,34622038.0
+validation:277:30:24h remaining,34622038.0
+validation:277:30:6h remaining,34622038.0
+validation:277:40:25%,27514661.0
+validation:277:40:50%,27514661.0
+validation:277:40:75%,27514661.0
+validation:277:40:24h remaining,27514661.0
+validation:277:40:6h remaining,27514661.0
+validation:277:50:25%,24080947.0
+validation:277:50:50%,24080947.0
+validation:277:50:75%,24080947.0
+validation:277:50:24h remaining,24080947.0
+validation:277:50:6h remaining,24080947.0
+validation:277:100:25%,18395255.0
+validation:277:100:50%,18395255.0
+validation:277:100:75%,18395255.0
+validation:277:100:24h remaining,18395255.0
+validation:277:100:6h remaining,18395255.0
+validation:277:200:25%,12086163.0
+validation:277:200:50%,12086163.0
+validation:277:200:75%,12086163.0
+validation:277:200:24h remaining,12086163.0
+validation:277:200:6h remaining,12086163.0
+validation:277:300:25%,10823755.0
+validation:277:300:50%,10823755.0
+validation:277:300:75%,10823755.0
+validation:277:300:24h remaining,10823755.0
+validation:277:300:6h remaining,10823755.0
+validation:277:400:25%,10475118.0
+validation:277:400:50%,10475118.0
+validation:277:400:75%,10475118.0
+validation:277:400:24h remaining,10475118.0
+validation:277:400:6h remaining,10475118.0
+validation:277:500:25%,10327402.0
+validation:277:500:50%,10327402.0
+validation:277:500:75%,10327402.0
+validation:277:500:24h remaining,10327402.0
+validation:277:500:6h remaining,10327402.0
+validation:277:3000:25%,2095220.0
+validation:277:3000:50%,2095220.0
+validation:277:3000:75%,2095220.0
+validation:277:3000:24h remaining,2095220.0
+validation:277:3000:6h remaining,2095220.0
+validation:277:4000:25%,1862807.0
+validation:277:4000:50%,1862807.0
+validation:277:4000:75%,1862807.0
+validation:277:4000:24h remaining,1862807.0
+validation:277:4000:6h remaining,1862807.0
+validation:277:5000:25%,1736065.0
+validation:277:5000:50%,1736065.0
+validation:277:5000:75%,1736065.0
+validation:277:5000:24h remaining,1736065.0
+validation:277:5000:6h remaining,1736065.0
+validation:277:10000:25%,1299250.0
+validation:277:10000:50%,1299250.0
+validation:277:10000:75%,1299250.0
+validation:277:10000:24h remaining,1299250.0
+validation:277:10000:6h remaining,1299250.0
+validation:277:20000:25%,812469.0
+validation:277:20000:50%,812469.0
+validation:277:20000:75%,812469.0
+validation:277:20000:24h remaining,812469.0
+validation:277:20000:6h remaining,812469.0
+validation:277:30000:25%,589708.0
+validation:277:30000:50%,589708.0
+validation:277:30000:75%,589708.0
+validation:277:30000:24h remaining,589708.0
+validation:277:30000:6h remaining,589708.0
+validation:278:10:25%,49087575.0
+validation:278:10:50%,49087575.0
+validation:278:10:75%,49087575.0
+validation:278:10:24h remaining,49087575.0
+validation:278:10:6h remaining,49087575.0
+validation:278:20:25%,30000278.0
+validation:278:20:50%,30000278.0
+validation:278:20:75%,30000278.0
+validation:278:20:24h remaining,30000278.0
+validation:278:20:6h remaining,30000278.0
+validation:278:30:25%,23767503.0
+validation:278:30:50%,23767503.0
+validation:278:30:75%,23767503.0
+validation:278:30:24h remaining,23767503.0
+validation:278:30:6h remaining,23767503.0
+validation:278:40:25%,20021022.0
+validation:278:40:50%,20021022.0
+validation:278:40:75%,20021022.0
+validation:278:40:24h remaining,20021022.0
+validation:278:40:6h remaining,20021022.0
+validation:278:50:25%,17333333.0
+validation:278:50:50%,17333333.0
+validation:278:50:75%,17333333.0
+validation:278:50:24h remaining,17333333.0
+validation:278:50:6h remaining,17333333.0
+validation:278:100:25%,13630919.0
+validation:278:100:50%,13630919.0
+validation:278:100:75%,13630919.0
+validation:278:100:24h remaining,13630919.0
+validation:278:100:6h remaining,13630919.0
+validation:278:200:25%,7208049.0
+validation:278:200:50%,7208049.0
+validation:278:200:75%,7208049.0
+validation:278:200:24h remaining,7208049.0
+validation:278:200:6h remaining,7208049.0
+validation:278:300:25%,6166666.0
+validation:278:300:50%,6166666.0
+validation:278:300:75%,6166666.0
+validation:278:300:24h remaining,6166666.0
+validation:278:300:6h remaining,6166666.0
+validation:278:400:25%,5568405.0
+validation:278:400:50%,5568405.0
+validation:278:400:75%,5568405.0
+validation:278:400:24h remaining,5568405.0
+validation:278:400:6h remaining,5568405.0
+validation:278:500:25%,5464321.0
+validation:278:500:50%,5464321.0
+validation:278:500:75%,5464321.0
+validation:278:500:24h remaining,5464321.0
+validation:278:500:6h remaining,5464321.0
+validation:278:3000:25%,1480131.0
+validation:278:3000:50%,1480131.0
+validation:278:3000:75%,1480131.0
+validation:278:3000:24h remaining,1480131.0
+validation:278:3000:6h remaining,1480131.0
+validation:278:4000:25%,1301649.0
+validation:278:4000:50%,1301649.0
+validation:278:4000:75%,1301649.0
+validation:278:4000:24h remaining,1301649.0
+validation:278:4000:6h remaining,1301649.0
+validation:278:5000:25%,1213173.0
+validation:278:5000:50%,1213173.0
+validation:278:5000:75%,1213173.0
+validation:278:5000:24h remaining,1213173.0
+validation:278:5000:6h remaining,1213173.0
+validation:278:10000:25%,909701.0
+validation:278:10000:50%,909701.0
+validation:278:10000:75%,909701.0
+validation:278:10000:24h remaining,909701.0
+validation:278:10000:6h remaining,909701.0
+validation:278:20000:25%,581810.0
+validation:278:20000:50%,581810.0
+validation:278:20000:75%,581810.0
+validation:278:20000:24h remaining,581810.0
+validation:278:20000:6h remaining,581810.0
+validation:278:30000:25%,424365.0
+validation:278:30000:50%,424365.0
+validation:278:30000:75%,424365.0
+validation:278:30000:24h remaining,424365.0
+validation:278:30000:6h remaining,424365.0
+validation:279:10:25%,74151023.0
+validation:279:10:50%,74151023.0
+validation:279:10:75%,74151023.0
+validation:279:10:24h remaining,74151023.0
+validation:279:10:6h remaining,74151023.0
+validation:279:20:25%,53333333.0
+validation:279:20:50%,53333333.0
+validation:279:20:75%,53333333.0
+validation:279:20:24h remaining,53333333.0
+validation:279:20:6h remaining,53333333.0
+validation:279:30:25%,43424241.0
+validation:279:30:50%,43424241.0
+validation:279:30:75%,43424241.0
+validation:279:30:24h remaining,43424241.0
+validation:279:30:6h remaining,43424241.0
+validation:279:40:25%,38082355.0
+validation:279:40:50%,38082355.0
+validation:279:40:75%,38082355.0
+validation:279:40:24h remaining,38082355.0
+validation:279:40:6h remaining,38082355.0
+validation:279:50:25%,34444444.0
+validation:279:50:50%,34444444.0
+validation:279:50:75%,34444444.0
+validation:279:50:24h remaining,34444444.0
+validation:279:50:6h remaining,34444444.0
+validation:279:100:25%,25508862.0
+validation:279:100:50%,25508862.0
+validation:279:100:75%,25508862.0
+validation:279:100:24h remaining,25508862.0
+validation:279:100:6h remaining,25508862.0
+validation:279:200:25%,15869592.0
+validation:279:200:50%,15869592.0
+validation:279:200:75%,15869592.0
+validation:279:200:24h remaining,15869592.0
+validation:279:200:6h remaining,15869592.0
+validation:279:300:25%,14682844.0
+validation:279:300:50%,14682844.0
+validation:279:300:75%,14682844.0
+validation:279:300:24h remaining,14682844.0
+validation:279:300:6h remaining,14682844.0
+validation:279:400:25%,14254664.0
+validation:279:400:50%,14254664.0
+validation:279:400:75%,14254664.0
+validation:279:400:24h remaining,14254664.0
+validation:279:400:6h remaining,14254664.0
+validation:279:500:25%,14084436.0
+validation:279:500:50%,14084436.0
+validation:279:500:75%,14084436.0
+validation:279:500:24h remaining,14084436.0
+validation:279:500:6h remaining,14084436.0
+validation:279:3000:25%,3157715.0
+validation:279:3000:50%,3157715.0
+validation:279:3000:75%,3157715.0
+validation:279:3000:24h remaining,3157715.0
+validation:279:3000:6h remaining,3157715.0
+validation:279:4000:25%,2739135.0
+validation:279:4000:50%,2739135.0
+validation:279:4000:75%,2739135.0
+validation:279:4000:24h remaining,2739135.0
+validation:279:4000:6h remaining,2739135.0
+validation:279:5000:25%,2461279.0
+validation:279:5000:50%,2461279.0
+validation:279:5000:75%,2461279.0
+validation:279:5000:24h remaining,2461279.0
+validation:279:5000:6h remaining,2461279.0
+validation:279:10000:25%,1690680.0
+validation:279:10000:50%,1690680.0
+validation:279:10000:75%,1690680.0
+validation:279:10000:24h remaining,1690680.0
+validation:279:10000:6h remaining,1690680.0
+validation:279:20000:25%,980050.0
+validation:279:20000:50%,980050.0
+validation:279:20000:75%,980050.0
+validation:279:20000:24h remaining,980050.0
+validation:279:20000:6h remaining,980050.0
+validation:279:30000:25%,662200.0
+validation:279:30000:50%,662200.0
+validation:279:30000:75%,662200.0
+validation:279:30000:24h remaining,662200.0
+validation:279:30000:6h remaining,662200.0
+validation:281:10:25%,80000714.0
+validation:281:10:50%,80000714.0
+validation:281:10:75%,80000714.0
+validation:281:10:24h remaining,80000714.0
+validation:281:10:6h remaining,80000714.0
+validation:281:20:25%,47189044.0
+validation:281:20:50%,47189044.0
+validation:281:20:75%,47189044.0
+validation:281:20:24h remaining,47189044.0
+validation:281:20:6h remaining,47189044.0
+validation:281:30:25%,37488394.0
+validation:281:30:50%,37488394.0
+validation:281:30:75%,37488394.0
+validation:281:30:24h remaining,37488394.0
+validation:281:30:6h remaining,37488394.0
+validation:281:40:25%,31920578.0
+validation:281:40:50%,31920578.0
+validation:281:40:75%,31920578.0
+validation:281:40:24h remaining,31920578.0
+validation:281:40:6h remaining,31920578.0
+validation:281:50:25%,29241483.0
+validation:281:50:50%,29241483.0
+validation:281:50:75%,29241483.0
+validation:281:50:24h remaining,29241483.0
+validation:281:50:6h remaining,29241483.0
+validation:281:100:25%,20695552.0
+validation:281:100:50%,20695552.0
+validation:281:100:75%,20695552.0
+validation:281:100:24h remaining,20695552.0
+validation:281:100:6h remaining,20695552.0
+validation:281:200:25%,15491630.0
+validation:281:200:50%,15491630.0
+validation:281:200:75%,15491630.0
+validation:281:200:24h remaining,15491630.0
+validation:281:200:6h remaining,15491630.0
+validation:281:300:25%,13527246.0
+validation:281:300:50%,13527246.0
+validation:281:300:75%,13527246.0
+validation:281:300:24h remaining,13527246.0
+validation:281:300:6h remaining,13527246.0
+validation:281:400:25%,12478959.0
+validation:281:400:50%,12478959.0
+validation:281:400:75%,12478959.0
+validation:281:400:24h remaining,12478959.0
+validation:281:400:6h remaining,12478959.0
+validation:281:500:25%,11930174.0
+validation:281:500:50%,11930174.0
+validation:281:500:75%,11930174.0
+validation:281:500:24h remaining,11930174.0
+validation:281:500:6h remaining,11930174.0
+validation:281:3000:25%,3891426.0
+validation:281:3000:50%,3891426.0
+validation:281:3000:75%,3891426.0
+validation:281:3000:24h remaining,3891426.0
+validation:281:3000:6h remaining,3891426.0
+validation:281:4000:25%,3341442.0
+validation:281:4000:50%,3341442.0
+validation:281:4000:75%,3341442.0
+validation:281:4000:24h remaining,3341442.0
+validation:281:4000:6h remaining,3341442.0
+validation:281:5000:25%,2949191.0
+validation:281:5000:50%,2949191.0
+validation:281:5000:75%,2949191.0
+validation:281:5000:24h remaining,2949191.0
+validation:281:5000:6h remaining,2949191.0
+validation:281:10000:25%,1844221.0
+validation:281:10000:50%,1844221.0
+validation:281:10000:75%,1844221.0
+validation:281:10000:24h remaining,1844221.0
+validation:281:10000:6h remaining,1844221.0
+validation:281:20000:25%,986368.0
+validation:281:20000:50%,986368.0
+validation:281:20000:75%,986368.0
+validation:281:20000:24h remaining,986368.0
+validation:281:20000:6h remaining,986368.0
+validation:281:30000:25%,634759.0
+validation:281:30000:50%,634759.0
+validation:281:30000:75%,634759.0
+validation:281:30000:24h remaining,634759.0
+validation:281:30000:6h remaining,634759.0

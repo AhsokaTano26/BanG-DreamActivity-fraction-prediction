@@ -1,0 +1,51 @@
+{
+  "dataset_id": "d0ccf9f70aee19ad1b2152925e7afe8692d67f4a6e539d558f87e2cd33329bbb",
+  "scope": "training only; same curves and endpoint, original versus subsampled observations",
+  "eligibility": "at least100 observations; interpolation bracket at end-6h <=2h",
+  "summary": [
+    {
+      "stride": 1,
+      "events": 12,
+      "curves": 24,
+      "mean_bias_points": 0.0,
+      "mean_bias_event_bootstrap_95ci": [
+        0.0,
+        0.0
+      ],
+      "mean_absolute_error_points": 0.0,
+      "median_span_after_h": 0.5,
+      "underestimation_curves": 0
+    },
+    {
+      "stride": 4,
+      "events": 12,
+      "curves": 24,
+      "mean_bias_points": -0.03041681615246235,
+      "mean_bias_event_bootstrap_95ci": [
+        -0.06214602614004019,
+        0.0002159801148422937
+      ],
+      "mean_absolute_error_points": 0.06161439760796461,
+      "median_span_after_h": 2.0,
+      "underestimation_curves": 13
+    },
+    {
+      "stride": 16,
+      "events": 12,
+      "curves": 24,
+      "mean_bias_points": -0.8340718826389693,
+      "mean_bias_event_bootstrap_95ci": [
+        -0.9916627603146557,
+        -0.6812557075071003
+      ],
+      "mean_absolute_error_points": 0.8340718826389693,
+      "median_span_after_h": 8.0,
+      "underestimation_curves": 24
+    }
+  ],
+  "limits": [
+    "original interpolation is an estimate, not dense ground truth",
+    "restricted to observed dense training curves",
+    "no causal claim about player behavior"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "checks": "passed",
+  "test_snapshots": 342,
+  "test_events": 36,
+  "bootstrap": {
+    "xgb_growth_minus_linear_all": {
+      "difference_pp": -7.328234679017247,
+      "event_cluster_bootstrap_95pct": [
+        -10.49933704829603,
+        -4.190936354048175
+      ]
+    },
+    "xgb_growth_minus_linear_6h remaining": {
+      "difference_pp": -6.3138177521553915,
+      "event_cluster_bootstrap_95pct": [
+        -8.37225276255641,
+        -4.31100766379722
+      ]
+    },
+    "xgb_growth_minus_shape_analog_all": {
+      "difference_pp": -1.2136523977076372,
+      "event_cluster_bootstrap_95pct": [
+        -2.5183513226638663,
+        0.11159640531423445
+      ]
+    },
+    "xgb_growth_minus_shape_analog_6h remaining": {
+      "difference_pp": 0.7832811732235998,
+      "event_cluster_bootstrap_95pct": [
+        0.13282999083839914,
+        1.5112596532670457
+      ]
+    }
+  },
+  "total_prediction_rows": 4816,
+  "prefix_invariance_snapshots_checked": 994,
+  "experiment_environment": ".venv",
+  "python": "3.14.8"
+}

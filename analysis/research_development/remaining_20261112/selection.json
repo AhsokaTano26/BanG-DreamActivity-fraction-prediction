@@ -1,0 +1,75 @@
+{
+  "selected_recipe": "remaining_baseline_log_rmse",
+  "validation": {
+    "remaining_baseline_log_rmse": {
+      "event_macro_mape_pct": 5.506189288830008,
+      "case_mape_pct": 5.549722216020367,
+      "mae": 305574.3249649122,
+      "rmse": 736730.9322927779,
+      "p90_ape_pct": 15.26458220716984,
+      "events": 42,
+      "cases": 1548
+    },
+    "remaining_rate_log_rmse": {
+      "event_macro_mape_pct": 8.573621652358117,
+      "case_mape_pct": 8.63514725291848,
+      "mae": 455023.1124050575,
+      "rmse": 1073725.5523128994,
+      "p90_ape_pct": 22.06814680003318,
+      "events": 42,
+      "cases": 1548
+    },
+    "remaining_rate_log_mae": {
+      "event_macro_mape_pct": 6.178995954261422,
+      "case_mape_pct": 6.197079640819354,
+      "mae": 354591.1536821799,
+      "rmse": 918545.3296047313,
+      "p90_ape_pct": 16.822292294293337,
+      "events": 42,
+      "cases": 1548
+    },
+    "remaining_ratio_mape": {
+      "event_macro_mape_pct": 14.699257676086868,
+      "case_mape_pct": 14.793365481665763,
+      "mae": 743883.6294110604,
+      "rmse": 1872809.8338432747,
+      "p90_ape_pct": 48.256591449137154,
+      "events": 42,
+      "cases": 1548
+    },
+    "remaining_ratio_mape_by_rank": {
+      "event_macro_mape_pct": 15.840072957342912,
+      "case_mape_pct": 15.78767668579457,
+      "mae": 752135.4286964923,
+      "rmse": 1814862.9993240042,
+      "p90_ape_pct": 49.60594884084371,
+      "events": 42,
+      "cases": 1548
+    },
+    "remaining_rate_log_rmse_by_rank": {
+      "event_macro_mape_pct": 6.855103248226707,
+      "case_mape_pct": 6.9041579562656885,
+      "mae": 371876.95195299975,
+      "rmse": 898211.9164458155,
+      "p90_ape_pct": 17.63446008160109,
+      "events": 42,
+      "cases": 1548
+    }
+  },
+  "model_paths": {
+    "remaining_baseline_log_rmse": "/Users/tano/Documents/GitHub/personal/BanG-Dream-Activity-fraction-prediction/analysis/research_development/remaining_20261112/models/remaining_baseline_log_rmse.joblib",
+    "remaining_rate_log_rmse": "/Users/tano/Documents/GitHub/personal/BanG-Dream-Activity-fraction-prediction/analysis/research_development/remaining_20261112/models/remaining_rate_log_rmse.joblib",
+    "remaining_rate_log_mae": "/Users/tano/Documents/GitHub/personal/BanG-Dream-Activity-fraction-prediction/analysis/research_development/remaining_20261112/models/remaining_rate_log_mae.joblib",
+    "remaining_ratio_mape": "/Users/tano/Documents/GitHub/personal/BanG-Dream-Activity-fraction-prediction/analysis/research_development/remaining_20261112/models/remaining_ratio_mape.joblib",
+    "remaining_ratio_mape_by_rank": "/Users/tano/Documents/GitHub/personal/BanG-Dream-Activity-fraction-prediction/analysis/research_development/remaining_20261112/models/remaining_ratio_mape_by_rank.joblib",
+    "remaining_rate_log_rmse_by_rank": "/Users/tano/Documents/GitHub/personal/BanG-Dream-Activity-fraction-prediction/analysis/research_development/remaining_20261112/models/remaining_rate_log_rmse_by_rank.joblib"
+  },
+  "test_answers_read": false,
+  "test_inference": false,
+  "refit_after_selection": false,
+  "limitations": [
+    "The test cohort appeared in earlier exploratory experiments; it is not a wholly unseen blind test.",
+    "Metadata is a current retrospective snapshot without historical point-in-time archives.",
+    "This development run reads no test answers or test predictions and performs no test inference."
+  ]
+}

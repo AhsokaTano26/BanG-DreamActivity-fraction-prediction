@@ -1,0 +1,105 @@
+{
+  "event_id": 328,
+  "event_name": "萌生的心意，交织于夕阳下",
+  "event_type": "live_try",
+  "bands": [
+    "Afterglow"
+  ],
+  "as_of": "2026-11-11T19:21:41.566000+08:00",
+  "event_start": "2026-11-05T13:00:00+08:00",
+  "event_end": "2026-11-11T22:59:59+08:00",
+  "model": "blend_neural_0.25",
+  "model_retrained": false,
+  "predictions": [
+    {
+      "rank": 1000,
+      "observed_at": "2026-11-11T19:15:05+08:00",
+      "current_ep": 3004840,
+      "progress": 0.9756601292570874,
+      "hours_to_end_from_observation": 3.7483333333333335,
+      "predicted_final_ep": 3625353,
+      "predicted_remaining_ep": 620513,
+      "components_ep": {
+        "v1": 3810996.0061749294,
+        "relationships_v3": 3686497.3329053307,
+        "structured_neural_v1": 3625353.287773163,
+        "neural_top3": 3441921.1523766597,
+        "dual_tcn_metric_ensemble3": 3421418.217076797,
+        "dual_gru_ensemble3": 3471573.343264628,
+        "dual_tcn_thin_ensemble3": 3432771.896788554,
+        "catboost_remaining_invariant_rank": 3428463.4783398467,
+        "lightgbm_invariant_rank": 4091810.194732962,
+        "catboost_remaining_invariant": 3414719.652373583
+      }
+    },
+    {
+      "rank": 2000,
+      "observed_at": "2026-11-11T19:15:05+08:00",
+      "current_ep": 1949655,
+      "progress": 0.9756601292570874,
+      "hours_to_end_from_observation": 3.7483333333333335,
+      "predicted_final_ep": 2172675,
+      "predicted_remaining_ep": 223020,
+      "components_ep": {
+        "v1": 2196064.1514811204,
+        "relationships_v3": 2171981.11490076,
+        "structured_neural_v1": 2172675.035876091,
+        "neural_top3": 2174756.7988020848,
+        "dual_tcn_metric_ensemble3": 2172064.823199294,
+        "dual_gru_ensemble3": 2199725.4941601567,
+        "dual_tcn_thin_ensemble3": 2152480.0790468026,
+        "catboost_remaining_invariant_rank": 2160689.4552198728,
+        "lightgbm_invariant_rank": 2162416.33955348,
+        "catboost_remaining_invariant": 2168754.5133485664
+      }
+    }
+  ],
+  "validation_replay": {
+    "v1": {
+      "cases": 414,
+      "max_relative_difference": 0.0
+    },
+    "relationships_v3": {
+      "cases": 414,
+      "max_relative_difference": 0.0
+    },
+    "structured_neural_v1": {
+      "cases": 414,
+      "max_relative_difference": 0.0
+    }
+  },
+  "models_verified": {
+    "v1": {
+      "run_id": "aef5892fd06e218af95c2a93610eae2ec22438cc31833cde189346be6885e2e8",
+      "manifest_sha256": "d0dec923b5efce212d2c288419fddf7c1b5a2bf3d25ecc037c1bb829f7b7fc18",
+      "selection": "validation_top3_ensemble",
+      "unused_changed_scorer": [
+        "analysis/holdout_evaluate.py"
+      ]
+    },
+    "relationships_v3": {
+      "run_id": "e502e97b4a22756299ab0908b371bf7587be3c59cc013f5c471e375d197c454b",
+      "manifest_sha256": "7fc6e99ea4079574f3f291b99f40dc0223069a0c5f117c544c9ebcea15221a28",
+      "selection": "blend_new_0.75",
+      "unused_changed_scorer": []
+    },
+    "structured_neural_v1": {
+      "run_id": "744df452c51e14d366213b274766ea1f2355d3da2b149c27f09b6002bc82c569",
+      "manifest_sha256": "6a7abf50374c3838f774dc80fd04a03397315d5f12237a85b3c8e37eec08c224",
+      "selection": "blend_neural_0.25",
+      "unused_changed_scorer": []
+    }
+  },
+  "dataset_id": "d0ccf9f70aee19ad1b2152925e7afe8692d67f4a6e539d558f87e2cd33329bbb",
+  "sources": {
+    "events": "https://bestdori.com/api/events/all.5.json",
+    "event_328": "https://bestdori.com/api/events/328.json",
+    "rank_1000": "https://bestdori.com/api/tracker/data?server=3&event=328&tier=1000",
+    "rank_2000": "https://bestdori.com/api/tracker/data?server=3&event=328&tier=2000"
+  },
+  "notes": [
+    "This is a forward prediction, not a fixed-test accuracy estimate.",
+    "No calibrated prediction interval is available for this mixture.",
+    "Model evaluation reused previously explored test events and retrospective metadata."
+  ]
+}

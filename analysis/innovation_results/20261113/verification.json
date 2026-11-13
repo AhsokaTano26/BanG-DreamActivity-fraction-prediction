@@ -1,0 +1,182 @@
+{
+  "cached_official_and_comparison_scoring_without_label_parsing": "passed",
+  "preserved_original_assets": {
+    "data/holdout_v1/manifest.json": "a64ae16cb3e66bb28a9babead1487137f20d158b4e9107a51f47edd5ac1100fa",
+    "data/multirank_v2/manifest.json": "29def06060327519417434a8720c2e956dfde49f76facc9ebf710caa76845044",
+    "analysis/multirank_results/v2/blind_test_manifest.json": "0c219321ea792b7a90b289c50f38b06e9a3633b1ef8f7deb2fecb616961ac757",
+    "analysis/multirank_results/v2/evaluation_manifest.json": "a8e482d4e6cdd16fcfe7166e0e6de412c622bfc6378668a1714051114cc890c7",
+    "data/db.sqlite3": "0905ba3baf6f72bc76b558235df8cf1c9ef0249c4c65c93fa2888361c4a622e6"
+  },
+  "full_suite": {
+    "tests": 172,
+    "result": "OK",
+    "seconds": 120.447,
+    "log_sha256": "b568431f98d5737a8ce6ea41fb4f4c8d084f89acb76f1eef2467b2547ee566fb"
+  },
+  "run_verifications": {
+    "analysis/holdout_results/innovation_20261113": {
+      "dataset_id": "d0ccf9f70aee19ad1b2152925e7afe8692d67f4a6e539d558f87e2cd33329bbb",
+      "source_sha256": "fe3f5cb2a82e2f73a1b0919f649cead3a9766b872ff3e53c1762ea5ab61e22e9",
+      "model_replay": [
+        {
+          "method": "retrieval__retrieval_control",
+          "cases_replayed": 412,
+          "parameters": null
+        },
+        {
+          "method": "retrieval__retrieval_features",
+          "cases_replayed": 412,
+          "parameters": null
+        },
+        {
+          "method": "retrieval__retrieval_residual",
+          "cases_replayed": 412,
+          "parameters": null
+        },
+        {
+          "method": "hierarchy__hierarchy_static_context",
+          "cases_replayed": 412,
+          "parameters": null
+        },
+        {
+          "method": "hierarchy__hierarchy_additive_shrinkage",
+          "cases_replayed": 412,
+          "parameters": null
+        },
+        {
+          "method": "hierarchy__hierarchy_phase_shrinkage",
+          "cases_replayed": 412,
+          "parameters": null
+        },
+        {
+          "method": "growth__growth_direct",
+          "cases_replayed": 412,
+          "parameters": 2241
+        },
+        {
+          "method": "growth__growth_progress",
+          "cases_replayed": 412,
+          "parameters": 2275
+        },
+        {
+          "method": "growth__growth_dual_clock",
+          "cases_replayed": 412,
+          "parameters": 2309
+        }
+      ],
+      "outer_folds_checked": 3,
+      "inner_calibration_folds_checked": 6,
+      "equal_training_event_weights": true,
+      "training_events": 198,
+      "all_test_cases": 412,
+      "retrieval_coverage": [
+        {
+          "split": "train",
+          "cases": 4377,
+          "events": 198,
+          "fallback_case_fraction": 0.15809915467214988,
+          "fallback_event_fraction": 0.1608041589320468
+        },
+        {
+          "split": "validation",
+          "cases": 414,
+          "events": 42,
+          "fallback_case_fraction": 0.0,
+          "fallback_event_fraction": 0.0
+        },
+        {
+          "split": "test",
+          "cases": 412,
+          "events": 43,
+          "fallback_case_fraction": 0.0048543689320388345,
+          "fallback_event_fraction": 0.004651162790697674
+        }
+      ],
+      "answer_files_parsed": [],
+      "status": "passed"
+    },
+    "analysis/temporal_results/innovation_20261113": {
+      "dataset_id": "1f76f39af8151bba185496411bbcee064b16a4c5aca5c515c1d957a5056fe854",
+      "source_sha256": "fe3f5cb2a82e2f73a1b0919f649cead3a9766b872ff3e53c1762ea5ab61e22e9",
+      "model_replay": [
+        {
+          "method": "retrieval__retrieval_control",
+          "cases_replayed": 1514,
+          "parameters": null
+        },
+        {
+          "method": "retrieval__retrieval_features",
+          "cases_replayed": 1514,
+          "parameters": null
+        },
+        {
+          "method": "retrieval__retrieval_residual",
+          "cases_replayed": 1514,
+          "parameters": null
+        },
+        {
+          "method": "hierarchy__hierarchy_static_context",
+          "cases_replayed": 1514,
+          "parameters": null
+        },
+        {
+          "method": "hierarchy__hierarchy_additive_shrinkage",
+          "cases_replayed": 1514,
+          "parameters": null
+        },
+        {
+          "method": "hierarchy__hierarchy_phase_shrinkage",
+          "cases_replayed": 1514,
+          "parameters": null
+        },
+        {
+          "method": "growth__growth_direct",
+          "cases_replayed": 1514,
+          "parameters": 2241
+        },
+        {
+          "method": "growth__growth_progress",
+          "cases_replayed": 1514,
+          "parameters": 2275
+        },
+        {
+          "method": "growth__growth_dual_clock",
+          "cases_replayed": 1514,
+          "parameters": 2309
+        }
+      ],
+      "outer_folds_checked": 3,
+      "inner_calibration_folds_checked": 6,
+      "equal_training_event_weights": true,
+      "training_events": 196,
+      "all_test_cases": 1514,
+      "retrieval_coverage": [
+        {
+          "split": "train",
+          "cases": 2229,
+          "events": 196,
+          "fallback_case_fraction": 0.09376401973979363,
+          "fallback_event_fraction": 0.10196515327971513
+        },
+        {
+          "split": "validation",
+          "cases": 1548,
+          "events": 42,
+          "fallback_case_fraction": 0.0012919896640826874,
+          "fallback_event_fraction": 0.0012531328320802004
+        },
+        {
+          "split": "test",
+          "cases": 1514,
+          "events": 43,
+          "fallback_case_fraction": 0.004623513870541612,
+          "fallback_event_fraction": 0.0055669554643562845
+        }
+      ],
+      "answer_files_parsed": [],
+      "status": "passed"
+    }
+  },
+  "no_refit_after_validation_selection": true,
+  "no_post_test_model_change": true
+}

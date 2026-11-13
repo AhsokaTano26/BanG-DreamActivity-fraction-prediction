@@ -1,0 +1,9 @@
+{
+  "blind_manifest_sha256": "ad3a0308043099179e09b759b5784e7fb411951e78903bfc7dd37ec5d104e4fe",
+  "evaluation_manifest_sha256": "819620461ed125da7fca979bc8052526db1debd72a6ee0ad9dec8fdbaf543156",
+  "artifacts": {
+    "README.md": "7cbb39cf9ac1eae28a87745720dd27b0fd3ddc9ebd041a9bf6d0d638e0a2028f",
+    "all_candidates.csv": "d11bf31702a6308f71355fa5887df6d5cb2db3ffc3eb585765f09b1bee4c603f",
+    "report_source.py": "c2f330a1bc08f3c76d0d0199c262d86a6d30a22d2c41d8db6264226102dbdca8"
+  }
+}

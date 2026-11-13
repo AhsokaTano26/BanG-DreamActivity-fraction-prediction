@@ -1,0 +1,8 @@
+{
+  "files": {
+    "train_retrieval_coverage.csv": "b3fe0e171902c9e41f247a9b778f501ad38dce2063faeb907b450f5b43f62dc9",
+    "test_retrieval_coverage.csv": "e5fa1f9a23ffdf44e7d89af379a52d18c2282c22830bc8efb14a3e866544d75f",
+    "verification.json": "e8d80bd36a40c4f51bcaf109bb8827fe45587e9b6df7bc5f2c13395c24cf2ff5",
+    "validation_retrieval_coverage.csv": "67b6396bf8924e096561d9cb3d99c983553a859b2ebbdc321ebf7697319b8ba7"
+  }
+}

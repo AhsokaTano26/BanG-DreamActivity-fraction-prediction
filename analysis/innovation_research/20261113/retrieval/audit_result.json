@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "dataset_id": "1f76f39af8151bba185496411bbcee064b16a4c5aca5c515c1d957a5056fe854",
+  "evaluation_events": 99,
+  "unique_cases_per_method": 1189,
+  "methods": 4,
+  "prediction_rows_checked": 4756,
+  "chosen_history_entries_checked": 22800,
+  "checks": [
+    "frozen case sets exactly equal in every method",
+    "frozen event/rank/timestamps/current match",
+    "chronological 99 warmup plus 3 x 33 split",
+    "strict-past same-rank unique chosen history events",
+    "history prefix >=4 points and <=60min lag",
+    "fallback consistency",
+    "prediction arithmetic",
+    "saved prediction/scoring artifact hashes",
+    "sealed source hashes"
+  ],
+  "labels_parsed": [],
+  "audit_source_sha256": "eb008e8777f85deacecf936e7d93aacf63e3f9953a00bf787ebbb467d34fd01a",
+  "prediction_manifest_sha256": "5e2d0b77b72efcba3f690d54426e9ec57ecdf5f01687814eaa27fe14f3164fec",
+  "scoring_manifest_sha256": "4ba1d2d941747043b869ac22276421ea13a3e28eb323a9a7506ce3da77089dd5"
+}

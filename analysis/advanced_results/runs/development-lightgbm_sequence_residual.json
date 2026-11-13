@@ -1,0 +1,7 @@
+{
+  "architecture": "lightgbm_sequence_residual",
+  "seed": 42,
+  "seconds": 0.6664277499658056,
+  "signature": "fd64730f9715bf10f35ab88ba92e34b575c0d950371fab68ea0859052fc431b4",
+  "key": "development-lightgbm_sequence_residual"
+}

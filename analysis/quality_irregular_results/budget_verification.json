@@ -1,0 +1,16 @@
+{
+  "first_run_id": "8eca721206629d818ecbcb85a5113ed071fb978da132ffcf994df4f8342f44ec",
+  "extended_run_id": "3a025d81093a6e35ca50c8cac2fb755bc6a1823b435f6ca52a716e28462ced93",
+  "identical_initial_epoch_traces": {
+    "time_gru_42": 80,
+    "time_gru_123": 80,
+    "time_gru_2026": 80,
+    "neural_cde_42": 80,
+    "neural_cde_123": 80,
+    "neural_cde_2026": 80
+  },
+  "all_statistical_control_predictions_identical": true,
+  "only_maximum_epochs_changed": true,
+  "test_inputs_or_answers_requested": false,
+  "source_sha256": "b6851d530809b9e97196ace80defdea46bcf92f82cdadfab465ffd1f0ea7aea6"
+}

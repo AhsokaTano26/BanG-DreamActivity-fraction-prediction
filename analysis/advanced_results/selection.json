@@ -1,0 +1,34 @@
+{
+  "epochs": {
+    "mlp": 57,
+    "gru": 52,
+    "lstm": 27,
+    "tcn": 27,
+    "transformer": 27,
+    "patchtst": 33,
+    "tsmixer": 28,
+    "itransformer": 33,
+    "dlinear": 27
+  },
+  "development_mape": {
+    "xgb_tab_growth": 7.361135045034032,
+    "xgb_sequence_residual": 5.718763414194192,
+    "catboost_sequence_residual": 5.651284724326517,
+    "lightgbm_sequence_residual": 5.597167124806266,
+    "extra_trees_sequence_residual": 5.537754701918375,
+    "mlp": 5.2756402560262705,
+    "gru": 5.127627584413663,
+    "lstm": 5.348161795192705,
+    "tcn": 5.221648509709471,
+    "transformer": 5.770650744830704,
+    "patchtst": 5.55180058263935,
+    "tsmixer": 5.4548962333483,
+    "itransformer": 5.3561992171445025,
+    "dlinear": 5.262424491027445
+  },
+  "ensemble_members": [
+    "gru",
+    "tcn",
+    "dlinear"
+  ]
+}

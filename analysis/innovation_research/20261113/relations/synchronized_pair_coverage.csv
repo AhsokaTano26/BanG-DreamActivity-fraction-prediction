@@ -1,0 +1,4 @@
+stage_id,n_cases,n_events,same_origin_pairs,usable_synchronized_pairs,invalid_after_synchronization
+progress_50pct,33,21,12,12,
+progress_90pct,96,76,20,16,4.0
+remaining_6h,129,99,30,18,12.0

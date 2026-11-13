@@ -1,0 +1,9 @@
+{
+  "method": "lightgbm_peer",
+  "backend": "lightgbm",
+  "mode": "peer",
+  "seconds": 1.320166292018257,
+  "checkpoint_sha256": "dbbdf31fa03cec6145f48d4d25ae3f2671dc0500cbb7f5c018bff2be526fbd03",
+  "run_id": "aef5892fd06e218af95c2a93610eae2ec22438cc31833cde189346be6885e2e8",
+  "prediction_sha256": "b1a489426eef29b2a70a61f9982eb14d75cdb285a01cb601a08c66796b1bf2d8"
+}

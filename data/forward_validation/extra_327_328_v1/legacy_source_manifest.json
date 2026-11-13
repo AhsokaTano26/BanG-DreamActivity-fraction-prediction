@@ -1,0 +1,16 @@
+{
+  "artifacts": {
+    "rank_1000.json": "902473ae3432a1a7bc18a6834900823394d40b31320f52ad29778100e2f3de83",
+    "events.json": "1ca7728a0926fa4daa5656892c693bc8b465a43dd9f8b7b7bed2344e703749c8",
+    "calculate.py": "9965e186d6df3576e8f0b76d262aaac52b63a1e3f207d20c6c2c2570167521da",
+    "rank_2000.json": "e059169b81a0525d360dbb61d876e9e776a837bd3ed11fc787e244023a5d8b54",
+    "prediction.json": "604749ddd95c5d0209f47e7559d26d46e3db737ccfd6a137f211ff67a6a46bb3",
+    "fetch_manifest.json": "35c683db50456c80800a0b6a9e61742b4765c3db3edb087e72ab0212ded5611c",
+    "event_328.json": "f0ebea491dca6786fa6ff68c3670e7bdb15c7c9a0e275b236d3c5b31863caf8b"
+  },
+  "source_hashes": {
+    "predict.py": "dab19d58b69abd74d7a23fb0c980571d5ce38ddc64d0da6b242650aeb275ce49",
+    "forecasting.py": "c7dd2129732744b2949faf38894cdf71829b8437f355d4781e7100251c827525"
+  },
+  "source_database_sha256": "1d15dc07c06e4cc3a1ab6c442bb02cbcfa204b1057e48507db68d6d14e28d5aa"
+}

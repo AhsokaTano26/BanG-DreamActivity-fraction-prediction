@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "training_runs": 166,
+  "test_events": 36,
+  "test_scenarios": 342,
+  "checks": [
+    "same scenarios for every method and seed",
+    "chronological expanding-window folds",
+    "no target-event overlap",
+    "training-only preprocessing",
+    "prefix-invariant sequence features",
+    "finite predictions and no duplicate scenarios",
+    "independently recomputed all summary MAPEs",
+    "database hash unchanged and integrity OK"
+  ],
+  "independent_review": "no issues invalidating completed scores; architecture adaptations and exploratory status disclosed"
+}

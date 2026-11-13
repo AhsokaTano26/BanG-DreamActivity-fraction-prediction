@@ -1,0 +1,226 @@
+{
+  "year_fixed_effect": {
+    "rows": 330,
+    "events": 198,
+    "matrix_rank": 22,
+    "columns": 22,
+    "weighted_r2": 0.8603052823145345,
+    "tests": [
+      {
+        "factor": "band",
+        "df": 8,
+        "cluster_wald_f": 8.569968842548562,
+        "p": 5.334348381396456e-10,
+        "q_bh": 7.112464508528608e-10
+      },
+      {
+        "factor": "type",
+        "df": 6,
+        "cluster_wald_f": 125.45378181455142,
+        "p": 1.625388538563458e-64,
+        "q_bh": 6.501554154253832e-64
+      },
+      {
+        "factor": "duration",
+        "df": 1,
+        "cluster_wald_f": 0.5874809293572283,
+        "p": 0.44431237151764263,
+        "q_bh": 0.44431237151764263
+      },
+      {
+        "factor": "year",
+        "df": 5,
+        "cluster_wald_f": 27.880088072620318,
+        "p": 2.6279201034023853e-21,
+        "q_bh": 5.2558402068047706e-21
+      }
+    ]
+  },
+  "exclude_rare_bands_year_fixed": {
+    "rows": 326,
+    "events": 196,
+    "matrix_rank": 21,
+    "columns": 21,
+    "weighted_r2": 0.8350990497454591,
+    "tests": [
+      {
+        "factor": "band",
+        "df": 7,
+        "cluster_wald_f": 7.734887873550216,
+        "p": 3.0018727070663275e-08,
+        "q_bh": 4.002496942755103e-08
+      },
+      {
+        "factor": "type",
+        "df": 6,
+        "cluster_wald_f": 125.39315599056147,
+        "p": 3.63530820614512e-64,
+        "q_bh": 1.454123282458048e-63
+      },
+      {
+        "factor": "duration",
+        "df": 1,
+        "cluster_wald_f": 0.5113459411544277,
+        "p": 0.4754120501792746,
+        "q_bh": 0.4754120501792746
+      },
+      {
+        "factor": "year",
+        "df": 5,
+        "cluster_wald_f": 28.04068955869905,
+        "p": 2.345872108482849e-21,
+        "q_bh": 4.691744216965698e-21
+      }
+    ]
+  },
+  "growth_year_fixed_effect": {
+    "rows": 4377,
+    "events": 198,
+    "matrix_rank": 45,
+    "columns": 45,
+    "weighted_r2": 0.8270149209845186,
+    "tests": [
+      {
+        "factor": "band",
+        "df": 8,
+        "cluster_wald_f": 2.6890579905617678,
+        "p": 0.007918218249492787,
+        "q_bh": 0.01018056632077644
+      },
+      {
+        "factor": "type",
+        "df": 6,
+        "cluster_wald_f": 136.04395168802498,
+        "p": 2.8480003704091962e-67,
+        "q_bh": 2.5632003333682766e-66
+      },
+      {
+        "factor": "duration",
+        "df": 1,
+        "cluster_wald_f": 24.308340717931927,
+        "p": 1.738742726870424e-06,
+        "q_bh": 2.608114090305636e-06
+      },
+      {
+        "factor": "year",
+        "df": 5,
+        "cluster_wald_f": 11.441464433213095,
+        "p": 1.0456013592953832e-09,
+        "q_bh": 1.88208244673169e-09
+      },
+      {
+        "factor": "quality",
+        "df": 2,
+        "cluster_wald_f": 0.5943673722899023,
+        "p": 0.5528982493636905,
+        "q_bh": 0.5528982493636905
+      },
+      {
+        "factor": "peer",
+        "df": 6,
+        "cluster_wald_f": 14.488380754387476,
+        "p": 1.1329711286391007e-13,
+        "q_bh": 2.5491850394379767e-13
+      },
+      {
+        "factor": "phase",
+        "df": 12,
+        "cluster_wald_f": 19.198123313581007,
+        "p": 3.161941122043488e-27,
+        "q_bh": 9.485823366130465e-27
+      },
+      {
+        "factor": "own_velocity",
+        "df": 2,
+        "cluster_wald_f": 86.86015429211636,
+        "p": 8.991974134098184e-28,
+        "q_bh": 4.046388360344183e-27
+      },
+      {
+        "factor": "scale",
+        "df": 1,
+        "cluster_wald_f": 2.421406150112985,
+        "p": 0.12129248372862876,
+        "q_bh": 0.13645404419470736
+      }
+    ]
+  },
+  "training_time_cv_ablation": {
+    "full": {
+      "training_oof_event_mape_pct": 5.472343906152137,
+      "minus_full_mape_points": 0.0,
+      "paired_event_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "invariant": {
+      "training_oof_event_mape_pct": 5.2771574692971335,
+      "minus_full_mape_points": -0.19518643685500286,
+      "paired_event_bootstrap95": [
+        -0.4424520543779502,
+        0.0348918508933411
+      ]
+    },
+    "no_band": {
+      "training_oof_event_mape_pct": 5.156844965358899,
+      "minus_full_mape_points": -0.3154989407932358,
+      "paired_event_bootstrap95": [
+        -0.5140432488622148,
+        -0.12924467637567394
+      ]
+    },
+    "no_peer": {
+      "training_oof_event_mape_pct": 5.452700746969381,
+      "minus_full_mape_points": -0.01964315918275561,
+      "paired_event_bootstrap95": [
+        -0.12079987322116446,
+        0.08652210063201901
+      ]
+    },
+    "no_quality": {
+      "training_oof_event_mape_pct": 5.621313127370165,
+      "minus_full_mape_points": 0.14896922121802975,
+      "paired_event_bootstrap95": [
+        0.03723909182010402,
+        0.26490384887046964
+      ]
+    },
+    "no_type": {
+      "training_oof_event_mape_pct": 9.610471497394778,
+      "minus_full_mape_points": 4.138127591242645,
+      "paired_event_bootstrap95": [
+        3.1375754084947167,
+        5.194046985410485
+      ]
+    }
+  },
+  "coverage": {
+    "train": {
+      "peer_available_fraction": 0.33196253141421067,
+      "median_prefix_points": 17.999999999999996,
+      "median_gap_h": 2.775,
+      "events_with_peer": 193
+    },
+    "validation": {
+      "peer_available_fraction": 1.0,
+      "median_prefix_points": 262.99999999999994,
+      "median_gap_h": 0.5005555555555555,
+      "events_with_peer": 42
+    }
+  },
+  "paired_spearman": 0.9800316196459224,
+  "band_training_event_counts": {
+    "1": 19,
+    "18": 9,
+    "2": 24,
+    "21": 10,
+    "3": 19,
+    "4": 20,
+    "45": 2,
+    "5": 21,
+    "mixed": 74
+  },
+  "source_sha256": "86e43d5c5b903286e00f84fecbe1a6b127538bf4148dbecc2280cc00e757e591",
+  "dataset_id": "d0ccf9f70aee19ad1b2152925e7afe8692d67f4a6e539d558f87e2cd33329bbb"
+}

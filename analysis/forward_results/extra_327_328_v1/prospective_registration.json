@@ -1,0 +1,154 @@
+{
+  "registered_at": "2026-11-12T15:32:00.624345+00:00",
+  "model_identities": {
+    "selected": {
+      "directory": "/Users/tano/Documents/GitHub/personal/BanG-Dream-Activity-fraction-prediction/analysis/temporal_results/v2_multiagent_20261112",
+      "run_id": "52320deab12368725d309e38c32b9b8ca34965cdb939948aa815e59354de47ba",
+      "dataset_id": "1f76f39af8151bba185496411bbcee064b16a4c5aca5c515c1d957a5056fe854",
+      "blind_manifest_sha256": "ad3a0308043099179e09b759b5784e7fb411951e78903bfc7dd37ec5d104e4fe"
+    },
+    "single": {
+      "directory": "/Users/tano/Documents/GitHub/personal/BanG-Dream-Activity-fraction-prediction/analysis/temporal_results/v2_t1000_t2000_full_20261112",
+      "run_id": "bfd3d097c05771656a9adade5d631578a2d89ddbf3fc07131c9e93194692ef66",
+      "dataset_id": "1f76f39af8151bba185496411bbcee064b16a4c5aca5c515c1d957a5056fe854",
+      "blind_manifest_sha256": "dd01eba102c5a870eced8a371a0eba14ef00c2574bd81d0eb6b8fb249280da6e"
+    },
+    "paired": {
+      "directory": "/Users/tano/Documents/GitHub/personal/BanG-Dream-Activity-fraction-prediction/analysis/temporal_results/v2_paired_tcn_20261112",
+      "run_id": "26b3f0023757cdeb312b0c4c248ba81774050ab4962341ef1c64e6117b147d28",
+      "dataset_id": "1f76f39af8151bba185496411bbcee064b16a4c5aca5c515c1d957a5056fe854",
+      "blind_manifest_sha256": "5da57412a6638dad3a5be2961bbc3fd6bd3d0b6010b091cdf83c37fa7d840be0"
+    }
+  },
+  "selection": "family_mean",
+  "combination": {
+    "kind": "mean",
+    "members": [
+      "remaining__remaining_baseline_log_rmse",
+      "fusion__fusion_cat_rank_progress",
+      "shift__shift_calendar_rank"
+    ]
+  },
+  "population": "first five CN activities with actual start after registration; no activity chosen by observed error",
+  "ranks": [
+    1000,
+    2000
+  ],
+  "requested_stages": [
+    {
+      "stage_id": "elapsed_1h",
+      "axis": "elapsed",
+      "value": 1
+    },
+    {
+      "stage_id": "elapsed_3h",
+      "axis": "elapsed",
+      "value": 3
+    },
+    {
+      "stage_id": "elapsed_6h",
+      "axis": "elapsed",
+      "value": 6
+    },
+    {
+      "stage_id": "elapsed_12h",
+      "axis": "elapsed",
+      "value": 12
+    },
+    {
+      "stage_id": "elapsed_24h",
+      "axis": "elapsed",
+      "value": 24
+    },
+    {
+      "stage_id": "elapsed_48h",
+      "axis": "elapsed",
+      "value": 48
+    },
+    {
+      "stage_id": "elapsed_72h",
+      "axis": "elapsed",
+      "value": 72
+    },
+    {
+      "stage_id": "progress_10pct",
+      "axis": "progress",
+      "value": 0.1
+    },
+    {
+      "stage_id": "progress_25pct",
+      "axis": "progress",
+      "value": 0.25
+    },
+    {
+      "stage_id": "progress_50pct",
+      "axis": "progress",
+      "value": 0.5
+    },
+    {
+      "stage_id": "progress_75pct",
+      "axis": "progress",
+      "value": 0.75
+    },
+    {
+      "stage_id": "progress_90pct",
+      "axis": "progress",
+      "value": 0.9
+    },
+    {
+      "stage_id": "progress_95pct",
+      "axis": "progress",
+      "value": 0.95
+    },
+    {
+      "stage_id": "remaining_48h",
+      "axis": "remaining",
+      "value": 48
+    },
+    {
+      "stage_id": "remaining_24h",
+      "axis": "remaining",
+      "value": 24
+    },
+    {
+      "stage_id": "remaining_12h",
+      "axis": "remaining",
+      "value": 12
+    },
+    {
+      "stage_id": "remaining_6h",
+      "axis": "remaining",
+      "value": 6
+    },
+    {
+      "stage_id": "remaining_3h",
+      "axis": "remaining",
+      "value": 3
+    },
+    {
+      "stage_id": "remaining_1h",
+      "axis": "remaining",
+      "value": 1
+    },
+    {
+      "stage_id": "remaining_0.5h",
+      "axis": "remaining",
+      "value": 0.5
+    },
+    {
+      "stage_id": "remaining_0.25h",
+      "axis": "remaining",
+      "value": 0.25
+    }
+  ],
+  "fit_policy": "no refit or member selection on new outcomes",
+  "forecast_provenance": "forecast must actually be sealed before event end; do not backdate a replay as a stage-time forecast",
+  "outcome_policy": "last observation between end-60s and end+300s; missing remains pending",
+  "ongoing_cn_activities": [],
+  "upcoming_announced_cn_activities": [],
+  "automatic_collection_running": false,
+  "status": "waiting_for_new_cn_activity",
+  "source": "https://bestdori.com/api/events/all.5.json",
+  "http_date": "Thu, 12 Nov 2026 15:32:01 GMT",
+  "response_sha256": "1ca7728a0926fa4daa5656892c693bc8b465a43dd9f8b7b7bed2344e703749c8"
+}

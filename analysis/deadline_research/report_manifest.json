@@ -1,0 +1,20 @@
+{
+  "dataset_id": "d0ccf9f70aee19ad1b2152925e7afe8692d67f4a6e539d558f87e2cd33329bbb",
+  "run_id": "d7c6be0e789fb7822c70cb8b4721fcfa18c593f7532de8e258db1440c72df28b",
+  "tests_passed": 63,
+  "artifacts": {
+    "README.md": "166f5a0ee55fa3c6eb52e07a9e1941f3759236bafa0a24ea025e8ffb6a4a1eb4",
+    "references.md": "d8f9e082ab647235e89afd7c0d811a43c0bcbbefa7018ade869627d5ed0c21e7",
+    "verification.json": "5ffb0341f8bcc71a4e3693b37f791aab5903c8ac9c7f37173043861a846c7ce2",
+    "verify.py": "88b75ac42c6072acc379c6ba0681160cb1e432d9587fd2d5bce8adf4dfa80d68",
+    "review.md": "1dc2a5025341d897e7f6656ef27f30883dd48e0003fb9ceae4f34c25afb8c0b6",
+    "unittest.log": "0712f0bcbafb8d5ca9fa68ab8bcd45044f4de569ff23d5a5db7274f7b78babdf",
+    "diagnostics_v1/manifest.json": "5d10786304433bfb67065019e4960fb5690e923e4108d61359bcb7cb92560ce5",
+    "sampling_v1/manifest.json": "e78e8e93c200239bb86d735f16ea1006daadb74f2585be5624fb62fafffe4c57",
+    "prototypes_v2/development_seal.json": "21440baeffeb40a72d54df7c0a2342cf65b5d3f19cee5adec37386dc9e22cbde",
+    "prototypes_v2/comparison.csv": "bdc3e57d74e84b63483fee29a1cfee6ca1e53e4e9feea00b37868d92d4ba964d",
+    "prototypes_v2/fold_error_diagnostics.csv": "1247e3485e5fd81ca97449af52eec30cc2a6f83e4b508ade05a8359e99b7184d",
+    "prototypes_v2/verification.json": "a2de3527cd1b6f5b73ae1cea2330d67a030a66408113c61dce51edc256d0a552",
+    "prototypes_v2/metric_details.json": "de1dd6d5a1a73401e93a7712619f574f9430b00516e4143208efed1f3a64a04d"
+  }
+}

@@ -171,3 +171,12 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Local machine artifacts
+.DS_Store
+.idea/conventionalCommit.xml
+
+# Preserve reproducible research archives and sealed verification logs
+!data/downloads/
+!data/downloads/**
+!analysis/**/*.log

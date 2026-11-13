@@ -1,0 +1,25 @@
+{
+  "download_manifest_sha256": "41ac78233f468109882f22fd8fac33f3cf1925603b6ad491b30d20c310978d0a",
+  "database_receipt_sha256": "882af70734997c540ef3b091f0e1e66cdc93c1362d9a422e40b7317c3a0b67d0",
+  "artifacts": {
+    "database_changes.csv": "619f25311da8138b50ff30fafb70f552c1a2f4b778fa220e2eb1655dd3da085d",
+    "apply_source.py": "06304868c9189299b1392ce99ee4f4819324be13cdc2449539edb97e87554424",
+    "database_receipt.json": "882af70734997c540ef3b091f0e1e66cdc93c1362d9a422e40b7317c3a0b67d0",
+    "README.md": "a13cdcaa51b697656419ba6a45581819f4071af5ea92502560df5237781efc4b",
+    "database_import_intent.json": "47f7cb0f18d4d6654474b6400fff7e2f84d46a78be512bd3f463a3fab8766ac8",
+    "review.md": "be80f29a51eb4e4d10adc5633e448fc07215594108a37ecaf6e53577644f4637",
+    "postimport-tests.log": "986bbaf0902a795a0c6ee7cc8a0784ee83d041812920a923f49a9e9209c05d4f",
+    "audit/audit_source.py": "3177f0365eef07f003d29e13fb95c268f4454b47b9e475300a45a2b668bd79bb",
+    "audit/curve_quality.csv": "c23b3911b7ed40b1cbc8330bb7363a11b5e3e50762ea52795a2910831bb9ad71",
+    "audit/coverage.csv": "694471b6e46edd428d445b57fe3e0a3c51ceb90e93b7d5fca8a304af06573219",
+    "audit/manifest.json": "8d86481ef5eb97485bc5a1d8e1dc97c6af622ee7c10075162dc89b80b6c129c5",
+    "audit/verification.json": "54781b51dbbc2164560a61ec6a8d4632a1c32ce38ab604f524a14286529b5c8d",
+    "implementation/audit_rank_download.py": "3177f0365eef07f003d29e13fb95c268f4454b47b9e475300a45a2b668bd79bb",
+    "implementation/write_rank_download_report.py": "f181276642f5150be0c50858ff53007010e8d8f730cdf609f4a6676235520bb2",
+    "implementation/test_download_ranks.py": "0957721d6a7774f1f44f8fdd34e2170ed8a20f2d5edf15c5e8bd0b10e5ea1d73",
+    "implementation/predict.py": "9158e0a2c4b98e05547f8d631edb4ae05f0ac1ca2fc40051927e5a7afbcab666",
+    "implementation/test_multirank_cli_compatibility.py": "d32f36845f49eb2459f482498d0a696042d825d5ae6d1a1040c129a9b29fe0fa",
+    "implementation/download_ranks.py": "06304868c9189299b1392ce99ee4f4819324be13cdc2449539edb97e87554424",
+    "implementation/predict_context.py": "46248691dd2c4fb946d8aa8ba6ee643c4ceb33324230dc9785bebe39f1794ed6"
+  }
+}

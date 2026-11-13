@@ -1,0 +1,21 @@
+{
+  "evaluation_id": "afc6361daff1fab4cc299e1458b37b4758b3e062abb5528db9fb912f7df5cb5f",
+  "artifacts": {
+    "comparison.json": "55847167b1dec0396933c862f7e8043aa28fd356a52245f5e270be718598bab8",
+    "sources/API/GetEventInfo.py": "5e4599d5bcdfe0e3391db130260db4c7fedbb507ba7d698c9936804fd1c3b39e",
+    "sources/API/GetEventTracker.py": "cd67434c00a18356adf98f685e9d9f3b1c4e898974a60de7966235528c1cb7ba",
+    "sources/analysis/backtest.py": "df2733f8aff144582da7f732e3def213a224f5689b38ea8065f748d43f2e99be",
+    "sources/analysis/event_features.py": "cf3eb59a5b8e99a4cebda38a54a642140d8fcc017c4d38a132499fce38074419",
+    "sources/analysis/holdout_dataset.py": "22cf94748c4953b72a570093d8e26e76ae9437454e09da181fc9e5e10c6a2f6f",
+    "sources/analysis/holdout_evaluate.py": "cf2226d0ca778a31a37d58c57a066f81ec015df01da5899f8ca621ca2859bda4",
+    "sources/analysis/innovation_common.py": "6a87e2330acffa669bd95d7aee610f96a36ad3262e5cbfe43a0c34706bf2035e",
+    "sources/analysis/innovation_compare.py": "5be6a2373298b9475fca90fa541c779628b9c3e65471eb216cc14e7d92c8b210",
+    "sources/analysis/multirank_dataset.py": "c47b652b27971009f9ea1ecd9837832b9ed376d49d5b53adb2baea219ba9d8a8",
+    "sources/analysis/multirank_model.py": "ff3eda807ddd2990d7150609a719a3a691fe23938de655c2ef9e365193a211e2",
+    "sources/analysis/temporal_dataset.py": "288ab6ce031b916514a931c79f5626ab8807532484fa55002d1724e03b120235",
+    "sources/analysis/temporal_evaluate.py": "57a1154d6e471968daa0d2911da103f258ee4c31f8b0d36fd6b27a5f678e860f",
+    "sources/download_ranks.py": "06304868c9189299b1392ce99ee4f4819324be13cdc2449539edb97e87554424",
+    "sources/xgboost.py": "d814551d1246b1a5eaa2c5d9a070b3ea01c58671d31741394cf46cbe8c3e2c75",
+    "summary.csv": "a7f9f6e3dca130af177a49d47be68681a93777774b9f38bfec41a34c88a6d35e"
+  }
+}

@@ -1,0 +1,107 @@
+FOLD {"fold": 0, "fit_events": [1, 2, 10, 3, 4, 5, 6, 7, 8, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 24, 25, 26, 27, 28, 30, 29, 31, 49, 32, 33, 34, 36, 37, 38, 39, 40, 41, 42, 43, 45, 46, 47, 48, 51, 52, 53, 54, 55, 57, 58, 60, 61, 62, 63, 68, 69, 72, 73, 74, 75, 97, 77, 78, 79, 81, 82, 83, 84, 85, 86, 87, 88, 89, 92, 93, 94, 95, 96, 98, 100, 99, 101, 103, 104, 105, 106, 119, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116], "held_events": [118, 120, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 138, 139, 140, 141, 142, 144, 145, 146], "scores": {"remaining_rank": 4.496845025218618, "additive_spline": 4.568312173840963, "hierarchical_spline": 4.165662523951204, "quality_spline": 3.678309484629622, "quality_shared_tree": 3.6015001430396016, "quality_type_tree": 3.4394880289542806}}
+FOLD {"fold": 1, "fit_events": [1, 2, 10, 3, 4, 5, 6, 7, 8, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 24, 25, 26, 27, 28, 30, 29, 31, 49, 32, 33, 34, 36, 37, 38, 39, 40, 41, 42, 43, 45, 46, 47, 48, 51, 52, 53, 54, 55, 57, 58, 60, 61, 62, 63, 68, 69, 72, 73, 74, 75, 97, 77, 78, 79, 81, 82, 83, 84, 85, 86, 87, 88, 89, 92, 93, 94, 95, 96, 98, 100, 99, 101, 103, 104, 105, 106, 119, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 118, 120, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 138, 139, 140, 141, 142, 144, 145, 146], "held_events": [147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172], "scores": {"remaining_rank": 5.912260331699275, "additive_spline": 6.235217427629227, "hierarchical_spline": 5.712101690312853, "quality_spline": 5.019323328005736, "quality_shared_tree": 4.863613779527186, "quality_type_tree": 4.996342586832164}}
+FOLD {"fold": 2, "fit_events": [1, 2, 10, 3, 4, 5, 6, 7, 8, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 24, 25, 26, 27, 28, 30, 29, 31, 49, 32, 33, 34, 36, 37, 38, 39, 40, 41, 42, 43, 45, 46, 47, 48, 51, 52, 53, 54, 55, 57, 58, 60, 61, 62, 63, 68, 69, 72, 73, 74, 75, 97, 77, 78, 79, 81, 82, 83, 84, 85, 86, 87, 88, 89, 92, 93, 94, 95, 96, 98, 100, 99, 101, 103, 104, 105, 106, 119, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 118, 120, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 138, 139, 140, 141, 142, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172], "held_events": [173, 174, 177, 176, 178, 179, 180, 182, 184, 186, 187, 190, 191, 195, 197, 196, 198, 199, 200, 201, 202, 203, 204, 206, 208], "scores": {"remaining_rank": 4.011671815184979, "additive_spline": 3.6837099088749286, "hierarchical_spline": 3.378201859433995, "quality_spline": 3.227179536765186, "quality_shared_tree": 2.8807525343353677, "quality_type_tree": 3.9392900795180346}}
+FOLD {"fold": 3, "fit_events": [1, 2, 10, 3, 4, 5, 6, 7, 8, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 24, 25, 26, 27, 28, 30, 29, 31, 49, 32, 33, 34, 36, 37, 38, 39, 40, 41, 42, 43, 45, 46, 47, 48, 51, 52, 53, 54, 55, 57, 58, 60, 61, 62, 63, 68, 69, 72, 73, 74, 75, 97, 77, 78, 79, 81, 82, 83, 84, 85, 86, 87, 88, 89, 92, 93, 94, 95, 96, 98, 100, 99, 101, 103, 104, 105, 106, 119, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 118, 120, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 138, 139, 140, 141, 142, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 177, 176, 178, 179, 180, 182, 184, 186, 187, 190, 191, 195, 197, 196, 198, 199, 200, 201, 202, 203, 204, 206, 208], "held_events": [211, 213, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 240], "scores": {"remaining_rank": 5.9761329807772015, "additive_spline": 6.964046191388507, "hierarchical_spline": 6.993894455762136, "quality_spline": 7.085024364319315, "quality_shared_tree": 7.810117423896206, "quality_type_tree": 7.7577103010755835}}
+{"method": "time_gru", "seed": 42, "epoch": 1, "best_epoch": 1, "validation_mape": 14.658982292638205}
+{"method": "time_gru", "seed": 42, "epoch": 10, "best_epoch": 10, "validation_mape": 9.600340824085299}
+{"method": "time_gru", "seed": 42, "epoch": 20, "best_epoch": 16, "validation_mape": 9.107684958808191}
+{"method": "time_gru", "seed": 42, "epoch": 30, "best_epoch": 28, "validation_mape": 8.7636720849362}
+{"method": "time_gru", "seed": 42, "epoch": 40, "best_epoch": 40, "validation_mape": 8.386014027957739}
+{"method": "time_gru", "seed": 42, "epoch": 50, "best_epoch": 50, "validation_mape": 8.224854390839404}
+{"method": "time_gru", "seed": 42, "epoch": 60, "best_epoch": 52, "validation_mape": 8.061489194796877}
+{"method": "time_gru", "seed": 42, "epoch": 70, "best_epoch": 66, "validation_mape": 7.7343146006306975}
+{"method": "time_gru", "seed": 42, "epoch": 80, "best_epoch": 80, "validation_mape": 7.68617174798435}
+{"method": "time_gru", "seed": 42, "epoch": 90, "best_epoch": 85, "validation_mape": 7.494874380943631}
+{"method": "time_gru", "seed": 42, "epoch": 100, "best_epoch": 96, "validation_mape": 7.149441223938323}
+{"method": "time_gru", "seed": 42, "epoch": 110, "best_epoch": 96, "validation_mape": 7.149441223938323}
+{"method": "time_gru", "seed": 42, "epoch": 120, "best_epoch": 119, "validation_mape": 7.0061973091583685}
+{"method": "time_gru", "seed": 42, "epoch": 130, "best_epoch": 119, "validation_mape": 7.0061973091583685}
+{"method": "time_gru", "seed": 42, "epoch": 140, "best_epoch": 140, "validation_mape": 6.821502721985871}
+{"method": "time_gru", "seed": 42, "epoch": 150, "best_epoch": 150, "validation_mape": 6.653294617682233}
+{"method": "time_gru", "seed": 42, "epoch": 160, "best_epoch": 150, "validation_mape": 6.653294617682233}
+{"method": "time_gru", "seed": 42, "epoch": 170, "best_epoch": 165, "validation_mape": 6.558066768090702}
+{"method": "time_gru", "seed": 42, "epoch": 180, "best_epoch": 175, "validation_mape": 6.465499460999253}
+{"method": "time_gru", "seed": 42, "epoch": 190, "best_epoch": 175, "validation_mape": 6.465499460999253}
+FIT {"method": "time_gru", "seed": 42, "epochs": 195, "best_epoch": 175, "validation_mape": 6.465499460999253, "training_mape": 2.6016100475472346, "seconds": 36.96689237502869, "model_sha256": "7e7d8b4e4d51d9454ef5591f75248aedd9e0619790b2372ad2c8aab9c91ef1c0", "run_id": "3a025d81093a6e35ca50c8cac2fb755bc6a1823b435f6ca52a716e28462ced93", "solver_sensitivity": {}}
+{"method": "time_gru", "seed": 123, "epoch": 1, "best_epoch": 1, "validation_mape": 15.351261399109925}
+{"method": "time_gru", "seed": 123, "epoch": 10, "best_epoch": 10, "validation_mape": 9.76645759094898}
+{"method": "time_gru", "seed": 123, "epoch": 20, "best_epoch": 17, "validation_mape": 8.913785083149458}
+{"method": "time_gru", "seed": 123, "epoch": 30, "best_epoch": 29, "validation_mape": 8.430653711583554}
+{"method": "time_gru", "seed": 123, "epoch": 40, "best_epoch": 40, "validation_mape": 7.9744870914096175}
+{"method": "time_gru", "seed": 123, "epoch": 50, "best_epoch": 46, "validation_mape": 7.852243708412821}
+{"method": "time_gru", "seed": 123, "epoch": 60, "best_epoch": 58, "validation_mape": 7.4953378987791535}
+{"method": "time_gru", "seed": 123, "epoch": 70, "best_epoch": 70, "validation_mape": 7.084541082855277}
+{"method": "time_gru", "seed": 123, "epoch": 80, "best_epoch": 78, "validation_mape": 7.018584899802872}
+{"method": "time_gru", "seed": 123, "epoch": 90, "best_epoch": 81, "validation_mape": 6.862074829718368}
+{"method": "time_gru", "seed": 123, "epoch": 100, "best_epoch": 97, "validation_mape": 6.6833664606134295}
+{"method": "time_gru", "seed": 123, "epoch": 110, "best_epoch": 97, "validation_mape": 6.6833664606134295}
+{"method": "time_gru", "seed": 123, "epoch": 120, "best_epoch": 111, "validation_mape": 6.59728454542131}
+{"method": "time_gru", "seed": 123, "epoch": 130, "best_epoch": 123, "validation_mape": 6.545613403615251}
+{"method": "time_gru", "seed": 123, "epoch": 140, "best_epoch": 138, "validation_mape": 6.519414893082801}
+{"method": "time_gru", "seed": 123, "epoch": 150, "best_epoch": 138, "validation_mape": 6.519414893082801}
+{"method": "time_gru", "seed": 123, "epoch": 160, "best_epoch": 156, "validation_mape": 6.503238663374382}
+{"method": "time_gru", "seed": 123, "epoch": 170, "best_epoch": 156, "validation_mape": 6.503238663374382}
+FIT {"method": "time_gru", "seed": 123, "epochs": 176, "best_epoch": 156, "validation_mape": 6.503238663374382, "training_mape": 2.658940040392769, "seconds": 33.18620141700376, "model_sha256": "13cdf1c2107009be2e80ebde946b310b8091b2d0c3a0d95406b0edf426224d26", "run_id": "3a025d81093a6e35ca50c8cac2fb755bc6a1823b435f6ca52a716e28462ced93", "solver_sensitivity": {}}
+{"method": "time_gru", "seed": 2026, "epoch": 1, "best_epoch": 1, "validation_mape": 14.822875884038494}
+{"method": "time_gru", "seed": 2026, "epoch": 10, "best_epoch": 10, "validation_mape": 10.184953328787985}
+{"method": "time_gru", "seed": 2026, "epoch": 20, "best_epoch": 20, "validation_mape": 9.014828442762019}
+{"method": "time_gru", "seed": 2026, "epoch": 30, "best_epoch": 30, "validation_mape": 8.410941925667649}
+{"method": "time_gru", "seed": 2026, "epoch": 40, "best_epoch": 37, "validation_mape": 8.139438448413976}
+{"method": "time_gru", "seed": 2026, "epoch": 50, "best_epoch": 49, "validation_mape": 7.211066934139074}
+{"method": "time_gru", "seed": 2026, "epoch": 60, "best_epoch": 60, "validation_mape": 6.980012214540682}
+{"method": "time_gru", "seed": 2026, "epoch": 70, "best_epoch": 64, "validation_mape": 6.878957791963255}
+{"method": "time_gru", "seed": 2026, "epoch": 80, "best_epoch": 80, "validation_mape": 6.689042695620486}
+{"method": "time_gru", "seed": 2026, "epoch": 90, "best_epoch": 89, "validation_mape": 6.6077882815651385}
+{"method": "time_gru", "seed": 2026, "epoch": 100, "best_epoch": 94, "validation_mape": 6.567464856580255}
+{"method": "time_gru", "seed": 2026, "epoch": 110, "best_epoch": 94, "validation_mape": 6.567464856580255}
+FIT {"method": "time_gru", "seed": 2026, "epochs": 114, "best_epoch": 94, "validation_mape": 6.567464856580255, "training_mape": 2.8212793169209984, "seconds": 21.94413220899878, "model_sha256": "b1bd38cf8ad663f3c82ff4813ae973c344dc72fac41c06370c11d8415ebf3acb", "run_id": "3a025d81093a6e35ca50c8cac2fb755bc6a1823b435f6ca52a716e28462ced93", "solver_sensitivity": {}}
+{"method": "neural_cde", "seed": 42, "epoch": 1, "best_epoch": 1, "validation_mape": 13.233722844003399}
+{"method": "neural_cde", "seed": 42, "epoch": 10, "best_epoch": 10, "validation_mape": 9.679875520710793}
+{"method": "neural_cde", "seed": 42, "epoch": 20, "best_epoch": 19, "validation_mape": 9.001932978402914}
+{"method": "neural_cde", "seed": 42, "epoch": 30, "best_epoch": 28, "validation_mape": 8.50877392481082}
+{"method": "neural_cde", "seed": 42, "epoch": 40, "best_epoch": 39, "validation_mape": 8.144112305732943}
+{"method": "neural_cde", "seed": 42, "epoch": 50, "best_epoch": 50, "validation_mape": 7.604566877818454}
+{"method": "neural_cde", "seed": 42, "epoch": 60, "best_epoch": 57, "validation_mape": 7.073885870398162}
+{"method": "neural_cde", "seed": 42, "epoch": 70, "best_epoch": 69, "validation_mape": 7.063458892923152}
+{"method": "neural_cde", "seed": 42, "epoch": 80, "best_epoch": 72, "validation_mape": 7.017203765346771}
+{"method": "neural_cde", "seed": 42, "epoch": 90, "best_epoch": 88, "validation_mape": 6.81777528626683}
+{"method": "neural_cde", "seed": 42, "epoch": 100, "best_epoch": 98, "validation_mape": 6.6899680349672845}
+{"method": "neural_cde", "seed": 42, "epoch": 110, "best_epoch": 105, "validation_mape": 6.682650524478396}
+{"method": "neural_cde", "seed": 42, "epoch": 120, "best_epoch": 105, "validation_mape": 6.682650524478396}
+{"method": "neural_cde", "seed": 42, "epoch": 130, "best_epoch": 124, "validation_mape": 6.6029815822251665}
+{"method": "neural_cde", "seed": 42, "epoch": 140, "best_epoch": 124, "validation_mape": 6.6029815822251665}
+FIT {"method": "neural_cde", "seed": 42, "epochs": 144, "best_epoch": 124, "validation_mape": 6.6029815822251665, "training_mape": 2.728344718943625, "seconds": 53.6809847499826, "model_sha256": "159b1eee45856a92846d80538dcc76dda11871967c932acdf3fab340ea2d5650", "run_id": "3a025d81093a6e35ca50c8cac2fb755bc6a1823b435f6ca52a716e28462ced93", "solver_sensitivity": {"2": {"mean_absolute_relative_change_pct": 0.11195527363826285, "max_absolute_relative_change_pct": 0.6872524957030612, "validation_mape": 6.593424830917012}, "4": {"mean_absolute_relative_change_pct": 0.13473821117176307, "max_absolute_relative_change_pct": 0.8191630030515706, "validation_mape": 6.5918064456208825}}}
+{"method": "neural_cde", "seed": 123, "epoch": 1, "best_epoch": 1, "validation_mape": 14.188834249097194}
+{"method": "neural_cde", "seed": 123, "epoch": 10, "best_epoch": 10, "validation_mape": 9.756583001633405}
+{"method": "neural_cde", "seed": 123, "epoch": 20, "best_epoch": 20, "validation_mape": 9.331969607786464}
+{"method": "neural_cde", "seed": 123, "epoch": 30, "best_epoch": 29, "validation_mape": 8.840655356365923}
+{"method": "neural_cde", "seed": 123, "epoch": 40, "best_epoch": 40, "validation_mape": 8.380805707818533}
+{"method": "neural_cde", "seed": 123, "epoch": 50, "best_epoch": 49, "validation_mape": 7.846434266437249}
+{"method": "neural_cde", "seed": 123, "epoch": 60, "best_epoch": 59, "validation_mape": 7.63481142698177}
+{"method": "neural_cde", "seed": 123, "epoch": 70, "best_epoch": 69, "validation_mape": 7.406562088463315}
+{"method": "neural_cde", "seed": 123, "epoch": 80, "best_epoch": 78, "validation_mape": 7.254584708130447}
+{"method": "neural_cde", "seed": 123, "epoch": 90, "best_epoch": 88, "validation_mape": 7.083814341292891}
+{"method": "neural_cde", "seed": 123, "epoch": 100, "best_epoch": 98, "validation_mape": 6.9532805262981165}
+{"method": "neural_cde", "seed": 123, "epoch": 110, "best_epoch": 101, "validation_mape": 6.907063336201825}
+{"method": "neural_cde", "seed": 123, "epoch": 120, "best_epoch": 101, "validation_mape": 6.907063336201825}
+{"method": "neural_cde", "seed": 123, "epoch": 130, "best_epoch": 121, "validation_mape": 6.905083304832162}
+{"method": "neural_cde", "seed": 123, "epoch": 140, "best_epoch": 121, "validation_mape": 6.905083304832162}
+FIT {"method": "neural_cde", "seed": 123, "epochs": 141, "best_epoch": 121, "validation_mape": 6.905083304832162, "training_mape": 2.7174124178788905, "seconds": 52.441604917054065, "model_sha256": "80e0f4eca3fd90c890035383a1de69209a552861c4a41b3a07e11f207de6c20a", "run_id": "3a025d81093a6e35ca50c8cac2fb755bc6a1823b435f6ca52a716e28462ced93", "solver_sensitivity": {"2": {"mean_absolute_relative_change_pct": 0.04225680767420046, "max_absolute_relative_change_pct": 0.2198529407824945, "validation_mape": 6.900935253500436}, "4": {"mean_absolute_relative_change_pct": 0.05147616624336548, "max_absolute_relative_change_pct": 0.26466680495401684, "validation_mape": 6.9001313048771085}}}
+{"method": "neural_cde", "seed": 2026, "epoch": 1, "best_epoch": 1, "validation_mape": 13.22507978914203}
+{"method": "neural_cde", "seed": 2026, "epoch": 10, "best_epoch": 10, "validation_mape": 9.475298221094684}
+{"method": "neural_cde", "seed": 2026, "epoch": 20, "best_epoch": 19, "validation_mape": 8.944533167773562}
+{"method": "neural_cde", "seed": 2026, "epoch": 30, "best_epoch": 29, "validation_mape": 8.64248133826451}
+{"method": "neural_cde", "seed": 2026, "epoch": 40, "best_epoch": 38, "validation_mape": 8.254968540544773}
+{"method": "neural_cde", "seed": 2026, "epoch": 50, "best_epoch": 49, "validation_mape": 7.587416034796677}
+{"method": "neural_cde", "seed": 2026, "epoch": 60, "best_epoch": 55, "validation_mape": 7.472597198602683}
+{"method": "neural_cde", "seed": 2026, "epoch": 70, "best_epoch": 65, "validation_mape": 7.263744064868692}
+{"method": "neural_cde", "seed": 2026, "epoch": 80, "best_epoch": 73, "validation_mape": 7.130723121401559}
+{"method": "neural_cde", "seed": 2026, "epoch": 90, "best_epoch": 87, "validation_mape": 6.923548574354269}
+{"method": "neural_cde", "seed": 2026, "epoch": 100, "best_epoch": 87, "validation_mape": 6.923548574354269}
+{"method": "neural_cde", "seed": 2026, "epoch": 110, "best_epoch": 106, "validation_mape": 6.8776510573110015}
+{"method": "neural_cde", "seed": 2026, "epoch": 120, "best_epoch": 119, "validation_mape": 6.8041265377518965}
+{"method": "neural_cde", "seed": 2026, "epoch": 130, "best_epoch": 119, "validation_mape": 6.8041265377518965}
+{"method": "neural_cde", "seed": 2026, "epoch": 140, "best_epoch": 133, "validation_mape": 6.759605923618135}
+{"method": "neural_cde", "seed": 2026, "epoch": 150, "best_epoch": 133, "validation_mape": 6.759605923618135}
+FIT {"method": "neural_cde", "seed": 2026, "epochs": 153, "best_epoch": 133, "validation_mape": 6.759605923618135, "training_mape": 2.7159174993871837, "seconds": 56.26818595902296, "model_sha256": "13ec8adce9f93561768cdb1d304780c222f93f47135e7d05e601f2c919b45ebf", "run_id": "3a025d81093a6e35ca50c8cac2fb755bc6a1823b435f6ca52a716e28462ced93", "solver_sensitivity": {"2": {"mean_absolute_relative_change_pct": 0.10533558447995159, "max_absolute_relative_change_pct": 0.6119612319572698, "validation_mape": 6.746146135600206}, "4": {"mean_absolute_relative_change_pct": 0.1269602322319459, "max_absolute_relative_change_pct": 0.7081455236703893, "validation_mape": 6.744069497538274}}}
+VALIDATION {"run_id": "3a025d81093a6e35ca50c8cac2fb755bc6a1823b435f6ca52a716e28462ced93", "dataset_id": "d0ccf9f70aee19ad1b2152925e7afe8692d67f4a6e539d558f87e2cd33329bbb", "selected_on_validation": "current_reference", "validation_scores": {"current_reference": 3.8018431097910663, "remaining_rank": 4.305982145249151, "additive_spline": 10.264547071773219, "hierarchical_spline": 10.354187895584769, "quality_spline": 10.209752832198628, "quality_shared_tree": 5.739614707872019, "quality_type_tree": 6.207348410292494, "time_gru_seed42": 6.465499460999252, "time_gru_seed123": 6.503238663374383, "time_gru_seed2026": 6.567464856580255, "time_gru_ensemble3": 6.385989488025361, "neural_cde_seed42": 6.602981582225165, "neural_cde_seed123": 6.905083304832162, "neural_cde_seed2026": 6.7596059236181345, "neural_cde_ensemble3": 6.635165544424088, "blend25_remaining_rank": 3.8100283333007647, "blend25_additive_spline": 4.506087671433303, "blend25_hierarchical_spline": 4.540002172092041, "blend25_quality_spline": 4.54346976780515, "blend25_quality_shared_tree": 4.08328050274472, "blend25_quality_type_tree": 4.040430428529797, "blend25_time_gru_ensemble3": 3.9904290811322807, "blend25_neural_cde_ensemble3": 4.131010574396257}, "test_evaluated": false}

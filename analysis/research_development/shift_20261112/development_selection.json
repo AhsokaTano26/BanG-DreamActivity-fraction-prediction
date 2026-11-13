@@ -1,0 +1,7 @@
+{
+  "selected_recipe": "shift_calendar_rank",
+  "criterion": "validation event-macro MAPE",
+  "all_recipes_reported": true,
+  "test_labels_read": false,
+  "validation_used_for_fitting": false
+}

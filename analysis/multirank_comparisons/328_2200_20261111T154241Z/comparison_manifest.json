@@ -1,0 +1,10 @@
+{
+  "prediction_manifest_sha256": "b6cde855b4a14c9e209868bd495c4e3d6ef1d95b0c802fc8196ac7df748ed755",
+  "fetch_manifest_sha256": "da33f41df178561851dc9faef673ddf324b2614679313242f50147c67b79443c",
+  "artifacts": {
+    "compare.py": "dbf9568f24222f73553ce8843c301f6cecdb4b28a8737b8b5a3d2247efa86270",
+    "comparison.csv": "fceb4c4d160b5f9775c425223f7260b624f11c93438f5855b49a7dc50c0d75d7",
+    "summary.json": "04e0270414002b0e96dc179ae35ca6aed19458e9b1f8f0198ae02e9754b73009",
+    "README.md": "b70c08cf30278b66b348c2d22937eb92147c33eaf09231ae13f48b884875f984"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "remaining_rank": {
+    "delta_mape_pp": 0.0,
+    "ci95_pp": [
+      0.0,
+      0.0
+    ],
+    "events_improved": 0,
+    "events": 100
+  },
+  "additive_spline": {
+    "delta_mape_pp": 0.26359388721338733,
+    "ci95_pp": [
+      -0.11576616128082354,
+      0.6194451374762405
+    ],
+    "events_improved": 47,
+    "events": 100
+  },
+  "hierarchical_spline": {
+    "delta_mape_pp": -0.03676240585497128,
+    "ci95_pp": [
+      -0.42953898974709287,
+      0.3390764333522427
+    ],
+    "events_improved": 56,
+    "events": 100
+  },
+  "quality_spline": {
+    "delta_mape_pp": -0.3467683597900536,
+    "ci95_pp": [
+      -0.7983503988835143,
+      0.07753963326079953
+    ],
+    "events_improved": 60,
+    "events": 100
+  },
+  "quality_shared_tree": {
+    "delta_mape_pp": -0.31023156802042867,
+    "ci95_pp": [
+      -0.6830365334617526,
+      0.058481102750413974
+    ],
+    "events_improved": 59,
+    "events": 100
+  },
+  "quality_type_tree": {
+    "delta_mape_pp": -0.0660197891250038,
+    "ci95_pp": [
+      -0.4357747850386937,
+      0.3193959745975104
+    ],
+    "events_improved": 58,
+    "events": 100
+  }
+}

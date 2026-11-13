@@ -1,0 +1,19 @@
+Model and event weights verified: remaining__remaining_baseline_log_rmse
+Model and event weights verified: remaining__remaining_rate_log_rmse
+Model and event weights verified: remaining__remaining_rate_log_mae
+Model and event weights verified: remaining__remaining_ratio_mape
+Model and event weights verified: remaining__remaining_ratio_mape_by_rank
+Model and event weights verified: remaining__remaining_rate_log_rmse_by_rank
+Model and event weights verified: fusion__fusion_cat_rmse_constant
+Model and event weights verified: fusion__fusion_cat_rmse_progress
+Model and event weights verified: fusion__fusion_cat_mae_progress
+Model and event weights verified: fusion__fusion_cat_huber_progress
+Model and event weights verified: fusion__fusion_cat_rank_progress
+Model and event weights verified: fusion__fusion_extra_progress
+Model and event weights verified: shift__shift_calendar_pool
+Model and event weights verified: shift__shift_calendar_rank
+Model and event weights verified: shift__shift_calendar_phase
+Model and event weights verified: shift__shift_era_ridge
+Model and event weights verified: shift__shift_pool_calibrated
+Model and event weights verified: shift__shift_rank_calibrated
+All final verification checks passed

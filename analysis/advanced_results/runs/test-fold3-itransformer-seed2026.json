@@ -1,0 +1,12 @@
+{
+  "architecture": "itransformer",
+  "seed": 2026,
+  "device": "mps",
+  "parameters": 49825,
+  "epochs_run": 33,
+  "selected_epochs": 33,
+  "seconds": 2.7129134999704547,
+  "trace": [],
+  "signature": "fd64730f9715bf10f35ab88ba92e34b575c0d950371fab68ea0859052fc431b4",
+  "key": "test-fold3-itransformer-seed2026"
+}

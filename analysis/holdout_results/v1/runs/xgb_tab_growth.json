@@ -1,0 +1,9 @@
+{
+  "method": "xgb_tab_growth",
+  "backend": "xgb_tab",
+  "mode": "baseline",
+  "seconds": 0.05566333397291601,
+  "checkpoint_sha256": "179dca4792f5e757aa705d12b496c5030435a1d0eefac854de9ce35048616f7b",
+  "run_id": "aef5892fd06e218af95c2a93610eae2ec22438cc31833cde189346be6885e2e8",
+  "prediction_sha256": "a88ddb0d662810aaaa7cd4a83bf79be464bf3052b70a00377b56d036b2c79595"
+}

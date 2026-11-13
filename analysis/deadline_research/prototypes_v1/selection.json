@@ -1,0 +1,16 @@
+{
+  "run_id": "f65d25f6f15719e5733e10368b8f9643b44e84a37eae3f4c40d77c8161fd0b92",
+  "dataset_id": "d0ccf9f70aee19ad1b2152925e7afe8692d67f4a6e539d558f87e2cd33329bbb",
+  "validation_scores": {
+    "current_reference": 3.8018431097910663,
+    "remaining_rank": 4.305982145249151,
+    "deadline_features": 4.4934517431439405,
+    "deadline_residual": 5.179226294290696,
+    "oof_correction_0.25": 4.293059961215574,
+    "oof_correction_0.5": 4.295043619755707,
+    "oof_correction_1.0": 4.357980826274023
+  },
+  "selected_on_validation": "current_reference",
+  "test_evaluated": false,
+  "reference_is_frozen": true
+}

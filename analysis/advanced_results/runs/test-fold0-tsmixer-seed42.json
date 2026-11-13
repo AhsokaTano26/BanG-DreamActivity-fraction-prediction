@@ -1,0 +1,12 @@
+{
+  "architecture": "tsmixer",
+  "seed": 42,
+  "device": "mps",
+  "parameters": 35545,
+  "epochs_run": 28,
+  "selected_epochs": 28,
+  "seconds": 2.1002723340061493,
+  "trace": [],
+  "signature": "fd64730f9715bf10f35ab88ba92e34b575c0d950371fab68ea0859052fc431b4",
+  "key": "test-fold0-tsmixer-seed42"
+}

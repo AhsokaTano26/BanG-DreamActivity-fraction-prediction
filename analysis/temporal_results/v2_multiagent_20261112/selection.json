@@ -1,0 +1,103 @@
+{
+  "selected_recipe": "family_mean",
+  "validation": {
+    "hold_current": 43.642054659107984,
+    "linear": 18.388596920091338,
+    "reference_single": 7.348518437623177,
+    "reference_paired": 5.501625147246523,
+    "reference_tcn": 6.176755115733972,
+    "remaining__remaining_baseline_log_rmse": 5.506189288830008,
+    "remaining__remaining_rate_log_rmse": 8.573621652358117,
+    "remaining__remaining_rate_log_mae": 6.178995954261422,
+    "remaining__remaining_ratio_mape": 14.699257676086868,
+    "remaining__remaining_ratio_mape_by_rank": 15.840072957342912,
+    "remaining__remaining_rate_log_rmse_by_rank": 6.855103248226707,
+    "fusion__fusion_cat_rmse_constant": 5.58075662374772,
+    "fusion__fusion_cat_rmse_progress": 5.5905790188311375,
+    "fusion__fusion_cat_mae_progress": 7.0878388100650245,
+    "fusion__fusion_cat_huber_progress": 5.710756141320938,
+    "fusion__fusion_cat_rank_progress": 5.213489566479723,
+    "fusion__fusion_extra_progress": 7.014391884115722,
+    "shift__shift_calendar_pool": 6.020864098860853,
+    "shift__shift_calendar_rank": 5.344110649644614,
+    "shift__shift_calendar_phase": 7.810294384001295,
+    "shift__shift_era_ridge": 10.3631909187074,
+    "shift__shift_pool_calibrated": 6.329145239718885,
+    "shift__shift_rank_calibrated": 5.492728043602376,
+    "family_mean": 4.7639944872431705,
+    "family_median": 4.851172268986299,
+    "blend_25": 5.102285591260379,
+    "blend_50": 4.877803923348296,
+    "blend_75": 4.919336400209589,
+    "rank_route": 5.063248776859363,
+    "phase_route": 4.952202611500613
+  },
+  "family_best": {
+    "remaining": "remaining__remaining_baseline_log_rmse",
+    "fusion": "fusion__fusion_cat_rank_progress",
+    "shift": "shift__shift_calendar_rank"
+  },
+  "combination_specs": {
+    "family_mean": {
+      "kind": "mean",
+      "members": [
+        "remaining__remaining_baseline_log_rmse",
+        "fusion__fusion_cat_rank_progress",
+        "shift__shift_calendar_rank"
+      ]
+    },
+    "family_median": {
+      "kind": "median",
+      "members": [
+        "remaining__remaining_baseline_log_rmse",
+        "fusion__fusion_cat_rank_progress",
+        "shift__shift_calendar_rank"
+      ]
+    },
+    "blend_25": {
+      "kind": "weighted",
+      "members": [
+        "fusion__fusion_cat_rank_progress",
+        "reference_paired"
+      ],
+      "fraction": 0.25
+    },
+    "blend_50": {
+      "kind": "weighted",
+      "members": [
+        "fusion__fusion_cat_rank_progress",
+        "reference_paired"
+      ],
+      "fraction": 0.5
+    },
+    "blend_75": {
+      "kind": "weighted",
+      "members": [
+        "fusion__fusion_cat_rank_progress",
+        "reference_paired"
+      ],
+      "fraction": 0.75
+    },
+    "rank_route": {
+      "kind": "rank",
+      "routes": {
+        "0": "reference_tcn",
+        "1": "fusion__fusion_cat_rank_progress"
+      }
+    },
+    "phase_route": {
+      "kind": "phase",
+      "routes": {
+        "0": "shift__shift_calendar_rank",
+        "1": "shift__shift_calendar_rank",
+        "2": "remaining__remaining_rate_log_mae"
+      },
+      "edges": [
+        0.25,
+        0.9
+      ]
+    }
+  },
+  "test_labels_read": false,
+  "refit_after_selection": false
+}

@@ -1,0 +1,17 @@
+{
+  "dataset_id": "d0ccf9f70aee19ad1b2152925e7afe8692d67f4a6e539d558f87e2cd33329bbb",
+  "source_hashes": {
+    "/Users/tano/Documents/GitHub/personal/BanG-Dream-Activity-fraction-prediction/analysis/deadline_diagnostics.py": "b34c48b7c99cfb3b580c9ecb0ceba7df9c8e86720b1d2fb2642b690f22d29fcd",
+    "analysis/relationship_statistics.py": "c8eca34121693a730313b39118164f397c8281d4233bab6c4156f930221ebe35",
+    "analysis/backtest.py": "df2733f8aff144582da7f732e3def213a224f5689b38ea8065f748d43f2e99be"
+  },
+  "artifacts": {
+    "all_6h_coefficients.csv": "06fac348afe5fa87b24bb761a25f56ca409f7793a851d4bd0cb43241d1659f4c",
+    "type_rank_6h.csv": "0e22c05140874b91de7bbcb7bb0aa1c4a7e5a51b1381032359e29c410bfba5a6",
+    "diagnostics.json": "67c34502d9abfe0100a21a0d4f084084335d5a353903d0e67a734b47dbeb0a35",
+    "window_summary.csv": "b35b1ffc222e80e47cef2a8dc14c1f8db64233f1872d172d2b86cfc4388fa56a",
+    "training_window_statistics.csv": "26b147b3294fe7cca3f0abc7f1af79e058445eb8e7ad59dca92b8196a7aab7d5",
+    "source.py": "b34c48b7c99cfb3b580c9ecb0ceba7df9c8e86720b1d2fb2642b690f22d29fcd",
+    "dense_6h_coefficients.csv": "e4aef793e192b74b59ee4db0b559f3692cb5c0f51a4d01c96974625be7676fa9"
+  }
+}

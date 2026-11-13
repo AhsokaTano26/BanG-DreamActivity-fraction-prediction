@@ -1,0 +1,110 @@
+{
+  "checks": [
+    {
+      "method": "catboost_rank",
+      "stage_id": "progress_25pct",
+      "cases": 764,
+      "events": 42,
+      "metrics_match": true
+    },
+    {
+      "method": "catboost_rank",
+      "stage_id": "progress_50pct",
+      "cases": 766,
+      "events": 42,
+      "metrics_match": true
+    },
+    {
+      "method": "catboost_rank",
+      "stage_id": "progress_75pct",
+      "cases": 748,
+      "events": 41,
+      "metrics_match": true
+    },
+    {
+      "method": "catboost_rank",
+      "stage_id": "remaining_24h",
+      "cases": 748,
+      "events": 41,
+      "metrics_match": true
+    },
+    {
+      "method": "catboost_rank",
+      "stage_id": "remaining_6h",
+      "cases": 731,
+      "events": 41,
+      "metrics_match": true
+    },
+    {
+      "method": "catboost_context",
+      "stage_id": "progress_25pct",
+      "cases": 764,
+      "events": 42,
+      "metrics_match": true
+    },
+    {
+      "method": "catboost_context",
+      "stage_id": "progress_50pct",
+      "cases": 766,
+      "events": 42,
+      "metrics_match": true
+    },
+    {
+      "method": "catboost_context",
+      "stage_id": "progress_75pct",
+      "cases": 748,
+      "events": 41,
+      "metrics_match": true
+    },
+    {
+      "method": "catboost_context",
+      "stage_id": "remaining_24h",
+      "cases": 748,
+      "events": 41,
+      "metrics_match": true
+    },
+    {
+      "method": "catboost_context",
+      "stage_id": "remaining_6h",
+      "cases": 731,
+      "events": 41,
+      "metrics_match": true
+    },
+    {
+      "method": "linear",
+      "stage_id": "progress_25pct",
+      "cases": 764,
+      "events": 42,
+      "metrics_match": true
+    },
+    {
+      "method": "linear",
+      "stage_id": "progress_50pct",
+      "cases": 766,
+      "events": 42,
+      "metrics_match": true
+    },
+    {
+      "method": "linear",
+      "stage_id": "progress_75pct",
+      "cases": 748,
+      "events": 41,
+      "metrics_match": true
+    },
+    {
+      "method": "linear",
+      "stage_id": "remaining_24h",
+      "cases": 748,
+      "events": 41,
+      "metrics_match": true
+    },
+    {
+      "method": "linear",
+      "stage_id": "remaining_6h",
+      "cases": 731,
+      "events": 41,
+      "metrics_match": true
+    }
+  ],
+  "v1_models_data_and_database_unchanged": true
+}

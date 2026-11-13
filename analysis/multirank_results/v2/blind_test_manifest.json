@@ -1,0 +1,22 @@
+{
+  "run_id": "6fd4e30fdcaa69c4e67e8727370ab4bf5a47aa51155bf663b1e6906ee81d2fd7",
+  "dataset_id": "e94e249b47b6d542faa997ff82c4cccd29187bb3409aba74069b050e313d5e7a",
+  "dataset_directory": "/Users/tano/Documents/GitHub/personal/BanG-Dream-Activity-fraction-prediction/data/multirank_v2",
+  "artifacts": {
+    "models/catboost_context.joblib": "e050b1285d3f97229a14ffcc2aa9a3c0461abcf0c5b11611b8377802e4ca8b8d",
+    "models/catboost_rank.joblib": "c11656e007dba8957538ffdda928c52b8bba4e47cd2973e73682c85db32bf0f9",
+    "models/metadata.joblib": "54f8de77aee23bfb8cc59eb650c979052cabafa9fb4d83248a9bf63db94f8572",
+    "models/rank_coverage.csv": "abebea60602fe8301e8620b80909887fab7c9f8ca28ab7ff8cfd99701b5b48e8",
+    "run_manifest.json": "fe167c1b582a071a26767d1bda76ffee211f20d3895fc729e69727415f5c30ce",
+    "selection.json": "f2f753b6aeb301b4c67aed9ea1b3e6d4777e6cbb0e4d21f25c5c05b70f6b20c4",
+    "sources/backtest.py": "df2733f8aff144582da7f732e3def213a224f5689b38ea8065f748d43f2e99be",
+    "sources/event_features.py": "cf3eb59a5b8e99a4cebda38a54a642140d8fcc017c4d38a132499fce38074419",
+    "sources/holdout_dataset.py": "22cf94748c4953b72a570093d8e26e76ae9437454e09da181fc9e5e10c6a2f6f",
+    "sources/holdout_evaluate.py": "cf2226d0ca778a31a37d58c57a066f81ec015df01da5899f8ca621ca2859bda4",
+    "sources/multirank_dataset.py": "c47b652b27971009f9ea1ecd9837832b9ed376d49d5b53adb2baea219ba9d8a8",
+    "sources/multirank_model.py": "ff3eda807ddd2990d7150609a719a3a691fe23938de655c2ef9e365193a211e2",
+    "test_predictions.csv": "9c125770b14215ec1837bd734a470ae4f60d72798719cbab48882de69e0f0f20",
+    "train_predictions.csv": "b1a0e3fb315a721c2a251f4a09eeb45c552bb399092a378571cc206584d7faa0",
+    "validation_predictions.csv": "3ee1e6a8e2c307239c38ade88febb24c9b17a83dd8eff3654bd067d540ad66a8"
+  }
+}

@@ -1,0 +1,303 @@
+{
+  "dataset_id": "1f76f39af8151bba185496411bbcee064b16a4c5aca5c515c1d957a5056fe854",
+  "dataset_directory": "/Users/tano/Documents/GitHub/personal/BanG-Dream-Activity-fraction-prediction/data/temporal_holdout_v2_t1000_t2000",
+  "protocol": "v2",
+  "synthetic_fixture": false,
+  "recipes": {
+    "retrieval__retrieval_control": {
+      "family": "retrieval",
+      "config": {
+        "family": "retrieval",
+        "iterations": 600,
+        "depth": 5,
+        "learning_rate": 0.035,
+        "l2_leaf_reg": 12,
+        "seed": 42,
+        "thread_count": 2,
+        "neighbors": 5,
+        "shape_fractions": [
+          0.25,
+          0.5,
+          0.75,
+          0.9
+        ],
+        "scale_distance_weight": 0.15,
+        "type_distance_weight": 0.2,
+        "history_alignment": "actual query progress; same rank; different event; end < query start",
+        "history_prefix": "at least 4 points; at most 60 minutes lag; at least 2 joint shape anchors",
+        "fallback": "linear prior when fewer than 5 eligible historical events",
+        "target": "log final / prior",
+        "final_log_growth_bounds": [
+          0.0,
+          4.0
+        ],
+        "weights": "each event has equal total weight",
+        "name": "retrieval_control",
+        "mode": "control"
+      }
+    },
+    "retrieval__retrieval_features": {
+      "family": "retrieval",
+      "config": {
+        "family": "retrieval",
+        "iterations": 600,
+        "depth": 5,
+        "learning_rate": 0.035,
+        "l2_leaf_reg": 12,
+        "seed": 42,
+        "thread_count": 2,
+        "neighbors": 5,
+        "shape_fractions": [
+          0.25,
+          0.5,
+          0.75,
+          0.9
+        ],
+        "scale_distance_weight": 0.15,
+        "type_distance_weight": 0.2,
+        "history_alignment": "actual query progress; same rank; different event; end < query start",
+        "history_prefix": "at least 4 points; at most 60 minutes lag; at least 2 joint shape anchors",
+        "fallback": "linear prior when fewer than 5 eligible historical events",
+        "target": "log final / prior",
+        "final_log_growth_bounds": [
+          0.0,
+          4.0
+        ],
+        "weights": "each event has equal total weight",
+        "name": "retrieval_features",
+        "mode": "features"
+      }
+    },
+    "retrieval__retrieval_residual": {
+      "family": "retrieval",
+      "config": {
+        "family": "retrieval",
+        "iterations": 600,
+        "depth": 5,
+        "learning_rate": 0.035,
+        "l2_leaf_reg": 12,
+        "seed": 42,
+        "thread_count": 2,
+        "neighbors": 5,
+        "shape_fractions": [
+          0.25,
+          0.5,
+          0.75,
+          0.9
+        ],
+        "scale_distance_weight": 0.15,
+        "type_distance_weight": 0.2,
+        "history_alignment": "actual query progress; same rank; different event; end < query start",
+        "history_prefix": "at least 4 points; at most 60 minutes lag; at least 2 joint shape anchors",
+        "fallback": "linear prior when fewer than 5 eligible historical events",
+        "target": "log final / prior",
+        "final_log_growth_bounds": [
+          0.0,
+          4.0
+        ],
+        "weights": "each event has equal total weight",
+        "name": "retrieval_residual",
+        "mode": "residual"
+      }
+    },
+    "hierarchy__hierarchy_static_context": {
+      "family": "hierarchy",
+      "config": {
+        "iterations": 600,
+        "depth": 5,
+        "learning_rate": 0.035,
+        "l2_leaf_reg": 12,
+        "seed": 42,
+        "thread_count": 2,
+        "inner_folds": 3,
+        "warmup_fraction": 0.5,
+        "intercept_penalty": 5.0,
+        "global_penalty": 10.0,
+        "context_penalty": 30.0,
+        "interaction_penalty": 60.0,
+        "name": "hierarchy_static_context",
+        "mode": "static"
+      }
+    },
+    "hierarchy__hierarchy_additive_shrinkage": {
+      "family": "hierarchy",
+      "config": {
+        "iterations": 600,
+        "depth": 5,
+        "learning_rate": 0.035,
+        "l2_leaf_reg": 12,
+        "seed": 42,
+        "thread_count": 2,
+        "inner_folds": 3,
+        "warmup_fraction": 0.5,
+        "intercept_penalty": 5.0,
+        "global_penalty": 10.0,
+        "context_penalty": 30.0,
+        "interaction_penalty": 60.0,
+        "name": "hierarchy_additive_shrinkage",
+        "mode": "additive"
+      }
+    },
+    "hierarchy__hierarchy_phase_shrinkage": {
+      "family": "hierarchy",
+      "config": {
+        "iterations": 600,
+        "depth": 5,
+        "learning_rate": 0.035,
+        "l2_leaf_reg": 12,
+        "seed": 42,
+        "thread_count": 2,
+        "inner_folds": 3,
+        "warmup_fraction": 0.5,
+        "intercept_penalty": 5.0,
+        "global_penalty": 10.0,
+        "context_penalty": 30.0,
+        "interaction_penalty": 60.0,
+        "name": "hierarchy_phase_shrinkage",
+        "mode": "phase"
+      }
+    },
+    "growth__growth_direct": {
+      "family": "growth",
+      "config": {
+        "family": "growth",
+        "features": "base_plus_rank",
+        "hidden_widths": [
+          32,
+          16
+        ],
+        "dropout": 0.1,
+        "epochs": 80,
+        "learning_rate": 0.001,
+        "weight_decay": 0.005,
+        "batch_size": 128,
+        "gradient_clip": 1.0,
+        "seeds": [
+          42,
+          123,
+          2026
+        ],
+        "loss": "event_equal_squared_log_final",
+        "rate_floor_quantile": 0.01,
+        "minimum_elapsed_h": 0.016666666666666666,
+        "basis": "bernstein_degree_2",
+        "end_windows_h": [
+          24.0,
+          6.0
+        ],
+        "supervision": "terminal_only",
+        "early_stopping": false,
+        "name": "growth_direct",
+        "head": "direct"
+      }
+    },
+    "growth__growth_progress": {
+      "family": "growth",
+      "config": {
+        "family": "growth",
+        "features": "base_plus_rank",
+        "hidden_widths": [
+          32,
+          16
+        ],
+        "dropout": 0.1,
+        "epochs": 80,
+        "learning_rate": 0.001,
+        "weight_decay": 0.005,
+        "batch_size": 128,
+        "gradient_clip": 1.0,
+        "seeds": [
+          42,
+          123,
+          2026
+        ],
+        "loss": "event_equal_squared_log_final",
+        "rate_floor_quantile": 0.01,
+        "minimum_elapsed_h": 0.016666666666666666,
+        "basis": "bernstein_degree_2",
+        "end_windows_h": [
+          24.0,
+          6.0
+        ],
+        "supervision": "terminal_only",
+        "early_stopping": false,
+        "name": "growth_progress",
+        "head": "progress"
+      }
+    },
+    "growth__growth_dual_clock": {
+      "family": "growth",
+      "config": {
+        "family": "growth",
+        "features": "base_plus_rank",
+        "hidden_widths": [
+          32,
+          16
+        ],
+        "dropout": 0.1,
+        "epochs": 80,
+        "learning_rate": 0.001,
+        "weight_decay": 0.005,
+        "batch_size": 128,
+        "gradient_clip": 1.0,
+        "seeds": [
+          42,
+          123,
+          2026
+        ],
+        "loss": "event_equal_squared_log_final",
+        "rate_floor_quantile": 0.01,
+        "minimum_elapsed_h": 0.016666666666666666,
+        "basis": "bernstein_degree_2",
+        "end_windows_h": [
+          24.0,
+          6.0
+        ],
+        "supervision": "terminal_only",
+        "early_stopping": false,
+        "name": "growth_dual_clock",
+        "head": "dual_clock"
+      }
+    }
+  },
+  "combination_menu": [
+    "family_mean",
+    "blend_control_50"
+  ],
+  "control": "retrieval__retrieval_control",
+  "internal_cv": true,
+  "fold_protocol": "first half warmup, three later contiguous activity blocks; fixed earlier-completed training history per block",
+  "selection": "validation only; all predeclared candidates; no seed selection; no refit",
+  "inputs": "own-line blind prefix; context/retrieval additions explicitly ablated",
+  "weights": "equal total per training activity across both ranks and all prefixes",
+  "python": "3.14.8",
+  "software": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "catboost": "1.2.10",
+    "torch": "2.15.0",
+    "joblib": "1.6.0"
+  },
+  "source_hashes": {
+    "API/GetEventInfo.py": "5e4599d5bcdfe0e3391db130260db4c7fedbb507ba7d698c9936804fd1c3b39e",
+    "API/GetEventTracker.py": "cd67434c00a18356adf98f685e9d9f3b1c4e898974a60de7966235528c1cb7ba",
+    "analysis/backtest.py": "df2733f8aff144582da7f732e3def213a224f5689b38ea8065f748d43f2e99be",
+    "analysis/event_features.py": "cf3eb59a5b8e99a4cebda38a54a642140d8fcc017c4d38a132499fce38074419",
+    "analysis/holdout_dataset.py": "22cf94748c4953b72a570093d8e26e76ae9437454e09da181fc9e5e10c6a2f6f",
+    "analysis/holdout_evaluate.py": "cf2226d0ca778a31a37d58c57a066f81ec015df01da5899f8ca621ca2859bda4",
+    "analysis/innovation_common.py": "6a87e2330acffa669bd95d7aee610f96a36ad3262e5cbfe43a0c34706bf2035e",
+    "analysis/innovation_growth.py": "dd591858b271c9aa13e352593ff69481a24fabeb20a0a38e048975fb2a03d96a",
+    "analysis/innovation_hierarchy.py": "51319c90fc6e3c8ec9611a4e2cf0cd324b932c8d25efd1a8ac0bf243dac729ce",
+    "analysis/innovation_retrieval.py": "f36c119b28ad2576620d0dc13126399bc979baefefee563e947d0740b5674e99",
+    "analysis/innovation_runner.py": "dcb94d91c7e750db8675d4880b2555bd1c3499ad51f001dcba48392e9bf41800",
+    "analysis/multirank_dataset.py": "c47b652b27971009f9ea1ecd9837832b9ed376d49d5b53adb2baea219ba9d8a8",
+    "analysis/multirank_model.py": "ff3eda807ddd2990d7150609a719a3a691fe23938de655c2ef9e365193a211e2",
+    "analysis/temporal_dataset.py": "288ab6ce031b916514a931c79f5626ab8807532484fa55002d1724e03b120235",
+    "analysis/temporal_evaluate.py": "57a1154d6e471968daa0d2911da103f258ee4c31f8b0d36fd6b27a5f678e860f",
+    "download_ranks.py": "06304868c9189299b1392ce99ee4f4819324be13cdc2449539edb97e87554424",
+    "xgboost.py": "d814551d1246b1a5eaa2c5d9a070b3ea01c58671d31741394cf46cbe8c3e2c75"
+  },
+  "run_id": "04686d15698cc4abdbdb91977637c9e53f59b9863392232e6a141dc7a5915302"
+}

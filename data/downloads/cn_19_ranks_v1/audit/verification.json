@@ -1,0 +1,22 @@
+{
+  "frozen_dataset_id": "d0ccf9f70aee19ad1b2152925e7afe8692d67f4a6e539d558f87e2cd33329bbb",
+  "download_requested_pairs": 6232,
+  "download_status_counts": {
+    "ok": 3085,
+    "empty": 3145,
+    "invalid": 2
+  },
+  "normalized_points_verified_against_raw": 3646891,
+  "top10_complete_snapshots_independently_verified": 2912022,
+  "database_rows": 3085,
+  "database_nonempty_curves": 3085,
+  "database_points": 3646891,
+  "unchanged_existing_rows": 0,
+  "sqlite_integrity": "ok",
+  "logical_keys_unique": true,
+  "all_imported_curves_match_source_plus_backup": true,
+  "zero_score_points": 0,
+  "curves_with_score_decreases": 54,
+  "source_sha256": "3177f0365eef07f003d29e13fb95c268f4454b47b9e475300a45a2b668bd79bb",
+  "database_logical_sha256": "5910afa533675ea738775c1c2bb1dc8cb5cb3a058c8ba8ddee05517b7fb7bb0b"
+}

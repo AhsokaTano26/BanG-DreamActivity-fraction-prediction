@@ -1,0 +1,16 @@
+{
+  "catboost_peer": {
+    "difference_pp": -1.4423878968375168,
+    "event_bootstrap_95pct": [
+      -2.646201503132763,
+      -0.2353351278565008
+    ]
+  },
+  "lgbm_history": {
+    "difference_pp": -1.3676380474360452,
+    "event_bootstrap_95pct": [
+      -2.4563438729858067,
+      -0.30289517423761
+    ]
+  }
+}

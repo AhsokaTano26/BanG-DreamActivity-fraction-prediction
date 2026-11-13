@@ -1,0 +1,24 @@
+{
+  "file": "event_327_rank_2000.json",
+  "url": "https://bestdori.com/api/tracker/data?server=3&event=327&tier=2000",
+  "request_started_at_utc": "2026-11-12T15:15:54.074695+00:00",
+  "fetched_at_utc": "2026-11-12T15:15:55.700820+00:00",
+  "status_code": 200,
+  "attempts": 1,
+  "headers": {
+    "date": "Thu, 12 Nov 2026 15:15:55 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "transfer-encoding": "chunked",
+    "connection": "keep-alive",
+    "server": "cloudflare",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "etag": "W/\"37b0-4CD11UHE+z2kNO5W6k0WQ6zEDuM\"",
+    "cf-cache-status": "DYNAMIC",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=wGx6mBkfVIRt2RSFszGaRQaAt8MQyum672zhBAHb82p1Ok9Mqt3u3ZVlM2%2Bcynx6nQ5cALzhxqtQfVd6N5hi%2BdUHotgLXieBdQCHiiMouYzB1Zuh3P4fVNjtJiz3DZM%3D\"}]}",
+    "content-encoding": "gzip",
+    "cf-ray": "a5967ea75f294789-NRT",
+    "alt-svc": "h3=\":443\"; ma=86400"
+  },
+  "sha256": "e432d1b23734427899fcc43b38e7178f75e3051982031790dda43436e8398a67",
+  "bytes": 14256
+}

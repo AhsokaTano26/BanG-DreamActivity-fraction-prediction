@@ -1,0 +1,8 @@
+{
+  "artifacts": {
+    "audit_source.py": "3177f0365eef07f003d29e13fb95c268f4454b47b9e475300a45a2b668bd79bb",
+    "curve_quality.csv": "c23b3911b7ed40b1cbc8330bb7363a11b5e3e50762ea52795a2910831bb9ad71",
+    "coverage.csv": "694471b6e46edd428d445b57fe3e0a3c51ceb90e93b7d5fca8a304af06573219",
+    "verification.json": "54781b51dbbc2164560a61ec6a8d4632a1c32ce38ab604f524a14286529b5c8d"
+  }
+}

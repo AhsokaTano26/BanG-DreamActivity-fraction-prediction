@@ -1,0 +1,35 @@
+{
+  "evaluation_id": "d05fbed194639d2c335a013dab74f49f5e55dd7baef9370adea931a2ae26d7d9",
+  "identity": {
+    "blind_manifest_sha256": "ad3a0308043099179e09b759b5784e7fb411951e78903bfc7dd37ec5d104e4fe",
+    "dataset_id": "1f76f39af8151bba185496411bbcee064b16a4c5aca5c515c1d957a5056fe854",
+    "sources": {
+      "analysis/temporal_evaluate.py": "57a1154d6e471968daa0d2911da103f258ee4c31f8b0d36fd6b27a5f678e860f",
+      "analysis/temporal_dataset.py": "288ab6ce031b916514a931c79f5626ab8807532484fa55002d1724e03b120235",
+      "analysis/holdout_evaluate.py": "cf2226d0ca778a31a37d58c57a066f81ec015df01da5899f8ca621ca2859bda4",
+      "analysis/holdout_dataset.py": "22cf94748c4953b72a570093d8e26e76ae9437454e09da181fc9e5e10c6a2f6f",
+      "analysis/multirank_dataset.py": "c47b652b27971009f9ea1ecd9837832b9ed376d49d5b53adb2baea219ba9d8a8",
+      "analysis/backtest.py": "df2733f8aff144582da7f732e3def213a224f5689b38ea8065f748d43f2e99be"
+    },
+    "python": "3.14.8",
+    "software": {
+      "numpy": "2.5.4",
+      "pandas": "3.1.1"
+    },
+    "bootstrap_seed": 42,
+    "bootstrap_draws": 2000
+  },
+  "artifacts": {
+    "evaluation.json": "6e80ab8f26463870f7d44772f3f029728a193cba7ae54a70c11540e3a2186bd7",
+    "stage_metrics.csv": "b571c71744eb9b1b26c18b0d1df77fab16a2e38cd62373c557816989c4bf2814",
+    "stage_rank_metrics.csv": "ea4635a25d4f7ece04eaddd131b217438b279061394460f427b91632f42e0165",
+    "stage_calendar_metrics.csv": "4aa2ffbb81c2958ce8cca20e560d2f495694ca87df8b4198730348401a09a561",
+    "paired_bootstrap.csv": "fbf1d1ade798702bca0605c239e056cae77249109e78512367b5d3eb8df30bfe",
+    "evaluator_sources/holdout_dataset.py": "22cf94748c4953b72a570093d8e26e76ae9437454e09da181fc9e5e10c6a2f6f",
+    "evaluator_sources/multirank_dataset.py": "c47b652b27971009f9ea1ecd9837832b9ed376d49d5b53adb2baea219ba9d8a8",
+    "evaluator_sources/holdout_evaluate.py": "cf2226d0ca778a31a37d58c57a066f81ec015df01da5899f8ca621ca2859bda4",
+    "evaluator_sources/temporal_dataset.py": "288ab6ce031b916514a931c79f5626ab8807532484fa55002d1724e03b120235",
+    "evaluator_sources/temporal_evaluate.py": "57a1154d6e471968daa0d2911da103f258ee4c31f8b0d36fd6b27a5f678e860f",
+    "evaluator_sources/backtest.py": "df2733f8aff144582da7f732e3def213a224f5689b38ea8065f748d43f2e99be"
+  }
+}

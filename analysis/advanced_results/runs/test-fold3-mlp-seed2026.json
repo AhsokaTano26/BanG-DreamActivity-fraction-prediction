@@ -1,0 +1,12 @@
+{
+  "architecture": "mlp",
+  "seed": 2026,
+  "device": "mps",
+  "parameters": 6097,
+  "epochs_run": 57,
+  "selected_epochs": 57,
+  "seconds": 0.99907170800725,
+  "trace": [],
+  "signature": "fd64730f9715bf10f35ab88ba92e34b575c0d950371fab68ea0859052fc431b4",
+  "key": "test-fold3-mlp-seed2026"
+}

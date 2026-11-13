@@ -1,0 +1,87 @@
+{
+  "dataset_id": "1f76f39af8151bba185496411bbcee064b16a4c5aca5c515c1d957a5056fe854",
+  "dataset_directory": "/Users/tano/Documents/GitHub/personal/BanG-Dream-Activity-fraction-prediction/data/temporal_holdout_v2_t1000_t2000",
+  "reference_directory": "/Users/tano/Documents/GitHub/personal/BanG-Dream-Activity-fraction-prediction/analysis/temporal_results/v2_t1000_t2000_full_20261112",
+  "reference_blind_manifest_sha256": "dd01eba102c5a870eced8a371a0eba14ef00c2574bd81d0eb6b8fb249280da6e",
+  "methods": [
+    "hold_current",
+    "linear",
+    "reference_catboost",
+    "catboost_paired",
+    "catboost_phase",
+    "dual_tcn_mean",
+    "dual_tcn_seed42",
+    "dual_tcn_seed123",
+    "dual_tcn_seed2026"
+  ],
+  "candidates": [
+    "hold_current",
+    "linear",
+    "reference_catboost",
+    "catboost_paired",
+    "catboost_phase",
+    "dual_tcn_mean"
+  ],
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "tree": {
+    "iterations": 600,
+    "depth": 5,
+    "learning_rate": 0.035,
+    "l2_leaf_reg": 12,
+    "seed": 42
+  },
+  "neural": {
+    "max_epochs": 120,
+    "min_epochs": 30,
+    "patience": 20,
+    "batch": 128,
+    "width": 24,
+    "dilations": [
+      1,
+      2,
+      4
+    ],
+    "sequence_summary": "last state plus full-prefix mean",
+    "tab_width": 32,
+    "dropout": 0.1,
+    "optimizer": "AdamW",
+    "lr": 0.001,
+    "weight_decay": 0.005,
+    "gradient_clip": 1,
+    "device": "cpu",
+    "threads": 2
+  },
+  "target_and_loss": "event-weighted squared linear-relative log-growth residual; existing clipped final-score decoder",
+  "input": "same joint feature frame for CatBoost and TCN; 33 own/peer curve values and explicit masks; other numeric/category features",
+  "pairing": "same split/event/requested cutoff only; peer truncated at primary observed time; invalid peer missing; no row removal",
+  "phase_control": "single-line features unchanged; within-event equal totals for available observed-progress bins [0,.25),[.25,.9),[.9,1]",
+  "selection": "validation event-macro MAPE only; no single seed selection; arithmetic mean of final scores; no refit",
+  "python": "3.14.8",
+  "software": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "scikit-learn": "1.9.1",
+    "catboost": "1.2.10",
+    "joblib": "1.6.0",
+    "torch": "2.15.0"
+  },
+  "source_hashes": {
+    "analysis/temporal_paired_benchmark.py": "c36f22380aed14edc80b37414af949224e64bfca0766c45b938621c6a70a7436",
+    "analysis/temporal_paired_features.py": "c6343c37e24944e6d2f353a33d66ac42642ac18e29010181afac3109eb929396",
+    "analysis/temporal_paired_network.py": "68553ffdf61d16cbf8bf37c5f9731c2f1df12ed0a6cc944b6d440c7f5ed998f1",
+    "analysis/temporal_dataset.py": "288ab6ce031b916514a931c79f5626ab8807532484fa55002d1724e03b120235",
+    "analysis/temporal_evaluate.py": "57a1154d6e471968daa0d2911da103f258ee4c31f8b0d36fd6b27a5f678e860f",
+    "analysis/temporal_rank_subset.py": "300587b01572970c1ed5069898bca534841b6768512b09b36ae4497133edf271",
+    "analysis/multirank_model.py": "ff3eda807ddd2990d7150609a719a3a691fe23938de655c2ef9e365193a211e2",
+    "analysis/multirank_dataset.py": "c47b652b27971009f9ea1ecd9837832b9ed376d49d5b53adb2baea219ba9d8a8",
+    "analysis/backtest.py": "df2733f8aff144582da7f732e3def213a224f5689b38ea8065f748d43f2e99be",
+    "analysis/event_features.py": "cf3eb59a5b8e99a4cebda38a54a642140d8fcc017c4d38a132499fce38074419",
+    "analysis/holdout_dataset.py": "22cf94748c4953b72a570093d8e26e76ae9437454e09da181fc9e5e10c6a2f6f",
+    "analysis/holdout_evaluate.py": "cf2226d0ca778a31a37d58c57a066f81ec015df01da5899f8ca621ca2859bda4"
+  },
+  "run_id": "26b3f0023757cdeb312b0c4c248ba81774050ab4962341ef1c64e6117b147d28"
+}

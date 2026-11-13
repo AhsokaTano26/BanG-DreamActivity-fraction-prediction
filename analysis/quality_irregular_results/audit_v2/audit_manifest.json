@@ -1,0 +1,12 @@
+{
+  "artifacts": {
+    "audit_source.py": "74c5d532ef2df6069f55e9c9337bb8ce6213fc8d6477baf2aaa158139892e99e",
+    "verified_metrics.json": "c393b6ceaa5a71c7921a1887a947972c722bccfd8d10dec4f043a345a353e5ad",
+    "quality_summary.json": "e7632be8da8f9f69c558d22fa5a1bf2bb56d10e78f29aefb5952cc36e8408fde",
+    "fold_errors.csv": "21d427704e18ca03bae9c7cf3e88374e1f9b905b215bb43aaa762c5fb23c68d9",
+    "expert_shares.json": "d0ac7691e17c890e46098f2b3aa814092ef2099de691f7e56438e7d9cac9cd98",
+    "comparison.csv": "b9730470f1973a45be34ffb63e3537be7cfc384027a3f078515cdd37d63ff5d2",
+    "verification.json": "37ff3443118903832565699da88f5a3bb0753673d91da8a007313d9879721826",
+    "paired_ablations.json": "36732dcc7d481f7f8a48337f969d333d4f45980f32d89c1cc2a2b48f1321297a"
+  }
+}

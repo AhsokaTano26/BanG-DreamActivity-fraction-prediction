@@ -1,0 +1,55 @@
+{
+  "dataset_directory": "/Users/tano/Documents/GitHub/personal/BanG-Dream-Activity-fraction-prediction/data/temporal_holdout_v2_t1000_t2000",
+  "dataset_id": "1f76f39af8151bba185496411bbcee064b16a4c5aca5c515c1d957a5056fe854",
+  "protocol": "temporal_holdout_v2",
+  "ranks": [
+    1000,
+    2000
+  ],
+  "methods": [
+    "hold_current",
+    "linear",
+    "catboost_rank",
+    "catboost_context",
+    "frozen_catboost_rank",
+    "frozen_catboost_context"
+  ],
+  "candidates": [
+    "hold_current",
+    "linear",
+    "catboost_rank",
+    "catboost_context"
+  ],
+  "iterations": 600,
+  "tree_depth": 5,
+  "learning_rate": 0.035,
+  "l2_leaf_reg": 12,
+  "seed": 42,
+  "weights": "equal total weight per training activity across all its available prefixes",
+  "target": "log(final/current) + log(observed progress)",
+  "selection": "minimum validation event-macro MAPE among candidates; no refit",
+  "reference_run": "/Users/tano/Documents/GitHub/personal/BanG-Dream-Activity-fraction-prediction/analysis/temporal_results/v2_frozen_reference",
+  "reference_blind_manifest_sha256": "ba207343a5aeaff825af7db25c46f94498366c0cad024a3010270ba66a23d7ec",
+  "reference_policy": "descriptive frozen 19-rank comparison; excluded from model selection",
+  "python": "3.14.8",
+  "software": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "scikit-learn": "1.9.1",
+    "catboost": "1.2.10",
+    "joblib": "1.6.0"
+  },
+  "source_hashes": {
+    "analysis/temporal_train.py": "0994ba0d522c5ecaccac001440a31b29540a3d8c04f21bfa89e672a4b84dd28d",
+    "analysis/temporal_rank_subset.py": "300587b01572970c1ed5069898bca534841b6768512b09b36ae4497133edf271",
+    "analysis/temporal_dataset.py": "288ab6ce031b916514a931c79f5626ab8807532484fa55002d1724e03b120235",
+    "analysis/temporal_evaluate.py": "57a1154d6e471968daa0d2911da103f258ee4c31f8b0d36fd6b27a5f678e860f",
+    "analysis/multirank_model.py": "ff3eda807ddd2990d7150609a719a3a691fe23938de655c2ef9e365193a211e2",
+    "analysis/multirank_dataset.py": "c47b652b27971009f9ea1ecd9837832b9ed376d49d5b53adb2baea219ba9d8a8",
+    "analysis/backtest.py": "df2733f8aff144582da7f732e3def213a224f5689b38ea8065f748d43f2e99be",
+    "analysis/event_features.py": "cf3eb59a5b8e99a4cebda38a54a642140d8fcc017c4d38a132499fce38074419",
+    "analysis/holdout_dataset.py": "22cf94748c4953b72a570093d8e26e76ae9437454e09da181fc9e5e10c6a2f6f",
+    "analysis/holdout_evaluate.py": "cf2226d0ca778a31a37d58c57a066f81ec015df01da5899f8ca621ca2859bda4"
+  },
+  "run_id": "bfd3d097c05771656a9adade5d631578a2d89ddbf3fc07131c9e93194692ef66"
+}

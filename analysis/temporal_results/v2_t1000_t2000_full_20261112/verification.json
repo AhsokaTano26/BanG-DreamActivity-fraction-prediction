@@ -1,0 +1,33 @@
+{
+  "train": {
+    "case_count": 2229,
+    "group_events": 198,
+    "exact_parent_case_match": true
+  },
+  "validation": {
+    "case_count": 1548,
+    "group_events": 42,
+    "exact_parent_case_match": true
+  },
+  "test": {
+    "case_count": 1514,
+    "group_events": 43,
+    "exact_parent_case_match": true
+  },
+  "training_weights": {
+    "events": 196,
+    "minimum_total": 11.372448979591836,
+    "maximum_total": 11.372448979591837,
+    "equal_total": true
+  },
+  "last_30min_vs_15min": {
+    "matched_event_rank_pairs": 78,
+    "same_last_observed_time_and_score": true,
+    "age_15min_minutes_min": 27.233333333333334,
+    "age_15min_minutes_max": 29.983333333333334
+  },
+  "cached_score_without_answer_reads": true,
+  "original_v1_multirank_and_database_unchanged": true,
+  "old_and_new_prediction_scoring_report_seals_verified": true,
+  "executed_source_hashes_match": true
+}
