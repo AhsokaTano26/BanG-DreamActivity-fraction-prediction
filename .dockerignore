@@ -1,0 +1,27 @@
+# Explicit source-only context; runtime state, weights and research archives stay external.
+**
+!Dockerfile
+!pyproject.toml
+!uv.lock
+!.python-version
+!deploy/
+!deploy/entrypoint.py
+!production/
+!production/*.py
+!production/layout-compatibility.json
+!production/web_assets/
+!production/web_assets/**
+!training/
+!training/*.py
+!training/analysis/
+!training/analysis/*.py
+!training/legacy/
+!training/legacy/*.py
+!training/legacy/API/
+!training/legacy/API/*.py
+training/legacy/test.py
+!tests/
+!tests/test_deployment*.py
+**/__pycache__
+**/*.pyc
+**/.DS_Store

@@ -1,0 +1,18 @@
+{
+  "status": "B-delivery-complete",
+  "run_files_verified": 111,
+  "independent_H_audit": "pending PI",
+  "repository_suite": "PI serial ownership; local15 tests green",
+  "files": {
+    "B_report.md": "34ba4802cf712acd5a7e2c930ac429454670ca9ef707d2c3c659adc5b71e12bf",
+    "lambda_diagnostics.csv": "7d9578336f6eaa723ee761cabef281258a86fa722aed1215a31a512058fcfff3",
+    "paired_event_differences.csv": "3d21ca395f5c2f9f4873a478ac931ab4ed7b848b2b5d02bae6f5ff863e5d4acc",
+    "implementation_manifest.json": "a36087745c64de7d03789d6c704bf48fb098df87bad13ce6772221ad77f8c45f",
+    "run_v2_001/run_manifest.json": "2b813cca86c667ecc2233b3273a5c59844e2d83883effae9d9b5ed8815126a47",
+    "run_v2_001/selection_seal.json": "fb21b7cda68509261c3844812f940e5ac8c65462413a894d67b2107b1b436f46",
+    "tdd_all_green.log": "de85626b34eb1cf3eaded58592d3d31ee00e5694fb70fd52f46655cd6034adb1",
+    "tdd_pure_red.log": "5d525adc8467399b98ba99c2dc4815652e52e080d59cb60d96326f83b3f9d18b",
+    "tdd_replay_red.log": "d9449f56c02302691d3e63fbab772cfe13dc2629df35b0d80f31def9ba6a317c",
+    "tdd_dtype_red.log": "4c3b781483728647c76220d3c93e860cca031242e63bd253c739cdffb4a67e7f"
+  }
+}

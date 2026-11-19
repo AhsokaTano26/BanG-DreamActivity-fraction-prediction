@@ -1,0 +1,277 @@
+{
+  "version": "D-mechanism-1",
+  "status": "design_pending_PI_review_no_real_numeric_execution",
+  "created": "2026-11-18",
+  "design": "D_design.md",
+  "input_scope": "35 existing train-only issued forecast events; current outcomes held by coordinator",
+  "input_sha256": {
+    "train_queries.json": "319ca4dbf9a48a853b8181f2f0376d760b50d766137c503b3c24a776dee05277",
+    "train_residuals.csv.gz": "59a6d8398110b71d0d67fe9dde7a7c3a49eddea1df9ee2c13390621d6b661d98"
+  },
+  "minimum_start_ms": 1706504400000,
+  "sort": [
+    "start_ms",
+    "event"
+  ],
+  "calibration_event_ids": [
+    259,
+    260,
+    261,
+    262,
+    264,
+    263,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    278,
+    276,
+    277,
+    279,
+    281,
+    283,
+    284,
+    285
+  ],
+  "diagnostic_event_ids": [
+    286,
+    287,
+    288,
+    289,
+    290,
+    291,
+    292,
+    312,
+    313,
+    293
+  ],
+  "phase_edges": [
+    0.25,
+    0.9
+  ],
+  "phase_boundary_side": "right",
+  "nominal_ranks": 19,
+  "PI_audited_actual_rank_count": 18,
+  "absent_rank": 1500,
+  "pair": [
+    1000,
+    2000
+  ],
+  "primary_calibration_phase": 1,
+  "minimum_complete_pairs": 12,
+  "minimum_adjacent_differences": 8,
+  "calibration": {
+    "model": "two-dimensional local level, independent state innovations and temporally white observation noise",
+    "clock": "activity ordinal; missing pair gap multiplies Q",
+    "moment_relation": "Gamma_delta0=Q+2R; sym(Gamma_delta1)=-R",
+    "raw_negative_eigenvalues": "retain and report; PSD projection separate sensitivity",
+    "scale": "max(trace(sample_cov(adjacent first differences))/2,1e-8)",
+    "q_common_multipliers": [
+      0,
+      0.125,
+      0.5,
+      1,
+      2
+    ],
+    "q_difference_multipliers": [
+      0,
+      0.125,
+      0.5,
+      1,
+      2
+    ],
+    "r_multipliers": [
+      0.025,
+      0.125,
+      0.25,
+      0.5
+    ],
+    "rho": [
+      -0.5,
+      0,
+      0.5
+    ],
+    "m": [
+      0,
+      0.5,
+      1
+    ],
+    "profile_points": 900,
+    "initial_likelihood": "conditional on first complete observation; mean=y0,P=R",
+    "support_band": "2*(NLL-minNLL)<=10; descriptive, no confidence coverage claim",
+    "anchor_selection": "actual support-grid entries at 0/50/100 percentiles of trace(Q)/trace(R), tie NLL then grid index",
+    "uncertainty": [
+      "all profile points and support band",
+      "delete-one-event best fit ranges",
+      "raw moment moving-block bootstrap 500 draws lengths 1/3/5"
+    ],
+    "location": "pair mean across calibration events",
+    "common_shift": "2*sd(pair mean)",
+    "difference_shift": "2*sd(y1000-y2000)"
+  },
+  "real_diagnostics": {
+    "rank_phase": [
+      "n",
+      "mean",
+      "sd",
+      "median",
+      "skew",
+      "excess_kurtosis",
+      "JB",
+      "JB_asymptotic_p",
+      "BH_q",
+      "within_event_case_sd",
+      "first12_last13_variance_ratio"
+    ],
+    "JB_min_n": 8,
+    "BH_family": "each calibration/diagnostic segment across available rank/phase/raw-or-difference p values",
+    "paired": [
+      "level Pearson/Spearman",
+      "linear activity-trend adjusted Pearson",
+      "difference correlation",
+      "own and cross lag1",
+      "difference lag1 covariance",
+      "raw and PSD Q/R"
+    ],
+    "bootstrap": {
+      "replicates": 500,
+      "circular_block_lengths": [
+        1,
+        3,
+        5
+      ],
+      "seed": 20261118
+    },
+    "next_period_signal": [
+      "past12 rho",
+      "past12 RMS gap ratio",
+      "past12 difference drift ratio",
+      "history support"
+    ],
+    "next_period_target": "issued S minus issued I event loss; ten diagnostic activities, all phases; descriptive rank correlation and delete-one range"
+  },
+  "B_interface": {
+    "source": "../B/adaptive_sharing.py",
+    "configuration": {
+      "kind": "risk",
+      "k": 8.0,
+      "decay": 0.85,
+      "pool": "pair"
+    },
+    "name": "risk_recent_k8",
+    "minimum_feedback_events": 5,
+    "uncertainty": "delete-one sensitivity",
+    "issued_experts": "original I/S saved before release, never re-fitted after label"
+  },
+  "simulation": {
+    "anchors": 3,
+    "variants": [
+      "gaussian",
+      "t5_variance_standardized",
+      "contamination5_variance_standardized",
+      "common_shift_at26",
+      "difference_shift_at26",
+      "delay1",
+      "delay3",
+      "heteroskedastic"
+    ],
+    "regime_count": 24,
+    "seeds": [
+      42,
+      123,
+      2026
+    ],
+    "paths_per_seed": 100,
+    "events": 35,
+    "score_events_one_based": [
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "t5_scale": "sqrt(3/5)",
+    "contamination": "95% N(0,1)+5% N(0,25), divide sqrt(2.2); same covariance after R square root",
+    "heteroskedastic_variance": [
+      0.5,
+      2.25
+    ],
+    "heteroskedastic_segments": [
+      25,
+      10
+    ],
+    "shift_persistence": "permanent after state innovation at event26",
+    "delays_events": [
+      0,
+      1,
+      3
+    ],
+    "release": "latest available label before event e is e-1-delay; issue first, then ordered release",
+    "methods": [
+      "independent_ewma",
+      "fully_shared_pair",
+      "fixed_half",
+      "risk_recent_k8",
+      "fitted_fullcov_DLM",
+      "oracle_fullcov_DLM"
+    ],
+    "oracle": "diagnostic only; true generation Q/R and initial mean; no future shocks",
+    "DLM_fit": "Gaussian likelihood minimizer from calibration segment; fixed across regimes",
+    "clip": 0.3,
+    "common_random_numbers": true,
+    "metrics": [
+      "state_mse",
+      "raw_state_mse",
+      "observed_log_mse",
+      "synthetic_unbounded_ape_pct"
+    ],
+    "primary": "task/event mean state_mse over events26..35",
+    "paired_reference": "independent_ewma",
+    "MC_unit": "independent path; 300 across seeds; report per seed too"
+  },
+  "compute": {
+    "cpu_threads": 1,
+    "parallel_workers": 0,
+    "nice": 19,
+    "cpu_seconds_hard_limit": 120,
+    "real_and_simulation_require_PI_permission": true,
+    "pre_permission_runs": "pure fixture only"
+  },
+  "outputs": [
+    "calibration_seal.json",
+    "calibration_profile.csv",
+    "calibration_parameters.csv",
+    "diagnostics.csv",
+    "paired_diagnostics.csv",
+    "next_event_signal_benefit.csv",
+    "per_path.csv",
+    "per_event_simulation.csv",
+    "per_seed.csv",
+    "failure_regions.csv",
+    "simulation_real_link.csv",
+    "run_manifest.json",
+    "D_report.md"
+  ],
+  "limitations": [
+    "retrospective explored training cohort; last10 is not prospective evidence",
+    "old test explored and validation reused, neither read here",
+    "metadata retrospective snapshot",
+    "Q/R mechanism conditional on local-level and white-noise assumptions",
+    "base V3 tree changes with historical training size",
+    "profile support band has no nominal coverage",
+    "short dependent series and multiplicity",
+    "simulation benefits conditional on generated regimes, no universal real advantage"
+  ]
+}

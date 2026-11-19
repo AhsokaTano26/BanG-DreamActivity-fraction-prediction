@@ -1,0 +1,20 @@
+{
+  "B_unique_events": 35,
+  "C2_unique_events": 12,
+  "intersection": [
+    259,
+    260,
+    261,
+    262,
+    271,
+    272,
+    273,
+    274,
+    285,
+    286,
+    287,
+    288
+  ],
+  "C2_all_subset_B": true,
+  "cross_study_independence": "The fitting and calibration studies are different estimands on overlapping training activities; not independent replications."
+}

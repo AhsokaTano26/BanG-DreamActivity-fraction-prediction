@@ -1,0 +1,13 @@
+{
+  "scope": "Historical exploratory ablation; no new fit, scoring or selection",
+  "metric": "event-macro MAPE (%)",
+  "difference_only_test_mape_pct": 6.511,
+  "full_pair_test_mape_pct": 6.54,
+  "additional_anchor_paired_95pct_interval_pp": [
+    -0.07,
+    0.143
+  ],
+  "local_origin": "papers/20261118_entertainment_computing_cn/main.tex:247",
+  "local_macro_source_sha256": "daf088a0e282433a8a1caad7d4e320366d44a0e3894dc53c4c3a366055c70c54",
+  "interpretation": "The additional anchor has no stable benefit on this explored historical queue."
+}

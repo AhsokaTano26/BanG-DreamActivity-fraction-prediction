@@ -1,0 +1,5 @@
+# Optional local-only foundation baselines for the frozen V2 follow-up.
+# Install alongside requirements.txt; run manifests capture all resolved versions.
+tabpfn==7.1.1
+chronos-forecasting==2.3.2
+timesfm==2.0.2

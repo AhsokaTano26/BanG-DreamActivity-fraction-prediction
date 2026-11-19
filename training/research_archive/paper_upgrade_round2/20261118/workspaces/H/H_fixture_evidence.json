@@ -1,0 +1,2662 @@
+{
+  "scope": "H-authored small fixtures and read-only checkpoint inventory; no model training",
+  "checks": {
+    "strict_equal_end_rejected": {
+      "passed": true,
+      "detail": null
+    },
+    "current_actual_rejected": {
+      "passed": true,
+      "detail": null
+    },
+    "current_log_error_rejected": {
+      "passed": true,
+      "detail": null
+    },
+    "current_expert__independent_rejected": {
+      "passed": true,
+      "detail": null
+    },
+    "current_target_rejected": {
+      "passed": true,
+      "detail": null
+    },
+    "current_future_label_rejected": {
+      "passed": true,
+      "detail": null
+    },
+    "duplicate_case_id_rejected": {
+      "passed": true,
+      "detail": null
+    },
+    "physical_alias_duplicate_rejected": {
+      "passed": false,
+      "detail": {
+        "physical_key": [
+          "event",
+          "rank",
+          "cutoff"
+        ],
+        "frozen_input_duplicate_count": 0
+      }
+    },
+    "small_support_0_fallback": {
+      "passed": true,
+      "detail": null
+    },
+    "small_support_1_fallback": {
+      "passed": true,
+      "detail": null
+    },
+    "small_support_2_fallback": {
+      "passed": true,
+      "detail": null
+    },
+    "small_support_3_fallback": {
+      "passed": true,
+      "detail": null
+    },
+    "small_support_4_fallback": {
+      "passed": true,
+      "detail": null
+    },
+    "constant_experts_5_fallback": {
+      "passed": true,
+      "detail": null
+    },
+    "constant_experts_12_fallback": {
+      "passed": true,
+      "detail": null
+    },
+    "constant_experts_40_fallback": {
+      "passed": true,
+      "detail": null
+    },
+    "risk_formula_independent_arithmetic": {
+      "passed": true,
+      "detail": null
+    },
+    "whole_event_replication_preserves_event_risk": {
+      "passed": true,
+      "detail": null
+    },
+    "future_extreme_labels_all_predictions_unchanged": {
+      "passed": true,
+      "detail": {
+        "queries": 4,
+        "extreme_factor": 1e+100
+      }
+    },
+    "future_extreme_labels_selection_unchanged": {
+      "passed": true,
+      "detail": null
+    },
+    "C2_checkpoint_tensor_parameter_count": {
+      "passed": true,
+      "detail": {
+        "checkpoint_files": 81,
+        "bad": [],
+        "physical_fit_states": 108
+      }
+    },
+    "C2_optimizer_actual_steps_and_updates": {
+      "passed": true,
+      "detail": {
+        "physical_states": 108,
+        "optimizer_steps": 5670,
+        "parameter_updates": 7611300
+      }
+    }
+  },
+  "findings": [
+    {
+      "id": "H-BC-01",
+      "severity": "important",
+      "scope": "input robustness; frozen B/C scores unaffected",
+      "finding": "B pure validator accepts repeated physical prefix with a distinct case_id alias. Frozen input has zero such aliases.",
+      "clear_condition": "Reject duplicate (event,rank,cutoff) when cutoff is present, or enforce canonical case_id at trusted input boundary; preserve the already-sealed run and demonstrate adversarial alias fixture rejection."
+    }
+  ],
+  "checkpoint_inventory": [
+    {
+      "path": "models/endpoint32_N16recent/independent60_seed123.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "independent",
+      "epochs": 60,
+      "physical_fit_states": 2,
+      "state_shapes": {
+        "models.0.0.weight": [
+          16,
+          57
+        ],
+        "models.0.0.bias": [
+          16
+        ],
+        "models.0.2.weight": [
+          1,
+          16
+        ],
+        "models.0.2.bias": [
+          1
+        ],
+        "models.1.0.weight": [
+          16,
+          57
+        ],
+        "models.1.0.bias": [
+          16
+        ],
+        "models.1.2.weight": [
+          1,
+          16
+        ],
+        "models.1.2.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint32_N16recent/independent60_seed2026.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "independent",
+      "epochs": 60,
+      "physical_fit_states": 2,
+      "state_shapes": {
+        "models.0.0.weight": [
+          16,
+          57
+        ],
+        "models.0.0.bias": [
+          16
+        ],
+        "models.0.2.weight": [
+          1,
+          16
+        ],
+        "models.0.2.bias": [
+          1
+        ],
+        "models.1.0.weight": [
+          16,
+          57
+        ],
+        "models.1.0.bias": [
+          16
+        ],
+        "models.1.2.weight": [
+          1,
+          16
+        ],
+        "models.1.2.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint32_N16recent/independent60_seed42.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "independent",
+      "epochs": 60,
+      "physical_fit_states": 2,
+      "state_shapes": {
+        "models.0.0.weight": [
+          16,
+          57
+        ],
+        "models.0.0.bias": [
+          16
+        ],
+        "models.0.2.weight": [
+          1,
+          16
+        ],
+        "models.0.2.bias": [
+          1
+        ],
+        "models.1.0.weight": [
+          16,
+          57
+        ],
+        "models.1.0.bias": [
+          16
+        ],
+        "models.1.2.weight": [
+          1,
+          16
+        ],
+        "models.1.2.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint32_N16recent/shared30_seed123.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "shared",
+      "epochs": 30,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          57
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint32_N16recent/shared30_seed2026.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "shared",
+      "epochs": 30,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          57
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint32_N16recent/shared30_seed42.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "shared",
+      "epochs": 30,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          57
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint32_N16recent/shared60_seed123.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "shared",
+      "epochs": 60,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          57
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint32_N16recent/shared60_seed2026.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "shared",
+      "epochs": 60,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          57
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint32_N16recent/shared60_seed42.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "shared",
+      "epochs": 60,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          57
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint32_N16span/independent60_seed123.pt",
+      "features": 56,
+      "parameters": 1858,
+      "structure": "independent",
+      "epochs": 60,
+      "physical_fit_states": 2,
+      "state_shapes": {
+        "models.0.0.weight": [
+          16,
+          56
+        ],
+        "models.0.0.bias": [
+          16
+        ],
+        "models.0.2.weight": [
+          1,
+          16
+        ],
+        "models.0.2.bias": [
+          1
+        ],
+        "models.1.0.weight": [
+          16,
+          56
+        ],
+        "models.1.0.bias": [
+          16
+        ],
+        "models.1.2.weight": [
+          1,
+          16
+        ],
+        "models.1.2.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint32_N16span/independent60_seed2026.pt",
+      "features": 56,
+      "parameters": 1858,
+      "structure": "independent",
+      "epochs": 60,
+      "physical_fit_states": 2,
+      "state_shapes": {
+        "models.0.0.weight": [
+          16,
+          56
+        ],
+        "models.0.0.bias": [
+          16
+        ],
+        "models.0.2.weight": [
+          1,
+          16
+        ],
+        "models.0.2.bias": [
+          1
+        ],
+        "models.1.0.weight": [
+          16,
+          56
+        ],
+        "models.1.0.bias": [
+          16
+        ],
+        "models.1.2.weight": [
+          1,
+          16
+        ],
+        "models.1.2.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint32_N16span/independent60_seed42.pt",
+      "features": 56,
+      "parameters": 1858,
+      "structure": "independent",
+      "epochs": 60,
+      "physical_fit_states": 2,
+      "state_shapes": {
+        "models.0.0.weight": [
+          16,
+          56
+        ],
+        "models.0.0.bias": [
+          16
+        ],
+        "models.0.2.weight": [
+          1,
+          16
+        ],
+        "models.0.2.bias": [
+          1
+        ],
+        "models.1.0.weight": [
+          16,
+          56
+        ],
+        "models.1.0.bias": [
+          16
+        ],
+        "models.1.2.weight": [
+          1,
+          16
+        ],
+        "models.1.2.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint32_N16span/shared30_seed123.pt",
+      "features": 56,
+      "parameters": 1858,
+      "structure": "shared",
+      "epochs": 30,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          56
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint32_N16span/shared30_seed2026.pt",
+      "features": 56,
+      "parameters": 1858,
+      "structure": "shared",
+      "epochs": 30,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          56
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint32_N16span/shared30_seed42.pt",
+      "features": 56,
+      "parameters": 1858,
+      "structure": "shared",
+      "epochs": 30,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          56
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint32_N16span/shared60_seed123.pt",
+      "features": 56,
+      "parameters": 1858,
+      "structure": "shared",
+      "epochs": 60,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          56
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint32_N16span/shared60_seed2026.pt",
+      "features": 56,
+      "parameters": 1858,
+      "structure": "shared",
+      "epochs": 60,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          56
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint32_N16span/shared60_seed42.pt",
+      "features": 56,
+      "parameters": 1858,
+      "structure": "shared",
+      "epochs": 60,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          56
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint32_N32full/independent60_seed123.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "independent",
+      "epochs": 60,
+      "physical_fit_states": 2,
+      "state_shapes": {
+        "models.0.0.weight": [
+          16,
+          57
+        ],
+        "models.0.0.bias": [
+          16
+        ],
+        "models.0.2.weight": [
+          1,
+          16
+        ],
+        "models.0.2.bias": [
+          1
+        ],
+        "models.1.0.weight": [
+          16,
+          57
+        ],
+        "models.1.0.bias": [
+          16
+        ],
+        "models.1.2.weight": [
+          1,
+          16
+        ],
+        "models.1.2.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint32_N32full/independent60_seed2026.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "independent",
+      "epochs": 60,
+      "physical_fit_states": 2,
+      "state_shapes": {
+        "models.0.0.weight": [
+          16,
+          57
+        ],
+        "models.0.0.bias": [
+          16
+        ],
+        "models.0.2.weight": [
+          1,
+          16
+        ],
+        "models.0.2.bias": [
+          1
+        ],
+        "models.1.0.weight": [
+          16,
+          57
+        ],
+        "models.1.0.bias": [
+          16
+        ],
+        "models.1.2.weight": [
+          1,
+          16
+        ],
+        "models.1.2.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint32_N32full/independent60_seed42.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "independent",
+      "epochs": 60,
+      "physical_fit_states": 2,
+      "state_shapes": {
+        "models.0.0.weight": [
+          16,
+          57
+        ],
+        "models.0.0.bias": [
+          16
+        ],
+        "models.0.2.weight": [
+          1,
+          16
+        ],
+        "models.0.2.bias": [
+          1
+        ],
+        "models.1.0.weight": [
+          16,
+          57
+        ],
+        "models.1.0.bias": [
+          16
+        ],
+        "models.1.2.weight": [
+          1,
+          16
+        ],
+        "models.1.2.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint32_N32full/shared30_seed123.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "shared",
+      "epochs": 30,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          57
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint32_N32full/shared30_seed2026.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "shared",
+      "epochs": 30,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          57
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint32_N32full/shared30_seed42.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "shared",
+      "epochs": 30,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          57
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint32_N32full/shared60_seed123.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "shared",
+      "epochs": 60,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          57
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint32_N32full/shared60_seed2026.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "shared",
+      "epochs": 60,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          57
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint32_N32full/shared60_seed42.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "shared",
+      "epochs": 60,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          57
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint44_N16recent/independent60_seed123.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "independent",
+      "epochs": 60,
+      "physical_fit_states": 2,
+      "state_shapes": {
+        "models.0.0.weight": [
+          16,
+          57
+        ],
+        "models.0.0.bias": [
+          16
+        ],
+        "models.0.2.weight": [
+          1,
+          16
+        ],
+        "models.0.2.bias": [
+          1
+        ],
+        "models.1.0.weight": [
+          16,
+          57
+        ],
+        "models.1.0.bias": [
+          16
+        ],
+        "models.1.2.weight": [
+          1,
+          16
+        ],
+        "models.1.2.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint44_N16recent/independent60_seed2026.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "independent",
+      "epochs": 60,
+      "physical_fit_states": 2,
+      "state_shapes": {
+        "models.0.0.weight": [
+          16,
+          57
+        ],
+        "models.0.0.bias": [
+          16
+        ],
+        "models.0.2.weight": [
+          1,
+          16
+        ],
+        "models.0.2.bias": [
+          1
+        ],
+        "models.1.0.weight": [
+          16,
+          57
+        ],
+        "models.1.0.bias": [
+          16
+        ],
+        "models.1.2.weight": [
+          1,
+          16
+        ],
+        "models.1.2.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint44_N16recent/independent60_seed42.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "independent",
+      "epochs": 60,
+      "physical_fit_states": 2,
+      "state_shapes": {
+        "models.0.0.weight": [
+          16,
+          57
+        ],
+        "models.0.0.bias": [
+          16
+        ],
+        "models.0.2.weight": [
+          1,
+          16
+        ],
+        "models.0.2.bias": [
+          1
+        ],
+        "models.1.0.weight": [
+          16,
+          57
+        ],
+        "models.1.0.bias": [
+          16
+        ],
+        "models.1.2.weight": [
+          1,
+          16
+        ],
+        "models.1.2.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint44_N16recent/shared30_seed123.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "shared",
+      "epochs": 30,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          57
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint44_N16recent/shared30_seed2026.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "shared",
+      "epochs": 30,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          57
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint44_N16recent/shared30_seed42.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "shared",
+      "epochs": 30,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          57
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint44_N16recent/shared60_seed123.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "shared",
+      "epochs": 60,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          57
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint44_N16recent/shared60_seed2026.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "shared",
+      "epochs": 60,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          57
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint44_N16recent/shared60_seed42.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "shared",
+      "epochs": 60,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          57
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint44_N16span/independent60_seed123.pt",
+      "features": 56,
+      "parameters": 1858,
+      "structure": "independent",
+      "epochs": 60,
+      "physical_fit_states": 2,
+      "state_shapes": {
+        "models.0.0.weight": [
+          16,
+          56
+        ],
+        "models.0.0.bias": [
+          16
+        ],
+        "models.0.2.weight": [
+          1,
+          16
+        ],
+        "models.0.2.bias": [
+          1
+        ],
+        "models.1.0.weight": [
+          16,
+          56
+        ],
+        "models.1.0.bias": [
+          16
+        ],
+        "models.1.2.weight": [
+          1,
+          16
+        ],
+        "models.1.2.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint44_N16span/independent60_seed2026.pt",
+      "features": 56,
+      "parameters": 1858,
+      "structure": "independent",
+      "epochs": 60,
+      "physical_fit_states": 2,
+      "state_shapes": {
+        "models.0.0.weight": [
+          16,
+          56
+        ],
+        "models.0.0.bias": [
+          16
+        ],
+        "models.0.2.weight": [
+          1,
+          16
+        ],
+        "models.0.2.bias": [
+          1
+        ],
+        "models.1.0.weight": [
+          16,
+          56
+        ],
+        "models.1.0.bias": [
+          16
+        ],
+        "models.1.2.weight": [
+          1,
+          16
+        ],
+        "models.1.2.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint44_N16span/independent60_seed42.pt",
+      "features": 56,
+      "parameters": 1858,
+      "structure": "independent",
+      "epochs": 60,
+      "physical_fit_states": 2,
+      "state_shapes": {
+        "models.0.0.weight": [
+          16,
+          56
+        ],
+        "models.0.0.bias": [
+          16
+        ],
+        "models.0.2.weight": [
+          1,
+          16
+        ],
+        "models.0.2.bias": [
+          1
+        ],
+        "models.1.0.weight": [
+          16,
+          56
+        ],
+        "models.1.0.bias": [
+          16
+        ],
+        "models.1.2.weight": [
+          1,
+          16
+        ],
+        "models.1.2.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint44_N16span/shared30_seed123.pt",
+      "features": 56,
+      "parameters": 1858,
+      "structure": "shared",
+      "epochs": 30,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          56
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint44_N16span/shared30_seed2026.pt",
+      "features": 56,
+      "parameters": 1858,
+      "structure": "shared",
+      "epochs": 30,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          56
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint44_N16span/shared30_seed42.pt",
+      "features": 56,
+      "parameters": 1858,
+      "structure": "shared",
+      "epochs": 30,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          56
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint44_N16span/shared60_seed123.pt",
+      "features": 56,
+      "parameters": 1858,
+      "structure": "shared",
+      "epochs": 60,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          56
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint44_N16span/shared60_seed2026.pt",
+      "features": 56,
+      "parameters": 1858,
+      "structure": "shared",
+      "epochs": 60,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          56
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint44_N16span/shared60_seed42.pt",
+      "features": 56,
+      "parameters": 1858,
+      "structure": "shared",
+      "epochs": 60,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          56
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint44_N32full/independent60_seed123.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "independent",
+      "epochs": 60,
+      "physical_fit_states": 2,
+      "state_shapes": {
+        "models.0.0.weight": [
+          16,
+          57
+        ],
+        "models.0.0.bias": [
+          16
+        ],
+        "models.0.2.weight": [
+          1,
+          16
+        ],
+        "models.0.2.bias": [
+          1
+        ],
+        "models.1.0.weight": [
+          16,
+          57
+        ],
+        "models.1.0.bias": [
+          16
+        ],
+        "models.1.2.weight": [
+          1,
+          16
+        ],
+        "models.1.2.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint44_N32full/independent60_seed2026.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "independent",
+      "epochs": 60,
+      "physical_fit_states": 2,
+      "state_shapes": {
+        "models.0.0.weight": [
+          16,
+          57
+        ],
+        "models.0.0.bias": [
+          16
+        ],
+        "models.0.2.weight": [
+          1,
+          16
+        ],
+        "models.0.2.bias": [
+          1
+        ],
+        "models.1.0.weight": [
+          16,
+          57
+        ],
+        "models.1.0.bias": [
+          16
+        ],
+        "models.1.2.weight": [
+          1,
+          16
+        ],
+        "models.1.2.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint44_N32full/independent60_seed42.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "independent",
+      "epochs": 60,
+      "physical_fit_states": 2,
+      "state_shapes": {
+        "models.0.0.weight": [
+          16,
+          57
+        ],
+        "models.0.0.bias": [
+          16
+        ],
+        "models.0.2.weight": [
+          1,
+          16
+        ],
+        "models.0.2.bias": [
+          1
+        ],
+        "models.1.0.weight": [
+          16,
+          57
+        ],
+        "models.1.0.bias": [
+          16
+        ],
+        "models.1.2.weight": [
+          1,
+          16
+        ],
+        "models.1.2.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint44_N32full/shared30_seed123.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "shared",
+      "epochs": 30,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          57
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint44_N32full/shared30_seed2026.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "shared",
+      "epochs": 30,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          57
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint44_N32full/shared30_seed42.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "shared",
+      "epochs": 30,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          57
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint44_N32full/shared60_seed123.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "shared",
+      "epochs": 60,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          57
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint44_N32full/shared60_seed2026.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "shared",
+      "epochs": 60,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          57
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint44_N32full/shared60_seed42.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "shared",
+      "epochs": 60,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          57
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint56_N16recent/independent60_seed123.pt",
+      "features": 56,
+      "parameters": 1858,
+      "structure": "independent",
+      "epochs": 60,
+      "physical_fit_states": 2,
+      "state_shapes": {
+        "models.0.0.weight": [
+          16,
+          56
+        ],
+        "models.0.0.bias": [
+          16
+        ],
+        "models.0.2.weight": [
+          1,
+          16
+        ],
+        "models.0.2.bias": [
+          1
+        ],
+        "models.1.0.weight": [
+          16,
+          56
+        ],
+        "models.1.0.bias": [
+          16
+        ],
+        "models.1.2.weight": [
+          1,
+          16
+        ],
+        "models.1.2.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint56_N16recent/independent60_seed2026.pt",
+      "features": 56,
+      "parameters": 1858,
+      "structure": "independent",
+      "epochs": 60,
+      "physical_fit_states": 2,
+      "state_shapes": {
+        "models.0.0.weight": [
+          16,
+          56
+        ],
+        "models.0.0.bias": [
+          16
+        ],
+        "models.0.2.weight": [
+          1,
+          16
+        ],
+        "models.0.2.bias": [
+          1
+        ],
+        "models.1.0.weight": [
+          16,
+          56
+        ],
+        "models.1.0.bias": [
+          16
+        ],
+        "models.1.2.weight": [
+          1,
+          16
+        ],
+        "models.1.2.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint56_N16recent/independent60_seed42.pt",
+      "features": 56,
+      "parameters": 1858,
+      "structure": "independent",
+      "epochs": 60,
+      "physical_fit_states": 2,
+      "state_shapes": {
+        "models.0.0.weight": [
+          16,
+          56
+        ],
+        "models.0.0.bias": [
+          16
+        ],
+        "models.0.2.weight": [
+          1,
+          16
+        ],
+        "models.0.2.bias": [
+          1
+        ],
+        "models.1.0.weight": [
+          16,
+          56
+        ],
+        "models.1.0.bias": [
+          16
+        ],
+        "models.1.2.weight": [
+          1,
+          16
+        ],
+        "models.1.2.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint56_N16recent/shared30_seed123.pt",
+      "features": 56,
+      "parameters": 1858,
+      "structure": "shared",
+      "epochs": 30,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          56
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint56_N16recent/shared30_seed2026.pt",
+      "features": 56,
+      "parameters": 1858,
+      "structure": "shared",
+      "epochs": 30,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          56
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint56_N16recent/shared30_seed42.pt",
+      "features": 56,
+      "parameters": 1858,
+      "structure": "shared",
+      "epochs": 30,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          56
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint56_N16recent/shared60_seed123.pt",
+      "features": 56,
+      "parameters": 1858,
+      "structure": "shared",
+      "epochs": 60,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          56
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint56_N16recent/shared60_seed2026.pt",
+      "features": 56,
+      "parameters": 1858,
+      "structure": "shared",
+      "epochs": 60,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          56
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint56_N16recent/shared60_seed42.pt",
+      "features": 56,
+      "parameters": 1858,
+      "structure": "shared",
+      "epochs": 60,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          56
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint56_N16span/independent60_seed123.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "independent",
+      "epochs": 60,
+      "physical_fit_states": 2,
+      "state_shapes": {
+        "models.0.0.weight": [
+          16,
+          57
+        ],
+        "models.0.0.bias": [
+          16
+        ],
+        "models.0.2.weight": [
+          1,
+          16
+        ],
+        "models.0.2.bias": [
+          1
+        ],
+        "models.1.0.weight": [
+          16,
+          57
+        ],
+        "models.1.0.bias": [
+          16
+        ],
+        "models.1.2.weight": [
+          1,
+          16
+        ],
+        "models.1.2.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint56_N16span/independent60_seed2026.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "independent",
+      "epochs": 60,
+      "physical_fit_states": 2,
+      "state_shapes": {
+        "models.0.0.weight": [
+          16,
+          57
+        ],
+        "models.0.0.bias": [
+          16
+        ],
+        "models.0.2.weight": [
+          1,
+          16
+        ],
+        "models.0.2.bias": [
+          1
+        ],
+        "models.1.0.weight": [
+          16,
+          57
+        ],
+        "models.1.0.bias": [
+          16
+        ],
+        "models.1.2.weight": [
+          1,
+          16
+        ],
+        "models.1.2.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint56_N16span/independent60_seed42.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "independent",
+      "epochs": 60,
+      "physical_fit_states": 2,
+      "state_shapes": {
+        "models.0.0.weight": [
+          16,
+          57
+        ],
+        "models.0.0.bias": [
+          16
+        ],
+        "models.0.2.weight": [
+          1,
+          16
+        ],
+        "models.0.2.bias": [
+          1
+        ],
+        "models.1.0.weight": [
+          16,
+          57
+        ],
+        "models.1.0.bias": [
+          16
+        ],
+        "models.1.2.weight": [
+          1,
+          16
+        ],
+        "models.1.2.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint56_N16span/shared30_seed123.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "shared",
+      "epochs": 30,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          57
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint56_N16span/shared30_seed2026.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "shared",
+      "epochs": 30,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          57
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint56_N16span/shared30_seed42.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "shared",
+      "epochs": 30,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          57
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint56_N16span/shared60_seed123.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "shared",
+      "epochs": 60,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          57
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint56_N16span/shared60_seed2026.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "shared",
+      "epochs": 60,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          57
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint56_N16span/shared60_seed42.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "shared",
+      "epochs": 60,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          57
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint56_N32full/independent60_seed123.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "independent",
+      "epochs": 60,
+      "physical_fit_states": 2,
+      "state_shapes": {
+        "models.0.0.weight": [
+          16,
+          57
+        ],
+        "models.0.0.bias": [
+          16
+        ],
+        "models.0.2.weight": [
+          1,
+          16
+        ],
+        "models.0.2.bias": [
+          1
+        ],
+        "models.1.0.weight": [
+          16,
+          57
+        ],
+        "models.1.0.bias": [
+          16
+        ],
+        "models.1.2.weight": [
+          1,
+          16
+        ],
+        "models.1.2.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint56_N32full/independent60_seed2026.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "independent",
+      "epochs": 60,
+      "physical_fit_states": 2,
+      "state_shapes": {
+        "models.0.0.weight": [
+          16,
+          57
+        ],
+        "models.0.0.bias": [
+          16
+        ],
+        "models.0.2.weight": [
+          1,
+          16
+        ],
+        "models.0.2.bias": [
+          1
+        ],
+        "models.1.0.weight": [
+          16,
+          57
+        ],
+        "models.1.0.bias": [
+          16
+        ],
+        "models.1.2.weight": [
+          1,
+          16
+        ],
+        "models.1.2.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint56_N32full/independent60_seed42.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "independent",
+      "epochs": 60,
+      "physical_fit_states": 2,
+      "state_shapes": {
+        "models.0.0.weight": [
+          16,
+          57
+        ],
+        "models.0.0.bias": [
+          16
+        ],
+        "models.0.2.weight": [
+          1,
+          16
+        ],
+        "models.0.2.bias": [
+          1
+        ],
+        "models.1.0.weight": [
+          16,
+          57
+        ],
+        "models.1.0.bias": [
+          16
+        ],
+        "models.1.2.weight": [
+          1,
+          16
+        ],
+        "models.1.2.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint56_N32full/shared30_seed123.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "shared",
+      "epochs": 30,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          57
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint56_N32full/shared30_seed2026.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "shared",
+      "epochs": 30,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          57
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint56_N32full/shared30_seed42.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "shared",
+      "epochs": 30,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          57
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint56_N32full/shared60_seed123.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "shared",
+      "epochs": 60,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          57
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint56_N32full/shared60_seed2026.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "shared",
+      "epochs": 60,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          57
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    },
+    {
+      "path": "models/endpoint56_N32full/shared60_seed42.pt",
+      "features": 57,
+      "parameters": 1890,
+      "structure": "shared",
+      "epochs": 60,
+      "physical_fit_states": 1,
+      "state_shapes": {
+        "encoder.0.weight": [
+          32,
+          57
+        ],
+        "heads.0.weight": [
+          1,
+          32
+        ],
+        "heads.0.bias": [
+          1
+        ],
+        "heads.1.weight": [
+          1,
+          32
+        ],
+        "heads.1.bias": [
+          1
+        ]
+      }
+    }
+  ],
+  "script_sha256": "609d1fbbbf3a0c58fe834b33ad4122996346432acf9c362e5e42805df1099665",
+  "probe_failures": []
+}

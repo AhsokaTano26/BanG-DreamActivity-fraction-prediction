@@ -1,0 +1,139 @@
+[
+  {
+    "role": "A",
+    "name": "Scientific Reviewer",
+    "workspace": "analysis/paper_upgrade_round2/20261118/workspaces/A",
+    "depends_on": [],
+    "outputs": [
+      "A_review.md",
+      "A_contribution_matrix.csv",
+      "A_issue_list.json",
+      "A_reference_audit.csv"
+    ],
+    "status": "completed_and_independently_accepted",
+    "acceptance": "immutable source/data/config/result hashes; train-only design; strict feedback time; genuine completed evidence and explicit limitations; independent H clearance before new manuscript claims"
+  },
+  {
+    "role": "B",
+    "name": "Adaptive Sharing Researcher",
+    "workspace": "analysis/paper_upgrade_round2/20261118/workspaces/B",
+    "depends_on": [
+      "A"
+    ],
+    "outputs": [
+      "preregistration.json",
+      "B_design.md",
+      "predictions.csv",
+      "method_metrics.csv",
+      "tests.log"
+    ],
+    "status": "completed_and_independently_accepted",
+    "acceptance": "immutable source/data/config/result hashes; train-only design; strict feedback time; genuine completed evidence and explicit limitations; independent H clearance before new manuscript claims"
+  },
+  {
+    "role": "C",
+    "name": "Causal Experiment and Ablation Engineer",
+    "workspace": "analysis/paper_upgrade_round2/20261118/workspaces/C",
+    "depends_on": [
+      "B"
+    ],
+    "outputs": [
+      "fairness_manifest.json",
+      "ablation_results.csv",
+      "fitting_budget.csv",
+      "C_report.md"
+    ],
+    "status": "completed_and_independently_accepted",
+    "acceptance": "immutable source/data/config/result hashes; train-only design; strict feedback time; genuine completed evidence and explicit limitations; independent H clearance before new manuscript claims"
+  },
+  {
+    "role": "D",
+    "name": "Mechanism and Simulation Researcher",
+    "workspace": "analysis/paper_upgrade_round2/20261118/workspaces/D",
+    "depends_on": [
+      "B"
+    ],
+    "outputs": [
+      "calibration.json",
+      "diagnostics.csv",
+      "simulation_results.csv",
+      "D_report.md"
+    ],
+    "status": "completed_and_independently_accepted",
+    "acceptance": "immutable source/data/config/result hashes; train-only design; strict feedback time; genuine completed evidence and explicit limitations; independent H clearance before new manuscript claims"
+  },
+  {
+    "role": "E",
+    "name": "Statistical and Reliability Auditor",
+    "workspace": "analysis/paper_upgrade_round2/20261118/workspaces/E",
+    "depends_on": [
+      "B",
+      "C",
+      "D"
+    ],
+    "outputs": [
+      "conditional_coverage.csv",
+      "power_plan.csv",
+      "E_report.md"
+    ],
+    "status": "completed_and_independently_accepted",
+    "acceptance": "immutable source/data/config/result hashes; train-only design; strict feedback time; genuine completed evidence and explicit limitations; independent H clearance before new manuscript claims"
+  },
+  {
+    "role": "F",
+    "name": "Scientific Visualization Designer",
+    "workspace": "analysis/paper_upgrade_round2/20261118/workspaces/F",
+    "depends_on": [
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "outputs": [
+      "figure_manifest.json",
+      "figures/*",
+      "F_report.md"
+    ],
+    "status": "completed_and_independently_accepted",
+    "acceptance": "immutable source/data/config/result hashes; train-only design; strict feedback time; genuine completed evidence and explicit limitations; independent H clearance before new manuscript claims"
+  },
+  {
+    "role": "G",
+    "name": "LaTeX and Academic Editor",
+    "workspace": "analysis/paper_upgrade_round2/20261118/workspaces/G",
+    "depends_on": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+    ],
+    "outputs": [
+      "main.tex",
+      "supplement.tex",
+      "G_report.md"
+    ],
+    "status": "completed_and_independently_accepted",
+    "acceptance": "immutable source/data/config/result hashes; train-only design; strict feedback time; genuine completed evidence and explicit limitations; independent H clearance before new manuscript claims"
+  },
+  {
+    "role": "H",
+    "name": "Independent Reproducibility Auditor",
+    "workspace": "analysis/paper_upgrade_round2/20261118/workspaces/H",
+    "depends_on": [
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "outputs": [
+      "H_audit.md",
+      "H_evidence.json"
+    ],
+    "status": "completed_and_independently_accepted",
+    "acceptance": "immutable source/data/config/result hashes; train-only design; strict feedback time; genuine completed evidence and explicit limitations; independent H clearance before new manuscript claims"
+  }
+]

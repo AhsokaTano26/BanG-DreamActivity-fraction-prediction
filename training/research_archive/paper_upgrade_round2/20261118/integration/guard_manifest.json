@@ -1,0 +1,13 @@
+{
+  "reason": "H-BC-01 physical aliases accepted by original generic pure API; frozen input has zero aliases, original scores unchanged",
+  "source_policy": "Frozen B source and run retained. New entrypoint injects guards and binds adapter/entrypoint SHA. All estimation equations remain original.",
+  "red_log_sha256": "21dc9dd18919e84d73be72040f0ac4017faff804fc57e448e5436c2519194e64",
+  "green_log_sha256": "722b14c49d924d0cd377f6900baf552d018e4db45a6011713773558e63ea70bb",
+  "tests": 5,
+  "passed": true,
+  "files": {
+    "test_sharing_guard.py": "1f44e4ab88732890e91081d8f7950ed5c21a69a202f4a50ccd273ba5d250da9e",
+    "replay_guarded.py": "ec4ce856041e21684fe8cf043d377d108b9397a74b3ffc28d92e3cb73c8aa3fa",
+    "sharing_input_guard.py": "07e51926e20a751a8fe1c2b04c2865a201fd7605d46093600e4651ab0c26a330"
+  }
+}

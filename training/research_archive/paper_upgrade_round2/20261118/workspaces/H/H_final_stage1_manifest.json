@@ -1,0 +1,12 @@
+{
+  "files": {
+    "audit_final_bindings.py": "fd8c9b475a6c096f57f3d312d6ca53af883a6a958be44faecf80bb15fbf6ce4d",
+    "H_final_binding_audit.json": "ee1f3e1120c9b8639acd87557636f22d4dcfe1277b6c37a9271f0fadbd652d11",
+    "H_final_binding_audit_initial.json": "5f9b00d4251ca3fce53972b25e5c4c396d54eaf986a4dd00d91906dd793a599b",
+    "H_round2_binding_evidence.json": "ee1f3e1120c9b8639acd87557636f22d4dcfe1277b6c37a9271f0fadbd652d11",
+    "H_final_stage1.md": "2312d94bcf0441f482b7a95c05dfcbcd7c3d0938b7608fbd04fec1b5145bfffd",
+    "H_final_findings.json": "bc478c6d0a8bbea4671797b6b0efae175666bea74e36a03f5ad290dace43f5d3"
+  },
+  "stage": "binding_numeric_acceptance",
+  "rendering_executed": false
+}

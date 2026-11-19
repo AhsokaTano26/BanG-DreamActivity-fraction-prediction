@@ -1,0 +1,17 @@
+{
+  "scope": "TRAIN-only historical prequential issued forecasts, trusted PI export; no validation/test rows. Outcomes to be opened by coordinator only after strict end_ms<query.start_ms. Current model must receive a detached outcome-free frame.",
+  "events": 35,
+  "cases": 11536,
+  "start_min": 1733115600000,
+  "source_capsule_manifest_sha256": "ca288ac592fc49628fb9d7587c915fcfafb51b53b90e46352430d17cf480c7b1",
+  "sources": {
+    "queries.json": "f02894ec900095e60002bbe91a573f125bcb881cc0125faef1b95ecf59f74efc",
+    "data/released_history.csv.gz": "fed9894adc7855f9a824df6bb81253207678713a00eea7ff17f1e37cac18137f",
+    "data/targets.csv.gz": "448ed16b7512f0391f5bd72b56d87843d84edc3cdd4c7e6d087cef8fe2b8e324"
+  },
+  "files": {
+    "train_queries.json": "319ca4dbf9a48a853b8181f2f0376d760b50d766137c503b3c24a776dee05277",
+    "train_residuals.csv.gz": "59a6d8398110b71d0d67fe9dde7a7c3a49eddea1df9ee2c13390621d6b661d98"
+  },
+  "partition_rule": "All 35 train query activities sorted actual start; no score-based deletion; ranks19; fixed physical case IDs."
+}

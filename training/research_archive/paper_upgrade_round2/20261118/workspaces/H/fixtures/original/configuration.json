@@ -1,0 +1,24 @@
+{
+  "schedule": {
+    "warmup": 2,
+    "selection": 1,
+    "diagnostic": 1
+  },
+  "budgets": {
+    "wall_seconds": 30
+  },
+  "candidates": [
+    {
+      "name": "independent",
+      "kind": "fixed",
+      "lambda": 0.0,
+      "pool": "pair"
+    },
+    {
+      "name": "shared",
+      "kind": "fixed",
+      "lambda": 1.0,
+      "pool": "pair"
+    }
+  ]
+}

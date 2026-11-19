@@ -1,0 +1,107 @@
+{
+  "checks": {
+    "calibration_run_v2_001_hashes": {
+      "passed": true,
+      "detail": {
+        "outputs": 9,
+        "bad_outputs": [],
+        "bad_sources": []
+      }
+    },
+    "simulation_run_v2_001_hashes": {
+      "passed": true,
+      "detail": {
+        "outputs": 5,
+        "bad_outputs": [],
+        "bad_sources": []
+      }
+    },
+    "calibration_grid_independent_scalar_NLL": {
+      "passed": true,
+      "detail": {
+        "grid_points": 900,
+        "max_abs_NLL_difference": 3.0524915928253904e-11,
+        "best_grid_index": 123,
+        "support_points": 17
+      }
+    },
+    "calibration_train25_only": {
+      "passed": true,
+      "detail": null
+    },
+    "delete_one_parameter_argmin_independent": {
+      "passed": true,
+      "detail": {
+        "deleted_ordinal": 2,
+        "selected_grid_index": 87,
+        "deletion_NLL": -78.44883537763882,
+        "exported_full25_NLL": -72.563735559732,
+        "deletion_complete_pairs": 24,
+        "deletion_adjacent_differences": 22,
+        "exported_full25_complete_pairs": 25
+      }
+    },
+    "block_seams_do_not_create_linear_spikes": {
+      "passed": true,
+      "detail": {
+        "sampled_indices": [
+          8,
+          9,
+          10,
+          0,
+          1,
+          2,
+          8,
+          9,
+          3,
+          4,
+          5,
+          6
+        ],
+        "delta_variance": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "original_gaps_keep_missing_adjacency": {
+      "passed": true,
+      "detail": {
+        "adjacent": 3,
+        "lag_pairs": 0
+      }
+    },
+    "simulation_aggregates_independent_path_arithmetic": {
+      "passed": true,
+      "detail": {
+        "path_method_rows": 43200,
+        "unique_regimes": 24,
+        "max_mean_difference": 7.105427357601002e-15,
+        "max_MC_SE_difference": 5.551115123125783e-17,
+        "bad": []
+      }
+    },
+    "simulation_prespecified_menu_and_seeds": {
+      "passed": true,
+      "detail": null
+    },
+    "simulation_calibration_binding": {
+      "passed": true,
+      "detail": null
+    }
+  },
+  "delete_one_independent_metadata": {
+    "deleted_ordinal": 2,
+    "selected_grid_index": 87,
+    "deletion_NLL": -78.44883537763882,
+    "exported_full25_NLL": -72.563735559732,
+    "deletion_complete_pairs": 24,
+    "deletion_adjacent_differences": 22,
+    "exported_full25_complete_pairs": 25
+  },
+  "script_sha256": "70a42f048c1fed8a066601baf2a315e7cbd866a0eadf9bc3071c1cb160013cab",
+  "not_run": [
+    "full bootstrap replay",
+    "all simulated trajectories regeneration"
+  ]
+}

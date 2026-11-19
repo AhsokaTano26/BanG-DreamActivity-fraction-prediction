@@ -1,0 +1,24 @@
+{
+  "statistics_002": {
+    "sealed_files": 19,
+    "seal_sha256": "847c4b2bbcea1cb378708dafa2b4f48f5f5be2a150f3cdeae683f1461b30c83b",
+    "source_sha256": "83cf92039704f33c7132a720cbbb176b14093d4a374f0e50410f975f015c559b"
+  },
+  "reliability_002": {
+    "sealed_files": 14,
+    "seal_sha256": "e8a7171a6949a6dca3812c925ee2c6f5203b0934697f54e6a192bebbe8bbed55",
+    "source_sha256": "a7400e0abc38d3cb74f1b0cfb9fabc7e30519829ab1c1d1453a08698810e750c"
+  },
+  "power_rows_finite": 180,
+  "future_status": {
+    "target_events": 80,
+    "activated": false,
+    "n_events": 0,
+    "mape": null
+  },
+  "local_tests": {
+    "count": 12,
+    "log": "tdd_nct_green.log",
+    "whole_repository_suite": "PI serial verification pending"
+  }
+}

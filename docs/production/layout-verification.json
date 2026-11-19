@@ -1,0 +1,60 @@
+{
+  "scope": "Technical layout migration; no new accuracy experiment",
+  "model_id": "e9a61faea45864c1ef573e12afb5194e1037d63335212b2ae17fae057ef1fc81",
+  "model_manifest_sha256": "ad2897dd11448e3dffa60db933839a5ddcc969fe923f5b6a4f63e63711a2a634",
+  "technical_predictions": 19,
+  "predictions_identical": true,
+  "unchanged_function_asts": [
+    "_valid_curve",
+    "_history",
+    "_samples",
+    "_frozen_metadata",
+    "_labels",
+    "_weights",
+    "_config",
+    "train_pack",
+    "_base_predictions",
+    "_blind_samples",
+    "predict_pack",
+    "build_bias"
+  ],
+  "source_profile_files": 22,
+  "frozen_population": {
+    "events": 97,
+    "train": 67,
+    "validation": 14,
+    "test": 16
+  },
+  "full_suite_log": "/tmp/bangdream-uv-layout-final-518-tests.log",
+  "git_commit_created": false,
+  "browser_qa": {
+    "url": "http://127.0.0.1:8765/",
+    "viewports": [
+      [
+        1512,
+        982
+      ],
+      [
+        390,
+        844
+      ]
+    ],
+    "runtime_errors": 0,
+    "star_favicon": true,
+    "rank_switch": "T1000 -> T2000"
+  },
+  "docker_qa": {
+    "image": "bangdream-web:uv-layout-test",
+    "deployment_tests": 12,
+    "model_release_verified": true,
+    "published": false,
+    "status": "passed",
+    "http_health_and_favicon": true
+  },
+  "full_suite": {
+    "tests": 518,
+    "passed": true
+  },
+  "active_activity_pins_unchanged": true,
+  "web_automatic_training": false
+}

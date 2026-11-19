@@ -1,0 +1,398 @@
+{
+  "protocol": {
+    "version": "temporal_holdout_v2_dense_20261115",
+    "country": "中国大陆",
+    "ranks": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      100,
+      200,
+      300,
+      400,
+      500,
+      1000,
+      1500,
+      2000,
+      3000,
+      4000,
+      5000,
+      10000,
+      20000,
+      30000
+    ],
+    "group": "One shared chronological 70%/15%/remainder event split; all ranks/prefixes grouped",
+    "order": "real CN StartAt, then EventID; never shuffled",
+    "fractions": [
+      0.7,
+      0.15,
+      0.15
+    ],
+    "rounding": "floor train, floor validation, remainder test",
+    "minimum_curve_points": 5,
+    "final_before_end_max_ms": 60000,
+    "final_after_end_max_ms": 300000,
+    "minimum_prefix_points": 4,
+    "prefix_max_age_ms": 3600000,
+    "evaluation_stages": [
+      "elapsed_1h",
+      "elapsed_3h",
+      "elapsed_6h",
+      "elapsed_12h",
+      "elapsed_24h",
+      "elapsed_48h",
+      "elapsed_72h",
+      "progress_10pct",
+      "progress_25pct",
+      "progress_50pct",
+      "progress_75pct",
+      "progress_90pct",
+      "progress_95pct",
+      "remaining_48h",
+      "remaining_24h",
+      "remaining_12h",
+      "remaining_6h",
+      "remaining_3h",
+      "remaining_1h",
+      "remaining_0.5h",
+      "remaining_0.25h"
+    ],
+    "training_sampling": "same prescribed origin grid for all three groups",
+    "primary_metric": "event_macro_mape_pct",
+    "training_seeds": [
+      42,
+      123,
+      2026
+    ],
+    "fit_policy": "train only; validation selects checkpoints/recipes; no refit or heat update on validation/test",
+    "exposure": "Retained events overlap previously explored training/validation/test cohorts; not unseen data.",
+    "metadata_caveat": "Retrospective Bestdori snapshot; no archived point-in-time metadata proof. CN card release times are filtered.",
+    "scope": "New dense-era cohort; original V1/V2 retained as historical references",
+    "additional_rank_final": "last observation no later than end+300s, requiring observation >=end-60s; later polling excluded",
+    "stages": [
+      {
+        "stage_id": "elapsed_1h",
+        "axis": "elapsed",
+        "value": 1
+      },
+      {
+        "stage_id": "elapsed_3h",
+        "axis": "elapsed",
+        "value": 3
+      },
+      {
+        "stage_id": "elapsed_6h",
+        "axis": "elapsed",
+        "value": 6
+      },
+      {
+        "stage_id": "elapsed_12h",
+        "axis": "elapsed",
+        "value": 12
+      },
+      {
+        "stage_id": "elapsed_24h",
+        "axis": "elapsed",
+        "value": 24
+      },
+      {
+        "stage_id": "elapsed_48h",
+        "axis": "elapsed",
+        "value": 48
+      },
+      {
+        "stage_id": "elapsed_72h",
+        "axis": "elapsed",
+        "value": 72
+      },
+      {
+        "stage_id": "progress_10pct",
+        "axis": "progress",
+        "value": 0.1
+      },
+      {
+        "stage_id": "progress_25pct",
+        "axis": "progress",
+        "value": 0.25
+      },
+      {
+        "stage_id": "progress_50pct",
+        "axis": "progress",
+        "value": 0.5
+      },
+      {
+        "stage_id": "progress_75pct",
+        "axis": "progress",
+        "value": 0.75
+      },
+      {
+        "stage_id": "progress_90pct",
+        "axis": "progress",
+        "value": 0.9
+      },
+      {
+        "stage_id": "progress_95pct",
+        "axis": "progress",
+        "value": 0.95
+      },
+      {
+        "stage_id": "remaining_48h",
+        "axis": "remaining",
+        "value": 48
+      },
+      {
+        "stage_id": "remaining_24h",
+        "axis": "remaining",
+        "value": 24
+      },
+      {
+        "stage_id": "remaining_12h",
+        "axis": "remaining",
+        "value": 12
+      },
+      {
+        "stage_id": "remaining_6h",
+        "axis": "remaining",
+        "value": 6
+      },
+      {
+        "stage_id": "remaining_3h",
+        "axis": "remaining",
+        "value": 3
+      },
+      {
+        "stage_id": "remaining_1h",
+        "axis": "remaining",
+        "value": 1
+      },
+      {
+        "stage_id": "remaining_0.5h",
+        "axis": "remaining",
+        "value": 0.5
+      },
+      {
+        "stage_id": "remaining_0.25h",
+        "axis": "remaining",
+        "value": 0.25
+      }
+    ],
+    "case_key": "split/event/rank/requested cutoff; alias stages do not duplicate physical cases",
+    "maximum_observation_age_minutes": 60,
+    "fresh_subset_maximum_age_minutes": 15,
+    "cohort": "exact inherited event and eligible curve lists",
+    "first_experiment": "New cohort requires training from its own train group; old model predictions are not transferable",
+    "population_version": "dense_20261115",
+    "minimum_event_start_ms": 1706504400000,
+    "minimum_event_start_iso": "2024-01-29T13:00:00+08:00",
+    "data_policy_id": "b48ff05be6b303ac085253f03ef16f03db6a9db94eeff41910f3f009733c714f",
+    "collection_context": "User reports earlier data were manually submitted; excluded by actual event start."
+  },
+  "data_policy": {
+    "version": "dense_start_v1",
+    "country": "中国大陆",
+    "minimum_event_start_ms": 1706504400000,
+    "minimum_event_start_iso": "2024-01-29T13:00:00+08:00",
+    "boundary": "actual CN start >= minimum; never EventID order",
+    "scope": "new modeling populations, complete histories, and production artifacts"
+  },
+  "base_dataset_id": "80e354c3a5340df6724a40ef1df490f92c08007311d55849342de509eaf5ee50",
+  "original_v1_dataset_id": "d0ccf9f70aee19ad1b2152925e7afe8692d67f4a6e539d558f87e2cd33329bbb",
+  "source_identity": {
+    "original_snapshot_sha256": "bb23785e116ad227251b1b56b5e70481cda68a1ac6831b594465117542c7c752",
+    "download_manifest_sha256": "41ac78233f468109882f22fd8fac33f3cf1925603b6ad491b30d20c310978d0a",
+    "parent_dataset_id": "5f1d11f35e0da7b0fa02a0a056659ff75390efab62bf06545debb2c82e9f4a27",
+    "parent_manifest_sha256": "559a575344282b720bf397f8dabbfe1c3c4a025ad4896c3096e0dda9afa4dfa3",
+    "dense_v1_manifest_sha256": "599c51d6c11abc0fe09694d13e8eaf826ee0b90db7b258a99e7e51cd3d30b509",
+    "operation": "filter/regroup frozen V2 cases; time grid and availability unchanged"
+  },
+  "splits": {
+    "train": {
+      "event_ids": [
+        226,
+        228,
+        229,
+        230,
+        231,
+        232,
+        233,
+        234,
+        235,
+        236,
+        237,
+        240,
+        239,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        227,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261,
+        262,
+        264,
+        263,
+        265,
+        266,
+        267,
+        268,
+        269,
+        270,
+        271,
+        272,
+        273,
+        274,
+        275,
+        278,
+        276,
+        277,
+        279,
+        281,
+        283,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290,
+        291,
+        292,
+        312,
+        313,
+        293
+      ],
+      "cases": 21984,
+      "stage_memberships": 21984,
+      "events_with_cases": 67,
+      "events_without_cases": []
+    },
+    "validation": {
+      "event_ids": [
+        294,
+        295,
+        296,
+        297,
+        298,
+        300,
+        299,
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307
+      ],
+      "cases": 4361,
+      "stage_memberships": 4361,
+      "events_with_cases": 14,
+      "events_without_cases": []
+    },
+    "test": {
+      "event_ids": [
+        308,
+        309,
+        311,
+        314,
+        315,
+        316,
+        317,
+        318,
+        319,
+        320,
+        321,
+        322,
+        323,
+        324,
+        325,
+        326
+      ],
+      "cases": 5220,
+      "stage_memberships": 5220,
+      "events_with_cases": 16,
+      "events_without_cases": []
+    }
+  },
+  "dense_build_environment": {
+    "source_hashes": {
+      "API/GetEventInfo.py": "5e4599d5bcdfe0e3391db130260db4c7fedbb507ba7d698c9936804fd1c3b39e",
+      "API/GetEventTracker.py": "cd67434c00a18356adf98f685e9d9f3b1c4e898974a60de7966235528c1cb7ba",
+      "analysis/backtest.py": "df2733f8aff144582da7f732e3def213a224f5689b38ea8065f748d43f2e99be",
+      "analysis/data_policy.py": "f00339ef479e37734d1a00ba74f9e0b53eaca7bd32a3f43b7843c15a80f34761",
+      "analysis/dense_dataset.py": "18d80662810b3da371b3cbed907119467213fd8aa4621eac326db0174de01247",
+      "analysis/event_features.py": "cf3eb59a5b8e99a4cebda38a54a642140d8fcc017c4d38a132499fce38074419",
+      "analysis/holdout_dataset.py": "22cf94748c4953b72a570093d8e26e76ae9437454e09da181fc9e5e10c6a2f6f",
+      "analysis/holdout_evaluate.py": "cf2226d0ca778a31a37d58c57a066f81ec015df01da5899f8ca621ca2859bda4",
+      "analysis/innovation_common.py": "6a87e2330acffa669bd95d7aee610f96a36ad3262e5cbfe43a0c34706bf2035e",
+      "analysis/multirank_dataset.py": "c47b652b27971009f9ea1ecd9837832b9ed376d49d5b53adb2baea219ba9d8a8",
+      "analysis/multirank_model.py": "ff3eda807ddd2990d7150609a719a3a691fe23938de655c2ef9e365193a211e2",
+      "analysis/temporal_dataset.py": "288ab6ce031b916514a931c79f5626ab8807532484fa55002d1724e03b120235",
+      "analysis/temporal_rank_subset.py": "300587b01572970c1ed5069898bca534841b6768512b09b36ae4497133edf271",
+      "download_ranks.py": "06304868c9189299b1392ce99ee4f4819324be13cdc2449539edb97e87554424",
+      "xgboost.py": "d814551d1246b1a5eaa2c5d9a070b3ea01c58671d31741394cf46cbe8c3e2c75"
+    },
+    "software": {
+      "numpy": "2.5.4",
+      "pandas": "3.1.1"
+    }
+  },
+  "artifacts": {
+    "cohort_migration.csv": "e3fc71d7bab80322bb637ea5f8092515551b347e0735945ad0c7425fb914ff1f",
+    "coverage.csv": "c2704da4feac99e4fa6f8300a3588ca69689c890e8e168b2f11f934b2b496484",
+    "dense_builder_sources/API/GetEventInfo.py": "5e4599d5bcdfe0e3391db130260db4c7fedbb507ba7d698c9936804fd1c3b39e",
+    "dense_builder_sources/API/GetEventTracker.py": "cd67434c00a18356adf98f685e9d9f3b1c4e898974a60de7966235528c1cb7ba",
+    "dense_builder_sources/analysis/backtest.py": "df2733f8aff144582da7f732e3def213a224f5689b38ea8065f748d43f2e99be",
+    "dense_builder_sources/analysis/data_policy.py": "f00339ef479e37734d1a00ba74f9e0b53eaca7bd32a3f43b7843c15a80f34761",
+    "dense_builder_sources/analysis/dense_dataset.py": "18d80662810b3da371b3cbed907119467213fd8aa4621eac326db0174de01247",
+    "dense_builder_sources/analysis/event_features.py": "cf3eb59a5b8e99a4cebda38a54a642140d8fcc017c4d38a132499fce38074419",
+    "dense_builder_sources/analysis/holdout_dataset.py": "22cf94748c4953b72a570093d8e26e76ae9437454e09da181fc9e5e10c6a2f6f",
+    "dense_builder_sources/analysis/holdout_evaluate.py": "cf2226d0ca778a31a37d58c57a066f81ec015df01da5899f8ca621ca2859bda4",
+    "dense_builder_sources/analysis/innovation_common.py": "6a87e2330acffa669bd95d7aee610f96a36ad3262e5cbfe43a0c34706bf2035e",
+    "dense_builder_sources/analysis/multirank_dataset.py": "c47b652b27971009f9ea1ecd9837832b9ed376d49d5b53adb2baea219ba9d8a8",
+    "dense_builder_sources/analysis/multirank_model.py": "ff3eda807ddd2990d7150609a719a3a691fe23938de655c2ef9e365193a211e2",
+    "dense_builder_sources/analysis/temporal_dataset.py": "288ab6ce031b916514a931c79f5626ab8807532484fa55002d1724e03b120235",
+    "dense_builder_sources/analysis/temporal_rank_subset.py": "300587b01572970c1ed5069898bca534841b6768512b09b36ae4497133edf271",
+    "dense_builder_sources/download_ranks.py": "06304868c9189299b1392ce99ee4f4819324be13cdc2449539edb97e87554424",
+    "dense_builder_sources/xgboost.py": "d814551d1246b1a5eaa2c5d9a070b3ea01c58671d31741394cf46cbe8c3e2c75",
+    "metadata/bands.json": "44cc57471240da60a2fe9a2379743cb97c10a291807eeab47475cb98e9158049",
+    "metadata/cards.json": "9c31ed5da91121f75438d2663f716f3259478f14d8d20a7d057987ee00958b79",
+    "metadata/characters.json": "3bca6ce696d3902718e8acd7b42f4a2ab1455ff27a8ab02aba696c37dd1b094b",
+    "metadata/event_contexts.json": "31987bc9c3020f866a5be0871b37a66292c37405ebcd9d6943607e8ecff680e9",
+    "metadata/events.json": "b53596c7d7a7ddce2546dc597ba1924fe74a7ca92acbe69b2254e1403b4bcd1e",
+    "metadata/sources.json": "4804040f09de994bc490df66a02223fd63ed313d2eb4517986fc6cdd1e6993e4",
+    "original_manifest.json": "559a575344282b720bf397f8dabbfe1c3c4a025ad4896c3096e0dda9afa4dfa3",
+    "partitions.csv": "f65cc1efa1430d8fac4f7b0b78cbac759c98021272f857ce5955f5fbdfdeebe5",
+    "test_cases.csv": "9a6e5f704bc9fb6e999235cf626aec448a8b98a0aff9751fdd5e818ef31497b0",
+    "test_inputs.jsonl.gz": "86dfd182e0d75f511b81e36d673cee8e3513675e24fcc92e7dd78b569f9ed33a",
+    "test_labels.csv": "127a9667a1c7436fecca1195afc5df75baa5160f98b3c00837359209261eff5d",
+    "test_memberships.csv": "13372f89c7b1ebb6edebb0c88241d6f35adef39d87cba91312e3746c7578014f",
+    "train_cases.csv": "e0b681ac3fab21c8b259eaa8ae690df0330595e8365f823a4bdc97593abadbf3",
+    "train_curves.jsonl.gz": "efe51e4c7e44b3507ba69e9d71d1060561f6911a3d1f76ddbd2aafc77152cf3e",
+    "train_inputs.jsonl.gz": "2230dd61e76eb8cc0d4943cda4102f89cde1e1ce72114dd69ed7167b214a71d4",
+    "train_labels.csv": "ed9ea3da75d79478a9552b8a97adb2c894be5829bdb94ce79c86a0aa30521268",
+    "train_memberships.csv": "39f694179a863ef1cb92e074df55802613422207e5a713da3c2e8bec050b61cf",
+    "unavailable_cases.csv": "564c9f3a8c63e91b6c92561775453d55e29ec0b244b595bd021ba947f2c43e9d",
+    "validation_cases.csv": "2e2152166396fd42a598daddd2fa2705a508b52f0c2136144978760f2a14d08d",
+    "validation_inputs.jsonl.gz": "30b97e954c8cb98baa53f1c84369978050491d7c40f397d5cfa0fcb3573dfd0b",
+    "validation_labels.csv": "782d8fead7970f23ba3b7f005bc79903f5706cac82d173a35c2a96716196f179",
+    "validation_memberships.csv": "e42b1649706ef5db424e6721e7b3153338f26f113b4a1f26abc3ef506ba5954f"
+  },
+  "dataset_id": "8ffd781fc9f4ebcad9ea691839777458e5e4c7cbeade58978dca15bce2440ad8"
+}

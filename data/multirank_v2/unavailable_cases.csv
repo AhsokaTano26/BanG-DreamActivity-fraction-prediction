@@ -1,0 +1,203 @@
+split,event,rank,stage,cutoff_ms,reason
+validation,242,20,6h remaining,1718701199000,same prefix eligibility as v1
+validation,242,30,6h remaining,1718701199000,same prefix eligibility as v1
+validation,242,40,6h remaining,1718701199000,same prefix eligibility as v1
+validation,242,50,6h remaining,1718701199000,same prefix eligibility as v1
+validation,242,100,6h remaining,1718701199000,same prefix eligibility as v1
+validation,242,200,6h remaining,1718701199000,same prefix eligibility as v1
+validation,242,300,6h remaining,1718701199000,same prefix eligibility as v1
+validation,242,400,6h remaining,1718701199000,same prefix eligibility as v1
+validation,242,500,6h remaining,1718701199000,same prefix eligibility as v1
+validation,242,3000,6h remaining,1718701199000,same prefix eligibility as v1
+validation,242,4000,6h remaining,1718701199000,same prefix eligibility as v1
+validation,242,5000,6h remaining,1718701199000,same prefix eligibility as v1
+validation,242,10000,6h remaining,1718701199000,same prefix eligibility as v1
+validation,242,20000,6h remaining,1718701199000,same prefix eligibility as v1
+validation,242,30000,6h remaining,1718701199000,same prefix eligibility as v1
+validation,249,20,75%,1724869799250,same prefix eligibility as v1
+validation,249,30,75%,1724869799250,same prefix eligibility as v1
+validation,249,40,75%,1724869799250,same prefix eligibility as v1
+validation,249,50,75%,1724869799250,same prefix eligibility as v1
+validation,249,100,75%,1724869799250,same prefix eligibility as v1
+validation,249,200,75%,1724869799250,same prefix eligibility as v1
+validation,249,300,75%,1724869799250,same prefix eligibility as v1
+validation,249,400,75%,1724869799250,same prefix eligibility as v1
+validation,249,500,75%,1724869799250,same prefix eligibility as v1
+validation,249,3000,75%,1724869799250,same prefix eligibility as v1
+validation,249,4000,75%,1724869799250,same prefix eligibility as v1
+validation,249,5000,75%,1724869799250,same prefix eligibility as v1
+validation,249,10000,75%,1724869799250,same prefix eligibility as v1
+validation,249,20000,75%,1724869799250,same prefix eligibility as v1
+validation,249,30000,75%,1724869799250,same prefix eligibility as v1
+validation,250,20,6h remaining,1725785999000,same prefix eligibility as v1
+validation,250,30,6h remaining,1725785999000,same prefix eligibility as v1
+validation,250,40,6h remaining,1725785999000,same prefix eligibility as v1
+validation,250,200,6h remaining,1725785999000,same prefix eligibility as v1
+validation,250,400,6h remaining,1725785999000,same prefix eligibility as v1
+validation,250,3000,6h remaining,1725785999000,same prefix eligibility as v1
+validation,250,4000,6h remaining,1725785999000,same prefix eligibility as v1
+validation,250,5000,6h remaining,1725785999000,same prefix eligibility as v1
+validation,250,10000,6h remaining,1725785999000,same prefix eligibility as v1
+validation,250,20000,6h remaining,1725785999000,same prefix eligibility as v1
+validation,250,30000,6h remaining,1725785999000,same prefix eligibility as v1
+validation,261,10,50%,1735379999500,same prefix eligibility as v1
+validation,261,20,50%,1735379999500,same prefix eligibility as v1
+validation,261,30,50%,1735379999500,same prefix eligibility as v1
+validation,261,40,50%,1735379999500,same prefix eligibility as v1
+validation,261,50,50%,1735379999500,same prefix eligibility as v1
+validation,261,100,50%,1735379999500,same prefix eligibility as v1
+validation,261,200,50%,1735379999500,same prefix eligibility as v1
+validation,261,300,50%,1735379999500,same prefix eligibility as v1
+validation,261,400,50%,1735379999500,same prefix eligibility as v1
+validation,261,500,50%,1735379999500,same prefix eligibility as v1
+validation,261,3000,50%,1735379999500,same prefix eligibility as v1
+validation,261,4000,50%,1735379999500,same prefix eligibility as v1
+validation,261,5000,50%,1735379999500,same prefix eligibility as v1
+validation,261,10000,50%,1735379999500,same prefix eligibility as v1
+validation,261,20000,50%,1735379999500,same prefix eligibility as v1
+validation,261,30000,50%,1735379999500,same prefix eligibility as v1
+test,298,10,24h remaining,1769612399000,same prefix eligibility as v1
+test,298,20,24h remaining,1769612399000,same prefix eligibility as v1
+test,298,30,24h remaining,1769612399000,same prefix eligibility as v1
+test,298,40,24h remaining,1769612399000,same prefix eligibility as v1
+test,298,50,24h remaining,1769612399000,same prefix eligibility as v1
+test,298,100,24h remaining,1769612399000,same prefix eligibility as v1
+test,298,200,24h remaining,1769612399000,same prefix eligibility as v1
+test,298,300,24h remaining,1769612399000,same prefix eligibility as v1
+test,298,400,24h remaining,1769612399000,same prefix eligibility as v1
+test,298,500,24h remaining,1769612399000,same prefix eligibility as v1
+test,298,3000,24h remaining,1769612399000,same prefix eligibility as v1
+test,298,4000,24h remaining,1769612399000,same prefix eligibility as v1
+test,298,5000,24h remaining,1769612399000,same prefix eligibility as v1
+test,298,10000,24h remaining,1769612399000,same prefix eligibility as v1
+test,298,20000,24h remaining,1769612399000,same prefix eligibility as v1
+test,298,30000,24h remaining,1769612399000,same prefix eligibility as v1
+test,301,10,75%,1772346599250,same prefix eligibility as v1
+test,301,20,75%,1772346599250,same prefix eligibility as v1
+test,301,30,75%,1772346599250,same prefix eligibility as v1
+test,301,40,75%,1772346599250,same prefix eligibility as v1
+test,301,50,75%,1772346599250,same prefix eligibility as v1
+test,301,100,75%,1772346599250,same prefix eligibility as v1
+test,301,200,75%,1772346599250,same prefix eligibility as v1
+test,301,300,75%,1772346599250,same prefix eligibility as v1
+test,301,400,75%,1772346599250,same prefix eligibility as v1
+test,301,500,75%,1772346599250,same prefix eligibility as v1
+test,301,3000,75%,1772346599250,same prefix eligibility as v1
+test,301,4000,75%,1772346599250,same prefix eligibility as v1
+test,301,5000,75%,1772346599250,same prefix eligibility as v1
+test,301,10000,75%,1772346599250,same prefix eligibility as v1
+test,301,20000,75%,1772346599250,same prefix eligibility as v1
+test,301,30000,75%,1772346599250,same prefix eligibility as v1
+test,304,10,50%,1774994399500,same prefix eligibility as v1
+test,304,20,50%,1774994399500,same prefix eligibility as v1
+test,304,30,50%,1774994399500,same prefix eligibility as v1
+test,304,40,50%,1774994399500,same prefix eligibility as v1
+test,304,50,50%,1774994399500,same prefix eligibility as v1
+test,304,100,50%,1774994399500,same prefix eligibility as v1
+test,304,200,50%,1774994399500,same prefix eligibility as v1
+test,304,300,50%,1774994399500,same prefix eligibility as v1
+test,304,400,50%,1774994399500,same prefix eligibility as v1
+test,304,500,50%,1774994399500,same prefix eligibility as v1
+test,304,3000,50%,1774994399500,same prefix eligibility as v1
+test,304,4000,50%,1774994399500,same prefix eligibility as v1
+test,304,5000,50%,1774994399500,same prefix eligibility as v1
+test,304,10000,50%,1774994399500,same prefix eligibility as v1
+test,304,20000,50%,1774994399500,same prefix eligibility as v1
+test,304,30000,50%,1774994399500,same prefix eligibility as v1
+test,307,10,75%,1777724999250,same prefix eligibility as v1
+test,307,10,24h remaining,1777820399000,same prefix eligibility as v1
+test,307,20,75%,1777724999250,same prefix eligibility as v1
+test,307,20,24h remaining,1777820399000,same prefix eligibility as v1
+test,307,30,75%,1777724999250,same prefix eligibility as v1
+test,307,30,24h remaining,1777820399000,same prefix eligibility as v1
+test,307,40,75%,1777724999250,same prefix eligibility as v1
+test,307,40,24h remaining,1777820399000,same prefix eligibility as v1
+test,307,50,75%,1777724999250,same prefix eligibility as v1
+test,307,50,24h remaining,1777820399000,same prefix eligibility as v1
+test,307,100,75%,1777724999250,same prefix eligibility as v1
+test,307,100,24h remaining,1777820399000,same prefix eligibility as v1
+test,307,200,75%,1777724999250,same prefix eligibility as v1
+test,307,200,24h remaining,1777820399000,same prefix eligibility as v1
+test,307,300,75%,1777724999250,same prefix eligibility as v1
+test,307,300,24h remaining,1777820399000,same prefix eligibility as v1
+test,307,400,75%,1777724999250,same prefix eligibility as v1
+test,307,400,24h remaining,1777820399000,same prefix eligibility as v1
+test,307,500,75%,1777724999250,same prefix eligibility as v1
+test,307,500,24h remaining,1777820399000,same prefix eligibility as v1
+test,307,3000,75%,1777724999250,same prefix eligibility as v1
+test,307,3000,24h remaining,1777820399000,same prefix eligibility as v1
+test,307,4000,75%,1777724999250,same prefix eligibility as v1
+test,307,4000,24h remaining,1777820399000,same prefix eligibility as v1
+test,307,5000,75%,1777724999250,same prefix eligibility as v1
+test,307,5000,24h remaining,1777820399000,same prefix eligibility as v1
+test,307,10000,75%,1777724999250,same prefix eligibility as v1
+test,307,10000,24h remaining,1777820399000,same prefix eligibility as v1
+test,307,20000,75%,1777724999250,same prefix eligibility as v1
+test,307,20000,24h remaining,1777820399000,same prefix eligibility as v1
+test,307,30000,75%,1777724999250,same prefix eligibility as v1
+test,307,30000,24h remaining,1777820399000,same prefix eligibility as v1
+test,311,20,6h remaining,1780477199000,same prefix eligibility as v1
+test,311,30,6h remaining,1780477199000,same prefix eligibility as v1
+test,311,40,6h remaining,1780477199000,same prefix eligibility as v1
+test,311,50,6h remaining,1780477199000,same prefix eligibility as v1
+test,311,100,6h remaining,1780477199000,same prefix eligibility as v1
+test,311,200,6h remaining,1780477199000,same prefix eligibility as v1
+test,311,300,6h remaining,1780477199000,same prefix eligibility as v1
+test,311,400,6h remaining,1780477199000,same prefix eligibility as v1
+test,311,500,6h remaining,1780477199000,same prefix eligibility as v1
+test,311,1500,6h remaining,1780477199000,same prefix eligibility as v1
+test,311,3000,6h remaining,1780477199000,same prefix eligibility as v1
+test,311,4000,6h remaining,1780477199000,same prefix eligibility as v1
+test,311,5000,6h remaining,1780477199000,same prefix eligibility as v1
+test,311,10000,6h remaining,1780477199000,same prefix eligibility as v1
+test,311,20000,6h remaining,1780477199000,same prefix eligibility as v1
+test,311,30000,6h remaining,1780477199000,same prefix eligibility as v1
+test,313,20,6h remaining,1764309599000,same prefix eligibility as v1
+test,313,30,6h remaining,1764309599000,same prefix eligibility as v1
+test,313,40,6h remaining,1764309599000,same prefix eligibility as v1
+test,313,50,6h remaining,1764309599000,same prefix eligibility as v1
+test,313,100,6h remaining,1764309599000,same prefix eligibility as v1
+test,313,200,6h remaining,1764309599000,same prefix eligibility as v1
+test,313,300,6h remaining,1764309599000,same prefix eligibility as v1
+test,313,400,6h remaining,1764309599000,same prefix eligibility as v1
+test,313,500,6h remaining,1764309599000,same prefix eligibility as v1
+test,313,3000,6h remaining,1764309599000,same prefix eligibility as v1
+test,313,4000,6h remaining,1764309599000,same prefix eligibility as v1
+test,313,5000,6h remaining,1764309599000,same prefix eligibility as v1
+test,313,10000,6h remaining,1764309599000,same prefix eligibility as v1
+test,313,20000,6h remaining,1764309599000,same prefix eligibility as v1
+test,313,30000,6h remaining,1764309599000,same prefix eligibility as v1
+test,318,20,6h remaining,1785920399000,same prefix eligibility as v1
+test,318,30,6h remaining,1785920399000,same prefix eligibility as v1
+test,318,40,6h remaining,1785920399000,same prefix eligibility as v1
+test,318,50,6h remaining,1785920399000,same prefix eligibility as v1
+test,318,100,6h remaining,1785920399000,same prefix eligibility as v1
+test,318,200,6h remaining,1785920399000,same prefix eligibility as v1
+test,318,300,6h remaining,1785920399000,same prefix eligibility as v1
+test,318,400,6h remaining,1785920399000,same prefix eligibility as v1
+test,318,500,6h remaining,1785920399000,same prefix eligibility as v1
+test,318,1500,6h remaining,1785920399000,same prefix eligibility as v1
+test,318,3000,6h remaining,1785920399000,same prefix eligibility as v1
+test,318,4000,6h remaining,1785920399000,same prefix eligibility as v1
+test,318,5000,6h remaining,1785920399000,same prefix eligibility as v1
+test,318,10000,6h remaining,1785920399000,same prefix eligibility as v1
+test,318,20000,6h remaining,1785920399000,same prefix eligibility as v1
+test,318,30000,6h remaining,1785920399000,same prefix eligibility as v1
+test,322,10,25%,1788679799750,same prefix eligibility as v1
+test,322,20,25%,1788679799750,same prefix eligibility as v1
+test,322,30,25%,1788679799750,same prefix eligibility as v1
+test,322,40,25%,1788679799750,same prefix eligibility as v1
+test,322,50,25%,1788679799750,same prefix eligibility as v1
+test,322,100,25%,1788679799750,same prefix eligibility as v1
+test,322,200,25%,1788679799750,same prefix eligibility as v1
+test,322,300,25%,1788679799750,same prefix eligibility as v1
+test,322,400,25%,1788679799750,same prefix eligibility as v1
+test,322,500,25%,1788679799750,same prefix eligibility as v1
+test,322,1500,25%,1788679799750,same prefix eligibility as v1
+test,322,3000,25%,1788679799750,same prefix eligibility as v1
+test,322,4000,25%,1788679799750,same prefix eligibility as v1
+test,322,5000,25%,1788679799750,same prefix eligibility as v1
+test,322,10000,25%,1788679799750,same prefix eligibility as v1
+test,322,20000,25%,1788679799750,same prefix eligibility as v1
+test,322,30000,25%,1788679799750,same prefix eligibility as v1
+test,323,30000,25%,1789500599750,same prefix eligibility as v1

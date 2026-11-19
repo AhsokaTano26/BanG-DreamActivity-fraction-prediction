@@ -1,0 +1,33 @@
+{
+  "version": "E-statistical-reliability-1",
+  "frozen_before_real_computation": true,
+  "scope": "E workspace only; independent scoring of sealed predictions; no fitting, selection, interval tuning or production changes",
+  "draws": 5000,
+  "seed": 42,
+  "blocks": [1, 3, 5, 7],
+  "phase_progress_edges": [0, 0.25, 0.9, 1],
+  "support_bins": ["0", "1–9", "10–29", "30–59", "60+"],
+  "conditional_dimensions": ["rank", "phase", "actual_progress_bin", "event_type", "own_support_bin", "source"],
+  "joint_unit": "full event × rank × phase; a varying conditional field assigns full group to mixed",
+  "resampling_unit": "activity, sorted actual CN start; fixed issued trajectories",
+  "B": "all12 candidates vs frozen independent,15/10/10 blocks; two-rank and all19; retain original selected independent",
+  "C1": "all18 methods vs independent; warmup/selection_description/temporal_diagnostic; two-rank and global19",
+  "C2": "three-seed final-score arithmetic ensemble main, seeds supplementary; endpoint32/44/56 separately and all12 query events; all predefined structure and history contrasts",
+  "interval_scope": "sealed 10440 test interval rows; descriptive only; all cases retained, no width selection",
+  "power": {
+    "training": "TRAIN35 C1 legacy_pair minus independent issued activity losses; no validation/test effect",
+    "effect_pp": [0.25, 0.5, 1.0],
+    "alpha_two_sided": 0.05,
+    "powers": [0.8, 0.9],
+    "rho": [0, 0.3, 0.6],
+    "sigma_sensitivity": ["sample", "leave_one_min", "leave_one_max", "normal_iid_chi2_low95", "normal_iid_chi2_high95"],
+    "future_primary": "legacy_pair minus ewma_reference event macro MAPE pp",
+    "minimum_useful_effect_pp": 0.5,
+    "planning_power": 0.9,
+    "planning_rho": 0.3,
+    "planning_sigma": "normal_iid_chi2_high95",
+    "current_20_events": "pilot feasibility; no powered claim"
+  },
+  "execution": {"processes": 1, "threads": 1, "nice": 19, "stage_timeout_seconds": 120, "requires_PI_numeric_permission": true},
+  "limitations": ["old exploratory cohort", "repeated validation use", "retrospective metadata", "fixed-loss resampling without search adjustment", "small activity count and temporal dependence"]
+}

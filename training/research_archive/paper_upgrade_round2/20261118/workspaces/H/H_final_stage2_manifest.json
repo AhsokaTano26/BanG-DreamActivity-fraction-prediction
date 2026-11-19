@@ -1,0 +1,12 @@
+{
+  "stage": "standalone_figure_acceptance",
+  "files": {
+    "audit_final_figures.py": "a247eecb7baae969eeed6cb2a444fcac370e6a0fc4dac903989c1c0743c06e3f",
+    "H_final_figure_evidence.json": "5d2a6ebfb42dcae00afb4ead83333b534afaee5a4458037ba619c3d57ba9ad1a",
+    "H_final_figure_evidence_initial.json": "3dba20c11fe946bbf75752c7e6be3006d37db96b9cd8dae58ecbb3645aef76d6",
+    "H_final_figure_review.md": "8839d762f1957ce2120ff6ca5687123682b148e24a29edd5d8efabdbfb1ec423",
+    "H_final_binding_after_layout.json": "901b9d4237cacec1e682687322b0daaeb5cef2ec8900b905465198a594afa263"
+  },
+  "external_helper_available": false,
+  "no_generation_or_rendering": true
+}

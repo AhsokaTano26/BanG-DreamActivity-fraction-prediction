@@ -1,0 +1,32 @@
+{
+  "stage": "source bindings accepted; visual PDF and package pending",
+  "critical": [],
+  "important": [
+    {
+      "id": "H-FINAL-01",
+      "status": "closed",
+      "finding": "Initial round2 binding metadata used percentage points for MAPE levels, dimensionless coefficients, state counts and mixed budget fields.",
+      "closure": "G regenerated with explicit per-field units; H independently verified all360 entries, all29 source hashes and all31 macros.",
+      "evidence": "H_round2_binding_evidence.json"
+    },
+    {
+      "id": "H-BC-02",
+      "status": "pending_final_package",
+      "finding": "C package needs the complete local import closure and three frozen TRAIN files.",
+      "clear_condition": "Extracted final package includes eight analysis modules plus download_ranks.py, C entry and three TRAIN files; original-project read rejection and rebuild/refit checks pass."
+    }
+  ],
+  "minor": [
+    {
+      "id": "H-LEGACY-01",
+      "status": "retained_baseline_metadata_boundary",
+      "finding": "34 legacy selectors omit the splits.test.paired_effects parent path; H supplies this explicit test context for independent verification. Fifteen accurate legacy bindings are retained although not displayed.",
+      "clear_condition": "Preserve archived606 entries and baseline native outputs; document explicit parent context and unshown entries in the audit."
+    }
+  ],
+  "pending": [
+    "F18 figure source/derived-table/export verification, including stable rounded profile grouping",
+    "Final manuscript and supplement PDF visual and text checks",
+    "Final ZIP extraction, complete dependencies and rebuild validation"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "version": "confirmation-plan-addendum-E1",
+  "status": "pending_new_cohort_unactivated",
+  "amends_plan_sha256": "15080ec0a419df4c656c8bde54a4e7dde51bd3b4f1a01befd5efd2557bf5368a",
+  "primary_panel": "global19 event-macro MAPE",
+  "primary_zero_null_model_n": 4,
+  "mechanism_secondary_panel": "T1000_T2000 event-macro MAPE",
+  "mechanism_secondary_zero_null_model_n": 72,
+  "planning_assumptions": {
+    "alternative_effect_pp": 0.5,
+    "power": 0.9,
+    "rho": 0.3,
+    "sigma": "TRAIN35 normal-iid chi-square95% upper sigma"
+  },
+  "minimum_activity_floor": 60,
+  "floor_basis": "engineering and stability collection budget; no finite-sample HAC guarantee",
+  "rounding": "10*ceil(max(floor60,primary_model_n,mechanism_pair_model_n)/10)",
+  "target_events": 80,
+  "collection_budget_driver": "secondary mechanism panel precision and engineering floor, primary estimand unchanged",
+  "primary_alpha_two_sided": 0.05,
+  "primary_inference": "original002 plan Bartlett/Newey-West HAC; iid paired-t sensitivity",
+  "effect_interpretation": "Power against zero at the assumed alternative is separate from demonstrating improvement beyond0.5pp. Report CI against0 and +/-0.5pp.",
+  "original_registry_v2": "unchanged20-event feasibility pilot",
+  "cohort_rule": "new timestamped independent activation seal required; all first80 eligible actual starts strictly later than that seal, full population inventory and failure logs",
+  "future_events_at_addendum": 0,
+  "future_mape": null,
+  "PI_authorization": "pre-future-outcome planning clarification from PI; no model selection or historical score modification"
+}

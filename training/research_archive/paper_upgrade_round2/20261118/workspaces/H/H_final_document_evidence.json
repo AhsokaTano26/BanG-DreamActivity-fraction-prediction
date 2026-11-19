@@ -1,0 +1,205 @@
+{
+  "scope": "Independent PDF parsing and source/log identity. Existing64-page contacts inspected; fresh key-page rendering recorded separately.",
+  "checks": {
+    "main_identity_fonts_bounds_references": {
+      "passed": true
+    },
+    "supplement_identity_fonts_bounds_references": {
+      "passed": true
+    },
+    "canonical539_test_log_evidence": {
+      "passed": true,
+      "detail": {
+        "canonical_summary_sha256": "f8e454de169c402b201ca496e61a97528ef5a18f49c68dbb1199c646cc619972",
+        "bad_logs": [],
+        "observed": [
+          {
+            "scope": "repository",
+            "tests": 469,
+            "log_sha256": "a0dc59ec4c8b3af80f7ac73055c368f9b8350ef28019b484db8f9228b2b9f5e2"
+          },
+          {
+            "scope": "B",
+            "tests": 15,
+            "log_sha256": "95bb812ed6162e55cc5f18bb8b4bdc8cd3058a38840f352ba46956543ba58724"
+          },
+          {
+            "scope": "C",
+            "tests": 19,
+            "log_sha256": "30271da51213cccdd21c1d2e238d0b0178816caada2d455289945741e59453b0"
+          },
+          {
+            "scope": "D",
+            "tests": 19,
+            "log_sha256": "7d0896d3ba274dd6c304e7edcd1b0eef9d78104a2c95a9ca1ba56de46f0b34fb"
+          },
+          {
+            "scope": "E",
+            "tests": 12,
+            "log_sha256": "5b97b35d8d01fcdf3e263d51c2267c13e1a114597620ed6f7979467260e09445"
+          },
+          {
+            "scope": "physical_guard",
+            "tests": 5,
+            "log_sha256": "2200af25bf541b895bccb451a40b847f92c658a103090ffac654aaad530d7252"
+          }
+        ],
+        "identity": "PI executed tests; H rechecked logs and source hashes, no new full-suite rerun."
+      }
+    }
+  },
+  "documents": {
+    "main": {
+      "pdf_sha256": "897ad0e707bd1f57c0911c73fb96b56f348e96c1396624a3368c5c492143acb3",
+      "expected_sha256": "897ad0e707bd1f57c0911c73fb96b56f348e96c1396624a3368c5c492143acb3",
+      "pages": 45,
+      "words_per_page": [
+        246,
+        157,
+        71,
+        174,
+        184,
+        133,
+        255,
+        178,
+        318,
+        217,
+        192,
+        137,
+        135,
+        173,
+        139,
+        157,
+        163,
+        160,
+        106,
+        388,
+        134,
+        108,
+        80,
+        32,
+        155,
+        187,
+        217,
+        235,
+        207,
+        223,
+        196,
+        281,
+        204,
+        188,
+        141,
+        213,
+        184,
+        259,
+        197,
+        167,
+        259,
+        152,
+        360,
+        348,
+        179
+      ],
+      "words_outside_page": [],
+      "font_report": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nDSFFCV+SimSun                        CID TrueType      Identity-H       yes yes yes      4  0\nGORKES+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes      6  0\nPMXZKY+SimSun                        CID TrueType      Identity-H       yes yes yes      8  0\nIMMMNR+TimesNewRomanPS-BoldMT        CID TrueType      Identity-H       yes yes yes     10  0\nJJLWYN+TimesNewRomanPS-ItalicMT      CID TrueType      Identity-H       yes yes yes     17  0\nQORICK+SimSun                        CID TrueType      Identity-H       yes yes yes     43  0\nFJRJQE+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     24  0\nGMZKSH+SimSun                        CID TrueType      Identity-H       yes yes yes     31  0\nOGKKZL+LatinModernMath-Regular-Identity-H CID Type 0C       Identity-H       yes yes yes     70  0\nDJAGBJ+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     74  0\nEQQRJK+SimSun                        CID TrueType      Identity-H       yes yes yes     81  0\nGKQWNF+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes    103  0\nFATJMH+SimSun                        CID TrueType      Identity-H       yes yes yes    110  0\nHGBMAG+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes    133  0\nDCWXWH+Cmmi10                        CID TrueType      Identity-H       yes yes yes    140  0\nHAUKOH+Cmr10                         CID TrueType      Identity-H       yes yes yes    147  0\nFPYHOW+Cmsy10                        CID TrueType      Identity-H       yes yes yes    154  0\nDLKWRN+SimSun                        CID TrueType      Identity-H       yes yes yes    161  0\nFTXLQO+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes    190  0\nBVGHQQ+SimSun                        CID TrueType      Identity-H       yes yes yes    197  0\nGOSOKQ+LMMono12-Regular-Identity-H   CID Type 0C       Identity-H       yes yes yes    215  0\nBMWSGK+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes    229  0\nEMZDJI+SimSun                        CID TrueType      Identity-H       yes yes yes    236  0\nBKMJXE+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes    268  0\nRMFKDZ+SimSun                        CID TrueType      Identity-H       yes yes yes    275  0\nCLBMAY+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes    299  0\nGZMRJF+Cmmi10                        CID TrueType      Identity-H       yes yes yes    306  0\nEVGYDG+Cmr10                         CID TrueType      Identity-H       yes yes yes    313  0\nFPYHOW+Cmsy10                        CID TrueType      Identity-H       yes yes yes    320  0\nCIONUX+SimSun                        CID TrueType      Identity-H       yes yes yes    327  0\nCEBSED+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes    345  0\nFFYVBZ+SimSun                        CID TrueType      Identity-H       yes yes yes    352  0\nHBMZBO+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes    383  0\nDLZTCU+Cmr10                         CID TrueType      Identity-H       yes yes yes    390  0\nHGHSOA+SimSun                        CID TrueType      Identity-H       yes yes yes    397  0\nDOIGEN+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes    417  0\nDZHUZE+SimSun                        CID TrueType      Identity-H       yes yes yes    424  0\nOGBHJM+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes    441  0\nFNTCGD+SimSun                        CID TrueType      Identity-H       yes yes yes    448  0\nGXYJEC+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes    476  0\nEVSCYR+SimSun                        CID TrueType      Identity-H       yes yes yes    483  0\nKOUESS+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes    502  0\nBZIJFA+SimSun                        CID TrueType      Identity-H       yes yes yes    509  0\nDASNQF+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes    537  0\nCUNCSA+SimSun                        CID TrueType      Identity-H       yes yes yes    544  0\nLQISHR+LMMono10-Regular-Identity-H   CID Type 0C       Identity-H       yes yes yes    564  0\nGGVVMJ+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes    583  0\nKRRHLD+SimSun                        CID TrueType      Identity-H       yes yes yes    590  0\nDAYRCD+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes    606  0\nFMBRKV+SimSun                        CID TrueType      Identity-H       yes yes yes    613  0\nYQCCMY+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes    642  0\nDOAVRJ+SimSun                        CID TrueType      Identity-H       yes yes yes    649  0\n",
+      "unembedded_or_without_unicode": [],
+      "latex_warnings": [],
+      "render_manifest_page_files": 45,
+      "render_manifest_changed_files": [],
+      "references": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33
+      ],
+      "unresolved_markers": false,
+      "text_sha256": "85ce69aaa6ccb430f89f55fbf94cf23147a5c1b6002977b152c0c5ca82e2b377"
+    },
+    "supplement": {
+      "pdf_sha256": "455bb5f09fb1a18305510d08b54d71f5231ad5a9a67659229216395e015e066b",
+      "expected_sha256": "455bb5f09fb1a18305510d08b54d71f5231ad5a9a67659229216395e015e066b",
+      "pages": 19,
+      "words_per_page": [
+        138,
+        156,
+        238,
+        197,
+        233,
+        233,
+        167,
+        305,
+        218,
+        194,
+        152,
+        202,
+        177,
+        258,
+        205,
+        171,
+        221,
+        190,
+        83
+      ],
+      "words_outside_page": [],
+      "font_report": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nHWCRUI+SimSun                        CID TrueType      Identity-H       yes yes yes      4  0\nVUZGQH+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes      6  0\nNRLUGU+TimesNewRomanPS-BoldMT        CID TrueType      Identity-H       yes yes yes      8  0\nLACBQZ+SimSun                        CID TrueType      Identity-H       yes yes yes     10  0\nOQQLRV+LMMono12-Regular-Identity-H   CID Type 0C       Identity-H       yes yes yes     12  0\nVYUBMA+TimesNewRomanPS-ItalicMT      CID TrueType      Identity-H       yes yes yes     14  0\nNQEQRW+SimSun                        CID TrueType      Identity-H       yes yes yes     16  0\nHFKBTE+LMMono10-Regular-Identity-H   CID Type 0C       Identity-H       yes yes yes     18  0\nUQIQQN+LatinModernMath-Regular-Identity-H CID Type 0C       Identity-H       yes yes yes     24  0\nGGVVMJ+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     40  0\nKRRHLD+SimSun                        CID TrueType      Identity-H       yes yes yes     47  0\nDAYRCD+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     63  0\nFMBRKV+SimSun                        CID TrueType      Identity-H       yes yes yes     70  0\nYQCCMY+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     99  0\nDOAVRJ+SimSun                        CID TrueType      Identity-H       yes yes yes    106  0\n",
+      "unembedded_or_without_unicode": [],
+      "latex_warnings": [],
+      "render_manifest_page_files": 19,
+      "render_manifest_changed_files": [],
+      "references": [
+        1,
+        2,
+        3
+      ],
+      "unresolved_markers": false,
+      "text_sha256": "3862d3dfd2540b9b3d5ac1eddbfaa2c888efde24f9f804da10e9b2301d629854"
+    }
+  },
+  "render_manifest_sha256": "160a424fcbcea354a6399e8f59e90289630a74fc2cdd6a4b85b048a030a67d41",
+  "paper_root": "/Users/tano/Documents/GitHub/personal/BanG-Dream-Activity-fraction-prediction/papers/20261118_entertainment_computing_cn",
+  "script_sha256": "674ba5dc03fe53913c9187b51e8de39efcfe81c5b8dcb8c05e7b73a5732f1cfd",
+  "status": "passed",
+  "canonical_render_chain": {
+    "main": {
+      "source_pdf_sha256": "897ad0e707bd1f57c0911c73fb96b56f348e96c1396624a3368c5c492143acb3",
+      "renderer_sha256": "d80c4c3377bca7045a7674b4f2c1f5b5a221cf31244633d2f023877087cbf0f2",
+      "direct_source_matches": true
+    },
+    "supplement": {
+      "source_pdf_sha256": "455bb5f09fb1a18305510d08b54d71f5231ad5a9a67659229216395e015e066b",
+      "renderer_sha256": "d80c4c3377bca7045a7674b4f2c1f5b5a221cf31244633d2f023877087cbf0f2",
+      "direct_source_matches": true
+    }
+  },
+  "fresh_key_page_evidence_sha256": "0cc221f5729737a722d7e4333e1dcd3d8ab57cb3f3fe5d280f223f16b1db35b4",
+  "visual_review": "All12 existing contact sheets covering64 pages and all6 freshly rendered canonical key pages were viewed; no visible blocking defect."
+}

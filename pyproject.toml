@@ -1,0 +1,41 @@
+[project]
+name = "bangdream-activity-prediction"
+version = "0.1.0"
+description = "BanG Dream CN activity cutoff prediction and web display"
+requires-python = ">=3.14.8,<3.15"
+dependencies = [
+  "httpx==0.28.1", "numpy==2.5.4", "pandas==3.1.1",
+  "scikit-learn==1.9.1", "scipy==1.18.1", "catboost==1.2.10",
+  "xgboost==3.4.1", "joblib==1.6.0", "matplotlib==3.11.2", "requests==2.34.2",
+]
+
+[project.scripts]
+bangdream-web = "production.app:main"
+bangdream-train = "training.cli:main"
+
+[dependency-groups]
+research = ["bestdori-api==2.2.0", "lightgbm==4.7.0", "torch==2.15.0", "pillow==13.0.0", "sqlalchemy==2.1.8"]
+
+[build-system]
+requires = ["setuptools>=80"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["production", "analysis", "training", "API", "deploy"]
+py-modules = ["download_ranks", "forecasting", "predict", "predict_context", "predict_multirank", "model", "models_method", "logger", "GetInfo", "DrawImage", "LinearRegression", "XGBoost", "encrypt", "image_test", "time_change", "audit_rank_download", "write_rank_download_report"]
+include-package-data = false
+
+[tool.setuptools.package-dir]
+"" = "training/legacy"
+production = "production"
+analysis = "training/analysis"
+training = "training"
+API = "training/legacy/API"
+deploy = "deploy"
+
+[tool.setuptools.package-data]
+production = ["web_assets/*", "layout-compatibility.json"]
+
+[tool.uv]
+default-groups = []
+environments = ["sys_platform == 'darwin'", "sys_platform == 'linux'"]

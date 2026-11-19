@@ -1,0 +1,535 @@
+event,rank,reason
+3,5000,no near-end final
+5,5000,no near-end final
+7,5000,no near-end final
+8,5000,no near-end final
+9,100,event outside frozen v1 membership
+9,5000,event outside frozen v1 membership
+10,5000,no near-end final
+11,5000,no near-end final
+12,5000,no near-end final
+13,5000,no near-end final
+14,5000,invalid duration or fewer than 5 observations
+15,5000,invalid duration or fewer than 5 observations
+16,5000,no near-end final
+17,5000,invalid duration or fewer than 5 observations
+18,5000,no near-end final
+19,100,no near-end final
+19,5000,invalid duration or fewer than 5 observations
+20,5000,no near-end final
+21,5000,no near-end final
+22,100,event outside frozen v1 membership
+22,5000,event outside frozen v1 membership
+23,100,event outside frozen v1 membership
+23,5000,event outside frozen v1 membership
+24,5000,invalid duration or fewer than 5 observations
+25,5000,invalid duration or fewer than 5 observations
+26,5000,invalid duration or fewer than 5 observations
+27,5000,invalid duration or fewer than 5 observations
+28,5000,no near-end final
+29,5000,invalid duration or fewer than 5 observations
+30,5000,invalid duration or fewer than 5 observations
+31,100,no near-end final
+31,5000,invalid duration or fewer than 5 observations
+35,100,event outside frozen v1 membership
+36,100,no near-end final
+44,100,event outside frozen v1 membership
+49,5000,invalid duration or fewer than 5 observations
+50,100,event outside frozen v1 membership
+56,100,event outside frozen v1 membership
+59,100,event outside frozen v1 membership
+63,100,no near-end final
+64,100,event outside frozen v1 membership
+65,10,event outside frozen v1 membership
+65,100,event outside frozen v1 membership
+66,10,event outside frozen v1 membership
+66,100,event outside frozen v1 membership
+67,10,event outside frozen v1 membership
+67,100,event outside frozen v1 membership
+68,10,no near-end final
+69,10,no near-end final
+70,10,event outside frozen v1 membership
+70,100,event outside frozen v1 membership
+71,10,event outside frozen v1 membership
+71,100,event outside frozen v1 membership
+72,10,no near-end final
+73,10,no near-end final
+74,10,no near-end final
+75,10,no near-end final
+76,10,event outside frozen v1 membership
+76,100,event outside frozen v1 membership
+77,10,no near-end final
+78,10,no near-end final
+79,10,no near-end final
+80,10,event outside frozen v1 membership
+80,100,event outside frozen v1 membership
+81,10,no near-end final
+82,10,no near-end final
+83,10,no near-end final
+84,10,no near-end final
+85,10,no near-end final
+86,10,no near-end final
+87,10,no near-end final
+88,10,no near-end final
+89,10,no near-end final
+90,10,event outside frozen v1 membership
+90,100,event outside frozen v1 membership
+91,10,event outside frozen v1 membership
+91,100,event outside frozen v1 membership
+92,10,no near-end final
+93,10,no near-end final
+94,10,no near-end final
+95,10,no near-end final
+96,10,no near-end final
+97,10,no near-end final
+98,10,no near-end final
+99,10,no near-end final
+99,100,no near-end final
+100,10,no near-end final
+101,10,no near-end final
+102,10,event outside frozen v1 membership
+102,100,event outside frozen v1 membership
+103,10,no near-end final
+104,10,no near-end final
+105,10,no near-end final
+106,10,no near-end final
+107,10,no near-end final
+108,10,no near-end final
+109,10,no near-end final
+110,10,no near-end final
+111,10,no near-end final
+112,10,no near-end final
+112,500,no near-end final
+113,10,no near-end final
+114,10,no near-end final
+115,10,no near-end final
+116,10,no near-end final
+117,10,event outside frozen v1 membership
+117,50,event outside frozen v1 membership
+117,100,event outside frozen v1 membership
+117,300,event outside frozen v1 membership
+117,500,event outside frozen v1 membership
+118,10,no near-end final
+119,10,no near-end final
+120,10,no near-end final
+121,10,event outside frozen v1 membership
+121,50,event outside frozen v1 membership
+121,100,event outside frozen v1 membership
+121,300,event outside frozen v1 membership
+121,500,event outside frozen v1 membership
+122,10,no near-end final
+123,10,no near-end final
+123,500,no near-end final
+124,10,no near-end final
+124,500,no near-end final
+125,10,no near-end final
+126,10,no near-end final
+126,300,no near-end final
+127,10,no near-end final
+127,500,no near-end final
+128,10,no near-end final
+129,10,no near-end final
+129,500,no near-end final
+130,10,no near-end final
+131,10,no near-end final
+132,10,no near-end final
+133,10,no near-end final
+134,10,no near-end final
+134,500,no near-end final
+135,10,no near-end final
+135,500,no near-end final
+136,10,no near-end final
+137,10,event outside frozen v1 membership
+137,50,event outside frozen v1 membership
+137,100,event outside frozen v1 membership
+137,300,event outside frozen v1 membership
+137,500,event outside frozen v1 membership
+138,10,no near-end final
+138,300,no near-end final
+138,500,no near-end final
+139,10,no near-end final
+140,10,no near-end final
+141,10,no near-end final
+142,10,no near-end final
+143,10,event outside frozen v1 membership
+143,50,event outside frozen v1 membership
+143,100,event outside frozen v1 membership
+143,300,event outside frozen v1 membership
+143,500,event outside frozen v1 membership
+144,10,no near-end final
+144,500,no near-end final
+145,10,no near-end final
+145,500,no near-end final
+146,10,no near-end final
+146,300,no near-end final
+147,10,no near-end final
+148,10,no near-end final
+149,10,no near-end final
+149,500,no near-end final
+150,10,no near-end final
+151,10,no near-end final
+152,10,no near-end final
+153,10,no near-end final
+154,10,no near-end final
+155,10,no near-end final
+156,10,no near-end final
+157,10,no near-end final
+158,10,event outside frozen v1 membership
+158,50,event outside frozen v1 membership
+158,100,event outside frozen v1 membership
+158,300,event outside frozen v1 membership
+158,500,event outside frozen v1 membership
+159,10,no near-end final
+159,300,no near-end final
+160,10,no near-end final
+161,10,no near-end final
+162,10,no near-end final
+162,500,no near-end final
+163,10,no near-end final
+164,10,no near-end final
+165,10,no near-end final
+165,300,no near-end final
+166,10,no near-end final
+167,10,no near-end final
+168,10,no near-end final
+168,300,no near-end final
+169,10,no near-end final
+170,10,no near-end final
+171,10,no near-end final
+172,10,no near-end final
+173,10,no near-end final
+173,300,no near-end final
+173,500,no near-end final
+174,10,no near-end final
+174,500,no near-end final
+175,10,event outside frozen v1 membership
+175,50,event outside frozen v1 membership
+175,100,event outside frozen v1 membership
+175,300,event outside frozen v1 membership
+175,500,event outside frozen v1 membership
+176,10,no near-end final
+177,10,no near-end final
+178,10,no near-end final
+178,300,no near-end final
+178,500,no near-end final
+179,10,no near-end final
+179,500,no near-end final
+180,10,no near-end final
+181,10,event outside frozen v1 membership
+181,50,event outside frozen v1 membership
+181,100,event outside frozen v1 membership
+181,300,event outside frozen v1 membership
+181,500,event outside frozen v1 membership
+182,10,no near-end final
+182,500,no near-end final
+183,10,event outside frozen v1 membership
+183,50,event outside frozen v1 membership
+183,100,event outside frozen v1 membership
+183,300,event outside frozen v1 membership
+183,500,event outside frozen v1 membership
+184,10,no near-end final
+185,10,event outside frozen v1 membership
+185,50,event outside frozen v1 membership
+185,100,event outside frozen v1 membership
+185,300,event outside frozen v1 membership
+185,500,event outside frozen v1 membership
+186,10,no near-end final
+186,300,no near-end final
+187,10,no near-end final
+187,500,no near-end final
+188,10,event outside frozen v1 membership
+188,50,event outside frozen v1 membership
+188,100,event outside frozen v1 membership
+188,300,event outside frozen v1 membership
+188,500,event outside frozen v1 membership
+189,10,event outside frozen v1 membership
+189,50,event outside frozen v1 membership
+189,100,event outside frozen v1 membership
+189,300,event outside frozen v1 membership
+189,500,event outside frozen v1 membership
+190,10,no near-end final
+190,500,no near-end final
+191,10,no near-end final
+191,500,no near-end final
+192,10,event outside frozen v1 membership
+192,50,event outside frozen v1 membership
+192,100,event outside frozen v1 membership
+192,300,event outside frozen v1 membership
+192,500,event outside frozen v1 membership
+193,10,event outside frozen v1 membership
+193,50,event outside frozen v1 membership
+193,100,event outside frozen v1 membership
+193,300,event outside frozen v1 membership
+193,500,event outside frozen v1 membership
+194,10,event outside frozen v1 membership
+194,50,event outside frozen v1 membership
+194,100,event outside frozen v1 membership
+194,300,event outside frozen v1 membership
+194,500,event outside frozen v1 membership
+195,10,no near-end final
+195,500,no near-end final
+196,10,no near-end final
+196,300,no near-end final
+197,10,no near-end final
+197,500,no near-end final
+198,10,no near-end final
+198,50,no near-end final
+198,300,no near-end final
+198,500,no near-end final
+199,10,no near-end final
+199,500,no near-end final
+200,10,no near-end final
+201,10,no near-end final
+201,300,no near-end final
+202,10,no near-end final
+202,500,no near-end final
+203,10,no near-end final
+203,300,no near-end final
+204,10,no near-end final
+205,10,event outside frozen v1 membership
+205,50,event outside frozen v1 membership
+205,100,event outside frozen v1 membership
+205,300,event outside frozen v1 membership
+205,500,event outside frozen v1 membership
+206,10,no near-end final
+207,10,event outside frozen v1 membership
+207,50,event outside frozen v1 membership
+207,100,event outside frozen v1 membership
+207,300,event outside frozen v1 membership
+207,500,event outside frozen v1 membership
+208,10,no near-end final
+209,10,event outside frozen v1 membership
+209,50,event outside frozen v1 membership
+209,100,event outside frozen v1 membership
+209,300,event outside frozen v1 membership
+209,500,event outside frozen v1 membership
+210,10,event outside frozen v1 membership
+210,50,event outside frozen v1 membership
+210,100,event outside frozen v1 membership
+210,300,event outside frozen v1 membership
+210,500,event outside frozen v1 membership
+211,10,no near-end final
+212,10,event outside frozen v1 membership
+212,50,event outside frozen v1 membership
+212,100,event outside frozen v1 membership
+212,300,event outside frozen v1 membership
+212,500,event outside frozen v1 membership
+213,10,no near-end final
+213,300,no near-end final
+214,10,event outside frozen v1 membership
+214,50,event outside frozen v1 membership
+214,100,event outside frozen v1 membership
+214,300,event outside frozen v1 membership
+214,500,event outside frozen v1 membership
+215,10,no near-end final
+216,10,no near-end final
+216,500,no near-end final
+217,10,no near-end final
+217,100,no near-end final
+217,300,no near-end final
+218,10,no near-end final
+218,500,no near-end final
+219,10,no near-end final
+220,10,no near-end final
+221,10,no near-end final
+222,10,no near-end final
+223,10,no near-end final
+224,10,no near-end final
+225,10,no near-end final
+225,500,no near-end final
+226,10,no near-end final
+227,10,no near-end final
+228,10,no near-end final
+229,10,no near-end final
+230,10,no near-end final
+231,10,no near-end final
+232,10,no near-end final
+233,10,no near-end final
+234,10,no near-end final
+235,10,no near-end final
+236,10,no near-end final
+237,10,no near-end final
+238,10,event outside frozen v1 membership
+238,20,event outside frozen v1 membership
+238,30,event outside frozen v1 membership
+238,40,event outside frozen v1 membership
+238,50,event outside frozen v1 membership
+238,100,event outside frozen v1 membership
+238,200,event outside frozen v1 membership
+238,300,event outside frozen v1 membership
+238,400,event outside frozen v1 membership
+238,500,event outside frozen v1 membership
+238,3000,event outside frozen v1 membership
+238,4000,event outside frozen v1 membership
+238,5000,event outside frozen v1 membership
+238,10000,event outside frozen v1 membership
+238,20000,event outside frozen v1 membership
+238,30000,event outside frozen v1 membership
+239,10,no near-end final
+240,10,no near-end final
+241,10,no near-end final
+242,10,no near-end final
+243,10,no near-end final
+244,10,no near-end final
+245,10,no near-end final
+246,10,no near-end final
+247,10,no near-end final
+248,10,no near-end final
+249,10,no near-end final
+250,10,no near-end final
+251,10,no near-end final
+252,10,no near-end final
+253,10,no near-end final
+254,10,no near-end final
+255,10,no near-end final
+256,10,no near-end final
+257,10,no near-end final
+258,10,no near-end final
+259,10,no near-end final
+260,10,no near-end final
+261,10,no near-end final
+262,10,no near-end final
+263,10,no near-end final
+264,10,no near-end final
+265,10,no near-end final
+266,10,no near-end final
+267,10,no near-end final
+268,10,no near-end final
+269,10,no near-end final
+270,10,no near-end final
+271,10,no near-end final
+272,10,no near-end final
+273,10,no near-end final
+274,10,no near-end final
+275,10,no near-end final
+276,10,no near-end final
+277,10,no near-end final
+278,10,no near-end final
+279,10,no near-end final
+280,10,event outside frozen v1 membership
+280,20,event outside frozen v1 membership
+280,30,event outside frozen v1 membership
+280,40,event outside frozen v1 membership
+280,50,event outside frozen v1 membership
+280,100,event outside frozen v1 membership
+280,200,event outside frozen v1 membership
+280,300,event outside frozen v1 membership
+280,400,event outside frozen v1 membership
+280,500,event outside frozen v1 membership
+280,3000,event outside frozen v1 membership
+280,4000,event outside frozen v1 membership
+280,5000,event outside frozen v1 membership
+280,10000,event outside frozen v1 membership
+280,20000,event outside frozen v1 membership
+280,30000,event outside frozen v1 membership
+281,10,no near-end final
+282,10,event outside frozen v1 membership
+282,20,event outside frozen v1 membership
+282,30,event outside frozen v1 membership
+282,40,event outside frozen v1 membership
+282,50,event outside frozen v1 membership
+282,100,event outside frozen v1 membership
+282,200,event outside frozen v1 membership
+282,300,event outside frozen v1 membership
+282,400,event outside frozen v1 membership
+282,500,event outside frozen v1 membership
+282,3000,event outside frozen v1 membership
+282,4000,event outside frozen v1 membership
+282,5000,event outside frozen v1 membership
+282,10000,event outside frozen v1 membership
+282,20000,event outside frozen v1 membership
+282,30000,event outside frozen v1 membership
+283,10,no near-end final
+284,10,no near-end final
+285,10,no near-end final
+286,10,no near-end final
+287,10,no near-end final
+288,10,no near-end final
+289,10,no near-end final
+290,10,no near-end final
+291,10,no near-end final
+292,10,no near-end final
+293,10,no near-end final
+294,10,no near-end final
+295,10,no near-end final
+296,10,no near-end final
+297,10,no near-end final
+298,10,no near-end final
+299,10,no near-end final
+300,10,no near-end final
+301,10,no near-end final
+302,10,no near-end final
+303,10,no near-end final
+304,10,no near-end final
+305,10,no near-end final
+306,10,no near-end final
+307,10,no near-end final
+308,10,no near-end final
+309,10,no near-end final
+310,10,event outside frozen v1 membership
+310,20,event outside frozen v1 membership
+310,30,event outside frozen v1 membership
+310,40,event outside frozen v1 membership
+310,50,event outside frozen v1 membership
+310,100,event outside frozen v1 membership
+310,200,event outside frozen v1 membership
+310,300,event outside frozen v1 membership
+310,400,event outside frozen v1 membership
+310,500,event outside frozen v1 membership
+310,1500,event outside frozen v1 membership
+310,3000,event outside frozen v1 membership
+310,4000,event outside frozen v1 membership
+310,5000,event outside frozen v1 membership
+310,10000,event outside frozen v1 membership
+310,20000,event outside frozen v1 membership
+310,30000,event outside frozen v1 membership
+311,10,no near-end final
+312,10,no near-end final
+313,10,no near-end final
+314,10,no near-end final
+315,10,no near-end final
+316,10,no near-end final
+317,10,no near-end final
+318,10,no near-end final
+319,10,no near-end final
+320,10,no near-end final
+321,10,no near-end final
+322,10,no near-end final
+323,10,no near-end final
+324,10,no near-end final
+325,10,no near-end final
+326,10,no near-end final
+327,10,event outside frozen v1 membership
+327,20,event outside frozen v1 membership
+327,30,event outside frozen v1 membership
+327,40,event outside frozen v1 membership
+327,50,event outside frozen v1 membership
+327,100,event outside frozen v1 membership
+327,200,event outside frozen v1 membership
+327,300,event outside frozen v1 membership
+327,400,event outside frozen v1 membership
+327,500,event outside frozen v1 membership
+327,1500,event outside frozen v1 membership
+327,3000,event outside frozen v1 membership
+327,4000,event outside frozen v1 membership
+327,5000,event outside frozen v1 membership
+327,10000,event outside frozen v1 membership
+327,20000,event outside frozen v1 membership
+327,30000,event outside frozen v1 membership
+328,10,event outside frozen v1 membership
+328,20,event outside frozen v1 membership
+328,30,event outside frozen v1 membership
+328,40,event outside frozen v1 membership
+328,50,event outside frozen v1 membership
+328,100,event outside frozen v1 membership
+328,200,event outside frozen v1 membership
+328,300,event outside frozen v1 membership
+328,400,event outside frozen v1 membership
+328,500,event outside frozen v1 membership
+328,1500,event outside frozen v1 membership
+328,3000,event outside frozen v1 membership
+328,4000,event outside frozen v1 membership
+328,5000,event outside frozen v1 membership
+328,10000,event outside frozen v1 membership
+328,20000,event outside frozen v1 membership
+328,30000,event outside frozen v1 membership

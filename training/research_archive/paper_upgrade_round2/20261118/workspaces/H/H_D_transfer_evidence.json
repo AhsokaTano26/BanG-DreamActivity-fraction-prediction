@@ -1,0 +1,112 @@
+{
+  "scope": "Fixed first25 calibration, posthoc after simulation; independent scalar filter and original issued B comparators",
+  "passed": true,
+  "max_bias_difference": 4.163336342344337e-17,
+  "max_prediction_difference": 3.725290298461914e-09,
+  "max_event_metric_difference": 7.549516567451064e-15,
+  "bad_cases": [],
+  "bad_sha": [],
+  "events": [
+    {
+      "event": 286,
+      "cases": 14,
+      "mape": 7.98482035583766,
+      "log_mse": 0.008901046456818702,
+      "history_pairs": 25,
+      "max_history_end_ms": 1756911599000,
+      "query_start_ms": 1756962000000
+    },
+    {
+      "event": 287,
+      "cases": 14,
+      "mape": 11.001919614266267,
+      "log_mse": 0.020429370727283295,
+      "history_pairs": 26,
+      "max_history_end_ms": 1757602799000,
+      "query_start_ms": 1757739600000
+    },
+    {
+      "event": 288,
+      "cases": 14,
+      "mape": 5.325619063087999,
+      "log_mse": 0.005215982502824404,
+      "history_pairs": 27,
+      "max_history_end_ms": 1758207599000,
+      "query_start_ms": 1758344400000
+    },
+    {
+      "event": 289,
+      "cases": 8,
+      "mape": 10.036433837667131,
+      "log_mse": 0.011791410084891275,
+      "history_pairs": 28,
+      "max_history_end_ms": 1758812399000,
+      "query_start_ms": 1758852000000
+    },
+    {
+      "event": 290,
+      "cases": 12,
+      "mape": 7.286804377081782,
+      "log_mse": 0.010215548272736253,
+      "history_pairs": 29,
+      "max_history_end_ms": 1760021999000,
+      "query_start_ms": 1760158800000
+    },
+    {
+      "event": 291,
+      "cases": 10,
+      "mape": 2.7592363453488913,
+      "log_mse": 0.0010330875772226716,
+      "history_pairs": 30,
+      "max_history_end_ms": 1760885999000,
+      "query_start_ms": 1761022800000
+    },
+    {
+      "event": 292,
+      "cases": 12,
+      "mape": 6.042852235789009,
+      "log_mse": 0.005356721825714862,
+      "history_pairs": 31,
+      "max_history_end_ms": 1761749999000,
+      "query_start_ms": 1761886800000
+    },
+    {
+      "event": 312,
+      "cases": 12,
+      "mape": 6.404144296198258,
+      "log_mse": 0.005438791602547704,
+      "history_pairs": 32,
+      "max_history_end_ms": 1762613999000,
+      "query_start_ms": 1762747200000
+    },
+    {
+      "event": 313,
+      "cases": 12,
+      "mape": 2.762853834757967,
+      "log_mse": 0.0010958368276067535,
+      "history_pairs": 33,
+      "max_history_end_ms": 1763467199000,
+      "query_start_ms": 1763611200000
+    },
+    {
+      "event": 293,
+      "cases": 12,
+      "mape": 9.928602665610022,
+      "log_mse": 0.011675452875941017,
+      "history_pairs": 34,
+      "max_history_end_ms": 1764331199000,
+      "query_start_ms": 1764482400000
+    }
+  ],
+  "event_macro_mape": 6.953328662564499,
+  "event_macro_log_mse": 0.008115324875358694,
+  "same_phase_comparator_mape": {
+    "independent_fixed_recipe": 5.3409266236445445,
+    "fully_shared_pair": 6.45415258961742,
+    "risk_recent_k8": 5.423812870218651
+  },
+  "summary_mape_matches": true,
+  "identity": "posthoc after simulation and existing train diagnoses; one fixed transfer, no selection",
+  "script_sha256": "cdc8f82a9576418b34a41492609ab2a652ef6136118ed14ed4c9d614bd2f0acf",
+  "boundary": "Retrospective information-set replay; per-event forecasts collected in memory and sealed at end of run; no prospective publication timing claim."
+}

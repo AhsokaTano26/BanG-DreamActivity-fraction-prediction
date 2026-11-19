@@ -1,0 +1,26 @@
+[
+  {
+    "role": "B",
+    "exit_code": 0,
+    "log": "analysis/paper_upgrade_round2/20261118/PI_tests_B.log",
+    "tail": "ore_final_block_and_no_overwrite) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 0.925s\n\nOK\n"
+  },
+  {
+    "role": "C",
+    "exit_code": 0,
+    "log": "analysis/paper_upgrade_round2/20261118/PI_tests_C.log",
+    "tail": "ranks_even_with_prefix_imbalance) ... ok\n\n----------------------------------------------------------------------\nRan 19 tests in 1.897s\n\nOK\n"
+  },
+  {
+    "role": "D",
+    "exit_code": 0,
+    "log": "analysis/paper_upgrade_round2/20261118/PI_tests_D.log",
+    "tail": "predicts_without_current_outcome) ... ok\n\n----------------------------------------------------------------------\nRan 19 tests in 0.432s\n\nOK\n"
+  },
+  {
+    "role": "E",
+    "exit_code": 1,
+    "log": "analysis/paper_upgrade_round2/20261118/PI_tests_E.log",
+    "tail": "spaces/E/tmppq05yy2o.csv'\n\n----------------------------------------------------------------------\nRan 12 tests in 0.021s\n\nFAILED (errors=1)\n"
+  }
+]

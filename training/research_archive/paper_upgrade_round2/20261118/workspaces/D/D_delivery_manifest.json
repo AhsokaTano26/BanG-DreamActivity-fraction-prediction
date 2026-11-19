@@ -1,0 +1,33 @@
+{
+  "scope": "D-only retrospective train mechanism analysis and posthoc fixed transfer; all negative results retained",
+  "verification": "19 pure fixtures green; all original source and output hashes verified; independent H audit noted",
+  "sha256": {
+    "D_report.md": "977884f3507330268af20c1ccb380a6d488ce3d100fb8e6ec8c105395e2fa423",
+    "D_simulation_real_link.csv": "4da212a0022c9ae047aa04c853affae13fb03235f4dcfa6c3bd007ea3195d71f",
+    "D_delete_one_metadata_audit.json": "06c8748eaf199e57abf1c9e00a1d8f1bf6c71c5f89615f8059dfb49a91de15ee",
+    "D_execution_notes.md": "a9f998789ff73b4efe8dc46d8b5c323deeb7037f47b801699a2cf65b38d298d3",
+    "code_seal.json": "4ee1c652c05c9fb071a4504210b8307f795b70f6fd583e7349b4a58f9a8ddfc1",
+    "posthoc_transfer_seal.json": "51f261758203322e796d3d128cf08fe24736f0090ee49e28b2eb0110432eec7e",
+    "posthoc_transfer_plan.json": "a9dfb24e3f8241daa2040bf4523e19362d20b9431d08078f412fd4e7719b05e2",
+    "calibration_run_v2_001/calibration_parameters.csv": "15c2a935eeddf74cdb4d862e66845ea442d800daf135133887f669f7a6515ddb",
+    "calibration_run_v2_001/calibration_profile.csv": "e08081013a7e98cc14097627af43f292f833a5be97851900df94ed1fec9535b7",
+    "calibration_run_v2_001/calibration_seal.json": "cc8746bf12f9853265e5b7e5fecb97fdfa31c3f0b2ac10aedb90849e1b549ce6",
+    "calibration_run_v2_001/delete_one_profile.csv": "66d31d93d7408ecb7108885e4716b4fe3d18f3f940167409f3ad4f224b85a814",
+    "calibration_run_v2_001/diagnostics.csv": "d68021ef347d2a227dcf183941286a2e5aba2ff6fba4c29163d127ecb8617f34",
+    "calibration_run_v2_001/event_rank_phase_means.csv": "08c6cc9b1085f1aee2145289fa4fb3fff94e4b12f87e09865e45290cf345096e",
+    "calibration_run_v2_001/next_event_associations.csv": "727dc94ae024d680beb58a97705bd982eaeb641ea01c458a9b143a13abc229f2",
+    "calibration_run_v2_001/next_event_signal_benefit.csv": "2b2d2d36263c7d7e04a5772a4f2a6dee29a82718055252583d88c8373ee6e5ef",
+    "calibration_run_v2_001/paired_diagnostics.csv": "56a568abe1b93478a38335126bfc862d0692a9c57fe1f47bbdf2cf38fe972ba1",
+    "calibration_run_v2_001/run_manifest.json": "4a6948aed01620ad43e167770f91f1ee130067f6e1ec88532bbf99a0e17d81e8",
+    "simulation_run_v2_001/failure_regions.csv": "ff4104e9f8be2619d9b52b90c122180518392457ba44a3527f52592653bff529",
+    "simulation_run_v2_001/per_event_simulation.csv": "94d644c2ebf5b1ced367f63720b7697456d23dae774faf33282815b7410e94ae",
+    "simulation_run_v2_001/per_path.csv": "ccd0b2d057a8dfe6c40355fac35fb38ef246b95cdc778974fb73a0606c612d48",
+    "simulation_run_v2_001/per_seed.csv": "a98e41bf590cda9fce922096ff0283a5593c4cc3ed2827f6544ddbe75add5346",
+    "simulation_run_v2_001/run_manifest.json": "4e9237d07860c6c01ba592dfea9e1157d9fec0989989783dd888a7404b2d11a6",
+    "simulation_run_v2_001/simulation_real_link.csv": "1a09a7bda2a40d373434c66e7f879b6dedb3a2ea9aa9f85d09c9688eb835fd6b",
+    "posthoc_transfer_run_001/event_comparisons.csv": "776551e21a0808219b2b1c1535ab6dd76ea9ff8e1cba4d75018555a2d9f08b58",
+    "posthoc_transfer_run_001/issued_DLM.csv": "abc9c1d817964e25b53279282d10644c6aeac760606813857821c31077493b77",
+    "posthoc_transfer_run_001/run_manifest.json": "c115e3e2a280e1db6af4dc1dfe823a5d5cbc3c0825d89e7682c2771f765bd498",
+    "posthoc_transfer_run_001/summary.json": "3d8de38a13054589c81e25e9ecef17f86cfa4137d399ae3a25064b7ace2dc793"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "status": "passed",
+  "repository_tests": 469,
+  "new_tests": 70,
+  "unique_test_cases_total": 539,
+  "logs": [
+    {
+      "scope": "repository",
+      "tests": 469,
+      "status": "passed",
+      "log": "analysis/paper_upgrade_round2/20261118/PI_full_suite.log",
+      "sha256": "a0dc59ec4c8b3af80f7ac73055c368f9b8350ef28019b484db8f9228b2b9f5e2"
+    },
+    {
+      "scope": "B",
+      "tests": 15,
+      "status": "passed",
+      "log": "analysis/paper_upgrade_round2/20261118/PI_tests_B.log",
+      "sha256": "95bb812ed6162e55cc5f18bb8b4bdc8cd3058a38840f352ba46956543ba58724"
+    },
+    {
+      "scope": "C",
+      "tests": 19,
+      "status": "passed",
+      "log": "analysis/paper_upgrade_round2/20261118/PI_tests_C.log",
+      "sha256": "30271da51213cccdd21c1d2e238d0b0178816caada2d455289945741e59453b0"
+    },
+    {
+      "scope": "D",
+      "tests": 19,
+      "status": "passed",
+      "log": "analysis/paper_upgrade_round2/20261118/PI_tests_D.log",
+      "sha256": "7d0896d3ba274dd6c304e7edcd1b0eef9d78104a2c95a9ca1ba56de46f0b34fb"
+    },
+    {
+      "scope": "E",
+      "tests": 12,
+      "status": "passed",
+      "log": "analysis/paper_upgrade_round2/20261118/PI_tests_E_root.log",
+      "sha256": "5b97b35d8d01fcdf3e263d51c2267c13e1a114597620ed6f7979467260e09445"
+    },
+    {
+      "scope": "physical_guard",
+      "tests": 5,
+      "status": "passed",
+      "log": "analysis/paper_upgrade_round2/20261118/PI_tests_integration_root.log",
+      "sha256": "2200af25bf541b895bccb451a40b847f92c658a103090ffac654aaad530d7252"
+    }
+  ],
+  "retained_initial_harness_failure": "PI_tests_E.log: relative-path fixture invoked from E directory; rerun from documented repository-root cwd passes with unchanged source and results."
+}

@@ -1,0 +1,13 @@
+{
+  "stage": "before E real numeric execution; PI approved wording and unit clarification",
+  "original_preregistration_sha256": "17a4c95dd25a4f006e29dcab3af39d796d7b2ee5cd54315a7e951bfd1a47a3c0",
+  "numeric_methods_changed": false,
+  "clarifications": [
+    "Difference is legacy_pair minus EWMA; upper95 below zero favors legacy, lower95 above zero favors EWMA.",
+    "All effects are percentage points. MAPE, event-rank MAPE and MAE paired metadata explicitly name activity weighting.",
+    "Power grid tests zero-null at specified true effect. Additional shifted-null table at -0.5pp illustrates required power for a usefulness margin and true effects -(0.5+delta)pp; it is separate from the sole proposed primary zero-null test.",
+    "B summaries additionally retain the two original external/base controls and all35 aggregate; candidate selection stays original12 only.",
+    "C2 twelve query activities are a subset of B35; studies are analyzed separately, with at most35 unique new historical activities overall.",
+    "B numeric scoring reads original issued outcome-free predictions plus independent TRAIN answers; original scored loss columns are not reused."
+  ]
+}

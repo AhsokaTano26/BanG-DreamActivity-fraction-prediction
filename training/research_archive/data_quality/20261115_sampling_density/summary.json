@@ -1,0 +1,26 @@
+{
+  "dataset_id": "d0ccf9f70aee19ad1b2152925e7afe8692d67f4a6e539d558f87e2cd33329bbb",
+  "source": "Frozen complete TRAIN curves only; no validation/test answers or database snapshots read.",
+  "source_sha256": "d1c860a553c4c518a4a3ac17e13ff7ddb7433fb4eebd5e8e16afaed7cd8e560d",
+  "definitions": "Unique timestamps within start<=time<=end; gap median per curve then median over curves. Descriptive boundary inspection, not a formal change-point test or causal analysis.",
+  "boundary_activity": 226,
+  "boundary_activity_start_cn": "2024-01-29T13:00:00+08:00",
+  "first_saved_observation_in_boundary_activity_cn": "2024-01-30T13:45:36+08:00",
+  "periods": {
+    "before_activity_226": {
+      "events": 186,
+      "curves": 306,
+      "observations_within_activity": 31.0,
+      "median_gap_minutes": 165.5,
+      "observations_per_day": 5.354532632388768
+    },
+    "activity_226_onward_in_training": {
+      "events": 12,
+      "curves": 24,
+      "observations_within_activity": 335.5,
+      "median_gap_minutes": 30.0,
+      "observations_per_day": 45.23602564922854
+    }
+  },
+  "limits": "Only eligible frozen training curves, ending May2024. Does not establish exact collector rollout time or why sampling changed. Earlier sparse observations may miss nonlinear growth. Existing test exposure and retrospective metadata limitations remain unchanged."
+}

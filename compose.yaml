@@ -1,0 +1,30 @@
+services:
+  web:
+    image: tano26/bang-dream-activity-fraction-prediction:${FRAMEWORK_TAG:-latest}
+    build:
+      context: .
+    user: "${PUID:-1000}:${PGID:-1000}"
+    init: true
+    restart: unless-stopped
+    ports:
+      - "${BIND_HOST:-127.0.0.1}:${WEB_PORT:-8765}:8765"
+    environment:
+      STATE_DIR: /state
+      BOOTSTRAP_DIR: /bootstrap
+      UPDATE_INTERVAL: "${UPDATE_INTERVAL:-900}"
+    volumes:
+      - type: bind
+        source: ${STATE_PATH:-./state}
+        target: /state
+      - type: bind
+        source: ${MODEL_PATH:-./models}
+        target: /state/models
+      - type: bind
+        source: ${BOOTSTRAP_PATH:-./bootstrap}
+        target: /bootstrap
+        read_only: true
+    cpus: "${CPU_LIMIT:-1.0}"
+    mem_limit: "${MEMORY_LIMIT:-2g}"
+    stop_grace_period: 15s
+    security_opt:
+      - no-new-privileges:true

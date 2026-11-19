@@ -1,0 +1,14 @@
+{
+  "stage": "before real residual replay or fitting",
+  "candidate_or_parameter_changes": false,
+  "amendments": [
+    "v1 hand-transcribed query SHA corrected by hashlib in retained v2",
+    "PI review: context string dtype/low_memory=False, per-query issuance seals, scorer source hash verification"
+  ],
+  "preserved_prepared_runs": [
+    "c1_001",
+    "c2_001"
+  ],
+  "numeric_started": false,
+  "fixture_tests": 19
+}

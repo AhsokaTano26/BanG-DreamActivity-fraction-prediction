@@ -1,0 +1,11 @@
+{
+  "identity": "posthoc after simulation; code/config sealed before fixed transfer execution",
+  "sha256": {
+    "posthoc_transfer.py": "a1f17334f2eaf23616bd76a90ab43da3f4a0b3027f501424e1ac1c273fdb7c1a",
+    "test_posthoc_transfer.py": "e9f2f707535e35972503ca8314c203dd3825a77474856524f87274b75c428210",
+    "posthoc_transfer_plan.json": "a9dfb24e3f8241daa2040bf4523e19362d20b9431d08078f412fd4e7719b05e2",
+    "code_seal.json": "4ee1c652c05c9fb071a4504210b8307f795b70f6fd583e7349b4a58f9a8ddfc1",
+    "calibration_run_v2_001/calibration_seal.json": "cc8746bf12f9853265e5b7e5fecb97fdfa31c3f0b2ac10aedb90849e1b549ce6",
+    "calibration_run_v2_001/next_event_signal_benefit.csv": "2b2d2d36263c7d7e04a5772a4f2a6dee29a82718055252583d88c8373ee6e5ef"
+  }
+}

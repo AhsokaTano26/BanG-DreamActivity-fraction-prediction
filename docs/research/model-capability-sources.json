@@ -1,0 +1,25 @@
+{
+  "scope": "Historical exploratory panel; no new training or scoring",
+  "events": 16,
+  "cases": 5220,
+  "rank_count": 19,
+  "sources": {
+    "docs/research/evidence/main_models.csv": "4e12b86461dfa03eca2b7237779ef72d61dcd337e19f3cc766734f7b795b953b",
+    "docs/research/evidence/rank_results.csv": "2adbdb913f229ac5fb971b78e33ec65d283c8a12a31aeeaaa8635877b85bf068",
+    "docs/research/evidence/stage_results.csv": "daab20319e63c94564ec40e36af1756b8b1689fcf817023a60c313433df7c7a1",
+    "docs/research/evidence/correlation_summary.csv": "cf0df33bc39d8424fa43e264e9fc0959c08831f60df86a9fb5cc9ffd22de29bd",
+    "docs/research/evidence/activity_forecast_examples.csv": "f6d51c0908ff4a3b672496d0ab1e19c3d85cd6df57d3211127726abfcfb7ccca",
+    "docs/research/evidence/activity_forecast_selection.json": "f86984e7807275d20b64a5e2940734f21766225aa3691409d27e9eb05261d921",
+    "docs/research/evidence/calibration-ablation.json": "41327361b8ec048814750b41a01ff6104dc7664a621903c90ba186ba13284a30"
+  },
+  "local_origins": {
+    "papers/20261118_sci_cn/data/main_models.csv": "4e12b86461dfa03eca2b7237779ef72d61dcd337e19f3cc766734f7b795b953b",
+    "papers/20261118_sci_cn/data/rank_results.csv": "2adbdb913f229ac5fb971b78e33ec65d283c8a12a31aeeaaa8635877b85bf068",
+    "papers/20261118_sci_cn/data/stage_results.csv": "daab20319e63c94564ec40e36af1756b8b1689fcf817023a60c313433df7c7a1",
+    "papers/20261118_sci_cn/data/correlation_summary.csv": "cf0df33bc39d8424fa43e264e9fc0959c08831f60df86a9fb5cc9ffd22de29bd",
+    "papers/20261118_entertainment_computing_cn/data/upgrade_macros.tex": "daf088a0e282433a8a1caad7d4e320366d44a0e3894dc53c4c3a366055c70c54",
+    "papers/20261118_entertainment_computing_cn/data/figure_data/activity_forecast_examples.csv": "f6d51c0908ff4a3b672496d0ab1e19c3d85cd6df57d3211127726abfcfb7ccca",
+    "papers/20261118_entertainment_computing_cn/data/figure_data/activity_forecast_selection.json": "f86984e7807275d20b64a5e2940734f21766225aa3691409d27e9eb05261d921"
+  },
+  "publication_scope": "Result excerpts and README preview; manuscript sources remain local. Paper downloads contain PDFs only."
+}

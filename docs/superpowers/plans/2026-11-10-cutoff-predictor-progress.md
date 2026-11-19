@@ -1,0 +1,14 @@
+# SDD ledger — plan: docs/superpowers/plans/2026-11-10-cutoff-predictor.md
+
+- Ruling: Continue inline in the user's existing project folder — it contains the updated database, analysis artifacts, and user-requested local environment; moving into a separate checkout would omit that working state. Leave changes uncommitted and preserve all unrelated files.
+- Ruling: Reuse the evaluated XGBoost configuration and show the historical analog separately — selecting a new blend based on the observed test results would overstate validation.
+- Pre-flight: `forecasting.py` consumes the existing `Curve`, prefix-only `snapshot`, `make_samples`, `templates`, and `fit_models` interfaces; their signatures are already suitable. Only `load_curves` needs an optional database path for isolated tests and CLI use.
+- Task 1: complete — 11 missing-feature assertions observed RED; implementation passed all 11 real forecasting and calibration tests.
+- Task 2: RED observed — 8 command tests failed because the command did not yet exist; added model-signature mismatch coverage before implementation.
+- Ruling: Bind calibration to both the database hash and model-feature signature — this prevents reusing obsolete errors after changing the model. The model signature is added to future backtest metadata without changing the evaluated predictions.
+- Task 2: complete — all 20 command/core tests passed; live predictions at both ranks succeeded; CSV predictions and metrics remained byte-identical; database hash and integrity were unchanged.
+- Final review: one independent read-only review found two P2 issues. Regression tests reproduced missing target-rank templates and untracked categorical-feature configuration changes; both corrected in a single fix pass. A malformed tracker fixture was also corrected to exercise the intended branch.
+- Measured limitation: the empirical range's historical coverage over 342 test snapshots was 74.85% overall, 67.84% for rank 1000, and 81.87% for rank 2000. Retain the frozen procedure, disclose the limitation, and do not tune it on this test set.
+- User steering: continue with historical training and advanced neural architecture comparisons; the command is supplementary to that analysis.
+- Task 3: complete — independent review findings repaired with three observed RED→GREEN regressions; full command/core suite passed 23/23. Subsequent neural tests expand the suite to 25/25 using isolated native-library checks. Original baseline predictions and metrics stayed numerically unchanged.
+- Advanced comparison review: independently confirmed 142 main training runs, identical test cases, chronological boundaries, train-only preprocessing, prefix invariance, and correct instantiated model identities. Corrected a cosmetic configurable-seed ensemble label; completed three-seed scores are unaffected. Results are exploratory and neural structures are task-adapted.

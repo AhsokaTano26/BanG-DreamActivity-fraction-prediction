@@ -1,0 +1,172 @@
+{
+  "version": "C-fairness-2",
+  "frozen_before_numerics": true,
+  "status": "implementation_and_fixtures_only_pending_PI_numeric_permission",
+  "scope": "C workspace only; no changes to production, original paper, datasets or sealed results",
+  "minimum_start_ms": 1706504400000,
+  "C1": {
+    "source": "PI-exported train_residuals.csv.gz and train_queries.json only",
+    "source_sha256": {
+      "train_residuals.csv.gz": "59a6d8398110b71d0d67fe9dde7a7c3a49eddea1df9ee2c13390621d6b661d98",
+      "train_queries.json": "319ca4dbf9a48a853b8181f2f0376d760b50d766137c503b3c24a776dee05277"
+    },
+    "events": 35,
+    "periods": {
+      "warmup": [
+        0,
+        15
+      ],
+      "selection_description": [
+        15,
+        25
+      ],
+      "temporal_diagnostic": [
+        25,
+        35
+      ]
+    },
+    "selection": "none; fixed recipe ablations, retain all results; B candidate selection remains B responsibility",
+    "feedback": "strict end_ms < query.start_ms; all prefixes share start-of-event pool",
+    "reference": {
+      "alpha": 0.3,
+      "shrinkage": 10.0,
+      "clip": [
+        -0.3,
+        0.3
+      ],
+      "aggregation": "one event/rank/phase mean of log(base/actual); EWMA initialized at first mean"
+    },
+    "legacy_pair": {
+      "target_rank": 1000,
+      "anchor_rank": 2000,
+      "anchor_alpha": 0.2,
+      "difference_alpha": 0.6,
+      "anchor_shrinkage": 10.0,
+      "difference_shrinkage": 5.0,
+      "minimum_pairs": 1,
+      "anchor_support": "all completed anchor events",
+      "difference_support": "complete paired events"
+    },
+    "methods": [
+      "uncorrected",
+      "independent",
+      "legacy_pair",
+      "legacy_only_T1000",
+      "legacy_only_T2000",
+      "swapped_only_T2000",
+      "pair_anchor_only",
+      "pair_difference_only",
+      "same_filter_pair",
+      "same_panel_independent",
+      "equal_alpha",
+      "equal_shrinkage",
+      "complete_support",
+      "no_anchor_shrink",
+      "no_difference_shrink",
+      "no_shrink",
+      "anchor_alpha_0p3",
+      "difference_alpha_0p3"
+    ],
+    "report_panels": [
+      "global19",
+      "T1000_T2000"
+    ],
+    "residuals": "save raw and corrected event/rank/phase mean residuals, within-event spread, cross-event drift and lag correlation by fixed period; descriptive only",
+    "fits": 0,
+    "maximum_predict_calls": 630
+  },
+  "C2": {
+    "data_directory": "data/temporal_holdout_v2_dense_t1000_t2000_20261115",
+    "dataset_id": "d057beca6597dd28b59fde7da08f665ae74af41d96f940da04268c881864a215",
+    "read_allowlist": [
+      "train_inputs.jsonl.gz",
+      "train_cases.csv",
+      "train_labels.csv"
+    ],
+    "sort": [
+      "start_ms",
+      "event"
+    ],
+    "training_endpoints": [
+      32,
+      44,
+      56
+    ],
+    "evaluation_events_after_each_endpoint": 4,
+    "history_groups": [
+      "N32full",
+      "N16span",
+      "N16recent"
+    ],
+    "N16span_indices_in_N32": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      17,
+      19,
+      21,
+      23,
+      25,
+      27,
+      29,
+      31
+    ],
+    "query_history": "freeze at first of four query starts; exclude any historical event ending at/after that start; no feedback within query block",
+    "features": "local multirank feature_row, rank as log_rank; no metadata or peer; common training-fit pooled imputation/category encoding and event/rank-weighted scaling per group",
+    "target": "log(actual/current)+log(observed progress)",
+    "weighting": "equal event mass; equal observed rank mass within event; equal cases within event/rank",
+    "shared": "Linear(d,32,bias=False), SiLU, two Linear(32,1,bias=True) heads",
+    "independent": "two separate Linear(d,16,bias=True), SiLU, Linear(16,1,bias=True) networks; only own-rank rows enter each fit",
+    "exact_parameter_count_per_pair": "32*d+66, confirmed by actual torch parameter enumeration",
+    "optimizer": {
+      "name": "AdamW",
+      "learning_rate": 0.002,
+      "weight_decay": 0.05,
+      "batch": "full",
+      "early_stopping": false
+    },
+    "structures_epochs": {
+      "shared60": 60,
+      "shared30": 30,
+      "independent60": 60
+    },
+    "seeds": [
+      42,
+      123,
+      2026
+    ],
+    "matched_groups": {
+      "parameter_matched": "shared60 vs independent60; equal total parameters/per-parameter epochs, different MACs",
+      "equal_forward_mac_approx": "shared30 vs independent60; approximate linear forward MACs, different updates"
+    },
+    "budget_caveat": "No claim of identical function class, wall-clock budget, or simultaneous compute-and-update matching. Width, bias placement, shared supervision and activity composition remain different.",
+    "physical_fits": 108,
+    "logical_comparisons": 81,
+    "fit_cap": 120,
+    "selection": "none; all predeclared variants, per seed and final-score ensemble; train-internal temporal extrapolation only"
+  },
+  "execution": {
+    "processes": 1,
+    "threads": 1,
+    "nice": 19,
+    "real_fit_requires_PI_permission": true,
+    "new_run_only": true
+  },
+  "limitations": [
+    "Existing exploratory train cohort; retrospective temporal diagnostics, not fresh prospective evidence",
+    "Old test explored and validation reused; neither consulted by this code",
+    "Metadata retrospective snapshot without historical archives; C2 does not use metadata",
+    "Sparse span-matched sampling also changes event composition",
+    "Three endpoints and four query events per endpoint offer limited independent evidence"
+  ],
+  "amendment": {
+    "reason": "Correct manually truncated train_queries SHA using hashlib; original v1 retained",
+    "stage": "before real residual replay or fitting; no scores observed",
+    "previous_preregistration_sha256": "3194316be0060f459cc2820a5674620cbfa4f3fd624b81456093923a9279c95b"
+  }
+}

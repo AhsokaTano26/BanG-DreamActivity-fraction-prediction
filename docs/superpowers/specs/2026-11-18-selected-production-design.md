@@ -1,0 +1,17 @@
+# Use the tested legacy_pair recipe in production
+
+User explicitly chose the best tested model on2026-11-18. This selects the existing recipe, not a new experiment: Context400 forT1000/T2000, shared600 for other ranks; coupled_gap correction for the pair, independent warmEWMA elsewhere. Matched exploratory benchmark19rankMAPE6.540281%, original2rank6.539744%; these are NOT accuracy claims about a latest live fit. Dataset/test exposure, repeated validation and retrospective metadata limitations remain.
+
+The old service only uses independentEWMA and seeds the two ranks. Add versioned production modules and a new worker entrypoint rather than editing sources/weights protected by sealed research. Reuse the existing trained base packs, store, lock and issued-feedback ledger. Future base updates continue through the existing fixed train_pack recipe. No new NN training, dependencies, commit or push.
+
+Alternatives considered: pointing at historical query weights would freeze an obsolete training boundary; changing old pack source would invalidate immutable pack/source bindings. Choose a new production correction/runtime layer over verified existing base packs. This is a routine implementation of the user's explicit model selection; no new architecture choice or permission handoff.
+
+Pure calibration builds from coordinator-verified, dense-period, strictly-ended-before-start event/rank/phase mean RAW forecast errors. Use the frozen canonical coupled_gap implementation, including anchoralpha.2/shrink10, pairedcontrastalpha.6/shrink5, clipping+/-.3 and ownEWMA fallback; all other ranks usealpha.3/shrink10. State includes recipe/method/source identity. Tests must prove parity with all65sealed historical query controls without reading benchmark answer files.
+
+Seed from65sealed19rank causal forecasts and locally verified completed curves, never fitted residuals. Existing live feedback wins. Archive superseded retrospective seed rows before replacing them; retain a source-bound seed receipt, retry missing curves. No old seed becomes new prospective evidence.
+
+Existing activity pins remain immutable, including their legacy independent correction. The new default applies to NEW activity pins; current output names its effective method separately from the selected default. No retroactive alteration of issued forecasts. History for all cases within a pin remains fixed at that activity's actual start. New worker accepts old pin schema through the old predictor, new pins through the selected predictor. Preserve corruption recovery and automatic updates.
+
+New CLI production.selected_cli is the current operational entrypoint. Reconfigure the SAME launchd label to this CLI, keeping900sec interval, using nice19/background and thread environment1. OriginalCLI remains a legacy entrypoint; new documentation identifies current commands. Installation accepts only this project's old or selected schedule and preserves the priorplist. Take SQLite backup/config/status/scheduler snapshot before activation. Verify a local offline cycle, then install the reviewed worker and observe its status.
+
+All computation serial. Work in current user research folder with necessary uncommitted dependencies. Keep old protected files immutable. Run focused RED/GREEN tests, full unittest suite, historical prediction parity, sequential read-only code review, then activate and seal deployment evidence.

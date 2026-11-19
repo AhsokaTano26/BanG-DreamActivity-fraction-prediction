@@ -1,0 +1,350 @@
+{
+  "protocol": {
+    "version": "temporal_holdout_v2_dense_20261115",
+    "country": "中国大陆",
+    "ranks": [
+      1000,
+      2000
+    ],
+    "group": "One shared chronological 70%/15%/remainder event split; all ranks/prefixes grouped",
+    "order": "real CN StartAt, then EventID; never shuffled",
+    "fractions": [
+      0.7,
+      0.15,
+      0.15
+    ],
+    "rounding": "floor train, floor validation, remainder test",
+    "minimum_curve_points": 5,
+    "final_before_end_max_ms": 60000,
+    "final_after_end_max_ms": 300000,
+    "minimum_prefix_points": 4,
+    "prefix_max_age_ms": 3600000,
+    "evaluation_stages": [
+      "elapsed_1h",
+      "elapsed_3h",
+      "elapsed_6h",
+      "elapsed_12h",
+      "elapsed_24h",
+      "elapsed_48h",
+      "elapsed_72h",
+      "progress_10pct",
+      "progress_25pct",
+      "progress_50pct",
+      "progress_75pct",
+      "progress_90pct",
+      "progress_95pct",
+      "remaining_48h",
+      "remaining_24h",
+      "remaining_12h",
+      "remaining_6h",
+      "remaining_3h",
+      "remaining_1h",
+      "remaining_0.5h",
+      "remaining_0.25h"
+    ],
+    "training_sampling": "same prescribed origin grid for all three groups",
+    "primary_metric": "event_macro_mape_pct",
+    "training_seeds": [
+      42,
+      123,
+      2026
+    ],
+    "fit_policy": "train only; validation selects checkpoints/recipes; no refit or heat update on validation/test",
+    "exposure": "Retained events overlap previously explored training/validation/test cohorts; not unseen data.",
+    "metadata_caveat": "Retrospective Bestdori snapshot; no archived point-in-time metadata proof. CN card release times are filtered.",
+    "scope": "Rank subset of Temporal V2; same groups, cases and time grid",
+    "additional_rank_final": "last observation no later than end+300s, requiring observation >=end-60s; later polling excluded",
+    "stages": [
+      {
+        "stage_id": "elapsed_1h",
+        "axis": "elapsed",
+        "value": 1
+      },
+      {
+        "stage_id": "elapsed_3h",
+        "axis": "elapsed",
+        "value": 3
+      },
+      {
+        "stage_id": "elapsed_6h",
+        "axis": "elapsed",
+        "value": 6
+      },
+      {
+        "stage_id": "elapsed_12h",
+        "axis": "elapsed",
+        "value": 12
+      },
+      {
+        "stage_id": "elapsed_24h",
+        "axis": "elapsed",
+        "value": 24
+      },
+      {
+        "stage_id": "elapsed_48h",
+        "axis": "elapsed",
+        "value": 48
+      },
+      {
+        "stage_id": "elapsed_72h",
+        "axis": "elapsed",
+        "value": 72
+      },
+      {
+        "stage_id": "progress_10pct",
+        "axis": "progress",
+        "value": 0.1
+      },
+      {
+        "stage_id": "progress_25pct",
+        "axis": "progress",
+        "value": 0.25
+      },
+      {
+        "stage_id": "progress_50pct",
+        "axis": "progress",
+        "value": 0.5
+      },
+      {
+        "stage_id": "progress_75pct",
+        "axis": "progress",
+        "value": 0.75
+      },
+      {
+        "stage_id": "progress_90pct",
+        "axis": "progress",
+        "value": 0.9
+      },
+      {
+        "stage_id": "progress_95pct",
+        "axis": "progress",
+        "value": 0.95
+      },
+      {
+        "stage_id": "remaining_48h",
+        "axis": "remaining",
+        "value": 48
+      },
+      {
+        "stage_id": "remaining_24h",
+        "axis": "remaining",
+        "value": 24
+      },
+      {
+        "stage_id": "remaining_12h",
+        "axis": "remaining",
+        "value": 12
+      },
+      {
+        "stage_id": "remaining_6h",
+        "axis": "remaining",
+        "value": 6
+      },
+      {
+        "stage_id": "remaining_3h",
+        "axis": "remaining",
+        "value": 3
+      },
+      {
+        "stage_id": "remaining_1h",
+        "axis": "remaining",
+        "value": 1
+      },
+      {
+        "stage_id": "remaining_0.5h",
+        "axis": "remaining",
+        "value": 0.5
+      },
+      {
+        "stage_id": "remaining_0.25h",
+        "axis": "remaining",
+        "value": 0.25
+      }
+    ],
+    "case_key": "split/event/rank/requested cutoff; alias stages do not duplicate physical cases",
+    "maximum_observation_age_minutes": 60,
+    "fresh_subset_maximum_age_minutes": 15,
+    "cohort": "exact inherited event and eligible curve lists",
+    "first_experiment": "New cohort requires training from its own train group; old model predictions are not transferable",
+    "population_version": "dense_20261115",
+    "minimum_event_start_ms": 1706504400000,
+    "minimum_event_start_iso": "2024-01-29T13:00:00+08:00",
+    "data_policy_id": "b48ff05be6b303ac085253f03ef16f03db6a9db94eeff41910f3f009733c714f",
+    "collection_context": "User reports earlier data were manually submitted; excluded by actual event start."
+  },
+  "parent_dataset_id": "8ffd781fc9f4ebcad9ea691839777458e5e4c7cbeade58978dca15bce2440ad8",
+  "parent_manifest_sha256": "c612f36a07bcdd0f555429cc5bc4d61193c482ee720b1ba6a7500b55aed474cb",
+  "base_dataset_id": "80e354c3a5340df6724a40ef1df490f92c08007311d55849342de509eaf5ee50",
+  "original_v1_dataset_id": "d0ccf9f70aee19ad1b2152925e7afe8692d67f4a6e539d558f87e2cd33329bbb",
+  "source_identity": {
+    "parent_directory": "/Users/tano/Documents/GitHub/personal/BanG-Dream-Activity-fraction-prediction/data/temporal_holdout_v2_dense_20261115",
+    "operation": "rank filter only; no new split or curve extraction"
+  },
+  "python": "3.14.8",
+  "build_environment": {
+    "source_hashes": {
+      "analysis/temporal_rank_subset.py": "300587b01572970c1ed5069898bca534841b6768512b09b36ae4497133edf271",
+      "analysis/temporal_dataset.py": "288ab6ce031b916514a931c79f5626ab8807532484fa55002d1724e03b120235",
+      "analysis/multirank_dataset.py": "c47b652b27971009f9ea1ecd9837832b9ed376d49d5b53adb2baea219ba9d8a8",
+      "analysis/holdout_dataset.py": "22cf94748c4953b72a570093d8e26e76ae9437454e09da181fc9e5e10c6a2f6f",
+      "analysis/backtest.py": "df2733f8aff144582da7f732e3def213a224f5689b38ea8065f748d43f2e99be"
+    },
+    "software": {
+      "pandas": "3.1.1"
+    }
+  },
+  "splits": {
+    "train": {
+      "event_ids": [
+        226,
+        228,
+        229,
+        230,
+        231,
+        232,
+        233,
+        234,
+        235,
+        236,
+        237,
+        240,
+        239,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        227,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261,
+        262,
+        264,
+        263,
+        265,
+        266,
+        267,
+        268,
+        269,
+        270,
+        271,
+        272,
+        273,
+        274,
+        275,
+        278,
+        276,
+        277,
+        279,
+        281,
+        283,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290,
+        291,
+        292,
+        312,
+        313,
+        293
+      ],
+      "cases": 2452,
+      "stage_memberships": 2452,
+      "events_with_cases": 67,
+      "events_without_cases": []
+    },
+    "validation": {
+      "event_ids": [
+        294,
+        295,
+        296,
+        297,
+        298,
+        300,
+        299,
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307
+      ],
+      "cases": 488,
+      "stage_memberships": 488,
+      "events_with_cases": 14,
+      "events_without_cases": []
+    },
+    "test": {
+      "event_ids": [
+        308,
+        309,
+        311,
+        314,
+        315,
+        316,
+        317,
+        318,
+        319,
+        320,
+        321,
+        322,
+        323,
+        324,
+        325,
+        326
+      ],
+      "cases": 560,
+      "stage_memberships": 560,
+      "events_with_cases": 16,
+      "events_without_cases": []
+    }
+  },
+  "artifacts": {
+    "builder_sources/backtest.py": "df2733f8aff144582da7f732e3def213a224f5689b38ea8065f748d43f2e99be",
+    "builder_sources/holdout_dataset.py": "22cf94748c4953b72a570093d8e26e76ae9437454e09da181fc9e5e10c6a2f6f",
+    "builder_sources/multirank_dataset.py": "c47b652b27971009f9ea1ecd9837832b9ed376d49d5b53adb2baea219ba9d8a8",
+    "builder_sources/temporal_dataset.py": "288ab6ce031b916514a931c79f5626ab8807532484fa55002d1724e03b120235",
+    "builder_sources/temporal_rank_subset.py": "300587b01572970c1ed5069898bca534841b6768512b09b36ae4497133edf271",
+    "coverage.csv": "f56efb4c4dd6113da1bcc7580c0316a8ef932e11b424f2666d5cd607bc09d82f",
+    "metadata/bands.json": "44cc57471240da60a2fe9a2379743cb97c10a291807eeab47475cb98e9158049",
+    "metadata/cards.json": "9c31ed5da91121f75438d2663f716f3259478f14d8d20a7d057987ee00958b79",
+    "metadata/characters.json": "3bca6ce696d3902718e8acd7b42f4a2ab1455ff27a8ab02aba696c37dd1b094b",
+    "metadata/event_contexts.json": "31987bc9c3020f866a5be0871b37a66292c37405ebcd9d6943607e8ecff680e9",
+    "metadata/events.json": "b53596c7d7a7ddce2546dc597ba1924fe74a7ca92acbe69b2254e1403b4bcd1e",
+    "metadata/sources.json": "4804040f09de994bc490df66a02223fd63ed313d2eb4517986fc6cdd1e6993e4",
+    "parent_manifest.json": "c612f36a07bcdd0f555429cc5bc4d61193c482ee720b1ba6a7500b55aed474cb",
+    "partitions.csv": "5281004286da1eb265f28d91d152011209195d4f2e9dbebf965fa634ac956d48",
+    "test_cases.csv": "6110619ec5eead06776bb4bffe1583ca6d34e67209eb7295c01059c1fd1a4151",
+    "test_inputs.jsonl.gz": "18b05924ef3c03233930ff37ae64931045a4a5475b1d21e8ee6db62bfa6b51f6",
+    "test_labels.csv": "4f329a4f9963263d69fd68da0d20f8132af9cb3b993e9740861d18ea4223a253",
+    "test_memberships.csv": "3972f975affc91c952c934c6e822bdd622851deab6d69a5f2e8193f6b2ad9e82",
+    "train_cases.csv": "599cf3f409969926387e79e48998c54af00c7f3b72fe178cccf79e407797dba3",
+    "train_curves.jsonl.gz": "7e479832d38fb2e1227edefe202447016a3120d340afafcda10da40b30ff58de",
+    "train_inputs.jsonl.gz": "f9a8c7287c52d281ca69165376918414f5a663b7387fee657c5063664b5383c7",
+    "train_labels.csv": "0786b93886980cccaf6df69e8bec7b56d624aebcd7f75e6f03444048fb15aa74",
+    "train_memberships.csv": "9a7c71da847fe43e7eaaa9a26cd2094f6a4d0647f45896007bbde963d0d136a1",
+    "unavailable_cases.csv": "e4ec0e8e5bd6fef44ba34187589c88f32420d23c6506de7d0f00f12a7c2db490",
+    "validation_cases.csv": "6f4f5d7185dbc5f94be4bb95c11630c50a3ce2e3b919c9d784bc797f871900ed",
+    "validation_inputs.jsonl.gz": "7985b30cb05139bc86ffc0247332f28e9f154329808b09bcb5de51aba62d278e",
+    "validation_labels.csv": "866f3815c40925a6ee56b2029aa0e4bcfaaace0d21c1a84828bb804d1c0052e5",
+    "validation_memberships.csv": "77f1510c1964d15443092cb78a05a8051320ce2ee7d63733fa761ae02beb256e"
+  },
+  "dataset_id": "d057beca6597dd28b59fde7da08f665ae74af41d96f940da04268c881864a215"
+}

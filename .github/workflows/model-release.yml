@@ -1,0 +1,62 @@
+name: Publish trained model
+
+on:
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: Existing draft release tag (model-vYYYYMMDD.N)
+        required: true
+        type: string
+      framework_tag:
+        description: Framework image tag compatible with this model
+        required: true
+        default: latest
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: model-release-${{ inputs.release_tag }}
+  cancel-in-progress: false
+
+jobs:
+  verify-and-publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      GH_TOKEN: ${{ github.token }}
+      MODEL_TAG: ${{ inputs.release_tag }}
+      FRAMEWORK_TAG: ${{ inputs.framework_tag }}
+    steps:
+      - name: Validate release request
+        shell: bash
+        run: |
+          [[ "$MODEL_TAG" =~ ^model-v[A-Za-z0-9._-]+$ ]] || { echo 'Expected model-v* tag'; exit 1; }
+          [[ "$FRAMEWORK_TAG" =~ ^[A-Za-z0-9_][A-Za-z0-9_.-]{0,127}$ ]] || { echo 'Invalid image tag'; exit 1; }
+          draft=$(gh release view "$MODEL_TAG" --repo "$GITHUB_REPOSITORY" --json isDraft --jq '.isDraft')
+          test "$draft" = true || { echo 'Only a draft release can be published'; exit 1; }
+      - name: Download prepared model assets
+        run: |
+          gh release download "$MODEL_TAG" --repo "$GITHUB_REPOSITORY" --dir release --pattern model.tar.gz --pattern model.tar.gz.sha256
+          python - <<'PY'
+          import hashlib, pathlib, re
+          root = pathlib.Path('release')
+          checksum = (root / 'model.tar.gz.sha256').read_text().strip()
+          if not re.fullmatch(r'[0-9a-f]{64}  model\.tar\.gz', checksum):
+              raise SystemExit('Unexpected checksum file')
+          digest = hashlib.file_digest((root / 'model.tar.gz').open('rb'), 'sha256').hexdigest()
+          if digest != checksum.split()[0]:
+              raise SystemExit('Model archive checksum differs')
+          PY
+      - name: Verify weights in the published framework environment
+        run: |
+          docker run --rm --network=none --cpus=1 --memory=2g \
+            --mount "type=bind,src=$PWD/release,dst=/release,readonly" \
+            "tano26/bang-dream-activity-fraction-prediction:$FRAMEWORK_TAG" \
+            model verify /release/model.tar.gz > release/model-verification.json
+          cat release/model-verification.json
+      - name: Publish verified model assets
+        run: |
+          gh release upload "$MODEL_TAG" release/model-verification.json --repo "$GITHUB_REPOSITORY" --clobber
+          gh release edit "$MODEL_TAG" --repo "$GITHUB_REPOSITORY" --draft=false --latest=false

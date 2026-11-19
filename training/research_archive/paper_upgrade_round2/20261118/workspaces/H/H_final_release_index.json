@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "authoritative_final_version": "v3",
+  "sidecar_identity": "Created after ZIP seal; not fed back into archives",
+  "evidence": {
+    "core_numeric": "H_numeric_evidence.json and component evidence",
+    "root_binding": "H_final_root_binding_evidence.json",
+    "figures": "H_final_figure_evidence.json; H_final_figure_review.md",
+    "canonical_PDF": "H_final_document_evidence.json; H_final_key_page_evidence.json; H_final_pdf_review.md",
+    "v1_complete_external_pipeline": "H_final_package_v1/result.json; H_final_package_review.md",
+    "v3_final_delta_and_source_compile": "H_final_v3_sidecar/result.json; H_final_v3_review.md"
+  },
+  "archive_SHA256": {
+    "round2_latex_source_v3.zip": "d947f52a8b051e2054a32dc52a8d7f5d38d0b4319c918c91f400d54d805c24c5",
+    "round2_research_bundle_v3.zip": "70d03465dc02f08f5635457e469d661efba4c12e5046ef0dd84eba68a2bc4590",
+    "round2_figures_v3.zip": "13be46b0b5662199ffbf620dea4052045eed73c035e39a9c4f5565908955a9d3"
+  },
+  "canonical_PDF_SHA256": {
+    "main": "897ad0e707bd1f57c0911c73fb96b56f348e96c1396624a3368c5c492143acb3",
+    "supplement": "455bb5f09fb1a18305510d08b54d71f5231ad5a9a67659229216395e015e066b"
+  },
+  "counts": {
+    "main_pages": 45,
+    "standalone_supplement_pages": 19,
+    "figures": 18,
+    "legacy_bindings": 606,
+    "new_bindings": 360,
+    "verified_PI_tests": 539
+  },
+  "external_reproduction": {
+    "full_v1_seconds": 35.256509124999866,
+    "v3_delta_and_source_compile_seconds": 9.846741707995534,
+    "full_pipeline_checks_passed": 11,
+    "v3_checks_passed": 10,
+    "model_refitting_in_final_packaging_audit": false
+  },
+  "important_findings": [
+    {
+      "id": "H-BC-01",
+      "status": "closed"
+    },
+    {
+      "id": "H-BC-02",
+      "status": "closed"
+    },
+    {
+      "id": "H-D-01",
+      "status": "closed"
+    },
+    {
+      "id": "H-FINAL-01",
+      "status": "closed"
+    },
+    {
+      "id": "H-FINAL-02",
+      "status": "closed"
+    }
+  ],
+  "retained_scope": [
+    "Historical test explored; validation reused; retrospective metadata",
+    "B/C/D real activity union35; C2 subset12",
+    "Nominal19/observed18 ranks in train residual panel; T1500 missing",
+    "D fixed real transfer is posthoc phase1/120case evidence",
+    "80-event future plan unactivated, original20-event pilot retained, future0 and no future MAPE",
+    "Installed .venv/system fonts reused; fresh installation environment not tested",
+    "H external SVG helper lacks lxml; exit2 retained and independent XML/PDF/visual checks completed"
+  ],
+  "remaining_required_delivery_work": [],
+  "prior_stage_manifest_mismatches": []
+}

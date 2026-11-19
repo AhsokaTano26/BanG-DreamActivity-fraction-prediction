@@ -1,0 +1,44 @@
+name: Publish three paper PDFs
+
+on:
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: Existing draft release tag (papers-vYYYYMMDD.N)
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: papers-release-${{ inputs.release_tag }}
+  cancel-in-progress: false
+
+jobs:
+  verify-and-publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      GH_TOKEN: ${{ github.token }}
+      PAPER_TAG: ${{ inputs.release_tag }}
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - name: Require a paper draft release
+        shell: bash
+        run: |
+          [[ "$PAPER_TAG" =~ ^papers-v[A-Za-z0-9._-]+$ ]] || { echo 'Expected papers-v* tag'; exit 1; }
+          draft=$(gh release view "$PAPER_TAG" --repo "$GITHUB_REPOSITORY" --json isDraft --jq '.isDraft')
+          test "$draft" = true || { echo 'Only a draft release can be published'; exit 1; }
+      - name: Install PDF inspection tool
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes --no-install-recommends poppler-utils
+      - name: Download all draft assets for the PDF-only check
+        run: |
+          gh release download "$PAPER_TAG" --repo "$GITHUB_REPOSITORY" --dir release
+      - name: Verify PDF-only contents against reviewed repository PDFs
+        run: python3 deploy/paper_assets.py verify release --reference papers/published
+      - name: Publish paper PDFs
+        run: |
+          gh release edit "$PAPER_TAG" --repo "$GITHUB_REPOSITORY" --draft=false --latest=false

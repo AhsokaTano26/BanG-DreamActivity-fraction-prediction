@@ -1,0 +1,9 @@
+{
+  "authorized_by": "PI",
+  "experiment": "C2",
+  "run_directory": "/Users/tano/Documents/GitHub/personal/BanG-Dream-Activity-fraction-prediction/analysis/paper_upgrade_round2/20261118/workspaces/C/runs/c2_002",
+  "configuration_sha256": "4367c2267f7719f6935dad687063a284da5b2a4d5fbc3a1e1acfd368743ae6d9",
+  "maximum_physical_fits": 108,
+  "authorized_utc": "2026-11-18T15:29:44.310796+00:00",
+  "execution_order": "C1 execute, separate scoring, C2 execute, separate scoring; single CPU/nice19; no other numerical job; retain prepared001 and failed runs; all train-only"
+}
