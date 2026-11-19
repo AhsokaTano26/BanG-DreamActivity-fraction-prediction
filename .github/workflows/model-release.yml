@@ -51,11 +51,13 @@ jobs:
           PY
       - name: Verify weights in the published framework environment
         run: |
+          verification_status=0
           docker run --rm --network=none --cpus=1 --memory=2g \
             --mount "type=bind,src=$PWD/release,dst=/release,readonly" \
             "tano26/bang-dream-activity-fraction-prediction:$FRAMEWORK_TAG" \
-            model verify /release/model.tar.gz > release/model-verification.json
+            model verify /release/model.tar.gz > release/model-verification.json || verification_status=$?
           cat release/model-verification.json
+          exit "$verification_status"
       - name: Publish verified model assets
         run: |
           gh release upload "$MODEL_TAG" release/model-verification.json --repo "$GITHUB_REPOSITORY" --clobber
