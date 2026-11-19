@@ -95,6 +95,18 @@ def train_pack(curves, metadata_directory, versions_directory, *, before_ms, ran
                before_ms=before_ms, ranks=ranks, iterations=iterations)
 
 
+def technical_replay_matches(actual, expected):
+    """Allow CPU floating-point roundoff in replay without changing predictions."""
+    if not isinstance(actual, dict) or not isinstance(expected, dict) or actual.keys() != expected.keys():
+        return False
+    try:
+        return all(math.isfinite(actual[key]) and math.isfinite(expected[key])
+                   and math.isclose(actual[key], expected[key], rel_tol=1e-12, abs_tol=1e-8)
+                   for key in actual)
+    except (TypeError, ValueError, OverflowError):
+        return False
+
+
 def verify_pack(path):
     """Verify every artifact before deserialization; reject old-policy packs."""
     path = Path(path)
@@ -131,8 +143,12 @@ def verify_pack(path):
         smoke = json.loads((path / 'smoke.json').read_text())
         samples = [_record_sample(r) for r in smoke['samples']]
         values = _base_predictions(path, samples, joblib.load(path / 'metadata.joblib'))
-        if not samples or values != smoke['predictions'] or len(values) != len(samples):
-            raise ValueError('Model smoke replay changed')
+        if (not samples or len(values) != len(samples)
+                or not technical_replay_matches(values, smoke['predictions'])):
+            preview = [(key, values.get(key), smoke['predictions'].get(key))
+                       for key in sorted(values.keys() | smoke['predictions'].keys())
+                       if values.get(key) != smoke['predictions'].get(key)][:3]
+            raise ValueError('Model smoke replay changed; (case, actual, expected): ' + repr(preview))
         return manifest
     except (OSError, KeyError, TypeError, json.JSONDecodeError) as error:
         raise ValueError('Invalid or corrupt model pack: ' + str(path)) from error

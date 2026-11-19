@@ -18,6 +18,23 @@ from analysis.holdout_dataset import prefix_curve
 H = 3_600_000
 
 
+class TechnicalReplayTests(unittest.TestCase):
+    def test_machine_precision_drift_is_accepted(self):
+        from production.model import technical_replay_matches
+        self.assertTrue(technical_replay_matches(
+            {'case': math.nextafter(100000000.0, math.inf)}, {'case': 100000000.0}))
+
+    def test_one_score_point_change_is_rejected(self):
+        from production.model import technical_replay_matches
+        self.assertFalse(technical_replay_matches({'case': 100000001.0}, {'case': 100000000.0}))
+
+    def test_case_identity_and_nonfinite_values_are_rejected(self):
+        from production.model import technical_replay_matches
+        self.assertFalse(technical_replay_matches({'other': 100.0}, {'case': 100.0}))
+        self.assertFalse(technical_replay_matches({'case': math.inf}, {'case': math.inf}))
+        self.assertFalse(technical_replay_matches({'case': math.nan}, {'case': 100.0}))
+
+
 def model_fixture(root, *, ranks=(1000, 2000, 5000)):
     metadata = root / 'metadata'
     metadata.mkdir()
