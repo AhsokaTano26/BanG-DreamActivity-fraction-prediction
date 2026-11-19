@@ -1,0 +1,33 @@
+{
+  "purpose": "保留审计者的探测失败和自行修正，不把失败写成成功",
+  "entries": [
+    {
+      "kind": "tool_result_handling",
+      "description": "首次audit_bc调用只打印output，工具在1秒后返回的session_id未被展示。随后观察到H_numeric_evidence.json完整生成并实际读取；各结果以JSON为准。"
+    },
+    {
+      "kind": "reporting_typo",
+      "description": "即时消息把audit_bc检查总数手写为38，文件实数33；下一条消息立即更正为33。112/108/108汇总行数已核对。"
+    },
+    {
+      "kind": "collaboration_probe_failure",
+      "description": "尝试向已不在live tree的/root/round2_b_adaptive发消息，工具返回not found。已由PI接收H-BC-01并安排独立适配器修正。"
+    },
+    {
+      "kind": "preexecution_script_correction",
+      "description": "portable worker初稿硬编码python3.13 site-packages，实际解释器为3.14.8。运行前已改为保留现有.venv依赖路径；尚无失败的真实重放。"
+    },
+    {
+      "kind": "standalone_closure_failure",
+      "description": "First outside worker completed guarded B35 then failed C import because download_ranks.py was missing. Result/source/logs preserved in portability_1795016581248645000."
+    },
+    {
+      "kind": "auditor_closure_parser_error",
+      "description": "Second outside worker copied root xgboost.py, confusing the installed xgboost package with a local module. Circular import aborted before refit. Fixed parser prefers installed distributions. Failure preserved in portability_1795016631054123000."
+    },
+    {
+      "kind": "reporting_placeholder_correction",
+      "description": "E immediate message contained unverified 540? grid-row placeholder; subsequent file check and next message corrected to180. Final report/JSON use180."
+    }
+  ]
+}

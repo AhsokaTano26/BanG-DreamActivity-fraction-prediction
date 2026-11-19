@@ -1,0 +1,18 @@
+\begin{table}[!htbp]\centering
+\caption{预登记合成网格的完整方向计数}\label{tab:syntheticcount}
+\small\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\linewidth}{L r r r}\toprule
+固定方法 & 网格平均状态MSE & 状态风险下降/上升 & 模拟APE下降/上升 \\
+\midrule
+零校正 & 0.015699 & 16/48 & 16/48 \\
+独立EWMA & 0.003454 & 参考 & 参考 \\
+完全共享EWMA & 0.008202 & 32/32 & 32/32 \\
+同滤波锚点负控 & 0.003454 & 64组数值等价 & 64组数值等价 \\
+既有锚点差异 & 0.003652 & 19/45 & 21/43 \\
+独立固定Kalman & 0.002791 & 47/17 & 46/18 \\
+删除观测交叉项DLM & 0.003066 & 38/26 & 37/27 \\
+完整协方差固定DLM & 0.002852 & 43/21 & 48/16 \\
+已知生成参数oracle & 0.002285 & 64/0 & 64/0 \\
+\bottomrule\end{tabularx}
+\par\vspace{4pt}\begin{minipage}{\linewidth}\footnotesize 16格与4历史长度等权，64组合的权重由设计给定。状态MSE使用统一偏差截断；方向相对独立EWMA，负控按10的负12次方容差判数值等价。oracle拥有真实生成参数，其角色为诊断参照。\end{minipage}
+\end{table}

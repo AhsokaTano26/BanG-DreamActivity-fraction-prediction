@@ -1,0 +1,37 @@
+{
+  "identity": "posthoc after simulation and existing train diagnoses; one fixed transfer, no selection",
+  "events": 10,
+  "parameters": {
+    "qc": 0.0,
+    "qd": 0.005887882662378635,
+    "r": 0.0007359853327973294,
+    "rho": 0.5,
+    "m": 0,
+    "grid_index": 123,
+    "nll": -75.80401600531178,
+    "two_delta_nll": 0.0,
+    "support": true,
+    "q_r_ratio": 4.0,
+    "complete_pairs": 25,
+    "adjacent_differences": 24,
+    "activity_span": 25
+  },
+  "calibration_mu": [
+    -0.06319218580412174,
+    0.022593861783721886
+  ],
+  "event_macro": {
+    "cases": 12.0,
+    "case_mape": 6.953328662564499,
+    "log_mse": 0.008115324875358694,
+    "history_complete_pairs": 29.5,
+    "history_activity_span": 29.5,
+    "history_max_activity_gap": 1.0,
+    "MAPE_minus_I": 1.6124020389199543,
+    "log_mse_minus_I": 0.002857796424721097,
+    "MAPE_minus_S": 0.49917607294707766,
+    "log_mse_minus_S": 0.0009207128193016735,
+    "MAPE_minus_risk_recent_k8": 1.5295157923458476,
+    "log_mse_minus_risk_recent_k8": 0.0028335545818938277
+  }
+}

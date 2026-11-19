@@ -1,0 +1,14 @@
+\begin{table}[!htbp]\centering
+\caption{真实量纲校准模拟中的完整方向计数}\label{tab:round2sim}
+\small\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\linewidth}{L r r}\toprule
+规则 & 状态MSE减少/增加 & 模拟APE减少/增加 \\
+\midrule
+完全共享 & 0/24 & 0/24 \\
+固定半共享 & 0/24 & 0/24 \\
+近期风险 & 9/15 & 9/15 \\
+校准完整协方差DLM & 22/2 & 14/10 \\
+已知基准协方差oracle & 22/2 & 22/2 \\
+\bottomrule\end{tabularx}
+\par\vspace{3pt}\begin{minipage}{\linewidth}\footnotesize 3个参数锚点×8扰动，共24格；每格3种子各100路径，方法与格间共用底层随机数。独立Monte Carlo单位为完整路径；24格描述设计覆盖。\end{minipage}
+\end{table}

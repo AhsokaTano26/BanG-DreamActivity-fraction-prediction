@@ -1,0 +1,194 @@
+{
+  "created_at": "2026-11-19T04:18:29.051610+00:00",
+  "format": "native Chinese LaTeX research manuscript with supplementary evidence",
+  "files": {
+    "Makefile": {
+      "sha256": "9c53e78024dd7762b7cdab98ab7715a41fea1ceede10aaa8f803e1fd3caa191f",
+      "bytes": 453
+    },
+    "README.md": {
+      "sha256": "a0757af3a38c3f75c08479c300a6e7ddf71e583ac2b67ce9d42044b2ddcf18cf",
+      "bytes": 4946
+    },
+    "data/all19_comparison.csv": {
+      "sha256": "e849c6ce39d05eac737d47441a0617351c7da2ad47975794c3e79c6549022672",
+      "bytes": 7960
+    },
+    "data/band_results.csv": {
+      "sha256": "0208d557ebcda344d0dbc02b2bc24730cfc5c95f1fbaf3ca364af5752fd185d9",
+      "bytes": 4386
+    },
+    "data/cohort_boundaries.csv": {
+      "sha256": "7374f91f91fed260d761efbbecaff3c2a9f48c01a262d4b7e3b821ae834d98d4",
+      "bytes": 175
+    },
+    "data/correlation_summary.csv": {
+      "sha256": "cf0df33bc39d8424fa43e264e9fc0959c08831f60df86a9fb5cc9ffd22de29bd",
+      "bytes": 7240
+    },
+    "data/facts.json": {
+      "sha256": "1d079197d3f5b31c9778c60b369a53ec12175313293ad689418b0dcacd9117db",
+      "bytes": 127187
+    },
+    "data/main_models.csv": {
+      "sha256": "4e12b86461dfa03eca2b7237779ef72d61dcd337e19f3cc766734f7b795b953b",
+      "bytes": 3562
+    },
+    "data/pca_variance.csv": {
+      "sha256": "21d962d627e759fc48bc3ad6d6b07d2af5eab9ee1004c6621a0857c16aeba02f",
+      "bytes": 30978
+    },
+    "data/rank_coverage.csv": {
+      "sha256": "118802b7c20a2c24acc7203c38ed32f7ba6b3d138f759b8d6c81dee2275aaf87",
+      "bytes": 279
+    },
+    "data/rank_results.csv": {
+      "sha256": "2adbdb913f229ac5fb971b78e33ec65d283c8a12a31aeeaaa8635877b85bf068",
+      "bytes": 1459
+    },
+    "data/reference_sources.json": {
+      "sha256": "322145b568c506e5432cd2421613b22d46a0a459c90c9d806d0ee8c8c15a828b",
+      "bytes": 6608
+    },
+    "data/source_manifest.json": {
+      "sha256": "68c65bffffc78a14e04d5bf747494dba067280b7567d70287a5996c317eb8b7e",
+      "bytes": 5682
+    },
+    "data/stage_results.csv": {
+      "sha256": "daab20319e63c94564ec40e36af1756b8b1689fcf817023a60c313433df7c7a1",
+      "bytes": 11644
+    },
+    "data/static_v2_models.csv": {
+      "sha256": "603b00282d97561e3315bb48d4fdc38265bf01f0cd4762bb65b948ff8c3307cf",
+      "bytes": 1530
+    },
+    "data/supplement_all_329_results.csv": {
+      "sha256": "6bc6aaef4f6f807b594dece93158e41210f8abc34be48703f4da1ad21da95f8a",
+      "bytes": 37780
+    },
+    "data/supplement_historical_selections.csv": {
+      "sha256": "c2deaf67a6d7d0b28d130bf7af605edacbffbb939012fbfa50a2446a62118efc",
+      "bytes": 1611
+    },
+    "data/train_error_raw_phase0.csv": {
+      "sha256": "c71f80b6dc591d79eb3f12c686f34d0f8db2b197210a44e37c0c425c9a951c57",
+      "bytes": 6364
+    },
+    "data/train_error_raw_phase1_lag1.csv": {
+      "sha256": "3467b88a93572007ddd0f3b4bf723211cb0bfb4e892c5bf01127b8e994ad6aa8",
+      "bytes": 6807
+    },
+    "data/train_log_final.csv": {
+      "sha256": "7aefca1ddcdcc723cdd2c77af2c67417f320ca088c8a2c7a66c704b3b870449f",
+      "bytes": 6057
+    },
+    "data/train_remaining_growth_p50.csv": {
+      "sha256": "aea207eea39b7c9fa3add2c7144cbc800e5fe0555a15fafaf954a107c4cfbe9d",
+      "bytes": 6164
+    },
+    "data/type_results.csv": {
+      "sha256": "192218ce4fa76fe295b702c7f5afca927ec7599e1085d110016d1b5aa53f261d",
+      "bytes": 3419
+    },
+    "figures/causal_evaluation_protocol.pdf": {
+      "sha256": "b5b3ea05b309485a5f65e0a1bfba868745f684ce1660ca0929b989c8d53bb243",
+      "bytes": 34462
+    },
+    "figures/causal_evaluation_protocol.png": {
+      "sha256": "c9e31c983e7a1d8951e79ad89905351683db36a3354523c654d2bc5dffed37df",
+      "bytes": 190396
+    },
+    "figures/error_by_forecast_origin.pdf": {
+      "sha256": "737868634f3a6de28aa393085b0941df5768a45ac230ed40a46f7334833bf339",
+      "bytes": 33381
+    },
+    "figures/error_by_forecast_origin.png": {
+      "sha256": "19d29a0e99d3e69a2ffa6601883615babb05e0a74d5d18f2068e22fe5c25c7a6",
+      "bytes": 143524
+    },
+    "figures/errors_across_all_ranks.pdf": {
+      "sha256": "cd0ab314588e76aa049d2e758aa7307150c570ec0ae0f71f27465bf6838719bc",
+      "bytes": 26345
+    },
+    "figures/errors_across_all_ranks.png": {
+      "sha256": "df138838a824e081a79c5070cbb148e813b43f7cf22db9ca18c9cb86b800294d",
+      "bytes": 181522
+    },
+    "figures/matched_model_error_differences.pdf": {
+      "sha256": "01c6bcc46f261ae66683eebfa4e3d3968185999541325f22f45e26e1787e9c29",
+      "bytes": 35559
+    },
+    "figures/matched_model_error_differences.png": {
+      "sha256": "d5f6fc1230e910819b3d6925f7a725620f071df6c01c085bddc50ae48b5141a2",
+      "bytes": 140402
+    },
+    "figures/rank_level_and_error_correlations.pdf": {
+      "sha256": "34c4afcaeefb44661cd57aa736a884380f8790850e323b79c0bab0261d2a58ab",
+      "bytes": 29729
+    },
+    "figures/rank_level_and_error_correlations.png": {
+      "sha256": "6f6a734c8e46861f3359888e2d3b1143af7b532ec37566d40bbbb69a6ba8616e",
+      "bytes": 167161
+    },
+    "main.tex": {
+      "sha256": "7fb5128118ad21e9506ef0ea9fc0fb84ac100b550acb2d139ea28fdb5a1799dc",
+      "bytes": 48725
+    },
+    "output/中文论文.pdf": {
+      "sha256": "75a157e82b4a53c3d39e7b45a8431bebd6d71dd0f0420ed1ea8746413a9690a4",
+      "bytes": 492366
+    },
+    "qa/figure_records.json": {
+      "sha256": "8d38d52faeffe214b6c113f5632de8002dadfd23e639e40857625a7ce1f35bbb",
+      "bytes": 2004
+    },
+    "qa/font_check.json": {
+      "sha256": "10d83800e07e9b8a2e37c94f63fdb986c2f5e9a2e771cc4d8a21d9e353387cda",
+      "bytes": 672
+    },
+    "qa/font_embedding.json": {
+      "sha256": "49f42cd3080755a5c8e0cb7ed779fb1ce1494fdb3ede7ca9ffa165496377327f",
+      "bytes": 2155
+    },
+    "qa/numerical_validation.json": {
+      "sha256": "91c2e0c30aa5a7348b09ab638e2cd35ace385aab01ea4a50f590b8f626e5e363",
+      "bytes": 5564
+    },
+    "qa/visual_validation.json": {
+      "sha256": "4c34422e016eb5226932d3c194a5e26a527ed29a2ec28ce485bb23ce50036ff0",
+      "bytes": 4505
+    },
+    "references.bib": {
+      "sha256": "830f8d2374d8d70fbe0fcefc93ef18915eb8aa6dfadb597a6b946f73d1d79c98",
+      "bytes": 5976
+    },
+    "scripts/extract_evidence.py": {
+      "sha256": "f65b2a96a99b90f28f1de1ffbbff4952c8b48da5b42b1066dfb0a6301fc56180",
+      "bytes": 8526
+    },
+    "scripts/make_figures.py": {
+      "sha256": "965ecd58078ff693aaa16d04666eb2321540a3acd41b441db193f04667e94399",
+      "bytes": 9715
+    },
+    "scripts/validate_paper.py": {
+      "sha256": "d00cefd8284f8c8c9639482980dc8258b35551bd2281f35277a2a59db6674ca8",
+      "bytes": 7248
+    }
+  },
+  "counts": {
+    "pages": 16,
+    "numbered_equations": 8,
+    "tables": 7,
+    "figures": 5,
+    "references": 19,
+    "numerical_checks": 136,
+    "source_evidence_files_verified": 44
+  },
+  "excluded": [
+    "retired Word and Markdown drafts",
+    "temporary page renders",
+    "original SQLite database",
+    "model weights"
+  ],
+  "author": "Tano"
+}

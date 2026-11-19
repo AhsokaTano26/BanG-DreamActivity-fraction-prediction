@@ -1,0 +1,29 @@
+{
+  "scope": "registered H1 negative-control audit only; same seeded paths; no additional method selection",
+  "plan_sha256": "45def3eee6388a994e8dbf22d79ec118f0e83d5c340b6475924a7da7bc9b56ba",
+  "source_seal_verified_after_run": true,
+  "maximum_absolute_raw_bias_difference": 2.220446049250313e-16,
+  "maximum_absolute_capped_bias_difference": 1.6653345369377348e-16,
+  "maximum_absolute_common_bounded_score_difference": 2.220446049250313e-16,
+  "bias_tolerance": 1e-12,
+  "passed": true,
+  "grid_cells": 16,
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "mc_sequences_per_seed": 100,
+  "history_lengths": [
+    8,
+    16,
+    32,
+    64
+  ],
+  "compared_bias_components": 38400,
+  "artifact_hashes_verified": {
+    "paired_comparisons.csv": "dfa60f31331f50015dca8a54118816b1431a416eb47f92d2ece1df38d69de771",
+    "per_seed.csv": "1d2a0a8e349262c0aa8da6964c8ba3a50b060baf9d95e6ce1773e0959df98fef",
+    "summary.csv": "05e6d97d449ee9e35a3fa25b9df424df196f7a0d57babcefae13f1df9acd6140"
+  }
+}

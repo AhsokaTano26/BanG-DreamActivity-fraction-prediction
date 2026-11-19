@@ -1,0 +1,111 @@
+name: Framework image
+
+on:
+  push:
+    branches: [main, deployment/web-model-releases]
+    tags: [framework-v*]
+    paths:
+      - Dockerfile
+      - .dockerignore
+      - compose.yaml
+      - deploy/entrypoint.py
+      - deploy/requirements-web.txt
+      - production/**
+      - analysis/*.py
+      - API/GetEventInfo.py
+      - API/GetEventTracker.py
+      - download_ranks.py
+      - XGBoost.py
+      - tests/test_deployment*.py
+      - .github/workflows/framework-image.yml
+  pull_request:
+    paths:
+      - Dockerfile
+      - .dockerignore
+      - compose.yaml
+      - deploy/**
+      - production/**
+      - analysis/*.py
+      - tests/test_deployment*.py
+      - .github/workflows/framework-image.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: framework-image-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  IMAGE: tano26/bang-dream-activity-fraction-prediction
+
+jobs:
+  image:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - name: Check Compose configuration
+        run: docker compose config --quiet
+      - uses: docker/setup-qemu-action@99012661954931238ded8c8b007157a8430204e1 # v4
+      - uses: docker/setup-buildx-action@f87e5991a6d7451dcb8d9637bfbc97413f497069 # v4
+      - name: Require Docker Hub credentials
+        if: github.event_name != 'pull_request'
+        env:
+          HUB_USER: ${{ secrets.DOCKERHUB_USERNAME }}
+          HUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
+        run: |
+          test -n "$HUB_USER" || { echo 'Set DOCKERHUB_USERNAME repository secret'; exit 1; }
+          test -n "$HUB_TOKEN" || { echo 'Set DOCKERHUB_TOKEN repository secret'; exit 1; }
+      - name: Log in to Docker Hub
+        if: github.event_name != 'pull_request'
+        uses: docker/login-action@8aa5831fb8d48d8f76594c7ddde61ae58019f550 # v4
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: Image tags
+        id: meta
+        uses: docker/metadata-action@dc802804100637a589fabce1cb79ff13a1411302 # v6
+        with:
+          images: ${{ env.IMAGE }}
+          tags: |
+            type=sha,prefix=sha-,format=long
+            type=ref,event=pr
+            type=match,pattern=framework-v(.*),group=1
+            type=raw,value=latest,enable=${{ github.event_name != 'pull_request' }}
+      - name: Build native test image
+        uses: docker/build-push-action@c3c9e263c25d99ce0380d002d59b67737d91b0dc # v7
+        with:
+          context: .
+          load: true
+          push: false
+          platforms: linux/amd64
+          tags: bangdream-framework:test
+          cache-from: type=gha,scope=framework
+          cache-to: type=gha,mode=max,scope=framework
+      - name: Test deployment boundaries
+        run: docker run --rm --cpus=1 --memory=2g --network=none bangdream-framework:test test
+      - name: Test web service and source-only image
+        run: |
+          container=$(docker run -d --cpus=1 --memory=2g -p 127.0.0.1:8765:8765 bangdream-framework:test serve --offline)
+          trap 'docker logs "$container"; docker rm -f "$container"' EXIT
+          for attempt in $(seq 1 40); do
+            if curl --fail --silent http://127.0.0.1:8765/healthz; then break; fi
+            sleep 2
+          done
+          curl --fail --silent http://127.0.0.1:8765/ | grep -q '活动终分预测'
+          docker exec "$container" sh -c 'test ! -e /app/data/db.sqlite3 && test ! -e /app/runtime/live && ! find /app -name "*.joblib" -print -quit | grep -q .'
+      - name: Publish framework image
+        if: github.event_name != 'pull_request'
+        uses: docker/build-push-action@c3c9e263c25d99ce0380d002d59b67737d91b0dc # v7
+        with:
+          context: .
+          platforms: linux/amd64,linux/arm64
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          cache-from: type=gha,scope=framework
+          cache-to: type=gha,mode=max,scope=framework
+          provenance: mode=min
+          sbom: true

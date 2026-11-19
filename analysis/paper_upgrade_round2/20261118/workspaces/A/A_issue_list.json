@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "reviewer": "Agent A Scientific Reviewer round 2",
+  "date": "2026-11-18",
+  "baseline_pdf_pages": 32,
+  "work_scope": "read_only_scientific_review",
+  "recommendation": "major_revision",
+  "numerical_recalculation": false,
+  "training": false,
+  "issues": [
+    {
+      "id": "A01",
+      "priority": 1,
+      "severity": "major",
+      "topic": "贡献重心与原创性",
+      "location": "main引言、机制分析、结论",
+      "finding": "初等恒等式、池化风险和既有滤波形成机制诊断；慢锚点额外增益悬而未决。",
+      "action": "收束到可反驳机制问题；新规则需展示由训练期可估计量导出的更新。",
+      "evidence": "D第4节：full−difference-only=+0.029633791pp，四类区间跨零。",
+      "gate": "G1",
+      "status": "open"
+    },
+    {
+      "id": "A02",
+      "priority": 2,
+      "severity": "major",
+      "topic": "真实与合成链接",
+      "location": "main第6.1、6.4、6.5、7.5节",
+      "finding": "真实残差相关和指定q/r/m模拟各自有证据，真实参数与预测持续性的定量链接待建立。",
+      "action": "训练期合法外推残差估计、识别条件、不确定性及下一活动诊断在运行前封存。",
+      "evidence": "34期同支持；原35期仅34滞后对；未发现全局BY q<.05。",
+      "gate": "G1",
+      "status": "open"
+    },
+    {
+      "id": "A03",
+      "priority": 3,
+      "severity": "major",
+      "topic": "容量与优化混杂",
+      "location": "main训练规模；supplement拟合预算",
+      "finding": "独立网络每种子两模型共2690参数，共享1345、heads1490；树独立模型数量翻倍。",
+      "action": "同时报告每任务容量相近与总预算相近的匹配视角。",
+      "evidence": "upgrade_fit_budget.tex；各神经60轮。",
+      "gate": "G2",
+      "status": "open"
+    },
+    {
+      "id": "A04",
+      "priority": 4,
+      "severity": "major",
+      "topic": "N与日历覆盖混杂",
+      "location": "main训练规模及supplement同验证活动对照",
+      "finding": "最早N期随N增加同步延长日期覆盖并改变活动组成。",
+      "action": "预先固定共同截止日和时期分层控制；曲线效应分别命名。",
+      "evidence": "N16/32/48/67共用488验证案例。",
+      "gate": "G2",
+      "status": "open"
+    },
+    {
+      "id": "A05",
+      "priority": 5,
+      "severity": "major",
+      "topic": "验证循环与未来精度",
+      "location": "摘要、main前瞻与限制",
+      "finding": "test16已探索、val14反复使用；未来实际事件0期。",
+      "action": "未来队列冻结主效应、最小有用差值、样本量依据与报告时点；新方法另版本。",
+      "evidence": "prospective/plan.json及status_v2.json；target20为可行性。",
+      "gate": "G3",
+      "status": "open"
+    },
+    {
+      "id": "A06",
+      "priority": 6,
+      "severity": "major",
+      "topic": "区间可靠性目标",
+      "location": "main第8.3节；supplement区间目标",
+      "finding": "当前组目标解释正确；跨排名回退、动态中心和时间依赖仍影响未来校准。",
+      "action": "继续并列组联合/pointwise/整活动；冻结未来支持、宽度及区间评分。",
+      "evidence": "test组联合79.8622/90.4690%；整活动0/16和1/16。",
+      "gate": "G3",
+      "status": "partly_resolved_in_baseline"
+    },
+    {
+      "id": "A07",
+      "priority": 7,
+      "severity": "important",
+      "topic": "固定损失bootstrap范围",
+      "location": "main重采样；D统计报告",
+      "finding": "重采样固定轨迹，模型与在线反馈历史未重建；少量16期限制块近似精度。",
+      "action": "保留固定已发布损失与探索性标签；新算法过程推断另设计合法路径模拟。",
+      "evidence": "5000次活动配对、循环块3/5/7。",
+      "gate": "G3",
+      "status": "disclosed_retain"
+    },
+    {
+      "id": "A08",
+      "priority": 8,
+      "severity": "important",
+      "topic": "54项信息条件",
+      "location": "main第7.1、8.2；supplement菜单",
+      "finding": "简单增长来源不同；反馈延迟仅残差通道；24小时场景为零扰动。",
+      "action": "规则/场景计数和各信息条件并列；端到端延迟另登记。",
+      "evidence": "17+13+3+21=54；基础预测缓存保持原V3。",
+      "gate": "G1",
+      "status": "disclosed_retain"
+    },
+    {
+      "id": "A09",
+      "priority": 9,
+      "severity": "important",
+      "topic": "理论适用目标",
+      "location": "main prop:risk与eq:state；supplement EWMA",
+      "finding": "推导正确，固定无偏平方风险与实际异速锚点、MAPE之间仍有模型映射工作。",
+      "action": "标明近似/固定参数范围，保留现有偏差、漂移与协方差项。",
+      "evidence": "平方状态风险、指数APE与clip边界分别报告。",
+      "gate": "G1",
+      "status": "disclosed_extend_if_claim_strengthens"
+    },
+    {
+      "id": "A10",
+      "priority": 10,
+      "severity": "minor",
+      "topic": "参考文献版本与链接",
+      "location": "references.bib及main.bbl [1][8][9][10]",
+      "finding": "[1][9][10]真实元数据核验吻合；[1]note紧连；[8]UNC URL本次404。",
+      "action": "固定arXiv v1链接；修复[1]间隔；核验可访问Kalman原文链接，保留DOI。",
+      "evidence": "2026-11-18原始arXiv页面；主PDF第30/31页；web访问记录。",
+      "gate": "editorial",
+      "status": "open"
+    }
+  ],
+  "acceptance_gates": [
+    "G1 mechanism/data/time closure",
+    "G2 matched sharing/capacity/time controls",
+    "G3 independently frozen future evidence"
+  ]
+}

@@ -1,0 +1,332 @@
+% !TeX program = xelatex
+% Chinese research manuscript using the Elsevier article class.
+\documentclass[preprint,12pt]{elsarticle}
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage[UTF8,fontset=none,scheme=plain]{ctex}
+\usepackage{fontspec}
+\IfFontExistsTF{Times New Roman}{\setmainfont{Times New Roman}}{\setmainfont{texgyretermes-regular.otf}[BoldFont=texgyretermes-bold.otf,ItalicFont=texgyretermes-italic.otf,BoldItalicFont=texgyretermes-bolditalic.otf]}
+\IfFontExistsTF{SimSun}{\setCJKmainfont[AutoFakeBold=2,ItalicFont=SimSun,BoldItalicFont=SimSun]{SimSun}\setCJKmonofont{SimSun}}{\setCJKmainfont[BoldFont=FandolSong-Bold.otf,ItalicFont=FandolSong-Regular.otf,BoldItalicFont=FandolSong-Bold.otf]{FandolSong-Regular.otf}\setCJKmonofont{FandolSong-Regular.otf}}
+\usepackage{amsmath,amssymb,unicode-math}
+\setmathfont{latinmodern-math.otf}
+\usepackage{etoolbox}
+\usepackage{graphicx,booktabs,tabularx,array,caption,setspace,microtype,xurl,placeins,longtable,amsthm}
+\biboptions{numbers,sort&compress}
+\usepackage[hidelinks,unicode]{hyperref}
+\hypersetup{pdftitle={音乐游戏活动终分预测：延迟反馈下的跨排名共享与失效诊断},pdfauthor={Tano},pdfsubject={Entertainment Computing 格式中文研究稿}}
+\urlstyle{same}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\captionsetup{font=small,labelfont=bf,justification=justified,singlelinecheck=false}
+\renewcommand{\figurename}{图}
+\renewcommand{\tablename}{表}
+\renewcommand{\refname}{参考文献}
+\abstracttitle{摘要}
+\keywordtitle{\upshape 关键词}
+\setstretch{1.15}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.15em}
+\setlength{\emergencystretch}{3em}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\setlength{\textfloatsep}{12pt plus 2pt minus 2pt}
+\setlength{\intextsep}{12pt plus 2pt minus 2pt}
+\renewcommand{\topfraction}{0.92}
+\renewcommand{\bottomfraction}{0.9}
+\renewcommand{\textfraction}{0.05}
+\renewcommand{\floatpagefraction}{0.8}
+\setcounter{topnumber}{3}
+\setcounter{totalnumber}{4}
+\journal{Entertainment Computing}
+% Show the manuscript page number without implying submission or acceptance.
+\makeatletter
+\patchcmd{\pprintMaketitle}{\vskip36pt}{\vskip12pt}{}{\errmessage{Title spacing patch failed}}
+\def\ps@pprintTitle{\let\@oddhead\@empty\let\@evenhead\@empty
+  \def\@oddfoot{\hfil\thepage\hfil}\let\@evenfoot\@oddfoot}
+\makeatother
+
+\newtheorem{proposition}{命题}
+\renewcommand{\proofname}{证明}
+\newcommand{\upfigure}[4]{\begin{figure}[!htbp]\centering\includegraphics[width=\linewidth,height=0.70\textheight,keepaspectratio]{figures/#1.pdf}\caption{#3}\label{#2}\end{figure}}
+\input{data/upgrade_macros.tex}
+\input{data/round2_macros.tex}
+\newcommand{\roundfigure}[3]{\IfFileExists{figures/#1.pdf}{\upfigure{#1}{#2}{#3}{round2}}{}}
+\begin{document}
+\begin{frontmatter}
+\title{音乐游戏活动终分预测：\\延迟反馈下的跨排名共享与失效诊断}
+\author{Tano}
+\begin{abstract}
+排名门槛在同一音乐游戏活动中同步增长，终分标签却要等到活动结束后才可用于下一期。本文研究一个具体问题：期初可见的历史误差信号，何时支持跨排名共享，何时应保留独立校正。研究冻结BanG Dream国服2024年1月29日起97期密集采样活动及67/14/16归属，采用预测先封存、结果后释放的活动级时间契约。19档5220个历史测试前缀的活动等权MAPE为\BaseTest\%（未校正）和\EwmaTest\%（独立EWMA）；该测试曾用于探索。进一步只用训练组35期外推活动，预定15/10/10单次外层时间留出，内段逐活动回放后按预定指标从12个候选选择一次，结果保留独立法；末10期独立、完全共享和近期风险共享分别为\RTIndependent\%、\RTPool\%和\RTRisk\%。18项结构消融揭示两条线贡献方向不同。108次重新拟合在总参数匹配和近似前向计算匹配下检验共享结构，优势随终点和历史组成变化。训练残差校准显示同期相关与跨期持续性存在差别；24格条件模拟中潜在状态风险与百分比误差的方向可异；一次固定DLM真实同阶段诊断的MAPE与观测对数平方误差均高于独立法。经验区间的点、完整排名阶段组及整活动覆盖分别审计。本文贡献为可审计时间评测、共享失效的匹配对照及真实量纲机制诊断；基础组合与平方风险公式沿用既有研究。验证反复使用、历史测试探索及回溯元数据限制持续保留，80期确认性采集计划尚未激活，未来成绩为空。
+\end{abstract}
+\begin{keyword}
+音乐游戏 \sep 活动终分预测 \sep 延迟反馈 \sep 时间评测 \sep 多任务学习 \sep 在线误差校正
+\end{keyword}
+\end{frontmatter}
+
+\section*{Abstract}
+{\raggedright\noindent\textbf{Final score prediction in music game events: cross-rank sharing and failure diagnosis under delayed feedback}\par}
+We ask when information available at the start of an event supports sharing forecast errors across ranking cutoffs. A frozen cohort contains 97 densely sampled BanG Dream events on the Chinese server, split by event into 67 training, 14 validation and 16 test events. A chronological coordinator seals predictions before releasing completed outcomes. Event macro MAPE over 5220 historical test prefixes is \BaseTest\% without correction and \EwmaTest\% with independent EWMA correction; this test cohort had been explored previously. New designs use only 35 training-period forecast events. A prespecified 15/10/10 design uses one outer temporal diagnostic block and middle-block chronological replay followed by one prespecified selection among 12 candidates, retaining independent correction. On the last ten events, independent, fully pooled and recent-risk corrections score \RTIndependent\%, \RTPool\% and \RTRisk\%, respectively. Eighteen structural ablations separate effects on the two cutoffs. A further 108 neural fits compare sharing at matched total parameter counts and approximately matched forward computation, with outcomes varying by temporal endpoint and history composition. Training residuals link contemporaneous correlation to weak and uncertain temporal persistence. A calibrated 24-regime simulation shows different directions for latent-state risk and percentage error. In one post-hoc diagnostic on real cases from the same phase, a fixed DLM has higher MAPE and observed squared log error than independent correction. Interval audits distinguish point, complete rank--phase group and whole-event coverage. The contribution is an auditable temporal protocol and matched failure diagnosis grounded in real residual scales; forecast-combination and quadratic-risk formulas build on prior work. Reused validation, prior test exploration and retrospective metadata remain limitations. A separate 80-event confirmation plan is unactivated, with no future accuracy reported.
+
+\section{引言}
+音乐游戏的限时排名活动持续汇总玩家得分，活动结束时某一排名对应的分数形成进入该排名的门槛。以T1000为例，目标是终场第1000名的得分，同一排名在活动期间可由不同玩家占据。中途预测有助于理解剩余增长和安排投入，但早期前缀、结束前集中增长及活动类型差异会使外推困难。本文研究排名门槛这一汇总量，输入未使用玩家身份或个体行为特征。
+
+图~\ref{fig:upgrade-scene}概括任务。对每个活动，模型接收当前可见的多排名前缀，输出最终分数；历史误差校正的标签来自此前已结束的活动。本期多个排名和多个快照共享环境，独立样本量按活动计。同期线间相关、历史误差的持续性以及任务专属变化分别影响共享的收益。较高的终分相关首先描述活动分数水平，预测价值还取决于已观测前缀解释后留下的变化。
+
+本文把研究问题落实为五项可观测检查：过去已发出的独立与共享误差是否支持下一期组合；原锚点差异配方的收益来自哪条线和哪一项；容量及训练日历控制后共享结构是否仍有优势；真实误差与状态空间模拟相容到什么范围；经验区间和未来活动需要怎样的证据。它们共同检验“同活动相关”向“下一活动可迁移收益”的跨越。
+
+本文的贡献分为三个层次。第一，按活动固定案例、信息时钟和结果释放顺序，保留全部方法、缺失与失败记录。第二，用同支持恒等负控、预定单线消融及容量和计算对照，定位共享效果的来源与取舍。第三，建立训练残差、条件参数集合、模拟与真实迁移之间的可复核连接，并保留新候选选择失败及模型迁移失败。凸组合、EWMA和Kalman滤波采用既有数学；两项命题提供初等机制分析。当前主方法保持独立EWMA，研究候选的额外收益接受固定规则检验。
+
+97期队列已有探索记录，14期验证多次用于选择。新增方法只在训练组内设计和诊断；其末10期仍是回溯训练期外推。本文保留历史暴露、验证复用及回溯元数据三项限制。独立确认性证据由另行激活的新活动队列收集。
+\upfigure{upgrade_scene_framework}{fig:upgrade-scene}{多排名终分预测与误差状态的接口。浅侧面区分数据、基础预测和校正模块；它们表达处理层次。前缀截至实际观测时刻，期初历史状态在本期内固定，未知终分沿结束后反馈路径进入后续活动。}{mechanism}
+
+\section{相关工作}
+\subsection{累积轨迹预测、延迟反馈与时间评测}
+由早期累积轨迹推测长期规模，在在线内容热度预测中已有应用。Szabo与Huberman研究YouTube和Digg访问轨迹及其增长时间尺度\citep{szabo2008popularity}。本文对象具有固定结束时间，预测量为随玩家排序变化的排名门槛，还需处理同活动多排名和批次标签。任务联系在于利用早期轨迹，观测机制与目标含义随场景而异。
+
+Tashman讨论固定或滚动预测起点、重估、窗口和多个测试时期\citep{tashman2000evaluation}；Cerqueira等比较时间序列性能估计方案，并区分平稳与非平稳条件\citep{cerqueira2020evaluation}。延迟在线学习研究给出反馈到达顺序对学习过程的影响\citep{joulani2013delayed}。本文采用活动开始时固定历史、整期预测封存后按严格时间条件释放结果的工程契约，未推导在线遗憾界。活动归属、时间条件成员关系及案例去重则解决本场景的分组与重复计数问题。
+
+\subsection{漂移适应与低维误差校正}
+概念漂移研究覆盖变化检测、遗忘和模型更新\citep{gama2014drift}，ADWIN通过在线调整窗口适应数据变化\citep{bifet2007adwin}。本文使用固定系数的几何移动平均\citep{roberts1959ewma}及状态空间控制\citep{kalman1960filter}，没有运行漂移检测。静态误差上升、在线校正下降及反馈延迟敏感性分别提供现象证据，漂移、输入失配和有限样本波动的贡献尚待分离。
+
+两项2026年预印本与低成本适应关系较近：Lade等在多时距自适应共形推断中引入指数加权偏差估计\citep{lade2026bcaci}，Wang等以多遗忘尺度专家及在线聚合适应非平稳预测\citep{wang2026melo}。本文固定每活动、排名及阶段的对数偏差状态，重点分析两线锚点与差异的时间尺度和协方差。基于历史预测误差确定组合权重的研究可追溯至Bates与Granger\citep{bates1969combination}；多任务平均已系统研究任务均值的凸混合与风险收缩\citep{feldman2014averaging}。本轮风险公式与ridge使用这些既有思想，新增设计集中在期初信息集、已发出误差、支持守卫和有限样本诊断。下文经验历史区间提供可靠性诊断，其时间依赖覆盖性质由后续专门研究检验。
+
+\subsection{多任务共享与小样本模型}
+联合学习的任务组合影响合作与竞争，Standley等研究任务分组及精度和成本的权衡\citep{standley2020tasks}；PCGrad针对梯度干扰提出优化方法\citep{yu2020pcgrad}。任务关系的正则学习还可显式处理负相关与异常任务\citep{zhang2010relationships}。本文比较共享输出、专属头、相关线分支及参数完全独立的网络。专属头的负结果仍同时受参数量、优化和活动样本数影响，本文未测量梯度冲突。
+
+CatBoost和XGBoost为提取曲线特征后的表格回归提供基线\citep{prokhorenkova2018catboost,chen2016xgboost}；LSTM、TCN及分块Transformer代表不同序列表征\citep{hochreiter1997lstm,bai2018tcn,nie2023patchtst}。表格深度模型的比较需要关注样本规模、特征与预算\citep{grinsztajn2022tabular}。TabPFN、TimesFM及Chronos-2提供不同的上下文或预训练预测路线\citep{hollmann2025tabpfn,das2024timesfm,ansari2025chronos2}，本文把既有实验保留于补充材料，主比较集中于固定基础预测上的校正结构。
+
+\section{数据、预测对象与冻结队列}
+\subsection{来源、质量条件与采样边界}
+数据来自Bestdori公开的BanG Dream活动、排名分数和元数据接口\citep{bestdori2026data}。设活动为\(e\)，排名为\(r\)，国服实际开始和结束时间为\(S_e,E_e\)。名义预测时刻\(t\)的末次观测为\(u_{e,r,t}\le t\)，当前分数为\(x_{e,r,t}>0\)，核实终分为\(Y_{e,r}>0\)。前缀至少含4个点，末次观测滞后至多60分钟。完整历史曲线至少含5个点，终点位于结束前1分钟至结束后5分钟窗口；终点核实在标签释放后进行。
+
+建模统一限定\(S_e\ge1706504400000\ \mathrm{ms}\)，即北京时间2024年1月29日13时。边界按实际时间比较。基础字典可包含早期角色和卡牌，卡牌按国服发布时间过滤。原存档训练诊断显示，边界前186期的每条曲线点数中位数为31、典型间隔165.5分钟；边界后最初12期分别为335.5和30.0分钟。图~\ref{fig:upgrade-density}保留这一局部诊断。日期边界由数据政策指定，诊断覆盖上述198期历史活动；当前建模队列另为97期。
+\upfigure{upgrade_sampling_diagnosis}{fig:upgrade-density}{采样密度的历史存档诊断。观测数、间隔及每天观测频率来自边界前186期与边界后最初12期的训练记录。该描述覆盖局部存档，日期边界沿用预设政策。新旧队列同时改变采样和活动组成，汇总误差各按自己的协议解释。}{data}
+
+\subsection{活动归属、排名覆盖与固定案例}
+97期合格活动按实际开始时间排序，冻结为67期训练、14期验证和16期测试。所有排名与协议共用归属；活动ID用于标识和稳定排序。训练开始日期为2024年1月29日至2025年11月30日，验证为2025年12月11日至2026年4月26日，测试为2026年5月6日至10月16日。旧283期队列及结果独立保留。
+
+19档为T10、T20、T30、T40、T50、T100、T200、T300、T400、T500、T1000、T1500、T2000、T3000、T4000、T5000、T10000、T20000及T30000。T1500在训练与验证组无合格曲线，测试覆盖14期242前缀；T10验证和测试各覆盖13期。模型使用相同冻结名单，缺失和质量排除均由数据工件记录。T1500首次预测使用共享排名模型和零本线误差状态；活动结束后，其已释放反馈可供后续活动使用。
+
+\section{时间一致评测与封存流程}
+\subsection{固定留出、时间网格与滚动历史}
+V1评测25\%、50\%、75\%进度及结束前24、6小时。V2设21个名义条件：开始后1、3、6、12、24、48、72小时；10\%、25\%、50\%、75\%、90\%、95\%进度；结束前48、24、12、6、3、1、0.5、0.25小时。同一活动、排名及物理时刻保存一个案例，多轴条件由成员关系引用。总体指标按唯一案例计算，时间分面保留支持数。
+
+V1和V2的预处理、编码、训练及完整历史统计限于训练组，训练样本历史还须排除本期及开始时未结束的活动。V3保留V2案例与归属，允许此前验证或测试活动结束后用于后续活动。其期初历史为
+\begin{equation}\label{eq:history}
+\mathcal H_e=\{j:S_j\ge S_{\min},\ E_j<S_e,\ j\text{的结果已按流程释放}\}.
+\end{equation}
+历史按结束时间、实际开始时间及标识稳定排序。同一期所有时间点和排名共用期初历史池。另一排名前缀裁剪到目标线实际观测时刻，卡牌按国服发布时间过滤。
+\input{tables/upgrade_protocols.tex}
+
+\subsection{暖启动、可信协调器与回退}
+暖启动首先用32期训练活动建立基础预测器，其后35期训练活动逐期预测、封存并释放，形成外推残差。再处理14期验证与16期测试，共65期查询。初始32期的拟合误差单独保存，滚动成绩从外推查询计算。图~\ref{fig:upgrade-timeline}显示活动归属和反馈顺序。
+
+可信协调器读取隔离来源并执行式~\eqref{eq:history}，模型只接收已释放历史和盲前缀。V3验证用于选择已登记规则，测试开始前封存选择。测试期间固定规则更新状态，每期预测先封存，再按合法时间释放真实结果。中断运行保留原工件；完全相同配置、源码和依赖才恢复，修订运行使用新目录。
+\begin{table}[!htbp]\centering
+\caption{逐活动预测、封存与反馈的伪代码}\label{alg:seal}
+\small\begin{tabularx}{\linewidth}{r L}\toprule
+步骤&可信协调器及模型动作\\\midrule
+1&读取冻结活动归属、案例和配置；校验数据、源码、依赖及既有封存指纹。\\
+2&按实际开始时间进入活动\(e\)。只释放已经封存预测且结束时间严格早于\(S_e\)的历史结果。\\
+3&以期初\(\mathcal H_e\)拟合预处理和基础模型，或读取同指纹缓存；由历史外推预测构造活动阶段残差。\\
+4&历史为空时偏差取零；本线支持不足时收缩；配对历史为空时回退本线独立状态；未见排名使用共享基础预测。\\
+5&冻结本期状态。逐一接收盲前缀，执行基础解码、校正及共同边界，核对案例覆盖并封存预测与审计记录。\\
+6&本期结束并达到释放条件后，由协调器记录结果与释放时刻。下一活动重新执行步骤2。\\
+7&独立评分器在预测封存后读答案，输出活动级损失、明细与评分源码指纹。\\\bottomrule
+\end{tabularx}\end{table}
+\upfigure{upgrade_information_timeline}{fig:upgrade-timeline}{活动级信息顺序。32期基础热身与35期外推误差热身承担不同角色；14期验证和16期测试沿同一固定规则接收合法历史。重叠活动须等待严格结束条件，当前活动全部时间点共用期初池。}{protocol}
+
+\section{基础预测与结构化误差校正}
+\subsection{增长目标、基础路线与共同解码}
+定义实际进度\(p=(u-S_e)/(E_e-S_e)\)。基础模型以进度调整后的对数增长拟合
+\begin{equation}\label{eq:target}
+z=\log(Y/x)+\log p,\qquad
+\widehat Y^{(0)}=x\exp\!\left[\operatorname{clip}\{f_{\theta_e}(X)-\log p,0,4\}\right].
+\end{equation}
+边界使预测位于当前分数与其\(\exp(4)\)倍之间；上界服务于计算稳定性。榜单清除异常记录造成下降时，下限可能失配，冻结评测仍保留原案例。
+
+T1000/T2000沿用上下文增强CatBoost400：树深4、学习率0.04、叶节点L2为12、种子42；其余17档为共享CatBoost600：树深5、学习率0.035、L2为12、种子42。前者使用局部增长、形态和乐队、角色、卡牌及历史统计，后者使用对数排名、类型、局部统计和33个归一化形态坐标。该混合基础路线在本轮回放中固定，新增规则未改变基础预测。每个训练活动总权重相同，活动\(e\)的\(m_e\)前缀各取相对权重\(1/m_e\)。
+
+\subsection{活动阶段误差与独立参考}
+按实际进度划分早期\([0,.25)\)、中期\([.25,.9)\)及末期\([.9,1)\)。每个已结束活动、排名与阶段汇总封存基础预测的对数误差：
+\begin{equation}\label{eq:error}
+y_{j,r,q}=\frac{1}{|\mathcal C_{j,r,q}|}\sum_{i\in\mathcal C_{j,r,q}}\log\frac{\widehat Y_i^{(0)}}{Y_i}.
+\end{equation}
+正值表示偏高。先在活动内求均值，再更新活动序列状态，使反馈按活动计。以首个误差初始化\(v_1=y_1\)，后续\(v_k=(1-\alpha)v_{k-1}+\alpha y_k\)。固定主参考为
+\begin{equation}\label{eq:independent}
+b^{\mathrm{ind}}_{e,r,q}=C\!\left\{\frac{n_{e,r,q}}{n_{e,r,q}+10}\operatorname{EWMA}_{.3}(y_{1:n,r,q})\right\},\quad C(b)=\operatorname{clip}(b,-.3,.3).
+\end{equation}
+空历史取零。\(n\)是支持活动数，\(n/(n+10)\)是经验暖启动收缩。固定\(\alpha\)按活动序号衰减，日历半衰期随活动间隔变化。
+
+\subsection{锚点与差异状态}
+历史双线组合以T2000为锚点，T1000相对误差为差异。设锚点与配对支持数分别为\(n_a,n_d\)，则
+\begin{equation}\label{eq:anchor}
+A=\frac{n_a}{n_a+10}\operatorname{EWMA}_{.2}(y_{j,2000,q}),\qquad
+D=\frac{n_d}{n_d+5}\operatorname{EWMA}_{.6}(y_{j,1000,q}-y_{j,2000,q}),
+\end{equation}
+\begin{equation}\label{eq:pair}
+b^{\mathrm{pair}}_{2000,q}=C(A),\qquad b^{\mathrm{pair}}_{1000,q}=C(A+D).
+\end{equation}
+锚点用本线全部合法活动，差异仅用同活动同阶段的配对历史。无配对历史时T1000回退式~\eqref{eq:independent}；锚点无自身历史时使用本线状态。其余17档保持独立参考。全部方法执行共同外部边界
+\begin{equation}\label{eq:decode}
+\widehat Y=B\{\widehat Y^{(0)}\exp(-b)\},\qquad B(a)=\operatorname{clip}\{a,x,x\exp(4)\}.
+\end{equation}
+图~\ref{fig:upgrade-anchor}区分坐标、时间尺度与非线性边界。\(A\)的统计含义是指定参照线的偏差，其变化还包含该线的任务因素。
+\upfigure{upgrade_anchor_difference}{fig:upgrade-anchor}{锚点、差异与最终校正。两项衰减系数为0.2和0.6，支持收缩常数为10和5；正偏差在解码时扣除。缺配对历史保留本线回退。采用相同滤波、相同支持和相同收缩后，坐标分解满足命题~\ref{prop:identity}的恒等式。}{mechanism}
+
+\section{信息共享的机制与风险条件}
+\subsection{终分水平、增长与可预测误差}
+设\(L_r=\log Y_r,C_r=\log x_r,G_r=L_r-C_r\)。示例模型\(L_r=M+a_r+\zeta_r,C_r=M+b_r+\nu_r\)中，共同活动尺度\(M\)可使终分高度相关；剩余增长消去\(M\)，其关系由剩余项决定。在共同信息集\(X\)下，
+\begin{equation}\label{eq:cov}
+\operatorname{Cov}(L_r,L_s)=\operatorname{Cov}\{\mathbb E(L_r\mid X),\mathbb E(L_s\mid X)\}+\mathbb E\{\operatorname{Cov}(L_r,L_s\mid X)\}.
+\end{equation}
+预测器使用前缀后，可利用的剩余结构须重新估计。再设\(y_e=\theta_e+v_e,\theta_e=F\theta_{e-1}+w_e\)，过程创新跨期独立且独立于旧状态，观测噪声\(v_e\)跨期独立，且与各期过程创新及状态独立（允许同一期跨排名噪声相关），记\(\operatorname{Cov}(v_e)=R\)，则\(\operatorname{Cov}(y_e)=\operatorname{Var}(\theta_e)+R\)，而\(\operatorname{Cov}(y_e,y_{e-1})=F\operatorname{Var}(\theta_{e-1})\)。共同瞬时噪声影响同期关联，其跨期贡献为零。相关矩阵因此按终分、增长、同期误差及滞后误差分别报告。
+
+\subsection{同滤波分解的代数负控}
+\begin{proposition}[相同线性滤波的坐标恒等式]\label{prop:identity}
+两线采用完全相同的活动历史、顺序、阶段及缺测掩码；\(F\)对两序列使用相同确定性权重，\(s\)为相同乘数，分量相加前保持线性。则
+\begin{equation}\label{eq:identity}
+sF(y_2)+sF(y_1-y_2)=sF(y_1).
+\end{equation}
+相加后若执行相同总偏差截断和式~\eqref{eq:decode}，最终预测也相同。
+\end{proposition}
+\begin{proof}
+由线性性，左侧为\(sF(y_2+y_1-y_2)=sF(y_1)\)。共同外部函数作用于相同实数，等式保持。首观测初始化的固定系数EWMA权重为\((1-\alpha)^{n-1}\)及\(\alpha(1-\alpha)^{n-i}\)，满足该条件。
+\end{proof}
+该初等恒等式用于实现负控。额外单线历史、不同收缩、不同速度或分量内非线性各会改变条件；既有组合同时使用不同速度和收缩，相关消融须逐项固定其余设置。
+
+\subsection{无偏估计的共享平方风险}
+\begin{proposition}[固定目标下的池化条件]\label{prop:risk}
+对固定目标\(\theta_1,\theta_2\)，无偏估计\(X_1,X_2\)的方差为\(v_1,v_2\)，协方差为\(c\)。令\(d=\theta_2-\theta_1\)，以\(X_w=(1-w)X_1+wX_2\)、\(0\le w\le1\)预测任务1，则相对独立估计的平方风险差为
+\begin{equation}\label{eq:risk}
+\Delta R(w)=-2w(v_1-c)+w^2(d^2+v_1+v_2-2c).
+\end{equation}
+两任务都采用\((X_1+X_2)/2\)且等权评分时，平均风险差为\(\{d^2-v_1-v_2+2c\}/4\)。因此完全池化降低平均平方风险的充要条件是
+\begin{equation}\label{eq:pooling}
+d^2<v_1+v_2-2c.
+\end{equation}
+\end{proposition}
+\begin{proof}
+混合估计对任务1的偏差为\(wd\)，方差为\((1-w)^2v_1+w^2v_2+2w(1-w)c\)。加偏差平方、减\(v_1\)，得到式~\eqref{eq:risk}。令\(w=1/2\)，分别对两任务求风险差再取平均，即得式~\eqref{eq:pooling}。半正定协方差矩阵保证\(v_1+v_2-2c\ge0\)。
+\end{proof}
+该式复述两任务凸平均的基本偏差方差权衡\citep{bates1969combination,feldman2014averaging}：任务差异支付平方偏差，共享减少部分估计噪声。用于滚动状态时，无偏性针对本期潜在状态，方差和协方差须纳入滞后与漂移不确定性。已有偏差、随机任务差异及其相关项需要相应扩展。实际MAPE含指数变换、绝对值、边界及不等案例覆盖，式~\eqref{eq:pooling}的结论范围为平方状态风险；MAPE效果由冻结案例独立评分。
+
+\subsection{差异坐标的协方差与传统DLM}
+采用给定载荷与创新假设的二维模型
+\begin{equation}\label{eq:state}
+\theta_{e,1}=c_e+(1-m)d_e,\quad\theta_{e,2}=c_e-md_e,\quad
+c_e=c_{e-1}+\eta_e^c,\quad d_e=d_{e-1}+\eta_e^d.
+\end{equation}
+过程创新\(\eta_e^c,\eta_e^d\)相互独立且跨期独立，方差分别为\(q_c,q_d\)，并与观测噪声独立。\(m=0\)为参照线仅含共同状态，\(m=.5\)为对称任务差异。定义\(a=c-md\)，原始观测噪声为\(R_\theta=\left(\begin{smallmatrix}r_1&c_v\\c_v&r_2\end{smallmatrix}\right)\)，则锚点差异观测\((y_2,y_1-y_2)\)的噪声为
+\begin{equation}\label{eq:noise}
+R_{a,d}=\begin{pmatrix}r_2&c_v-r_2\\c_v-r_2&r_1+r_2-2c_v\end{pmatrix},\quad
+Q_{a,d}=\begin{pmatrix}q_c+m^2q_d&-mq_d\\-mq_d&q_d\end{pmatrix}.
+\end{equation}
+独立同方差噪声下，观测交叉项为\(-r\)。分别平滑两坐标隐含删除该关系。完整协方差局部水平DLM保留\(Q,R\)，按Kalman递归更新均值和协方差\citep{kalman1960filter}。真实数据控制仅以训练期外推误差估计参数，首次验证前冻结；缺排名时删除对应观测行，仍按固定规则推进状态。合成实验另固定参数，并设置已知生成参数的oracle，两种身份分别报告。
+
+\subsection{共同支持上的训练诊断}
+为减少不同面板组成的影响，终分、半程剩余增长、中期原始外推误差和独立校正误差均取同一34期18线交集。35期外推活动中，活动261缺少合格半程增长前缀；T1500无训练支持。图~\ref{fig:upgrade-correlation}及表~\ref{tab:matchedcorr}按基础路线区分两条上下文线、混合线对及其余共享线对，相关系数描述该共同面板。
+\input{tables/upgrade_matched_correlations.tex}
+\upfigure{upgrade_matched_correlations}{fig:upgrade-correlation}{同一34期18线面板上的Spearman相关。终分、半程剩余增长、中期原始外推误差与独立校正误差均取相同活动，消除原图67、66、35期支持差异。T1000/T2000使用Context400，其余为共享600树，路线差异由分组明示。}{correlation}
+
+\section{实验设计与主要结果}
+\subsection{证据层级、终点与完整菜单}
+本轮54种固定方法在评分前封存，包含未校正、独立均值/窗口/EWMA、锚点删项与交换、同滤波负控、13项单因素扰动、替代线对、标量与完整协方差滤波、简单增长法，以及7种反馈策略乘3种主规则。校正方法共享65期查询和基础预测，两项简单增长基线在同一案例上另行计算。本轮主方法固定为\texttt{ewma\_reference}，新评分后保持该身份。
+
+历史数据包内329行记录是2026年11月15日首次汇总的14个\((\text{协议},\text{运行})\)组合，包含方法、种子和集成行。后续实验及本轮54方法另存，其计数口径分别列于补充材料。329行用于保留早期选择轨迹。
+
+主指标为活动等权MAPE。活动集合\(\mathcal E\)内唯一案例为\(\mathcal C_e\)：
+\begin{equation}\label{eq:metric}
+M=\frac{100}{|\mathcal E|}\sum_{e\in\mathcal E}\frac{1}{|\mathcal C_e|}\sum_{i\in\mathcal C_e}\left|\frac{\widehat Y_i-Y_i}{Y_i}\right|.
+\end{equation}
+活动内案例等权，缺失使各排名权重仍有差别；另报告活动内排名等权敏感性、case-MAPE、MAE、RMSE和P90。MAPE的权重及非对称性有既有讨论\citep{hyndman2006metrics,demyttenaere2016mape}，对数偏差EWMA属于实用状态估计，目标函数与主评分不同。研究过程中，ChatGPT和Codex辅助代码开发、实验执行与记录核查；成绩由封存预测和独立评分器计算，Tano负责审核。
+
+\subsection{固定基础预测上的校正与结构消融}
+表~\ref{tab:main}列主要固定控制，完整54种方法见表~\ref{tab:fullmenu}。5220个测试案例来自16期已探索活动。未校正、独立校正和历史双线组合的MAPE分别为\BaseTest\%、\EwmaTest\%和\PairTest\%。后者相对独立参考差值为\PairDelta\ 个百分点；验证值分别为\BaseVal\%、\EwmaVal\%和\PairVal\%，独立参考保持主方法身份。19线双线组合为\PairTest\%，原T1000/T2000的560案例子面板为\PairTwoTest\%，两种范围分别计算。
+\input{tables/upgrade_main_results.tex}
+
+仅差异消融的测试MAPE为\DifferenceTest\%，完整组合相对它增加\PairAnchorIncrement\ 个百分点，活动配对区间为[−0.070,0.143]，3、5、7活动块区间均跨零。该消融把T2000锚点校正置零，T1000只保留差异项，其余线保持独立参考。完整组合的锚点额外收益在该队列中缺少稳定支持。完整协方差DLM为\DlmTest\%，相对独立参考差值\DlmDelta\ 个百分点，所有重采样区间跨零，二者处于相近精度水平。真实回放的同滤波分解与同面板独立控制在浮点容差内等价，与命题~\ref{prop:identity}一致。上述测试排序用于固定消融描述，主方法仍为独立参考。
+
+图~\ref{fig:upgrade-curves}固定选取按实际开始时间排序第1与第8个测试活动，展示T1000/T2000当前分数、封存预测及核实终分。活动选择与误差值无关；连接线只连接冻结时点。图~\ref{fig:upgrade-ablation}保留删项、换锚、同滤波负控与传统滤波结果，以判断结构而非仅比较最终组合。
+\upfigure{upgrade_activity_forecasts}{fig:upgrade-curves}{测试面板中预先指定的两个活动。当前分数、不同校正预测和真实终分在相同冻结时点比较；折线用于连接这些时点，图中没有重建连续密集采样轨迹。两条线的分数尺度分别标示。}{examples}
+\upfigure{upgrade_structural_ablations}{fig:upgrade-ablation}{固定基础预测上的结构控制。差值以独立EWMA为对照，负值表示该冻结面板MAPE更低；区间按活动重采样。所有固定方法保留，方法排序承担展示功能，主方法仍为独立参考。}{ablation}
+
+\subsection{既有结构实验的证据位置}
+先前的训练规模实验用最早16、32、48、67期重新拟合，并反复评价同一14期488案例验证面板；它同时改变了样本量、日历覆盖和活动组成。既有19线残差网络与手工16格模拟分别检验神经结构和指定生成条件。完整方法、三种子、预算及正负区域保留于补充材料。下节采用训练组内部多终点和匹配预算补充这些控制；各实验的输入与反馈条件分别报告。
+
+\input{round2_studies.tex}
+
+\section{稳健性、尾部误差与区间可靠性}
+\subsection{活动差值、重采样与改善集中度}
+独立评分先计算相同案例的活动级损失差，再以完整活动进行5000次配对重采样，种子42，并采用3、5、7活动的循环移动块\citep{kunsch1989bootstrap}。图~\ref{fig:upgrade-eventwise}保留全部16期，表~\ref{tab:robustness}列活动区间与块区间。历史组合相对独立参考有\PairImproved\ 期下降，逐一删期差值范围为[\PairLooLow,\PairLooHigh]个百分点，绝对差最大的三期占全部绝对活动差的\PairTopThree\%。重采样固定已发布预测和损失，未重跑在线模型及反馈历史；较长块在16期中只有少量有效片段。区间未作多方法探索和历史选择校正，解释保持探索性\citep{cawley2010selection}。
+\input{tables/upgrade_robustness.tex}
+\upfigure{upgrade_eventwise_improvement}{fig:upgrade-eventwise}{16期活动的配对MAPE差值与改善集中程度。活动按实际开始时间排序，每期权重相同。保留正负差和逐一删期范围；所有值条件于固定封存预测，重采样未重新构造后续历史轨迹。}{events}
+
+\subsection{参数、缺测及反馈延迟}
+单因素敏感性包含锚点和差异衰减、支持收缩及最低配对支持，图~\ref{fig:upgrade-sensitivity}同时展示验证和已探索测试。参数在评分前固定，展示后没有采用测试最优点作为选择器。7种反馈策略只作用于三种主规则的残差校正通道，覆盖额外24小时、7天、一次查询延迟，确定性10\%/30\%删减，以及缺少T2000或T1000反馈。缓存基础预测仍按原V3合法历史拟合，额外延迟没有触发基础树重训。因此这些结果描述给定固定基础预测时的校正通道敏感性。24小时场景在当前日程下三种方法的预测均保持一致，未形成有效扰动；7天延迟及丢失呈混合方向，缺少整条线的影响更明显。采集系统缺少历史到达日志，模拟情景使用预设时间规则。
+\upfigure{upgrade_sensitivity}{fig:upgrade-sensitivity}{单因素参数敏感性。横轴按预先封存的离散值展示，验证和已探索测试分别标示；同时呈现偏差大小、遗忘速度和支持阈值的变化。所有测试点只作描述，主方法与更新规则保持固定。}{sensitivity}
+
+图~\ref{fig:upgrade-rank-stage}分排名与时间阶段报告差值及活动支持。开始后1小时无合格案例，3小时仅8期8前缀；晚期节点与早期节点的覆盖不同。T1500初始无训练及验证支持，其测试均值混合首次零状态与后续本线反馈。类型和乐队分组各仅1至4期，混合了发生时间、时长、排名覆盖及活动条件，结果用于定位误差。
+\upfigure{upgrade_rank_stage}{fig:upgrade-rank-stage}{排名与时间条件的误差及支持。方法间共享冻结案例，每个条件保留活动数；时间轴成员关系用于分面，总体评分仍按物理案例去重。T1500冷启动和缺失条件显式保留。}{rank-stage}
+
+\subsection{百分比误差、绝对尾部与经验区间}
+未校正、独立校正和双线组合的case-MAPE为6.929\%、6.464\%、6.342\%，案例P90为17.567\%、16.760\%、16.559\%，RMSE约为546.9万、565.2万、565.0万EP。百分比指标下降伴随平方误差上升，高分排名的大幅绝对误差仍需单列。图~\ref{fig:upgrade-interval}并列展示这些口径。
+
+经验80\%和90\%区间以独立EWMA为中心，历史校准分数取同活动、排名与阶段内最大绝对中心对数误差，并使用\(\lceil(n+1)\ell\rceil\)顺序统计量。支持不足先回退合法历史活动阶段池，再保留显式无界或不可用标记。分布变化下的在线共形推断已有专门理论\citep{gibbs2024online}；本文固定的历史分位数配方以回溯可靠性审计为证据范围。
+
+表~\ref{tab:round2reliability}同时报告三个目标。每水平5220个案例对应878个完整排名阶段组，全部来自16期活动。活动等权逐案例覆盖为\CoverageEighty\%/\CoverageNinety\%，完整组联合覆盖为\JointEighty\%/\JointNinety\%；整活动全部组覆盖仅为0/16和1/16。组联合目标与历史最大误差构造对应；整活动目标要求更多事件同时成立。当前案例全部有有限区间，原始案例均值相对宽度为\WidthEighty\%/\WidthNinety\%，活动等权均值为\EWidthEighty\%/\EWidthNinety\%。两种权重各按自身定义报告。
+\input{tables/round2_reliability.tex}
+
+条件审计保留76个逐案例及76个完整组分层。T1000和challenge类型的组覆盖低于总体，类型组仅3期；跨排名回退池的联合覆盖为100\%，相对宽度也明显增大。分母与活动级区间见补充表，单期类型和全成功组的固定损失bootstrap会退化。标准区间评分同时惩罚宽度与两侧越界\citep{gneiting2007proper}，80\%/90\%的活动等权Winkler分数为\EWinklerEighty 万/\EWinklerNinety 万EP；不同名义水平采用不同越界成本。这里未据条件结果调整宽度或方法。
+\upfigure{upgrade_tail_interval}{fig:upgrade-interval}{点预测尾部与经验区间的三个目标。百分比误差、绝对RMSE和P90分别评价；逐案例、完整排名阶段组与整活动联合覆盖采用各自分母。覆盖、有限可用率和宽度共同报告，活动数为16。}{interval}
+
+\section{前瞻记录与可执行复现}
+前瞻接口采用追加记录：登记配置、接收上游预测提交、封存物理案例、在真实结束后登记可信实际释放、按时间守卫导出历史，再独立评分。该模块管理记录与边界；活动发现、联网采集、基础训练和预测器执行由上游系统承担。运行版本绑定实现源码及依赖，跨批次相同活动、排名和时刻的预测被识别为同一物理案例。正式预测与答案工件隔离。
+
+图~\ref{fig:upgrade-prospective}给出闭环。原登记于\ProspectiveRegistered\ 生效，独立参考为主方法，历史组合和完整协方差DLM为影子对照；最初\ProspectiveTarget\ 期目标保留为流程可行性pilot。新增确认性计划与独立补充保持原登记不变，等待新的激活封存和独立起始队列。唯一主比较为历史组合减独立EWMA的19线活动等权MAPE差，负差支持历史组合、正差支持独立校正；两线机制面板为次要估计目标。
+
+规划方差只取训练35期已发活动差。给定改善0.5个百分点、双侧\(\alpha=.05\)、功效.9、\(\rho=.3\)与上95\%的规划\(\sigma\)，19线模型给出\ConfirmGlobalN\ 期，两线给出\ConfirmPairN\ 期。两线规则只改变少数排名，19线平均稀释了差异方差；该条件化模型输出保留于补充表。工程与稳定性采集下限为\ConfirmFloor\ 期，结合两线次面板并按10向上取整，计划采集\ConfirmTarget\ 期。该下限是工程预算，有限样本推断精度仍取决于活动依赖与分布条件。
+
+主区间预定采用按实际开始时间排序的Bartlett/Newey--West HAC\citep{newey1987hac}，带宽\(L=\min\{n-1,\max(1,\lceil n^{1/3}\rceil)\}\)，并报告iid配对t及循环块敏感性。渐近近似要求弱平稳、有限所需矩与弱依赖；AR(1)功效膨胀用于规划，未来HAC的有限样本功效另待实际数据。零差检验和超过0.5个百分点的实用门槛分别评价。新计划尚未激活，已纳入未来活动\ConfirmFuture\ 期，MAPE为空。
+
+未来按新封存后的实际国服开始时间纳入最初80期，人口清单保留无预测与缺标签活动，缺失原因逐项记录，无替换活动。沿用21时间条件、19排名、至少4点前缀、60分钟观测滞后与15分钟提交滞后上限。可信采集者核实终分来源和实际释放时刻；同一期全部时点共用期初池。流程失败使用事前准时发布的固定当前分数回退，晚补预测标记失效；全部固定人口完整后按预定时点评分。
+
+复现包保存配置、代码、依赖、盲预测、释放日志、独立评分源码与文件哈希。归档模式由封存产物重建数值表、图及LaTeX，重新拟合模式使用新目录。图表脚本读取统计产物，不训练或选择方法。二轮绑定器显式接收仓库根与稿件输出路径；原封存B预测保留，新重放入口使用物理案例别名守卫。独立审计在全部35期验证守卫路径与原预测逐例零差。中断的回放v1保留；CSV类别类型解析修订后以v2重跑全部65期，三项控制的逐案例相对误差上限为0、0及\(1.11\times10^{-16}\)。这类一致性检查验证实现与历史预测的对齐，真实未来精度另由新活动评分提供。
+\upfigure{upgrade_prospective_loop}{fig:upgrade-prospective}{前瞻登记、上游预测提交、封存、延迟释放和独立评分的记录闭环。模块按真实释放时刻导出后续可用历史；预测与答案各自封存。当前流程等待合格未来活动，图中没有未来精度数值。}{prospective}
+
+\section{讨论}
+\subsection{对游戏预测应用的含义}
+期初更新低维偏差状态，可与基础预测分开封存和审计。独立EWMA在历史测试及训练期选择中保持实用参照地位。自适应共享的平方风险系数只依赖已发误差，但有限历史带来的删除敏感性较大；保守门控关闭后与独立法同轨。这项回退避免了本面板的额外共享误差，主动共享的稳定收益仍缺证据。
+
+相关性、持久性和预测损失承担不同作用。同期两线共变支持共享假设的研究动机；训练期滞后信号较弱、原始过程矩含负特征值，以及等噪声约束的失配，共同限制了状态模型解释。受约束模拟保留了负迁移和损失排序变化，真实DLM追加迁移又出现损失增加。应用中应同时显示预测时刻、观测滞后、历史支持与区间宽度，按实际目标审视百分比误差和绝对尾部。
+
+容量匹配消除了一个可量化差异，函数类、宽度与监督共享仍有变化。时间覆盖控制也保留活动组成和类别支持差别。结果适合指导后续结构选择与失败诊断，玩家投入、竞争偏好等行为解释需要玩家层资料或额外设计。
+
+\subsection{证据、元数据与统计限制}
+测试16期曾参与早期探索，14期验证被反复使用；本轮追加封存约束后续计算，历史暴露身份继续保留。早期曾查看留出盲前缀的特征分布，该操作接触了留出输入，相关特征探索历史一并披露。独立评分器隔离了本轮模型入口与答案，其工程作用和选择偏差的统计作用分别解释。
+
+元数据采用缺少历史时点档案的回溯快照，按国服发布时间过滤卡牌及严格控制终分时间仍留下历史信息条件重建缺口。采样缺失可能与活动条件相关，T10和T1500的支持差异尤其明显。基础模型的两线/17线混合路线改变输入条件，跨路线相关分组和独立学习曲线均因此单列。首轮训练规模实验的参数与模型数量随结构变化；二轮同单元实现总参数精确匹配，并另给近似前向计算控制，仍保留函数类、更新次数、时期组成和输入维度差异。B、C1与C2的真实活动并集为35期，C2的12期全部来自该集合。
+
+统计区间条件于固定损失，未计入全部候选搜索，也未重建在线反馈轨迹。16期活动较少，时间依赖、非等日历间隔和小类型组限制了精度。首轮手工网格及二轮真实量纲校准模拟均使用受控状态族；二轮保留重尾、突变、延迟和异方差扰动。真实潜在状态缺少直接观测，参数范围条件于离散网格与受限噪声假设；描述性支持带的阈值未经有限样本覆盖校准。结论覆盖单一游戏、服务器和密集采样时期，外部适用性由更多场景与前瞻活动检验。
+
+\section{结论}
+本文建立音乐游戏活动终分的活动级时间契约，并将“同期相关是否支持下一期共享”分解为可复核的预测、消融、容量与机制检查。已探索19线测试中，独立EWMA的MAPE为\EwmaTest\%；只使用训练35期的内段逐活动回放、段末预定选择仍保留独立。共享候选、单线效应、多终点训练及条件模拟完整保留，结果显示支持规模、时间位置、噪声失配和损失目标会改变收益方向。
+
+同滤波恒等式与平方风险展开提供已有数学下的初等解释。真实校准的固定DLM在事后迁移中增加误差，使模拟与应用之间的证据缺口具体可见。经验区间的完整组覆盖接近预设水平，整活动与部分条件覆盖仍明显较低，宽度代价需同时报告。历史探索、验证复用及回溯元数据继续限制推断；80期确认性计划等待独立激活和真实新活动。
+
+\FloatBarrier
+\section*{数据与代码可用性}
+原始公开来源为Bestdori\citep{bestdori2026data}。研究仓库为\href{https://github.com/AhsokaTano26/BanG-DreamActivity-fraction-prediction/tree/research/innovation-20261113}{BanG Dream Activity fraction prediction}。首轮工件根目录为\path{analysis/paper_upgrade_records/20261118}，二轮工件位于\path{analysis/paper_upgrade_round2/20261118}，方法与评分源码、运行清单、全菜单预测、统计表及图表输入均有SHA-256记录。补充材料列明完整冻结数据指纹、历史329行的统计口径与新运行标识；公开分支与本地交付工件的发布状态分别核对。
+
+\section*{生成式人工智能使用声明}
+OpenAI的ChatGPT和Codex辅助代码开发、实验执行、记录整理、数值核查、LaTeX编排与语言修改。实际成绩由封存预测和独立评分器计算。署名作者负责审核代码、方法、数值及最终稿件内容，确认投稿版本。工具未列为作者。
+
+\clearpage
+\appendix
+\newcommand{\PaperMainDocument}{}
+\input{supplement.tex}
+\FloatBarrier
+\begingroup\raggedright\small
+\bibliographystyle{elsarticle-num}
+\bibliography{references}
+\endgroup
+\end{document}

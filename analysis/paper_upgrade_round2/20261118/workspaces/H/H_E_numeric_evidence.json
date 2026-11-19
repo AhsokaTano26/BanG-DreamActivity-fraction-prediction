@@ -1,0 +1,158 @@
+{
+  "scope": "Independent interval arithmetic from original frozen intervals, TRAIN35 power basis and numerical power boundary; no E scorer imported",
+  "checks": {
+    "statistics_002_output_and_input_seals": {
+      "passed": true,
+      "detail": {
+        "outputs": 19,
+        "bad_outputs": [],
+        "bad_inputs": [],
+        "snapshot_source_matches": true
+      }
+    },
+    "reliability_002_output_and_input_seals": {
+      "passed": true,
+      "detail": {
+        "outputs": 14,
+        "bad_outputs": [],
+        "bad_inputs": [],
+        "snapshot_source_matches": true
+      }
+    },
+    "interval_main_targets_width_and_score_independent": {
+      "passed": true,
+      "detail": {
+        "summary_rows": 2,
+        "bad_nominals": []
+      }
+    },
+    "conditional_point_denominators_and_target_identity": {
+      "passed": true,
+      "detail": {
+        "conditional_rows": 76,
+        "bad": []
+      }
+    },
+    "conditional_full_group_denominators": {
+      "passed": true,
+      "detail": {
+        "rows": 76,
+        "bad": []
+      }
+    },
+    "power_TRAIN35_basis_independent": {
+      "passed": true,
+      "detail": {
+        "panels": 2,
+        "activities_per_panel": 35
+      }
+    },
+    "power_integer_boundary_and_20event_probability": {
+      "passed": true,
+      "detail": {
+        "grid_rows": 180,
+        "max_20event_power_difference": 0.0,
+        "bad": []
+      }
+    },
+    "whole_event_binomial_reference": {
+      "passed": true,
+      "detail": {
+        "interpretation": "Exact binomial reference uses iid activity assumption; fixed-loss bootstrap target is separately labeled."
+      }
+    },
+    "selected_B_paired_CIs_independent_loops": {
+      "passed": true,
+      "detail": {
+        "rows": 8,
+        "bad": []
+      }
+    },
+    "future_plan_draft_unactivated": {
+      "passed": true,
+      "detail": {
+        "planned_events": 4,
+        "primary_comparison": "legacy_pair minus ewma_reference event-macro MAPE percentage points"
+      }
+    },
+    "future_80event_addendum_basis_and_seal": {
+      "passed": true,
+      "detail": {
+        "model_requirements": {
+          "T1000_T2000": 72,
+          "global19": 4
+        },
+        "engineering_floor": 60,
+        "rounded_target": 80,
+        "addendum_sha256": "24e533b9c0c2812e31324b8ccd2b06377b8105cae47a90df81e7a20e82e671aa"
+      }
+    },
+    "future_HAC_ordered_manual_and_degenerate": {
+      "passed": true,
+      "detail": {
+        "bandwidth": 3,
+        "manual_LRV": 0.08217592592592596,
+        "source_sha256": "a7400e0abc38d3cb74f1b0cfb9fabc7e30519829ab1c1d1453a08698810e750c",
+        "constant_status": "degenerate_variance_no_decision"
+      }
+    }
+  },
+  "interval_recomputed": [
+    {
+      "nominal": 0.8,
+      "n_events": 16,
+      "n_cases": 5220,
+      "n_groups": 878,
+      "case_coverage": 0.9350574712643678,
+      "event_equal_point_coverage": 0.9301164067002256,
+      "event_equal_group_joint_coverage": 0.7986219890002785,
+      "whole_event_joint_coverage": 0.0,
+      "whole_event_successes": 0,
+      "finite_interval_rate": 1.0,
+      "unbounded_cases": 0,
+      "unavailable_cases": 0,
+      "own_support_zero_cases": 11,
+      "mean_width": 7978758.260851963,
+      "p90_width": 19940573.455432132,
+      "mean_relative_width_pct": 35.072953005484386,
+      "p90_relative_width_pct": 75.27929923345872,
+      "winkler_score": 9043525.016664624,
+      "relative_score_pct": 37.99053575055136,
+      "event_equal_width": 8155307.057283229,
+      "event_equal_relative_width_pct": 35.19722331754599,
+      "event_mean_p90_relative_width_pct": 75.5501802141745,
+      "event_equal_winkler_score": 9585702.374887168
+    },
+    {
+      "nominal": 0.9,
+      "n_events": 16,
+      "n_cases": 5220,
+      "n_groups": 878,
+      "case_coverage": 0.9722222222222222,
+      "event_equal_point_coverage": 0.9690147886104645,
+      "event_equal_group_joint_coverage": 0.9046901106934001,
+      "whole_event_joint_coverage": 0.0625,
+      "whole_event_successes": 1,
+      "finite_interval_rate": 1.0,
+      "unbounded_cases": 0,
+      "unavailable_cases": 0,
+      "own_support_zero_cases": 11,
+      "mean_width": 10417604.173154924,
+      "p90_width": 25375316.92653569,
+      "mean_relative_width_pct": 47.63629374700305,
+      "p90_relative_width_pct": 99.53607535667454,
+      "winkler_score": 11674046.717139885,
+      "relative_score_pct": 49.974621020848524,
+      "event_equal_width": 10625537.259231038,
+      "event_equal_relative_width_pct": 47.780947677026596,
+      "event_mean_p90_relative_width_pct": 98.48496878819674,
+      "event_equal_winkler_score": 12392309.499610905
+    }
+  ],
+  "script_sha256": "e973824cfd337e78f7f448eff727b78add80afdb3527ee852a94d47dc63ab1f8",
+  "limitations": [
+    "Historical test interval rows used for descriptive reliability only, no interval/method selection",
+    "Power uses retrospective TRAIN differences and approximate AR1 variance inflation",
+    "Eight selected paired CI rows replayed; all E bootstrap rows were not regenerated"
+  ]
+}

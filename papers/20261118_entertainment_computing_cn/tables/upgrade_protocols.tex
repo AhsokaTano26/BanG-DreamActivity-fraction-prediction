@@ -1,0 +1,14 @@
+\begin{table}[!htbp]\centering
+\caption{冻结协议的案例数及历史信息条件}\label{tab:protocols}
+\small\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\linewidth}{L r r r L}\toprule
+协议范围 & 训练 & 验证 & 测试 & 终分反馈 \\
+\midrule
+V1两线 & 2390 & 130 & 154 & 不回灌 \\
+V2两线 & 2452 & 488 & 560 & 不回灌 \\
+V2 19线 & 21984 & 4361 & 5220 & 不回灌 \\
+V3两线 & 2452 & 488 & 560 & 已结束活动用于后续 \\
+V3 19线 & 21984 & 4361 & 5220 & 已结束活动用于后续 \\
+\bottomrule\end{tabularx}
+\par\vspace{4pt}\begin{minipage}{\linewidth}\footnotesize 三组活动为67/14/16。V3训练列是父数据集前缀量；32期基础热身后35期形成逐期外推误差，二者角色分列。V3 19线为后续冻结扩展。\end{minipage}
+\end{table}

@@ -1,0 +1,26 @@
+{
+  "scope": "Independent scalar arithmetic, no B model/scorer imported",
+  "passed": true,
+  "event_rank_phase_candidate_states": 22680,
+  "max_absolute_discrepancies": {
+    "expert_ind": 0.0,
+    "ind_history_events": 0.0,
+    "expert_pair": 0.0,
+    "pair_history_events": 0.0,
+    "expert_samepanel": 0.0,
+    "expert_adjacent": 0.0,
+    "adjacent_history_events": 0.0,
+    "lambda": 3.219646771412954e-15,
+    "A": 1.734723475976807e-18,
+    "C": 3.469446951953614e-18,
+    "n_eff": 2.6645352591003757e-15,
+    "lambda_delete_min": 1.3322676295501878e-15,
+    "lambda_delete_max": 3.219646771412954e-15,
+    "rho": 2.220446049250313e-16,
+    "gap_ratio": 2.220446049250313e-16,
+    "drift_ratio": 3.3306690738754696e-16,
+    "gate_pairs": 0.0
+  },
+  "bad_states": [],
+  "script_sha256": "1c4245dbd9e7e0879bf5b951be1e058eb8de95b76f6e9438ef98ef65f0cd40ff"
+}

@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "role": "Agent A second-round academic evidence reviewer",
+  "date": "2026-11-18",
+  "scope": "Read-only evidence review; no training, scoring, numerical recalculation or manuscript changes",
+  "inputs": [
+    "RESEARCH_QUESTIONS.md",
+    "B/B_report.md",
+    "B/B_prior_art.md",
+    "C/C_report.md",
+    "D/D_report.md",
+    "E/E_report.md",
+    "H/H_initial_audit.md",
+    "H/H_numeric_evidence.json",
+    "H/H_B_scalar_evidence.json",
+    "H/H_D_numeric_evidence.json",
+    "H/H_D_transfer_evidence.json",
+    "H/H_E_numeric_evidence.json"
+  ],
+  "overall": {
+    "academic_position": "Stronger empirical mechanism and failure-boundary study; retain conservative algorithmic and theoretical novelty",
+    "new_diagnostic_activity_union": 35,
+    "C2_query_activities": 12,
+    "C2_queries_subset_of_B35": true,
+    "prospective_observed_events": 0,
+    "future_plan_activated": false,
+    "future_plan_target": 80,
+    "original_pilot_target": 20,
+    "historical_test_explored": true,
+    "validation_reused": true,
+    "retrospective_metadata": true,
+    "manuscript_reviewed_this_turn": false,
+    "final_artifact_acceptance": "pending F/G/H final artifact checks"
+  },
+  "previous_priority_resolution": [
+    {
+      "id": "A01",
+      "status": "partly_resolved",
+      "resolution": "RQ1统一问题与先验选择把主线收束到保留独立的条件；基础公式及原创方法优势继续保守。",
+      "remaining": "应用意义、领域外部性和新规则独立收益待证据。"
+    },
+    {
+      "id": "A02",
+      "status": "partly_resolved",
+      "resolution": "前25真实量纲、受限profile和24格模拟已链接；事后真实DLM转移保留失败。",
+      "remaining": "等方差R与原矩7.48倍失配、Q负特征、载荷及过程识别仍开放。"
+    },
+    {
+      "id": "A03",
+      "status": "partly_resolved",
+      "resolution": "同cell总参数实际枚举精确相等；更新计数与MAC分别报告。",
+      "remaining": "函数类和完整计算/优化预算仍不同。"
+    },
+    {
+      "id": "A04",
+      "status": "partly_resolved",
+      "resolution": "同跨度不同数量与同数量不同跨度的历史组已增加。",
+      "remaining": "组成、类别支持与跨组输入维数仍变化。"
+    },
+    {
+      "id": "A05",
+      "status": "no_independent_outcome_evidence",
+      "resolution": "新候选只用训练内预定选择；80期确认计划与20期pilot分开。",
+      "remaining": "确认计划未激活；未来0；旧test和val暴露继续。"
+    },
+    {
+      "id": "A06",
+      "status": "resolved_for_descriptive_target_audit",
+      "resolution": "76行point和76行fullgroup分母、条件覆盖、宽度和Winkler由H核验。",
+      "remaining": "条件欠覆盖、小n与时间依赖限制未来校准。"
+    },
+    {
+      "id": "A07",
+      "status": "scope_disclosed_retained",
+      "resolution": "固定损失bootstrap、少量长块及部分独立复算范围完整披露。",
+      "remaining": "在线学习轨迹过程不确定性未由固定损失重抽样覆盖。"
+    },
+    {
+      "id": "A08",
+      "status": "resolved_for_information_condition_accounting",
+      "resolution": "实际18排名、支持零扰动、统一案例与35期并集均核验。",
+      "remaining": "新真实DLM为事后末尾整体封存，按辅助身份报告。"
+    },
+    {
+      "id": "A09",
+      "status": "resolved_for_conservative_theory_scope",
+      "resolution": "平方风险、MAPE、内部/外部截断、oracle和已有组合来源分别标明。",
+      "remaining": "新基础理论或MAPE统一保证主张缺独立推导和证据。"
+    },
+    {
+      "id": "A10",
+      "status": "editorial_integration_pending",
+      "resolution": "既有文献真实性核验保留；B_prior_art补足组合与MTA来源。",
+      "remaining": "完成稿参考文献、版本链接及旧排版问题待最终定点核查。"
+    }
+  ],
+  "new_audit_items": [
+    {
+      "id": "A-R2-D-metadata",
+      "status": "closed_with_scope_disclosure",
+      "detail": "删除后argmin正确；原nll/support为full25元数据；论文只使用删除后参数范围。"
+    },
+    {
+      "id": "A-R2-D-issuance",
+      "status": "auxiliary_posthoc_only",
+      "detail": "后加DLM按合法期初历史回放，预测末尾整体seal；真实逐期公开发布无新增证据。"
+    },
+    {
+      "id": "A-R2-H-alias",
+      "status": "closed_in_guarded_path",
+      "detail": "物理alias新守卫通过且B35预测parity；原backend适用已核验唯一输入。"
+    },
+    {
+      "id": "A-R2-H-package",
+      "status": "pending_final_package",
+      "detail": "H已补全真实导入闭包且外部复拟一个固定单元；最终ZIP仍待核查。"
+    },
+    {
+      "id": "A-R2-power",
+      "status": "design_specified",
+      "detail": "80是max60/4/72舍入的采集预算；有限样本HAC功效依赖假设；legacy−I为正式比较。"
+    }
+  ],
+  "gate_resolution": {
+    "G1": "Partly resolved: credible train-only protocol and real-scale mechanism diagnostics; latent mechanism identification remains conditional",
+    "G2": "Partly controlled: exact parameter count solved, update/MAC and span/quantity separately controlled; function class/composition/optimization differences remain",
+    "G3": "Plan and descriptive audit specified; activation, collection and independent future outcome evidence remain open"
+  },
+  "recommended_editorial_statements": [
+    "预定训练内选择保留独立EWMA；末段门控全关闭，收益证据与回退轨迹分开。",
+    "同cell总参精确相同；更新与近似MAC分视角控制；三组12活动区间全部跨零。",
+    "真实量纲链接受限参数族；DLM事后中阶段负迁移与未激活80期计划分别记录。"
+  ],
+  "publication_direction": "Game forecasting empirical study, auditable forecasting system and sharing failure boundaries; admission outcome remains editorial and peer-review judgement",
+  "additional_computation_requested": false,
+  "next_review": "Fast targeted read of final manuscript, tables, captions and reference integration after F/G ready"
+}

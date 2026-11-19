@@ -1,0 +1,11 @@
+{
+  "source": "data/db.sqlite3",
+  "canonical_rows_sha256": "68fb70810bbf6467d9c9567622c4448668a270c549258b78661eb2d48b571833",
+  "metadata_fetched_at": "2026-11-10T15:51:54.823057+00:00",
+  "source_events": 103,
+  "stored_points": 2006315,
+  "after_end_window_points": 210443,
+  "qualified_curves": 1761,
+  "qualified_events": 102,
+  "purpose": "Measurement and freshness audit of legacy archive; primary paper uses the operational read-only snapshot."
+}

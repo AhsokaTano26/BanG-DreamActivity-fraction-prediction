@@ -1,0 +1,5 @@
+Ranking scores are analyzed across 103 events and 19 cutoffs.
+Matched events show stronger score than remaining growth correlations.
+The T1000/T2000 score ratio changes nonmonotonically across matched months.
+Event type and band have conditional associations with terminal scores.
+Endpoint coverage and observation lag affect aggregate comparisons.

@@ -1,0 +1,13 @@
+{
+  "stage": "v1 complete external build accepted; v2 sidecar pending",
+  "files": {
+    "H_final_package_audit.py": "47d78f73a97ca6c1fe17c6b877bed793cf61aaba129943cd878fc4e8ac1bf402",
+    "H_final_package_review.md": "c66bed0eed5ad24e89b4d6fe86639810e19b61e7eee9a17aa1c472518ecffacc",
+    "H_final_index.json": "ee8cd6efec4ccc4608edaa50481ecde3549d48da9d7af2586776e06f54d6f4ec",
+    "H_final_package_v1/archive_integrity.json": "5489492157bf538e9a37577b2ba9c3f4bf679a4445e42aea928c14fef24c7326",
+    "H_final_package_v1/result.json": "4576ad7b718574a05c45c34b0e9e2f2e76566ec57eb0470e01ce304b4bba1cb4",
+    "H_final_package_v1/guard_events.jsonl": "c2ce9cdb9c24b6c03d12f1dd0961a3db7aaafbc0f08f1dd6f6c613f892953b42",
+    "H_final_package_v1/guard_negative_control.log": "ee75083388a86f23c955657a5ba1f5458d004b6b71ac16975e3f3b58ca5f5dbc",
+    "H_final_package_v1/one_command.log": "33720944985045346a1f07a1782bbd440a3fac332bbe4c2f89f9cbf2e1aeaf27"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "identity": "External final audit sidecar; self hash excluded",
+  "files": {
+    "H_final_v3_audit.py": "cbfaeb9eda0cd2280802992be9942a0d0173f76a004d7d16915c9c93733a09bb",
+    "H_final_v3_review.md": "982006bb307db1336b26804d597809844064aba209a440272aa3a2e6ed66dd83",
+    "H_final_release_index.json": "072800e590d1f089266e9a45133c98569912bfcc637bad8365dd1e6919de40a5",
+    "H_final_v3_sidecar/result.json": "c1d676e83e61d8eb4cdb3fb2d5750cf0c5eeb5af6fb958cfa810d909ea853f36",
+    "H_final_v3_sidecar/source_make_all.log": "c62bba61b585ca66bf66e7115c412fdc78b280f0959f9be3f5df126189193b87"
+  }
+}

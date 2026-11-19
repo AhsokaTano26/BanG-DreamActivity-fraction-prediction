@@ -1,0 +1,68 @@
+[
+  {
+    "key": "seif2013analytics",
+    "url": "https://link.springer.com/book/10.1007/978-1-4471-4769-5",
+    "source": "Publisher book record",
+    "checked_date": "2026-11-18"
+  },
+  {
+    "key": "drachen2013mining",
+    "url": "https://link.springer.com/chapter/10.1007/978-1-4471-4769-5_12",
+    "source": "Publisher chapter record",
+    "checked_date": "2026-11-18"
+  },
+  {
+    "key": "bestdori2026",
+    "url": "https://bestdori.com/info/events",
+    "source": "Public source; actual analysis uses the supplied local snapshot",
+    "checked_date": "2026-11-18"
+  },
+  {
+    "key": "spearman1904",
+    "url": "https://www.jstor.org/stable/1412159",
+    "source": "Original publication record",
+    "checked_date": "2026-11-18"
+  },
+  {
+    "key": "jolliffe2016",
+    "url": "https://royalsocietypublishing.org/doi/10.1098/rsta.2015.0202",
+    "source": "Original publication",
+    "checked_date": "2026-11-18"
+  },
+  {
+    "key": "cameron2015",
+    "url": "https://cameron.econ.ucdavis.edu/research/Cameron_Miller_JHR_2015.pdf",
+    "source": "Published paper from author university",
+    "checked_date": "2026-11-18"
+  },
+  {
+    "key": "newey1987",
+    "url": "https://www.nber.org/papers/t0055",
+    "source": "Original authors working paper, with published version link",
+    "checked_date": "2026-11-18"
+  },
+  {
+    "key": "kunsch1989",
+    "url": "https://projecteuclid.org/journals/annals-of-statistics/volume-17/issue-3/The-Jackknife-and-the-Bootstrap-for-General-Stationary-Observations/10.1214/aos/1176347265.full",
+    "source": "Original publication",
+    "checked_date": "2026-11-18"
+  },
+  {
+    "key": "benjamini2001",
+    "url": "https://www.math.tau.ac.il/~ybenja/MyPapers/benjamini_yekutieli_ANNSTAT2001.pdf",
+    "source": "Original authors university PDF",
+    "checked_date": "2026-11-18"
+  },
+  {
+    "key": "rubin1976",
+    "url": "https://academic.oup.com/biomet/article-abstract/63/3/581/270932",
+    "source": "Original publication",
+    "checked_date": "2026-11-18"
+  },
+  {
+    "key": "hernan2020",
+    "url": "https://miguelhernan.org/whatifbook",
+    "source": "Author book site",
+    "checked_date": "2026-11-18"
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "event": 4,
+  "query_start_ms": 1706504430000,
+  "issued_before_feedback": true,
+  "prediction_sha256": "0ba3184789360b9db2bc7701644e87fde398ec1c3fa2464604b2c5dd6c3aeb1c",
+  "experts_sha256": "6b72db3a0eaeaed30c306137c2cdd557bcecc0f50d776866c50a15c3fc1d973d",
+  "history_events": [
+    1,
+    2,
+    3
+  ],
+  "history_cases": 18,
+  "latest_history_end_ms": 1706504428000,
+  "selected_candidate": "independent"
+}

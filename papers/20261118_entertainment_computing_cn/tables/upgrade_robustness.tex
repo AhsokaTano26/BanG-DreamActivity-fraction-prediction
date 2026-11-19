@@ -1,0 +1,12 @@
+\begin{table}[!htbp]\centering
+\caption{固定已发布损失的活动级配对不确定性}\label{tab:robustness}
+\small\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\linewidth}{L r C{3.1cm} C{3.1cm}}\toprule
+比较 & 差值 / 百分点 & 活动配对95\%区间 & 5活动块95\%区间 \\
+\midrule
+历史组合−独立参考 & -0.130 & [-0.255, -0.009] & [-0.249, -0.024] \\
+历史组合−仅差异 & 0.030 & [-0.070, 0.143] & [-0.030, 0.094] \\
+DLM−独立参考 & 0.001 & [-0.029, 0.030] & [-0.036, 0.038] \\
+\bottomrule\end{tabularx}
+\par\vspace{4pt}\begin{minipage}{\linewidth}\footnotesize 5000次重采样，种子42。3和7活动块区间及逐活动损失保存在独立统计summary.json。所有区间为探索性，条件于固定方法和已发布损失，未重跑反馈历史、未校正搜索。\end{minipage}
+\end{table}

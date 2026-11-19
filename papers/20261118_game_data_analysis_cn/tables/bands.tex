@@ -1,0 +1,25 @@
+\begin{table}[!htbp]
+\centering\small
+\caption{乐队覆盖及终分的条件关联}\label{tab:bands}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\linewidth}{L r r r C{4.4cm}}
+\toprule
+乐队类别 & 活动 & \shortstack{T1000\\有效活动} & \shortstack{T1000中位数\\/ 万EP} & 条件对数差 [95\%区间] \\
+\midrule
+mixed & 28 & 26 & 547.798 & 参照组 \\
+Afterglow & 11 & 11 & 334.982 & 0.234 [0.093，0.375] \\
+Hello, Happy World！ & 10 & 10 & 417.757 & 0.090 [−0.110，0.290] \\
+Morfonica & 10 & 9 & 258.046 & 0.121 [−0.038，0.280] \\
+Poppin'Party & 10 & 10 & 681.257 & 0.486 [0.306，0.666] \\
+Roselia & 10 & 10 & 845.476 & 0.531 [0.345，0.717] \\
+Pastel＊Palettes & 9 & 8 & 426.096 & 0.274 [0.105，0.444] \\
+RAISE A SUILEN & 9 & 8 & 362.769 & 0.289 [0.051，0.526] \\
+MyGO!!!!! & 6 & 6 & 2281.433 & 1.030 [0.707，1.352] \\
+\bottomrule
+\end{tabularx}
+\par\vspace{4pt}
+\begin{minipage}{\linewidth}\footnotesize\setstretch{1.05}
+注：模型同时调整排名、时间、时长和活动类型，混合乐队为参照。区间为逐参数边际区间，采用按活动汇总得分向量的5期HAC估计。
+\end{minipage}
+\end{table}

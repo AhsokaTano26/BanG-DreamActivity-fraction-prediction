@@ -1,0 +1,21 @@
+\begin{table}[!htbp]\centering
+\caption{固定19线基础预测上的主要控制（活动等权MAPE）}\label{tab:main}
+\small\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\linewidth}{L r r r}\toprule
+方法 & 验证 / \% & 测试 / \% & 案例P90 / \% \\
+\midrule
+未校正基础预测 & 6.672 & 7.082 & 17.567 \\
+独立EWMA（固定主方法） & 6.502 & 6.671 & 16.760 \\
+历史锚点差异组合 & 6.556 & 6.540 & 16.559 \\
+仅差异状态 & 6.561 & 6.511 & 16.491 \\
+仅锚点状态 & 6.593 & 7.305 & 18.529 \\
+交换锚点 & 6.566 & 6.926 & 17.113 \\
+同滤波锚点负控 & 6.502 & 6.671 & 16.760 \\
+同面板独立负控 & 6.502 & 6.671 & 16.760 \\
+5期窗口均值 & 6.464 & 6.697 & 16.859 \\
+独立局部水平Kalman & 6.591 & 6.762 & 16.875 \\
+完整协方差DLM & 6.510 & 6.672 & 16.750 \\
+时间比例增长 & 18.985 & 17.699 & 41.982 \\
+\bottomrule\end{tabularx}
+\par\vspace{4pt}\begin{minipage}{\linewidth}\footnotesize 验证14期4361案例，测试16期5220案例。完整菜单、延迟通道及敏感性点见表~\ref{tab:fullmenu}。各行均为预先固定控制；本表没有按测试误差重选主方法。\end{minipage}
+\end{table}

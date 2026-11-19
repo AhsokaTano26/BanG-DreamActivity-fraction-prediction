@@ -1,0 +1,44 @@
+{
+  "baseline": {
+    "main_pdf_pages": 32,
+    "standalone_SI_pages": 10,
+    "figures": 15,
+    "native_tables": 15,
+    "legacy_bindings": 606
+  },
+  "round2": {
+    "main_pdf_pages": 45,
+    "standalone_SI_pages": 19,
+    "figures": 18,
+    "native_tables": 26,
+    "new_bindings": 360,
+    "new_macros": 31,
+    "references_in_complete_manuscript": 33,
+    "visual_pages_reviewed": 64,
+    "source_hash_checks": "passed",
+    "binding_field_checks": "360/360 passed",
+    "latex_overflow_missing_glyph_unresolved_reference": "none"
+  },
+  "substantive_improvements": [
+    "single chronological outer diagnostic block with one prespecified middle-block selection",
+    "negative selection result retained",
+    "single-rank18-ablation effect decomposition",
+    "exact total parameters and separate approximate forward-MAC controls",
+    "real-scale restricted calibration and posthoc transfer failure",
+    "76+76 conditional reliability targets with width and interval score",
+    "unactivated80-event budget separated from n4/n72 model outputs and60-event engineering floor"
+  ],
+  "unchanged_limits": [
+    "historical test previously explored",
+    "validation repeatedly reused",
+    "metadata retrospective",
+    "35-real-activity union with overlapping studies",
+    "conditional latent model and no directly observed real state",
+    "fixed-loss bootstrap excludes feedback-trajectory uncertainty",
+    "future cohort unactivated, zero future events"
+  ],
+  "remaining_final_PI_work": [
+    "canonical integration and one-command rebuild",
+    "outside-project package reconstruction and final H package audit"
+  ]
+}

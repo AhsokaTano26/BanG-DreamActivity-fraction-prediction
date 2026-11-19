@@ -1,0 +1,11 @@
+{
+  "immutable_snapshot": true,
+  "capture_time_source": "source_manifest.json captured_at and SQL cutoff_ms",
+  "file_mtime_source": "source_manifest.json metadata_file_mtimes",
+  "operational_refresh_source": "source_manifest.json metadata_state",
+  "export_field_erratum": {
+    "path": "source_metadata.json.gz: sources.fetched_at",
+    "meaning": "Maximum local metadata file mtime; not an independently verified remote fetch timestamp. Original immutable snapshot bytes are retained. New exporter calls this field latest_local_file_mtime."
+  },
+  "card_cache": "No cards entry in operational metadata_state at capture; use recorded file mtime and CN release timestamps, with retrospective metadata limitation."
+}

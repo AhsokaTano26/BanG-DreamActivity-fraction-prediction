@@ -1,0 +1,179 @@
+{
+  "registered_ms": 1795014169992,
+  "methods": {
+    "ewma_reference": "d4d0ba4e49ee408a4b48d1305ff29d93db431b39a5e1e5d00efece24e8a5446c",
+    "legacy_pair": "a1374148dfb0eec8241f4a7a75a7c01388b3c1599376459c04c33aca07b48a19",
+    "dlm_fullcov": "5f99e1b58ca19e2afa22b711e15359fab8a810e3fe131d39b9575b958d22e414"
+  },
+  "primary": "ewma_reference",
+  "minimum_start_ms": 1706504400000,
+  "eligibility": "actual start strictly after registered_ms",
+  "feedback_eligibility": "end_ms and actual released_ms strictly before query start",
+  "primary_metric": "event-macro MAPE percent; unique cases",
+  "status": "prospective_shadow_submission_interface",
+  "source_sha256": "4ef1b6a5bba5c5f1e181f4104bd5be9b7ea4913325cb2cd015ce2f7f342fb04f",
+  "software": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.1"
+  },
+  "plan": {
+    "protocol": "prospective_shadow_v1",
+    "country": "中国大陆",
+    "minimum_start_ms": 1706504400000,
+    "target_events": 20,
+    "stopping_rule": "First20events by actual CN start after registration; upstream complete event inventory required to audit inclusion, including events without forecasts.",
+    "sample_size_basis": "Feasibility budget; no claim of powered superiority test. All interim reports descriptive; no candidate changes by observed future scores.",
+    "ranks": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      100,
+      200,
+      300,
+      400,
+      500,
+      1000,
+      1500,
+      2000,
+      3000,
+      4000,
+      5000,
+      10000,
+      20000,
+      30000
+    ],
+    "stages": [
+      {
+        "stage_id": "elapsed_1h",
+        "axis": "elapsed",
+        "value": 1
+      },
+      {
+        "stage_id": "elapsed_3h",
+        "axis": "elapsed",
+        "value": 3
+      },
+      {
+        "stage_id": "elapsed_6h",
+        "axis": "elapsed",
+        "value": 6
+      },
+      {
+        "stage_id": "elapsed_12h",
+        "axis": "elapsed",
+        "value": 12
+      },
+      {
+        "stage_id": "elapsed_24h",
+        "axis": "elapsed",
+        "value": 24
+      },
+      {
+        "stage_id": "elapsed_48h",
+        "axis": "elapsed",
+        "value": 48
+      },
+      {
+        "stage_id": "elapsed_72h",
+        "axis": "elapsed",
+        "value": 72
+      },
+      {
+        "stage_id": "progress_10pct",
+        "axis": "progress",
+        "value": 0.1
+      },
+      {
+        "stage_id": "progress_25pct",
+        "axis": "progress",
+        "value": 0.25
+      },
+      {
+        "stage_id": "progress_50pct",
+        "axis": "progress",
+        "value": 0.5
+      },
+      {
+        "stage_id": "progress_75pct",
+        "axis": "progress",
+        "value": 0.75
+      },
+      {
+        "stage_id": "progress_90pct",
+        "axis": "progress",
+        "value": 0.9
+      },
+      {
+        "stage_id": "progress_95pct",
+        "axis": "progress",
+        "value": 0.95
+      },
+      {
+        "stage_id": "remaining_48h",
+        "axis": "remaining",
+        "value": 48
+      },
+      {
+        "stage_id": "remaining_24h",
+        "axis": "remaining",
+        "value": 24
+      },
+      {
+        "stage_id": "remaining_12h",
+        "axis": "remaining",
+        "value": 12
+      },
+      {
+        "stage_id": "remaining_6h",
+        "axis": "remaining",
+        "value": 6
+      },
+      {
+        "stage_id": "remaining_3h",
+        "axis": "remaining",
+        "value": 3
+      },
+      {
+        "stage_id": "remaining_1h",
+        "axis": "remaining",
+        "value": 1
+      },
+      {
+        "stage_id": "remaining_0.5h",
+        "axis": "remaining",
+        "value": 0.5
+      },
+      {
+        "stage_id": "remaining_0.25h",
+        "axis": "remaining",
+        "value": 0.25
+      }
+    ],
+    "minimum_prefix_points": 4,
+    "maximum_observation_age_ms": 3600000,
+    "maximum_issue_lag_ms": 900000,
+    "terminal_window": {
+      "before_end_max_ms": 60000,
+      "after_end_max_ms": 300000,
+      "minimum_curve_points": 5,
+      "verification_owner": "trusted upstream collector; retain raw source hash and observation timestamp"
+    },
+    "primary": "ewma_reference",
+    "secondary": [
+      "legacy_pair",
+      "dlm_fullcov"
+    ],
+    "comparisons_fixed_before_new_test_score": "Three candidates were specified in PI-to-C design messages before independent new scoring; no test-min replacement.",
+    "dlm_parameters": "Use fixed_replay_v2/frozen_dlm_parameters.json complete training35 parameters; update state from released history, never refit Q/R on held-out outcomes.",
+    "data_arrival": "Historical export requires actual released_ms strictly before query start, as well as event end.",
+    "integration_scope": "Append-only submission, release, export and scoring interface. Upstream data acquisition, candidate prediction execution and population completeness require separate verified integration.",
+    "coverage": "Physical(event,rank,cutoff) dedup; all methods same cases; frozen grids and issue lag enforced. Missing planned observations and upstream exclusions must be reported."
+  },
+  "limits": [
+    "Method identifiers are recorded commitments; forecasting is an upstream step.",
+    "Verified outcome capture provenance is supplied by the trusted collector.",
+    "No new activity outcome or prospective accuracy exists at registration."
+  ]
+}

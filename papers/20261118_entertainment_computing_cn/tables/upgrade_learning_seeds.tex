@@ -1,0 +1,69 @@
+\begingroup\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{longtable}{r l l l r r}
+\caption{新拟合学习曲线全部56个评分单元}\label{tab:learningseeds}\\
+\toprule
+训练期数 & 家族 & 结构 & 种子/集成 & MAPE / \% & P90 / \% \\
+\midrule\endfirsthead
+\toprule
+训练期数 & 家族 & 结构 & 种子/集成 & MAPE / \% & P90 / \% \\
+\midrule\endhead
+16 & catboost & shared & 42 & 11.227 & 26.375 \\
+16 & catboost & independent & 42 & 9.838 & 23.141 \\
+16 & neural & shared & 42 & 13.099 & 29.416 \\
+16 & neural & shared & 123 & 13.545 & 30.137 \\
+16 & neural & shared & 2026 & 14.542 & 31.628 \\
+16 & neural & shared & mean & 13.128 & 29.590 \\
+16 & neural & rank\_heads & 42 & 14.239 & 31.371 \\
+16 & neural & rank\_heads & 123 & 14.830 & 31.936 \\
+16 & neural & rank\_heads & 2026 & 15.872 & 32.884 \\
+16 & neural & rank\_heads & mean & 13.275 & 29.893 \\
+16 & neural & independent & 42 & 12.486 & 28.181 \\
+16 & neural & independent & 123 & 13.141 & 28.446 \\
+16 & neural & independent & 2026 & 14.145 & 32.337 \\
+16 & neural & independent & mean & 12.749 & 28.842 \\
+32 & catboost & shared & 42 & 8.765 & 21.060 \\
+32 & catboost & independent & 42 & 8.093 & 19.528 \\
+32 & neural & shared & 42 & 12.208 & 27.145 \\
+32 & neural & shared & 123 & 11.794 & 24.650 \\
+32 & neural & shared & 2026 & 13.302 & 28.270 \\
+32 & neural & shared & mean & 12.010 & 26.569 \\
+32 & neural & rank\_heads & 42 & 12.438 & 27.471 \\
+32 & neural & rank\_heads & 123 & 10.794 & 24.491 \\
+32 & neural & rank\_heads & 2026 & 12.020 & 26.711 \\
+32 & neural & rank\_heads & mean & 11.155 & 24.901 \\
+32 & neural & independent & 42 & 9.912 & 23.043 \\
+32 & neural & independent & 123 & 10.346 & 23.616 \\
+32 & neural & independent & 2026 & 11.407 & 25.249 \\
+32 & neural & independent & mean & 10.196 & 23.515 \\
+48 & catboost & shared & 42 & 8.429 & 21.129 \\
+48 & catboost & independent & 42 & 7.979 & 19.681 \\
+48 & neural & shared & 42 & 11.731 & 26.955 \\
+48 & neural & shared & 123 & 11.554 & 24.686 \\
+48 & neural & shared & 2026 & 13.267 & 28.109 \\
+48 & neural & shared & mean & 11.811 & 26.174 \\
+48 & neural & rank\_heads & 42 & 12.229 & 26.992 \\
+48 & neural & rank\_heads & 123 & 10.776 & 25.102 \\
+48 & neural & rank\_heads & 2026 & 11.789 & 26.683 \\
+48 & neural & rank\_heads & mean & 10.991 & 25.609 \\
+48 & neural & independent & 42 & 9.998 & 23.902 \\
+48 & neural & independent & 123 & 10.350 & 24.069 \\
+48 & neural & independent & 2026 & 11.168 & 24.806 \\
+48 & neural & independent & mean & 10.203 & 23.563 \\
+67 & catboost & shared & 42 & 6.912 & 16.563 \\
+67 & catboost & independent & 42 & 6.312 & 15.613 \\
+67 & neural & shared & 42 & 11.004 & 24.449 \\
+67 & neural & shared & 123 & 10.359 & 21.352 \\
+67 & neural & shared & 2026 & 12.600 & 27.363 \\
+67 & neural & shared & mean & 10.949 & 23.753 \\
+67 & neural & rank\_heads & 42 & 11.945 & 24.398 \\
+67 & neural & rank\_heads & 123 & 9.683 & 21.354 \\
+67 & neural & rank\_heads & 2026 & 11.370 & 25.710 \\
+67 & neural & rank\_heads & mean & 10.198 & 22.286 \\
+67 & neural & independent & 42 & 8.739 & 20.133 \\
+67 & neural & independent & 123 & 9.646 & 21.949 \\
+67 & neural & independent & 2026 & 10.816 & 24.150 \\
+67 & neural & independent & mean & 9.314 & 20.987 \\
+\bottomrule
+\end{longtable}
+\noindent mean指三个种子的最终解码分数均值，区别于三个误差的平均。全部行共用14期488案例。\par
+\endgroup

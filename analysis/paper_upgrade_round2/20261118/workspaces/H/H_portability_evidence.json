@@ -1,0 +1,32 @@
+{
+  "B_guarded_full35": {
+    "rows": 161504,
+    "same_candidate_case_keys": true,
+    "prediction_max_abs": 0.0,
+    "predict_calls": 420,
+    "selected": "independent_fixed_recipe",
+    "guard_sha256": "07e51926e20a751a8fe1c2b04c2865a201fd7605d46093600e4651ab0c26a330",
+    "frozen_backend_sha256": "ac9b7aaf4ab817142d46bed9186f0b8c6295265aaf74a99833b1fab6395251ee",
+    "source": "analysis/paper_upgrade_round2/20261118/workspaces/H/portability_1795016581248645000"
+  },
+  "guard_alias_rejected": true,
+  "guard_frozen_input_accepted": true,
+  "outside_process_elapsed_total_seconds": 24.501975624007173,
+  "attempts": [
+    {
+      "directory": "analysis/paper_upgrade_round2/20261118/workspaces/H/portability_1795016581248645000",
+      "returncode": 1,
+      "elapsed_seconds": 18.02780237502884
+    },
+    {
+      "directory": "analysis/paper_upgrade_round2/20261118/workspaces/H/portability_1795016631054123000",
+      "returncode": 1,
+      "elapsed_seconds": 2.630228290974628
+    },
+    {
+      "directory": "analysis/paper_upgrade_round2/20261118/workspaces/H/portability_1795016658175606000",
+      "returncode": 0,
+      "elapsed_seconds": 3.8439449580037035
+    }
+  ]
+}

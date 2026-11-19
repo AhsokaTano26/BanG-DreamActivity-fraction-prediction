@@ -1,0 +1,236 @@
+{
+  "version": "B-adaptive-sharing-2",
+  "frozen_date": "2026-11-18",
+  "status": "frozen-before-numerical-replay",
+  "min_start_ms": 1706504400000,
+  "phase_edges": [
+    0.25,
+    0.9
+  ],
+  "ranks": [
+    10,
+    20,
+    30,
+    40,
+    50,
+    100,
+    200,
+    300,
+    400,
+    500,
+    1000,
+    1500,
+    2000,
+    3000,
+    4000,
+    5000,
+    10000,
+    20000,
+    30000
+  ],
+  "pair": [
+    1000,
+    2000
+  ],
+  "adjacent_groups": [
+    [
+      10,
+      20
+    ],
+    [
+      30,
+      40
+    ],
+    [
+      50,
+      100
+    ],
+    [
+      200,
+      300
+    ],
+    [
+      400,
+      500
+    ],
+    [
+      1000,
+      1500
+    ],
+    [
+      2000,
+      3000
+    ],
+    [
+      4000,
+      5000
+    ],
+    [
+      10000,
+      20000
+    ],
+    [
+      30000
+    ]
+  ],
+  "experts": {
+    "alpha": 0.3,
+    "shrinkage": 10.0,
+    "bias_clip": [
+      -0.3,
+      0.3
+    ],
+    "pool": "complete group events, equal rank weights then EWMA",
+    "initial": "first mean; zero if no history",
+    "error": "log(base/actual)",
+    "external_reference": "expert__independent descriptive only"
+  },
+  "risk": {
+    "lambda0": 0.0,
+    "min_events": 5,
+    "min_A": 1e-08,
+    "unit": "one event/rank/phase mean of issued expert squared-loss coefficients",
+    "formula": "clip((C + k*A/n_eff*lambda0)/(A + k*A/n_eff),0,1)",
+    "uncertainty": "delete-one-event min/max; sensitivity only"
+  },
+  "gate": {
+    "window": 12,
+    "min_pairs": 8,
+    "min_rho": 0.15,
+    "max_gap_ratio": 0.5,
+    "max_drift_ratio": 0.75,
+    "epsilon": 1e-08,
+    "constant_correlation": 0.0
+  },
+  "candidates": [
+    {
+      "name": "independent_fixed_recipe",
+      "kind": "fixed",
+      "lambda": 0.0,
+      "pool": "pair"
+    },
+    {
+      "name": "fixed_quarter",
+      "kind": "fixed",
+      "lambda": 0.25,
+      "pool": "pair"
+    },
+    {
+      "name": "fixed_half",
+      "kind": "fixed",
+      "lambda": 0.5,
+      "pool": "pair"
+    },
+    {
+      "name": "fully_shared_pair",
+      "kind": "fixed",
+      "lambda": 1.0,
+      "pool": "pair"
+    },
+    {
+      "name": "risk_k4",
+      "kind": "risk",
+      "k": 4.0,
+      "decay": 1.0,
+      "pool": "pair"
+    },
+    {
+      "name": "risk_k12",
+      "kind": "risk",
+      "k": 12.0,
+      "decay": 1.0,
+      "pool": "pair"
+    },
+    {
+      "name": "risk_recent_k8",
+      "kind": "risk",
+      "k": 8.0,
+      "decay": 0.85,
+      "pool": "pair"
+    },
+    {
+      "name": "risk_gated_k8",
+      "kind": "gated",
+      "k": 8.0,
+      "decay": 0.85,
+      "pool": "pair"
+    },
+    {
+      "name": "same_panel_independent",
+      "kind": "same_panel",
+      "pool": "pair"
+    },
+    {
+      "name": "risk_only_T1000",
+      "kind": "risk",
+      "k": 8.0,
+      "decay": 0.85,
+      "pool": "pair",
+      "apply_ranks": [
+        1000
+      ]
+    },
+    {
+      "name": "risk_only_T2000",
+      "kind": "risk",
+      "k": 8.0,
+      "decay": 0.85,
+      "pool": "pair",
+      "apply_ranks": [
+        2000
+      ]
+    },
+    {
+      "name": "adjacent_risk_k8",
+      "kind": "risk",
+      "k": 8.0,
+      "decay": 0.85,
+      "pool": "adjacent"
+    }
+  ],
+  "schedule": {
+    "warmup": 15,
+    "selection": 10,
+    "diagnostic": 10,
+    "sort": [
+      "start_ms",
+      "event"
+    ],
+    "release": "end_ms < query.start_ms",
+    "selection_freeze": "before query 26, require all selection events released",
+    "selection_metric": "T1000/T2000 main panel: mean APE over all unique cases within each event, then equal event mean",
+    "tie_break": "candidate JSON order",
+    "adaptation_diagnostic": "past-only updates of selected fixed rule",
+    "sensitivity_metrics": [
+      "19-rank event-macro case-weighted MAPE",
+      "19-rank event-internal rank-equal MAPE",
+      "two-rank event-internal rank-equal MAPE"
+    ]
+  },
+  "budgets": {
+    "base_fits": 0,
+    "candidate_count": 12,
+    "predict_calls": 420,
+    "cpu_threads": 1,
+    "nice": 19,
+    "wall_seconds": 180,
+    "formal_run_requires_PI_permission": true
+  },
+  "input_files": {
+    "train_residuals.csv.gz": "59a6d8398110b71d0d67fe9dde7a7c3a49eddea1df9ee2c13390621d6b661d98",
+    "train_queries.json": "319ca4dbf9a48a853b8181f2f0376d760b50d766137c503b3c24a776dee05277"
+  },
+  "limitations": [
+    "35 existing training-query events only; first 15 warmup, next 10 selection, last 10 retrospective temporal diagnosis",
+    "old test explored; validation reused; neither read or used here",
+    "metadata retrospective snapshot without historical archives",
+    "log-square risk theorem does not imply MAPE improvement",
+    "no bounded-loss regret or universal dominance claim",
+    "all negative candidates retained"
+  ],
+  "supersedes": {
+    "file": "preregistration.json",
+    "sha256": "2a6151b4cbfd73bebc1a5b18effbd0a821b99b92e4b84d878827b1d47514a57c",
+    "reason": "PI pre-result amendment for consistency with existing event-macro case-weighted primary protocol; no numerical replay performed"
+  }
+}

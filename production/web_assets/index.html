@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>活动终分预测</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/bangdream-icon.png">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/components.js" defer></script>
+  <script src="/app.js" defer></script>
+</head>
+<body>
+<main class="app-shell">
+  <header class="app-header"><div class="app-brand"><img src="/bangdream-icon.png" class="app-icon" width="36" height="36" alt="BanG Dream!"><h1>活动终分预测</h1></div><div class="update-cadence"><span class="status-dot" aria-hidden="true"></span><span id="cadence">每15分钟取数</span></div></header>
+  <div class="dashboard-grid">
+    <aside class="overview" aria-label="活动与预测摘要">
+      <section class="panel event-section" aria-label="当前活动信息">
+        <div class="field event-picker"><label for="event-select">活动</label><select id="event-select" aria-label="选择活动" disabled><option disabled>正在读取活动……</option></select></div>
+        <article class="event-card">
+          <div class="event-art" hidden><img id="event-banner" alt="" hidden></div>
+          <p id="event-id" class="event-id" hidden></p>
+          <h2 id="event-name">等待活动信息</h2>
+          <p id="event-type" class="event-type"></p>
+          <div class="event-dates"><p id="event-cn-start"></p><p id="event-cn-end"></p><p id="event-jp-start" class="muted" hidden></p></div>
+        </article>
+      </section>
+      <section class="panel forecast-panel" aria-label="当前排名预测">
+        <div class="panel-heading"><h2>分数线预测</h2><button id="refresh" class="ui-button ui-button-secondary" type="button"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M16 6a7 7 0 1 0 1 6M16 2v4h-4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>刷新页面</span></button></div>
+        <div class="field rank-picker"><label for="rank-select">分数线</label><select id="rank-select" disabled><option value="1000">T1000</option></select></div>
+        <div class="status-line"><span>活动状态</span><div><strong id="event-progress">—</strong><span id="event-remaining">等待活动时间</span></div></div>
+        <section class="scores" aria-label="预测分数">
+          <div><h3 id="observation-label">当前分数</h3><p id="current-score" class="score">—</p><p id="observed-time" class="detail">等待观测数据</p></div>
+          <div><h3 id="forecast-label">预测终分</h3><p id="predicted-score" class="score accent">—</p><p id="prediction-detail" class="detail">等待预测数据</p></div>
+        </section>
+        <p id="notice" class="ui-notice" role="status" hidden></p>
+        <p id="worker-state" class="update-status" role="status"></p>
+      </section>
+    </aside>
+    <div class="analysis-column">
+      <section class="panel history" aria-labelledby="history-title">
+        <div class="panel-heading"><h2 id="history-title">本期预测记录</h2></div>
+        <div class="view-switch-region" data-view-state="idle">
+        <h3 id="chart-title">等待活动信息</h3>
+        <div class="chart">
+          <svg id="history-chart" viewBox="0 0 1000 250" role="img" tabindex="0" aria-describedby="history-detail chart-tooltip" aria-label="当前分数与终分预测图。可悬停或点选读数，也可用左右方向键、Home及End移动，Escape关闭读数。"></svg>
+          <p id="chart-empty">有记录后显示曲线</p>
+          <div id="chart-tooltip" class="chart-tooltip" role="tooltip" hidden>
+            <time></time>
+            <div class="chart-tooltip-row"><span><i class="tooltip-observed" aria-hidden="true"></i>当前分数线</span><strong data-current>—</strong></div>
+            <div class="chart-tooltip-row"><span><i class="tooltip-predicted" aria-hidden="true"></i>预测终分</span><strong data-predicted>—</strong></div>
+            <p id="chart-tooltip-note"></p>
+          </div>
+        </div>
+        <div class="legend"><span class="observed-key">当前分数线</span><span class="predicted-key">预测终分</span></div>
+        <p id="history-detail" class="detail">显示实际发出的预测，横轴覆盖活动开始至结束。</p>
+        </div>
+      </section>
+    </div>
+      <section class="panel ranking" aria-labelledby="ranking-title">
+        <div class="panel-heading"><h2 id="ranking-title">全部分数线</h2><span id="rank-count" class="detail"></span></div>
+        <div class="table-wrap" role="region" aria-label="全部分数线预测表" tabindex="0"><table><thead><tr><th>分数线</th><th id="table-observation-label">当前分数</th><th id="table-forecast-label">预测终分</th></tr></thead><tbody id="rank-rows"><tr><td colspan="3">正在读取预测数据……</td></tr></tbody></table></div>
+      </section>
+  </div>
+  <footer><span id="as-of">等待更新</span></footer>
+</main>
+</body>
+</html>

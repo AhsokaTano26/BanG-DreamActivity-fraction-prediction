@@ -1,0 +1,8 @@
+# Frozen datasets and experiment receipts depend on exact file bytes.
+* -text
+
+# Large datasets and persisted models are stored with Git LFS.
+*.sqlite3 filter=lfs diff=lfs merge=lfs -text
+*.joblib filter=lfs diff=lfs merge=lfs -text
+*.pt filter=lfs diff=lfs merge=lfs -text
+*.gz filter=lfs diff=lfs merge=lfs -text

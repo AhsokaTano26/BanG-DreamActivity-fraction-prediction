@@ -1,0 +1,26 @@
+\begin{table}[!htbp]
+\centering\small
+\caption{数据快照与分析范围}\label{tab:cohort}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\linewidth}{l L}
+\toprule
+项目 & 数值或范围 \\
+\midrule
+数据采集区域 & 国服；服务器索引3 \\
+活动实际开始日期 & 2024年1月29日至2026年11月5日 \\
+最后活动结束时间 & 2026年11月11日22:59:59（UTC+8） \\
+已结束活动／排名线 & \NumEvents{}／19 \\
+存储曲线／合格曲线 & \NumSourceCurves{}／\NumValidCurves{} \\
+存储观测／合格曲线内观测 & \NumPoints{}／\NumValidPoints{} \\
+终点窗口未覆盖曲线 & \NumExcluded{} \\
+活动类型／单乐队类别／混合乐队活动 & 6／8／28 \\
+观测到的加成角色／角色与活动成员关系 & 40／\NumCharacterMemberships{} \\
+18线共同终分／共同半程增长活动 & \NumCoreEvents{}／\NumCorrelationEvents{} \\
+\bottomrule
+\end{tabularx}
+\par\vspace{4pt}
+\begin{minipage}{\linewidth}\footnotesize\setstretch{1.05}
+注：快照于2026年11月18日从线上运行库只读提取。观测数为库中已归一化的榜线记录；每条曲线对应一个活动与一个排名。
+\end{minipage}
+\end{table}

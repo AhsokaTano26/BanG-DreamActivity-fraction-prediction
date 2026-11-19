@@ -1,0 +1,18 @@
+\begin{table}[!htbp]\centering
+\caption{训练期多终点：总参数匹配与近似前向计算匹配}\label{tab:round2fairness}
+\small\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\linewidth}{r L r r r r}\toprule
+终点 & 历史组 & 总参数 & 独立60轮 & 共享60轮 & 共享30轮 \\
+\midrule
+32 & N32full & 1890 & 7.651 & 8.415 & 7.780 \\
+32 & N16span & 1858 & 7.301 & 8.146 & 8.706 \\
+32 & N16recent & 1890 & 7.225 & 8.043 & 8.199 \\
+44 & N32full & 1890 & 6.673 & 7.083 & 8.127 \\
+44 & N16span & 1858 & 9.689 & 9.849 & 9.740 \\
+44 & N16recent & 1890 & 7.505 & 7.243 & 8.426 \\
+56 & N32full & 1890 & 11.834 & 11.510 & 15.238 \\
+56 & N16span & 1890 & 12.180 & 12.676 & 15.382 \\
+56 & N16recent & 1858 & 12.099 & 11.002 & 13.094 \\
+\bottomrule\end{tabularx}
+\par\vspace{3pt}\begin{minipage}{\linewidth}\footnotesize 单位为三种子最终分数均值集成的MAPE（\%）；每终点4活动，合计12个查询活动、442个唯一案例。同单元总参数均为32d+66。\end{minipage}
+\end{table}

@@ -1,0 +1,21 @@
+\begin{table}[!htbp]\centering
+\caption{既有V2两线静态实验的描述性汇总}\label{tab:historicalstatic}
+\small\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\linewidth}{L r r r}\toprule
+方法 & 训练 / \% & 验证 / \% & 测试 / \% \\
+\midrule
+排名共享CatBoost & 3.611 & 6.430 & 12.755 \\
+检索残差模型 & 3.602 & 5.355 & 23.141 \\
+双时钟增长网络 & 5.196 & 9.299 & 12.577 \\
+进度增长网络 & 5.402 & 9.605 & 12.398 \\
+后续模型组合 & 2.277 & 4.658 & 14.062 \\
+TabPFNv2上下文增强 & 0.931 & 5.979 & 12.747 \\
+TabPFNv2基础配方 & 2.246 & 6.598 & 13.074 \\
+多时距进度辅助监督 & 5.587 & 9.262 & 12.129 \\
+Chronos-2（零样本） & — & 33.842 & 31.131 \\
+TimesFM2.5（零样本） & — & 38.057 & 35.125 \\
+双线TCN三种子均值 & 3.000 & 5.560 & 14.392 \\
+阶段路由组合 & 2.203 & 4.852 & 13.259 \\
+\bottomrule\end{tabularx}
+\par\vspace{4pt}\begin{minipage}{\linewidth}\footnotesize 训练列依方法包含训练拟合或上下文重代入；零样本方法留空。输入、权重版本和预算随历史配方变化。该表与V3回放具有不同信息条件。\end{minipage}
+\end{table}

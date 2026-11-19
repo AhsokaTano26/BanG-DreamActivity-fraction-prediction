@@ -1,0 +1,54 @@
+{
+  "selected_candidate": "independent",
+  "selection_events": [
+    3
+  ],
+  "selection_metric": "two-rank event-macro MAPE: unique-case mean within event, then equal events",
+  "scores": [
+    {
+      "candidate": "independent",
+      "events": 1,
+      "cases": 6,
+      "event_macro_mape": 5.569542089305799,
+      "rank_equal_event_macro_mape": 5.569542089305799,
+      "case_mape": 5.569542089305799,
+      "mae": 87.73168884713266,
+      "rmse": 87.84335549299135,
+      "p90_ape": 5.724520992426486,
+      "event_macro_log_squared": 0.003098777777777786
+    },
+    {
+      "candidate": "shared",
+      "events": 1,
+      "cases": 6,
+      "event_macro_mape": 6.003600648055548,
+      "rank_equal_event_macro_mape": 6.0036006480555475,
+      "case_mape": 6.003600648055547,
+      "mae": 94.55671020687487,
+      "rmse": 94.67070222013842,
+      "p90_ape": 6.183654654535966,
+      "event_macro_log_squared": 0.003600000000000003
+    }
+  ],
+  "tie_break": "frozen candidate order",
+  "freeze_start_ms": 1706504430000,
+  "issued_events_before_seal": 3,
+  "configuration_sha256": "a8d364d2fa354410ebf6898260ed0d11b76f9df8ce1146a6e5029e5b09f4c026",
+  "latest_feedback_end_ms": 1706504428000,
+  "source_fingerprints": {
+    "B_design.md": "2ce494f22bfe5b8f3aa8ac0dc7162cd41fa2291ee02290fdb726bace68e1185f",
+    "B_design_v2.md": "472cc23c9bb2705769766abba4e77ed88eec49b948ed14ecaa8595b8757d5f2f",
+    "B_plan.md": "401130324c5697d949f8e08d73aea1a60bba31ffb37b9202317a86e673fc5bfd",
+    "B_prior_art.md": "72f9d60d11f4aeab3908ca680eb0acaac291cc4abb228097fa7792ae72be5b5a",
+    "B_report.md": "34ba4802cf712acd5a7e2c930ac429454670ca9ef707d2c3c659adc5b71e12bf",
+    "adaptive_sharing.py": "ac9b7aaf4ab817142d46bed9186f0b8c6295265aaf74a99833b1fab6395251ee",
+    "delivery_manifest.json": "e73f79dde9365598227ecef35f68e211a8f4a592ca195431d491006f8ce937f0",
+    "implementation_manifest.json": "a36087745c64de7d03789d6c704bf48fb098df87bad13ce6772221ad77f8c45f",
+    "preregistration.json": "2a6151b4cbfd73bebc1a5b18effbd0a821b99b92e4b84d878827b1d47514a57c",
+    "preregistration_v2.json": "8296c385e76e61147eda45b84ac2ccc017047e2c7c3119dadd74c6bfb8e2db93",
+    "replay.py": "9fc809a5790eb3a1bb144bdb056d15ad7fde20003b68b92ae2a8d0e0c8ed5ac6",
+    "test_adaptive_sharing.py": "ff74d13d33f3805614d2c5327b4d25002d1f6076928c6c048e96c56cded5f483",
+    "test_replay.py": "5aae28995196ec40aad46ab26e2b618572b255e7b63431ee683555c96f400e0e"
+  },
+  "input_metadata": {}
+}

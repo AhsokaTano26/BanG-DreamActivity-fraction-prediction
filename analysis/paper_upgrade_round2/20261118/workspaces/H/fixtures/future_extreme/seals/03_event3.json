@@ -1,0 +1,14 @@
+{
+  "event": 3,
+  "query_start_ms": 1706504420000,
+  "issued_before_feedback": true,
+  "prediction_sha256": "2adf315c1a7e9cfd2222965a70e7d4ba41be64059a32b127295da53185d043e4",
+  "experts_sha256": "f9ddeb7669e55d630406860fdf9d99e12bf74285e2dbb9f25322b2113ba78729",
+  "history_events": [
+    1,
+    2
+  ],
+  "history_cases": 12,
+  "latest_history_end_ms": 1706504418000,
+  "selected_candidate": null
+}

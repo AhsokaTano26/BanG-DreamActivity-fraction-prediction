@@ -1,0 +1,154 @@
+[
+  {
+    "key": "gama2014drift",
+    "type": "article",
+    "primary_url": "https://doi.org/10.1145/2523813",
+    "doi": "10.1145/2523813",
+    "verified_date": "2026-11-18",
+    "verification": "Publisher proceedings/journal, original preprint, or official data website; bibliographic metadata checked by web retrieval."
+  },
+  {
+    "key": "tashman2000evaluation",
+    "type": "article",
+    "primary_url": "https://doi.org/10.1016/S0169-2070(00)00065-0",
+    "doi": "10.1016/S0169-2070(00)00065-0",
+    "verified_date": "2026-11-18",
+    "verification": "Publisher proceedings/journal, original preprint, or official data website; bibliographic metadata checked by web retrieval."
+  },
+  {
+    "key": "cerqueira2020evaluation",
+    "type": "article",
+    "primary_url": "https://doi.org/10.1007/s10994-020-05910-7",
+    "doi": "10.1007/s10994-020-05910-7",
+    "verified_date": "2026-11-18",
+    "verification": "Publisher proceedings/journal, original preprint, or official data website; bibliographic metadata checked by web retrieval."
+  },
+  {
+    "key": "prokhorenkova2018catboost",
+    "type": "inproceedings",
+    "primary_url": "https://proceedings.neurips.cc/paper_files/paper/2018/hash/14491b756b3a51daac41c24863285549-Abstract.html",
+    "doi": null,
+    "verified_date": "2026-11-18",
+    "verification": "Publisher proceedings/journal, original preprint, or official data website; bibliographic metadata checked by web retrieval."
+  },
+  {
+    "key": "chen2016xgboost",
+    "type": "inproceedings",
+    "primary_url": "https://doi.org/10.1145/2939672.2939785",
+    "doi": "10.1145/2939672.2939785",
+    "verified_date": "2026-11-18",
+    "verification": "Publisher proceedings/journal, original preprint, or official data website; bibliographic metadata checked by web retrieval."
+  },
+  {
+    "key": "hochreiter1997lstm",
+    "type": "article",
+    "primary_url": "https://doi.org/10.1162/neco.1997.9.8.1735",
+    "doi": "10.1162/neco.1997.9.8.1735",
+    "verified_date": "2026-11-18",
+    "verification": "Publisher proceedings/journal, original preprint, or official data website; bibliographic metadata checked by web retrieval."
+  },
+  {
+    "key": "bai2018tcn",
+    "type": "article",
+    "primary_url": "https://arxiv.org/abs/1803.01271",
+    "doi": null,
+    "verified_date": "2026-11-18",
+    "verification": "Publisher proceedings/journal, original preprint, or official data website; bibliographic metadata checked by web retrieval."
+  },
+  {
+    "key": "nie2023patchtst",
+    "type": "inproceedings",
+    "primary_url": "https://arxiv.org/abs/2211.14730",
+    "doi": null,
+    "verified_date": "2026-11-18",
+    "verification": "Publisher proceedings/journal, original preprint, or official data website; bibliographic metadata checked by web retrieval."
+  },
+  {
+    "key": "hollmann2025tabpfn",
+    "type": "article",
+    "primary_url": "https://doi.org/10.1038/s41586-024-08328-6",
+    "doi": "10.1038/s41586-024-08328-6",
+    "verified_date": "2026-11-18",
+    "verification": "Publisher proceedings/journal, original preprint, or official data website; bibliographic metadata checked by web retrieval."
+  },
+  {
+    "key": "das2024timesfm",
+    "type": "inproceedings",
+    "primary_url": "https://proceedings.mlr.press/v235/das24c.html",
+    "doi": null,
+    "verified_date": "2026-11-18",
+    "verification": "Publisher proceedings/journal, original preprint, or official data website; bibliographic metadata checked by web retrieval."
+  },
+  {
+    "key": "ansari2025chronos2",
+    "type": "article",
+    "primary_url": "https://arxiv.org/abs/2510.15821",
+    "doi": null,
+    "verified_date": "2026-11-18",
+    "verification": "Publisher proceedings/journal, original preprint, or official data website; bibliographic metadata checked by web retrieval."
+  },
+  {
+    "key": "grinsztajn2022tabular",
+    "type": "inproceedings",
+    "primary_url": "https://papers.nips.cc/paper_files/paper/2022/hash/0378c7692da36807bdec87ab043cdadc-Abstract.html",
+    "doi": null,
+    "verified_date": "2026-11-18",
+    "verification": "Publisher proceedings/journal, original preprint, or official data website; bibliographic metadata checked by web retrieval."
+  },
+  {
+    "key": "hyndman2006metrics",
+    "type": "article",
+    "primary_url": "https://doi.org/10.1016/j.ijforecast.2006.03.001",
+    "doi": "10.1016/j.ijforecast.2006.03.001",
+    "verified_date": "2026-11-18",
+    "verification": "Publisher proceedings/journal, original preprint, or official data website; bibliographic metadata checked by web retrieval."
+  },
+  {
+    "key": "demyttenaere2016mape",
+    "type": "article",
+    "primary_url": "https://doi.org/10.1016/j.neucom.2015.12.114",
+    "doi": "10.1016/j.neucom.2015.12.114",
+    "verified_date": "2026-11-18",
+    "verification": "Publisher proceedings/journal, original preprint, or official data website; bibliographic metadata checked by web retrieval."
+  },
+  {
+    "key": "roberts1959ewma",
+    "type": "article",
+    "primary_url": "https://doi.org/10.1080/00401706.1959.10489860",
+    "doi": "10.1080/00401706.1959.10489860",
+    "verified_date": "2026-11-18",
+    "verification": "Publisher proceedings/journal, original preprint, or official data website; bibliographic metadata checked by web retrieval."
+  },
+  {
+    "key": "kunsch1989bootstrap",
+    "type": "article",
+    "primary_url": "https://doi.org/10.1214/aos/1176347265",
+    "doi": "10.1214/aos/1176347265",
+    "verified_date": "2026-11-18",
+    "verification": "Publisher proceedings/journal, original preprint, or official data website; bibliographic metadata checked by web retrieval."
+  },
+  {
+    "key": "benjamini2001by",
+    "type": "article",
+    "primary_url": "https://doi.org/10.1214/aos/1013699998",
+    "doi": "10.1214/aos/1013699998",
+    "verified_date": "2026-11-18",
+    "verification": "Publisher proceedings/journal, original preprint, or official data website; bibliographic metadata checked by web retrieval."
+  },
+  {
+    "key": "cawley2010selection",
+    "type": "article",
+    "primary_url": "https://www.jmlr.org/papers/v11/cawley10a.html",
+    "doi": null,
+    "verified_date": "2026-11-18",
+    "verification": "Publisher proceedings/journal, original preprint, or official data website; bibliographic metadata checked by web retrieval."
+  },
+  {
+    "key": "bestdori2026data",
+    "type": "misc",
+    "primary_url": "https://bestdori.com/info/events",
+    "doi": null,
+    "verified_date": "2026-11-18",
+    "verification": "Publisher proceedings/journal, original preprint, or official data website; bibliographic metadata checked by web retrieval."
+  }
+]

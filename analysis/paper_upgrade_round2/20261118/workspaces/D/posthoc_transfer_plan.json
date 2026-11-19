@@ -1,0 +1,17 @@
+{
+  "version": "D-posthoc-transfer-1",
+  "created": "2026-11-18",
+  "status": "PI-requested exploratory extension after seeing all 24 simulation regimes and real descriptive diagnostics",
+  "evidence_identity": "Retrospective existing train cohort, not independent confirmation; no new model selection",
+  "calibration_seal": "calibration_run_v2_001/calibration_seal.json",
+  "calibration_seal_sha256": "cc8746bf12f9853265e5b7e5fecb97fdfa31c3f0b2ac10aedb90849e1b549ce6",
+  "configuration": "profile-best Q/R and calibration mu held fixed; prior P=.1I; phase1 only",
+  "schedule": "last10 query events in existing actual-time order; end_ms<query.start_ms labels only, same event pool across cases; state updates use released outcomes, covariance parameters remain fixed",
+  "experts": "I/S/risk_recent_k8 results reused from sealed v2 identical phase1 cases; full covariance DLM issued to detached blind current",
+  "case_policy": "all physical phase1 T1000/T2000 cases; no error filtering; full historical pair count and gap reported",
+  "metrics": ["event-macro case-MAPE", "event-macro observed log-square loss", "per-event paired deltas versus I/S/risk"],
+  "scope": "one fixed DLM transfer check; no tuning, no new heteroskedastic R grid, no validation/test access",
+  "budget": {"cpu_seconds": 2, "threads": 1, "nice": 19, "run_after": "PI confirms E phase2 has released CPU"},
+  "negative_results": "retain and report regardless of direction",
+  "original_v2_seal": "unchanged"
+}

@@ -1,0 +1,25 @@
+{
+  "scope": "Final-stage auditor probe failures and corrections retained transparently",
+  "entries": [
+    {
+      "kind": "binding_schema_probe",
+      "description": "First checker assumed every legacy selector was globally unique and every archived binding appeared in native text;47 entries failed these assumptions. Explicit test parent context, paired-source mean with1e-12 direction tolerance and retained-unshown legacy entries resolved the checker. Initial snapshot retained in H_final_binding_audit_initial.json."
+    },
+    {
+      "kind": "SVG_marker_probe",
+      "description": "Initial scatter-count probe counted only use nodes;24 triangle markers are individual native path nodes. Corrected to count clipped data markers and exclude legend copies. Initial evidence retained in H_final_figure_evidence_initial.json."
+    },
+    {
+      "kind": "optional_helper_unavailable",
+      "description": "All18 external figure-qa SVG helper probes returned exit2 because project .venv lacks lxml. stderr retained under H_final_svg_programmatic; no clean geometry claim derived from these errors. Independent XML/PDF word bounds and actual visual checks were completed."
+    },
+    {
+      "kind": "auditor_artifact_pointer_correction",
+      "description": "The generic H_final_binding_audit.json working output was overwritten by later G/root checks even though stage1 manifest referenced its original bytes. The exact stage1 copy was restored from H_round2_binding_evidence.json; newer checks remain frozen as H_final_binding_after_layout.json and H_final_root_binding_evidence.json. Both prior stage manifests were reverified with zero mismatch."
+    },
+    {
+      "kind": "read_only_path_probe",
+      "description": "A search included a nonexistent root scripts directory and rg reported that absence; actual integration scripts were found under the round2 integration directory. No source or artifact was changed by this probe."
+    }
+  ]
+}

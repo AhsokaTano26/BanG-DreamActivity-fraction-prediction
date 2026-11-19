@@ -1,0 +1,213 @@
+% This source is also embedded in main.tex; compile independently with XeLaTeX/BibTeX.
+\ifdefined\PaperMainDocument
+  \newcommand{\EndSupplementDocument}{}
+\else
+% !TeX program = xelatex
+% Chinese research manuscript using the Elsevier article class.
+\documentclass[preprint,12pt]{elsarticle}
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage[UTF8,fontset=none,scheme=plain]{ctex}
+\usepackage{fontspec}
+\IfFontExistsTF{Times New Roman}{\setmainfont{Times New Roman}}{\setmainfont{texgyretermes-regular.otf}[BoldFont=texgyretermes-bold.otf,ItalicFont=texgyretermes-italic.otf,BoldItalicFont=texgyretermes-bolditalic.otf]}
+\IfFontExistsTF{SimSun}{\setCJKmainfont[AutoFakeBold=2,ItalicFont=SimSun,BoldItalicFont=SimSun]{SimSun}\setCJKmonofont{SimSun}}{\setCJKmainfont[BoldFont=FandolSong-Bold.otf,ItalicFont=FandolSong-Regular.otf,BoldItalicFont=FandolSong-Bold.otf]{FandolSong-Regular.otf}\setCJKmonofont{FandolSong-Regular.otf}}
+\usepackage{amsmath,amssymb,unicode-math}
+\setmathfont{latinmodern-math.otf}
+\usepackage{etoolbox}
+\usepackage{graphicx,booktabs,tabularx,array,caption,setspace,microtype,xurl,placeins,longtable,amsthm}
+\biboptions{numbers,sort&compress}
+\usepackage[hidelinks,unicode]{hyperref}
+\hypersetup{pdftitle={补充材料：音乐游戏活动终分预测},pdfauthor={Tano},pdfsubject={Entertainment Computing 格式中文研究稿}}
+\urlstyle{same}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\captionsetup{font=small,labelfont=bf,justification=justified,singlelinecheck=false}
+\renewcommand{\figurename}{图}
+\renewcommand{\tablename}{表}
+\renewcommand{\refname}{参考文献}
+\abstracttitle{摘要}
+\keywordtitle{\upshape 关键词}
+\setstretch{1.15}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.15em}
+\setlength{\emergencystretch}{3em}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\setlength{\textfloatsep}{12pt plus 2pt minus 2pt}
+\setlength{\intextsep}{12pt plus 2pt minus 2pt}
+\renewcommand{\topfraction}{0.92}
+\renewcommand{\bottomfraction}{0.9}
+\renewcommand{\textfraction}{0.05}
+\renewcommand{\floatpagefraction}{0.8}
+\setcounter{topnumber}{3}
+\setcounter{totalnumber}{4}
+\journal{Entertainment Computing}
+% Show the manuscript page number without implying submission or acceptance.
+\makeatletter
+\patchcmd{\pprintMaketitle}{\vskip36pt}{\vskip12pt}{}{\errmessage{Title spacing patch failed}}
+\def\ps@pprintTitle{\let\@oddhead\@empty\let\@evenhead\@empty
+  \def\@oddfoot{\hfil\thepage\hfil}\let\@evenfoot\@oddfoot}
+\makeatother
+
+\newtheorem{proposition}{命题}
+\renewcommand{\proofname}{证明}
+\newcommand{\upfigure}[4]{\begin{figure}[!htbp]\centering\includegraphics[width=\linewidth,height=0.70\textheight,keepaspectratio]{figures/#1.pdf}\caption{#3}\label{#2}\end{figure}}
+\input{data/upgrade_macros.tex}
+\input{data/round2_macros.tex}
+
+\begin{document}
+\begin{frontmatter}
+\title{补充材料：音乐游戏活动终分预测}
+\author{Tano}
+\end{frontmatter}
+\appendix
+\newcommand{\EndSupplementDocument}{\end{document}}
+\fi
+\section{补充材料：证据来源、完整菜单与审计范围}\label{sec:supplement}
+本材料同时提供正文附录与独立版本，完整保留既有实验并补充训练期诊断。数值表使用原生LaTeX文本。只读绑定器核对封存哈希，并在\path{qa/upgrade_number_bindings.json}与\path{qa/round2_number_bindings.json}记录来源、字段、行条件、单位及舍入。图表的输入、代码与导出指纹由独立manifest记录。主文围绕研究问题解释，完整候选、预算及失败记录在此展开。
+
+\subsection{证据层级与运行索引}
+\begin{table}[!htbp]\centering
+\caption{研究工件与结论范围}\label{tab:evidencelevels}
+\small\begin{tabularx}{\linewidth}{p{3.0cm} L L}\toprule
+工件 & 内容 & 解释范围\\\midrule
+历史329行汇总 & 2026年11月15日首次菜单，14个协议与运行组合 & 同一方法可含种子和集成行，后续新方法另计\\
+\path{fixed_replay_v2} & 65期查询、54种固定规则，19线基础预测逐例对齐 & 已探索测试上的完整机制与敏感性比较\\
+\path{two_rank_learning_curve_v2} & 16/32/48/67期训练，12次树、48次神经拟合，56评分单元 & 同一14期488案例验证，局部自身特征和新基础配方\\
+\path{matched_train_v3} & 34期18线共同支持相关及重采样 & 训练期描述与相关差诊断\\
+\path{synthetic} & 16格、3种子、100序列、4种历史、9方法 & 指定生成模型中的机制与Monte Carlo误差\\
+二轮B/C1 & 35期，15/10/10；12候选及18消融 & 训练期回溯外推，共用已发基础预测\\
+二轮C2 & 3终点、3历史组、3种子；108拟合 & 12期查询全为35期子集，总参数和近似MAC分别控制\\
+二轮D & 前25期校准、24格模拟、末10期事后迁移 & 受限机制诊断，整体运行末封存的迁移身份单列\\
+二轮E & 独立重算、76+76条件、功效模型 & 固定损失与探索面板，0个未来活动\\
+前瞻登记 & 原20期pilot及新80期独立确认计划 & 新计划待激活，未来精度留空\\\bottomrule
+\end{tabularx}\end{table}
+
+固定回放运行标识为\path{dcc493f82e83933d6963e2d39a02e6c624057ad6c0932ad24801efbd252b1f09}；其盲预测根清单SHA-256为\path{6c3a034e9e409c12230cb029f17a3268fec1f051fcce1a1eb34f1ee46390128a}。新拟合学习曲线运行标识为\path{ed9ea52183f47ef4ea566d41d5a52f4ff4661df5385957dae4865a29ae22ba67}，盲预测根清单为\path{45b87d8b9b9123eafde8fea0682b49620d6865e24c9a642032935d17ff1ee195}。评分代码、依赖及输出清单有独立分析标识。根目录保存的v1中断运行和较早学习曲线均独立归档，本文只绑定完成且核验的v2运行。
+
+329行的统计键为\((\text{协议},\text{运行},\text{方法/种子/集成})\)，对应\path{data/supplement_all_329_results.csv}。其中14个协议与运行组合的计数沿用首次菜单；它描述该次归档范围。\path{data/supplement_historical_selections.csv}保留原选中方法和轮次，正文既有神经结果来自\path{data/main_models.csv}。本轮固定菜单的选择身份为\texttt{ewma\_reference}，后续评分没有新增测试最小值选择器。
+
+\subsection{冻结数据指纹与案例成员关系}
+\input{tables/upgrade_dataset_ids.tex}
+所有数据归属按实际国服开始时间确定，阈值为\(1706504400000\)毫秒。基础字典与建模活动分别处理，卡牌按国服发布时间过滤。数据manifest、partitions、excluded和unavailable文件保留质量排除及缺失，模型使用统一案例。多时间轴成员关系仅连接到分面明细，总体损失始终对物理案例去重。
+
+T1500无训练及验证曲线，测试14期242前缀；T10的测试为13期248前缀。T1000测试16期281前缀，T2000为16期279前缀，原两线合计560；19线总体为5220。不同排名覆盖及每期前缀数造成活动内排名权重差别，\texttt{event\_rank\_balanced\_mape\_pct}另将活动内每条可见排名等权。该敏感性字段与正文活动内案例等权口径分别保存。
+
+\section{固定方法、初始化与反馈敏感性}
+\subsection{54种方法的完整成绩}
+\input{tables/upgrade_full_menu.tex}
+\texttt{time\_proportion}使用当前分数除实际进度作为预测；\texttt{history\_growth}对同线合法历史，以进度高斯权重（带宽0.15）先计算每活动的对数剩余增长均值，再对活动等权平均；无同线历史时回退时间比例。两者均执行共同外部分数边界。它们提供简单增长控制，基础预测来源有别于残差校正方法。均值、5期或10期窗口与快EWMA分别改变记忆方式；其余基础树预测保持固定。
+
+仅锚点消融对T1000和T2000都扣除\(A\)；仅差异消融对T1000扣除\(D\)，对T2000偏差设零。交换锚点将T1000作为参照并相应重写差异方向。两种同滤波负控共同采用完整配对面板、\(\alpha=.3\)、收缩常数10，最后才执行总偏差截断。同滤波分解与同面板独立输出的对应比较条件完全相同。
+
+单因素扰动固定锚点\(\alpha\in\{.1,.3\}\)、差异\(\alpha\in\{.3,.9\}\)，锚点收缩\(k\in\{0,5,20\}\)、差异收缩\(k\in\{0,2.5,10\}\)和最低配对支持\(n_{\min}\in\{3,5,10\}\)，逐次只替换该项。替代线对固定为T400/T500、T1000/T3000和T2000/T3000。表中的最低支持扰动在当前留出期可能给出相同预测，其作用是记录实际触发情况。
+
+\subsection{完整协方差DLM的训练期参数}
+真实DLM在原两线坐标使用二维随机游走、零初始均值。各阶段以训练期已释放的完整配对外推误差估计参数：令\(C\)为误差水平样本协方差，\(V_\Delta\)为相邻误差差分的样本协方差，设
+\begin{equation}
+\begin{aligned}
+R&=\operatorname{diag}\!\left[\max\{.5\operatorname{diag}(V_\Delta),10^{-6}\}\right],\\
+Q&=\operatorname{PSD}_{10^{-6}}\{.1[.5C+.5\operatorname{diag}(C)]\},\\
+P_0&=\operatorname{PSD}_{10^{-6}}(C+10^{-6}I).
+\end{aligned}
+\end{equation}
+\(\operatorname{PSD}\)将对称矩阵的特征值下限设为\(10^{-6}\)。配对少于8期时，\(Q=.0001I,R=.01I,P_0=.01I\)。各反馈策略在首次验证前分别固定其训练期参数；后续只更新状态，不重估\(Q,R\)。训练期逐期诊断每次仍只使用该期合法训练历史。
+
+滤波使用预测协方差加\(Q\)、创新和Kalman增益，并用Joseph形式更新协方差。缺排名时删去对应观测行，有效信息不足时保持预测步骤。坐标变换控制把均值、\(P_0,Q,R\)及观测载荷同时变换，测试核对两种坐标的结果等价。该传统方法的结构和参数估计选择均在新评分前固定。
+
+合成DLM的固定参数另为\(Q_{a,d}=\operatorname{diag}(.0002,.002)\)、原始\(R_\theta=.01I\)、原始\(P_\theta=.1I\)，避免与真实训练估参混合。删除交叉项控制只删除变换后\(R\)的非对角项，其余设置相同。oracle使用真实生成\(Q,R\)及初始状态，拥有额外信息，排除于真实方法选择。
+
+\subsection{反馈通道与到达时间假设}
+基准V3用\(E_j<S_e\)并核对协调器已释放身份。额外24小时、7天和一次查询延迟仅删减校正器获得的残差行；基础树仍是原V3缓存。10\%和30\%删减由活动、排名、阶段与固定种子42的哈希确定，所有方法使用同一掩码；缺线情景分别删除T2000或T1000的残差反馈。
+
+这些场景衡量给定基础预测的校正通道变化。24小时在本日程下没有改变三种主规则预测；7天和一次查询延迟可使部分损失下降，丢失也呈不同方向。缺少一整条线的反馈更直接检验回退与状态可识别性。历史实际采集时刻缺少完整日志，仿真延迟由设定时间规则生成，基础模型整体延迟重训属于后续独立协议。
+
+\section{共享风险推导与补充诊断}
+\subsection{部分共享、已有偏差及时间尺度}
+按正文的部分共享平方风险推导，设\(D=d^2+v_1+v_2-2c>0\)。任务1的正向共享降低平方风险当且仅当\(v_1>c\)且\(0<w<2(v_1-c)/D\)，同时\(w\le1\)。受限最优权重为\(\operatorname{clip}\{(v_1-c)/D,0,1\}\)。若\(D=0\)，两估计的差在该目标下几乎处处为零，风险差为零。固定半共享\(w=1/2\)对任务1的条件是\(d^2<3v_1-v_2-2c\)，区别于两任务等权完全池化条件。
+
+已有估计偏差分别为\(b_1,b_2\)时，混合偏差相对项为\([(1-w)b_1+w(b_2+d)]^2-b_1^2\)。随机任务差异与估计误差相关时，还须保留交叉项。这些条件使经验残差相关与风险参数的对应关系保持明确；高终分相关首先描述水平，同期残差相关又混合持久状态和瞬时冲击。
+
+独立噪声方差为\(r\)的稳定EWMA方差为\(r\alpha/(2-\alpha)\)，其有效样本量\((2-\alpha)/\alpha\)在\(\alpha=.2,.3,.6\)时约为9、5.67、2.33。支持活动数\(n\)与有效窗口是两个量。随机游走过程方差\(q\)时，常增益一步状态预测MSE为
+\begin{equation}
+\frac{q+\alpha^2r}{\alpha(2-\alpha)},\qquad\frac qr=\frac{\alpha^2}{1-\alpha}\quad\text{（最优增益条件）}.
+\end{equation}
+因此0.2和0.6对应的过程/噪声比约为0.05和0.9，明确表达“锚点慢、差异快”的假设。实际配方还有支持收缩与边界，这些公式用于机制解释。
+
+\subsection{共同支持、相关差及滞后筛查}
+\input{tables/upgrade_correlation_contrasts.tex}
+共同面板153个线对的Spearman中位数依次为终分0.878、增长0.521、原始误差0.221、独立校正误差0.237。后两者的全局中位关系略有上升；T1000/T2000从原始0.283降至校正0.130，属于特定线对。正文按对象比较，保留这种异质性。
+
+原外推误差历史含35期，滞后一阶仅34对；本轮34期共同面板另为控制半程增长支持而建立。既有循环位移与全局BY筛查\citep{benjamini2001by}未发现\(q<.05\)关系，离散置换水平、小样本与多重校正共同限制检验力。历史滤波还涉及多阶记忆与收缩，单个一阶相关覆盖其部分统计结构。
+
+\subsection{合成网格、Monte Carlo单位及失败区域}
+\upfigure{upgrade_synthetic_sharing}{fig:upgrade-synthetic}{首轮固定合成机制实验。16个生成条件、4种历史长度与9种方法完整保留；每格每长度300条完整Monte Carlo路径，跨格复用底层随机数。状态MSE相对独立EWMA的正差表示负迁移，oracle拥有额外信息。}{synthetic}
+固定合成配置摘要为\path{45def3eee6388a994e8dbf22d79ec118f0e83d5c340b6475924a7da7bc9b56ba}。16格均从\(c=d=0\)开始，高斯创新及原始两线噪声跨期独立。各格复用标准正态随机数，不同方法共享路径，四种历史长度来自同一序列。独立Monte Carlo单位是每种子内的完整生成路径，每格每长度共300个；格子和历史长度之间的比较具有设计上的相关性。
+
+\input{tables/upgrade_synthetic_summary.tex}
+低共同漂移、高差异漂移、低噪声且\(m=0\)时，历史16期的锚点差异状态风险减少0.002100，Monte Carlo区间[−0.002448,−0.001753]。相反，共同漂移0.0004、差异漂移0、噪声0.0064、\(m=0\)且历史32期时增加0.001561，区间[0.001235,0.001887]。载荷从\(m=0\)变为0.5时，锚点差异下降组合数从13/32变为6/32。所有负区域保留，参数未据其重调。
+
+表格与原始记录分别保存截断后的\texttt{state\_mse}、截断前\texttt{raw\_state\_mse}和\texttt{synthetic\_unbounded\_ape\_pct}。模拟APE为\(100\operatorname{mean}|\exp(y_{\mathrm{next}}-b)-1|\)，只共享偏差截断，未加入真实游戏分数边界。全输出包含1728行总体、5184行逐种子及1728行配对结果，来源为\path{synthetic/summary.csv}、\path{per_seed.csv}与\path{paired_comparisons.csv}。
+
+\section{新拟合学习曲线、种子与成本}
+\subsection{首轮规模曲线与全部56单元}
+每种规模按实际开始时间取最早16、32、48、67期，分别有576、1170、1766、2452个训练前缀，预测同一14期488个两线验证案例。规模、日历覆盖及活动组成共同变化。局部特征、增长目标和边界固定；CatBoost为200轮，共享拟合1个模型、独立拟合2个模型。神经训练60轮，三个种子最终分数均值为主。共享输出、专属头和完全独立的参数及优化预算随结构变化，表格保持原身份。
+\input{tables/upgrade_learning_curve.tex}
+\upfigure{upgrade_training_size}{fig:upgrade-learning}{首轮重新拟合的规模诊断。所有点反复使用同一14期488案例验证面板；训练规模与日历覆盖共同变化，网络参数与模型数随结构变化。二轮公平对照另在训练内部多终点执行。}{learning}
+\input{tables/upgrade_learning_seeds.tex}
+\input{tables/upgrade_fit_budget.tex}
+完全独立网络为两条排名各自拟合编码器和输出参数；训练预处理按选定子集拟合，参数张量互不共享。独立回归检查修改T2000监督时，T1000输出保持完全一致。各拟合范围内部按活动总权重相同，独立模型使用本线监督。三种子集成对最终解码分数求平均，所有检查点重新加载后核对封存预测。
+
+网络共享输出、专属头与完全独立结构的单模型参数及拟合数见表~\ref{tab:fitbudget}。相同60轮保留训练时长规则，模型数与参数量随结构变化。该规模诊断不主张总计算量相等；实际墙钟和CPU时间用于复核已执行预算。
+
+\subsection{同验证活动的配对差与解释范围}
+\input{tables/upgrade_learning_contrasts.tex}
+67期训练时，独立网络减专属头的MAPE差为−0.884个百分点，活动配对区间[−1.261,−0.491]。较小训练规模时部分比较区间跨零。每个规模按实际开始时间取最早\(N\)期，增大规模同时延长训练覆盖时期并改变活动组成。学习曲线各点复用同一验证面板，训练子集嵌套，点间相关；参数量、模型数和优化差异仍需进一步匹配。此处的验证结果服务于结构诊断，新测试或生产选择另行登记。
+
+\subsection{既有19线神经残差结构}
+既有19线网络在同一基础预测与独立校正上学习残差增量。编码器两层宽度16，输出头宽度8和1；专属头按支持收缩，未见排名用共享输出。相关图使用已结束活动的参考误差，每对至少8期、每线至多3邻居，支持不足回退对数排名距离先验。AdamW学习率.002、权重衰减.05、丢弃率.1、60轮及种子42/123/2026固定，历史不足12期回退。
+
+共享输出、专属头、静态相关线与阶段图注意力的历史测试MAPE为6.716\%、7.240\%、7.213\%、7.218\%。专属头相对共享输出差0.524个百分点，既有活动iid区间[0.261,0.844]。相关线增量差−0.027个百分点，区间跨零。其负结果限定于该轮样本、输入与预算，梯度冲突未被实测。
+\upfigure{upgrade_neural_comparison}{fig:upgrade-neural}{既有神经残差结构的匹配比较。活动配对与5活动循环块区间沿用该轮独立统计，历史测试已被探索。参数规模与优化仍有变化，比较范围限于已记录结构。}{neural}
+
+\subsection{历史静态基线与预训练模型}
+\input{tables/upgrade_historical_static.tex}
+历史TabPFN的训练查询包含在训练上下文中，训练列属于上下文重代入；Chronos-2和TimesFM2.5为零样本推理，训练列留空。TimesFM的2024方法论文与实验2.5检查点分别记录，Chronos-2按2025预印本引用。各历史配方的输入表达、权重版本、原选中方法及指纹见原运行清单。跨协议或跨排名总分用于描述各自任务，同案例和同信息条件的增量另以匹配比较判断。
+
+\section{区间目标、尾部与前瞻接口审计}
+\subsection{经验区间与联合覆盖}
+\input{tables/upgrade_interval_targets.tex}
+每组分数为同活动、排名和阶段内最大的绝对中心对数误差。因此名义水平对应组内全部冻结前缀的联合覆盖。逐案例覆盖较高，覆盖对象较弱；整活动全部排名与阶段同时覆盖更强，当前构造未针对该目标校准。可用率、无界回退和有限支持宽度独立报告，避免用无界区间掩盖支持不足。
+
+支持不足先回退到合法历史的活动阶段最大误差池。T1500可在没有自身历史时借用该池，其\texttt{own\_support}与实际采用的\texttt{support}各自保存。当前5220案例均为有限支持，80\%水平采用支持数最小4、90\%最小9。组内联合覆盖接近名义的回溯现象仍处于单一已探索面板；时间依赖及活动变化使交换性假设需要额外检验。块区间、逐排名/阶段/类型/乐队可靠性保留于完整统计表。
+
+\input{round2_supplement.tex}
+
+\section{版本绑定、失败记录与独立重建}
+输入、源码、配置、依赖与预测分别封存。H独立用标量算术重建B全部22680个候选活动排名阶段状态，\(\lambda\)最大差为\(3.22\times10^{-15}\)；C实际张量参数和5670次优化器更新逐项核对。H的独立临时项目完整重放B35期，并重拟C2一个预定单元，与原预测逐例一致。原C源码快照的导入闭包缺口在可搬运包中补全；全新依赖安装环境仍保留自己的验收范围。
+
+原B backend的物理案例别名守卫由独立适配器补充，原源码和封存预测保留；新入口为\path{integration/replay_guarded.py}，配合\path{sharing_input_guard.py}。H在冻结35期验证新守卫与原输出零差。D的原块接缝修订在真实运行前完成；删一参数附带的full25似然元数据用独立审计文件澄清，原表保留。E的statistics001为中断，reliability001因非中心t极尾NaN另存修订；本文数字统一来自statistics002/reliability002，失败目录随档案保留。
+
+稿件内的一键数值重建显式传入仓库根，避免目录层级推断：
+\begingroup\small
+\begin{verbatim}
+.venv/bin/python \
+  <manuscript>/scripts/bind_round2_evidence.py \
+  --repo-root <absolute-repository> \
+  --paper-root <absolute-manuscript>
+\end{verbatim}
+\endgroup
+该命令先重建原15张表与宏，再绑定本轮11张表与宏，逐项记录数值来源和SHA。它只读已封存分数，不拟合、重新评分或改变选择。图表由封存数值绘制，随后在稿件目录运行\texttt{make all}，使用XeLaTeX、BibTeX及交叉引用刷新生成完整稿与独立补充材料。\texttt{make verify}核对引用、字体及LaTeX警告；逐页渲染和接触表另存QA目录。
+
+项目全套unittest已由PI按单线程串行执行，469项通过。二轮B15、C19、D19、E12及独立守卫5项夹具另计，共70项通过。E相对路径夹具首次从工作目录误调用的失败日志保留，按仓库根契约重跑通过，代码保持原版本。软件测试检验执行边界与实现，预测精度来自独立评分。
+
+\subsection{尚待完成的外部证据}
+当前真实未来活动为0，80期新队列等待新的激活封存。完整人口清单、准时预测、原始来源及实际释放日志仍依赖上游采集和独立审计。跨服务器和跨游戏验证、历史元数据时点快照与玩家层行为资料，是解释和推广当前结论所需的新增证据。所有历史分数保留测试探索、验证复用与回溯元数据限制；本轮35期研究亦保留回溯身份。
+
+\ifdefined\PaperMainDocument\else
+\FloatBarrier
+\begingroup\raggedright\small
+\bibliographystyle{elsarticle-num}
+\bibliography{references}
+\endgroup
+\fi
+\EndSupplementDocument

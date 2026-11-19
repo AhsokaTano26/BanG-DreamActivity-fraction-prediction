@@ -1,0 +1,13 @@
+\begin{table}[!htbp]\centering
+\caption{相同488验证案例上的训练规模诊断（MAPE / \%）}\label{tab:learning}
+\small\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\linewidth}{r r r r r r}\toprule
+训练活动 & 树共享 & 树独立 & 网络共享 & 网络专属头 & 网络独立 \\
+\midrule
+16 & 11.227 & 9.838 & 13.128 & 13.275 & 12.749 \\
+32 & 8.765 & 8.093 & 12.010 & 11.155 & 10.196 \\
+48 & 8.429 & 7.979 & 11.811 & 10.991 & 10.203 \\
+67 & 6.912 & 6.312 & 10.949 & 10.198 & 9.314 \\
+\bottomrule\end{tabularx}
+\par\vspace{4pt}\begin{minipage}{\linewidth}\footnotesize 验证活动固定14期。网络三列为三种子最终分数平均后的评分；树固定种子42。当前局部特征和CatBoost200/神经基础拟合与19档回放的混合基础路线分别解释。\end{minipage}
+\end{table}

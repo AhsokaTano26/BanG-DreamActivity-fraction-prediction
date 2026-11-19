@@ -1,0 +1,26 @@
+{
+  "rule": "actual-start ordered test positions1and8; fixed before plotting; not selected by error",
+  "full_event_order": [
+    308,
+    309,
+    311,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326
+  ],
+  "selected_event_ids": [
+    308,
+    318
+  ],
+  "source_sha256": "face458c6bb419227669847c81bda302601f77fec1c06af2a3e8da6e1dad5fff"
+}

@@ -1,0 +1,6 @@
+panel,events,ranks,median_pair_correlation
+all_pairwise_final,103,19,0.9122340595094646
+common18_final,94,18,0.9120615540223241
+matched_final,92,18,0.9151241465406963
+matched_growth_p50,92,18,0.471078710910408
+partial_final_common18,94,18,0.7358343748986074

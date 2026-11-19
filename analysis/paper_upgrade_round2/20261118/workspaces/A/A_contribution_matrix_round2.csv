@@ -1,0 +1,17 @@
+id,research_question,claim_or_issue,resolution_status,new_evidence,sources_relative_to_workspaces,supported_scope,remaining_limits,editorial_action
+R2-01,RQ1,训练内事前选择,resolved_for_selection_procedure,15/10/10；12候选；第26期前seal选I,B/B_report.md；H/H_initial_audit.md；H/H_B_scalar_evidence.json,按预定规则保留独立EWMA,末10仍为回溯训练后段；未来0,选回I与完整负结果共同报告
+R2-02,RQ1,自适应共享优势,no_stable_benefit_demonstrated,末10 I5.917707/S6.816356/risk6.017388；S和risk配对区间跨0,B/B_report.md；E/E_report.md,本面板继续保留独立基线,低样本精度；共享收益待独立证据,理论与精度优势继续保守
+R2-03,RQ1,门控稳定性,resolved_interpretation_only,末10 60任务状态全部closed；开关前删期lambda跨度0.802384,B/B_report.md；H/H_B_scalar_evidence.json,关闭后的独立回退轨迹,开关前敏感性描述；并列得分来自零共享,写清回退原因与实际lambda0
+R2-04,RQ2,原配方分线贡献,resolved_for_computational_ablation,末10 I5.917707；原6.388468；仅T2000 5.866735；仅T1000 6.439439,C/C_report.md；E/E_report.md,规则作用随排名方向变化,既有时期重叠；行为因果机制待资料,保持固定消融与选择身份
+R2-05,RQ2,支持池与坐标变换,resolved_on_frozen_panel,支持池相同导致零扰动；同滤波最大分数差7.45e-9,C/C_report.md；H/H_initial_audit.md,坐标恒等负控与本面板支持解释,缺线行为由fixture覆盖；本面板实际支持无变化,零扰动显式标记
+R2-06,RQ3,总参数计数控制,resolved_within_cell,32d+66；d56/57；1858/1890实际张量计数相同,C/C_report.md；H/H_initial_audit.md,同cell容量数量匹配,宽度/偏置/函数类及共享监督仍不同,总参精确相同限定在同cell
+R2-07,RQ3,训练计算预算,partially_controlled,60轮参数更新相同；共享MAC约2.035倍；共享30 MAC约多1.73%且更新减半,C/C_report.md；H/H_numeric_evidence.json,更新量与近似前向MAC分别控制,反向/优化器/端到端计算未整体匹配,两视角并列避免完全预算匹配措辞
+R2-08,RQ3,共享条件效应与精度,partially_controlled,shared60赢3/9；三组12活动iidCI全部跨0；442唯一案例,C/C_report.md；E/E_report.md,方向随时段和选样变化,4活动endpoint；9cell共用12活动；组成/编码变化,保留逐终点与汇总结果
+R2-09,RQ3,数量与日期跨度,partially_controlled,N32full/N16span同首末；N16recent/span同数量,C/C_report.md,拆开部分数量和跨度变化,稀疏组成、类别支持和特征维度同步变化,区分时效/规模/组成条件
+R2-10,RQ4,真实与合成量纲链接,partially_resolved,train25 profile17/900；Q/R1至45；R对角比7.48；Q负特征,D/D_report.md；H/H_D_numeric_evidence.json,真实量纲和约束参数集合已链接,等方差R、白噪声、稳定过程约束；真实机制识别开放,支持带称描述性条件集合
+R2-11,RQ4,稳健模拟与损失差异,resolved_for_prespecified_grid,24格pool全增；risk9低15高；DLM22state低14APE低,D/D_report.md；H/H_D_numeric_evidence.json,指定扰动中的正负迁移与损失排序,所有m0；oracle只知基准；格间相关；路径MC,失败格与基准oracle信息并列
+R2-12,RQ4,DLM真实迁移,auxiliary_posthoc_evidence,phase1末10 120例；DLM6.953329/I5.340927；差+1.612402pp,D/D_report.md；H/H_D_transfer_evidence.json,一次固定事后迁移负结果,模拟之后追加；末尾整体seal；潜在状态未观测,写回溯信息集模拟并单列中阶段
+R2-13,RQ5,条件区间可靠性,resolved_descriptive_audit,T1000 80%65.6250；challenge59.9740/74.7888；fallback100%且宽113.493/162.7534,E/E_report.md；H/H_E_numeric_evidence.json,总体与条件覆盖、宽度代价明确,单期类型、3期类型与回退小n；未来校准开放,样本分母和退化区间保留
+R2-14,RQ5,未来功效与报告设计,plan_specified_not_activated,"max(60工程,4global,72pair)向上10=80；HAC固定；20pilot保留",E/E_report.md；H/H_E_numeric_evidence.json,采集预算与条件功效模型已区分,HAC渐近；主比较legacy−I；尚未激活；未来0,80写采集计划并保留假设
+R2-15,all,独立样本与核验范围,resolved_for_counting,新增诊断并集35；C2 12全在B35；H核心验收,H/H_initial_audit.md；RESEARCH_QUESTIONS.md,重叠活动和独立复核范围明确,H只外部复拟C一cell；全部模拟与bootstrap未重生；ZIP待验收,计数按活动并集；软件核验分层
+R2-16,all,原创新方法和理论,conservative_position_retained,B_prior_art指向预测组合与MTA；预定选择I；完整负结果,B/B_prior_art.md；B/B_report.md；RESEARCH_QUESTIONS.md,期初信息、支持守卫和迁移失效的应用诊断,通用优势、新基础理论、跨游戏与未来收益缺独立证据,正文主线围绕何时保留独立校正

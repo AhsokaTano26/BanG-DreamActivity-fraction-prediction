@@ -1,0 +1,22 @@
+# Source-only build context: never send runtime data, models, credentials or papers.
+**
+!Dockerfile
+!deploy/
+!deploy/entrypoint.py
+!deploy/requirements-web.txt
+!production/
+!production/*.py
+!production/web_assets/
+!production/web_assets/**
+!analysis/
+!analysis/*.py
+!API/
+!API/GetEventInfo.py
+!API/GetEventTracker.py
+!download_ranks.py
+!XGBoost.py
+!tests/
+!tests/test_deployment*.py
+**/__pycache__
+**/*.pyc
+**/.DS_Store

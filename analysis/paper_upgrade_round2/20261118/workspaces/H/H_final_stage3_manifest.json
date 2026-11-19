@@ -1,0 +1,20 @@
+{
+  "stage": "canonical_PDF_acceptance",
+  "files": {
+    "H_final_pdf_audit.py": "674ba5dc03fe53913c9187b51e8de39efcfe81c5b8dcb8c05e7b73a5732f1cfd",
+    "H_final_key_pages.py": "2987fd14dbf5da502a60a0c7799c0e2557357489647a4504f86ae8ab808e3a07",
+    "H_final_document_evidence.json": "f1992529f39ecf23bd0ad8f944dbdd34d7a09d96d647fb950d3d7c70d22de04b",
+    "H_final_document_G_evidence.json": "be1c3fae99638457323eb21f5492890125079e199dc320b774e2f633bc0155f0",
+    "H_final_root_binding_evidence.json": "cb39cc2d366be69c7b6d190c4be1dd3a4fab435a4990e9b90af5e90ca50c34c7",
+    "H_final_key_page_evidence.json": "0cc221f5729737a722d7e4333e1dcd3d8ab57cb3f3fe5d280f223f16b1db35b4",
+    "H_final_pdf_review.md": "a23a532a2266b06e09c057e02fc9d913a6789670c80e405066d4d92bf700822e",
+    "H_final_probe_log.json": "cf41f69d69a1ed12626ce7f02cecdd3193a6d09f7e6a1036febf068b4c8eac60",
+    "H_final_key_pages/main18.png": "27501958d12b7a52a5ca639cf384be93825e36fe310e830b5f1613c7a9e7ff65",
+    "H_final_key_pages/main21.png": "b4480f30b559c31ae0ca975546c5a8889811178e1ecf651c32eb67bec089ef40",
+    "H_final_key_pages/main42.png": "be53f0333636be7cc3ff3c342c6367bc79d141a953a727db33e08e1b0cb1b0e5",
+    "H_final_key_pages/supplement18.png": "9c4374900fdda79260207b01b78f52c396d1a2aa41c5bc64dfd4429df0cde0c0",
+    "H_final_key_pages/supplement19.png": "8505ab32fece7dc9d1a1d803b9421318bfc0c806029e5449935510b1736b13a8",
+    "H_final_key_pages/main16.png": "df7fa05595e305c1143acd3404efbd87045b594263aaf5ed0351a054865e55e0"
+  },
+  "remaining": "Final ZIP independent build and dependency closure"
+}

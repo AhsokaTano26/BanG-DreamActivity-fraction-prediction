@@ -1,0 +1,33 @@
+\begingroup\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{longtable}{r l l r r r r}
+\caption{实际拟合数、参数量及成本}\label{tab:fitbudget}\\
+\toprule
+训练期数 & 家族 & 结构 & 拟合数 & 每模型参数 & CPU秒 & 墙钟秒 \\
+\midrule\endfirsthead
+\toprule
+训练期数 & 家族 & 结构 & 拟合数 & 每模型参数 & CPU秒 & 墙钟秒 \\
+\midrule\endhead
+16 & catboost & shared & 1 & — & 0.528 & 0.592 \\
+16 & catboost & independent & 2 & — & 0.987 & 0.978 \\
+16 & neural & shared & 3 & 1345 & 1.038 & 1.378 \\
+16 & neural & rank\_heads & 3 & 1490 & 0.095 & 0.098 \\
+16 & neural & independent & 6 & 1345 & 0.092 & 0.092 \\
+32 & catboost & shared & 1 & — & 0.554 & 0.548 \\
+32 & catboost & independent & 2 & — & 1.178 & 1.280 \\
+32 & neural & shared & 3 & 1345 & 0.100 & 0.100 \\
+32 & neural & rank\_heads & 3 & 1490 & 0.130 & 0.131 \\
+32 & neural & independent & 6 & 1345 & 0.127 & 0.127 \\
+48 & catboost & shared & 1 & — & 0.595 & 0.592 \\
+48 & catboost & independent & 2 & — & 1.114 & 1.105 \\
+48 & neural & shared & 3 & 1345 & 0.110 & 0.110 \\
+48 & neural & rank\_heads & 3 & 1490 & 0.146 & 0.146 \\
+48 & neural & independent & 6 & 1345 & 0.134 & 0.135 \\
+67 & catboost & shared & 1 & — & 0.599 & 0.594 \\
+67 & catboost & independent & 2 & — & 1.132 & 1.119 \\
+67 & neural & shared & 3 & 1345 & 0.126 & 0.127 \\
+67 & neural & rank\_heads & 3 & 1490 & 0.181 & 0.181 \\
+67 & neural & independent & 6 & 1345 & 0.160 & 0.160 \\
+\bottomrule
+\end{longtable}
+\noindent CatBoost各200轮，神经各60轮。网络独立每个种子拟合两个模型，参数列为单模型参数，合计预算随模型数变化。首轮初始化开销计入实际时间；这些小规模CPU成本具有环境依赖。\par
+\endgroup

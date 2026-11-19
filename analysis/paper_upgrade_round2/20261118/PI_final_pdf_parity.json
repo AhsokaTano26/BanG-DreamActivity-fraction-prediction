@@ -1,0 +1,16 @@
+{
+  "main": {
+    "pages": 45,
+    "sha256": "897ad0e707bd1f57c0911c73fb96b56f348e96c1396624a3368c5c492143acb3",
+    "same_page_pixels_as_G": 45,
+    "all_page_pixels_same": true,
+    "render_source_sha256": "897ad0e707bd1f57c0911c73fb96b56f348e96c1396624a3368c5c492143acb3"
+  },
+  "supplement": {
+    "pages": 19,
+    "sha256": "455bb5f09fb1a18305510d08b54d71f5231ad5a9a67659229216395e015e066b",
+    "same_page_pixels_as_G": 19,
+    "all_page_pixels_same": true,
+    "render_source_sha256": "455bb5f09fb1a18305510d08b54d71f5231ad5a9a67659229216395e015e066b"
+  }
+}

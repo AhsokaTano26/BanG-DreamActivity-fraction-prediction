@@ -1,0 +1,21 @@
+\begin{table}[!htbp]
+\centering\small
+\caption{主关联模型的删项诊断与整体检验}\label{tab:factors}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\linewidth}{L r r L L}
+\toprule
+因素 & 自由度 & 偏$R^2$ & HAC检验$p$ & 全局BY调整$q$ \\
+\midrule
+排名 & 18 & 0.952 & $7.11\times10^{-118}$ & $2.38\times10^{-116}$ \\
+活动类型 & 5 & 0.602 & $5.46\times10^{-40}$ & $9.12\times10^{-39}$ \\
+乐队 & 8 & 0.339 & $1.53\times10^{-16}$ & $1.53\times10^{-15}$ \\
+时间项 & 1 & 0.213 & $2.72\times10^{-8}$ & $1.61\times10^{-7}$ \\
+活动时长 & 1 & 0.194 & $6.46\times10^{-9}$ & $4.32\times10^{-8}$ \\
+\bottomrule
+\end{tabularx}
+\par\vspace{4pt}
+\begin{minipage}{\linewidth}\footnotesize\setstretch{1.05}
+注：偏$R^2$按删去该因素后的加权残差平方和定义。各因素的删项基准不同。BY调整覆盖五个固定模型中的全部\NumTests{}组因素检验。
+\end{minipage}
+\end{table}

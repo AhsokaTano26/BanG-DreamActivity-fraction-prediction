@@ -1,0 +1,48 @@
+{
+  "audit_stage": "B/C/D/E core numeric accepted; final delivery pending",
+  "critical": [],
+  "important": [
+    {
+      "id": "H-BC-01",
+      "status": "closed_guarded_adapter_and_entrypoint",
+      "finding": "Frozen B backend accepts a physical prefix alias with a distinct case_id; frozen input itself has zero aliases.",
+      "clear_condition": "Independent adapter rejects physical duplicates and valid frozen input retains all predictions; use adapter in future/new entry points.",
+      "closure_evidence": "H_portability_evidence.json: alias rejected, 35 events/420 calls/161504 score rows, maximum prediction difference 0; integration/replay_guarded.py source reviewed and --help executed",
+      "retained_boundary": "Archived backend remains unchanged; hardened use explicitly injects GuardedSharingBackend."
+    },
+    {
+      "id": "H-BC-02",
+      "status": "standalone_refit_passed_final_zip_pending",
+      "finding": "C run source snapshot omits four transitive local imports: event_features.py, holdout_evaluate.py, multirank_dataset.py, download_ranks.py.",
+      "clear_condition": "Final independent ZIP includes full true source closure and dependency versions; extracted package imports/refits under original-project read rejection.",
+      "closure_evidence": "portability_1795016658175606000/portability_result.json: C shared60 seed42 refit, 142 predictions and checkpoint tensors maximum difference 0."
+    },
+    {
+      "id": "H-D-01",
+      "status": "closed_with_explicit_metadata_identity",
+      "finding": "delete_one_best selects with deletion losses but exports full25-grid nll/support and sample-count metadata.",
+      "clear_condition": "Preserve sealed files and publish explicit full25-field identity or independently calculated deletion-data metadata with fresh hashes; H verifies selected parameter and support counts.",
+      "closure_evidence": "D_delete_one_metadata_audit.json and D_report explicitly preserve full25 field identity; H_D_numeric_evidence.json independently verifies deleted ordinal2, 24 pairs/22 adjacent differences, deletion NLL -78.44883537763882, argmin87."
+    }
+  ],
+  "minor": [
+    {
+      "id": "H-REPORT-01",
+      "status": "retained_reporting_requirement",
+      "finding": "Nominal 19-rank B/C1 panel has 18 observed ranks and no T1500.",
+      "clear_condition": "All final charts/tables label nominal versus observed ranks and preserve missingness."
+    },
+    {
+      "id": "H-REPORT-02",
+      "status": "retained_reporting_requirement",
+      "finding": "C2 12 query activities overlap entirely with B35; the real activity union is35.",
+      "clear_condition": "Evidence matrix and manuscript avoid counting47 independent activities or two independent replications."
+    }
+  ],
+  "limitations": [
+    "Historical test exploration, repeated validation reuse and retrospective metadata remain disclosed.",
+    "C2 independent environment refit covers one fixed cell/seed, not all108 fits.",
+    "Installed packages reuse the declared project virtual environment; fresh dependency installation awaits final packaging audit.",
+    "Revised figures/manuscript, repository suite and final artifact package remain pending."
+  ]
+}

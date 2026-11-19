@@ -1,0 +1,11 @@
+\begin{table}[!htbp]\centering
+\caption{区间构造目标及测试可靠性（全部单位为\%）}\label{tab:intervals}
+\small\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\linewidth}{r r C{3.4cm} r r}\toprule
+名义 & 组内联合覆盖 & 活动重采样95\%区间 & 逐案例覆盖 & 相对宽度 \\
+\midrule
+80 & 79.86 & [73.82, 85.17] & 93.01 & 35.07 \\
+90 & 90.47 & [85.42, 94.47] & 96.90 & 47.64 \\
+\bottomrule\end{tabularx}
+\par\vspace{4pt}\begin{minipage}{\linewidth}\footnotesize 组为活动×排名×阶段，878组/16期；一组内所有冻结前缀均落入各自区间才计覆盖。覆盖先活动内平均再活动等权。逐案例为更弱目标；相对宽度是有限支持案例按真实终分归一后的均值。5220案例均有有限支持，无界回退为0。区间为5000次活动配对重采样，未校正探索。\end{minipage}
+\end{table}

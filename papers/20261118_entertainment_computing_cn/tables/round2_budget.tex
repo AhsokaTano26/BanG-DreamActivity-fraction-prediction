@@ -1,0 +1,12 @@
+\begin{table}[!htbp]\centering
+\caption{公平训练的实际更新与计算预算}\label{tab:round2budget}
+\small\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\linewidth}{L r r r r}\toprule
+结构 & 优化器步数 & 标量参数更新 & 前向线性MAC & 拟合CPU秒 \\
+\midrule
+independent60 & 3240 & 3044520 & 1175604480 & 0.563 \\
+shared30 & 810 & 1522260 & 1195960320 & 0.249 \\
+shared60 & 1620 & 3044520 & 2391920640 & 0.517 \\
+\bottomrule\end{tabularx}
+\par\vspace{3pt}\begin{minipage}{\linewidth}\footnotesize MAC只计训练前向线性层；反向传播、激活、偏置、优化器及预处理另有成本。共享30轮比独立60轮多约1.73\%前向MAC，每参数更新次数减半。\end{minipage}
+\end{table}

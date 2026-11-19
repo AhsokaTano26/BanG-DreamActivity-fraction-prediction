@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="452.392441pt" height="282.88063pt" viewBox="0 0 452.392441 282.88063" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-19T00:28:31.404222</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 282.88063 
+L 452.392441 282.88063 
+L 452.392441 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="T2000-历史-paper-shadow">
+    <path d="M 17.155276 110.232283 
+L 111.050079 110.232283 
+Q 114.105827 110.232283 114.105827 107.207717 
+L 114.105827 58.264724 
+Q 114.105827 55.240157 111.050079 55.240157 
+L 17.155276 55.240157 
+Q 14.099528 55.240157 14.099528 58.264724 
+L 14.099528 107.207717 
+Q 14.099528 110.232283 17.155276 110.232283 
+z
+" clip-path="url(#pf449aad7c9)" style="fill: #e5eaed"/>
+   </g>
+   <g id="T1000-历史-paper-shadow">
+    <path d="M 17.155276 203.718898 
+L 111.050079 203.718898 
+Q 114.105827 203.718898 114.105827 200.694331 
+L 114.105827 151.751339 
+Q 114.105827 148.726772 111.050079 148.726772 
+L 17.155276 148.726772 
+Q 14.099528 148.726772 14.099528 151.751339 
+L 14.099528 200.694331 
+Q 14.099528 203.718898 17.155276 203.718898 
+z
+" clip-path="url(#pf449aad7c9)" style="fill: #e5eaed"/>
+   </g>
+   <g id="慢锚点-A-paper-shadow">
+    <path d="M 169.942677 110.232283 
+L 294.394961 110.232283 
+Q 297.450709 110.232283 297.450709 107.207717 
+L 297.450709 58.264724 
+Q 297.450709 55.240157 294.394961 55.240157 
+L 169.942677 55.240157 
+Q 166.886929 55.240157 166.886929 58.264724 
+L 166.886929 107.207717 
+Q 166.886929 110.232283 169.942677 110.232283 
+z
+" clip-path="url(#pf449aad7c9)" style="fill: #e5eaed"/>
+   </g>
+   <g id="快差异-D-paper-shadow">
+    <path d="M 169.942677 203.718898 
+L 294.394961 203.718898 
+Q 297.450709 203.718898 297.450709 200.694331 
+L 297.450709 151.751339 
+Q 297.450709 148.726772 294.394961 148.726772 
+L 169.942677 148.726772 
+Q 166.886929 148.726772 166.886929 151.751339 
+L 166.886929 200.694331 
+Q 166.886929 203.718898 169.942677 203.718898 
+z
+" clip-path="url(#pf449aad7c9)" style="fill: #e5eaed"/>
+   </g>
+   <g id="扣除重组偏差-paper-shadow">
+    <path d="M 344.953701 162.474803 
+L 438.848504 162.474803 
+Q 441.904252 162.474803 441.904252 159.450236 
+L 441.904252 77.511969 
+Q 441.904252 74.487402 438.848504 74.487402 
+L 344.953701 74.487402 
+Q 341.897953 74.487402 341.897953 77.511969 
+L 341.897953 159.450236 
+Q 341.897953 162.474803 344.953701 162.474803 
+z
+" clip-path="url(#pf449aad7c9)" style="fill: #e5eaed"/>
+   </g>
+   <g id="connector-1-arrow">
+    <path d="M 114.300711 80.948976 
+Q 138.691429 80.948976 162.131819 80.948976 
+" clip-path="url(#pf449aad7c9)" style="fill: none; stroke: #303c44; stroke-width: 0.85; stroke-linecap: round"/>
+    <path d="M 158.931819 79.348976 
+L 162.131819 80.948976 
+L 158.931819 82.548976 
+z
+" clip-path="url(#pf449aad7c9)" style="fill: #303c44; stroke: #303c44; stroke-width: 0.85; stroke-linecap: round"/>
+   </g>
+   <g id="connector-2-arrow">
+    <path d="M 114.300711 174.435591 
+Q 138.691429 174.435591 162.131819 174.435591 
+" clip-path="url(#pf449aad7c9)" style="fill: none; stroke: #b97a48; stroke-width: 0.85; stroke-linecap: round"/>
+    <path d="M 158.931819 172.835591 
+L 162.131819 174.435591 
+L 158.931819 176.035591 
+z
+" clip-path="url(#pf449aad7c9)" style="fill: #b97a48; stroke: #b97a48; stroke-width: 0.85; stroke-linecap: round"/>
+   </g>
+   <g id="connector-3">
+    <path d="M 126.189921 80.948976 
+L 137.301732 80.948976 
+L 137.301732 157.937953 
+" clip-path="url(#pf449aad7c9)" style="fill: none; stroke: #b97a48; stroke-width: 0.85; stroke-linecap: square"/>
+   </g>
+   <g id="connector-3-arrow">
+    <path d="M 139.299064 157.937953 
+Q 151.190913 157.937953 162.132433 157.937953 
+" clip-path="url(#pf449aad7c9)" style="fill: none; stroke: #b97a48; stroke-width: 0.85; stroke-linecap: round"/>
+    <path d="M 158.932433 156.337953 
+L 162.132433 157.937953 
+L 158.932433 159.537953 
+z
+" clip-path="url(#pf449aad7c9)" style="fill: #b97a48; stroke: #b97a48; stroke-width: 0.85; stroke-linecap: round"/>
+   </g>
+   <g id="connector-4">
+    <path d="M 295.645039 80.948976 
+L 317.868661 80.948976 
+L 317.868661 105.695433 
+" clip-path="url(#pf449aad7c9)" style="fill: none; stroke: #303c44; stroke-width: 0.85; stroke-linecap: square"/>
+   </g>
+   <g id="connector-4-arrow">
+    <path d="M 319.868028 105.695433 
+Q 328.980299 105.695433 337.142242 105.695433 
+" clip-path="url(#pf449aad7c9)" style="fill: none; stroke: #303c44; stroke-width: 0.85; stroke-linecap: round"/>
+    <path d="M 333.942242 104.095433 
+L 337.142242 105.695433 
+L 333.942242 107.295433 
+z
+" clip-path="url(#pf449aad7c9)" style="fill: #303c44; stroke: #303c44; stroke-width: 0.85; stroke-linecap: round"/>
+   </g>
+   <g id="connector-5">
+    <path d="M 295.645039 174.435591 
+L 317.868661 174.435591 
+L 317.868661 141.440315 
+" clip-path="url(#pf449aad7c9)" style="fill: none; stroke: #b97a48; stroke-width: 0.85; stroke-linecap: square"/>
+   </g>
+   <g id="connector-5-arrow">
+    <path d="M 319.868028 141.440315 
+Q 328.980299 141.440315 337.142242 141.440315 
+" clip-path="url(#pf449aad7c9)" style="fill: none; stroke: #b97a48; stroke-width: 0.85; stroke-linecap: round"/>
+    <path d="M 333.942242 139.840315 
+L 337.142242 141.440315 
+L 333.942242 143.040315 
+z
+" clip-path="url(#pf449aad7c9)" style="fill: #b97a48; stroke: #b97a48; stroke-width: 0.85; stroke-linecap: round"/>
+   </g>
+   <g id="T2000-历史-paper-edge">
+    <path d="M 112.300157 106.795276 
+L 114.383622 105.145512 
+L 114.383622 56.20252 
+L 112.300157 54.827717 
+z
+" clip-path="url(#pf449aad7c9)" style="fill: #d2dfe8"/>
+   </g>
+   <g id="T1000-历史-paper-edge">
+    <path d="M 112.300157 200.28189 
+L 114.383622 198.632126 
+L 114.383622 149.689134 
+L 112.300157 148.314331 
+z
+" clip-path="url(#pf449aad7c9)" style="fill: #d2dfe8"/>
+   </g>
+   <g id="慢锚点-A-paper-edge">
+    <path d="M 295.645039 106.795276 
+L 297.728504 105.145512 
+L 297.728504 56.20252 
+L 295.645039 54.827717 
+z
+" clip-path="url(#pf449aad7c9)" style="fill: #d2dfe8"/>
+   </g>
+   <g id="快差异-D-paper-edge">
+    <path d="M 295.645039 200.28189 
+L 297.728504 198.632126 
+L 297.728504 149.689134 
+L 295.645039 148.314331 
+z
+" clip-path="url(#pf449aad7c9)" style="fill: #e8d8c9"/>
+   </g>
+   <g id="扣除重组偏差-paper-edge">
+    <path d="M 440.098583 159.037795 
+L 442.182047 157.388031 
+L 442.182047 75.449764 
+L 440.098583 74.074961 
+z
+" clip-path="url(#pf449aad7c9)" style="fill: #d2dfe8"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 12.293858 258.298583 
+L 440.098583 258.298583 
+" clip-path="url(#pf449aad7c9)" style="fill: none; stroke: #dfe5e9; stroke-width: 0.65; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #24333f" x="12.293858" y="17.708031" transform="rotate(-0 12.293858 17.708031)">历史对数误差：正值表示基础预测偏高</text>
+   </g>
+   <g id="T2000-历史-card">
+    <path d="M 15.349606 108.445039 
+L 109.244409 108.445039 
+Q 112.300157 108.445039 112.300157 105.420472 
+L 112.300157 56.47748 
+Q 112.300157 53.452913 109.244409 53.452913 
+L 15.349606 53.452913 
+Q 12.293858 53.452913 12.293858 56.47748 
+L 12.293858 105.420472 
+Q 12.293858 108.445039 15.349606 108.445039 
+z
+" clip-path="url(#pf449aad7c9)" style="fill: #ffffff; stroke: #456d90; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="T1000-历史-card">
+    <path d="M 15.349606 201.931654 
+L 109.244409 201.931654 
+Q 112.300157 201.931654 112.300157 198.907087 
+L 112.300157 149.964094 
+Q 112.300157 146.939528 109.244409 146.939528 
+L 15.349606 146.939528 
+Q 12.293858 146.939528 12.293858 149.964094 
+L 12.293858 198.907087 
+Q 12.293858 201.931654 15.349606 201.931654 
+z
+" clip-path="url(#pf449aad7c9)" style="fill: #ffffff; stroke: #456d90; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="慢锚点-A-card">
+    <path d="M 168.137008 108.445039 
+L 292.589291 108.445039 
+Q 295.645039 108.445039 295.645039 105.420472 
+L 295.645039 56.47748 
+Q 295.645039 53.452913 292.589291 53.452913 
+L 168.137008 53.452913 
+Q 165.08126 53.452913 165.08126 56.47748 
+L 165.08126 105.420472 
+Q 165.08126 108.445039 168.137008 108.445039 
+z
+" clip-path="url(#pf449aad7c9)" style="fill: #ffffff; stroke: #456d90; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="快差异-D-card">
+    <path d="M 168.137008 201.931654 
+L 292.589291 201.931654 
+Q 295.645039 201.931654 295.645039 198.907087 
+L 295.645039 149.964094 
+Q 295.645039 146.939528 292.589291 146.939528 
+L 168.137008 146.939528 
+Q 165.08126 146.939528 165.08126 149.964094 
+L 165.08126 198.907087 
+Q 165.08126 201.931654 168.137008 201.931654 
+z
+" clip-path="url(#pf449aad7c9)" style="fill: #ffffff; stroke: #b97a48; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #24333f" x="173.415118" y="89.017281" transform="rotate(-0 173.415118 89.017281)">更新率</text>
+   </g>
+   <g id="text_3">
+    <!-- $\alpha=0.2$ -->
+    <g style="fill: #24333f" transform="translate(223.418268 88.7165)">
+     <text>
+      <tspan x="0" y="-0.671875" style="font-size: 9.5px; font-family: 'cmmi10'; fill: #24333f">®</tspan>
+      <tspan x="22.002159" y="-0.671875" style="font-size: 9.5px; font-family: 'cmmi10'; fill: #24333f">:</tspan>
+      <tspan x="7.972027" y="-0.671875" style="font-size: 9.5px; font-family: 'cmr10'; fill: #24333f">=</tspan>
+      <tspan x="17.252159" y="-0.671875" style="font-size: 9.5px; font-family: 'cmr10'; fill: #24333f">0</tspan>
+      <tspan x="24.632286" y="-0.671875" style="font-size: 9.5px; font-family: 'cmr10'; fill: #24333f">2</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #24333f" x="173.415118" y="102.781914" transform="rotate(-0 173.415118 102.781914)">收缩常数</text>
+   </g>
+   <g id="text_5">
+    <!-- $k=10$ -->
+    <g style="fill: #24333f" transform="translate(223.418268 102.496074)">
+     <text>
+      <tspan x="0" y="-0.40625" style="font-size: 9.5px; font-family: 'cmmi10'; fill: #24333f">k</tspan>
+      <tspan x="6.840191" y="-0.40625" style="font-size: 9.5px; font-family: 'cmr10'; fill: #24333f">=</tspan>
+      <tspan x="16.120323" y="-0.40625" style="font-size: 9.5px; font-family: 'cmr10'; fill: #24333f">1</tspan>
+      <tspan x="20.870323" y="-0.40625" style="font-size: 9.5px; font-family: 'cmr10'; fill: #24333f">0</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #24333f" x="173.415118" y="182.503895" transform="rotate(-0 173.415118 182.503895)">更新率</text>
+   </g>
+   <g id="text_7">
+    <!-- $\alpha=0.6$ -->
+    <g style="fill: #24333f" transform="translate(223.418268 182.203114)">
+     <text>
+      <tspan x="0" y="-0.671875" style="font-size: 9.5px; font-family: 'cmmi10'; fill: #24333f">®</tspan>
+      <tspan x="22.002159" y="-0.671875" style="font-size: 9.5px; font-family: 'cmmi10'; fill: #24333f">:</tspan>
+      <tspan x="7.972027" y="-0.671875" style="font-size: 9.5px; font-family: 'cmr10'; fill: #24333f">=</tspan>
+      <tspan x="17.252159" y="-0.671875" style="font-size: 9.5px; font-family: 'cmr10'; fill: #24333f">0</tspan>
+      <tspan x="24.632286" y="-0.671875" style="font-size: 9.5px; font-family: 'cmr10'; fill: #24333f">6</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #24333f" x="173.415118" y="196.268528" transform="rotate(-0 173.415118 196.268528)">收缩常数</text>
+   </g>
+   <g id="text_9">
+    <!-- $k=5$ -->
+    <g style="fill: #24333f" transform="translate(223.418268 195.982688)">
+     <text>
+      <tspan x="0" y="-0.40625" style="font-size: 9.5px; font-family: 'cmmi10'; fill: #24333f">k</tspan>
+      <tspan x="6.840191" y="-0.40625" style="font-size: 9.5px; font-family: 'cmr10'; fill: #24333f">=</tspan>
+      <tspan x="16.120323" y="-0.40625" style="font-size: 9.5px; font-family: 'cmr10'; fill: #24333f">5</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="扣除重组偏差-card">
+    <path d="M 343.148031 160.687559 
+L 437.042835 160.687559 
+Q 440.098583 160.687559 440.098583 157.662992 
+L 440.098583 75.724724 
+Q 440.098583 72.700157 437.042835 72.700157 
+L 343.148031 72.700157 
+Q 340.092283 72.700157 340.092283 75.724724 
+L 340.092283 157.662992 
+Q 340.092283 160.687559 343.148031 160.687559 
+z
+" clip-path="url(#pf449aad7c9)" style="fill: #ffffff; stroke: #456d90; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #24333f" x="348.426142" y="113.944252" transform="rotate(-0 348.426142 113.944252)">T2000</text>
+   </g>
+   <g id="text_11">
+    <!-- $-A$ -->
+    <g style="fill: #456d90" transform="translate(390.095433 113.944252)">
+     <text>
+      <tspan x="0" y="-0.84375" style="font-size: 10px; font-family: 'cmsy10'; fill: #456d90">¡</tspan>
+      <tspan x="7.768555" y="-0.84375" style="font-size: 10px; font-family: 'cmmi10'; fill: #456d90">A</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #24333f" x="348.426142" y="138.690709" transform="rotate(-0 348.426142 138.690709)">T1000</text>
+   </g>
+   <g id="text_13">
+    <!-- $-(A+D)$ -->
+    <g style="fill: #b97a48" transform="translate(390.095433 138.690709)">
+     <text>
+      <tspan x="0" y="-0.875" style="font-size: 9.5px; font-family: 'cmsy10'; fill: #b97a48">¡</tspan>
+      <tspan x="7.380127" y="-0.875" style="font-size: 9.5px; font-family: 'cmr10'; fill: #b97a48">(</tspan>
+      <tspan x="20.092877" y="-0.875" style="font-size: 9.5px; font-family: 'cmr10'; fill: #b97a48">+</tspan>
+      <tspan x="37.230919" y="-0.875" style="font-size: 9.5px; font-family: 'cmr10'; fill: #b97a48">)</tspan>
+      <tspan x="11.067871" y="-0.875" style="font-size: 9.5px; font-family: 'cmmi10'; fill: #b97a48">A</tspan>
+      <tspan x="29.373009" y="-0.875" style="font-size: 9.5px; font-family: 'cmmi10'; fill: #b97a48">D</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; fill: #777777" transform="translate(150.831512 129.418846) rotate(-90)">同活动差值</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #24333f" x="12.293858" y="226.67811" transform="rotate(-0 12.293858 226.67811)">先截断总偏差，再乘以 exp(−偏差)；最后施加当前分数与增长上界。</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 8.4px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #24333f" x="12.293858" y="245.925354" transform="rotate(-0 12.293858 245.925354)">无成对支持时，T1000回退本线独立暖校正；锚点与差异支持数分别计算。</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 8.3px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #777777" x="12.293858" y="273.421417" transform="rotate(-0 12.293858 273.421417)">同面板、同滤波、同收缩的代数负控</text>
+   </g>
+   <g id="text_18">
+    <!-- $sF(e_2)+sF(e_1-e_2)=sF(e_1)$ -->
+    <g style="fill: #24333f" transform="translate(253.975748 273.421417)">
+     <text>
+      <tspan x="0" y="-0.5" style="font-size: 10px; font-family: 'cmmi10'; fill: #24333f">s</tspan>
+      <tspan x="4.677734" y="-0.5" style="font-size: 10px; font-family: 'cmmi10'; fill: #24333f">F</tspan>
+      <tspan x="14.990234" y="-0.5" style="font-size: 10px; font-family: 'cmmi10'; fill: #24333f">e</tspan>
+      <tspan x="39.361115" y="-0.5" style="font-size: 10px; font-family: 'cmmi10'; fill: #24333f">s</tspan>
+      <tspan x="44.03885" y="-0.5" style="font-size: 10px; font-family: 'cmmi10'; fill: #24333f">F</tspan>
+      <tspan x="54.35135" y="-0.5" style="font-size: 10px; font-family: 'cmmi10'; fill: #24333f">e</tspan>
+      <tspan x="74.840395" y="-0.5" style="font-size: 10px; font-family: 'cmmi10'; fill: #24333f">e</tspan>
+      <tspan x="99.211276" y="-0.5" style="font-size: 10px; font-family: 'cmmi10'; fill: #24333f">s</tspan>
+      <tspan x="103.889011" y="-0.5" style="font-size: 10px; font-family: 'cmmi10'; fill: #24333f">F</tspan>
+      <tspan x="114.201511" y="-0.5" style="font-size: 10px; font-family: 'cmmi10'; fill: #24333f">e</tspan>
+      <tspan x="11.108398" y="-0.5" style="font-size: 10px; font-family: 'cmr10'; fill: #24333f">(</tspan>
+      <tspan x="23.710713" y="-0.5" style="font-size: 10px; font-family: 'cmr10'; fill: #24333f">)</tspan>
+      <tspan x="29.592555" y="-0.5" style="font-size: 10px; font-family: 'cmr10'; fill: #24333f">+</tspan>
+      <tspan x="50.469514" y="-0.5" style="font-size: 10px; font-family: 'cmr10'; fill: #24333f">(</tspan>
+      <tspan x="83.560874" y="-0.5" style="font-size: 10px; font-family: 'cmr10'; fill: #24333f">)</tspan>
+      <tspan x="89.442716" y="-0.5" style="font-size: 10px; font-family: 'cmr10'; fill: #24333f">=</tspan>
+      <tspan x="110.319675" y="-0.5" style="font-size: 10px; font-family: 'cmr10'; fill: #24333f">(</tspan>
+      <tspan x="122.92199" y="-0.5" style="font-size: 10px; font-family: 'cmr10'; fill: #24333f">)</tspan>
+      <tspan x="19.638672" y="0.999996" style="font-size: 7px; font-family: 'cmr10'; fill: #24333f">2</tspan>
+      <tspan x="58.999787" y="0.999996" style="font-size: 7px; font-family: 'cmr10'; fill: #24333f">1</tspan>
+      <tspan x="79.488833" y="0.999996" style="font-size: 7px; font-family: 'cmr10'; fill: #24333f">2</tspan>
+      <tspan x="118.849948" y="0.999996" style="font-size: 7px; font-family: 'cmr10'; fill: #24333f">1</tspan>
+      <tspan x="65.071835" y="-0.5" style="font-size: 10px; font-family: 'cmsy10'; fill: #24333f">¡</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="line2d_2">
+    <path d="M 15.071811 71.325354 
+L 109.522205 71.325354 
+" clip-path="url(#pf449aad7c9)" style="fill: none; stroke: #dfe5e9; stroke-width: 0.55; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 15.071811 164.811969 
+L 109.522205 164.811969 
+" clip-path="url(#pf449aad7c9)" style="fill: none; stroke: #dfe5e9; stroke-width: 0.55; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 167.859213 71.325354 
+L 292.867087 71.325354 
+" clip-path="url(#pf449aad7c9)" style="fill: none; stroke: #dfe5e9; stroke-width: 0.55; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_5">
+    <path d="M 167.859213 164.811969 
+L 292.867087 164.811969 
+" clip-path="url(#pf449aad7c9)" style="fill: none; stroke: #dfe5e9; stroke-width: 0.55; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_6">
+    <path d="M 342.870236 90.572598 
+L 437.32063 90.572598 
+" clip-path="url(#pf449aad7c9)" style="fill: none; stroke: #dfe5e9; stroke-width: 0.55; stroke-linecap: square"/>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #24333f" x="20.627717" y="65.79675" transform="rotate(-0 20.627717 65.79675)">T2000 历史</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #24333f" x="20.627717" y="92.956486" transform="rotate(-0 20.627717 92.956486)">该线全部合法支持</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #24333f" x="20.627717" y="159.283364" transform="rotate(-0 20.627717 159.283364)">T1000 历史</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #24333f" x="20.627717" y="186.4431" transform="rotate(-0 20.627717 186.4431)">同活动、同阶段配对</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 9.1px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #24333f" x="173.415118" y="65.826975" transform="rotate(-0 173.415118 65.826975)">慢锚点 A</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 9.1px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #24333f" x="173.415118" y="159.313589" transform="rotate(-0 173.415118 159.313589)">快差异 D</text>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 9.1px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #24333f" x="348.426142" y="85.074219" transform="rotate(-0 348.426142 85.074219)">扣除重组偏差</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pf449aad7c9">
+   <rect x="3.96" y="3.96" width="444.472441" height="274.96063"/>
+  </clipPath>
+ </defs>
+</svg>

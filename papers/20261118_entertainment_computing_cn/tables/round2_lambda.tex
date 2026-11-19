@@ -1,0 +1,16 @@
+\begin{table}[!htbp]\centering
+\caption{末10期的共享系数与删除敏感性}\label{tab:round2lambda}
+\small\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\linewidth}{L r r r r}\toprule
+规则 & 正系数/状态 & 均值 & 最大值 & 最大删除跨度 \\
+\midrule
+风险收缩 k=4 & 15/60 & 0.033 & 0.398 & 0.625 \\
+风险收缩 k=12 & 15/60 & 0.027 & 0.321 & 0.500 \\
+近期风险 k=8 & 27/60 & 0.072 & 0.583 & 0.802 \\
+稳健门控 k=8 & 0/60 & 0.000 & 0.000 & 0.802 \\
+风险规则仅改T1000 & 6/60 & 0.009 & 0.152 & 0.365 \\
+风险规则仅改T2000 & 21/60 & 0.063 & 0.583 & 0.802 \\
+相邻排名风险规则 & 19/60 & 0.265 & 1.000 & 1.000 \\
+\bottomrule\end{tabularx}
+\par\vspace{3pt}\begin{minipage}{\linewidth}\footnotesize 60状态为10活动×2排名×3阶段。门控行的删除跨度属于门控前风险估计；实际系数全为零。删除跨度描述有限支持敏感性。\end{minipage}
+\end{table}

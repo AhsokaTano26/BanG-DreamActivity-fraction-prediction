@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="417.820191pt" height="423.726875pt" viewBox="0 0 417.820191 423.726875" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-19T00:28:37.195113</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 423.726875 
+L 417.820191 423.726875 
+L 417.820191 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="connector-1">
+    <path d="M 150.532077 42.129444 
+L 167.653337 42.129444 
+L 167.653337 17.677282 
+L 283.221841 17.677282 
+" clip-path="url(#p4430bbddc2)" style="fill: none; stroke: #303c44; stroke-width: 0.85; stroke-linecap: square"/>
+   </g>
+   <g id="connector-1-arrow">
+    <path d="M 283.221841 19.679867 
+Q 283.221841 24.346959 283.221841 28.063721 
+" clip-path="url(#p4430bbddc2)" style="fill: none; stroke: #303c44; stroke-width: 0.85; stroke-linecap: round"/>
+    <path d="M 284.821841 24.863721 
+L 283.221841 28.063721 
+L 281.621841 24.863721 
+z
+" clip-path="url(#p4430bbddc2)" style="fill: #303c44; stroke: #303c44; stroke-width: 0.85; stroke-linecap: round"/>
+   </g>
+   <g id="connector-2-arrow">
+    <path d="M 261.677362 42.129444 
+Q 271.448909 42.129444 280.270126 42.129444 
+" clip-path="url(#p4430bbddc2)" style="fill: none; stroke: #303c44; stroke-width: 0.85; stroke-linecap: round"/>
+    <path d="M 277.070126 40.529444 
+L 280.270126 42.129444 
+L 277.070126 43.729444 
+z
+" clip-path="url(#p4430bbddc2)" style="fill: #303c44; stroke: #303c44; stroke-width: 0.85; stroke-linecap: round"/>
+   </g>
+   <g id="独立专家-I-card">
+    <path d="M 75.840581 59.912834 
+L 148.177904 59.912834 
+Q 150.532077 59.912834 150.532077 57.467618 
+L 150.532077 26.79127 
+Q 150.532077 24.346054 148.177904 24.346054 
+L 75.840581 24.346054 
+Q 73.486407 24.346054 73.486407 26.79127 
+L 73.486407 57.467618 
+Q 73.486407 59.912834 75.840581 59.912834 
+z
+" clip-path="url(#p4430bbddc2)" style="fill: #ffffff; stroke: #456d90; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="共享专家-S-card">
+    <path d="M 184.988612 59.912834 
+L 257.325935 59.912834 
+Q 259.680108 59.912834 259.680108 57.467618 
+L 259.680108 26.79127 
+Q 259.680108 24.346054 257.325935 24.346054 
+L 184.988612 24.346054 
+Q 182.634439 24.346054 182.634439 26.79127 
+L 182.634439 57.467618 
+Q 182.634439 59.912834 184.988612 59.912834 
+z
+" clip-path="url(#p4430bbddc2)" style="fill: #ffffff; stroke: #456d90; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <!-- $b=(1-\lambda)I+\lambda S$ -->
+    <g style="fill: #24333f" transform="translate(298.202943 31.541901)">
+     <text>
+      <tspan x="0" y="-0.75" style="font-size: 11px; font-family: 'cmmi10'; fill: #24333f">b</tspan>
+      <tspan x="40.382056" y="-0.75" style="font-size: 11px; font-family: 'cmmi10'; fill: #24333f">¸</tspan>
+      <tspan x="51.065162" y="-0.75" style="font-size: 11px; font-family: 'cmmi10'; fill: #24333f">I</tspan>
+      <tspan x="68.839198" y="-0.75" style="font-size: 11px; font-family: 'cmmi10'; fill: #24333f">¸</tspan>
+      <tspan x="75.252284" y="-0.75" style="font-size: 11px; font-family: 'cmmi10'; fill: #24333f">S</tspan>
+      <tspan x="6.921198" y="-0.75" style="font-size: 11px; font-family: 'cmr10'; fill: #24333f">=</tspan>
+      <tspan x="17.666614" y="-0.75" style="font-size: 11px; font-family: 'cmr10'; fill: #24333f">(</tspan>
+      <tspan x="21.936634" y="-0.75" style="font-size: 11px; font-family: 'cmr10'; fill: #24333f">1</tspan>
+      <tspan x="46.795142" y="-0.75" style="font-size: 11px; font-family: 'cmr10'; fill: #24333f">)</tspan>
+      <tspan x="58.093781" y="-0.75" style="font-size: 11px; font-family: 'cmr10'; fill: #24333f">+</tspan>
+      <tspan x="29.63664" y="-0.75" style="font-size: 11px; font-family: 'cmsy10'; fill: #24333f">¡</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #24333f" x="298.202943" y="53.590231" transform="rotate(-0 298.202943 53.590231)">权重只由过去已发误差决定</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #24333f" x="71.34625" y="11.377969" transform="rotate(-0 71.34625 11.377969)">(a) 自适应凸组合与原锚点法分别评估</text>
+   </g>
+   <g id="line2d_1">
+    <path d="M 75.626565 38.795058 
+L 148.391919 38.795058 
+" clip-path="url(#p4430bbddc2)" style="fill: none; stroke: #dfe5e9; stroke-width: 0.55; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 184.774596 38.795058 
+L 257.539951 38.795058 
+" clip-path="url(#p4430bbddc2)" style="fill: none; stroke: #dfe5e9; stroke-width: 0.55; stroke-linecap: square"/>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 8.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #24333f" x="79.90688" y="34.786052" transform="rotate(-0 79.90688 34.786052)">独立专家 I</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #24333f" x="79.90688" y="52.408634" transform="rotate(-0 79.90688 52.408634)">本线合法误差</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 8.8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #24333f" x="189.054911" y="34.786052" transform="rotate(-0 189.054911 34.786052)">共享专家 S</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #24333f" x="189.054911" y="52.425235" transform="rotate(-0 189.054911 52.425235)">完整成对历史</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_2">
+    <path d="M 71.34625 381.690579 
+L 221.380883 381.690579 
+L 221.380883 122.357939 
+L 71.34625 122.357939 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_3">
+      <path d="M 79.882941 381.690579 
+L 79.882941 122.357939 
+" clip-path="url(#p655da99e0b)" style="fill: none; stroke: #dfe3e6; stroke-width: 0.45; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4">
+      <defs>
+       <path id="m3597adaf8a" d="M 0 0 
+L 0 3 
+" style="stroke: #24333f; stroke-width: 0.6"/>
+      </defs>
+      <g>
+       <use xlink:href="#m3597adaf8a" x="79.882941" y="381.690579" style="fill: #24333f; stroke: #24333f; stroke-width: 0.6"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #24333f" x="79.882941" y="393.737454" transform="rotate(-0 79.882941 393.737454)">5.0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_5">
+      <path d="M 116.956676 381.690579 
+L 116.956676 122.357939 
+" clip-path="url(#p655da99e0b)" style="fill: none; stroke: #dfe3e6; stroke-width: 0.45; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m3597adaf8a" x="116.956676" y="381.690579" style="fill: #24333f; stroke: #24333f; stroke-width: 0.6"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #24333f" x="116.956676" y="393.737454" transform="rotate(-0 116.956676 393.737454)">5.5</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_7">
+      <path d="M 154.030411 381.690579 
+L 154.030411 122.357939 
+" clip-path="url(#p655da99e0b)" style="fill: none; stroke: #dfe3e6; stroke-width: 0.45; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m3597adaf8a" x="154.030411" y="381.690579" style="fill: #24333f; stroke: #24333f; stroke-width: 0.6"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #24333f" x="154.030411" y="393.737454" transform="rotate(-0 154.030411 393.737454)">6.0</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_9">
+      <path d="M 191.104146 381.690579 
+L 191.104146 122.357939 
+" clip-path="url(#p655da99e0b)" style="fill: none; stroke: #dfe3e6; stroke-width: 0.45; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m3597adaf8a" x="191.104146" y="381.690579" style="fill: #24333f; stroke: #24333f; stroke-width: 0.6"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #24333f" x="191.104146" y="393.737454" transform="rotate(-0 191.104146 393.737454)">6.5</text>
+     </g>
+    </g>
+    <g id="text_12">
+     <text style="font-size: 9px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #24333f" x="146.363566" y="406.881985" transform="rotate(-0 146.363566 406.881985)">两线活动等权 MAPE／%</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_11">
+      <defs>
+       <path id="ma773fd844d" d="M 0 0 
+L -3 0 
+" style="stroke: #24333f; stroke-width: 0.6"/>
+      </defs>
+      <g>
+       <use xlink:href="#ma773fd844d" x="71.34625" y="136.250759" style="fill: #24333f; stroke: #24333f; stroke-width: 0.6"/>
+      </g>
+     </g>
+     <g id="text_13">
+      <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #24333f" x="64.84625" y="139.516384" transform="rotate(-0 64.84625 139.516384)">独立固定配方</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#ma773fd844d" x="71.34625" y="157.300486" style="fill: #24333f; stroke: #24333f; stroke-width: 0.6"/>
+      </g>
+     </g>
+     <g id="text_14">
+      <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #24333f" x="64.84625" y="160.581736" transform="rotate(-0 64.84625 160.581736)">固定1/4共享</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_13">
+      <g>
+       <use xlink:href="#ma773fd844d" x="71.34625" y="178.350213" style="fill: #24333f; stroke: #24333f; stroke-width: 0.6"/>
+      </g>
+     </g>
+     <g id="text_15">
+      <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #24333f" x="64.84625" y="181.631463" transform="rotate(-0 64.84625 181.631463)">固定1/2共享</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_14">
+      <g>
+       <use xlink:href="#ma773fd844d" x="71.34625" y="199.399941" style="fill: #24333f; stroke: #24333f; stroke-width: 0.6"/>
+      </g>
+     </g>
+     <g id="text_16">
+      <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #24333f" x="64.84625" y="202.681191" transform="rotate(-0 64.84625 202.681191)">完全共享</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_15">
+      <g>
+       <use xlink:href="#ma773fd844d" x="71.34625" y="220.449668" style="fill: #24333f; stroke: #24333f; stroke-width: 0.6"/>
+      </g>
+     </g>
+     <g id="text_17">
+      <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #24333f" x="64.84625" y="223.715293" transform="rotate(-0 64.84625 223.715293)">风险 k=4</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_16">
+      <g>
+       <use xlink:href="#ma773fd844d" x="71.34625" y="241.499395" style="fill: #24333f; stroke: #24333f; stroke-width: 0.6"/>
+      </g>
+     </g>
+     <g id="text_18">
+      <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #24333f" x="64.84625" y="244.76502" transform="rotate(-0 64.84625 244.76502)">风险 k=12</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_17">
+      <g>
+       <use xlink:href="#ma773fd844d" x="71.34625" y="262.549122" style="fill: #24333f; stroke: #24333f; stroke-width: 0.6"/>
+      </g>
+     </g>
+     <g id="text_19">
+      <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #24333f" x="64.84625" y="265.814747" transform="rotate(-0 64.84625 265.814747)">近期风险 k=8</text>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_18">
+      <g>
+       <use xlink:href="#ma773fd844d" x="71.34625" y="283.59885" style="fill: #24333f; stroke: #24333f; stroke-width: 0.6"/>
+      </g>
+     </g>
+     <g id="text_20">
+      <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #24333f" x="64.84625" y="286.864475" transform="rotate(-0 64.84625 286.864475)">稳健门控 k=8</text>
+     </g>
+    </g>
+    <g id="ytick_9">
+     <g id="line2d_19">
+      <g>
+       <use xlink:href="#ma773fd844d" x="71.34625" y="304.648577" style="fill: #24333f; stroke: #24333f; stroke-width: 0.6"/>
+      </g>
+     </g>
+     <g id="text_21">
+      <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #24333f" x="64.84625" y="307.914202" transform="rotate(-0 64.84625 307.914202)">同面板独立</text>
+     </g>
+    </g>
+    <g id="ytick_10">
+     <g id="line2d_20">
+      <g>
+       <use xlink:href="#ma773fd844d" x="71.34625" y="325.698304" style="fill: #24333f; stroke: #24333f; stroke-width: 0.6"/>
+      </g>
+     </g>
+     <g id="text_22">
+      <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #24333f" x="64.84625" y="328.979554" transform="rotate(-0 64.84625 328.979554)">仅T1000风险共享</text>
+     </g>
+    </g>
+    <g id="ytick_11">
+     <g id="line2d_21">
+      <g>
+       <use xlink:href="#ma773fd844d" x="71.34625" y="346.748032" style="fill: #24333f; stroke: #24333f; stroke-width: 0.6"/>
+      </g>
+     </g>
+     <g id="text_23">
+      <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #24333f" x="64.84625" y="350.029282" transform="rotate(-0 64.84625 350.029282)">仅T2000风险共享</text>
+     </g>
+    </g>
+    <g id="ytick_12">
+     <g id="line2d_22">
+      <g>
+       <use xlink:href="#ma773fd844d" x="71.34625" y="367.797759" style="fill: #24333f; stroke: #24333f; stroke-width: 0.6"/>
+      </g>
+     </g>
+     <g id="text_24">
+      <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #24333f" x="64.84625" y="371.094634" transform="rotate(-0 64.84625 371.094634)">邻排名风险池</text>
+     </g>
+    </g>
+   </g>
+   <g id="line2d_23">
+    <defs>
+     <path id="m8ad52ca10f" d="M 0 2 
+C 0.530406 2 1.03916 1.789267 1.414214 1.414214 
+C 1.789267 1.03916 2 0.530406 2 0 
+C 2 -0.530406 1.789267 -1.03916 1.414214 -1.414214 
+C 1.03916 -1.789267 0.530406 -2 0 -2 
+C -0.530406 -2 -1.03916 -1.789267 -1.414214 -1.414214 
+C -1.789267 -1.03916 -2 -0.530406 -2 0 
+C -2 0.530406 -1.789267 1.03916 -1.414214 1.414214 
+C -1.03916 1.789267 -0.530406 2 0 2 
+z
+" style="stroke: #456d90"/>
+    </defs>
+    <g clip-path="url(#p655da99e0b)">
+     <use xlink:href="#m8ad52ca10f" x="78.166006" y="134.145786" style="fill: #456d90; stroke: #456d90"/>
+     <use xlink:href="#m8ad52ca10f" x="98.181662" y="155.195513" style="fill: #456d90; stroke: #456d90"/>
+     <use xlink:href="#m8ad52ca10f" x="124.366681" y="176.245241" style="fill: #456d90; stroke: #456d90"/>
+     <use xlink:href="#m8ad52ca10f" x="193.652778" y="197.294968" style="fill: #456d90; stroke: #456d90"/>
+     <use xlink:href="#m8ad52ca10f" x="81.924537" y="218.344695" style="fill: #456d90; stroke: #456d90"/>
+     <use xlink:href="#m8ad52ca10f" x="81.020014" y="239.394422" style="fill: #456d90; stroke: #456d90"/>
+     <use xlink:href="#m8ad52ca10f" x="80.883836" y="260.44415" style="fill: #456d90; stroke: #456d90"/>
+     <use xlink:href="#m8ad52ca10f" x="79.741553" y="281.493877" style="fill: #456d90; stroke: #456d90"/>
+     <use xlink:href="#m8ad52ca10f" x="78.166006" y="302.543604" style="fill: #456d90; stroke: #456d90"/>
+     <use xlink:href="#m8ad52ca10f" x="80.449987" y="323.593332" style="fill: #456d90; stroke: #456d90"/>
+     <use xlink:href="#m8ad52ca10f" x="78.599854" y="344.643059" style="fill: #456d90; stroke: #456d90"/>
+     <use xlink:href="#m8ad52ca10f" x="78.792794" y="365.692786" style="fill: #456d90; stroke: #456d90"/>
+    </g>
+   </g>
+   <g id="line2d_24">
+    <defs>
+     <path id="m2861b66614" d="M -2 2 
+L 2 2 
+L 2 -2 
+L -2 -2 
+z
+" style="stroke: #b97a48; stroke-linejoin: miter"/>
+    </defs>
+    <g clip-path="url(#p655da99e0b)">
+     <use xlink:href="#m2861b66614" x="147.92856" y="138.355732" style="fill: #b97a48; stroke: #b97a48; stroke-linejoin: miter"/>
+     <use xlink:href="#m2861b66614" x="150.595539" y="159.405459" style="fill: #b97a48; stroke: #b97a48; stroke-linejoin: miter"/>
+     <use xlink:href="#m2861b66614" x="162.13043" y="180.455186" style="fill: #b97a48; stroke: #b97a48; stroke-linejoin: miter"/>
+     <use xlink:href="#m2861b66614" x="214.561127" y="201.504913" style="fill: #b97a48; stroke: #b97a48; stroke-linejoin: miter"/>
+     <use xlink:href="#m2861b66614" x="151.667425" y="222.554641" style="fill: #b97a48; stroke: #b97a48; stroke-linejoin: miter"/>
+     <use xlink:href="#m2861b66614" x="150.773937" y="243.604368" style="fill: #b97a48; stroke: #b97a48; stroke-linejoin: miter"/>
+     <use xlink:href="#m2861b66614" x="155.319656" y="264.654095" style="fill: #b97a48; stroke: #b97a48; stroke-linejoin: miter"/>
+     <use xlink:href="#m2861b66614" x="147.92856" y="285.703822" style="fill: #b97a48; stroke: #b97a48; stroke-linejoin: miter"/>
+     <use xlink:href="#m2861b66614" x="147.92856" y="306.75355" style="fill: #b97a48; stroke: #b97a48; stroke-linejoin: miter"/>
+     <use xlink:href="#m2861b66614" x="147.920974" y="327.803277" style="fill: #b97a48; stroke: #b97a48; stroke-linejoin: miter"/>
+     <use xlink:href="#m2861b66614" x="155.327242" y="348.853004" style="fill: #b97a48; stroke: #b97a48; stroke-linejoin: miter"/>
+     <use xlink:href="#m2861b66614" x="148.438337" y="369.902732" style="fill: #b97a48; stroke: #b97a48; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 71.34625 381.690579 
+L 71.34625 122.357939 
+" style="fill: none; stroke: #000000; stroke-width: 0.65; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 71.34625 381.690579 
+L 221.380883 381.690579 
+" style="fill: none; stroke: #000000; stroke-width: 0.65; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #24333f" x="71.34625" y="112.635577" transform="rotate(-0 71.34625 112.635577)">(b) 12个预登记候选</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 8.2px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #24333f" x="74.346943" y="417.997148" transform="rotate(-0 74.346943 417.997148)">选择块选中独立配方；末段不重新选择。</text>
+   </g>
+   <g id="legend_1">
+    <g id="line2d_25">
+     <g>
+      <use xlink:href="#m8ad52ca10f" x="63.430883" y="89.738183" style="fill: #456d90; stroke: #456d90"/>
+     </g>
+    </g>
+    <g id="text_27">
+     <text style="font-size: 8.1px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #24333f" x="78.010883" y="92.573183" transform="rotate(-0 78.010883 92.573183)">次10期：选择</text>
+    </g>
+    <g id="line2d_26">
+     <g>
+      <use xlink:href="#m2861b66614" x="150.910883" y="89.738183" style="fill: #b97a48; stroke: #b97a48; stroke-linejoin: miter"/>
+     </g>
+    </g>
+    <g id="text_28">
+     <text style="font-size: 8.1px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #24333f" x="165.490883" y="92.573183" transform="rotate(-0 165.490883 92.573183)">末10期：诊断</text>
+    </g>
+   </g>
+  </g>
+  <g id="axes_3">
+   <g id="patch_5">
+    <path d="M 298.360191 236.679734 
+L 413.771447 236.679734 
+L 413.771447 122.357939 
+L 298.360191 122.357939 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="line2d_27">
+    <path d="M 300.953702 127.554384 
+L 352.621557 127.554384 
+" clip-path="url(#p2e00bb57ce)" style="fill: none; stroke: #dfe5e9; stroke-width: 3; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_28">
+    <path d="M 300.953702 162.197352 
+L 342.540024 162.197352 
+" clip-path="url(#p2e00bb57ce)" style="fill: none; stroke: #dfe5e9; stroke-width: 3; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_29">
+    <path d="M 300.953702 196.84032 
+L 376.492926 196.84032 
+" clip-path="url(#p2e00bb57ce)" style="fill: none; stroke: #dfe5e9; stroke-width: 3; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_30">
+    <path d="M 300.953702 231.483288 
+L 300.953702 231.483288 
+" clip-path="url(#p2e00bb57ce)" style="fill: none; stroke: #dfe5e9; stroke-width: 3; stroke-linecap: square"/>
+   </g>
+   <g id="matplotlib.axis_3">
+    <g id="xtick_5">
+     <g id="line2d_31">
+      <path d="M 300.953702 236.679734 
+L 300.953702 122.357939 
+" clip-path="url(#p2e00bb57ce)" style="fill: none; stroke: #dfe3e6; stroke-width: 0.45; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_32">
+      <g>
+       <use xlink:href="#m3597adaf8a" x="300.953702" y="236.679734" style="fill: #24333f; stroke: #24333f; stroke-width: 0.6"/>
+      </g>
+     </g>
+     <g id="text_29">
+      <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #24333f" x="300.953702" y="248.726609" transform="rotate(-0 300.953702 248.726609)">0.0</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_33">
+      <path d="M 339.856373 236.679734 
+L 339.856373 122.357939 
+" clip-path="url(#p2e00bb57ce)" style="fill: none; stroke: #dfe3e6; stroke-width: 0.45; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_34">
+      <g>
+       <use xlink:href="#m3597adaf8a" x="339.856373" y="236.679734" style="fill: #24333f; stroke: #24333f; stroke-width: 0.6"/>
+      </g>
+     </g>
+     <g id="text_30">
+      <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #24333f" x="339.856373" y="248.726609" transform="rotate(-0 339.856373 248.726609)">0.3</text>
+     </g>
+    </g>
+    <g id="xtick_7">
+     <g id="line2d_35">
+      <path d="M 378.759043 236.679734 
+L 378.759043 122.357939 
+" clip-path="url(#p2e00bb57ce)" style="fill: none; stroke: #dfe3e6; stroke-width: 0.45; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_36">
+      <g>
+       <use xlink:href="#m3597adaf8a" x="378.759043" y="236.679734" style="fill: #24333f; stroke: #24333f; stroke-width: 0.6"/>
+      </g>
+     </g>
+     <g id="text_31">
+      <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #24333f" x="378.759043" y="248.726609" transform="rotate(-0 378.759043 248.726609)">0.6</text>
+     </g>
+    </g>
+    <g id="text_32">
+     <text style="font-size: 9px; font-family: 'Times New Roman', 'SimSun'; text-anchor: middle; fill: #24333f" x="356.065819" y="261.835984" transform="rotate(-0 356.065819 261.835984)">共享权重（均值／最大值）</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_4">
+    <g id="ytick_13">
+     <g id="line2d_37">
+      <g>
+       <use xlink:href="#ma773fd844d" x="298.360191" y="127.554384" style="fill: #24333f; stroke: #24333f; stroke-width: 0.6"/>
+      </g>
+     </g>
+     <g id="text_33">
+      <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #24333f" x="291.860191" y="130.835634" transform="rotate(-0 291.860191 130.835634)">全历史 k4</text>
+     </g>
+    </g>
+    <g id="ytick_14">
+     <g id="line2d_38">
+      <g>
+       <use xlink:href="#ma773fd844d" x="298.360191" y="162.197352" style="fill: #24333f; stroke: #24333f; stroke-width: 0.6"/>
+      </g>
+     </g>
+     <g id="text_34">
+      <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #24333f" x="291.860191" y="165.478602" transform="rotate(-0 291.860191 165.478602)">全历史 k12</text>
+     </g>
+    </g>
+    <g id="ytick_15">
+     <g id="line2d_39">
+      <g>
+       <use xlink:href="#ma773fd844d" x="298.360191" y="196.84032" style="fill: #24333f; stroke: #24333f; stroke-width: 0.6"/>
+      </g>
+     </g>
+     <g id="text_35">
+      <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #24333f" x="291.860191" y="200.074695" transform="rotate(-0 291.860191 200.074695)">近期 k8</text>
+     </g>
+    </g>
+    <g id="ytick_16">
+     <g id="line2d_40">
+      <g>
+       <use xlink:href="#ma773fd844d" x="298.360191" y="231.483288" style="fill: #24333f; stroke: #24333f; stroke-width: 0.6"/>
+      </g>
+     </g>
+     <g id="text_36">
+      <text style="font-size: 8px; font-family: 'Times New Roman', 'SimSun'; text-anchor: end; fill: #24333f" x="291.860191" y="234.748913" transform="rotate(-0 291.860191 234.748913)">门控 k8</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_6">
+    <path d="M 298.360191 236.679734 
+L 298.360191 122.357939 
+" style="fill: none; stroke: #000000; stroke-width: 0.65; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 298.360191 236.679734 
+L 413.771447 236.679734 
+" style="fill: none; stroke: #000000; stroke-width: 0.65; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_41">
+    <g clip-path="url(#p2e00bb57ce)">
+     <use xlink:href="#m8ad52ca10f" x="305.24941" y="127.554384" style="fill: #456d90; stroke: #456d90"/>
+    </g>
+   </g>
+   <g id="text_37">
+    <text style="font-size: 8.2px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #24333f" x="381.352555" y="129.516458" transform="rotate(-0 381.352555 129.516458)">15/60</text>
+   </g>
+   <g id="line2d_42">
+    <g clip-path="url(#p2e00bb57ce)">
+     <use xlink:href="#m8ad52ca10f" x="304.444338" y="162.197352" style="fill: #456d90; stroke: #456d90"/>
+    </g>
+   </g>
+   <g id="text_38">
+    <text style="font-size: 8.2px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #24333f" x="381.352555" y="164.159426" transform="rotate(-0 381.352555 164.159426)">15/60</text>
+   </g>
+   <g id="line2d_43">
+    <g clip-path="url(#p2e00bb57ce)">
+     <use xlink:href="#m8ad52ca10f" x="310.240891" y="196.84032" style="fill: #456d90; stroke: #456d90"/>
+    </g>
+   </g>
+   <g id="text_39">
+    <text style="font-size: 8.2px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #24333f" x="381.352555" y="198.802394" transform="rotate(-0 381.352555 198.802394)">27/60</text>
+   </g>
+   <g id="line2d_44">
+    <g clip-path="url(#p2e00bb57ce)">
+     <use xlink:href="#m2861b66614" x="300.953702" y="231.483288" style="fill: #b97a48; stroke: #b97a48; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="text_40">
+    <text style="font-size: 8.2px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #24333f" x="381.352555" y="233.445363" transform="rotate(-0 381.352555 233.445363)">0/60</text>
+   </g>
+   <g id="text_41">
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #24333f" x="298.360191" y="116.985902" transform="rotate(-0 298.360191 116.985902)">(c) 末段60个任务状态</text>
+   </g>
+  </g>
+  <g id="axes_4">
+   <g id="text_42">
+    <text style="font-size: 9px; font-family: 'Times New Roman', 'SimSun'; text-anchor: start; fill: #b97a48" x="298.360191" y="299.409948" transform="rotate(-0 298.360191 299.409948)">稳健开关：末段 0/30 打开</text>
+   </g>
+   <g id="text_43">
+    <text style="font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #24333f" transform="translate(298.360191 318.801783)">与独立相同来自全部关闭。</text>
+    <text style="font-size: 8.6px; font-family: 'Times New Roman', 'SimSun'; fill: #24333f" transform="translate(298.360191 331.295298)">共享尚未显示稳定获益。</text>
+   </g>
+   <g id="text_44">
+    <text style="font-size: 8.4px; font-family: 'Times New Roman', 'SimSun'; fill: #24333f" transform="translate(298.360191 351.492319)">近期有效支持约12期；</text>
+    <text style="font-size: 8.4px; font-family: 'Times New Roman', 'SimSun'; fill: #24333f" transform="translate(298.360191 363.7281)">删一活动的权重跨度可达0.80。</text>
+    <text style="font-size: 8.4px; font-family: 'Times New Roman', 'SimSun'; fill: #24333f" transform="translate(298.360191 375.931069)">状态数不能当独立活动数。</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p4430bbddc2">
+   <rect x="71.34625" y="15.454358" width="342.425197" height="53.350171"/>
+  </clipPath>
+  <clipPath id="p655da99e0b">
+   <rect x="71.34625" y="122.357939" width="150.034633" height="259.33264"/>
+  </clipPath>
+  <clipPath id="p2e00bb57ce">
+   <rect x="298.360191" y="122.357939" width="115.411256" height="114.321795"/>
+  </clipPath>
+ </defs>
+</svg>

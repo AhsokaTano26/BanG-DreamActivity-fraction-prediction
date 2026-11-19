@@ -171,3 +171,120 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Local machine artifacts
+.DS_Store
+.idea/conventionalCommit.xml
+
+# Repository policy: source/configuration in Git; large artifacts stay external.
+# Already tracked frozen research assets remain in history and are not deleted.
+
+# Local editors, credentials and isolated checkouts
+.idea/
+.vscode/
+.env.*
+!.env.example
+!.env.template
+.worktrees/
+worktrees/
+
+# Runtime state and external deployment mounts
+/runtime/
+/state/
+/models/
+/bootstrap/
+/production_records/
+/maintenance_records/
+/model-releases/
+/paper-releases/
+/release-assets/
+
+# Trained weights, databases and downloadable/packed artifacts
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+*.db-wal
+*.db-shm
+*.joblib
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.pkl
+*.pickle
+*.npy
+*.npz
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.gz
+
+# New raw/frozen dataset payloads are external; preserve lightweight cohort receipts.
+/data/*
+!/data/*/
+/data/*/**
+!/data/*/manifest.json
+!/data/*/partitions.csv
+!/data/*/excluded_curves.csv
+!/data/*/unavailable_cases.csv
+!/data/*/README.md
+
+# Generated experiment outputs and duplicated source freezes
+/analysis/*_results/
+/analysis/*_records/
+/analysis/foundation_assets/
+/analysis/**/*.log
+/analysis/results/
+/analysis/live_predictions/
+/analysis/multirank_predictions/
+/analysis/multirank_comparisons/
+/analysis/deadline_research/
+/analysis/research_development/
+/analysis/innovation_research/
+/image/
+
+# Round-two source, preregistration and reports remain versioned.
+# Numeric runs, manuscript copies and independent replay sandboxes are local artifacts.
+/analysis/paper_upgrade_round2/**/baseline/
+/analysis/paper_upgrade_round2/**/delivery/
+/analysis/paper_upgrade_round2/**/workspaces/**/run_*/
+/analysis/paper_upgrade_round2/**/workspaces/**/runs/
+/analysis/paper_upgrade_round2/**/workspaces/**/evidence_*/
+/analysis/paper_upgrade_round2/**/workspaces/**/calibration_run_*/
+/analysis/paper_upgrade_round2/**/workspaces/**/simulation_run_*/
+/analysis/paper_upgrade_round2/**/workspaces/**/posthoc_transfer_run_*/
+/analysis/paper_upgrade_round2/**/workspaces/**/statistics_*/
+/analysis/paper_upgrade_round2/**/workspaces/**/reliability_*/
+/analysis/paper_upgrade_round2/**/workspaces/**/portability_*/
+/analysis/paper_upgrade_round2/**/workspaces/F/data/
+/analysis/paper_upgrade_round2/**/workspaces/F/figures/
+/analysis/paper_upgrade_round2/**/workspaces/F/qa/
+/analysis/paper_upgrade_round2/**/workspaces/G/manuscript/
+/analysis/paper_upgrade_round2/**/workspaces/G/original_sources/
+/analysis/paper_upgrade_round2/**/workspaces/G/qa_intermediate/
+/analysis/paper_upgrade_round2/**/workspaces/H/H_final_package_*/
+/analysis/paper_upgrade_round2/**/workspaces/H/H_final_v3_sidecar/
+/analysis/paper_upgrade_round2/**/workspaces/H/H_final_key_pages/
+/analysis/paper_upgrade_round2/**/workspaces/H/H_final_svg_programmatic/
+/analysis/paper_upgrade_round2/**/*.png
+/analysis/paper_upgrade_round2/**/*_text.txt
+
+# Manuscript sources, tables and vector figures stay in Git.
+# Final PDFs are independently published as GitHub Release assets.
+/papers/*/output/
+/papers/*/qa/
+/papers/*/qa_round1_archive/
+/papers/*/scripts_round1_archive/
+/papers/*/legacy_delivery_metadata/
+/papers/*/delivery_receipt.json
+/papers/*/figures/*.png
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.xdv
+*.toc
+*.out

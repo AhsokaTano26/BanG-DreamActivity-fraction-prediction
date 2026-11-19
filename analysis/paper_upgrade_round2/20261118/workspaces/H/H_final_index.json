@@ -1,0 +1,62 @@
+{
+  "status": "accepted_through_v1_complete_external_build",
+  "authoritative_stage": "H final independent audit; earlier phase reports retain their historical pending statuses",
+  "core_numeric": {
+    "status": "accepted",
+    "B": "H_numeric_evidence.json; H_B_scalar_evidence.json; H_portability_evidence.json",
+    "C": "H_numeric_evidence.json; H_fixture_evidence.json; H_portability_evidence.json",
+    "D": "H_D_numeric_evidence.json; H_D_transfer_evidence.json",
+    "E": "H_E_numeric_evidence.json",
+    "scope": "Independent arithmetic and causal guards; B35 full guarded replay; C one fixed cell/seed refit; not a fresh108-fit rerun"
+  },
+  "figures": {
+    "status": "accepted",
+    "groups": 18,
+    "assets": 54,
+    "evidence": "H_final_figure_evidence.json; H_final_figure_review.md",
+    "boundary": "External figure-qa helper unavailable in H venv, exit2 retained; independent vector/PDF bounds and actual visual inspection completed"
+  },
+  "native_bindings": {
+    "status": "accepted",
+    "legacy": 606,
+    "round2": 360,
+    "evidence": "H_final_root_binding_evidence.json",
+    "baseline_native_outputs": "15 tables and legacy macro file byte-identical"
+  },
+  "canonical_PDF": {
+    "status": "accepted",
+    "main_pages": 45,
+    "supplement_pages": 19,
+    "main_sha256": "897ad0e707bd1f57c0911c73fb96b56f348e96c1396624a3368c5c492143acb3",
+    "supplement_sha256": "455bb5f09fb1a18305510d08b54d71f5231ad5a9a67659229216395e015e066b",
+    "evidence": "H_final_document_evidence.json; H_final_key_page_evidence.json; H_final_pdf_review.md"
+  },
+  "test_evidence": {
+    "status": "accepted_PI_logs_independently_verified",
+    "unique_tests": 539,
+    "scope": "PI executed469 repository+70 new tests; H verified formal log hashes, counts and OK status; no duplicate full-suite execution"
+  },
+  "v1_package": {
+    "status": "accepted",
+    "elapsed_seconds": 35.256509124999866,
+    "complete_one_command": true,
+    "page_PNGs_equal": 64,
+    "figure_PNGs_equal": 18,
+    "evidence": "H_final_package_v1/result.json; H_final_package_review.md"
+  },
+  "important_findings": [
+    {"id":"H-BC-01","status":"closed","evidence":"Independent physical-case guard, guarded35-event parity and explicit new CLI entry"},
+    {"id":"H-BC-02","status":"closed","evidence":"C complete import closure+three TRAIN files in verified package; source/data hashes match earlier external refit"},
+    {"id":"H-D-01","status":"closed","evidence":"Deletion metadata identity clarified; independent deletion NLL and support checked"},
+    {"id":"H-FINAL-01","status":"closed","evidence":"Per-field binding units corrected and all360 independently verified"}
+  ],
+  "retained_scientific_limits": [
+    "Historical test explored, validation repeatedly reused, metadata retrospective without point-in-time archive",
+    "B/C/D real activity union35; C2 twelve query events are a subset",
+    "Nominal19 ranks in B/C1 have18 observed ranks; T1500 remains missing",
+    "D real transfer is posthoc phase1/120case evidence and failed relative to independent reference",
+    "Future80-event plan unactivated; original20-event pilot retained; future events0 and future MAPE absent",
+    "Installed dependencies/system fonts reused; fresh-machine dependency installation not tested"
+  ],
+  "remaining": "Light v2 archive/core-parity audit and independent slim source make all; record as external sidecar"
+}

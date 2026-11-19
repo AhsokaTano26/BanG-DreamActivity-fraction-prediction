@@ -1,0 +1,36 @@
+{
+  "finding": "delete_one_profile.csv records selected grid parameters under deletion, while expanded grid metadata retain their original full25 identities",
+  "sealed_files": "preserved byte-for-byte",
+  "valid_delete_one_fields": [
+    "deleted_ordinal",
+    "grid_index",
+    "qc",
+    "qd",
+    "r",
+    "rho",
+    "m",
+    "q_r_ratio"
+  ],
+  "original_full25_fields": [
+    "nll",
+    "two_delta_nll",
+    "support",
+    "complete_pairs",
+    "adjacent_differences",
+    "activity_span"
+  ],
+  "interpretation": "Rename these original_full25_* when reusing the table; selected parameter ranges use actual deletion-specific argmin, with 24 remaining activities; no deletion-likelihood confidence statement",
+  "implementation": "losses=batch_nll(y[keep],ordinals[keep],qs,rs); selected index=argmin(losses); export expands original grid entry",
+  "reported_by": "independent H audit before final delivery",
+  "follow_up": "H independently checks deletion-specific likelihood and support in separate audit outputs",
+  "H_independent_example": {
+    "evidence": "../H/H_D_numeric_evidence.json",
+    "deleted_ordinal": 2,
+    "actual_complete_pairs": 24,
+    "actual_adjacent_differences": 22,
+    "selected_grid_index": 87,
+    "actual_deleted_nll": -78.44883537763882,
+    "exported_original_full25_nll": -72.563735559732,
+    "parameter_argmin_status": "independently matched"
+  }
+}

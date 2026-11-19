@@ -1,0 +1,37 @@
+{
+  "source_policy": "Frozen G scientific source merged with explicit PI delivery scripts; original G and baseline archives retained.",
+  "canonical_paper": "papers/20261118_entertainment_computing_cn",
+  "core_source_sha256": {
+    "Highlights.tex": "a162715e58e3c65e61c5c27129c1c6dd6f41babdb061a57859cbb3a9f147cc4a",
+    "main.tex": "0fd4938407f2bb5cbcd205c0026b3d3902cba0c7d304732f33e1eebc060117b2",
+    "round2_studies.tex": "8a61f7940441a4bf09e7f4c7cd1a33e6f652542e7b6675d929ece5986c099cea",
+    "round2_supplement.tex": "9b405c7eeee0ce042b1015d8451941578145ee049d857372489e531e32b9981b",
+    "supplement.tex": "90cdb5545bdd4470a403c7d2ee965dcffaab3d053deddb0db6085a8773516434"
+  },
+  "bindings": {
+    "upgrade_number_bindings.json": "a5cc0965e26bc4a4ac4a87b04fb207ab2dc4258865a53e43c83f288cacd0c332",
+    "round2_number_bindings.json": "35836b162d80ec5e166205481a18c68b35e9d4eb792309ec6f8a8bced1a277c4",
+    "upgrade_figure_manifest.json": "3e5b12187e3a8bde2c127ce8b77d5b813bf347c34590643b78d9e14228dfea38",
+    "round2_document_checks.json": "8eff1b6115e316c6e3ac49bad8363e239d99b8dc080999e6dcab51290ee9b7ef",
+    "round2_render_manifest.json": "160a424fcbcea354a6399e8f59e90289630a74fc2cdd6a4b85b048a030a67d41"
+  },
+  "pdfs": {
+    "main": {
+      "pages": 45,
+      "sha256": "897ad0e707bd1f57c0911c73fb96b56f348e96c1396624a3368c5c492143acb3",
+      "same_page_pixels_as_G": 45,
+      "all_page_pixels_same": true,
+      "render_source_sha256": "897ad0e707bd1f57c0911c73fb96b56f348e96c1396624a3368c5c492143acb3"
+    },
+    "supplement": {
+      "pages": 19,
+      "sha256": "455bb5f09fb1a18305510d08b54d71f5231ad5a9a67659229216395e015e066b",
+      "same_page_pixels_as_G": 19,
+      "all_page_pixels_same": true,
+      "render_source_sha256": "455bb5f09fb1a18305510d08b54d71f5231ad5a9a67659229216395e015e066b"
+    }
+  },
+  "test_index_sha256": "f8e454de169c402b201ca496e61a97528ef5a18f49c68dbb1199c646cc619972",
+  "status": "canonical_source_figures_PDF_tests_and_full_standalone_archive_build_passed",
+  "standalone_validation": "workspaces/H/H_final_package_v1/result.json"
+}

@@ -1,0 +1,15 @@
+\begin{table}[!htbp]\centering
+\caption{预定条件审计的低覆盖与回退实例}\label{tab:round2conditions}
+\small\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\linewidth}{L r r r r}\toprule
+条件 & 名义 / \% & 活动/组数 & 联合覆盖 / \% & 95\%活动区间 \\
+\midrule
+T1000 & 80 & 16/47 & 65.62 & [50.00,81.25] \\
+T1000 & 90 & 16/47 & 87.50 & [72.92,97.92] \\
+challenge类型 & 80 & 3/168 & 59.97 & [51.85,66.67] \\
+challenge类型 & 90 & 3/168 & 74.79 & [62.96,84.21] \\
+跨排名回退池 & 80 & 4/12 & 100.00 & [100.00,100.00] \\
+跨排名回退池 & 90 & 10/27 & 100.00 & [100.00,100.00] \\
+\bottomrule\end{tabularx}
+\par\vspace{3pt}\begin{minipage}{\linewidth}\footnotesize 完整76个逐案例分层与76个完整组分层保留于原生CSV。条件间活动、排名、阶段及历史支持组成共同变化。回退池高覆盖伴随较宽区间。\end{minipage}
+\end{table}
