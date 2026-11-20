@@ -17,7 +17,7 @@ from analysis.backtest import TZ, snapshot
 from analysis.holdout_dataset import prefix_curve
 from download_ranks import RANKS
 from production.data import Store, sync_data
-from production.model import verify_pack
+from production.model import verify_pack,inference_session
 from production.runtime import DEFAULT_ROOT, _previous, cycle_lock, read_config, validate_root
 from production.selected_feedback import ensure_archive, seed_feedback
 from production.selected_model import build_bias, predict_pack
@@ -35,6 +35,11 @@ def rank_argument(value):
 
 
 def predict_once(config, rank, *, now_ms=None, sync=True, transport=None):
+    with inference_session():
+        return _predict_once(config,rank,now_ms=now_ms,sync=sync,transport=transport)
+
+
+def _predict_once(config, rank, *, now_ms=None, sync=True, transport=None):
     """Issue the requested rank using existing causal weights, then return."""
     rank = rank_argument(rank)
     if rank not in config['ranks']:
@@ -60,7 +65,9 @@ def predict_once(config, rank, *, now_ms=None, sync=True, transport=None):
                 errors.append({'stage': 'sync', 'error': f'{type(exc).__name__}: {exc}'})
                 sync_result = {'status': 'degraded', 'errors': list(errors)}
         active = [e for e in store.events(now) if e['start_ms'] <= now < e['end_ms']]
-        curves = {(c.event, c.rank): c for c in store.load_curves(now, ranks=[rank], complete_only=False)}
+        single_model=not config.get('automatic_training',True)
+        query={'events':[e['event'] for e in active]} if single_model else {}
+        curves = {(c.event, c.rank): c for c in store.load_curves(now, ranks=[rank], complete_only=False,**query)}
         rows = []
         for event in active:
             curve = curves.get((event['event'], rank))
@@ -78,12 +85,17 @@ def predict_once(config, rank, *, now_ms=None, sync=True, transport=None):
                 ledger.learn_completed(store.load_curves(now, ranks=config['ranks']),
                     now_ms=now, grace_ms=config.get('feedback_grace_ms', 600000))
                 seed_feedback(store, ledger, config, before_ms=event['start_ms'], now_ms=now)
-                path, manifest = _previous(root, before_ms=event['start_ms'])
+                path, manifest = _previous(root, before_ms=event['start_ms'],current_only=single_model)
                 if not manifest.get('production_ready') or manifest['history_max_end_ms'] >= event['start_ms']:
                     raise ValueError('模型不满足期初历史约束')
                 state = build_bias(ledger.feedback_rows(before_ms=event['start_ms']),
                                    before_ms=event['start_ms'], exclude_event_id=event['event'])
                 pin = ledger.create_pin(event, path, manifest['model_id'], state, now_ms=now)
+            if single_model:
+                path, manifest = _previous(root,before_ms=event['start_ms'],current_only=True)
+                if pin['model_id']!=manifest['model_id'] or Path(pin['model_path']).resolve()!=Path(path).resolve():
+                    pin=ledger.replace_unusable_pin(event['event'],path,manifest['model_id'],
+                        reason='Installed model replaced previous version',now_ms=now)
             manifest = verify_pack(pin['model_path'])
             if not manifest.get('production_ready') or manifest['history_max_end_ms'] >= event['start_ms']:
                 raise ValueError('模型不满足期初历史约束')

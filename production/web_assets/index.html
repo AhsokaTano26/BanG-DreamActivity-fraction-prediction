@@ -14,6 +14,7 @@
 <body>
 <main class="app-shell">
   <header class="app-header"><div class="app-brand"><img src="/bangdream-icon.png" class="app-icon" width="36" height="36" alt="BanG Dream!"><h1>活动终分预测</h1></div><div class="update-cadence"><span class="status-dot" aria-hidden="true"></span><span id="cadence">每15分钟取数</span></div></header>
+  <p id="replay-banner" class="forecast-verification" role="status" hidden></p>
   <div class="dashboard-grid">
     <aside class="overview" aria-label="活动与预测摘要">
       <section class="panel event-section" aria-label="当前活动信息">
@@ -43,6 +44,7 @@
         <div class="panel-heading"><h2 id="history-title">本期预测记录</h2></div>
         <div class="view-switch-region" data-view-state="idle">
         <h3 id="chart-title">等待活动信息</h3>
+        <p id="forecast-verification" class="forecast-verification" role="status" hidden></p>
         <div class="chart">
           <svg id="history-chart" viewBox="0 0 1000 250" role="img" tabindex="0" aria-describedby="history-detail chart-tooltip" aria-label="当前分数与终分预测图。可悬停或点选读数，也可用左右方向键、Home及End移动，Escape关闭读数。"></svg>
           <p id="chart-empty">有记录后显示曲线</p>
@@ -50,10 +52,18 @@
             <time></time>
             <div class="chart-tooltip-row"><span><i class="tooltip-observed" aria-hidden="true"></i>当前分数线</span><strong data-current>—</strong></div>
             <div class="chart-tooltip-row"><span><i class="tooltip-predicted" aria-hidden="true"></i>预测终分</span><strong data-predicted>—</strong></div>
+            <div class="chart-tooltip-row" data-final-row hidden><span><i class="tooltip-final" aria-hidden="true"></i>实际终分</span><strong data-final>—</strong></div>
+            <div class="chart-tooltip-row" data-error-row hidden><span>相对误差</span><strong data-error>—</strong></div>
             <p id="chart-tooltip-note"></p>
           </div>
         </div>
-        <div class="legend"><span class="observed-key">当前分数线</span><span class="predicted-key">预测终分</span></div>
+        <div class="legend"><span class="observed-key">当前分数线</span><span class="predicted-key">预测终分</span><span class="final-key" hidden>实际终分</span></div>
+        <details id="checkpoint-comparison" class="checkpoint-comparison" hidden>
+          <summary>查看各时点预测与误差</summary>
+          <div class="checkpoint-table-wrap" role="region" aria-label="各时点预测核对" tabindex="0">
+            <table><thead><tr><th>预测时点</th><th>当时预测 / 发布时间</th><th>相对误差</th></tr></thead><tbody id="checkpoint-rows"></tbody></table>
+          </div>
+        </details>
         <p id="history-detail" class="detail">显示实际发出的预测，横轴覆盖活动开始至结束。</p>
         </div>
       </section>

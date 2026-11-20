@@ -20,16 +20,10 @@ from download_ranks import RANKS
 from production.data import Store,sync_data
 from production.model import train_pack,verify_pack,predict_pack,build_bias
 from production.state import Ledger,atomic_json
+from production.config import validate_root,read_config,cycle_lock
 
 DEFAULT_ROOT=ROOT/'runtime/live'
 DEFAULT_SEED=ROOT/'analysis/rolling_results/v3_dense_full_retrain_20261115'
-
-
-def validate_root(root):
-    path=Path(root).expanduser().resolve()
-    if path==ROOT or path in ROOT.parents or any(path==ROOT/d or ROOT/d in path.parents for d in ['data','analysis','training','production','tests','docs']):
-        raise ValueError('Runtime storage cannot replace source or frozen research directories')
-    return path
 
 
 def initialize(root=DEFAULT_ROOT,*,ranks=None,interval_seconds=900):
@@ -49,24 +43,6 @@ def initialize(root=DEFAULT_ROOT,*,ranks=None,interval_seconds=900):
     atomic_json(path,config);return config
 
 
-def read_config(path):
-    cfg=json.loads(Path(path).read_text());validate_root(cfg['root'])
-    if not cfg['ranks'] or len(set(cfg['ranks']))!=len(cfg['ranks']) or not set(cfg['ranks'])<=set(RANKS):raise ValueError('Invalid rank configuration')
-    if cfg['interval_seconds']<60:raise ValueError('Invalid schedule interval')
-    return cfg
-
-
-@contextmanager
-def cycle_lock(root):
-    root=validate_root(root);root.mkdir(parents=True,exist_ok=True)
-    with (root/'cycle.lock').open('a+') as f:
-        try:fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB)
-        except BlockingIOError:yield False;return
-        try:
-            f.seek(0);f.truncate();f.write(str(os.getpid()));f.flush();yield True
-        finally:fcntl.flock(f,fcntl.LOCK_UN)
-
-
 def _append_log(root,record):
     path=root/'cycles.jsonl'
     with path.open('a') as f:f.write(json.dumps(record,ensure_ascii=False,allow_nan=False)+'\n')
@@ -79,13 +55,14 @@ def _activate(root,path,manifest):
     return pointer
 
 
-def _previous(root,*,before_ms):
+def _previous(root,*,before_ms,current_only=False):
     candidates=[]
     pointer=root/'models/current.json'
     if pointer.exists():
         try:candidates.append(Path(json.loads(pointer.read_text())['path']))
         except (OSError,ValueError,KeyError,TypeError):pass
-    candidates += sorted((root/'models/versions').glob('*'),key=lambda p:p.stat().st_mtime,reverse=True)
+    if not current_only:
+        candidates += sorted((root/'models/versions').glob('*'),key=lambda p:p.stat().st_mtime,reverse=True)
     for path in dict.fromkeys(candidates):
         try:
             manifest=verify_pack(path)

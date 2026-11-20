@@ -158,9 +158,15 @@ window.ForecastUI = (() => {
   };
 })();
 
-/* Shared SVG reveal and cursor readout; values follow the rendered polylines. */
+/* Curve cursors follow the polylines; checkpoints use saved issued revisions. */
 window.ForecastChart = (() => {
   let active=null, played=false, sequence=0;
+  const errorPercent=(prediction,actual)=>{
+    if(!Number.isFinite(prediction)||!Number.isFinite(actual)||actual<=0)return null;
+    const value=(prediction-actual)/actual*100;
+    return Number.isFinite(value)?value:null;
+  };
+  const formatError=value=>Number.isFinite(value)?`${value>=.005?'+':''}${(Math.abs(value)<.005?0:value).toFixed(2)}%`:'—';
   const element=(tag,attributes={})=>{
     const node=document.createElementNS('http://www.w3.org/2000/svg',tag);
     for(const [name,value] of Object.entries(attributes))node.setAttribute(name,String(value));
@@ -247,9 +253,9 @@ window.ForecastChart = (() => {
       if(px<this.left||px>this.right||py<this.top||py>this.bottom){this.hide();return;}
       this.finish();this.show(this.first+(px-this.left)/(this.right-this.left)*(this.last-this.first),py);
     }
-    show(time,pointerY=this.top+24){
+    show(time,pointerY=this.top+24,checkpoint=null){
       const t=Math.round(Math.max(this.first,Math.min(this.last,time)));this.cursorTime=t;
-      const actual=reading(this.observed,t),prediction=reading(this.predicted,t,true);
+      const actual=reading(this.observed,t),prediction=checkpoint?{value:checkpoint.predicted_final_ep}:reading(this.predicted,t,true);
       const xx=this.x(t);this.hover.removeAttribute('display');this.hover.setAttribute('transform',`translate(${xx} 0)`);
       for(const [dot,value] of [[this.observedDot,actual],[this.predictedDot,prediction]]){
         if(value){dot.removeAttribute('display');dot.setAttribute('cy',this.y(value.value));}else dot.setAttribute('display','none');
@@ -260,16 +266,23 @@ window.ForecastChart = (() => {
       this.tooltip.querySelector('time').textContent=this.formatTime(t);
       this.tooltip.querySelector('[data-current]').textContent=currentText;
       this.tooltip.querySelector('[data-predicted]').textContent=predictedText;
+      const finalRow=this.tooltip.querySelector('[data-final-row]');
+      const errorRow=this.tooltip.querySelector('[data-error-row]');
+      const error=prediction?errorPercent(prediction.value,this.finalScore):null;
+      finalRow.hidden=!Number.isFinite(this.finalScore);
+      errorRow.hidden=error===null;
+      this.tooltip.querySelector('[data-final]').textContent=this.formatValue(this.finalScore);
+      this.tooltip.querySelector('[data-error]').textContent=formatError(error);
       const note=document.getElementById('chart-tooltip-note');
-      note.textContent=prediction?.extended?(this.projectionLabel||'当前预测延伸'):'';
-      note.hidden=!prediction?.extended;
+      note.textContent=checkpoint?`${checkpoint.label} · ${Number.isFinite(checkpoint.target_ms)?'目标 '+this.formatTime(checkpoint.target_ms):'共用同一条记录'} · 发布 ${this.formatTime(checkpoint.issued_at)}`:prediction?.extended?(this.projectionLabel||'当前预测延伸'):'';
+      note.hidden=!checkpoint&&!prediction?.extended;
       const rect=this.svg.getBoundingClientRect(),view=this.svg.viewBox.baseVal;
       const tx=xx/view.width*rect.width,ty=pointerY/view.height*rect.height;
       const width=this.tooltip.offsetWidth,height=this.tooltip.offsetHeight;
       const left=Math.max(4,Math.min(tx+16+width<=rect.width?tx+16:tx-width-16,rect.width-width-4));
       const top=Math.max(4,Math.min(ty-18,rect.height-height-4));
       this.tooltip.style.transform=`translate3d(${left}px,${top}px,0)`;
-      this.svg.setAttribute('aria-label',`${this.formatTime(t)}，当前分数线 ${currentText}，预测终分 ${predictedText}`);
+      this.svg.setAttribute('aria-label',`${this.formatTime(t)}，当前分数线 ${currentText}，预测终分 ${predictedText}${error===null?'':`，实际终分 ${this.formatValue(this.finalScore)}，相对误差 ${formatError(error)}`}`);
     }
     keydown(event){
       if(event.key==='Escape'){event.preventDefault();this.hide();return;}
@@ -291,6 +304,8 @@ window.ForecastChart = (() => {
     }
   }
   return {
+    errorPercent,formatError,
+    inspectCheckpoint(point){if(active){active.finish();active.show(point.observed_at,active.y(point.predicted_final_ep),point);}},
     reset(svg){if(active){active.dispose();active=null;}svg.removeAttribute('data-reveal-state');},
     attach(options){if(active)active.dispose();active=new Interaction(options);}
   };

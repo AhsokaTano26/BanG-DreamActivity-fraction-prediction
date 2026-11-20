@@ -2,7 +2,7 @@
 const $ = id => document.getElementById(id);
 const number = value => Number.isFinite(value) ? new Intl.NumberFormat('zh-CN', {maximumFractionDigits:0}).format(value) : '—';
 const clock = (ms, date=false) => ms ? new Intl.DateTimeFormat('zh-CN', {timeZone:'Asia/Shanghai', ...(date?{month:'2-digit',day:'2-digit'}:{}), hour:'2-digit', minute:'2-digit', hour12:false}).format(ms) : '—';
-let snapshot = null, selectedRank = null, selectedEvent = null, historyVersion = 0, loading = false, pendingRefresh = false, lastPoints = [], lastCurve = [], clockOffset = 0, pendingSelection = null;
+let snapshot = null, selectedRank = null, selectedEvent = null, historyVersion = 0, loading = false, pendingRefresh = false, lastPoints = [], lastCurve = [], lastTerminal = null, lastCheckpoints = [], clockOffset = 0, pendingSelection = null;
 const calendar = ms => new Intl.DateTimeFormat('zh-CN', {timeZone:'Asia/Shanghai',year:'numeric',month:'long',day:'numeric',hour:'2-digit',minute:'2-digit',hour12:false}).format(ms);
 const dayLabel = ms => new Intl.DateTimeFormat('zh-CN', {timeZone:'Asia/Shanghai',month:'2-digit',day:'2-digit'}).format(ms);
 
@@ -78,6 +78,9 @@ function notice(text) {
 
 function render() {
   if (!snapshot) return;
+  const replay=snapshot.service?.mode==='replay';
+  $('replay-banner').hidden=!replay;
+  if(replay)$('replay-banner').textContent=`历史逐步回放 · 模拟时间 ${calendar(snapshot.server_time_ms)} · ${snapshot.service.frames_completed}/${snapshot.service.total_frames} 步 · 训练 ${snapshot.service.training_events} 期。${snapshot.service.note||''}${snapshot.service.error?' 回放错误：'+snapshot.service.error:''}`;
   ForecastUI.sync();
   const rows = snapshot.predictions.filter(row => row.event === selectedEvent);
   const row = rows.find(item => item.rank === selectedRank);
@@ -116,7 +119,7 @@ function render() {
     button.className='ui-button ui-button-rank';button.setAttribute('aria-pressed',String(rank===selectedRank));
     tr.addEventListener('click',event=>{chooseRank(rank);if(event.detail===0)document.querySelector(`#rank-rows tr[data-rank="${rank}"] button`)?.focus({preventScroll:true});});
     label.append(button); tr.append(label);
-    const status=historical?(Number.isFinite(value?.actual_final_ep)?'已核实终分':hasObservation(value)?'终分未核实':'缺少曲线'):!value?.available?(value?.reason||'等待数据'):value.provisional?'历史支持较少':snapshot.stale?'上次保存的结果':'可用';
+    const status=historical?(Number.isFinite(value?.relative_error_pct)?'误差 '+ForecastChart.formatError(value.relative_error_pct):Number.isFinite(value?.actual_final_ep)?'已核实终分':hasObservation(value)?'终分未核实':'缺少曲线'):!value?.available?(value?.reason||'等待数据'):value.provisional?'历史支持较少':snapshot.stale?'上次保存的结果':'可用';
     for (const [text,meta,metaLabel] of [[hasObservation(value)?number(observedValue(value)):'—',clock(value?.observed_at,historical),'观测时间'],[value?.available?number(value.predicted_final_ep):'—',status,'状态']]) {
       const td = document.createElement('td'),main=document.createElement('span'),detail=document.createElement('span');
       main.className='rank-cell-value';main.textContent=text;
@@ -174,9 +177,42 @@ function svgElement(tag, attributes, text) {
   return element;
 }
 
-function drawHistory(points, curve=[]) {
+function renderCheckpoints(checkpoints,finalScore){
+  const comparison=$('checkpoint-comparison');
+  comparison.hidden=!historicalMode()||!checkpoints.length;
+  const body=$('checkpoint-rows');body.replaceChildren();
+  for(const point of checkpoints){
+    const tr=document.createElement('tr');tr.dataset.checkpoint=point.key;
+    const label=document.createElement('td');
+    const name=document.createElement('span');name.textContent=point.label;label.append(name);
+    const hint=document.createElement('span');hint.className='checkpoint-meta';
+    hint.textContent=point.available?'目标 '+clock(point.target_ms,true):point.reason;label.append(hint);tr.append(label);
+    const value=document.createElement('td');
+    const score=document.createElement('span');score.textContent=point.available?number(point.predicted_final_ep):'—';value.append(score);
+    if(point.available){const issued=document.createElement('span');issued.className='checkpoint-meta';issued.textContent=clock(point.issued_at,true);value.append(issued);}
+    tr.append(value);
+    const error=document.createElement('td');error.textContent=point.available&&finalScore!==null?
+      ForecastChart.formatError(ForecastChart.errorPercent(point.predicted_final_ep,finalScore)):'—';tr.append(error);
+    if(point.available){
+      tr.tabIndex=0;tr.setAttribute('role','button');tr.setAttribute('aria-label',`${point.label}，预测 ${number(point.predicted_final_ep)}，误差 ${error.textContent}`);
+      const inspect=()=>ForecastChart.inspectCheckpoint(point);
+      tr.addEventListener('click',inspect);tr.addEventListener('keydown',event=>{if(['Enter',' '].includes(event.key)){event.preventDefault();inspect();}});
+    }
+    body.append(tr);
+  }
+}
+
+function drawHistory(points, curve=[], terminal=null, checkpoints=[]) {
   const svg = $('history-chart'); ForecastChart.reset(svg); svg.replaceChildren();
-  lastPoints = points; lastCurve = curve;
+  lastPoints = points; lastCurve = curve; lastTerminal = terminal;lastCheckpoints=checkpoints;
+  const finalScore=historicalMode()&&Number.isFinite(terminal?.ep)&&terminal.ep>0?terminal.ep:null;
+  const verification=$('forecast-verification');
+  verification.hidden=!historicalMode();
+  verification.textContent=finalScore===null?'活动已结束 · 等待终分核实':
+    !points.length?`实际终分 ${number(finalScore)} · 没有保存的预测，无法核对`:
+    `实际终分 ${number(finalScore)} · ${checkpoints.filter(point=>point.available).length} / ${checkpoints.length} 个时点有预测记录`;
+  renderCheckpoints(checkpoints,finalScore);
+  document.querySelector('.final-key').hidden=finalScore===null;
   $('chart-empty').textContent = historicalMode()?'该活动没有此分数线的本地曲线':'有记录后显示曲线';
   const event = currentEvent();
   if (!event || !Number.isFinite(event.start_ms) || !Number.isFinite(event.end_ms) || event.end_ms<=event.start_ms) {
@@ -192,7 +228,8 @@ function drawHistory(points, curve=[]) {
   const width = Math.max(300, svg.clientWidth), height = svg.clientHeight;
   const left = width<600?58:72, right = width-16, bottom = height-40, top=20;
   svg.setAttribute('viewBox', `0 0 ${width} ${height}`);
-  const all = [...observed.map(point=>point.ep), ...points.map(point=>point.predicted_final_ep)];
+  const all = [...observed.map(point=>point.ep), ...points.map(point=>point.predicted_final_ep),
+    ...checkpoints.filter(point=>point.available).map(point=>point.predicted_final_ep),...(finalScore===null?[]:[finalScore])];
   const maximum=all.length?Math.max(...all):1, rawStep=Math.max(1,maximum)/8;
   const power=10**Math.floor(Math.log10(rawStep));
   const step=[1,2,2.5,5,10].map(value=>value*power).find(value=>value>=rawStep);
@@ -226,30 +263,70 @@ function drawHistory(points, curve=[]) {
     svg.append(svgElement('polygon',{points:`${x(observed[0].time)},${bottom} ${coords} ${x(observed.at(-1).time)},${bottom}`,class:'observed-area'}));
     svg.append(svgElement('polyline',{points:coords,class:'observed'}));
   }
+  if(finalScore!==null){
+    svg.append(svgElement('line',{x1:left,y1:y(finalScore),x2:right,y2:y(finalScore),class:'actual-final'}));
+  }
   if(points.length){
     svg.append(svgElement('polyline',{points:points.map(point=>`${x(point.observed_at)},${y(point.predicted_final_ep)}`).join(' '),class:'predicted'}));
     const latest=points.at(-1);
     svg.append(svgElement('line',{x1:x(latest.observed_at),y1:y(latest.predicted_final_ep),x2:right,y2:y(latest.predicted_final_ep),class:'predicted projected'}));
     svg.append(svgElement('circle',{cx:x(latest.observed_at),cy:y(latest.predicted_final_ep),r:3.5,fill:'#2563eb',class:'chart-last-point'}));
   }
-  if(observed.length||points.length)ForecastChart.attach({svg,first,last,left,right,top,bottom,x,y,observed,predicted:points,formatTime:time=>clock(time,true),formatValue:number,projectionLabel:historicalMode()?'历史预测延伸':'当前预测延伸'});
+  if(historicalMode()){
+    const unique=new Map();
+    for(const point of checkpoints.filter(point=>point.available)){
+      const key=`${point.observed_at}:${point.issued_at}`;
+      if(unique.has(key)){
+        const shared=unique.get(key);shared.label+=' / '+point.label;
+        if(shared.target_ms!==point.target_ms)shared.target_ms=null;
+      }
+      else unique.set(key,{...point});
+    }
+    const occupied=[];
+    for(const point of unique.values()){
+      const xx=x(point.observed_at),yy=y(point.predicted_final_ep);
+      const error=ForecastChart.errorPercent(point.predicted_final_ep,finalScore);
+      const marker=svgElement('g',{class:'checkpoint-marker',tabindex:0,role:'button',
+        'aria-label':`${point.label}，预测 ${number(point.predicted_final_ep)}，误差 ${ForecastChart.formatError(error)}`});
+      marker.append(svgElement('circle',{cx:xx,cy:yy,r:4.5}));
+      if(error!==null){
+        const cx=Math.max(left+36,Math.min(right-36,xx));let labelY=yy-18;
+        for(const offset of [-18,24,-40,46,-62,68,-84,90]){
+          const candidate=Math.max(top+14,Math.min(bottom-10,yy+offset));
+          if(!occupied.some(r=>Math.abs(r.x-cx)<74&&Math.abs(r.y-candidate)<22)){labelY=candidate;break;}
+        }
+        occupied.push({x:cx,y:labelY});
+        marker.prepend(svgElement('line',{x1:xx,y1:yy,x2:cx,y2:labelY+(labelY<yy?7:-13),class:'checkpoint-link'}));
+        marker.append(svgElement('rect',{x:cx-35,y:labelY-13,width:70,height:20,rx:4}));
+        marker.append(svgElement('text',{x:cx,y:labelY+1,'text-anchor':'middle'},ForecastChart.formatError(error)));
+      }
+      const inspect=event=>{event.stopPropagation();ForecastChart.inspectCheckpoint(point);};
+      marker.addEventListener('pointermove',inspect);marker.addEventListener('pointerdown',inspect);
+      marker.addEventListener('focus',()=>ForecastChart.inspectCheckpoint(point));
+      marker.addEventListener('keydown',event=>{if(['Enter',' '].includes(event.key)){event.preventDefault();inspect(event);}});
+      svg.append(marker);
+    }
+  }
+  if(observed.length||points.length)ForecastChart.attach({svg,first,last,left,right,top,bottom,x,y,observed,predicted:points,finalScore,formatTime:time=>clock(time,true),formatValue:number,projectionLabel:historicalMode()?'历史预测延伸':'当前预测延伸'});
 }
 
 async function loadHistory() {
   const version = ++historyVersion;
   if (!selectedEvent || !selectedRank) {drawHistory([]);finishSelectionSwitch();return;}
   try {
-    const query=`event=${selectedEvent}&rank=${selectedRank}`;
+    const query=`event=${selectedEvent}&rank=${selectedRank}${snapshot?.service?.mode==='replay'?'&as_of='+snapshot.server_time_ms:''}`;
     const [history,actual]=await Promise.allSettled([getJSON('/api/history?'+query),getJSON('/api/curve?'+query)]);
     if (version !== historyVersion) return;
     const points = (history.status==='fulfilled'?history.value.points:[]).filter(point=>Number.isFinite(point.current_ep)&&Number.isFinite(point.predicted_final_ep));
     let curve = (actual.status==='fulfilled'?actual.value.points:[]).filter(point=>Number.isFinite(point.time)&&Number.isFinite(point.ep));
     const terminal=actual.status==='fulfilled'?actual.value.terminal_score:null;
+    const checkpoints=history.status==='fulfilled'?(history.value.checkpoints||[]):[];
     if(terminal&&historicalMode())curve=[...curve.filter(point=>point.time<terminal.event_end_ms),{time:terminal.event_end_ms,ep:terminal.ep}];
     document.querySelector('.predicted-key').hidden=!points.length;
-    $('history-detail').textContent = `${curve.length}个分数点 · ${points.length}条上线预测记录。${!points.length?'该活动没有保存的上线预测。':'悬停或点选查看读数，虚线后段为最后预测延伸。'}${terminal&&historicalMode()?'终点为已核实终分，上报于'+clock(terminal.reported_at,true)+'。':''}时间均为北京时间。`;
+    $('history-detail').textContent = `${curve.length}个分数点 · ${points.length}条上线预测记录。${!points.length?'该活动没有保存的上线预测。':'悬停或点选查看读数，虚线后段为最后预测延伸。'}${terminal&&historicalMode()?'终点为已核实终分，上报于'+clock(terminal.reported_at,true)+'。相对误差＝（预测－终分）÷终分；正值为高估，负值为低估。':''}时间均为北京时间。`;
     if(history.status==='rejected'||actual.status==='rejected')$('history-detail').textContent+=' 部分曲线读取失败，请稍后刷新。';
-    drawHistory(points,curve);
+    $('history-detail').textContent+=' 阶段核对只采用目标时点前1小时内已发布的记录；末次预测单列，缺失时不补算。';
+    drawHistory(points,curve,terminal,checkpoints);
   } catch {
     if (version !== historyVersion) return;
     drawHistory([]); $('chart-empty').textContent = '暂时无法读取预测记录';
@@ -264,7 +341,8 @@ $('refresh').addEventListener('click',refresh);
 $('event-banner').addEventListener('load',()=>{$('event-banner').hidden=false;});
 $('event-banner').addEventListener('error',()=>{$('event-banner').hidden=true;$('event-banner').parentElement.dataset.placeholder='活动横幅暂不可用';});
 for(const source of [$('event-select'),$('rank-select')])ForecastUI.enhanceSelect(source);
-refresh();
-setInterval(refresh,15000);
+async function poll(){await refresh();setTimeout(poll,snapshot?.service?.mode==='replay'&&snapshot.service.state!=='complete'?1000:15000);}
+poll();
 setInterval(renderCountdown,1000);
-window.addEventListener('resize',()=>drawHistory(lastPoints,lastCurve));
+window.addEventListener('resize',()=>drawHistory(lastPoints,lastCurve,lastTerminal,lastCheckpoints));
+$('checkpoint-comparison').addEventListener('toggle',()=>drawHistory(lastPoints,lastCurve,lastTerminal,lastCheckpoints));

@@ -1,7 +1,7 @@
-"""Read-only local dashboard with one explicitly owned forecasting process."""
+"""Read-only local dashboard with one persistent, serial forecasting process."""
 from __future__ import annotations
 
-from contextlib import contextmanager
+from contextlib import contextmanager,nullcontext
 import fcntl
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 import json
@@ -18,7 +18,7 @@ from urllib.parse import parse_qs, urlsplit
 
 from download_ranks import RANKS
 from analysis.data_policy import MIN_EVENT_START_MS
-from production.web_history import event_catalog, event_rows, curve_points, terminal_score
+from production.web_history import event_catalog, event_rows, curve_points, terminal_score, history_checkpoints
 
 PROJECT = Path(__file__).resolve().parents[1]
 ASSETS = Path(__file__).with_name('web_assets')
@@ -109,7 +109,7 @@ def public_snapshot(config, *, now_ms=None, service=None, initial_rank=1000, eve
             'data_update_failed': bool(payload.get('errors')), 'service': service or {'state': 'idle'}}
 
 
-def forecast_history(root, event, rank):
+def _forecast_records(root,event,rank,now_ms):
     database = Path(root).resolve()/'state.sqlite3'
     if not database.is_file():
         return []
@@ -118,17 +118,30 @@ def forecast_history(root, event, rank):
     try:
         # Replay the last actually issued revision of each physical observation.
         rows = con.execute('''SELECT observed_at,issued_ms,current,prediction,raw_prediction,0 AS revision,rowid AS seq
-            FROM forecasts WHERE event=? AND rank=? UNION ALL
+            FROM forecasts WHERE event=? AND rank=? AND issued_ms<=? AND observed_at<=? UNION ALL
             SELECT observed_at,issued_ms,current,prediction,raw_prediction,1 AS revision,rowid AS seq
-            FROM forecast_revisions WHERE event=? AND rank=?
-            ORDER BY issued_ms,revision,seq''', (event, rank, event, rank)).fetchall()
+            FROM forecast_revisions WHERE event=? AND rank=? AND issued_ms<=? AND observed_at<=?
+            ORDER BY issued_ms,revision,seq''', (event,rank,now_ms,now_ms,event,rank,now_ms,now_ms)).fetchall()
     finally:
         con.close()
-    points = {}
-    for r in rows:
-        points[r['observed_at']] = {'observed_at': r['observed_at'], 'issued_at': r['issued_ms'],
-            'current_ep': r['current'], 'predicted_final_ep': r['prediction']}
+    return [{'observed_at':r['observed_at'],'issued_at':r['issued_ms'],
+             'current_ep':r['current'],'predicted_final_ep':r['prediction']} for r in rows]
+
+
+def _history_points(records):
+    points = {r['observed_at']:r for r in records}
     return [points[key] for key in sorted(points)[-1000:]]
+
+
+def forecast_history(root,event,rank):
+    return _history_points(_forecast_records(root,event,rank,int(time.time()*1000)))
+
+
+def history_payload(root,event,rank,*,now_ms=None):
+    now=int(time.time()*1000) if now_ms is None else int(now_ms)
+    records=_forecast_records(root,event,rank,now)
+    return {'event':event,'rank':rank,'points':_history_points(records),
+            'checkpoints':history_checkpoints(root,event,records,now)}
 
 
 def observed_curve(root, event, rank, *, now_ms=None):
@@ -159,7 +172,7 @@ def observed_curve(root, event, rank, *, now_ms=None):
 
 
 class CycleWorker:
-    """Own at most one bounded cycle subprocess, including interruption cleanup."""
+    """Reuse one inference child across cycles; reap it on exit or interruption."""
     def __init__(self, config, config_path, *, interval=900, offline=False):
         self.config = config
         self.config_path = Path(config_path).resolve()
@@ -172,7 +185,7 @@ class CycleWorker:
         self.thread = threading.Thread(target=self._run, name='forecast-updates', daemon=True)
 
     def cycle_command(self):
-        return [sys.executable, '-m', 'production.selected_cli', 'cycle', '--config', str(self.config_path)] + (['--offline'] if self.offline else [])
+        return [sys.executable, '-m', 'production.worker', '--config', str(self.config_path)] + (['--offline'] if self.offline else [])
 
     def snapshot(self):
         with self.lock:
@@ -183,32 +196,43 @@ class CycleWorker:
 
     def _run(self):
         while not self.done.is_set():
+            process = None
             try:
                 with self.lock:
                     if self.done.is_set():
                         break
-                    env = dict(os.environ)
-                    for key in ('OMP_NUM_THREADS', 'OPENBLAS_NUM_THREADS', 'MKL_NUM_THREADS', 'VECLIB_MAXIMUM_THREADS'):
-                        env[key] = '1'
-                    self.process = subprocess.Popen(self.cycle_command(), cwd=PROJECT, env=env,
-                        stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True,
-                        start_new_session=True)
+                    if self.process is not None and self.process.poll() is not None:
+                        self._reap(self.process)
+                        self.process = None
+                    if self.process is None:
+                        env = dict(os.environ)
+                        for key in ('OMP_NUM_THREADS', 'OPENBLAS_NUM_THREADS', 'MKL_NUM_THREADS',
+                                    'VECLIB_MAXIMUM_THREADS', 'NUMEXPR_NUM_THREADS'):
+                            env[key] = '1'
+                        log = Path(self.config['root'])/'web_worker_errors.log'
+                        log.parent.mkdir(parents=True, exist_ok=True)
+                        with log.open('a') as errors:
+                            self.process = subprocess.Popen(self.cycle_command(), cwd=PROJECT, env=env,
+                                stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=errors, text=True,
+                                bufsize=1, start_new_session=True)
                     process = self.process
                     self.state.update(state='updating', pid=process.pid, next_update_ms=None)
-                stdout, stderr = process.communicate()
-                status = 'error' if process.returncode else _read_worker_result(stdout)
+                process.stdin.write('cycle\n')
+                process.stdin.flush()
+                response = process.stdout.readline()
+                if not response:
+                    raise RuntimeError('Prediction worker exited before returning a result')
+                status = _read_worker_result(response)
                 if not self.done.is_set():
                     print(f"预测更新：{status}", flush=True)
-                    if process.returncode:
-                        log = Path(self.config['root'])/'web_worker_errors.log'
-                        with log.open('a') as stream:
-                            stream.write(time.strftime('%Y-%m-%d %H:%M:%S')+'\n'+stdout[-8000:]+stderr[-8000:]+'\n')
                 with self.lock:
-                    self.process = None
-                    self.state.update(state='error' if status == 'error' else 'idle', pid=None,
+                    self.state.update(state='error' if status == 'error' else 'idle', pid=process.pid,
                         last_status=status, next_update_ms=int((time.time()+self.interval)*1000))
             except Exception as exc:
-                print(f'预测更新失败：{exc}', file=sys.stderr, flush=True)
+                if not self.done.is_set():
+                    print(f'预测更新失败：{exc}', file=sys.stderr, flush=True)
+                if process is not None:
+                    self._reap(process)
                 with self.lock:
                     self.process = None
                     self.state.update(state='error', pid=None,
@@ -218,11 +242,9 @@ class CycleWorker:
         with self.lock:
             self.state.update(state='stopped', pid=None, next_update_ms=None)
 
-    def stop(self):
-        self.done.set()
-        with self.lock:
-            process = self.process
-        if process is not None and process.poll() is None:
+    @staticmethod
+    def _reap(process):
+        if process.poll() is None:
             try:
                 if os.name == 'posix':
                     os.killpg(process.pid, signal.SIGTERM)
@@ -237,8 +259,21 @@ class CycleWorker:
                 process.wait()
             except ProcessLookupError:
                 pass
+        process.wait()
+        for stream in (process.stdin, process.stdout):
+            if stream is not None:
+                stream.close()
+
+    def stop(self):
+        self.done.set()
+        with self.lock:
+            process = self.process
+        if process is not None:
+            self._reap(process)
         if self.thread.ident is not None:
             self.thread.join(timeout=6)
+        with self.lock:
+            self.process = None
 
 
 def _read_worker_result(stdout):
@@ -248,7 +283,7 @@ def _read_worker_result(stdout):
         return 'error'
 
 
-def make_server(config, *, host='127.0.0.1', port=8765, worker=None, initial_rank=1000):
+def make_server(config, *, host='127.0.0.1', port=8765, worker=None, initial_rank=1000,clock=None,read_guard=None):
     class Handler(BaseHTTPRequestHandler):
         def log_message(self, *_):
             pass
@@ -265,14 +300,19 @@ def make_server(config, *, host='127.0.0.1', port=8765, worker=None, initial_ran
             self.wfile.write(raw)
 
         def do_GET(self):
+            with read_guard if read_guard is not None else nullcontext():
+                return self.read_GET()
+
+        def read_GET(self):
             path = urlsplit(self.path)
             try:
+                now=int(clock()) if clock is not None else int(time.time()*1000)
                 if path.path == '/healthz':
                     return self.send(200, {'status':'ok'})
                 if path.path == '/readyz':
                     latest = _read_json(Path(config['root'])/'latest.json', {})
                     status = _read_json(Path(config['root'])/'status.json', {})
-                    age = int(time.time()*1000)-latest.get('as_of_ms', 0)
+                    age = now-latest.get('as_of_ms', 0)
                     ready = bool(latest.get('model_id') and status.get('status') != 'error'
                                  and age <= max(3600000, config['interval_seconds']*3000))
                     return self.send(200 if ready else 503, {'ready':ready,
@@ -280,16 +320,17 @@ def make_server(config, *, host='127.0.0.1', port=8765, worker=None, initial_ran
                 if path.path == '/api/predictions':
                     query=parse_qs(path.query)
                     event_id=int(query['event'][0]) if 'event' in query else None
-                    return self.send(200, public_snapshot(config, service=worker.snapshot() if worker else None, initial_rank=initial_rank,event_id=event_id))
+                    return self.send(200, public_snapshot(config, now_ms=now,service=worker.snapshot() if worker else None, initial_rank=initial_rank,event_id=event_id))
                 if path.path in ('/api/history', '/api/curve'):
                     query = parse_qs(path.query)
                     event, rank = int(query['event'][0]), int(query['rank'][0])
                     if event <= 0 or rank not in config['ranks']:
                         raise ValueError('Invalid event/rank')
+                    at=int(query.get('as_of',[now])[0])
+                    if at<=0 or at>now:raise ValueError('Future or invalid display clock')
                     if path.path == '/api/curve':
-                        return self.send(200, observed_curve(config['root'], event, rank))
-                    return self.send(200, {'event':event, 'rank':rank,
-                        'points':forecast_history(config['root'], event, rank)})
+                        return self.send(200, observed_curve(config['root'],event,rank,now_ms=at))
+                    return self.send(200, history_payload(config['root'],event,rank,now_ms=at))
                 files = {'/':('index.html', 'text/html; charset=utf-8'),
                          '/favicon.ico':('favicon.ico', 'image/x-icon'),
                          '/bangdream-icon.png':('bangdream-icon.png', 'image/png'),

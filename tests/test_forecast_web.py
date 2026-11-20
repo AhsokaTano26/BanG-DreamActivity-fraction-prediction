@@ -93,6 +93,25 @@ class ForecastWebTests(unittest.TestCase):
             self.assertEqual(error.exception.code, 400)
             error.exception.close()
 
+    def test_history_checkpoints_preserve_early_issued_prediction_before_late_revision(self):
+        self.history_store();ledger=Ledger(self.root)
+        start=self.now-5*3600000;end=self.now-3*3600000
+        event=dict(event=328,start_ms=start,end_ms=end);observed=start+1800000
+        row=dict(rank=1000,phase=1,observed_at=observed,current_ep=25.,
+                 raw_predicted_final_ep=110.,predicted_final_ep=95.,available=True)
+        ledger.record(event,[row],cutoff_ms=observed,issued_ms=observed,model_id='past')
+        ledger.record(event,[row|dict(predicted_final_ep=106.)],cutoff_ms=observed,
+                      issued_ms=start+5400000,model_id='past')
+        data=self.web.history_payload(self.root,328,1000,now_ms=self.now)
+        checkpoints={row['key']:row for row in data['checkpoints']}
+        self.assertEqual(data['points'][0]['predicted_final_ep'],106.)
+        self.assertEqual(checkpoints['progress_50']['predicted_final_ep'],95.)
+        self.assertEqual(checkpoints['progress_75']['predicted_final_ep'],106.)
+        early=self.web.history_payload(self.root,328,1000,now_ms=start+3600000)
+        self.assertEqual(early['points'][0]['predicted_final_ep'],95.)
+        with urlopen(self.server()+'/api/history?event=328&rank=1000') as response:
+            self.assertEqual(len(json.load(response)['checkpoints']),8)
+
     def test_service_without_results_has_meaningful_waiting_response(self):
         (self.root/'latest.json').unlink()
         data = self.web.public_snapshot(self.config, now_ms=self.now)
@@ -180,6 +199,7 @@ class ForecastWebTests(unittest.TestCase):
         self.assertTrue(row['observation_available'])
         self.assertEqual(row['actual_final_ep'],100.)
         self.assertIsNone(row['predicted_final_ep'])
+        self.assertIsNone(row['relative_error_pct'])
         self.assertFalse(row['available'])
         self.assertIn('没有上线预测',row['reason'])
         self.assertFalse(data['stale'])
@@ -196,6 +216,52 @@ class ForecastWebTests(unittest.TestCase):
         self.assertEqual(data['predictions'][0]['predicted_final_ep'],106.)
         self.assertEqual(ledger.summary()['forecasts'],1)
         self.assertEqual(ledger.summary()['forecast_revisions'],1)
+
+    def test_verified_final_compares_last_issued_revision_without_changing_forecasts(self):
+        self.history_store();ledger=Ledger(self.root)
+        event=dict(event=328,start_ms=self.now-5*3600000,end_ms=self.now-3*3600000)
+        observed=self.now-4*3600000
+        row=dict(rank=1000,phase=1,observed_at=observed,current_ep=50.,
+                 raw_predicted_final_ep=110.,predicted_final_ep=95.,available=True)
+        ledger.record(event,[row],cutoff_ms=observed,issued_ms=observed,model_id='past')
+        low=self.web.public_snapshot(self.config,now_ms=self.now,event_id=328)['predictions'][0]
+        self.assertEqual(low['relative_error_pct'],-5.)
+        self.assertEqual(low['absolute_error_pct'],5.)
+        ledger.record(event,[row|dict(predicted_final_ep=106.)],
+                      cutoff_ms=observed,issued_ms=observed+1,model_id='past')
+        before=ledger.summary()
+        data=self.web.public_snapshot(self.config,now_ms=self.now,event_id=328)
+        checked=data['predictions'][0]
+        self.assertEqual(checked['actual_final_ep'],100.)
+        self.assertEqual(checked['relative_error_pct'],6.)
+        self.assertEqual(checked['absolute_error_pct'],6.)
+        self.assertIsNone(data['predictions'][1]['relative_error_pct'])
+        self.assertEqual(ledger.summary(),before)
+        with sqlite3.connect(self.root/'data.sqlite3') as con:
+            values=json.loads(con.execute('SELECT points_json FROM curves WHERE event=328 AND rank=1000').fetchone()[0])
+            values[-1]['ep']=200
+            con.execute('UPDATE curves SET points_json=? WHERE event=328 AND rank=1000',(json.dumps(values),))
+        corrected=self.web.public_snapshot(self.config,now_ms=self.now,event_id=328)['predictions'][0]
+        self.assertEqual(corrected['relative_error_pct'],-47.)
+        self.assertEqual(ledger.summary(),before)
+
+    def test_forecast_comparison_waits_for_quality_verified_positive_final(self):
+        self.history_store();ledger=Ledger(self.root)
+        event=dict(event=328,start_ms=self.now-5*3600000,end_ms=self.now-3*3600000)
+        observed=self.now-4*3600000
+        ledger.record(event,[dict(rank=1000,phase=1,observed_at=observed,current_ep=50.,
+            raw_predicted_final_ep=110.,predicted_final_ep=105.,available=True)],
+            cutoff_ms=observed,issued_ms=observed,model_id='past')
+        with sqlite3.connect(self.root/'data.sqlite3') as con:
+            con.execute('UPDATE curves SET verified_closed=0 WHERE event=328')
+        row=self.web.public_snapshot(self.config,now_ms=self.now,event_id=328)['predictions'][0]
+        self.assertIsNone(row['relative_error_pct'])
+        with sqlite3.connect(self.root/'data.sqlite3') as con:
+            values=[{'time':event['start_ms']+i*3600000//4,'ep':0} for i in range(4)]
+            values.append({'time':event['end_ms'],'ep':0})
+            con.execute('UPDATE curves SET verified_closed=1,points_json=? WHERE event=328',(json.dumps(values),))
+        row=self.web.public_snapshot(self.config,now_ms=self.now,event_id=328)['predictions'][0]
+        self.assertIsNone(row['relative_error_pct'])
 
     def test_final_metadata_retains_real_reporting_clock_without_future_release(self):
         self.history_store();end=self.now-3*3600000

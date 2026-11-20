@@ -50,6 +50,50 @@ def terminal_score(row, points, now_ms):
     return None
 
 
+def forecast_error(prediction, actual):
+    """Signed relative error in percent; outcomes must already be verified."""
+    if (not isinstance(prediction,(int,float)) or not isinstance(actual,(int,float))
+        or not math.isfinite(prediction) or not math.isfinite(actual) or actual<=0):
+        return None
+    value=(prediction-actual)/actual*100
+    return value if math.isfinite(value) else None
+
+
+def forecast_checkpoints(records, *, start_ms, end_ms, now_ms, max_lag_ms=3600000):
+    """Read saved forecasts as of each clock; later revisions stay invisible."""
+    duration=end_ms-start_ms
+    stages=[(f'progress_{p}',f'进度 {p}%',start_ms+duration*p//100) for p in (25,50,75,90)]
+    stages += [(f'remaining_{h}h',f'结束前 {h} 小时',end_ms-h*3600000) for h in (24,6,1)]
+    stages.sort(key=lambda row:row[2])
+    stages.append(('last','末次预测',end_ms-1))
+    rows=[]
+    for key,label,target in stages:
+        result=dict(key=key,label=label,target_ms=target,available=False,
+                    observed_at=None,issued_at=None,predicted_final_ep=None,lag_ms=None)
+        if target<start_ms:
+            result['reason']='该时点在活动开始前'
+        elif target>now_ms:
+            result['reason']='尚未到达该时点'
+        else:
+            eligible=[r for r in records if start_ms<=r['observed_at']<=r['issued_at']<=min(target,now_ms)
+                      and math.isfinite(r['predicted_final_ep'])
+                      and (key=='last' or target-r['observed_at']<=max_lag_ms)]
+            point=max(reversed(eligible),key=lambda r:(r['observed_at'],r['issued_at']),default=None)
+            if point is None:
+                result['reason']='没有保存的预测' if key=='last' else '没有一小时内已签发的预测'
+            else:
+                result.update(available=True,observed_at=point['observed_at'],issued_at=point['issued_at'],
+                    predicted_final_ep=point['predicted_final_ep'],lag_ms=target-point['observed_at'],reason=None)
+        rows.append(result)
+    return rows
+
+
+def history_checkpoints(root,event,records,now_ms):
+    clocks=_rows(root,'data.sqlite3','''SELECT start_ms,end_ms FROM events
+        WHERE event=? AND start_ms>=? AND start_ms<=?''',(event,MIN_EVENT_START_MS,now_ms))
+    return forecast_checkpoints(records,**clocks[0],now_ms=now_ms) if clocks else []
+
+
 def event_rows(root, event, ranks, now_ms):
     raw=_rows(root,'data.sqlite3','''SELECT e.event,e.start_ms,e.end_ms,c.* FROM events e
         JOIN curves c ON c.event=e.event WHERE e.event=? AND e.start_ms>=? AND e.start_ms<=?''',
@@ -72,9 +116,11 @@ def event_rows(root, event, ranks, now_ms):
         record=latest.get(rank)
         observation_available=bool(last and (historical or now_ms-last['time']<=3600000))
         prediction_available=bool(record and (historical or now_ms-record['observed_at']<=3600000))
+        error=forecast_error(record['prediction'],final['ep']) if record and final else None
         result.append({'event':event['event'],'rank':rank,'start_ms':event['start_ms'],'end_ms':event['end_ms'],
             'current_ep':last['ep'] if last else None,'observed_at':last['time'] if last else None,
             'actual_final_ep':final['ep'] if final else None,
+            'relative_error_pct':error,'absolute_error_pct':abs(error) if error is not None else None,
             'predicted_final_ep':record['prediction'] if prediction_available else None,
             'raw_predicted_final_ep':record['raw_prediction'] if prediction_available else None,
             'forecast_issued_at':record['issued_ms'] if record else None,

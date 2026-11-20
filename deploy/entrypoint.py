@@ -8,7 +8,8 @@ for key in ('OMP_NUM_THREADS', 'OPENBLAS_NUM_THREADS', 'MKL_NUM_THREADS',
             'VECLIB_MAXIMUM_THREADS', 'NUMEXPR_NUM_THREADS'):
     os.environ[key] = '1'
 
-import xgboost  # third-party library, resolved with Python's -P safe path
+if len(sys.argv) > 1 and sys.argv[1] in ('model', 'test', 'cycle'):
+    import xgboost  # third-party library, resolved with Python's -P safe path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 

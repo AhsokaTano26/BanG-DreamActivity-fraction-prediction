@@ -32,19 +32,22 @@ def run_cycle(config,*,now_ms=None,sync=True,transport=None):
             events=store.events(now)
             active=[e for e in events if e['start_ms']<=now<e['end_ms']]
             before=min((e['start_ms'] for e in active),default=now)
-            completed=store.load_curves(now,ranks=config['ranks'])
+            completed=store.load_curves(now,ranks=config['ranks'],events=ledger.forecast_events())
             feedback_updates=ledger.learn_completed(completed,now_ms=now,grace_ms=config.get('feedback_grace_ms',600000))
             try:seed_result=seed_feedback(store,ledger,config,before_ms=before,now_ms=now)
             except Exception as exc:
                 errors.append({'stage':'calibration_seed','error':f'{type(exc).__name__}: {exc}'});seed_result={'status':'failed'}
-            history=store.load_curves(before,ranks=config['ranks'])
-            atomic_json(root/'status.json',{'status':'running','phase':'training','as_of_ms':now,'eligible_curves':len(history),'ledger':ledger.summary()})
             override=root/'models/manual_override.json'
+            single_model=not config.get('automatic_training',True)
+            training=config.get('automatic_training',True) and not override.exists()
+            history=store.load_curves(before,ranks=config['ranks']) if training else []
+            atomic_json(root/'status.json',{'status':'running','phase':'training' if training else 'model_loading',
+                'as_of_ms':now,'eligible_curves':len(history) if training else None,'ledger':ledger.summary()})
             if override.exists():
                 chosen=json.loads(override.read_text());model_path=Path(chosen['path']);manifest=verify_pack(model_path)
                 if manifest['history_max_end_ms']>=before:raise ValueError('Rollback model is not causal for this event')
-            elif not config.get('automatic_training',True):
-                model_path,manifest=_previous(root,before_ms=before)
+            elif single_model:
+                model_path,manifest=_previous(root,before_ms=before,current_only=True)
             else:
                 try:
                     if config.get('require_history_coverage'):
@@ -58,7 +61,8 @@ def run_cycle(config,*,now_ms=None,sync=True,transport=None):
                 except Exception as exc:
                     errors.append({'stage':'training','error':f'{type(exc).__name__}: {exc}'})
                     model_path,manifest=_previous(root,before_ms=before)
-            curve_map={(c.event,c.rank):c for c in store.load_curves(now,ranks=config['ranks'],complete_only=False)}
+            curve_map={(c.event,c.rank):c for c in store.load_curves(now,ranks=config['ranks'],
+                complete_only=False,events=[e['event'] for e in active])}
             output=[];added=0;pinned_models={};pending_pins=[]
             for event in active:
                 pin=ledger.pin(event['event'])
@@ -71,12 +75,20 @@ def run_cycle(config,*,now_ms=None,sync=True,transport=None):
                     calibration=build_bias(ledger.feedback_rows(before_ms=event['start_ms']),before_ms=event['start_ms'],exclude_event_id=event['event'])
                     pin=ledger.create_pin(event,model_path,manifest['model_id'],calibration,now_ms=now)
                 pinned=Path(pin['model_path'])
-                try:pin_manifest=verify_pack(pinned)
-                except (ValueError,OSError,KeyError) as exc:
-                    replacement,replacement_manifest=_previous(root,before_ms=event['start_ms'])
-                    errors.append({'stage':'pin_recovery','event':event['event'],'error':str(exc),'replacement':replacement_manifest['model_id']})
-                    pin=ledger.replace_unusable_pin(event['event'],replacement,replacement_manifest['model_id'],reason=str(exc),now_ms=now)
-                    pinned=replacement;pin_manifest=replacement_manifest
+                if single_model:
+                    if manifest['history_max_end_ms']>=event['start_ms']:
+                        raise ValueError('Installed model uses current or future event data')
+                    if pin['model_id']!=manifest['model_id'] or pinned.resolve()!=Path(model_path).resolve():
+                        pin=ledger.replace_unusable_pin(event['event'],model_path,manifest['model_id'],
+                            reason='Installed model replaced previous version',now_ms=now)
+                    pinned=Path(model_path);pin_manifest=manifest
+                else:
+                    try:pin_manifest=verify_pack(pinned)
+                    except (ValueError,OSError,KeyError) as exc:
+                        replacement,replacement_manifest=_previous(root,before_ms=event['start_ms'])
+                        errors.append({'stage':'pin_recovery','event':event['event'],'error':str(exc),'replacement':replacement_manifest['model_id']})
+                        pin=ledger.replace_unusable_pin(event['event'],replacement,replacement_manifest['model_id'],reason=str(exc),now_ms=now)
+                        pinned=replacement;pin_manifest=replacement_manifest
                 if pin_manifest['history_max_end_ms']>=event['start_ms']:raise ValueError('Pinned model uses current or future event data')
                 samples=[];unavailable=[]
                 for rank in config['ranks']:

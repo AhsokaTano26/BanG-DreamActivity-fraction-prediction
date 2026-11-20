@@ -18,7 +18,7 @@ for _key in ('OMP_NUM_THREADS', 'OPENBLAS_NUM_THREADS', 'MKL_NUM_THREADS',
     os.environ[_key] = '1'
 
 from download_ranks import RANKS
-from production.runtime import cycle_lock, read_config, validate_root
+from production.config import cycle_lock, read_config, validate_root
 from production.state import Ledger, atomic_json
 from production.web import CycleWorker, serve
 
@@ -77,10 +77,16 @@ class DeploymentWorker(CycleWorker):
     def cycle_command(self):
         entry = Path(__file__).resolve().parents[1] / 'deploy/entrypoint.py'
         return [sys.executable, '-P', str(entry), 'cycle',
-                '--config', str(self.config_path)] + (['--offline'] if self.offline else [])
+                '--persistent', '--config', str(self.config_path)] + (['--offline'] if self.offline else [])
 
 
 def run_cycle(config, *, sync=True):
+    from production.model import inference_session
+    with inference_session():
+        return _run_cycle(config, sync=sync)
+
+
+def _run_cycle(config, *, sync=True):
     """Cold start may use released weights without a full local training database."""
     from production.data import Store
     from production.selected_runtime import run_cycle as selected_cycle
@@ -161,6 +167,7 @@ def main(argv=None):
     cycle = commands.add_parser('cycle')
     cycle.add_argument('--config', type=Path, required=True)
     cycle.add_argument('--offline', action='store_true')
+    cycle.add_argument('--persistent', action='store_true', help=argparse.SUPPRESS)
     export = commands.add_parser('export-state')
     export.add_argument('--root', type=Path, default=Path('runtime/live'))
     export.add_argument('--output', type=Path, required=True)
@@ -189,6 +196,9 @@ def main(argv=None):
             return serve(config, args.root / 'config.json', host=args.host, port=args.port,
                          offline=args.offline, worker_factory=DeploymentWorker)
         if args.command == 'cycle':
+            if args.persistent:
+                from production.worker import run_requests
+                return run_requests(args.config, offline=args.offline, deployment=True)
             result = run_cycle(read_config(args.config), sync=not args.offline)
         else:
             result = export_state(args.root, args.output)

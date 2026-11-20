@@ -6,7 +6,10 @@ Technical smoke replay is a serialization check, never an accuracy estimate.
 """
 from __future__ import annotations
 
-from collections import Counter, defaultdict
+from collections import Counter, defaultdict, OrderedDict
+from contextlib import contextmanager
+from contextvars import ContextVar
+import copy
 import hashlib
 import importlib.metadata
 import json
@@ -29,10 +32,113 @@ from analysis.multirank_model import model_prediction, prepare as prepare_shared
 from analysis import v2_next_adaptation as adaptation
 from download_ranks import RANKS
 from production.source_compat import sources_compatible
+from production.source_compat import REGISTRY
 
 SCHEMA_VERSION = 1
 METADATA_NAMES = ('events', 'characters', 'bands', 'cards')
 DEPENDENCIES = ('numpy', 'pandas', 'scikit-learn', 'catboost', 'joblib', 'scipy', 'xgboost')
+
+_INFERENCE_CACHE = ContextVar('inference_cache', default=None)
+
+
+def _file_stamp(path):
+    info = Path(path).lstat()
+    return (info.st_dev, info.st_ino, info.st_mode, info.st_size,
+            info.st_mtime_ns, info.st_ctime_ns)
+
+
+class InferenceCache:
+    """Bounded, process-local reuse of fully verified immutable model packs.
+
+    A file inventory/stat check precedes every reuse. A change discards all
+    loaded objects for that pack and runs the original full verification.
+    Source and compatibility-registry changes also invalidate verification.
+    """
+    def __init__(self, capacity=1):
+        self.capacity = capacity
+        self._verified = OrderedDict()
+        self._objects = {}
+        self._metadata = OrderedDict()
+
+    @staticmethod
+    def _pack_stamp(path):
+        return tuple((str(p.relative_to(path)), _file_stamp(p))
+                     for p in sorted(path.rglob('*')))
+
+    @staticmethod
+    def _source_stamp(paths):
+        return tuple((str(p), _file_stamp(p)) for p in paths)
+
+    def verify(self, path):
+        path = Path(path).resolve()
+        prior = self._verified.get(path)
+        stamp = self._pack_stamp(path)
+        if prior is not None and stamp == prior['stamp']:
+            if self._source_stamp(prior['sources']) == prior['source_stamp']:
+                self._verified.move_to_end(path)
+                return copy.deepcopy(prior['manifest'])
+        self._verified.pop(path, None)
+        self._objects.pop(path, None)
+        # Release the old version before allocating the replacement.
+        while len(self._verified) >= self.capacity:
+            expired, _ = self._verified.popitem(last=False)
+            self._objects.pop(expired, None)
+        try:
+            manifest = _verify_pack(path)
+            sources = [ROOT / name for name in _sources()] + [REGISTRY]
+            source_stamp = self._source_stamp(sources)
+            if self._pack_stamp(path) != stamp:
+                raise ValueError('Model artifacts changed during verification')
+            self._verified[path] = dict(manifest=manifest, stamp=stamp,
+                                        sources=sources, source_stamp=source_stamp)
+            while len(self._verified) > self.capacity:
+                expired, _ = self._verified.popitem(last=False)
+                self._objects.pop(expired, None)
+            return copy.deepcopy(manifest)
+        except Exception:
+            self._objects.pop(path, None)
+            raise
+
+    def load(self, path):
+        path = Path(path).resolve()
+        objects = self._objects.setdefault(path.parent, {})
+        if path.name not in objects:
+            value = joblib.load(path)
+            if path.name == 'context.joblib':
+                # Training diagnostics/OOF arrays remain in the immutable file;
+                # inference needs only these fitted states and summaries.
+                keys = ('config', 'model', 'preprocessor', 'context_design',
+                        'history_summaries', 'correction_records')
+                value = {key: value[key] for key in keys if key in value}
+            objects[path.name] = value
+        return objects[path.name]
+
+    def metadata(self, directory):
+        directory = Path(directory).resolve()
+        stamp = tuple(_file_stamp(directory / (name + '.json')) for name in METADATA_NAMES)
+        prior = self._metadata.get(directory)
+        if prior is None or prior[0] != stamp:
+            self._metadata[directory] = (stamp, EventFeatures.load(directory))
+        self._metadata.move_to_end(directory)
+        while len(self._metadata) > self.capacity:
+            self._metadata.popitem(last=False)
+        return copy.copy(self._metadata[directory][1])
+
+
+@contextmanager
+def inference_session(cache=None):
+    """Keep reuse confined to the serial prediction worker, never training."""
+    current = _INFERENCE_CACHE.get()
+    token = _INFERENCE_CACHE.set(cache if cache is not None else current or InferenceCache())
+    try:
+        yield _INFERENCE_CACHE.get()
+    finally:
+        _INFERENCE_CACHE.reset(token)
+
+
+def _load_artifact(path):
+    cache = _INFERENCE_CACHE.get()
+    return joblib.load(path) if cache is None else cache.load(path)
 
 
 def _identity(value):
@@ -62,11 +168,11 @@ def _base_predictions(directory, samples, metadata):
     context = [s for s in samples if s['curve'].rank in (1000, 2000)]
     shared = [s for s in samples if s['curve'].rank not in (1000, 2000)]
     if context and (directory / 'context.joblib').exists():
-        bundle = joblib.load(directory / 'context.joblib')
+        bundle = _load_artifact(directory / 'context.joblib')
         values = adaptation.predict_recipe(bundle, prepare(context, metadata))
         predictions.update((s['case_id'], float(v)) for s, v in zip(context, values))
     if shared and (directory / 'shared.joblib').exists():
-        bundle = joblib.load(directory / 'shared.joblib')
+        bundle = _load_artifact(directory / 'shared.joblib')
         values = model_prediction(bundle, prepare_shared(shared, metadata))
         predictions.update((s['case_id'], float(v)) for s, v in zip(shared, values))
     for s in samples:
@@ -109,6 +215,11 @@ def technical_replay_matches(actual, expected):
 
 def verify_pack(path):
     """Verify every artifact before deserialization; reject old-policy packs."""
+    cache = _INFERENCE_CACHE.get()
+    return _verify_pack(path) if cache is None else cache.verify(path)
+
+
+def _verify_pack(path):
     path = Path(path)
     try:
         manifest = json.loads((path / 'manifest.json').read_text())
@@ -142,7 +253,7 @@ def verify_pack(path):
             raise ValueError('Unsafe model training support')
         smoke = json.loads((path / 'smoke.json').read_text())
         samples = [_record_sample(r) for r in smoke['samples']]
-        values = _base_predictions(path, samples, joblib.load(path / 'metadata.joblib'))
+        values = _base_predictions(path, samples, _load_artifact(path / 'metadata.joblib'))
         if (not samples or len(values) != len(samples)
                 or not technical_replay_matches(values, smoke['predictions'])):
             preview = [(key, values.get(key), smoke['predictions'].get(key))
@@ -188,8 +299,10 @@ def predict_pack(path, samples, *, metadata_directory=None, calibration=None):
     samples = _blind_samples(samples, manifest)
     if not samples:
         return []
-    fitted_metadata = joblib.load(path / 'metadata.joblib')
-    metadata = EventFeatures.load(metadata_directory) if metadata_directory is not None else fitted_metadata
+    fitted_metadata = _load_artifact(path / 'metadata.joblib')
+    cache = _INFERENCE_CACHE.get()
+    metadata = (EventFeatures.load(metadata_directory) if cache is None else cache.metadata(metadata_directory)) \
+        if metadata_directory is not None else copy.copy(fitted_metadata)
     metadata.character_ids = list(fitted_metadata.character_ids)
     metadata.band_ids = list(fitted_metadata.band_ids)
     metadata._calendar_cache = {}

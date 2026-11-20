@@ -193,11 +193,11 @@ def install_release(archive_path, root):
                                 tuple(row.get(k) for k in FEEDBACK_FIELDS) + (release['created_ms'],))
             pointer = _activate(root, target, verify_pack(target))
             # Explicit installation supersedes an earlier manual rollback choice.
-            # This changes the default only, never an existing activity snapshot.
+            # The next inference cycle adopts this installed version. The ledger
+            # archives a superseded binding and preserves already issued results.
             (root / 'models/manual_override.json').unlink(missing_ok=True)
             atomic_json(root / 'models/releases' / (release['release_id'] + '.json'), release)
-            # Activity pins and their calibration snapshots are intentionally retained.
-            return {'status': 'installed_for_new_activities', 'release_id': release['release_id'], **pointer}
+            return {'status': 'installed', 'release_id': release['release_id'], **pointer}
 
 
 def main(argv=None):

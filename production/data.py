@@ -264,12 +264,24 @@ class Store:
             return [dict(row) for row in con.execute("SELECT * FROM events WHERE start_ms>=? AND start_ms<=? "
                                                      "ORDER BY start_ms,event", (MIN_EVENT_START_MS, now))]
 
-    def load_curves(self, before_ms: int, ranks=None, complete_only=True) -> list[Curve]:
+    def load_curves(self, before_ms: int, ranks=None, complete_only=True, *, events=None) -> list[Curve]:
         before, selected = integer(before_ms, "before_ms", 1), _ranks(ranks)
+        clauses = ["e.start_ms>=?", "e.start_ms<=?",
+                   "c.rank IN (" + ",".join("?" for _ in selected) + ")"]
+        args = [MIN_EVENT_START_MS, before, *selected]
+        if complete_only:
+            clauses.append("e.end_ms<?")
+            args.append(before)
+        if events is not None:
+            events = sorted({integer(e, "event", 1) for e in events})
+            if not events:
+                return []
+            clauses.append("e.event IN (" + ",".join("?" for _ in events) + ")")
+            args.extend(events)
         with self._connect() as con:
             rows = con.execute("SELECT c.*,e.start_ms,e.end_ms,e.kind FROM curves c JOIN events e USING(event) "
-                               "WHERE e.start_ms>=? AND e.start_ms<=? ORDER BY e.start_ms,e.event,c.rank",
-                               (MIN_EVENT_START_MS, before)).fetchall()
+                               "WHERE " + " AND ".join(clauses) + " ORDER BY e.start_ms,e.event,c.rank",
+                               args).fetchall()
         result = []
         for row in rows:
             if row["rank"] not in selected or (complete_only and row["end_ms"] >= before):

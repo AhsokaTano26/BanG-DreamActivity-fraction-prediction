@@ -3,11 +3,11 @@ from __future__ import annotations
 from contextlib import contextmanager
 import hashlib
 import json
+import math
 import os
 from pathlib import Path
 import sqlite3
 import tempfile
-import numpy as np
 
 
 def atomic_json(path,value):
@@ -55,7 +55,7 @@ class Ledger:
         return self.pin(event['event'])
 
     def replace_unusable_pin(self,event,model_path,model_id,*,reason,now_ms):
-        """Keep the original record; replace only an explicitly unusable pin."""
+        """Archive a superseded/unusable binding, retaining its calibration."""
         prior=self.pin(event)
         if prior is None:raise ValueError('Missing activity pin')
         with self.connect() as con:
@@ -69,7 +69,7 @@ class Ledger:
             for row in rows:
                 if row.get('available',True) is False or 'raw_predicted_final_ep' not in row:continue
                 rank=int(row['rank']);observed=int(row['observed_at']);raw=float(row['raw_predicted_final_ep']);pred=float(row['predicted_final_ep']);current=float(row['current_ep'])
-                if not event['start_ms']<observed<=cutoff_ms<event['end_ms'] or issued_ms<cutoff_ms or int(row['phase']) not in (0,1,2) or not np.isfinite([raw,pred,current]).all() or min(raw,pred,current)<=0 or pred<current:raise ValueError('Invalid issued live forecast')
+                if not event['start_ms']<observed<=cutoff_ms<event['end_ms'] or issued_ms<cutoff_ms or int(row['phase']) not in (0,1,2) or not all(math.isfinite(v) for v in (raw,pred,current)) or min(raw,pred,current)<=0 or pred<current:raise ValueError('Invalid issued live forecast')
                 key=hashlib.sha256(f"{event['event']}:{rank}:{observed}".encode()).hexdigest()
                 prior=con.execute('SELECT * FROM forecast_revisions WHERE event=? AND rank=? AND observed_at=? ORDER BY issued_ms DESC,rowid DESC LIMIT 1',(event['event'],rank,observed)).fetchone()
                 if prior is None:prior=con.execute('SELECT * FROM forecasts WHERE id=?',(key,)).fetchone()
@@ -93,7 +93,14 @@ class Ledger:
                 added+=con.execute('INSERT OR IGNORE INTO feedback VALUES(?,?,?,?,?,?,?,?,?,?,?)',(r['event'],r['rank'],r['phase'],r['start_ms'],r['end_ms'],r['mean_log_error'],r['cases'],r['actual_final'],r['origin'],r.get('source'),now_ms)).rowcount
         return added
 
+    def forecast_events(self):
+        """Only activities with issued forecasts can supply live feedback."""
+        with self.connect() as con:
+            return [row[0] for row in con.execute(
+                'SELECT event FROM forecasts UNION SELECT event FROM forecast_revisions')]
+
     def learn_completed(self,curves,*,now_ms,grace_ms=600000):
+        import numpy as np
         finals={(c.event,c.rank):c for c in curves if c.end+grace_ms<now_ms}
         updated=0
         with self.connect() as con:

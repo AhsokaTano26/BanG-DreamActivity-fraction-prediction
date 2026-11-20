@@ -1,0 +1,132 @@
+{
+  "scope": "Single installed model; offline technical performance and RSS check, without training or accuracy evaluation",
+  "clock_ms": 1795102687620,
+  "source_mutated": false,
+  "web_server_started": false,
+  "cold": {
+    "seconds": 0.535668,
+    "status": "ok",
+    "predictions": 19,
+    "full_model_verifications": 1,
+    "joblib_loads": {
+      "metadata.joblib": 1,
+      "context.joblib": 1,
+      "shared.joblib": 1
+    },
+    "curve_reads": [
+      {
+        "complete_only": true,
+        "events": [
+          329
+        ],
+        "curves": 0,
+        "seconds": 0.000207
+      },
+      {
+        "complete_only": false,
+        "events": [
+          329
+        ],
+        "curves": 19,
+        "seconds": 0.016012
+      }
+    ],
+    "errors": [],
+    "resident_model_versions": 1,
+    "process_rss_mib": 241.41
+  },
+  "warm": {
+    "seconds": 0.04832,
+    "status": "ok",
+    "predictions": 19,
+    "full_model_verifications": 0,
+    "joblib_loads": {},
+    "curve_reads": [
+      {
+        "complete_only": true,
+        "events": [
+          329
+        ],
+        "curves": 0,
+        "seconds": 0.000208
+      },
+      {
+        "complete_only": false,
+        "events": [
+          329
+        ],
+        "curves": 19,
+        "seconds": 0.016589
+      }
+    ],
+    "errors": [],
+    "resident_model_versions": 1,
+    "process_rss_mib": 243.67
+  },
+  "cold_warm_predictions_identical": true,
+  "previous_broad_read_volume": [
+    {
+      "purpose": "feedback",
+      "curve_rows": 1871,
+      "json_bytes": 65437521
+    },
+    {
+      "purpose": "unused_training_history",
+      "curve_rows": 1871,
+      "json_bytes": 65437521
+    },
+    {
+      "purpose": "prediction",
+      "curve_rows": 1890,
+      "json_bytes": 65941961
+    }
+  ],
+  "reuse_regression_log": "/tmp/bangdream-inference-final-regressions.log",
+  "web_parent_memory": {
+    "numerical_stack_import_rss_mib": 189.91,
+    "lightweight_web_import_rss_mib": 39.41
+  },
+  "memory_scope": "RSS in fresh local processes; not a container memory limit or private-memory total",
+  "first_phase_full_suite": {
+    "tests": 528,
+    "passed": true,
+    "seconds": 277.988,
+    "scope": "Full regression before subsequent single-version and memory refinements",
+    "log": "/tmp/bangdream-inference-full-suite.log"
+  },
+  "final_focused_regression": {
+    "tests": 108,
+    "passed": true,
+    "seconds": 34.554,
+    "log": "/tmp/bangdream-inference-final-regressions.log"
+  },
+  "real_persistent_worker": {
+    "cycles": 2,
+    "one_pid": true,
+    "statuses": [
+      "ok",
+      "ok"
+    ],
+    "parent_rss_mib": 46.59,
+    "child_rss_mib": 221.03,
+    "stopped": true,
+    "child_reaped": true
+  },
+  "source_sha256": {
+    "production/model.py": "8acd9f9fbe85e57267a2bbe91e9ea5ae3820f3620ce8a2742609f7a5d44026f9",
+    "production/config.py": "11b4c5442f3f6c35bebeb1dd935f3c4f1f8d375dda8b8d0edaa8b0bce13a2c5f",
+    "production/worker.py": "a7de00ed1985a416e5f780db935cff4179329ff0fd68e64c2dd2b0bdac76de0a",
+    "production/web.py": "d6f0a4d4ecf4e96802f9212600aaff58ca07751b7465e9e2e3ab4e1219a8aad2",
+    "production/runtime.py": "6c3bfb697fc0209d67edd0718bc7bba2674af7a6aadaa7b244b2470cc2290991",
+    "production/selected_runtime.py": "024002e0d8518398c6485548089c5d99e5efe5a004a5d1d3a8bc75d37ba0e7cc",
+    "production/interactive.py": "8f80f4b4aa5845bb3b12f854e43e2b8e247e63629d164e3bf26fcf57536e4f15",
+    "production/data.py": "1a7d4d5761854d129bd16232441049a352094e93e92ffc3f9545638d4d0178b0",
+    "production/state.py": "4279b301ce62e269813515a201e68f20779a45e9f1b5a05c9b5b3ecdd70a07d0",
+    "production/deployment.py": "401d0df9086e52f9cb4885add37fe7159ef19f21d4c7e213d2bf73af39f0343c",
+    "production/model_release.py": "c7cb5bed816fb22b6a44b90260d9ae59de0b13303bede39ce1f8a14452e8fd3b",
+    "production/layout-compatibility.json": "cd86c44e5c517a2d21a4396f5c5c71f7681ddfd10f4941f03932f33d9ba9e0bf",
+    "deploy/entrypoint.py": "588a148d643f7ee733acf02d94f82de37c6043bebf637b2f1e0e848efe892a41",
+    "tests/test_inference_reuse.py": "a35357794b5a9363357d17811b72746eeb6b81155d8d7c24e60fad2942c31d21",
+    "tests/profile_inference_reuse.py": "e918d0506a73c1696991ced642cdb166c87e0080caf9bb7da1322f1c20bae666"
+  }
+}

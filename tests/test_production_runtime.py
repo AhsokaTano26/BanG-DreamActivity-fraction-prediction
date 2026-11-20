@@ -15,8 +15,9 @@ class FakeStore:
     def __init__(self,root):self.root=Path(root);self.metadata_directory=self.root/'metadata';self.metadata_directory.mkdir(parents=True,exist_ok=True)
     def bootstrap(self,**kwargs):return {'status':'ok'}
     def events(self,now_ms):return [r for r in self.index if r['start_ms']<=now_ms]
-    def load_curves(self,before_ms,ranks=None,complete_only=True):
-        return [c for c in self.curves if c.rank in ranks and c.start<before_ms and (not complete_only or c.end<before_ms)]
+    def load_curves(self,before_ms,ranks=None,complete_only=True,*,events=None):
+        return [c for c in self.curves if c.rank in ranks and c.start<before_ms
+                and (events is None or c.event in events) and (not complete_only or c.end<before_ms)]
 
 class ProductionLifecycleTests(unittest.TestCase):
     def setUp(self):
